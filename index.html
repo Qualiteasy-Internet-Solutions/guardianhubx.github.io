@@ -15,16 +15,24 @@
   <link rel="stylesheet" href="style.css">
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Font Awesome-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
 </head>
 <body>
   <!-- Header with Language Switcher -->
   
   <div class="clearfix bg-primary px-3 pt-2 pb-2">
+    <div class="float-start text-white">
+      <i class="fa fa-phone me-2"></i> <a href="tel:+34934153115" class="text-white text-decoration-none">+34 93 415 31 15</a>
+      <span class="mx-3">|</span>
+      <i class="fa fa-envelope me-2"></i> <a href="mailto:info@guardianhubx.com" class="text-white text-decoration-none">info@guardianhubx.com</a>
+    </div>
     <div class="float-end">
-        <select id="languageSwitcher" class="form-select w-auto">
-            <option value="en">English</option>
-            <option value="es">Español</option>
-        </select>
+      <select id="languageSwitcher" class="form-select w-auto">
+        <option value="en">English</option>
+        <option value="es">Español</option>
+      </select>
     </div>
   </div>
 
@@ -35,15 +43,9 @@
     <p>Your central hub for advanced cybersecurity solutions</p>    
   </header>
 
-  
-
   <main class="container my-5">
     <!-- About Section -->
     <section class="about mb-5">
-        
-        <div class="float-right">
-            
-        </div>
       <h2 class="text-center mb-4" data-key="about-title">About Us</h2>
       <p class="text-center" data-key="about-description">
         At GuardianHubX, we provide an integrated solution for your cybersecurity needs. 
@@ -162,7 +164,7 @@
     </section>
   </main>
 
-  <footer class="text-center py-3">
+  <footer class="text-center py-3 custom-footer">
     <p data-key="footer-text">&copy; 2024 GuardianHubX. All rights reserved.</p>
   </footer>
 

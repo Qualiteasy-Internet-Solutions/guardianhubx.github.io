@@ -20,3 +20,6 @@ header img.logo {
     font-size: 0.9em; /* Ajustar el tamaño del texto en el pie de página */
   }
   
+  .custom-footer {
+    background-color: #e4e4e4; /* Cambia por el color gris deseado */
+  }
