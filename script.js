@@ -54,6 +54,7 @@ const translations = {
           $(this).html(translations[lang][key]);
         }
       });
+      $("html").attr("lang", lang);
     }
   
     // Default Language
