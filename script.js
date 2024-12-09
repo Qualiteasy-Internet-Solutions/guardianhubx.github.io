@@ -2,7 +2,7 @@ const translations = {
     es: {
       "about-title": "Sobre Nosotros",
       "about-description": "En GuardianHubX, proporcionamos una solución integral para tus necesidades de ciberseguridad...",
-      "solutions-title": "Nuestras Soluciones",
+      "solutions-title": "Nuestros Partners",
       "solution-faronics-desc": "Gestión integral del sistema y protección contra amenazas cibernéticas, incluido el ransomware.",
       "solution-nordlayer-desc": "Asegura el acceso remoto de tu equipo con soluciones avanzadas de VPN.",
       "solution-nordpass-desc": "Gestión segura de contraseñas para empresas e individuos.",
@@ -24,7 +24,7 @@ const translations = {
     en: {
       "about-title": "About Us",
       "about-description": "At GuardianHubX, we provide an integrated solution for your cybersecurity needs...",
-      "solutions-title": "Our Solutions",
+      "solutions-title": "Our Partners",
       "solution-faronics-desc": "Comprehensive system management and protection against cyber threats, including ransomware.",
       "solution-nordlayer-desc": "Secure your team's remote access with advanced VPN solutions.",
       "solution-nordpass-desc": "Secure password management for businesses and individuals.",
