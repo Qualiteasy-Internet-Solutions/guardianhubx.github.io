@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GuardianHubX</title>
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <!-- Header with Language Switcher -->
+  
+  <div class="clearfix bg-primary px-3 pt-2 pb-2">
+    <div class="float-end">
+        <select id="languageSwitcher" class="form-select w-auto">
+            <option value="en">English</option>
+            <option value="es">Español</option>
+        </select>
+    </div>
+  </div>
+
+  <header class="text-center py-4">
+    <img src="img/logo.png" alt="GuardianHubX Logo" class="logo mb-3">
+    
+    <h1>GuardianHubX.com</h1>
+    <p>Your central hub for advanced cybersecurity solutions</p>    
+  </header>
+
+  
+
+  <main class="container my-5">
+    <!-- About Section -->
+    <section class="about mb-5">
+        
+        <div class="float-right">
+            
+        </div>
+      <h2 class="text-center mb-4" data-key="about-title">About Us</h2>
+      <p class="text-center" data-key="about-description">
+        At GuardianHubX, we provide an integrated solution for your cybersecurity needs. 
+        Our platform connects the best tools for password management, automated maintenance, 
+        phishing training, backups, threat detection, and more — all in one central hub.
+      </p>
+    </section>
+
+    <!-- Solutions Section -->
+    <section class="solutions mb-5">
+      <h2 class="text-center mb-4" data-key="solutions-title">Our Solutions</h2>
+      <div class="row text-center">
+        <div class="col-md-4 mb-4">
+          <a href="https://www.faronics.com" target="_blank">
+            <img src="img/faronics-logo.png" alt="Faronics Logo" class="img-fluid mb-2" style="max-height: 100px;">
+          </a>
+          <h3><a href="https://www.faronics.com" target="_blank" class="text-decoration-none" data-key="solution-faronics">Faronics</a></h3>
+          <p data-key="solution-faronics-desc">Comprehensive system management and protection against cyber threats, including ransomware.</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <a href="https://nordlayer.com" target="_blank">
+            <img src="img/nordlayer-logo.png" alt="NordLayer Logo" class="img-fluid mb-2" style="max-height: 100px;">
+          </a>
+          <h3><a href="https://nordlayer.com" target="_blank" class="text-decoration-none" data-key="solution-nordlayer">NordLayer</a></h3>
+          <p data-key="solution-nordlayer-desc">Secure your team's remote access with advanced VPN solutions.</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <a href="https://nordpass.com" target="_blank">
+            <img src="img/nordpass-logo.png" alt="NordPass Logo" class="img-fluid mb-2" style="max-height: 100px;">
+          </a>
+          <h3><a href="https://nordpass.com" target="_blank" class="text-decoration-none" data-key="solution-nordpass">NordPass</a></h3>
+          <p data-key="solution-nordpass-desc">Secure password management for businesses and individuals.</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <a href="https://www.edgewatch.com" target="_blank">
+            <img src="img/edgewatch-logo.png" alt="Edgewatch Logo" class="img-fluid mb-2" style="max-height: 100px;">
+          </a>
+          <h3><a href="https://www.edgewatch.com" target="_blank" class="text-decoration-none" data-key="solution-edgewatch">Edgewatch</a></h3>
+          <p data-key="solution-edgewatch-desc">Real-time threat detection and proactive cyber defense.</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <a href="https://outkept.com" target="_blank">
+            <img src="img/outkept-logo.png" alt="Outkept Logo" class="img-fluid mb-2" style="max-height: 100px;">
+          </a>
+          <h3><a href="https://outkept.com" target="_blank" class="text-decoration-none" data-key="solution-outkept">Outkept</a></h3>
+          <p data-key="solution-outkept-desc">Automated monitoring and maintenance to ensure system uptime.</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <a href="https://www.acronis.com" target="_blank">
+            <img src="img/acronis-logo.png" alt="Acronis Logo" class="img-fluid mb-2" style="max-height: 100px;">
+          </a>
+          <h3><a href="https://www.acronis.com" target="_blank" class="text-decoration-none" data-key="solution-acronis">Acronis</a></h3>
+          <p data-key="solution-acronis-desc">Reliable backup and disaster recovery solutions for critical data.</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section class="contact mb-5">
+      <h2 class="text-center mb-4" data-key="contact-title">Contact Us</h2>
+      <div class="row align-items-start">
+        <div class="col-md-6 text-center">
+          <img src="img/cybersecurity-illustration.webp" alt="Contact Illustration" class="img-fluid">
+        </div>
+        <div class="col-md-6">
+          <div class="bg-light p-3 mb-4 rounded border">
+            <h4 class="text-primary" data-key="contact-get-in-touch">Get in Touch</h4>
+            <p data-key="contact-email"><strong>Email:</strong> <a href="mailto:info@guardianhubx.com">info@guardianhubx.com</a></p>
+            <p data-key="contact-phone"><strong>Phone:</strong> <a href="tel:+34934153115">+34 93 415 31 15</a></p>
+          </div>
+          <form id="contactForm" action="https://formspree.io/f/mayvkgze" method="POST">
+            <div class="mb-3">
+              <label for="name" class="form-label" data-key="form-name">Name:</label>
+              <input type="text" id="name" name="name" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label" data-key="form-email">Email:</label>
+              <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label" data-key="form-message">Message:</label>
+              <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" data-key="form-solutions">Select the solutions you're interested in <span class="text-danger">*</span>:</label>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="faronics" name="solutions" value="Faronics">
+                <label class="form-check-label" for="faronics">Faronics</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="nordlayer" name="solutions" value="NordLayer">
+                <label class="form-check-label" for="nordlayer">NordLayer</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="nordpass" name="solutions" value="NordPass">
+                <label class="form-check-label" for="nordpass">NordPass</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="edgewatch" name="solutions" value="Edgewatch">
+                <label class="form-check-label" for="edgewatch">Edgewatch</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="outkept" name="solutions" value="Outkept">
+                <label class="form-check-label" for="outkept">Outkept</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="acronis" name="solutions" value="Acronis">
+                <label class="form-check-label" for="acronis">Acronis</label>
+              </div>
+              <div id="checkboxError" class="text-danger d-none" data-key="form-solutions-error">Please select at least one solution.</div>
+            </div>
+            <button type="submit" class="btn btn-primary w-100" data-key="form-submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center py-3">
+    <p data-key="footer-text">&copy; 2024 GuardianHubX. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    const translations = {
+      es: {
+        "about-title": "Sobre Nosotros",
+        "about-description": "En GuardianHubX, proporcionamos una solución integral para tus necesidades de ciberseguridad...",
+        "solutions-title": "Nuestras Soluciones",
+        "solution-faronics-desc": "Gestión integral del sistema y protección contra amenazas cibernéticas, incluido el ransomware.",
+        "solution-nordlayer-desc": "Asegura el acceso remoto de tu equipo con soluciones avanzadas de VPN.",
+        "solution-nordpass-desc": "Gestión segura de contraseñas para empresas e individuos.",
+        "solution-edgewatch-desc": "Detección de amenazas en tiempo real y defensa cibernética proactiva.",
+        "solution-outkept-desc": "Monitoreo y mantenimiento automatizado para garantizar el tiempo de actividad del sistema.",
+        "solution-acronis-desc": "Copias de seguridad confiables y soluciones de recuperación ante desastres para datos críticos.",
+        "contact-title": "Contáctanos",
+        "contact-get-in-touch": "Ponte en Contacto",
+        "contact-email": "<strong>Correo:</strong> <a href='mailto:info@guardianhubx.com'>info@guardianhubx.com</a>",
+        "contact-phone": "<strong>Teléfono:</strong> <a href='tel:+34934153115'>+34 93 415 31 15</a>",
+        "form-name": "Nombre:",
+        "form-email": "Correo Electrónico:",
+        "form-message": "Mensaje:",
+        "form-solutions": "Selecciona las soluciones que te interesan <span class='text-danger'>*</span>:",
+        "form-solutions-error": "Por favor, selecciona al menos una solución.",
+        "form-submit": "Enviar",
+        "footer-text": "&copy; 2024 GuardianHubX. Todos los derechos reservados."
+      },
+      en: {
+        "about-title": "About Us",
+        "about-description": "At GuardianHubX, we provide an integrated solution for your cybersecurity needs...",
+        "solutions-title": "Our Solutions",
+        "solution-faronics-desc": "Comprehensive system management and protection against cyber threats, including ransomware.",
+        "solution-nordlayer-desc": "Secure your team's remote access with advanced VPN solutions.",
+        "solution-nordpass-desc": "Secure password management for businesses and individuals.",
+        "solution-edgewatch-desc": "Real-time threat detection and proactive cyber defense.",
+        "solution-outkept-desc": "Automated monitoring and maintenance to ensure system uptime.",
+        "solution-acronis-desc": "Reliable backup and disaster recovery solutions for critical data.",
+        "contact-title": "Contact Us",
+        "contact-get-in-touch": "Get in Touch",
+        "contact-email": "<strong>Email:</strong> <a href='mailto:info@guardianhubx.com'>info@guardianhubx.com</a>",
+        "contact-phone": "<strong>Phone:</strong> <a href='tel:+34934153115'>+34 93 415 31 15</a>",
+        "form-name": "Name:",
+        "form-email": "Email:",
+        "form-message": "Message:",
+        "form-solutions": "Select the solutions you're interested in <span class='text-danger'>*</span>:",
+        "form-solutions-error": "Please select at least one solution.",
+        "form-submit": "Submit",
+        "footer-text": "&copy; 2024 GuardianHubX. All rights reserved."
+      }
+    };
+
+    $(document).ready(function () {
+      // Language Switcher
+      function changeLanguage(lang) {
+        $("[data-key]").each(function () {
+          const key = $(this).data("key");
+          if (translations[lang][key]) {
+            $(this).html(translations[lang][key]);
+          }
+        });
+      }
+
+      // Default Language
+      changeLanguage("en");
+
+      // Language Switcher Dropdown
+      $("#languageSwitcher").change(function () {
+        const lang = $(this).val();
+        changeLanguage(lang);
+      });
+
+      // Form Validation
+      $("#contactForm").submit(function (event) {
+        const selectedSolutions = $("input[name='solutions']:checked").length;
+        if (selectedSolutions === 0) {
+          event.preventDefault();
+          $("#checkboxError").removeClass("d-none");
+        } else {
+          $("#checkboxError").addClass("d-none");
+        }
+      });
+    });
+  </script>
+</body>
+</html>
+
+             
