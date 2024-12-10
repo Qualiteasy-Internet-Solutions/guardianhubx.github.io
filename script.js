@@ -19,7 +19,8 @@ const translations = {
       "form-solutions": "Selecciona las soluciones que te interesan <span class='text-danger'>*</span>:",
       "form-solutions-error": "Por favor, selecciona al menos una solución.",
       "form-submit": "Enviar",
-      "footer-text": "&copy; 2024 GuardianHubX. Todos los derechos reservados."
+      "footer-text": "&copy; 2024 GuardianHubX. Todos los derechos reservados.",
+      "thanks": "Gracias, hemos recibido vuestro mensaje, nos pondemos en contacto en breve."
     },
     en: {
       "about-title": "About Us",
@@ -41,7 +42,8 @@ const translations = {
       "form-solutions": "Select the solutions you're interested in <span class='text-danger'>*</span>:",
       "form-solutions-error": "Please select at least one solution.",
       "form-submit": "Submit",
-      "footer-text": "&copy; 2024 GuardianHubX. All rights reserved."
+      "footer-text": "&copy; 2024 GuardianHubX. All rights reserved.",
+      "thanks": "Thanks, we recived your message, we will contact you soon."
     }
   };
   
@@ -55,15 +57,34 @@ const translations = {
         }
       });
       $("html").attr("lang", lang);
+      $("#languageSwitcher").val(lang);
     }
   
-    // Default Language
-    changeLanguage("en");
+    // Detectar idioma desde la URL
+    function getLanguageFromURL() {
+    const params = new URLSearchParams(window.location.search);
+    return params.get("idioma");
+    }
+
+    // Obtener idioma desde la URL o usar predeterminado
+    const languageFromURL = getLanguageFromURL();
+    const defaultLanguage = languageFromURL || "en";
+  
+    // Configurar idioma inicial
+    if (["es", "en"].includes(defaultLanguage)) {
+      changeLanguage(defaultLanguage); // Cambiar contenido
+      $("#languageSwitcher").val(defaultLanguage); // Marcar idioma en el <select>
+      $('input[name=_next]').val('https://guardianhubx.com/thanks.html?idioma='+defaultLanguage);
+    } else {
+      changeLanguage("en"); // Idioma predeterminado si el parámetro no es válido
+      $("#languageSwitcher").val("en");
+    }
   
     // Language Switcher Dropdown
     $("#languageSwitcher").change(function () {
       const lang = $(this).val();
       changeLanguage(lang);
+      $('input[name=_next]').val('https://guardianhubx.com/thanks.html?idioma='+lang);
     });
   
     // Form Validation
