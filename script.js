@@ -1,7 +1,7 @@
 const translations = {
     es: {
       "about-title": "Sobre Nosotros",
-      "about-description": "En GuardianHubX, proporcionamos una solución integral para tus necesidades de ciberseguridad...",
+      "about-description": "En GuardianHubX, ofrecemos una solución integral para tus necesidades de ciberseguridad. Nuestra plataforma conecta las mejores herramientas para la gestión de contraseñas, mantenimiento automatizado, formación en phishing, copias de seguridad, detección de amenazas y más, todo en un único centro centralizado.",
       "solutions-title": "Nuestros Partners",
       "solution-faronics-desc": "Gestión integral del sistema y protección contra amenazas cibernéticas, incluido el ransomware.",
       "solution-nordlayer-desc": "Asegura el acceso remoto de tu equipo con soluciones avanzadas de VPN.",
@@ -25,7 +25,7 @@ const translations = {
     },
     en: {
       "about-title": "About Us",
-      "about-description": "At GuardianHubX, we provide an integrated solution for your cybersecurity needs...",
+      "about-description": "At GuardianHubX, we provide an integrated solution for your cybersecurity needs. Our platform connects the best tools for password management, automated maintenance, phishing training, backups, threat detection, and more — all in one central hub.",
       "solutions-title": "Our Partners",
       "solution-faronics-desc": "Comprehensive system management and protection against cyber threats, including ransomware.",
       "solution-nordlayer-desc": "Secure your team's remote access with advanced VPN solutions.",
