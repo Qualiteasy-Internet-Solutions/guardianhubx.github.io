@@ -1,3 +1,5 @@
+$(document).ready(function () {
+
 const translations = {
     es: {
       "about-title": "Sobre Nosotros",
@@ -49,52 +51,59 @@ const translations = {
     }
   };
   
-  $(document).ready(function () {
-    // Language Switcher
+    // Función para cambiar el idioma dinámicamente
     function changeLanguage(lang) {
       $("[data-key]").each(function () {
         const key = $(this).data("key");
-        if (translations[lang][key]) {
+        if (translations[lang] && translations[lang][key]) {          
           $(this).html(translations[lang][key]);
         }
       });
       $("html").attr("lang", lang); // Actualizar atributo lang
       $("#languageSwitcher").val(lang); // Marcar idioma en el <select>
-      $('input[name=_next]').val('https://guardianhubx.com/thanks.html?idioma=' + lang); // Actualizar enlace de redirección
+      $('input[name=_next]').val(`https://guardianhubx.com/thanks.html?idioma=${lang}`); // Actualizar enlace de redirección
       updateGoBackLink(lang); // Actualizar enlace "Go back to the homesite"
     }
   
-    // Actualizar enlace "Go back to the homesite"
+    // Función para actualizar el enlace "Go back to the homesite"
     function updateGoBackLink(lang) {
       const goBackLink = $("#goback");
-      const currentHref = goBackLink.attr("href").split("?")[0]; // Eliminar cualquier parámetro existente
-      goBackLink.attr("href", `${currentHref}?idioma=${lang}`);
+    
+      // Verifica si el elemento existe
+      if (goBackLink.length > 0) {
+        // Verifica si el atributo href está definido
+        const currentHref = goBackLink.attr("href") ? goBackLink.attr("href").split("?")[0] : "index.html";
+        goBackLink.attr("href", `${currentHref}?idioma=${lang}`);
+      } else {
+        console.info("El elemento #goback no está presente en el DOM."); // Mensaje informativo
+      }
     }
   
-    // Detectar idioma desde la URL
+    // Función para detectar idioma desde la URL
     function getLanguageFromURL() {
       const params = new URLSearchParams(window.location.search);
       return params.get("idioma");
     }
   
-    // Obtener idioma desde la URL o usar predeterminado
+    // Detectar idioma inicial desde la URL o usar predeterminado
     const languageFromURL = getLanguageFromURL();
     const defaultLanguage = languageFromURL || "en";
   
-    // Configurar idioma inicial
     if (["es", "en"].includes(defaultLanguage)) {
-      changeLanguage(defaultLanguage); // Cambiar contenido
+      changeLanguage(defaultLanguage);
     } else {
-      changeLanguage("en"); // Idioma predeterminado si el parámetro no es válido
+      changeLanguage("en");
     }
   
-    // Language Switcher Dropdown
-    $("#languageSwitcher").change(function () {
+    // Event Listener para el selector de idioma
+    $("#languageSwitcher").on("change", function () {
       const lang = $(this).val();
-      changeLanguage(lang); // Cambiar idioma y actualizar elementos dependientes
+      if (lang === "es" || lang === "en") {
+        changeLanguage(lang); // Cambiar idioma dinámicamente
+      }
     });
   
-    // Form Validation
+    // Validación del formulario
     $("#contactForm").submit(function (event) {
       const selectedSolutions = $("input[name='solutions']:checked").length;
       if (selectedSolutions === 0) {
@@ -105,5 +114,4 @@ const translations = {
       }
     });
   });
-  
   
