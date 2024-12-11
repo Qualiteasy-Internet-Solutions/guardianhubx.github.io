@@ -55,8 +55,14 @@ const translations = {
     function changeLanguage(lang) {
       $("[data-key]").each(function () {
         const key = $(this).data("key");
-        if (translations[lang] && translations[lang][key]) {          
-          $(this).html(translations[lang][key]);
+        if (translations[lang] && translations[lang][key]) {
+          if ($(this).is("input, textarea")) {
+            // Si es un input o textarea, actualiza el atributo value
+            $(this).val(translations[lang][key]);
+          } else {
+            // Si no, actualiza el contenido HTML
+            $(this).html(translations[lang][key]);
+          }
         }
       });
       $("html").attr("lang", lang); // Actualizar atributo lang
