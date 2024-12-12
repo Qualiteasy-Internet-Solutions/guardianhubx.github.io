@@ -1,26 +1,6 @@
 $(document).ready(function () {
-  // Cargar el contenido del <head>
-  $.get("head.html", function (data) {
-    $("#common-head").html(data);
-  }).fail(function (xhr, status, error) {
-    console.error("Error loading head:", status, error);
-  });
 
-  // Cargar el header
-  $("#header-container").load("header.html", function (response, status, xhr) {
-    if (status === "error") {
-      console.error("Error loading header:", xhr.status, xhr.statusText);
-    }
-  });
-
-  // Cargar el footer
-  $("#footer-container").load("footer.html", function (response, status, xhr) {
-    if (status === "error") {
-      console.error("Error loading footer:", xhr.status, xhr.statusText);
-    }
-  });
-
-const translations = {
+  const translations = {
     es: {
       "about-title": "Sobre Nosotros",
       "about-description": "En GuardianHubX, ofrecemos una solución integral para tus necesidades de ciberseguridad. Nuestra plataforma conecta las mejores herramientas para la gestión de contraseñas, mantenimiento automatizado, formación en phishing, copias de seguridad, detección de amenazas y más, todo en un única consola centralizada.",
@@ -70,8 +50,16 @@ const translations = {
       "goback": "Go back to the homesite"
     }
   };
-  
-    // Función para cambiar el idioma dinámicamente
+
+  let loadCounter = 0;
+  // Función para verificar si todo está cargado
+  function checkIfAllLoaded() {
+    if (loadCounter === 3) { // Espera a que los 3 elementos se carguen
+      $("body").removeClass("loading").addClass("loaded");
+    }
+  }
+
+  // Función para cambiar el idioma dinámicamente
     function changeLanguage(lang) {
       $("[data-key]").each(function () {
         const key = $(this).data("key");
@@ -139,6 +127,34 @@ const translations = {
         $("#checkboxError").addClass("d-none");
       }
     });
-    $("body").removeClass("loading");
+
+    // Cargar el contenido común del <head>
+  $.get("head.html", function (data) {
+    $("#common-head").html(data);
+    loadCounter++;
+    checkIfAllLoaded();
+  }).fail(function (xhr, status, error) {
+    console.error("Error al cargar el head:", status, error);
+    loadCounter++;
+    checkIfAllLoaded();
   });
+
+  // Cargar el header
+  $("#header-container").load("header.html", function (response, status, xhr) {
+    if (status === "error") {
+      console.error("Error al cargar el header:", xhr.status, xhr.statusText);
+    }
+    loadCounter++;
+    checkIfAllLoaded();
+  });
+
+  // Cargar el footer
+  $("#footer-container").load("footer.html", function (response, status, xhr) {
+    if (status === "error") {
+      console.error("Error al cargar el footer:", xhr.status, xhr.statusText);
+    }
+    loadCounter++;
+    checkIfAllLoaded();
+  });
+});
   

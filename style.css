@@ -4,6 +4,11 @@ body.loading {
   transition: opacity 0.3s ease-in-out;
 }
 
+body.loaded {
+  visibility: visible;
+  opacity: 1;
+}
+
 header {
     background-color: #e4e4e4;
     color: #1a73e8;
