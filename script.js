@@ -59,8 +59,7 @@ $(document).ready(function () {
     }
   }
 
-  function changeLanguage(lang) {
-    console.log(`Changing language to: ${lang}`);
+  function changeLanguage(lang) {    
     $("[data-key]").each(function () {
       const key = $(this).data("key");
       if (translations[lang] && translations[lang][key]) {
