@@ -51,73 +51,63 @@ $(document).ready(function () {
     }
   };
 
-  let loadCounter = 0;
-  // Función para verificar si todo está cargado
-  function checkIfAllLoaded() {
-    if (loadCounter === 3) { // Espera a que los 3 elementos se carguen
-      $("body").removeClass("loading").addClass("loaded");
-    }
-  }
 
-  // Función para cambiar el idioma dinámicamente
+    let loadCounter = 0;
+  
+    function checkIfAllLoaded() {
+      if (loadCounter === 3) {
+        $("body").removeClass("loading").addClass("loaded"); // Muestra el cuerpo
+        applyInitialLanguage(); // Aplica el idioma inicial
+      }
+    }
+  
     function changeLanguage(lang) {
       $("[data-key]").each(function () {
         const key = $(this).data("key");
         if (translations[lang] && translations[lang][key]) {
           if ($(this).is("input, textarea")) {
-            // Si es un input o textarea, actualiza el atributo value
-            $(this).val(translations[lang][key]);
+            $(this).val(translations[lang][key]); // Actualiza el atributo value
           } else {
-            // Si no, actualiza el contenido HTML
-            $(this).html(translations[lang][key]);
+            $(this).html(translations[lang][key]); // Actualiza el contenido HTML
           }
         }
       });
-      $("html").attr("lang", lang); // Actualizar atributo lang
-      $("#languageSwitcher").val(lang); // Marcar idioma en el <select>
-      $('input[name=_next]').val(`https://guardianhubx.com/thanks.html?idioma=${lang}`); // Actualizar enlace de redirección
-      updateGoBackLink(lang); // Actualizar enlace "Go back to the homesite"
+      $("html").attr("lang", lang);
+      $("#languageSwitcher").val(lang);
+      $('input[name=_next]').val(`https://guardianhubx.com/thanks.html?idioma=${lang}`);
+      updateGoBackLink(lang);
     }
   
-    // Función para actualizar el enlace "Go back to the homesite"
     function updateGoBackLink(lang) {
       const goBackLink = $("#goback");
-    
-      // Verifica si el elemento existe
       if (goBackLink.length > 0) {
-        // Verifica si el atributo href está definido
         const currentHref = goBackLink.attr("href") ? goBackLink.attr("href").split("?")[0] : "index.html";
         goBackLink.attr("href", `${currentHref}?idioma=${lang}`);
-      } else {
-        console.info("El elemento #goback no está presente en el DOM."); // Mensaje informativo
       }
     }
   
-    // Función para detectar idioma desde la URL
     function getLanguageFromURL() {
       const params = new URLSearchParams(window.location.search);
       return params.get("idioma");
     }
   
-    // Detectar idioma inicial desde la URL o usar predeterminado
-    const languageFromURL = getLanguageFromURL();
-    const defaultLanguage = languageFromURL || "en";
-  
-    if (["es", "en"].includes(defaultLanguage)) {
-      changeLanguage(defaultLanguage);
-    } else {
-      changeLanguage("en");
+    function applyInitialLanguage() {
+      const languageFromURL = getLanguageFromURL();
+      const defaultLanguage = languageFromURL || "en";
+      if (["es", "en"].includes(defaultLanguage)) {
+        changeLanguage(defaultLanguage);
+      } else {
+        changeLanguage("en");
+      }
     }
   
-    // Event Listener para el selector de idioma
     $("#languageSwitcher").on("change", function () {
       const lang = $(this).val();
       if (lang === "es" || lang === "en") {
-        changeLanguage(lang); // Cambiar idioma dinámicamente
+        changeLanguage(lang);
       }
     });
   
-    // Validación del formulario
     $("#contactForm").submit(function (event) {
       const selectedSolutions = $("input[name='solutions']:checked").length;
       if (selectedSolutions === 0) {
@@ -127,34 +117,26 @@ $(document).ready(function () {
         $("#checkboxError").addClass("d-none");
       }
     });
-
-    // Cargar el contenido común del <head>
-  $.get("head.html", function (data) {
-    $("#common-head").html(data);
-    loadCounter++;
-    checkIfAllLoaded();
-  }).fail(function (xhr, status, error) {
-    console.error("Error al cargar el head:", status, error);
-    loadCounter++;
-    checkIfAllLoaded();
+  
+    $.get("head.html", function (data) {
+      $("#common-head").html(data);
+      loadCounter++;
+      checkIfAllLoaded();
+    }).fail(function () {
+      loadCounter++;
+      checkIfAllLoaded();
+    });
+  
+    $("#header-container").load("header.html", function () {
+      loadCounter++;
+      checkIfAllLoaded();
+    });
+  
+    $("#footer-container").load("footer.html", function () {
+      loadCounter++;
+      checkIfAllLoaded();
+    });
   });
 
-  // Cargar el header
-  $("#header-container").load("header.html", function (response, status, xhr) {
-    if (status === "error") {
-      console.error("Error al cargar el header:", xhr.status, xhr.statusText);
-    }
-    loadCounter++;
-    checkIfAllLoaded();
-  });
-
-  // Cargar el footer
-  $("#footer-container").load("footer.html", function (response, status, xhr) {
-    if (status === "error") {
-      console.error("Error al cargar el footer:", xhr.status, xhr.statusText);
-    }
-    loadCounter++;
-    checkIfAllLoaded();
-  });
 });
   
