@@ -52,34 +52,30 @@ $(document).ready(function () {
 
   let loadCounter = 0;
 
-  // Verifica si todas las secciones han cargado
   function checkIfAllLoaded() {
     if (loadCounter === 3) {
       $("body").removeClass("loading").addClass("loaded");
-      applyInitialLanguage();
+      applyInitialLanguage(); // Aplica el idioma inicial después de cargar todo
     }
   }
 
-  // Cambia el idioma dinámicamente
   function changeLanguage(lang) {
     $("[data-key]").each(function () {
       const key = $(this).data("key");
       if (translations[lang] && translations[lang][key]) {
         if ($(this).is("input, textarea")) {
-          $(this).val(translations[lang][key]);
+          $(this).val(translations[lang][key]); // Actualiza atributos value
         } else {
-          $(this).html(translations[lang][key]);
+          $(this).html(translations[lang][key]); // Actualiza contenido HTML
         }
       }
     });
-
-    $("html").attr("lang", lang);
-    $("#languageSwitcher").val(lang);
+    $("html").attr("lang", lang); // Cambiar el atributo lang
+    $("#languageSwitcher").val(lang); // Ajustar el valor del selector
     $('input[name=_next]').val(`https://guardianhubx.com/thanks.html?idioma=${lang}`);
     updateGoBackLink(lang);
   }
 
-  // Actualiza el enlace "Go back to the homepage"
   function updateGoBackLink(lang) {
     const goBackLink = $("#goback");
     if (goBackLink.length > 0) {
@@ -88,24 +84,17 @@ $(document).ready(function () {
     }
   }
 
-  // Detecta el idioma desde la URL
   function getLanguageFromURL() {
     const params = new URLSearchParams(window.location.search);
     return params.get("idioma");
   }
 
-  // Aplica el idioma inicial basado en la URL o predeterminado
   function applyInitialLanguage() {
     const languageFromURL = getLanguageFromURL();
     const defaultLanguage = languageFromURL || "en";
-    if (["es", "en"].includes(defaultLanguage)) {
-      changeLanguage(defaultLanguage);
-    } else {
-      changeLanguage("en");
-    }
+    changeLanguage(["es", "en"].includes(defaultLanguage) ? defaultLanguage : "en");
   }
 
-  // Cambia el idioma al seleccionar en el dropdown
   $("#languageSwitcher").on("change", function () {
     const lang = $(this).val();
     if (lang === "es" || lang === "en") {
@@ -113,23 +102,8 @@ $(document).ready(function () {
     }
   });
 
-  // Validación del formulario
-  $("#contactForm").submit(function (event) {
-    const selectedSolutions = $("input[name='solutions']:checked").length;
-    if (selectedSolutions === 0) {
-      event.preventDefault();
-      $("#checkboxError").removeClass("d-none");
-    } else {
-      $("#checkboxError").addClass("d-none");
-    }
-  });
-
-  // Carga dinámica de las secciones
   $.get("head.html", function (data) {
     $("#common-head").html(data);
-    loadCounter++;
-    checkIfAllLoaded();
-  }).fail(function () {
     loadCounter++;
     checkIfAllLoaded();
   });
