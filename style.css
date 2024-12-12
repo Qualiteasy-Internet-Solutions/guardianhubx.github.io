@@ -1,11 +1,12 @@
 body.loading {
-  display: none; 
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
 
 body.loaded {
-  display: block; /* Mostrar el contenido una vez cargado */
+  visibility: visible;
   opacity: 1;
-  transition: opacity 0.3s ease-in-out;
 }
 
 header {
