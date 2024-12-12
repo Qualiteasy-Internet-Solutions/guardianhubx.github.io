@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
   const translations = {
     es: {
       "about-title": "Sobre Nosotros",
@@ -23,7 +22,7 @@ $(document).ready(function () {
       "form-submit": "Enviar",
       "footer-text": "&copy; 2024 GuardianHubX. Todos los derechos reservados.",
       "thanks": "Gracias, hemos recibido vuestro mensaje, nos pondemos en contacto en breve.",
-      "goback": "Volver a la página inicial"
+      "goback": "Volver a la página inicial",
     },
     en: {
       "about-title": "About Us",
@@ -46,95 +45,102 @@ $(document).ready(function () {
       "form-solutions-error": "Please select at least one solution.",
       "form-submit": "Submit",
       "footer-text": "&copy; 2024 GuardianHubX. All rights reserved.",
-      "thanks": "Thanks, we recived your message, we will contact you soon.",
-      "goback": "Go back to the homesite"
-    }
+      "thanks": "Thanks, we received your message. We will contact you soon.",
+      "goback": "Go back to the homepage",
+    },
   };
 
+  let loadCounter = 0;
 
-    let loadCounter = 0;
-  
-    function checkIfAllLoaded() {
-      if (loadCounter === 3) {
-        $("body").removeClass("loading").addClass("loaded"); // Muestra el cuerpo
-        applyInitialLanguage(); // Aplica el idioma inicial
-      }
+  // Verifica si todas las secciones han cargado
+  function checkIfAllLoaded() {
+    if (loadCounter === 3) {
+      $("body").removeClass("loading").addClass("loaded");
+      applyInitialLanguage();
     }
-  
-    function changeLanguage(lang) {
-      $("[data-key]").each(function () {
-        const key = $(this).data("key");
-        if (translations[lang] && translations[lang][key]) {
-          if ($(this).is("input, textarea")) {
-            $(this).val(translations[lang][key]); // Actualiza el atributo value
-          } else {
-            $(this).html(translations[lang][key]); // Actualiza el contenido HTML
-          }
+  }
+
+  // Cambia el idioma dinámicamente
+  function changeLanguage(lang) {
+    $("[data-key]").each(function () {
+      const key = $(this).data("key");
+      if (translations[lang] && translations[lang][key]) {
+        if ($(this).is("input, textarea")) {
+          $(this).val(translations[lang][key]);
+        } else {
+          $(this).html(translations[lang][key]);
         }
-      });
-      $("html").attr("lang", lang);
-      $("#languageSwitcher").val(lang);
-      $('input[name=_next]').val(`https://guardianhubx.com/thanks.html?idioma=${lang}`);
-      updateGoBackLink(lang);
-    }
-  
-    function updateGoBackLink(lang) {
-      const goBackLink = $("#goback");
-      if (goBackLink.length > 0) {
-        const currentHref = goBackLink.attr("href") ? goBackLink.attr("href").split("?")[0] : "index.html";
-        goBackLink.attr("href", `${currentHref}?idioma=${lang}`);
-      }
-    }
-  
-    function getLanguageFromURL() {
-      const params = new URLSearchParams(window.location.search);
-      return params.get("idioma");
-    }
-  
-    function applyInitialLanguage() {
-      const languageFromURL = getLanguageFromURL();
-      const defaultLanguage = languageFromURL || "en";
-      if (["es", "en"].includes(defaultLanguage)) {
-        changeLanguage(defaultLanguage);
-      } else {
-        changeLanguage("en");
-      }
-    }
-  
-    $("#languageSwitcher").on("change", function () {
-      const lang = $(this).val();
-      if (lang === "es" || lang === "en") {
-        changeLanguage(lang);
       }
     });
-  
-    $("#contactForm").submit(function (event) {
-      const selectedSolutions = $("input[name='solutions']:checked").length;
-      if (selectedSolutions === 0) {
-        event.preventDefault();
-        $("#checkboxError").removeClass("d-none");
-      } else {
-        $("#checkboxError").addClass("d-none");
-      }
-    });
-  
-    $.get("head.html", function (data) {
-      $("#common-head").html(data);
-      loadCounter++;
-      checkIfAllLoaded();
-    }).fail(function () {
-      loadCounter++;
-      checkIfAllLoaded();
-    });
-  
-    $("#header-container").load("header.html", function () {
-      loadCounter++;
-      checkIfAllLoaded();
-    });
-  
-    $("#footer-container").load("footer.html", function () {
-      loadCounter++;
-      checkIfAllLoaded();
-    });
+
+    $("html").attr("lang", lang);
+    $("#languageSwitcher").val(lang);
+    $('input[name=_next]').val(`https://guardianhubx.com/thanks.html?idioma=${lang}`);
+    updateGoBackLink(lang);
+  }
+
+  // Actualiza el enlace "Go back to the homepage"
+  function updateGoBackLink(lang) {
+    const goBackLink = $("#goback");
+    if (goBackLink.length > 0) {
+      const currentHref = goBackLink.attr("href") ? goBackLink.attr("href").split("?")[0] : "index.html";
+      goBackLink.attr("href", `${currentHref}?idioma=${lang}`);
+    }
+  }
+
+  // Detecta el idioma desde la URL
+  function getLanguageFromURL() {
+    const params = new URLSearchParams(window.location.search);
+    return params.get("idioma");
+  }
+
+  // Aplica el idioma inicial basado en la URL o predeterminado
+  function applyInitialLanguage() {
+    const languageFromURL = getLanguageFromURL();
+    const defaultLanguage = languageFromURL || "en";
+    if (["es", "en"].includes(defaultLanguage)) {
+      changeLanguage(defaultLanguage);
+    } else {
+      changeLanguage("en");
+    }
+  }
+
+  // Cambia el idioma al seleccionar en el dropdown
+  $("#languageSwitcher").on("change", function () {
+    const lang = $(this).val();
+    if (lang === "es" || lang === "en") {
+      changeLanguage(lang);
+    }
   });
-  
+
+  // Validación del formulario
+  $("#contactForm").submit(function (event) {
+    const selectedSolutions = $("input[name='solutions']:checked").length;
+    if (selectedSolutions === 0) {
+      event.preventDefault();
+      $("#checkboxError").removeClass("d-none");
+    } else {
+      $("#checkboxError").addClass("d-none");
+    }
+  });
+
+  // Carga dinámica de las secciones
+  $.get("head.html", function (data) {
+    $("#common-head").html(data);
+    loadCounter++;
+    checkIfAllLoaded();
+  }).fail(function () {
+    loadCounter++;
+    checkIfAllLoaded();
+  });
+
+  $("#header-container").load("header.html", function () {
+    loadCounter++;
+    checkIfAllLoaded();
+  });
+
+  $("#footer-container").load("footer.html", function () {
+    loadCounter++;
+    checkIfAllLoaded();
+  });
+});
