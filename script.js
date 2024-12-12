@@ -65,9 +65,9 @@ $(document).ready(function () {
       const key = $(this).data("key");
       if (translations[lang] && translations[lang][key]) {
         if ($(this).is("input, textarea")) {
-          $(this).val(translations[lang][key]); // Actualiza atributos value
+          $(this).val(translations[lang][key]);
         } else {
-          $(this).html(translations[lang][key]); // Actualiza contenido HTML
+          $(this).html(translations[lang][key]);
         }
       }
     });
@@ -96,13 +96,15 @@ $(document).ready(function () {
     changeLanguage(["es", "en"].includes(defaultLanguage) ? defaultLanguage : "en");
   }
 
-  $("#languageSwitcher").on("change", function () {
+  // Delegar el evento del selector de idioma
+  $(document).on("change", "#languageSwitcher", function () {
     const lang = $(this).val();
     if (lang === "es" || lang === "en") {
       changeLanguage(lang);
     }
   });
 
+  // Carga dinámica de las secciones
   $.get("head.html", function (data) {
     $("#common-head").html(data);
     loadCounter++;
