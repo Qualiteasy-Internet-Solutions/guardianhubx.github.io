@@ -139,5 +139,6 @@ const translations = {
         $("#checkboxError").addClass("d-none");
       }
     });
+    $("body").removeClass("loading");
   });
   
