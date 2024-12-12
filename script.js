@@ -2,7 +2,7 @@ $(document).ready(function () {
   const translations = {
     es: {
       "about-title": "Sobre Nosotros",
-      "about-description": "En GuardianHubX, ofrecemos una solución integral para tus necesidades de ciberseguridad. Nuestra plataforma conecta las mejores herramientas para la gestión de contraseñas, mantenimiento automatizado, formación en phishing, copias de seguridad, detección de amenazas y más, todo en un única consola centralizada.",
+      "about-description": "En GuardianHubX, ofrecemos una solución integral para tus necesidades de ciberseguridad...",
       "solutions-title": "Nuestros Partners",
       "solution-faronics-desc": "Gestión integral del sistema y protección contra amenazas cibernéticas, incluido el ransomware.",
       "solution-nordlayer-desc": "Asegura el acceso remoto de tu equipo con soluciones avanzadas de VPN.",
@@ -26,7 +26,7 @@ $(document).ready(function () {
     },
     en: {
       "about-title": "About Us",
-      "about-description": "At GuardianHubX, we provide an integrated solution for your cybersecurity needs. Our platform connects the best tools for password management, automated maintenance, phishing training, backups, threat detection, and more — all in one central hub.",
+      "about-description": "At GuardianHubX, we provide an integrated solution for your cybersecurity needs...",
       "solutions-title": "Our Partners",
       "solution-faronics-desc": "Comprehensive system management and protection against cyber threats, including ransomware.",
       "solution-nordlayer-desc": "Secure your team's remote access with advanced VPN solutions.",
@@ -55,11 +55,12 @@ $(document).ready(function () {
   function checkIfAllLoaded() {
     if (loadCounter === 3) {
       $("body").removeClass("loading").addClass("loaded");
-      applyInitialLanguage(); // Aplica el idioma inicial después de cargar todo
+      applyInitialLanguage();
     }
   }
 
   function changeLanguage(lang) {
+    console.log(`Changing language to: ${lang}`);
     $("[data-key]").each(function () {
       const key = $(this).data("key");
       if (translations[lang] && translations[lang][key]) {
@@ -70,8 +71,8 @@ $(document).ready(function () {
         }
       }
     });
-    $("html").attr("lang", lang); // Cambiar el atributo lang
-    $("#languageSwitcher").val(lang); // Ajustar el valor del selector
+    $("html").attr("lang", lang);
+    $("#languageSwitcher").val(lang);
     $('input[name=_next]').val(`https://guardianhubx.com/thanks.html?idioma=${lang}`);
     updateGoBackLink(lang);
   }
