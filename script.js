@@ -1,4 +1,24 @@
 $(document).ready(function () {
+  // Cargar el contenido del <head>
+  $.get("head.html", function (data) {
+    $("#common-head").html(data);
+  }).fail(function (xhr, status, error) {
+    console.error("Error loading head:", status, error);
+  });
+
+  // Cargar el header
+  $("#header-container").load("header.html", function (response, status, xhr) {
+    if (status === "error") {
+      console.error("Error loading header:", xhr.status, xhr.statusText);
+    }
+  });
+
+  // Cargar el footer
+  $("#footer-container").load("footer.html", function (response, status, xhr) {
+    if (status === "error") {
+      console.error("Error loading footer:", xhr.status, xhr.statusText);
+    }
+  });
 
 const translations = {
     es: {
