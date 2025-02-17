@@ -11,7 +11,7 @@ body.loaded {
 
 header {
     background-color: #e4e4e4;
-    color: #1a73e8;
+    color: #1232ff;
 }
 
 header img.logo {
@@ -19,12 +19,12 @@ header img.logo {
 }
   
 .contact form button {
-  background-color: #1a73e8; /* Cambiar color de botón */
+  background-color: #1232ff; /* Cambiar color de botón */
   border: none;
 }
   
 .contact form button:hover {
-  background-color: #155ab6; /* Color al pasar el ratón */
+  background-color: #1232ff; /* Color al pasar el ratón */
 }
 
 footer {
