@@ -91,8 +91,8 @@ $(document).ready(function () {
 
   function applyInitialLanguage() {
     const languageFromURL = getLanguageFromURL();
-    const defaultLanguage = languageFromURL || "en";
-    changeLanguage(["es", "en"].includes(defaultLanguage) ? defaultLanguage : "en");
+    const defaultLanguage = languageFromURL || "es";
+    changeLanguage(["en", "es"].includes(defaultLanguage) ? defaultLanguage : "es");
   }
 
   // Delegar el evento del selector de idioma
