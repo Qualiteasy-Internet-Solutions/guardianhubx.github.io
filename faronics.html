@@ -14,6 +14,7 @@
   <main class="container my-5">
     <!-- About Section -->
     <section class="about mb-5 container text-center">
+      <img src="img/faronics-logo.png" alt="Faronics Logo" class="img-fluid mb-2" style="max-height: 100px;">
       <h2 class="mb-4" data-key="faronics-title">Faronics Cloud</h2>
       <p data-key="faronics-description">
         De los creadores de Deep Freeze: Soluciones simples para la seguridad de endpoints y la gestión de dispositivos.
@@ -26,6 +27,11 @@
         Algunos de los softwares más conocidos son: <strong>Deep Freeze, Deploy, MDM, Power Save, Win Select y el Anti Virus</strong>
       </p>
     </section>
+
+    <!-- Fullscreen Image Modal -->
+    <div id="fullscreen-overlay" onclick="closeFullscreen()">
+      <img id="fullscreen-image">
+    </div>
 
     <!-- Solutions Section -->
     <section class="solutions mb-5 container text-center">
@@ -140,6 +146,16 @@
 </section>
 
 <style>
+  /* Estilo para el cursor de zoom en la imagen */
+  .zoomable-image {
+    cursor: zoom-in;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .zoomable-image:hover {
+    transform: scale(1.05);
+  }
+
   /* Estilo para el fondo oscuro y la imagen en pantalla completa */
   #fullscreen-overlay {
     position: fixed;
@@ -152,11 +168,16 @@
     justify-content: center;
     align-items: center;
     z-index: 9999;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
   }
 
+  /* Hace que la imagen se vea con un pequeño efecto de aparición */
   #fullscreen-image {
     max-width: 90%;
     max-height: 90%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
   }
 
   /* Para mejorar la experiencia en dispositivos móviles */
@@ -166,19 +187,44 @@
       max-height: 95%;
     }
   }
+
+  /* Clase que activa la transición */
+  .visible {
+    opacity: 1 !important;
+  }
+
+  /* Cambia el cursor cuando está en modo pantalla completa */
+  #fullscreen-overlay {
+    cursor: zoom-out;
+  }
 </style>
 
 <script>
   function openFullscreen(imgElement) {
     const fullscreenOverlay = document.getElementById("fullscreen-overlay");
     const fullscreenImage = document.getElementById("fullscreen-image");
-    
+
     fullscreenImage.src = imgElement.src;
     fullscreenOverlay.style.display = "flex";
+
+    // Forzar un pequeño retraso para activar la animación
+    setTimeout(() => {
+      fullscreenOverlay.classList.add("visible");
+      fullscreenImage.classList.add("visible");
+    }, 10);
   }
 
   function closeFullscreen() {
-    document.getElementById("fullscreen-overlay").style.display = "none";
+    const fullscreenOverlay = document.getElementById("fullscreen-overlay");
+    const fullscreenImage = document.getElementById("fullscreen-image");
+
+    fullscreenOverlay.classList.remove("visible");
+    fullscreenImage.classList.remove("visible");
+
+    // Esperar la animación antes de ocultar el overlay
+    setTimeout(() => {
+      fullscreenOverlay.style.display = "none";
+    }, 300);
   }
 </script>
 
