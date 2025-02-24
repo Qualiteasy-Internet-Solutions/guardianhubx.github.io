@@ -25,7 +25,7 @@
         Faronics ofrece soluciones de ciberseguridad y gestión de sistemas diseñadas para proteger y administrar entornos informáticos de múltiples usuarios.  
         Algunos de los softwares más conocidos son: <strong>Deep Freeze, Deploy, MDM, Power Save, Win Select y el Anti Virus</strong>
       </p>
-      <p class="strong">Los productos de Faronics nos ayudan a prevenir, detectar y recuperar, los tres objetivos de ciberseguridad.</p>
+      <p>Los productos de Faronics nos ayudan a <strong></strong>prevenir, detectar y recuperar</strong>, los tres <a href="#">objetivos de ciberseguridad</a>.</p>
     </section>
 
     <!-- Fullscreen Image Modal -->
@@ -114,90 +114,6 @@
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="script.js"></script>
-
-<style>
-  /* Estilo para el cursor de zoom en la imagen */
-  .zoomable-image {
-    cursor: zoom-in;
-    transition: transform 0.3s ease-in-out;
-  }
-
-  .zoomable-image:hover {
-    transform: scale(1.05);
-  }
-
-  /* Estilo para el fondo oscuro y la imagen en pantalla completa */
-  #fullscreen-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.9);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-  }
-
-  /* Hace que la imagen se vea con un pequeño efecto de aparición */
-  #fullscreen-image {
-    max-width: 90%;
-    max-height: 90%;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-  }
-
-  /* Para mejorar la experiencia en dispositivos móviles */
-  @media (max-width: 768px) {
-    #fullscreen-image {
-      max-width: 95%;
-      max-height: 95%;
-    }
-  }
-
-  /* Clase que activa la transición */
-  .visible {
-    opacity: 1 !important;
-  }
-
-  /* Cambia el cursor cuando está en modo pantalla completa */
-  #fullscreen-overlay {
-    cursor: zoom-out;
-  }
-</style>
-
-<script>
-  function openFullscreen(imgElement) {
-    const fullscreenOverlay = document.getElementById("fullscreen-overlay");
-    const fullscreenImage = document.getElementById("fullscreen-image");
-
-    fullscreenImage.src = imgElement.src;
-    fullscreenOverlay.style.display = "flex";
-
-    // Forzar un pequeño retraso para activar la animación
-    setTimeout(() => {
-      fullscreenOverlay.classList.add("visible");
-      fullscreenImage.classList.add("visible");
-    }, 10);
-  }
-
-  function closeFullscreen() {
-    const fullscreenOverlay = document.getElementById("fullscreen-overlay");
-    const fullscreenImage = document.getElementById("fullscreen-image");
-
-    fullscreenOverlay.classList.remove("visible");
-    fullscreenImage.classList.remove("visible");
-
-    // Esperar la animación antes de ocultar el overlay
-    setTimeout(() => {
-      fullscreenOverlay.style.display = "none";
-    }, 300);
-  }
-</script>
-
 
 </body>
 </html>
