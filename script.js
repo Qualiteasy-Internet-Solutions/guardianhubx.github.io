@@ -121,32 +121,29 @@ $(document).ready(function () {
   });
 });
 
+function openFullscreen(imgElement) {
+  const fullscreenOverlay = document.getElementById("fullscreen-overlay");
+  const fullscreenImage = document.getElementById("fullscreen-image");
 
-<script>
-  function openFullscreen(imgElement) {
-    const fullscreenOverlay = document.getElementById("fullscreen-overlay");
-    const fullscreenImage = document.getElementById("fullscreen-image");
+  fullscreenImage.src = imgElement.src;
+  fullscreenOverlay.style.display = "flex";
 
-    fullscreenImage.src = imgElement.src;
-    fullscreenOverlay.style.display = "flex";
+  // Forzar un pequeño retraso para activar la animación
+  setTimeout(() => {
+    fullscreenOverlay.classList.add("visible");
+    fullscreenImage.classList.add("visible");
+  }, 10);
+}
 
-    // Forzar un pequeño retraso para activar la animación
-    setTimeout(() => {
-      fullscreenOverlay.classList.add("visible");
-      fullscreenImage.classList.add("visible");
-    }, 10);
-  }
+function closeFullscreen() {
+  const fullscreenOverlay = document.getElementById("fullscreen-overlay");
+  const fullscreenImage = document.getElementById("fullscreen-image");
 
-  function closeFullscreen() {
-    const fullscreenOverlay = document.getElementById("fullscreen-overlay");
-    const fullscreenImage = document.getElementById("fullscreen-image");
+  fullscreenOverlay.classList.remove("visible");
+  fullscreenImage.classList.remove("visible");
 
-    fullscreenOverlay.classList.remove("visible");
-    fullscreenImage.classList.remove("visible");
-
-    // Esperar la animación antes de ocultar el overlay
-    setTimeout(() => {
-      fullscreenOverlay.style.display = "none";
-    }, 300);
-  }
-</script>
+  // Esperar la animación antes de ocultar el overlay
+  setTimeout(() => {
+    fullscreenOverlay.style.display = "none";
+  }, 300);
+}
