@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  const savedLang = localStorage.getItem("selectedLanguage") || "es";
   const translations = {
     es: {
       "about-title": "Sobre Nosotros",
@@ -88,7 +89,7 @@ $(document).ready(function () {
         "nordsecurity-description": "<strong>NordSecurity</strong>: Secure your team's remote access with advanced VPN solutions and password management.",
         "nordsecurity-description-2": "NordSecurity offers a wide range of products designed to protect online privacy and ensure data security.",
         "nordsecurity-description-3": "NordSecurity products help us <strong>protect privacy, secure data, and ensure safe access</strong>, key pillars of cybersecurity.",
-        "nordsecurity-video-url": "https://www.youtube.com/embed/NORDSEC_VIDEO_ID?rel=0&cc_load_policy=0",
+        "nordsecurity-video-url": "https://www.youtube.com/embed/q9GNO9wwZTI?rel=0&cc_load_policy=0",
       
         "passwork-description": "<strong>Passwork</strong>: Secure offline and online password management for businesses and individuals.",
         "passwork-description-2": "Passwork allows companies to organize and manage passwords in a secure environment, enabling controlled access and team collaboration.",
@@ -122,7 +123,8 @@ $(document).ready(function () {
     }
   }
 
-  function changeLanguage(lang) {    
+  function changeLanguage(lang) {
+    localStorage.setItem("selectedLanguage", lang); // Guardar idioma seleccionado
     $("[data-key]").each(function () {
       const key = $(this).data("key");
       if (translations[lang] && translations[lang][key]) {
@@ -157,9 +159,11 @@ $(document).ready(function () {
 
   function applyInitialLanguage() {
     const languageFromURL = getLanguageFromURL();
-    const defaultLanguage = languageFromURL || "es";
+    const defaultLanguage = languageFromURL || savedLang;
     changeLanguage(["en", "es"].includes(defaultLanguage) ? defaultLanguage : "es");
   }
+
+  applyInitialLanguage();
 
   // Delegar el evento del selector de idioma
   $(document).on("change", "#languageSwitcher", function () {
