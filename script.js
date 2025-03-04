@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  const savedLang = localStorage.getItem("selectedLanguage") || "es";
+  const savedLang = localStorage.getItem("selectedLanguage") || "es";  
   const translations = {
     es: {
       "about-title": "Sobre Nosotros",
@@ -57,6 +57,8 @@ $(document).ready(function () {
         "idrive-description-3": "Gracias a <a href='https://www.idrive.com/p=qualiteasy' target='_blank'>iDrive</a>, las empresas pueden <strong>minimizar la pérdida de datos, garantizar la continuidad del negocio y recuperar archivos en caso de incidentes</strong>.",
         "idrive-video-url": "https://www.youtube.com/embed/enSn-XPjzCc?rel=0&cc_load_policy=0",
       
+        "privacidad-title": "Política de privacidad",
+        "cookies-title": "Política de cookies",
 
     },
     en: {
@@ -111,12 +113,27 @@ $(document).ready(function () {
         "idrive-description": "<strong>iDrive</strong>: Reliable backup and disaster recovery solutions for critical data.",
         "idrive-description-2": "With its cloud storage system, iDrive enables automatic backups and allows access to data from any device, anytime.",
         "idrive-description-3": "Thanks to <a href='https://www.idrive.com/p=qualiteasy' target='_blank'>Idrive</a>iDrive, businesses can <strong>minimize data loss, ensure business continuity, and recover files in case of incidents</strong>.",
-        "idrive-video-url": "https://www.youtube.com/embed/enSn-XPjzCc?rel=0&cc_load_policy=0"
+        "idrive-video-url": "https://www.youtube.com/embed/enSn-XPjzCc?rel=0&cc_load_policy=0",
+        
+        "privacidad-title": "Privacy policy",
+        "cookies-title": "Cookies policy",
+
       
     },
   };
 
   let loadCounter = 0;
+  function updateFooterLinks() {
+    const privacyLink = $("#privacy-policy-link");
+    if (privacyLink.length) {
+        privacyLink.attr("href", savedLang === "en" ? "politica-privacidad-en.html" : "politica-privacidad-es.html");
+    }
+
+    const cookiesLink = $("#cookies-policy-link");
+    if (cookiesLink.length) {
+        cookiesLink.attr("href", savedLang === "en" ? "politica-cookies-en.html" : "politica-cookies-es.html");
+    }
+}
 
   function checkIfAllLoaded() {
     if (loadCounter === 3) {
@@ -126,7 +143,23 @@ $(document).ready(function () {
   }
 
   function changeLanguage(lang) {
-    localStorage.setItem("selectedLanguage", lang); // Guardar idioma seleccionado
+    localStorage.setItem("selectedLanguage", lang); // Guardar idioma seleccionado    
+    const currentURL = window.location.href;
+    let newURL = "";
+
+    if (currentURL.includes("politica-privacidad")) {
+      newURL = lang === "en" ? "politica-privacidad-en.html" : "politica-privacidad-es.html";
+    } else if (currentURL.includes("politica-cookies")) {
+      newURL = lang === "en" ? "politica-cookies-en.html" : "politica-cookies-es.html";
+    }
+
+
+    // Si estamos en una de esas páginas, redirigir en lugar de cambiar textos
+    if (newURL && !currentURL.includes(newURL)) {
+      window.location.href = newURL;
+        return;
+    }
+
     $("[data-key]").each(function () {
       const key = $(this).data("key");
       if (translations[lang] && translations[lang][key]) {
@@ -190,9 +223,10 @@ $(document).ready(function () {
     checkIfAllLoaded();
   });
 
-  $("#footer-container").load("footer.html", function () {
+  $("#footer-container").load("footer.html", function () {    
     loadCounter++;
     checkIfAllLoaded();
+    updateFooterLinks();
   });
 });
 
@@ -221,4 +255,6 @@ function closeFullscreen() {
   setTimeout(() => {
     fullscreenOverlay.style.display = "none";
   }, 300);
+
+  
 }
