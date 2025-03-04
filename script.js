@@ -40,6 +40,7 @@ $(document).ready(function () {
         "passwork-description-2": "Passwork permite a las empresas organizar y gestionar contraseñas en un entorno seguro, facilitando el acceso controlado y la colaboración entre equipos.",
         "passwork-description-3": "Con Passwork, las organizaciones pueden <strong>mejorar la seguridad, aumentar la eficiencia y cumplir con las regulaciones</strong> relacionadas con la gestión de contraseñas.",
         "passwork-video-url": "https://www.youtube.com/embed/PDk5Hg_m_3o?rel=0&cc_load_policy=0",
+        "passwork-image": "img/passwork-features-es.webp",
       
         "edgewatch-description": "<strong>Edgewatch</strong>: Detección de amenazas en tiempo real y defensa cibernética proactiva.",
         "edgewatch-description-2": "Con tecnología avanzada, Edgewatch monitorea continuamente las redes para identificar y neutralizar amenazas antes de que puedan causar daño.",
@@ -95,6 +96,7 @@ $(document).ready(function () {
         "passwork-description-2": "Passwork allows companies to organize and manage passwords in a secure environment, enabling controlled access and team collaboration.",
         "passwork-description-3": "With Passwork, organizations can <strong>enhance security, increase efficiency, and comply with password management regulations</strong>.",
         "passwork-video-url": "https://www.youtube.com/embed/PDk5Hg_m_3o?rel=0&cc_load_policy=0",
+        "passwork-image": "img/passwork-features-en.webp",
       
         "edgewatch-description": "<strong>Edgewatch</strong>: Real-time threat detection and proactive cyber defense.",
         "edgewatch-description-2": "With advanced technology, Edgewatch continuously monitors networks to identify and neutralize threats before they cause damage.",
@@ -132,6 +134,9 @@ $(document).ready(function () {
           $(this).val(translations[lang][key]);
         } else if ($(this).is("iframe")) {
           // Si es un iframe, cambia el src
+          $(this).attr("src", translations[lang][key]);
+        } else if ($(this).is("img")) {
+          // Si es una imagen, cambia el src
           $(this).attr("src", translations[lang][key]);
         } else {
           $(this).html(translations[lang][key]);
