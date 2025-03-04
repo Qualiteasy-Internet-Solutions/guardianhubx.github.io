@@ -23,6 +23,39 @@ $(document).ready(function () {
       "footer-text": "&copy; 2024 GuardianHubX. Todos los derechos reservados.",
       "thanks": "Gracias, hemos recibido vuestro mensaje, nos pondemos en contacto en breve.",
       "goback": "Volver a la página inicial",
+      
+      "faronics-description": "<strong>Faronics Cloud</strong>: De los creadores de Deep Freeze: Soluciones simples para la seguridad de endpoints y la gestión de dispositivos.",
+      "faronics-description-2": "Faronics ofrece soluciones de ciberseguridad y gestión de sistemas diseñadas para proteger y administrar entornos informáticos de múltiples usuarios.  Algunos de los softwares más conocidos son: <strong>Deep Freeze, Deploy, MDM, Power Save, Win Select y el Anti Virus.</strong>",
+      "faronics-description-3": "Los productos de Faronics nos ayudan a <strong>prevenir, detectar y recuperar</strong>, los tres <a href='objetivos-ciberseguirdad.html'>objetivos de ciberseguridad</a>.",
+      "faronics-video-url": "https://www.youtube.com/embed/7OKaXe-Ym9Q?rel=0&cc_load_policy=0",
+      
+      
+        "nordsecurity-description": "<strong>NordSecurity</strong>: Proteja el acceso remoto de su equipo con soluciones VPN avanzadas y gestión de contraseñas.",
+        "nordsecurity-description-2": "NordSecurity ofrece una amplia gama de productos diseñados para proteger la privacidad en línea y garantizar la seguridad de los datos.",
+        "nordsecurity-description-3": "Los productos de NordSecurity nos ayudan a <strong>proteger la privacidad, asegurar los datos y garantizar el acceso seguro</strong>, pilares fundamentales de la ciberseguridad.",
+        "nordsecurity-video-url": "https://www.youtube.com/embed/q9GNO9wwZTI?rel=0&cc_load_policy=0",
+      
+        "passwork-description": "<strong>Passwork</strong>: Gestión segura offline y online de contraseñas para empresas e individuos.",
+        "passwork-description-2": "Passwork permite a las empresas organizar y gestionar contraseñas en un entorno seguro, facilitando el acceso controlado y la colaboración entre equipos.",
+        "passwork-description-3": "Con Passwork, las organizaciones pueden <strong>mejorar la seguridad, aumentar la eficiencia y cumplir con las regulaciones</strong> relacionadas con la gestión de contraseñas.",
+        "passwork-video-url": "https://www.youtube.com/embed/PDk5Hg_m_3o?rel=0&cc_load_policy=0",
+      
+        "edgewatch-description": "<strong>Edgewatch</strong>: Detección de amenazas en tiempo real y defensa cibernética proactiva.",
+        "edgewatch-description-2": "Con tecnología avanzada, Edgewatch monitorea continuamente las redes para identificar y neutralizar amenazas antes de que puedan causar daño.",
+        "edgewatch-description-3": "Los servicios de Edgewatch ayudan a las empresas a <strong>mantener la integridad de sus sistemas, proteger datos sensibles y garantizar la continuidad del negocio</strong>.",
+        "edgewatch-video-url": "https://www.youtube.com/embed/R7RnAkYrVJc?rel=0&cc_load_policy=0",
+      
+        "outkept-description": "<strong>Outkept</strong>: Formación en phishing para empleados con simulaciones realistas y análisis detallados.",
+        "outkept-description-2": "Outkept ayuda a las organizaciones a fortalecer la concienciación sobre ciberseguridad mediante campañas de phishing personalizadas y evaluaciones continuas.",
+        "outkept-description-3": "Con Outkept, las empresas pueden <strong>identificar vulnerabilidades humanas, reducir riesgos y mejorar la preparación ante ataques cibernéticos</strong>.",
+        "outkept-video-url": "https://www.youtube.com/embed/Er6PYUweQr4?rel=0&cc_load_policy=0",
+      
+        "idrive-description": "<strong>iDrive</strong>: Copias de seguridad confiables y soluciones de recuperación ante desastres para datos críticos.",
+        "idrive-description-2": "Con su sistema de almacenamiento en la nube, iDrive permite realizar copias de seguridad automáticas y acceder a los datos desde cualquier dispositivo en cualquier momento.",
+        "idrive-description-3": "Gracias a <a href='https://www.idrive.com/p=qualiteasy' target='_blank'>iDrive</a>, las empresas pueden <strong>minimizar la pérdida de datos, garantizar la continuidad del negocio y recuperar archivos en caso de incidentes</strong>.",
+        "idrive-video-url": "https://www.youtube.com/embed/enSn-XPjzCc?rel=0&cc_load_policy=0",
+      
+
     },
     en: {
       "about-title": "About Us",
@@ -47,6 +80,36 @@ $(document).ready(function () {
       "footer-text": "&copy; 2024 GuardianHubX. All rights reserved.",
       "thanks": "Thanks, we received your message. We will contact you soon.",
       "goback": "Go back to the homepage",
+      "faronics-description": "<strong>Faronics Cloud</strong>: From the creators of Deep Freeze: Simple solutions for endpoint security and device management.",
+      "faronics-description-2": "Faronics offers cybersecurity and system management solutions designed to protect and manage multi-user computing environments. Some of its most well-known software includes: <strong>Deep Freeze, Deploy, MDM, Power Save, Win Select and Anti-Virus.</strong>",
+      "faronics-description-3": "Faronics products help us <strong>prevent, detect, and recover</strong>— the three key objectives of <a href='objetivos-ciberseguirdad.html'>cybersecurity</a>.",
+      "faronics-video-url": "https://www.youtube.com/embed/AR43wDZ5zH8?rel=0&cc_load_policy=0",
+      
+        "nordsecurity-description": "<strong>NordSecurity</strong>: Secure your team's remote access with advanced VPN solutions and password management.",
+        "nordsecurity-description-2": "NordSecurity offers a wide range of products designed to protect online privacy and ensure data security.",
+        "nordsecurity-description-3": "NordSecurity products help us <strong>protect privacy, secure data, and ensure safe access</strong>, key pillars of cybersecurity.",
+        "nordsecurity-video-url": "https://www.youtube.com/embed/NORDSEC_VIDEO_ID?rel=0&cc_load_policy=0",
+      
+        "passwork-description": "<strong>Passwork</strong>: Secure offline and online password management for businesses and individuals.",
+        "passwork-description-2": "Passwork allows companies to organize and manage passwords in a secure environment, enabling controlled access and team collaboration.",
+        "passwork-description-3": "With Passwork, organizations can <strong>enhance security, increase efficiency, and comply with password management regulations</strong>.",
+        "passwork-video-url": "https://www.youtube.com/embed/PDk5Hg_m_3o?rel=0&cc_load_policy=0",
+      
+        "edgewatch-description": "<strong>Edgewatch</strong>: Real-time threat detection and proactive cyber defense.",
+        "edgewatch-description-2": "With advanced technology, Edgewatch continuously monitors networks to identify and neutralize threats before they cause damage.",
+        "edgewatch-description-3": "Edgewatch services help businesses <strong>maintain system integrity, protect sensitive data, and ensure business continuity</strong>.",
+        "edgewatch-video-url": "https://www.youtube.com/embed/R7RnAkYrVJc?rel=0&cc_load_policy=0",
+      
+        "outkept-description": "<strong>Outkept</strong>: Phishing training for employees with realistic simulations and detailed analytics.",
+        "outkept-description-2": "Outkept helps organizations strengthen cybersecurity awareness through personalized phishing campaigns and continuous assessments.",
+        "outkept-description-3": "With Outkept, companies can <strong>identify human vulnerabilities, reduce risks, and improve preparedness against cyberattacks</strong>.",
+        "outkept-video-url": "https://www.youtube.com/embed/Er6PYUweQr4?rel=0&cc_load_policy=0",
+      
+        "idrive-description": "<strong>iDrive</strong>: Reliable backup and disaster recovery solutions for critical data.",
+        "idrive-description-2": "With its cloud storage system, iDrive enables automatic backups and allows access to data from any device, anytime.",
+        "idrive-description-3": "Thanks to <a href='https://www.idrive.com/p=qualiteasy' target='_blank'>Idrive</a>iDrive, businesses can <strong>minimize data loss, ensure business continuity, and recover files in case of incidents</strong>.",
+        "idrive-video-url": "https://www.youtube.com/embed/enSn-XPjzCc?rel=0&cc_load_policy=0"
+      
     },
   };
 
@@ -65,6 +128,9 @@ $(document).ready(function () {
       if (translations[lang] && translations[lang][key]) {
         if ($(this).is("input, textarea")) {
           $(this).val(translations[lang][key]);
+        } else if ($(this).is("iframe")) {
+          // Si es un iframe, cambia el src
+          $(this).attr("src", translations[lang][key]);
         } else {
           $(this).html(translations[lang][key]);
         }
