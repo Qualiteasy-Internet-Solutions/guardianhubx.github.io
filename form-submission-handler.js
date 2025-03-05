@@ -60,12 +60,23 @@
   function handleFormSubmit(event) {
     event.preventDefault();
     var form = event.target;
-
-    // Verificación de reCAPTCHA
-    if (typeof grecaptcha === "undefined" || !grecaptcha.getResponse()) {
-        alert("Por favor, verifica que no eres un robot antes de enviar el formulario.");
-        return false;
+    //Verificación de reCAPTCHA v3
+    if (typeof grecaptcha === "undefined") {
+      alert("Error: Google reCAPTCHA no está disponible. Recarga la página.");
+      return false;
     }
+
+    grecaptcha.execute('6LfRmeoqAAAAAH-Dizpt81ZOBrU5YT-utPXeBUNn', { action: 'submit' }).then(function(token) {
+      if (!token) {
+          alert("Por favor, verifica que no eres un robot antes de enviar el formulario.");
+          return false;
+      }
+      // Insertar el token en un campo oculto del formulario
+      var recaptchaInput = document.createElement("input");
+      recaptchaInput.setAttribute("type", "hidden");
+      recaptchaInput.setAttribute("name", "g-recaptcha-response");
+      recaptchaInput.setAttribute("value", token);
+      form.appendChild(recaptchaInput);
 
     var formData = getFormData(form);
     if (formData.honeypot) return false;
@@ -87,6 +98,10 @@
     }).join('&');
     
     xhr.send(encoded);
+  }).catch(function(error) {
+    alert("Error con reCAPTCHA: " + error);
+    return false;
+  });
   }
 
   function loaded() {

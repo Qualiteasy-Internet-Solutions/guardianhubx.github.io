@@ -137,16 +137,16 @@ $(document).ready(function () {
 
   function loadFormHandlerScript() {
     var recaptchaScript = document.createElement("script");
-    recaptchaScript.src = "https://www.google.com/recaptcha/api.js";
+    recaptchaScript.src = "https://www.google.com/recaptcha/api.js?render=6LfRmeoqAAAAAH-Dizpt81ZOBrU5YT-utPXeBUNn";
     recaptchaScript.async = true;
     recaptchaScript.defer = true;
-    
+
     recaptchaScript.onload = function () {
-        console.log("✅ reCAPTCHA API cargada correctamente.");
+        console.log("✅ reCAPTCHA v3 API cargada correctamente.");
     };
 
     recaptchaScript.onerror = function () {
-        console.error("⛔ Error al cargar reCAPTCHA API.");
+        console.error("⛔ Error al cargar reCAPTCHA v3 API.");
     };
 
     document.body.appendChild(recaptchaScript);
