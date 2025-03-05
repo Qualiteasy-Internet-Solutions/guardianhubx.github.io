@@ -51,72 +51,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="contact mb-5">
-      <h2 class="text-center mb-4" data-key="contact-title">Contact Us</h2>
-      <div class="row align-items-start">
-        <div class="col-md-6 text-center">
-          <img src="img/cybersecurity-illustration.webp" alt="Contact Illustration" class="img-fluid">
-        </div>
-        <div class="col-md-6">
-          <div class="bg-light p-3 mb-4 rounded border">
-            <h4 class="text-primary" data-key="contact-get-in-touch">Get in Touch</h4>
-            <p data-key="contact-email"><strong>Email:</strong> <a href="mailto:info@guardianhubx.com">info@guardianhubx.com</a></p>
-            <p data-key="contact-phone"><strong>Phone:</strong> <a href="tel:+34934153115">+34 93 415 31 15</a></p>
-          </div>
-          <form class="gform" id="contactForm" action="https://script.google.com/macros/s/AKfycbyJO3Rs4loBRevIsltI1Fcg48BH_WAtGm6Rezhea-0g_FutfYbM0MwOQfEkDI0XXGF5/exec" method="POST" />
-            <div class="mb-3">
-              <label for="name" class="form-label" data-key="form-name">Name:</label>
-              <input type="text" id="name" name="name" class="form-control" required>
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label" data-key="form-email">Email:</label>
-              <input type="email" id="email" name="email" class="form-control" required>
-            </div>
-            <div class="mb-3">
-              <label for="message" class="form-label" data-key="form-message">Message:</label>
-              <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
-            </div>
-            <div class="mb-3">
-              <label class="form-label" data-key="form-solutions">Select the solutions you're interested in <span class="text-danger">*</span>:</label>
-              <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="faronics" name="solutions" value="Nordsecurity">
-                <label class="form-check-label" for="faronics">Nordsecurity</label>
-              </div>
-              <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="nordlayer" name="solutions" value="NordLayer">
-                <label class="form-check-label" for="nordlayer">NordSecurity</label>
-              </div>
-              <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="nordpass" name="solutions" value="NordPass">
-                <label class="form-check-label" for="nordpass">NordPass</label>
-              </div>
-              <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="passwork" name="solutions" value="Passwork">
-                <label class="form-check-label" for="passwork">Passwork</label>
-              </div>
-              <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="edgewatch" name="solutions" value="Edgewatch">
-                <label class="form-check-label" for="edgewatch">Edgewatch</label>
-              </div>
-              <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="outkept" name="solutions" value="Outkept">
-                <label class="form-check-label" for="outkept">Outkept</label>
-              </div>
-              <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="iDrive" name="solutions" value="iDrive">
-                <label class="form-check-label" for="iDrive">iDrive</label>
-              </div>
-              <div id="checkboxError" class="text-danger d-none" data-key="form-solutions-error">Please select at least one solution.</div>
-            </div>
-            <button type="submit" class="btn btn-primary w-100" data-key="form-submit">Submit</button>
-            <input type="hidden" name="_next" value="https://guardianhubx.com/thanks.html">
-            <input type="hidden" name="_subject" value="GuardianHubX submission!">
-            <input type="hidden" name="_autoresponse" data-key="thanks" value="Thanks, we recived your message, we will contact you soon.">
-            <input type="hidden" name="_template" value="table">
-          </form>
-        </div>
-      </div>
-    </section>
+    <div id="form-container"></div>
   </main>
 
   <div id="footer-container"></div>
