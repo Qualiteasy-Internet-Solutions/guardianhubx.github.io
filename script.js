@@ -20,6 +20,7 @@ $(document).ready(function () {
       "form-message": "Mensaje:",
       "form-solutions": "Selecciona las soluciones que te interesan <span class='text-danger'>*</span>:",
       "form-solutions-error": "Por favor, selecciona al menos una solución.",
+      "form-privacy-consent": "He leído y acepto la <a href='politica-privacidad-es.html' id='privacy-policy-link' target='_blank'>Política de Privacidad</a>.",
       "form-submit": "Enviar",
       "footer-text": "&copy; 2024 GuardianHubX. Todos los derechos reservados.",
       "thanks": "Gracias, hemos recibido vuestro mensaje, nos pondemos en contacto en breve.",
@@ -80,6 +81,7 @@ $(document).ready(function () {
       "form-message": "Message:",
       "form-solutions": "Select the solutions you're interested in <span class='text-danger'>*</span>:",
       "form-solutions-error": "Please select at least one solution.",
+      "form-privacy-consent": "I have read and accept the <a href='politica-privacidad-en.html' id='privacy-policy-link' target='_blank'>Privacy Policy</a>.",
       "form-submit": "Submit",
       "footer-text": "&copy; 2024 GuardianHubX. All rights reserved.",
       "thanks": "Thanks, we received your message. We will contact you soon.",
@@ -211,6 +213,7 @@ $(document).ready(function () {
         }
       }
     });
+    $("#privacy-policy-link").attr("href", lang === "en" ? "politica-privacidad-en.html" : "politica-privacidad-es.html");
     $("html").attr("lang", lang);
     $("#languageSwitcher").val(lang);
     $('input[name=_next]').val(`https://guardianhubx.com/thanks.html?idioma=${lang}`);
