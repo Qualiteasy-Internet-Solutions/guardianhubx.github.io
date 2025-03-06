@@ -196,7 +196,23 @@ $(document).ready(function () {
     if (cookiesLink.length) {
         cookiesLink.attr("href", savedLang === "en" ? "politica-cookies-en.html" : "politica-cookies-es.html");
     }
-}
+  }
+
+  function updatePDFLinks() {
+    const lang = localStorage.getItem("selectedLanguage") || "es"; // Detectar idioma
+
+    $(".pdf-download").each(function () {
+      const pdfBaseName = $(this).data("pdfname"); // Obtener el nombre base del PDF
+      if (pdfBaseName) {
+        const pdfPath = `docs/${pdfBaseName}-${lang}.pdf`; // Construir la URL dinámica
+        $(this).attr("href", pdfPath);
+      }
+    });
+  }
+
+  updatePDFLinks(); // Aplicar en la carga
+
+
 
   function loadFormHandlerScript() {
     var recaptchaScript = document.createElement("script");
@@ -284,6 +300,7 @@ $(document).ready(function () {
     $("#languageSwitcher").val(lang);
     $('input[name=_next]').val(`https://guardianhubx.com/thanks.html?idioma=${lang}`);
     updateGoBackLink(lang);
+    updatePDFLinks();
   }
 
   function updateGoBackLink(lang) {
