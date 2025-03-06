@@ -173,11 +173,16 @@ $(document).ready(function () {
   }
 
   function checkIfAllLoaded() {
-    if (loadCounter === 4) {
-      $("body").removeClass("loading").addClass("loaded");
-      applyInitialLanguage();
+    const isPrivacyOrCookiesPage = window.location.href.includes("politica-privacidad") || window.location.href.includes("politica-cookies") || window.location.href.includes("thanks") ;
+
+    // Contamos el numero de cargas esperadas
+    const requiredLoads = isPrivacyOrCookiesPage ? 3 : 4;
+
+    if (loadCounter >= requiredLoads) {
+        $("body").removeClass("loading").addClass("loaded");
+        applyInitialLanguage();
     }
-  }
+}
 
   function changeLanguage(lang) {
     localStorage.setItem("selectedLanguage", lang); // Guardar idioma seleccionado    
