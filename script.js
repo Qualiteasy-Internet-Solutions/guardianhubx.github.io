@@ -86,6 +86,8 @@ $(document).ready(function () {
       "download-datasheet": "Descargar Datasheet",
       "download-nordlayer": "Descargar Nordlayer Brochure",
       "download-nordpass": "Descargar Nordpass Brochure",
+      "download-deploy": "Descargar Deploy Brochure",
+      "download-deepfreeze": "Descargar Deep Freeze Cloud Brochure",
 
       "privacidad-title": "Política de privacidad",
       "cookies-title": "Política de cookies",
@@ -175,6 +177,8 @@ $(document).ready(function () {
       "download-datasheet": "Download Datasheet",
       "download-nordlayer": "Download Nordlayer Brochure",
       "download-nordpass": "Download Nordpass Brochure",
+      "download-deploy": "Download Deploy Brochure",
+      "download-deepfreeze": "Download Deep Freeze Cloud Brochure",
 
       "privacidad-title": "Privacy policy",
       "cookies-title": "Cookies policy",      
