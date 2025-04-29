@@ -65,7 +65,7 @@ jobs:
           hugo --gc --minify --destination ../public/blog
       
       # 5.b) Debug: lista la salida del build para ver que index.html y assets existen
-      - name: Debug: list public/blog
+      - name: Debug list public/blog
         run: |
           echo "===== public/blog ====="
           ls -R public/blog
