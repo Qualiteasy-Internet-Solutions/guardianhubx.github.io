@@ -1,0 +1,54 @@
+name: Deploy Hugo site + Blog
+
+on:
+  push:
+    branches: [ main ]
+
+permissions:
+  contents: write
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1) Checkout de la web principal
+      - name: Checkout main site
+        uses: actions/checkout@v3
+        with:
+          submodules: false
+
+      # 2) Checkout del blog siempre en main
+      - name: Checkout blog repo
+        uses: actions/checkout@v3
+        with:
+          repository: Qualiteasy-Internet-Solutions/guardianhubx-blog
+          path: blog-src
+          ref: main
+
+      # 3) Instalar Hugo
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.146.0'
+          extended: true
+
+      # 4) Build web principal
+      - name: Build main site
+        run: hugo --gc --minify
+
+      # 5) Build blog
+      - name: Build blog
+        run: |
+          cd blog-src
+          hugo --gc --minify --destination ../public/blog
+
+      # 6) Deploy
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: public
+          user_name: "github-actions[bot]"
+          user_email: "github-actions[bot]@users.noreply.github.com"
