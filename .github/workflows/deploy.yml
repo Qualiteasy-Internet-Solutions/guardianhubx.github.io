@@ -31,11 +31,11 @@ jobs:
           fetch-depth: 0   
 
      # 2.b) Debug: lista el contenido de themes para asegurarnos de que PaperMod está ahí
-    - name: Debug: list blog themes
-      run: |
-        echo "===== blog-src/themes ====="
-        ls -R blog-src/themes
-        echo "==========================="
+      - name: Debug list blog themes
+        run: |
+          echo "===== blog-src/themes ====="
+          ls -R blog-src/themes
+          echo "==========================="
 
       # 3) Instalar Hugo (solo para el blog)
       - name: Setup Hugo
