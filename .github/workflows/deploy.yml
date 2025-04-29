@@ -26,7 +26,16 @@ jobs:
           repository: Qualiteasy-Internet-Solutions/guardianhubx-blog
           path: blog-src
           ref: main
-          submodules: true
+          token: ${{ secrets.GITHUB_TOKEN }}
+          submodules: recursive
+          fetch-depth: 0   
+
+     # 2.b) Debug: lista el contenido de themes para asegurarnos de que PaperMod está ahí
+    - name: Debug: list blog themes
+      run: |
+        echo "===== blog-src/themes ====="
+        ls -R blog-src/themes
+        echo "==========================="
 
       # 3) Instalar Hugo (solo para el blog)
       - name: Setup Hugo
@@ -54,6 +63,13 @@ jobs:
         run: |
           cd blog-src
           hugo --gc --minify --destination ../public/blog
+      
+      # 5.b) Debug: lista la salida del build para ver que index.html y assets existen
+      - name: Debug: list public/blog
+        run: |
+          echo "===== public/blog ====="
+          ls -R public/blog
+          echo "======================="
 
       # 6) Deploy a GitHub Pages
       - name: Deploy to GitHub Pages
