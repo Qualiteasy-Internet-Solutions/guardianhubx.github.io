@@ -2,8 +2,10 @@
 name: Deploy site + blog
 
 on:
+  # Trigger manual o via repository_dispatch desde el repo del blog
   repository_dispatch:
-    types: [blog-updated]
+    types: [ blog-updated ]
+  # También rebuild automático si haces push directamente sobre main
   push:
     branches: [ main ]
 
@@ -21,7 +23,7 @@ jobs:
         with:
           submodules: false
 
-      # 2) Checkout del blog Hugo
+      # 2) Checkout del blog Hugo desde otro repo
       - name: Checkout blog repo
         uses: actions/checkout@v3
         with:
@@ -30,9 +32,9 @@ jobs:
           ref: main
           token: ${{ secrets.GITHUB_TOKEN }}
           submodules: recursive
-          fetch-depth: 0   
+          fetch-depth: 0
 
-     # 2.b) Debug: lista el contenido de themes para asegurarnos de que PaperMod está ahí
+      # 2.b) Debug: comprobar que el tema PaperMod existe
       - name: Debug list blog themes
         run: |
           echo "===== blog-src/themes ====="
@@ -46,12 +48,11 @@ jobs:
           hugo-version: '0.146.0'
           extended: true
 
-      # 4) Preparar public/ copiando TODO lo de la web principal
+      # 4) Preparar directorio public/ copiando la web principal
       - name: Prepare public directory
         run: |
           rm -rf public
           mkdir public
-          # Copia todo excepto .git, .github y blog-src
           rsync -av \
             --exclude='.git' \
             --exclude='.github' \
@@ -60,20 +61,20 @@ jobs:
           # Evita Jekyll en GH Pages
           touch public/.nojekyll
 
-      # 5) Build del blog Hugo en public/blog
+      # 5) Compilar el blog Hugo en public/blog
       - name: Build blog
         run: |
           cd blog-src
           hugo --gc --minify --destination ../public/blog
-      
-      # 5.b) Debug: lista la salida del build para ver que index.html y assets existen
+
+      # 5.b) Debug: comprobar salida del build
       - name: Debug list public/blog
         run: |
           echo "===== public/blog ====="
           ls -R public/blog
           echo "======================="
 
-      # 6) Deploy a GitHub Pages
+      # 6) Publicar todo en la rama gh-pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
