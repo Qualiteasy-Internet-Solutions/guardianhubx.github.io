@@ -2,6 +2,8 @@
 name: Deploy site + blog
 
 on:
+  repository_dispatch:
+    types: [blog-updated]
   push:
     branches: [ main ]
 
