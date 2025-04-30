@@ -43,7 +43,7 @@ $(document).ready(function () {
       "passwork-description": "<strong>Passwork</strong>: Gestión segura offline y online de contraseñas para empresas e individuos.",
       "passwork-description-2": "Passwork permite a las empresas organizar y gestionar contraseñas en un entorno seguro, facilitando el acceso controlado y la colaboración entre equipos.",
       "passwork-description-3": "Con Passwork, las organizaciones pueden <strong>mejorar la seguridad, aumentar la eficiencia y cumplir con las regulaciones</strong> relacionadas con la gestión de contraseñas.",
-      "passwork-video-url": "https://www.youtube.com/embed/PDk5Hg_m_3o?rel=0&cc_load_policy=0",
+      "passwork-video-url": "https://www.youtube.com/embed/459a86W3o0U?rel=0&cc_load_policy=0",
       "passwork-image": "img/passwork-features-es.webp",
     
       "edgewatch-description": "<strong>Edgewatch</strong>: Detección de amenazas en tiempo real y defensa cibernética proactiva.",
