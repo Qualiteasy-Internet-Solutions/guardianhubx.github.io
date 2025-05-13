@@ -31,7 +31,7 @@ $(document).ready(function () {
       "goback-test": "¿Quieres saber más sobre nuestras soluciones de ciberseguridad? Explora nuestros servicios",
       
       "faronics-description": "<strong>Faronics Cloud</strong>: De los creadores de Deep Freeze: Soluciones simples para la seguridad de endpoints y la gestión de dispositivos.",
-      "faronics-description-2": "Faronics ofrece soluciones de ciberseguridad y gestión de sistemas diseñadas para proteger y administrar entornos informáticos de múltiples usuarios.  Algunos de los softwares más conocidos son: <strong>Deep Freeze, Deploy, MDM, Power Save, Win Select y el Anti Virus.</strong>",
+      "faronics-description-2": "Faronics ofrece soluciones de ciberseguridad y gestión de sistemas diseñadas para proteger y administrar entornos informáticos de múltiples usuarios. Algunos de los softwares más conocidos son: <strong><a href='https://faronicscloud.com/es/pages/congelar?dl=BRUYN' target='_blank'>Deep Freeze</a>, <a href='https://faronicscloud.com/es/pages/actualizador-de-software?dl=BRUYN' target='_blank'>Deploy</a>, MDM, Power Save, Win Select y el Anti Virus</strong>",
       "faronics-description-3": "Los productos de Faronics nos ayudan a <strong>prevenir, detectar y recuperar</strong>, los tres <a href='objetivos-ciberseguridad.html'>objetivos de ciberseguridad</a>.",
       "faronics-video-url": "https://www.youtube.com/embed/7OKaXe-Ym9Q?rel=0&cc_load_policy=0",
  
@@ -125,7 +125,7 @@ $(document).ready(function () {
       "thanks-test-info": "If you don't see it, please check your spam folder or contact us at info@guardianhubx.com",
       "goback-test": "Want to learn more about our cybersecurity solutions? Explore our services",
       "faronics-description": "<strong>Faronics Cloud</strong>: From the creators of Deep Freeze: Simple solutions for endpoint security and device management.",
-      "faronics-description-2": "Faronics offers cybersecurity and system management solutions designed to protect and manage multi-user computing environments. Some of its most well-known software includes: <strong>Deep Freeze, Deploy, MDM, Power Save, Win Select and Anti-Virus.</strong>",
+      "faronics-description-2": "Faronics offers cybersecurity and system management solutions designed to protect and manage multi-user computing environments. Some of its most well-known software includes: <strong><a href='https://faronicscloud.com/pages/deep-freeze-system-restore/?dl=BRUYN' target='_blank'>Deep Freeze</a>, <a href='https://faronicscloud.com/pages/software-updater-patch-management/?dl=BRUYN' target='_blank'>Deploy</a>, MDM, Power Save, Win Select and Anti-Virus.</strong>",
       "faronics-description-3": "Faronics products help us <strong>prevent, detect, and recover</strong>— the three key objectives of <a href='objetivos-ciberseguridad.html'>cybersecurity</a>.",
       "faronics-video-url": "https://www.youtube.com/embed/AR43wDZ5zH8?rel=0&cc_load_policy=0",
       
