@@ -148,6 +148,8 @@ h1, h2, h5 {
 .step-connector.bg-4 { background-color: #1a2634; padding:0px}
 
 
+.green-pastel {color:#a4f6e1}
+
 @media (max-width: 768px) {
   .steps-container {
     flex-direction: column;
