@@ -102,10 +102,10 @@ h1, h2, h5 {
   color: #fff;
 }
 
-.bg-1 { background-color: #d8dee8; padding-right: 20px;}
-.bg-2 { background-color: #b7f4e2; padding-right: 20px; }
-.bg-3 { background-color: #a5c4f7; padding-right: 20px;}
-.bg-4 { background-color: #2d3542; color: white; padding-right: 30px; }
+.bg-1 { background-color: #96b2ce; padding-right: 20px;}
+.bg-2 { background-color: #a4f6e1; padding-right: 20px; }
+.bg-3 { background-color: #548ce9; padding-right: 20px;}
+.bg-4 { background-color: #1a2634; color: white; padding-right: 30px; }
 
 @media (max-width: 768px) {
   .steps-container {
