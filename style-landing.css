@@ -128,4 +128,7 @@ h1, h2, h5 {
   .step-flecha:last-child {
     margin-bottom: 0.5rem;
   }
+  .btn-spacer-mobile {
+    margin-bottom: 2rem; /* o más si lo necesitas */
+  }
 }
