@@ -60,41 +60,28 @@ h1, h2, h5 {
 .step-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: center;
   margin: 0 10px;
 }
 
-.step-label {
-  margin-top: 0.5rem;
-  font-weight: bold;
-  font-size: 0.8rem;  
-  max-width: 200px;
-  line-height: 1.2;
-  padding-left: 10px;
-}
-
 .step-flecha {
-  position: relative;
-  min-width: 200px;
-  height: 120px;
+  width: 200px;
+  height: 100px;
   clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%);
-  margin-right: 20px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1rem 0.5rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  flex-shrink: 0;
+  position: relative;
+  padding: 0;
+  margin: 0;
+    margin-bottom: 0;
+
 }
-.step-flecha:first-child {
-  margin-left: 10px;
-}
-.step-flecha:last-child {
-  margin-right: 10px;
-}
-.icon-circle {   
-  align-items: center;
+
+.icon-circle {  
+  justify-content: center;
+    padding: 0.5rem; /* Reduce si hace falta */
+  margin: 0;
 }
 
 .icon-circle i {
@@ -102,10 +89,64 @@ h1, h2, h5 {
   color: #fff;
 }
 
+/* Línea vertical delgada y centrada visualmente */
+.step-connector {
+  position: relative;
+  width: 4px;
+  height: 32px;
+  margin: 0.4rem auto;
+  background-color: inherit;
+  border-radius: 2px;
+  transform: translateX(-8px);
+
+}
+
+/* La bolita como pseudoelemento */
+.step-connector::after {
+  content: "";
+  position: absolute;
+  bottom: -10px; /* coloca la bolita justo debajo */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 15px;
+  height: 15px;
+  background-color: inherit;
+  border-radius: 50%;
+  margin-bottom:6px;
+}
+
+.step-line {
+  width: 1px;
+  height: 20px;
+  margin: 0 auto;
+}
+
+.step-label {
+  font-weight: bold;
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 0.3rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left:25px;
+  color: white;
+  transform: translateX(-6px);
+
+}
+
 .bg-1 { background-color: #96b2ce; padding-right: 20px;}
-.bg-2 { background-color: #a4f6e1; padding-right: 20px; }
+.bg-2 { background-color: #a4f6e1; padding-right: 20px;}
 .bg-3 { background-color: #548ce9; padding-right: 20px;}
 .bg-4 { background-color: #1a2634; color: white; padding-right: 30px; }
+
+.step-connector.bg-1, .step-dot.bg-1 { background-color: #96b2ce; padding:0px }
+.step-connector.bg-2 { background-color: #a4f6e1; padding:0px}
+.step-connector.bg-3 { background-color: #548ce9; padding:0px}
+.step-connector.bg-4 { background-color: #1a2634; padding:0px}
+
 
 @media (max-width: 768px) {
   .steps-container {
@@ -116,9 +157,10 @@ h1, h2, h5 {
 
   .step-flecha {
     margin: 0 0 1.5rem 0;
-    clip-path: polygon(0 0, 95% 0, 100% 50%, 95% 100%, 0 100%);
+    clip-path: polygon(0 0, 80% 0, 100% 50%, 80% 100%, 0 100%);
     width: 90%;
     max-width: 300px;
+   
   }
 
   .step-flecha:first-child {
@@ -130,5 +172,16 @@ h1, h2, h5 {
   }
   .btn-spacer-mobile {
     margin-bottom: 2rem; /* o más si lo necesitas */
+  }
+  
+  .step-wrapper {
+    gap: 0;
+  }
+
+  .step-connector {
+    margin-top: -20px;
+  }
+  .first-step-label {
+    margin-bottom: 1.5rem; /* o más si necesitas */
   }
 }
