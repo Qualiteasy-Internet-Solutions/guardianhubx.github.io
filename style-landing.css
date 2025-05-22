@@ -1,0 +1,50 @@
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #ffffff;
+    color: #1a1a1a;
+}
+
+h1, h2, h5 {
+    color: #212529;
+}
+
+.btn-primary {
+    background-color: #3978f3;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-weight: bold;
+    border-radius: 50px;
+}
+
+.btn-primary:hover {
+    background-color: #265edc;
+}
+
+.cta-btn {
+    font-size: 1.2rem;
+}
+
+.step-box {
+    background-color: #f8f9fa;
+}
+
+.step-icon {
+    color: #3978f3;
+}
+
+.arrow-soft-green {
+    color: #a3d9a5;
+    font-size: 1.1em;
+}
+
+.highlight-circle {
+    display: inline-block;
+    border: 2px solid #3978f3; /* color del círculo */
+    border-radius: 50%;
+    padding: 0.2em 0.5em;
+    font-weight: bold;
+    color: #3978f3;
+    line-height: 1;
+    background-color: rgba(57, 120, 243, 0.1);
+}
