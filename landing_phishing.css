@@ -1,0 +1,479 @@
+/* ==============================================
+   LANDING PHISHING MEJORADA - CSS INDEPENDIENTE
+   ============================================== */
+
+/* Variables CSS para esta landing específica */
+:root {
+    --landing-primary-color: #3978f3;
+    --landing-primary-dark: #265edc;
+    --landing-secondary-color: #a4f6e1;
+    --landing-accent-color: #ff6b6b;
+    --landing-text-dark: #1a1a1a;
+    --landing-text-muted: #6c757d;
+    --landing-bg-light: #f8f9fa;
+    --landing-gradient-primary: linear-gradient(135deg, #3978f3 0%, #6c5ce7 100%);
+    --landing-gradient-secondary: linear-gradient(135deg, #a4f6e1 0%, #7bed9f 100%);
+    --landing-shadow-soft: 0 10px 30px rgba(57, 120, 243, 0.1);
+    --landing-shadow-hover: 0 20px 40px rgba(57, 120, 243, 0.2);
+}
+
+/* Reset específico para evitar conflictos */
+.landing-hero-section *,
+.landing-stats-highlight *,
+.landing-section *,
+.landing-cta-section * {
+    box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Body override solo para esta página */
+body {
+    font-family: 'DM Sans', 'Helvetica Neue', sans-serif !important;
+    background: linear-gradient(180deg, #ffffff 0%, #f8f9ff 100%) !important;
+    color: var(--landing-text-dark) !important;
+    line-height: 1.6 !important;
+    overflow-x: hidden !important;
+}
+
+/* Header mejorado con prefijo */
+.landing-navbar {
+    background: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(57, 120, 243, 0.1);
+    transition: all 0.3s ease;
+    padding: 1rem 0;
+}
+
+.landing-navbar.landing-scrolled {
+    box-shadow: var(--landing-shadow-soft);
+}
+
+.landing-navbar .logo-petit {
+    max-width: 180px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.landing-navbar .logo-petit:hover {
+    transform: scale(1.05);
+}
+
+/* Hero Section */
+.landing-hero-section {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding: 8rem 0 4rem 0;
+}
+
+.landing-hero-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 100%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(57, 120, 243, 0.05) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.landing-hero-title {
+    font-size: 3.5rem !important;
+    font-weight: 800 !important;
+    line-height: 1.2 !important;
+    margin-bottom: 2rem !important;
+    background: var(--landing-gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.landing-text-primary {
+    color: var(--landing-primary-color) !important;
+}
+
+.landing-hero-subtitle {
+    font-size: 1.3rem !important;
+    color: var(--landing-text-muted) !important;
+    margin-bottom: 1rem !important;
+    font-weight: 400 !important;
+}
+
+.landing-hero-disclaimer {
+    font-size: 0.9rem !important;
+    color: var(--landing-text-muted) !important;
+    font-style: italic !important;
+    margin-bottom: 2.5rem !important;
+}
+
+.landing-hero-img-wrapper {
+    position: relative;
+    z-index: 2;
+}
+
+.landing-hero-img-custom {
+    max-width: 100% !important;
+    height: auto !important;
+    filter: drop-shadow(0 20px 40px rgba(57, 120, 243, 0.15));
+    animation: landing-float 6s ease-in-out infinite;
+}
+
+@keyframes landing-float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+}
+
+/* Botones mejorados */
+.landing-btn {
+    border: none;
+    font-weight: 600;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.landing-btn-primary {
+    background: var(--landing-gradient-primary) !important;
+    color: white !important;
+    padding: 1rem 2.5rem !important;
+    box-shadow: var(--landing-shadow-soft);
+}
+
+.landing-btn-primary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: left 0.5s ease;
+}
+
+.landing-btn-primary:hover::before {
+    left: 100%;
+}
+
+.landing-btn-primary:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: var(--landing-shadow-hover) !important;
+    color: white !important;
+    text-decoration: none !important;
+}
+
+.landing-arrow-soft-green {
+    color: var(--landing-secondary-color) !important;
+    margin-left: 0.5rem !important;
+    transition: transform 0.3s ease !important;
+}
+
+.landing-btn-primary:hover .landing-arrow-soft-green {
+    transform: translateX(5px);
+}
+
+/* Secciones mejoradas */
+.landing-section {
+    padding: 6rem 0 !important;
+    position: relative;
+}
+
+.landing-section-alt {
+    background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 100%) !important;
+}
+
+.landing-section-title {
+    font-size: 2.8rem !important;
+    font-weight: 700 !important;
+    text-align: center !important;
+    margin-bottom: 3rem !important;
+    color: var(--landing-text-dark) !important;
+}
+
+.landing-section-subtitle {
+    font-size: 1.2rem !important;
+    color: var(--landing-text-muted) !important;
+    text-align: center !important;
+    max-width: 600px !important;
+    margin: 0 auto 4rem auto !important;
+}
+
+.landing-text-muted {
+    color: var(--landing-text-muted) !important;
+    font-size: 1.1rem !important;
+}
+
+/* Stats destacadas */
+.landing-stats-highlight {
+    background: var(--landing-gradient-primary) !important;
+    color: white !important;
+    padding: 4rem 0 !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.landing-stats-highlight::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="75" cy="75" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="50" cy="10" r="0.5" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    opacity: 0.3;
+}
+
+.landing-stat-number {
+    font-size: 4rem !important;
+    font-weight: 800 !important;
+    color: var(--landing-secondary-color) !important;
+    text-shadow: 0 0 20px rgba(164, 246, 225, 0.5) !important;
+    margin-bottom: 1rem !important;
+}
+
+.landing-stat-text {
+    font-size: 1.4rem !important;
+    font-weight: 500 !important;
+    color: white !important;
+}
+
+.landing-training-img {
+    max-height: 400px !important;
+}
+
+/* Tarjetas de beneficios */
+.landing-benefit-card {
+    background: white !important;
+    border-radius: 20px !important;
+    padding: 2.5rem !important;
+    height: 100% !important;
+    transition: all 0.4s ease !important;
+    border: 1px solid rgba(57, 120, 243, 0.1) !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.landing-benefit-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--landing-gradient-primary);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.landing-benefit-card:hover::before {
+    transform: scaleX(1);
+}
+
+.landing-benefit-card:hover {
+    transform: translateY(-10px) !important;
+    box-shadow: var(--landing-shadow-hover) !important;
+    border-color: var(--landing-primary-color) !important;
+}
+
+.landing-benefit-icon {
+    width: 60px !important;
+    height: 60px !important;
+    background: var(--landing-gradient-primary) !important;
+    border-radius: 15px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-bottom: 1.5rem !important;
+    color: white !important;
+    font-size: 1.5rem !important;
+}
+
+.landing-benefit-title {
+    font-size: 1.3rem !important;
+    font-weight: 700 !important;
+    color: var(--landing-primary-color) !important;
+    margin-bottom: 1rem !important;
+}
+
+.landing-benefit-text {
+    color: var(--landing-text-muted) !important;
+    line-height: 1.6 !important;
+}
+
+/* CTA Section */
+.landing-cta-section {
+    background: var(--landing-gradient-primary) !important;
+    color: white !important;
+    padding: 5rem 0 !important;
+    text-align: center !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.landing-cta-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+    animation: landing-rotate 20s linear infinite;
+}
+
+@keyframes landing-rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.landing-cta-title {
+    font-size: 3rem !important;
+    font-weight: 700 !important;
+    margin-bottom: 1.5rem !important;
+    position: relative !important;
+    z-index: 2 !important;
+    color: white !important;
+}
+
+.landing-cta-subtitle {
+    font-size: 1.3rem !important;
+    margin-bottom: 2.5rem !important;
+    opacity: 0.9 !important;
+    position: relative !important;
+    z-index: 2 !important;
+    color: white !important;
+}
+
+.landing-btn-white {
+    background: white !important;
+    color: var(--landing-primary-color) !important;
+    border: none !important;
+    padding: 1rem 2.5rem !important;
+    font-weight: 600 !important;
+    border-radius: 50px !important;
+    font-size: 1.1rem !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+    position: relative !important;
+    z-index: 2 !important;
+    text-decoration: none !important;
+}
+
+.landing-btn-white:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2) !important;
+    color: var(--landing-primary-color) !important;
+    text-decoration: none !important;
+}
+
+/* Scroll animations */
+.landing-fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.landing-fade-in.landing-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.landing-slide-in-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 0.6s ease;
+}
+
+.landing-slide-in-left.landing-visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.landing-slide-in-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 0.6s ease;
+}
+
+.landing-slide-in-right.landing-visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .landing-hero-title {
+        font-size: 2.5rem !important;
+    }
+
+    .landing-hero-subtitle {
+        font-size: 1.1rem !important;
+    }
+
+    .landing-section {
+        padding: 4rem 0 !important;
+    }
+
+    .landing-section-title {
+        font-size: 2.2rem !important;
+    }
+
+    .landing-stat-number {
+        font-size: 3rem !important;
+    }
+
+    .landing-cta-title {
+        font-size: 2.2rem !important;
+    }
+
+    .landing-benefit-card {
+        padding: 2rem !important;
+        margin-bottom: 2rem !important;
+    }
+
+    .landing-training-img {
+        max-height: 300px !important;
+        margin-top: 2rem !important;
+    }
+
+    .landing-hero-section {
+        padding: 6rem 0 2rem 0 !important;
+    }
+
+    .landing-btn-primary,
+    .landing-btn-white {
+        padding: 0.8rem 2rem !important;
+        font-size: 1rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+  /* Desactiva la animación float por completo */
+  .landing-hero-img-custom {
+    animation: none !important;
+    transform: none !important;
+    margin-top: 1rem !important;
+  }
+
+  /* Asegura que no haya offsets raros */
+  .landing-hero-section {
+    padding-top: 10rem !important;  /* ajusta el espacio superior si lo necesitas */
+    padding-bottom: 2rem !important;
+  }
+
+  .landing-contact-section .row > .col-12 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+}
