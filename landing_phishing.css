@@ -45,6 +45,7 @@ body {
     border-bottom: 1px solid rgba(57, 120, 243, 0.1);
     transition: all 0.3s ease;
     padding: 1rem 0;
+    z-index: 99999 !important;
 }
 
 .landing-navbar.landing-scrolled {
@@ -391,24 +392,24 @@ body {
 .landing-slide-in-left {
     opacity: 0;
     transform: translateX(-50px);
-    transition: all 0.6s ease;
-}
-
-.landing-slide-in-left.landing-visible {
-    opacity: 1;
-    transform: translateX(0);
+    transition: opacity 0.6s ease, transform 0.6s ease; /* Es buena práctica ser explícito */
+    will-change: transform, opacity; /* <-- ¡AQUÍ LA MAGIA! */
 }
 
 .landing-slide-in-right {
     opacity: 0;
     transform: translateX(50px);
-    transition: all 0.6s ease;
+    transition: opacity 0.6s ease, transform 0.6s ease; /* Es buena práctica ser explícito */
+    will-change: transform, opacity; /* <-- ¡AQUÍ LA MAGIA! */
 }
 
+/* Cuando se hacen visibles */
+.landing-slide-in-left.landing-visible,
 .landing-slide-in-right.landing-visible {
     opacity: 1;
     transform: translateX(0);
 }
+
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -455,6 +456,13 @@ body {
         padding: 0.8rem 2rem !important;
         font-size: 1rem !important;
     }
+
+    .landing-slide-in-left,
+    .landing-slide-in-right {
+        transition: none !important;
+        transform: none !important;
+    }
+
 }
 
 
@@ -558,5 +566,4 @@ body {
     padding-left: 2rem;
     padding-right: 2rem;
   }
-
 }
