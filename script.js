@@ -220,39 +220,34 @@ $(document).ready(function () {
 
 
 
-  function loadFormHandlerScript() {
-    var recaptchaScript = document.createElement("script");
+function loadFormHandlerScript() {
+  if (!document.querySelector('script[src*="recaptcha/api.js"]')) {
+    const recaptchaScript = document.createElement("script");
     recaptchaScript.src = "https://www.google.com/recaptcha/api.js?render=6LfRmeoqAAAAAH-Dizpt81ZOBrU5YT-utPXeBUNn";
     recaptchaScript.async = true;
     recaptchaScript.defer = true;
-
-    recaptchaScript.onload = function () {
-        console.log("✅ reCAPTCHA v3 API cargada correctamente.");
-    };
-
-    recaptchaScript.onerror = function () {
-        console.error("⛔ Error al cargar reCAPTCHA v3 API.");
-    };
-
+    recaptchaScript.onload = () => console.log("✅ reCAPTCHA v3 API cargada correctamente.");
+    recaptchaScript.onerror = () => console.error("⛔ Error al cargar reCAPTCHA v3 API.");
     document.body.appendChild(recaptchaScript);
-
-    var formHandlerScript = document.createElement("script");
+  }
+  if (!document.querySelector('script[src="form-submission-handler.js"]')) {
+    const formHandlerScript = document.createElement("script");
     formHandlerScript.src = "form-submission-handler.js";
     formHandlerScript.type = "text/javascript";
     formHandlerScript.setAttribute("data-cfasync", "false");
-
-    formHandlerScript.onload = function () {
-        console.log("✅ `form-submission-handler.js` cargado correctamente.");
-        if (typeof loaded === "function") {
-            loaded(); // 🔥 Ejecuta la inicialización después de cargar el script
-        }
+    formHandlerScript.onload = () => {
+      console.log("✅ `form-submission-handler.js` cargado correctamente.");
+      if (typeof loaded === "function") {
+        loaded(); // Ejecuta la inicialización si tu script lo define
+      }
     };
-
-    formHandlerScript.onerror = function () {
-        console.error("⛔ Error al cargar `form-submission-handler.js`.");
-    };
-
+    formHandlerScript.onerror = () => console.error("⛔ Error al cargar `form-submission-handler.js`.");
     document.body.appendChild(formHandlerScript);
+  }
+}
+
+  if ($("#contactForm").length) {
+    loadFormHandlerScript();
   }
 
   function checkIfAllLoaded() {
