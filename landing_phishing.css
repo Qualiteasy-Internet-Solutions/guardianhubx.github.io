@@ -8,7 +8,7 @@
     --landing-primary-dark: #265edc;
     --landing-secondary-color: #a4f6e1;
     --landing-accent-color: #ff6b6b;
-    --landing-text-dark: #1a1a1a;
+    --landing-text-dark: #1a1a1a !important;
     --landing-text-muted: #6c757d;
     --landing-bg-light: #f8f9fa;
     --landing-gradient-primary: linear-gradient(135deg, #3978f3 0%, #6c5ce7 100%);
@@ -455,6 +455,89 @@ body {
         padding: 0.8rem 2rem !important;
         font-size: 1rem !important;
     }
+}
+
+
+.green-pastel {color:#a4f6e1}
+
+.highlight-circle {
+    display: inline-block;
+    border: 2px solid #3978f3; /* color del círculo */
+    border-radius: 50%;
+    padding: 0.2em 0.5em;
+    font-weight: bold;
+    color: #3978f3;
+    line-height: 1;
+    background-color: rgba(57, 120, 243, 0.1);
+}
+
+
+/* === PASOS SUPER VISUALES === */
+.landing-steps-section {
+  background: var(--landing-gradient-primary) !important;
+}
+
+.steps-visual-container {
+  gap: 2rem;
+}
+
+.step-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+  width: 180px;
+  box-shadow: 0 10px 30px rgba(57, 120, 243, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.step-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(57, 120, 243, 0.2);
+}
+
+.step-icon-wrapper {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
+}
+
+.step-icon {
+  font-size: 2.5rem;
+  color: white;
+}
+
+.step-title {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #212529;
+  margin: 0;
+}
+
+/* Fondos personalizados por paso */
+.bg-1 { background: linear-gradient(135deg, #96b2ce 0%, #6d8bb7 100%); }
+.bg-2 { background: linear-gradient(135deg, #a4f6e1 0%, #7fded5 100%); }
+.bg-3 { background: linear-gradient(135deg, #548ce9 0%, #3b6ec9 100%); }
+.bg-4 { background: linear-gradient(135deg, #1a2634 0%, #2e3b50 100%); }
+
+/* Asegurar responsividad */
+@media (max-width: 768px) {
+  .steps-visual-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .step-card {
+    width: 70%;
+    max-width: 300px;
+  }
 }
 
 @media (max-width: 768px) {
