@@ -13,7 +13,12 @@
     <!-- CSS específico para esta landing (nuevo archivo) -->
     <link rel="stylesheet" href="landing_phishing.css">
 
-    <div id="common-head"></div>
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        $.get('/head.html').done(html => document.head.insertAdjacentHTML('beforeend', html));
+    </script>
 </head>
 <body>
     <!-- Header -->

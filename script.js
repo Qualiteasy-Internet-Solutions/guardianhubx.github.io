@@ -254,7 +254,7 @@ function loadFormHandlerScript() {
     const isPrivacyOrCookiesPage = window.location.href.includes("politica-privacidad") || window.location.href.includes("politica-cookies") || window.location.href.includes("thanks") ;
 
     // Contamos el numero de cargas esperadas
-    const requiredLoads = isPrivacyOrCookiesPage ? 3 : 4;
+    const requiredLoads = isPrivacyOrCookiesPage ? 2 : 3;
 
     if (loadCounter >= requiredLoads) {
         $("body").removeClass("loading").addClass("loaded");
@@ -334,11 +334,6 @@ function loadFormHandlerScript() {
   });
 
   // Carga dinámica de las secciones
-  $.get("head.html", function (data) {
-    $("#common-head").html(data);
-    loadCounter++;
-    checkIfAllLoaded();
-  });
 
   $("#header-container").load("header.html", function () {
     loadCounter++;
