@@ -411,6 +411,16 @@ body {
 }
 
 
+#contacto {
+  scroll-margin-top: 140px;        /* desktop */
+}
+
+@media (max-width: 768px) {
+  #contacto {
+    scroll-margin-top: 72px;       /* ajuste para móvil */
+  }
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .landing-hero-title {
