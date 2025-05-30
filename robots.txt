@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://guardianhubx.com/sitemap.xml
+Sitemap: https://guardianhubx.com/blog/sitemap.xml

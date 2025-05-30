@@ -68,13 +68,37 @@ jobs:
           cd blog-src
           hugo --gc --minify --destination ../public/blog
 
-      # 5.b) Debug: comprobar salida del build
-      - name: Debug list public/blog
+      # 5b) generar sitemap de la parte estática
+      - name: Generate static sitemap
         run: |
-          echo "===== public/blog ====="
-          ls -R public/blog
-          echo "======================="
+          SITE_URL="https://guardianhubx.com"
+          TODAY="$(date +%Y-%m-%d)"
 
+          # Archivos a excluir (separados por espacio)
+          EXCLUDE_FILES="head.html header.html footer.html formulario.html"
+
+          # Construye un patrón grep:  ^(head\.html|header\.html|…)$
+          EX_RE=$(printf '|%s' $EXCLUDE_FILES | sed 's/^|//' | sed 's/ /|/g')
+          EX_RE="^(${EX_RE})$"
+
+          # 1. Listar todos los .html de la raíz  
+          # 2. Excluir los del patrón  
+          # 3. Guardar en el array PAGES
+          mapfile -t PAGES < <(
+            find public -maxdepth 1 -type f -name '*.html' -printf '%P\n' \
+            | grep -Ev "$EX_RE"
+          )
+
+          {
+            echo '<?xml version="1.0" encoding="UTF-8"?>'
+            echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+            for page in "${PAGES[@]}"; do
+              url="${SITE_URL}/${page// /%20}"
+              echo "  <url><loc>${url}</loc><lastmod>${TODAY}</lastmod></url>"
+            done
+            echo '</urlset>'
+          } > public/sitemap.xml
+      
       # 6) Publicar todo en la rama gh-pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
