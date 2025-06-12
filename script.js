@@ -50,11 +50,12 @@ $(document).ready(function () {
       "edgewatch-description-2": "Con tecnología avanzada, Edgewatch monitorea continuamente las redes para identificar y neutralizar amenazas antes de que puedan causar daño.",
       "edgewatch-description-3": "Los servicios de Edgewatch ayudan a las empresas a <strong>mantener la integridad de sus sistemas, proteger datos sensibles y garantizar la continuidad del negocio</strong>.",
       "edgewatch-video-url": "https://www.youtube.com/embed/R7RnAkYrVJc?rel=0&cc_load_policy=0",
+      
     
       "outkept-description": "<strong>Outkept</strong>: Formación en phishing para empleados con simulaciones realistas y análisis detallados.",
       "outkept-description-2": "Outkept ayuda a las organizaciones a fortalecer la concienciación sobre ciberseguridad mediante campañas de phishing personalizadas y evaluaciones continuas.",
       "outkept-description-3": "Con Outkept, las empresas pueden <strong>identificar vulnerabilidades humanas, reducir riesgos y mejorar la preparación ante ataques cibernéticos</strong>.",
-      "outkept-video-url": "https://www.youtube.com/embed/Er6PYUweQr4?rel=0&cc_load_policy=0",
+      "outkept-video-url": "https://www.youtube.com/embed/rGMYFlEWx0U?rel=0&cc_load_policy=0",
     
       "idrive-description": "<strong>iDrive</strong>: Copias de seguridad confiables y soluciones de recuperación ante desastres para datos críticos.",
       "idrive-description-2": "Con su sistema de almacenamiento en la nube, iDrive permite realizar copias de seguridad automáticas y acceder a los datos desde cualquier dispositivo en cualquier momento.",
