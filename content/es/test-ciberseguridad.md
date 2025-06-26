@@ -10,13 +10,6 @@ translations:
     path: /en/cibersecurity-test/
 ---
 
----
-title: "Test de Ciberseguridad"
-description: "Evalúa gratis el estado de la ciberseguridad de tu empresa con GuardianHubX"
-layout: "landing-ciberseguridad"
-aliases: ["/test-ciberseguridad.html"]
----
-
 <!-- Hero Section -->
 <section class="landing-hero-section">
   <div class="container">

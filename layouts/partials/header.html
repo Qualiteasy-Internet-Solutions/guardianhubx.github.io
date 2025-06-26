@@ -37,8 +37,13 @@
     </div>
 
     <!-- Banner -->
+    {{- $lang := .Site.Language.Lang -}}
     <div class="text-center">
-      <a href="{{ "test-ciberseguridad/" | relLangURL }}">        
+      <a href="{{ 
+          cond (eq $lang "es") ("/es/test-ciberseguridad/" | relLangURL) 
+          (cond (eq $lang "ca") ("/ca/test-ciberseguretat/" | relLangURL) 
+                            ("/en/cybersecurity-test/"    | relLangURL)) 
+        }}">             
         <img src="{{ "img/cuestionario.gif" | relURL }}" alt="Evalúa tu nivel de ciberseguridad" class="img-fluid" style="max-height: 250px;">
       </a>
     </div>

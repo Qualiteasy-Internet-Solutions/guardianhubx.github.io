@@ -13,7 +13,6 @@
     
     <p class="mb-0">
       {{- $lang := .Site.Language.Lang -}}
-      {{- /* Enlace a Política de Privacidad */ -}}
       <a href="{{ 
           cond (eq $lang "es") ("/es/politica-privacidad/" | relURL) 
           (cond (eq $lang "ca") ("/ca/politica-privacitat/" | relURL) 
@@ -21,8 +20,7 @@
         }}">
         {{ i18n "politica_privacidad" }}
       </a>
-      | 
-      {{- /* Enlace a Política de Cookies */ -}}
+      |       
       <a href="{{ 
           cond (eq $lang "es") ("/es/politica-cookies/" | relURL) 
           (cond (eq $lang "ca") ("/ca/politica-galletes/" | relURL) 
