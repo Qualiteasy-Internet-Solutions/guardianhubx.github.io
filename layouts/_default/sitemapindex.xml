@@ -1,0 +1,17 @@
+{{- /* layouts/_default/sitemapindex.xml */ -}}
+{{- $sites := . -}}
+{{- /* Prolog sense escapaments */ -}}
+{{- print "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML -}}
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {{- /* Per cada idioma, fem: https://tu-dominio.com/<lang>/sitemap.xml */ -}}
+  {{- range $site := $sites }}
+  <sitemap>
+    <loc>{{ (printf "%s/sitemap.xml" $site.Language.Lang) | absURL }}</loc>
+  </sitemap>
+  {{- end }}
+
+  {{- /* I afegim el sitemap del blog */ -}}
+  <sitemap>
+    <loc>{{ "blog/sitemap.xml" | absURL }}</loc>
+  </sitemap>
+</sitemapindex>
