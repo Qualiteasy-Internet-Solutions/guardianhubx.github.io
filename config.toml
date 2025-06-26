@@ -3,7 +3,6 @@ title = "GuardianHubX"
 defaultContentLanguage = "es"
 defaultContentLanguageInSubdir = true
 enableRobotsTXT = true
-theme = ""
 
 disableKinds = ["taxonomy"]
 
