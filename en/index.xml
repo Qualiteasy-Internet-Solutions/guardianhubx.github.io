@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>GuardianHubX - Soluciones avanzadas de ciberseguridad on GuardianHubX - Cybersecurity</title><link>https://guardianhubx.com/en/</link><description>Recent content in GuardianHubX - Soluciones avanzadas de ciberseguridad on GuardianHubX - Cybersecurity</description><generator>Hugo</generator><language>en</language><atom:link href="https://guardianhubx.com/en/index.xml" rel="self" type="application/rss+xml"/><item><title>Cookies Policy</title><link>https://guardianhubx.com/en/cookies-policy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/en/cookies-policy/</guid><description>&lt;p>If you want to learn more about the use of cookies on &lt;strong>GuardianHubX&lt;/strong>, you’re in the right place. Below, we explain what cookies are, what types we use, and how to configure your browser to disable them.&lt;/p>
+&lt;p>Note: Disabling cookies may affect your user experience.&lt;/p>
+&lt;h3 id="what-is-a-cookie">What is a cookie?&lt;/h3>
+&lt;p>A &lt;em>cookie&lt;/em> is a small file downloaded to your device when you visit certain websites. Cookies help store and retrieve browsing information. They may recognize you depending on how you use your device.&lt;/p></description></item><item><title>Cybersecurity Goals</title><link>https://guardianhubx.com/en/cybersecurity-goals/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/en/cybersecurity-goals/</guid><description>&lt;p>At &lt;strong>GuardianHubX&lt;/strong>, our security strategy is based on &lt;strong>three fundamental pillars&lt;/strong>: &lt;em>prevention&lt;/em>, &lt;em>detection&lt;/em> and &lt;em>recovery&lt;/em>. We implement advanced solutions to protect the data and systems of our clients from any cyber threat.&lt;/p>
+&lt;div class="d-flex justify-content-center my-4">
+ &lt;img src="https://guardianhubx.com/img/seguridad-prevencion-deteccion-recuperacion.jpg" class="img-fluid rounded shadow-sm" alt="Cybersecurity: Prevention, Detection and Recovery">
+&lt;/div>
+&lt;h2 id="-prevention">🔒 Prevention&lt;/h2>
+&lt;p>Preventing threats from reaching systems is the essential first step toward strong cybersecurity. We rely on advanced solutions such as:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://guardianhubx.com/en/faronics/">&lt;strong>Faronics&lt;/strong>&lt;/a> – Protection against unwanted changes&lt;/li>
+&lt;li>&lt;a href="https://guardianhubx.com/en/nordsecurity/">&lt;strong>NordLayer&lt;/strong>&lt;/a> – Remote access security and network protection&lt;/li>
+&lt;li>&lt;a href="https://guardianhubx.com/en/outkept/">&lt;strong>Outkept&lt;/strong>&lt;/a> – Practical phishing awareness training&lt;/li>
+&lt;li>&lt;a href="https://guardianhubx.com/en/nordsecurity/">&lt;strong>NordPass&lt;/strong>&lt;/a> – Secure password management&lt;/li>
+&lt;li>&lt;a href="https://guardianhubx.com/en/passwork/">&lt;strong>Passwork&lt;/strong>&lt;/a> – Centralized credential management&lt;/li>
+&lt;li>&lt;a href="https://qualiteasy.eu">&lt;strong>Qualiteasy&lt;/strong>&lt;/a> – Document management and regulatory compliance (ISO, GDPR, etc.)&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="-detection">🛡️ Detection&lt;/h2>
+&lt;p>Detecting threats in real-time is key to mitigating risks before they cause damage. We use tools like:&lt;/p></description></item><item><title>Cybersecurity Test</title><link>https://guardianhubx.com/en/cybersecurity-test/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/en/cybersecurity-test/</guid><description>&lt;!-- Hero Section -->
+&lt;section class="landing-hero-section">
+ &lt;div class="container">
+ &lt;div class="row align-items-center">
+ &lt;div class="col-lg-6 landing-fade-in">
+ &lt;p class="landing-hero-subtitle">
+ More than &lt;span class="highlight-circle">72%&lt;/span> of Spanish companies have been victims of cyberattacks in the last 12 months.
+ &lt;/p>
+ &lt;h1 class="landing-hero-title">KNOW YOUR COMPANY'S CYBERSECURITY STATUS FOR FREE&lt;/h1>
+ &lt;button onclick="window.location='https://test.guardianhubx.com'" class="landing-btn landing-btn-primary">
+ GET STARTED &lt;i class="fas fa-arrow-right landing-arrow-soft-green">&lt;/i>
+ &lt;/button>
+ &lt;/div>
+ &lt;div class="col-lg-6 text-center landing-slide-in-right">
+ &lt;div class="landing-hero-img-wrapper">
+ &lt;img src="https://guardianhubx.com/img/test-1.svg" alt="Cybersecurity Test Monitor" class="img-fluid">
+ &lt;/div>
+ &lt;/div>
+ &lt;/div>
+ &lt;/div>
+&lt;/section>
+&lt;!-- Steps Section -->
+&lt;section class="landing-steps-section py-5">
+ &lt;div class="container text-center">
+ &lt;h2 class="landing-cta-title landing-fade-in mb-5">HOW TO EVALUATE YOUR CYBERSECURITY?&lt;/h2>
+ &lt;div class="d-flex flex-wrap justify-content-center steps-visual-container">
+ &lt;div class="step-card landing-fade-in">
+ &lt;div class="step-icon-wrapper bg-1">&lt;i class="fas fa-mouse-pointer step-icon">&lt;/i>&lt;/div>
+ &lt;h5 class="step-title">ACCESS THE TEST&lt;/h5>
+ &lt;/div>
+ &lt;div class="step-card landing-fade-in">
+ &lt;div class="step-icon-wrapper bg-2">&lt;i class="fa-regular fa-check-square step-icon">&lt;/i>&lt;/div>
+ &lt;h5 class="step-title">COMPLETE THE QUESTIONS&lt;/h5>
+ &lt;/div>
+ &lt;div class="step-card landing-fade-in">
+ &lt;div class="step-icon-wrapper bg-3">&lt;i class="fa-regular fa-clock step-icon">&lt;/i>&lt;/div>
+ &lt;h5 class="step-title">WAIT FOR YOUR RESULTS&lt;/h5>
+ &lt;/div>
+ &lt;div class="step-card landing-fade-in">
+ &lt;div class="step-icon-wrapper bg-4">&lt;i class="fa-regular fa-envelope step-icon">&lt;/i>&lt;/div>
+ &lt;h5 class="step-title">RECEIVE YOUR DETAILED REPORT&lt;/h5>
+ &lt;/div>
+ &lt;/div>
+ &lt;button onclick="location.href='https://test.guardianhubx.com'" class="landing-btn landing-btn-primary mt-5 landing-fade-in">
+ TAKE THE TEST &lt;i class="fas fa-arrow-right landing-arrow-soft-green">&lt;/i>
+ &lt;/button>
+ &lt;/div>
+&lt;/section>
+&lt;!-- Main Section -->
+&lt;section class="landing-section">
+ &lt;div class="container">
+ &lt;div class="row align-items-center">
+ &lt;div class="col-lg-8 landing-slide-in-left">
+ &lt;h2 class="landing-section-title text-start">Fast, easy and secure&lt;/h2>
+ &lt;p class="mb-3 landing-text-muted">In less than five minutes you can know your organization’s cybersecurity level.&lt;/p></description></item><item><title>Edgewatch | Continuous Threat Monitoring &amp; Cybersecurity</title><link>https://guardianhubx.com/en/edgewatch/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/en/edgewatch/</guid><description>&lt;section class="about mb-5 container text-center">
+ &lt;h2>Proactive Cyber Defense with Edgewatch&lt;/h2>
+ &lt;img src="https://guardianhubx.com/img/edgewatch-logo.jpg" alt="Edgewatch Logo - Advanced Cybersecurity Solution" class="img-fluid mb-2" style="max-height: 100px;">
+ &lt;p>
+ &lt;strong>Edgewatch&lt;/strong>: Real-time threat detection system and intelligent cybersecurity defense designed for modern enterprises.
+ &lt;/p>
+ &lt;div class="d-flex justify-content-center">
+ &lt;img src="https://guardianhubx.com/img/edgewatch-dashboard.png" 
+ class="img-fluid zoomable-image mb-4" 
+ style="max-width: 1200px; width: 90%;" 
+ alt="Edgewatch Dashboard - Real-Time Monitoring" 
+ onclick="openFullscreen(this)">
+ &lt;/div>
+ &lt;p>
+ Powered by advanced artificial intelligence technology, &lt;strong>Edgewatch monitors your digital infrastructure 24/7&lt;/strong>, identifying vulnerabilities and neutralizing threats before they can cause significant damage.
+ &lt;/p>
+ &lt;p>
+ Edgewatch services help organizations &lt;strong>preserve system integrity, protect sensitive information, and ensure operational continuity&lt;/strong> against increasingly sophisticated cyberattacks.
+ &lt;/p></description></item><item><title>Faronics</title><link>https://guardianhubx.com/en/faronics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/en/faronics/</guid><description>&lt;section class="about mb-5 container">
+ &lt;div class="text-center">
+ &lt;img src="https://guardianhubx.com/img/faronics-logo.png" alt="Faronics Logo" class="img-fluid mb-2" style="max-height: 100px;">
+ &lt;h2>From the makers of Deep Freeze comes Faronics Cloud:&lt;/h2>
+ &lt;p>Simplified endpoint security and device management for modern IT teams.&lt;/p>
+ &lt;/div>
+ &lt;div class="row mt-4 justify-content-center">
+ &lt;div class="col-md-8 ps-md-5">
+ &lt;h4 class="mb-4">Key tools from Faronics:&lt;/h4>
+ &lt;ul class="list-unstyled">
+ &lt;li class="mb-2">• &lt;a href="https://faronicscloud.com/en/pages/freeze?dl=BRUYN">Deep Freeze&lt;/a>: Protection against unwanted changes&lt;/li>
+ &lt;li class="mb-2">• &lt;a href=" https://faronicscloud.com/en/pages/software-updater?dl=BRUYN">Deploy&lt;/a>: Remote software management&lt;/li>
+ &lt;li class="mb-2">• MDM: Mobile device management&lt;/li>
+ &lt;li class="mb-2">• Power Save: Energy efficiency&lt;/li>
+ &lt;li class="mb-2">• Win Select: Access control&lt;/li>
+ &lt;li class="mb-2">• Anti Virus&lt;/li>
+ &lt;li class="mb-2">• Insight: Classroom monitoring&lt;/li>
+ &lt;/ul>
+ &lt;p class="mt-4">
+ Faronics products, now cloud-based, help organizations &lt;strong>prevent, detect and recover from cyber incidents&lt;/strong>, the &lt;a href="https://guardianhubx.com/en/cybersecurity-goals/">three pillars of cybersecurity&lt;/a>.
+ &lt;/p></description></item><item><title>Gràcies</title><link>https://guardianhubx.com/en/thanks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/en/thanks/</guid><description>&lt;section class="thanks mb-5">
+ &lt;h2 class="text-center mb-4">Thank you for contacting GuardianHubX. We have received your message and will get in touch with you shortly.&lt;/h2>
+ &lt;div class="text-center">
+ &lt;a href="https://guardianhubx.com/en/">Return to the homepage&lt;/a>
+ &lt;/div>
+&lt;/section></description></item><item><title>iDrive | Secure Cloud Backup &amp; Disaster Recovery</title><link>https://guardianhubx.com/en/idrive/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/en/idrive/</guid><description>&lt;section class="about mb-5 container text-center">
+ &lt;img src=" https://www.idrive.com/include/images/authorized_reseller.png " 
+ alt="iDrive Logo – Authorized Reseller" 
+ class="img-fluid mb-2" 
+ style="max-height: 100px;">
+ &lt;h2 class="mb-4">Reliable Cloud Backup &amp; Instant Recovery&lt;/h2>
+ &lt;p>&lt;strong>iDrive&lt;/strong> offers secure online backup solutions designed for businesses that need continuous protection of critical data.&lt;/p>
+ &lt;p>
+ With its powerful cloud storage system, iDrive enables automated backups and seamless access to your files from any device at any time.&lt;br>
+ Thanks to &lt;a href="https://www.idrive.com/idrive/signup?p=qualiteasy" target="_blank">iDrive&lt;/a>, companies can &lt;strong>minimize data loss, ensure business continuity and recover files instantly in case of incidents&lt;/strong>.
+ &lt;/p></description></item><item><title>NordSecurity</title><link>https://guardianhubx.com/en/nordsecurity/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/en/nordsecurity/</guid><description>&lt;section class="about mb-5 container text-center">
+ &lt;img src="https://guardianhubx.com/img/nordsecurity-logo.png" alt="NordSecurity Logo" class="img-fluid mb-2" style="max-height: 100px;">
+ &lt;h2 class="mb-4">From the makers of NordVPN&lt;/h2>
+ &lt;p>NordSecurity delivers advanced cybersecurity solutions for remote teams with powerful tools like enterprise-grade password management and secure network access.&lt;/p>
+&lt;/section>
+&lt;div class="d-flex justify-content-center gap-4 flex-wrap my-4">
+ &lt;img src="https://guardianhubx.com/img/nordlayer_network_security_features.webp" 
+ class="img-fluid zoomable-image" 
+ style="max-width: 500px; width: 45%;" 
+ alt="NordLayer Network Security Features" 
+ onclick="openFullscreen(this)">
+ &lt;img src="https://guardianhubx.com/img/nordpass-devices.jpg" 
+ class="img-fluid zoomable-image" 
+ style="max-width: 500px; width: 45%;" 
+ alt="NordPass Interface" 
+ onclick="openFullscreen(this)">
+&lt;/div>
+&lt;p class="mt-5 text-center">
+ NordSecurity provides a comprehensive set of tools built to protect digital privacy and ensure robust data security across organizations.
+&lt;/p>
+&lt;p class="mt-5 text-center">
+ With products like &lt;strong>NordPass&lt;/strong> and &lt;strong>NordLayer&lt;/strong>, we help companies &lt;strong>secure credentials, control access and protect sensitive information&lt;/strong> — essential pillars of modern cybersecurity.
+&lt;/p></description></item><item><title>Outkept</title><link>https://guardianhubx.com/en/outkept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/en/outkept/</guid><description>&lt;section class="about mb-5 container text-center">
+ &lt;img src="https://guardianhubx.com/img/outkept-logo.png" 
+ alt="Outkept Logo – Phishing Awareness Training" 
+ class="img-fluid mb-2" 
+ style="max-height: 100px;">
+ &lt;p>Employee phishing awareness training through realistic simulations and in-depth analysis.&lt;/p>
+ &lt;p>&lt;strong>Outkept&lt;/strong> helps organizations strengthen cybersecurity awareness with personalized phishing campaigns and continuous assessments.&lt;/p>
+ &lt;p>With Outkept, companies can &lt;strong>identify human vulnerabilities, reduce risks, and improve readiness against cyberattacks&lt;/strong>.&lt;/p>
+&lt;/section>
+&lt;section class="screenshots mb-5 container text-center">
+ &lt;div class="row justify-content-center">
+ &lt;div class="col-md-5 text-center">
+ &lt;img src="https://guardianhubx.com/img/outkept-screen.png" 
+ class="img-fluid zoomable-image shadow-sm rounded" 
+ alt="Outkept Simulation Screens" 
+ onclick="openFullscreen(this)">
+ &lt;/div>
+ &lt;div class="col-md-5 text-center">
+ &lt;img src="https://guardianhubx.com/img/outkept-info.jpg" 
+ class="img-fluid zoomable-image shadow-sm rounded" 
+ alt="Outkept Phishing Features" 
+ onclick="openFullscreen(this)">
+ &lt;/div>
+ &lt;/div>
+&lt;/section>
+&lt;div id="fullscreen-overlay" onclick="closeFullscreen()">
+ &lt;img id="fullscreen-image" class="img-fluid">
+&lt;/div>
+&lt;section class="downloads mb-5 container text-center">
+ &lt;h3>Download More Information&lt;/h3>
+ &lt;p>Access detailed documentation about Outkept and its benefits in enterprise cybersecurity.&lt;/p></description></item><item><title>Passwork</title><link>https://guardianhubx.com/en/passwork/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/en/passwork/</guid><description>&lt;section class="about mb-5 container text-center">
+ &lt;img src="https://guardianhubx.com/img/passwork-logo.png" alt="Passwork Logo" class="img-fluid mb-2" style="max-height: 100px;">
+ &lt;p>
+ &lt;strong>Passwork&lt;/strong>: Secure &lt;strong>offline and online password management&lt;/strong> for businesses and individuals.
+ &lt;/p>
+ &lt;div class="d-flex justify-content-center">
+ &lt;img src="https://guardianhubx.com/img/passwork-features-en.webp" 
+ class="img-fluid zoomable-image" 
+ style="max-width: 1200px; width: 90%;" 
+ alt="Passwork Key Features" 
+ onclick="openFullscreen(this)">
+ &lt;/div>
+ &lt;p class="pt-4">
+ Passwork enables businesses to organize and manage passwords in a secure environment, ensuring controlled access and seamless team collaboration.
+ &lt;/p>
+ &lt;p>
+ With Passwork, organizations can &lt;strong>enhance security, boost efficiency, and meet compliance standards&lt;/strong> for enterprise password management.
+ &lt;/p>
+&lt;/section>
+&lt;!-- Downloads Section -->
+&lt;section class="downloads mb-5 container text-center">
+ &lt;h3>Download More Information&lt;/h3>
+ &lt;p class="mb-4">Access detailed documentation about Passwork and its cybersecurity benefits.&lt;/p></description></item><item><title>Privacy Policy</title><link>https://guardianhubx.com/en/privacy-policy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/en/privacy-policy/</guid><description>&lt;h2 id="privacy-policy">Privacy Policy&lt;/h2>
+&lt;p>At Qualiteasy Internet Solutions S.L., we are committed to protecting the personal information you share with us. Ensuring and safeguarding the privacy and confidentiality of your personal data is fundamental to us, in accordance with the General Data Protection Regulation (EU Regulation 2016/679) (GDPR) and the Spanish Organic Law 3/2018 (LOPDGDD).&lt;/p>
+&lt;p>This statement outlines our privacy and data protection policy and ensures that:&lt;/p>
+&lt;ol>
+&lt;li>You may request deletion of your data at any time if legally permitted.&lt;/li>
+&lt;li>We uphold strict confidentiality of your personal data.&lt;/li>
+&lt;li>We implement technical and organizational measures to secure your data.&lt;/li>
+&lt;/ol>
+&lt;h3 id="data-controller">Data Controller&lt;/h3>
+&lt;p>Qualiteasy Internet Solutions S.L., PIT ROIG, No 26, 3rd floor, door B, VILANOVA I LA GELTRU (08800), Barcelona. CIF: B-61626875.&lt;/p></description></item><item><title>Stop phishing with the software that trains your employees</title><link>https://guardianhubx.com/en/cybersecurity-phishing-training/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/en/cybersecurity-phishing-training/</guid><description>&lt;!-- Hero Section -->
+&lt;section class="landing-hero-section">
+ &lt;div class="container">
+ &lt;div class="row align-items-center">
+ &lt;div class="col-lg-6 landing-fade-in">
+ &lt;h1 class="landing-hero-title">WOULD YOU RECOGNIZE A PHISHING ATTEMPT?&lt;/h1>
+ &lt;p class="landing-hero-subtitle">Test your knowledge and strengthen your team’s security with realistic, automated simulations designed by ethical cybersecurity experts.&lt;/p>
+ &lt;p class="landing-hero-disclaimer">* Phishing is a technique used by cybercriminals to steal sensitive information like passwords or banking data.&lt;/p>
+ &lt;a href="https://guardianhubx.com/en/cybersecurity-phishing-training#contact" class="landing-btn landing-btn-primary" rel="nofollow">
+ START NOW &lt;i class="fas fa-arrow-right landing-arrow-soft-green">&lt;/i>
+ &lt;/a>
+ &lt;/div>
+ &lt;div class="col-lg-6 text-center landing-slide-in-right">
+ &lt;div class="landing-hero-img-wrapper">
+ &lt;img src="https://guardianhubx.com/img/formacion-phishing.svg" 
+ alt="Phishing training software for businesses" 
+ class="img-fluid landing-hero-img-custom"
+ width="500"
+ height="400"
+ loading="lazy">
+ &lt;/div>
+ &lt;/div>
+ &lt;/div>
+ &lt;/div>
+&lt;/section>
+&lt;!-- Stats Highlight -->
+&lt;section class="landing-stats-highlight">
+ &lt;div class="container">
+ &lt;div class="row text-center">
+ &lt;div class="col-md-4 mb-4 landing-fade-in">
+ &lt;div class="landing-stat-number">94%&lt;/div>
+ &lt;div class="landing-stat-text">of malicious attacks arrive via email&lt;/div>
+ &lt;/div>
+ &lt;div class="col-md-4 mb-4 landing-fade-in">
+ &lt;div class="landing-stat-number">1/4&lt;/div>
+ &lt;div class="landing-stat-text">of employees fail to recognize phishing attempts&lt;/div>
+ &lt;/div>
+ &lt;div class="col-md-4 mb-4 landing-fade-in">
+ &lt;div class="landing-stat-number">3.4B&lt;/div>
+ &lt;div class="landing-stat-text">phishing emails sent daily worldwide&lt;/div>
+ &lt;/div>
+ &lt;/div>
+ &lt;/div>
+&lt;/section>
+&lt;!-- Entrenamiento Section -->
+&lt;section class="landing-section">
+ &lt;div class="container">
+ &lt;div class="row align-items-center">
+ &lt;div class="col-lg-8 landing-slide-in-left">
+ &lt;h2 class="landing-section-title text-start">Start your training.&lt;br>Defend against phishing.&lt;/h2>
+ &lt;p class="mb-3 landing-text-muted">Cybercrime never stops, and phishing attacks are becoming increasingly sophisticated. With GuardianHubX, you can stay ahead of the curve.&lt;/p></description></item><item><title>Thanks</title><link>https://guardianhubx.com/en/thanks-test/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/en/thanks-test/</guid><description>&lt;section class="thanks mb-5">
+ &lt;h2 class="text-center mb-4">Thank you for filling out the form! You will receive the information in your email within 5 minutes.&lt;/h2>
+ &lt;h5 class="text-center mb-4">If you don’t receive it, please check your spam folder or write to us at info@guardianhubx.com&lt;/h5>
+ &lt;div class="text-center">
+ &lt;a href="https://guardianhubx.com/en/">Want to learn more about our cybersecurity solutions? Explore our services!&lt;/a>
+ &lt;/div>
+&lt;/section></description></item></channel></rss>
