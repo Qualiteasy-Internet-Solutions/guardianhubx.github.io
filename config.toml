@@ -1,0 +1,33 @@
+baseURL = "https://guardianhubx.com/"
+title = "GuardianHubX"
+defaultContentLanguage = "es"
+defaultContentLanguageInSubdir = true
+enableRobotsTXT = true
+theme = ""
+
+disableKinds = ["taxonomy"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[languages]
+
+  [languages.es]
+    languageName = "Español"
+    weight = 1
+    contentDir = "content/es"
+    title = "GuardianHubX - Seguridad Cibernética"
+
+  [languages.ca]
+    languageName = "Català"
+    weight = 2
+    contentDir = "content/ca"
+    title = "GuardianHubX - Ciberseguretat"
+
+  [languages.en]
+    languageName = "English"
+    weight = 3
+    contentDir = "content/en"
+    title = "GuardianHubX - Cybersecurity"

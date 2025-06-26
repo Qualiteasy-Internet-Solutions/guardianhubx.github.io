@@ -1,0 +1,24 @@
+<!-- layouts/partials/contact-cta-product.html -->
+<section class="contact-cta my-5 py-5 bg-light rounded container text-center">
+{{ if eq .Page.Lang "ca" }}
+    <h3 class="mb-4">Preparat per millorar la teva seguretat digital?</h3>
+    <p class="mb-4">Contacta amb nosaltres per obtenir una demostració personalitzada o resoldre qualsevol dubte sobre {{ .Title }}.</p>
+    <a href="/ca/#contact" class="btn btn-success btn-lg">Contacta amb nosaltres</a>
+
+{{ else if eq .Page.Lang "es" }}
+    <h3 class="mb-4">¿Listo para mejorar tu seguridad digital?</h3>
+    <p class="mb-4">Contáctanos para obtener una demostración personalizada o resolver cualquier duda sobre {{ .Title }}.</p>
+    <a href="/es/#contact" class="btn btn-success btn-lg">Ponte en contacto con nosotros</a>
+
+{{ else if eq .Page.Lang "en" }}
+    <h3 class="mb-4">Ready to improve your digital security?</h3>
+    <p class="mb-4">Contact us for a personalized demo or to resolve any questions about {{ .Title }}.</p>
+    <a href="/en/#contact" class="btn btn-success btn-lg">Get in touch with us</a>
+
+{{ else }}
+    {{/* Default fallback (es) */}}
+    <h3 class="mb-4">¿Listo para mejorar tu seguridad digital?</h3>
+    <p class="mb-4">Contáctanos para obtener una demostración personalizada o resolver cualquier duda sobre {{ .Title }}.</p>
+    <a href="/es/#contact" class="btn btn-success btn-lg">Ponte en contacto con nosotros</a>
+{{ end }}
+</section>

@@ -1,0 +1,35 @@
+<footer class="site-footer bg-light text-center py-4">
+  <div class="container">
+    <div class="mb-3">
+      <p class="mb-2">{{ i18n "miembro_desc" }}</p>
+      <a href="https://www.ascicat.cat/"  target="_blank" rel="noopener">
+        <img src="{{ "img/ascicat-logo.avif" | relURL }}" alt="ASCICAT - Associació de Ciberseguretat de Catalunya" style="max-height: 60px;" />
+      </a>
+    </div>
+
+    <p class="mb-1">&copy; {{ now.Format "2006" }} <strong>GuardianHubX</strong> by 
+      <a href="https://qualiteasy.eu/"  target="_blank" rel="noopener">Qualiteasy Internet Solutions</a>
+    </p>
+    
+    <p class="mb-0">
+      {{- $lang := .Site.Language.Lang -}}
+      {{- /* Enlace a Política de Privacidad */ -}}
+      <a href="{{ 
+          cond (eq $lang "es") ("/es/politica-privacidad/" | relURL) 
+          (cond (eq $lang "ca") ("/ca/politica-privacitat/" | relURL) 
+                            ("/en/privacy-policy/"    | relURL)) 
+        }}">
+        {{ i18n "politica_privacidad" }}
+      </a>
+      | 
+      {{- /* Enlace a Política de Cookies */ -}}
+      <a href="{{ 
+          cond (eq $lang "es") ("/es/politica-cookies/" | relURL) 
+          (cond (eq $lang "ca") ("/ca/politica-galletes/" | relURL) 
+                            ("/en/cookies-policy/"     | relURL)) 
+        }}">
+        {{ i18n "politica_cookies" }}
+      </a>
+    </p>
+  </div>
+</footer>

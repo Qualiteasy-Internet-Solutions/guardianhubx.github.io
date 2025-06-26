@@ -1,0 +1,13 @@
+{{ define "main" }}
+  <div class="container my-5">
+    {{ .Content }}
+    {{ partial "contact-cta-product.html" . }}
+  </div>
+
+  <!-- Overlay -->
+  {{ partial "fullscreen-overlay.html" . }}
+
+  <!-- JS condicional -->
+  <script src="/js/util/fullscreen.js" defer></script>
+
+{{ end }}

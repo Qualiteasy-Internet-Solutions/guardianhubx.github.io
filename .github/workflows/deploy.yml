@@ -42,7 +42,7 @@ jobs:
           ls -R blog-src/themes
           echo "==========================="
 
-      # 3) Instalar Hugo (solo para el blog)
+      # 3) Instalar Hugo
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
@@ -50,17 +50,9 @@ jobs:
           extended: true
 
       # 4) Preparar directorio public/ copiando la web principal
-      - name: Prepare public directory
+      - name: Build main Hugo site
         run: |
-          rm -rf public
-          mkdir public
-          rsync -av \
-            --exclude='.git' \
-            --exclude='.github' \
-            --exclude='blog-src' \
-            ./ public/
-          # Evita Jekyll en GH Pages
-          touch public/.nojekyll
+          hugo --gc --minify --destination public
 
       # 5) Compilar el blog Hugo en public/blog
       - name: Build blog
@@ -73,28 +65,16 @@ jobs:
         run: |
           SITE_URL="https://guardianhubx.com"
           TODAY="$(date +%Y-%m-%d)"
-
-          # Archivos a excluir (separados por espacio)
-          EXCLUDE_FILES="head.html header.html footer.html formulario.html"
-
-          # Construye un patrón grep:  ^(head\.html|header\.html|…)$
-          EX_RE=$(printf '|%s' $EXCLUDE_FILES | sed 's/^|//' | sed 's/ /|/g')
-          EX_RE="^(${EX_RE})$"
-
-          # 1. Listar todos los .html de la raíz  
-          # 2. Excluir los del patrón  
-          # 3. Guardar en el array PAGES
+          EXCLUDE="(404\.html|blog/.*)"
           mapfile -t PAGES < <(
             find public -maxdepth 1 -type f -name '*.html' -printf '%P\n' \
-            | grep -Ev "$EX_RE"
+            | grep -Ev "$EXCLUDE"
           )
-
           {
             echo '<?xml version="1.0" encoding="UTF-8"?>'
             echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
-            for page in "${PAGES[@]}"; do
-              url="${SITE_URL}/${page// /%20}"
-              echo "  <url><loc>${url}</loc><lastmod>${TODAY}</lastmod></url>"
+            for p in "${PAGES[@]}"; do
+              echo "  <url><loc>${SITE_URL}/${p}</loc><lastmod>${TODAY}</lastmod></url>"
             done
             echo '</urlset>'
           } > public/sitemap.xml
@@ -104,7 +84,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.PUBLISH }}
-          publish_branch: gh-pages
+          publish_branch: gh-pages-staging
           publish_dir: public
           user_name: "github-actions[bot]"
           user_email: "github-actions[bot]@users.noreply.github.com"
