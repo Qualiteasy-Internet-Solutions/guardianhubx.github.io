@@ -153,9 +153,6 @@
  &lt;/div>
  &lt;/div>
 &lt;/section>
-&lt;div id="fullscreen-overlay" onclick="closeFullscreen()">
- &lt;img id="fullscreen-image">
-&lt;/div>
 &lt;section class="downloads mb-5 container text-center">
  &lt;h3>Descarrega més informació&lt;/h3>
  &lt;p>Accedeix a documentació detallada sobre Outkept i els seus beneficis en ciberseguretat.&lt;/p></description></item><item><title>Passwork</title><link>https://guardianhubx.com/ca/passwork/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/ca/passwork/</guid><description>&lt;section class="about mb-5 container text-center">
@@ -177,7 +174,41 @@
  &lt;h3>Descarrega més informació&lt;/h3>
  &lt;p>Accedeix a documentació detallada sobre Passwork i els seus beneficis en ciberseguretat.&lt;/p></description></item><item><title>Política de Cookies</title><link>https://guardianhubx.com/ca/politica-cookies/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/ca/politica-cookies/</guid><description>&lt;p>Si vols saber més sobre l&amp;rsquo;ús de les cookies que fa aquest lloc web, &lt;strong>GuardianHubX&lt;/strong>, ets al lloc adequat. A continuació et detallarem què són exactament les cookies, quin tipus utilitzem i per a què, i com pots exercir el teu dret per configurar el teu navegador i rebutjar-ne l&amp;rsquo;ús.&lt;/p>
 &lt;p>Tot i això, has de saber que si decides no utilitzar algunes cookies, el lloc pot no funcionar perfectament, afectant a la teva experiència d’usuari.&lt;/p></description></item><item><title>Política de privacitat</title><link>https://guardianhubx.com/ca/politica-privacitat/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/ca/politica-privacitat/</guid><description>&lt;p>A Qualiteasy Internet Solutions S.L. ens comprometem a protegir la informació personal que compartiu amb nosaltres, ja que per a nosaltres és fonamental garantir i mantenir la privacitat i la confidencialitat de les vostres dades personals, d&amp;rsquo;acord amb el Reglament General de Protecció de Dades (Reglament UE 2016/679) (RGPD) i la Llei Orgànica 3/2018, del 5 de desembre, de Protecció de Dades Personals i garantia dels drets digitals (LOPDGDD).&lt;/p>
-&lt;p>Aquesta declaració estableix la nostra política de privacitat i de protecció de dades respecte a la informació que ens facilites, per garantir-te que:&lt;/p></description></item><item><title>Test de Ciberseguretat</title><link>https://guardianhubx.com/ca/test-ciberseguretat/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/ca/test-ciberseguretat/</guid><description>&lt;!-- Hero Section -->
+&lt;p>Aquesta declaració estableix la nostra política de privacitat i de protecció de dades respecte a la informació que ens facilites, per garantir-te que:&lt;/p></description></item><item><title>Prey Project</title><link>https://guardianhubx.com/ca/preyproject/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/ca/preyproject/</guid><description>&lt;h3 id="rastreig-i-ubicació">Rastreig i ubicació&lt;/h3>
+&lt;ul>
+&lt;li>Geolocalització precisa amb seguiment continu&lt;/li>
+&lt;li>Historial de localitzacions i geotanques&lt;/li>
+&lt;li>Alertes i informes de pèrdua&lt;/li>
+&lt;/ul>
+&lt;h3 id="protecció-de-dades-i-control-remot">Protecció de dades i control remot&lt;/h3>
+&lt;ul>
+&lt;li>Bloqueig de pantalla i recuperació d’arxius&lt;/li>
+&lt;li>Xifratge Bitlocker i restauració de fàbrica&lt;/li>
+&lt;li>Alarmes i missatges personalitzats&lt;/li>
+&lt;/ul>
+&lt;h3 id="administració-dusuaris-i-préstecs">Administració d’usuaris i préstecs&lt;/h3>
+&lt;ul>
+&lt;li>Assignació de dispositius amb dates de préstec&lt;/li>
+&lt;li>Accions de seguretat automàtiques al venciment&lt;/li>
+&lt;li>Informes i registres per a auditories&lt;/li>
+&lt;/ul>
+&lt;h2 id="per-què-triar-prey">Per què triar Prey?&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Compatibilitat Multi-OS&lt;/strong>: Windows, macOS, Android, ChromeOS, Ubuntu… tot en un únic servei.&lt;/li>
+&lt;li>&lt;strong>Facilitat d’ús&lt;/strong>: Configuració ràpida, instal·lació desatesa, interfície intuïtiva.&lt;/li>
+&lt;li>&lt;strong>Suport dedicat&lt;/strong>: Assistència experta i temps de resposta excel·lents.&lt;/li>
+&lt;/ul>
+&lt;h2 id="què-pots-aconseguir">Què pots aconseguir?&lt;/h2>
+&lt;ul>
+&lt;li>Supervisa, protegeix i gestiona la teva flota des d’un únic panell.&lt;/li>
+&lt;li>Recupera dispositius en risc abans de perdre dades.&lt;/li>
+&lt;li>Actua a l’instant davant una pèrdua, robatori o desconnexió.&lt;/li>
+&lt;li>Millora la seguretat amb eines de localització i comunicació.&lt;/li>
+&lt;li>Gestiona préstecs i optimitza actius informàtics sense complicacions.&lt;/li>
+&lt;li>Automatitza accions massives a tota la teva infraestructura.&lt;/li>
+&lt;li>Mantingues l’inventari i la documentació llestos per a auditories.&lt;/li>
+&lt;li>Gaudeix d’un suport ràpid i personalitzat.&lt;/li>
+&lt;/ul></description></item><item><title>Test de Ciberseguretat</title><link>https://guardianhubx.com/ca/test-ciberseguretat/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/ca/test-ciberseguretat/</guid><description>&lt;!-- Hero Section -->
 &lt;section class="landing-hero-section">
  &lt;div class="container">
  &lt;div class="row align-items-center">

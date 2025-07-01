@@ -171,9 +171,6 @@
  &lt;/div>
  &lt;/div>
 &lt;/section>
-&lt;div id="fullscreen-overlay" onclick="closeFullscreen()">
- &lt;img id="fullscreen-image" class="img-fluid">
-&lt;/div>
 &lt;section class="downloads mb-5 container text-center">
  &lt;h3>Download More Information&lt;/h3>
  &lt;p>Access detailed documentation about Outkept and its benefits in enterprise cybersecurity.&lt;/p></description></item><item><title>Passwork</title><link>https://guardianhubx.com/en/passwork/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/en/passwork/</guid><description>&lt;section class="about mb-5 container text-center">
@@ -198,7 +195,41 @@
 &lt;!-- Downloads Section -->
 &lt;section class="downloads mb-5 container text-center">
  &lt;h3>Download More Information&lt;/h3>
- &lt;p class="mb-4">Access detailed documentation about Passwork and its cybersecurity benefits.&lt;/p></description></item><item><title>Privacy Policy</title><link>https://guardianhubx.com/en/privacy-policy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/en/privacy-policy/</guid><description>&lt;h2 id="privacy-policy">Privacy Policy&lt;/h2>
+ &lt;p class="mb-4">Access detailed documentation about Passwork and its cybersecurity benefits.&lt;/p></description></item><item><title>Prey Project</title><link>https://guardianhubx.com/en/preyproject/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/en/preyproject/</guid><description>&lt;h3 id="tracking-and-location">Tracking and location&lt;/h3>
+&lt;ul>
+&lt;li>Precise geolocation with continuous tracking&lt;/li>
+&lt;li>Location history and geofencing&lt;/li>
+&lt;li>Loss alerts and reports&lt;/li>
+&lt;/ul>
+&lt;h3 id="data-protection-and-remote-control">Data protection and remote control&lt;/h3>
+&lt;ul>
+&lt;li>Screen lock and file recovery&lt;/li>
+&lt;li>Bitlocker encryption and factory reset&lt;/li>
+&lt;li>Alarms and custom messages&lt;/li>
+&lt;/ul>
+&lt;h3 id="user-and-loan-management">User and loan management&lt;/h3>
+&lt;ul>
+&lt;li>Device assignment with loan dates&lt;/li>
+&lt;li>Automated security actions upon expiration&lt;/li>
+&lt;li>Logs and reports for audits&lt;/li>
+&lt;/ul>
+&lt;h2 id="why-choose-prey">Why choose Prey?&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Multi-OS support&lt;/strong>: Windows, macOS, Android, ChromeOS, Ubuntu… all in one service.&lt;/li>
+&lt;li>&lt;strong>Ease of use&lt;/strong>: Fast setup, unattended installation, intuitive interface.&lt;/li>
+&lt;li>&lt;strong>Dedicated support&lt;/strong>: Expert assistance and best-in-class response times.&lt;/li>
+&lt;/ul>
+&lt;h2 id="what-can-you-achieve">What can you achieve?&lt;/h2>
+&lt;ul>
+&lt;li>Monitor, secure and manage your fleet from a single hub.&lt;/li>
+&lt;li>Rescue at-risk devices before data loss occurs.&lt;/li>
+&lt;li>Act immediately in case of loss, theft or disconnection.&lt;/li>
+&lt;li>Strengthen security with tracking and communication tools.&lt;/li>
+&lt;li>Manage loans and optimize assets with ease.&lt;/li>
+&lt;li>Automate mass actions across your entire fleet.&lt;/li>
+&lt;li>Keep inventory and documentation audit-ready.&lt;/li>
+&lt;li>Enjoy fast and personalized support.&lt;/li>
+&lt;/ul></description></item><item><title>Privacy Policy</title><link>https://guardianhubx.com/en/privacy-policy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/en/privacy-policy/</guid><description>&lt;h2 id="privacy-policy">Privacy Policy&lt;/h2>
 &lt;p>At Qualiteasy Internet Solutions S.L., we are committed to protecting the personal information you share with us. Ensuring and safeguarding the privacy and confidentiality of your personal data is fundamental to us, in accordance with the General Data Protection Regulation (EU Regulation 2016/679) (GDPR) and the Spanish Organic Law 3/2018 (LOPDGDD).&lt;/p>
 &lt;p>This statement outlines our privacy and data protection policy and ensures that:&lt;/p>
 &lt;ol>

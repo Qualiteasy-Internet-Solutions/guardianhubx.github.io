@@ -148,9 +148,6 @@
  &lt;/div>
  &lt;/div>
 &lt;/section>
-&lt;div id="fullscreen-overlay" onclick="closeFullscreen()">
- &lt;img id="fullscreen-image">
-&lt;/div>
 &lt;section class="downloads mb-5 container text-center">
  &lt;h3>Descarga más información&lt;/h3>
  &lt;p>Accede a documentación detallada sobre Outkept y sus beneficios en ciberseguridad.&lt;/p></description></item><item><title>Passwork</title><link>https://guardianhubx.com/es/passwork/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/es/passwork/</guid><description>&lt;section class="about mb-5 container text-center">
@@ -168,7 +165,41 @@
  Con Passwork, las organizaciones pueden &lt;strong>mejorar la seguridad, aumentar la eficiencia y cumplir con las regulaciones&lt;/strong> relacionadas con la gestión de contraseñas.
  &lt;/p></description></item><item><title>Política de Cookies</title><link>https://guardianhubx.com/es/politica-cookies/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/es/politica-cookies/</guid><description>&lt;p>Si quieres saber más sobre el uso de cookies que realiza este sitio web &lt;strong>GuardianHubX&lt;/strong>, estás en el lugar indicado. A continuación, vamos a explicarte qué son exactamente las cookies; qué tipo de cookies utilizamos y para qué; y cómo puedes ejercer tu derecho para configurar tu navegador y desestimar el uso de cualquiera de ellas.&lt;/p>
 &lt;p>Eso sí, debes saber que si decides no utilizar algunas cookies, este sitio web puede no funcionar perfectamente, afectando a tu experiencia de usuario.&lt;/p></description></item><item><title>Política de privacidad</title><link>https://guardianhubx.com/es/politica-privacidad/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/es/politica-privacidad/</guid><description>&lt;p>En Qualiteasy Internet Solutions S.L. nos comprometemos a proteger la información personal que comparte con nosotros, ya que para nosotros es fundamental garantizar y proteger la privacidad y la confidencialidad de sus datos personales, de conformidad con el Reglamento General de Protección de Datos (Reglamento UE 2016/679) (RGPD) y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales (LOPDGDD).&lt;/p>
-&lt;p>Esta declaración establece nuestra política de privacidad y de protección de datos con respecto a la información que nos brinda y así poder garantizarle que:&lt;/p></description></item><item><title>Test de Ciberseguridad</title><link>https://guardianhubx.com/es/test-ciberseguridad/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/es/test-ciberseguridad/</guid><description>&lt;!-- Hero Section -->
+&lt;p>Esta declaración establece nuestra política de privacidad y de protección de datos con respecto a la información que nos brinda y así poder garantizarle que:&lt;/p></description></item><item><title>Prey Project</title><link>https://guardianhubx.com/es/preyproject/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/es/preyproject/</guid><description>&lt;h3 id="rastreo-y-ubicación">Rastreo y ubicación&lt;/h3>
+&lt;ul>
+&lt;li>Geolocalización precisa con rastreo continuo&lt;/li>
+&lt;li>Historial de ubicaciones y geocercas&lt;/li>
+&lt;li>Alertas y reportes de pérdida&lt;/li>
+&lt;/ul>
+&lt;h3 id="protección-de-datos-y-control-remoto">Protección de datos y control remoto&lt;/h3>
+&lt;ul>
+&lt;li>Bloqueo de pantalla y recuperación de archivos&lt;/li>
+&lt;li>Cifrado Bitlocker y restablecimiento de fábrica&lt;/li>
+&lt;li>Alarmas y mensajes personalizados&lt;/li>
+&lt;/ul>
+&lt;h3 id="administración-de-usuarios-y-préstamos">Administración de usuarios y préstamos&lt;/h3>
+&lt;ul>
+&lt;li>Asignación de dispositivos con fechas de préstamo&lt;/li>
+&lt;li>Acciones de seguridad automáticas al vencimiento&lt;/li>
+&lt;li>Informes y registros para auditorías&lt;/li>
+&lt;/ul>
+&lt;h2 id="por-qué-elegir-prey">¿Por qué elegir Prey?&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Soporte Multi-OS&lt;/strong>: Windows, macOS, Android, ChromeOS, Ubuntu… todo bajo un mismo servicio.&lt;/li>
+&lt;li>&lt;strong>Facilidad de uso&lt;/strong>: Configuración rápida, instalación desatendida, interfaz intuitiva.&lt;/li>
+&lt;li>&lt;strong>Soporte dedicado&lt;/strong>: Asistencia experta y tiempos de respuesta líderes en satisfacción.&lt;/li>
+&lt;/ul>
+&lt;h2 id="qué-puedes-lograr">¿Qué puedes lograr?&lt;/h2>
+&lt;ul>
+&lt;li>Supervisa, protege y gestiona tu flota desde un único hub.&lt;/li>
+&lt;li>Rescata dispositivos en riesgo antes de pérdidas de datos.&lt;/li>
+&lt;li>Actúa al instante ante pérdida, robo o desvinculación.&lt;/li>
+&lt;li>Mejora la seguridad con herramientas de localización y comunicación.&lt;/li>
+&lt;li>Gestiona préstamos y optimiza activos sin complicaciones.&lt;/li>
+&lt;li>Automatiza acciones masivas en toda tu flota.&lt;/li>
+&lt;li>Mantén inventario y documentación listos para auditorías.&lt;/li>
+&lt;li>Disfruta de soporte rápido y personalizado.&lt;/li>
+&lt;/ul></description></item><item><title>Test de Ciberseguridad</title><link>https://guardianhubx.com/es/test-ciberseguridad/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/es/test-ciberseguridad/</guid><description>&lt;!-- Hero Section -->
 &lt;section class="landing-hero-section">
  &lt;div class="container">
  &lt;div class="row align-items-center">
