@@ -45,10 +45,6 @@ images:
   </div>
 </section>
 
-<div id="fullscreen-overlay" onclick="closeFullscreen()">
-  <img id="fullscreen-image" class="img-fluid">
-</div>
-
 <section class="downloads mb-5 container text-center">
   <h3>Download More Information</h3>
   <p>Access detailed documentation about Outkept and its benefits in enterprise cybersecurity.</p>

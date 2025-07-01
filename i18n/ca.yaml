@@ -62,3 +62,5 @@
   translation: "¿Què passa si envio el formulari però no vull continuar?"
 - id: "faq_6_answer"
   translation: "La teva informació es mantindrà activa durant 7 dies i es suprimirà automàticament si no continues amb el procés."
+- id: "descargar_info"
+  translation: "Descarregar més informació"

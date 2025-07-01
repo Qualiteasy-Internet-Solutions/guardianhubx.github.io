@@ -65,3 +65,5 @@
   translation: "¿Qué pasa si envío el formulario pero no quiero seguir?"
 - id: "faq_6_answer"
   translation: "Tu información permanecerá activa 7 días y luego se eliminará automáticamente."
+- id: "descargar_info"
+  translation: "Descargar más información"

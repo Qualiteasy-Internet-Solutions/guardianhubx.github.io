@@ -62,3 +62,5 @@
   translation: "What happens if I submit the form but decide not to continue?"
 - id: "faq_6_answer"
   translation: "Your information will remain active for 7 days and then be automatically deleted."
+- id: "descargar_info"
+  translation: "Download more information"
