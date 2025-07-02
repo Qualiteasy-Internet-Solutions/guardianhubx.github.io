@@ -94,7 +94,7 @@ body {
     background-clip: text;
 }
 
-.preyproject {--landing-gradient-primary: linear-gradient(90deg, #3B79B9, #3B79B9); !important}
+.preyproject {--landing-gradient-primary: linear-gradient(90deg, #3B79B9, #3B79B9) !important;}
 
 .landing-text-primary {
     color: var(--landing-primary-color) !important;
