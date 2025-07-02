@@ -163,24 +163,19 @@ translations:
       </div>
     </div>
 
-<!-- Formulario de contacto -->
-<form class="gform row g-4" id="contactForm" action="https://script.google.com/macros/s/AKfycbyJO3Rs4loBRevIsltI1Fcg48BH_WAtGm6Rezhea-0g_FutfYbM0MwOQfEkDI0XXGF5/exec"  method="POST" novalidate>
-    <!-- Nombre -->
+  <form class="gform row g-4" id="contactForm" action="https://script.google.com/macros/s/AKfycbyJO3Rs4loBRevIsltI1Fcg48BH_WAtGm6Rezhea-0g_FutfYbM0MwOQfEkDI0XXGF5/exec"  method="POST" novalidate>
     <div class="col-12 col-md-6">
     <label for="name" class="form-label">Nombre:</label>
     <input type="text" id="name" name="name" class="form-control" required aria-required="true">
     </div>
-    <!-- Email -->
     <div class="col-12 col-md-6">
     <label for="email" class="form-label">Correo Electrónico:</label>
     <input type="email" id="email" name="email" class="form-control" required aria-required="true">
-    </div>
-    <!-- Mensaje -->
+    </div>    
     <div class="col-12">
     <label for="message" class="form-label">Mensaje:</label>
     <textarea id="message" name="message" rows="5" class="form-control" required aria-required="true"></textarea>
-    </div>
-    <!-- Consentimiento -->
+    </div>    
     <div class="col-12">
     <div class="form-check bg-light p-3 ps-5 rounded border">
         <input class="form-check-input" type="checkbox" id="privacy-policy" name="privacy-policy" required>
@@ -188,18 +183,16 @@ translations:
         He leído y acepto la <a href="/es/politica-de-privacidad" target="_blank" rel="noopener">Política de Privacidad</a>.
         </label>
     </div>
-    </div>
-    <!-- Botón de envío -->
+    </div>    
     <div class="col-12 text-center">
     <button type="submit" class="landing-btn landing-btn-primary px-5">Enviar Consulta</button>
     </div>
-    <!-- Campos ocultos -->
     <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
     <input type="hidden" name="_next" value="/es/gracias-phishing">
     <input type="hidden" name="_subject" value="Solicitud de información - Phishing">
     <input type="hidden" name="_autoresponse" value="Gracias por tu consulta. Nos pondremos en contacto contigo lo antes posible.">
     <input type="hidden" name="_template" value="table">
-</form>
+  </form>
   </div>
 </section>
 
