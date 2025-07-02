@@ -42,10 +42,11 @@
     <button type="submit" class="landing-btn landing-btn-primary px-5">{{ i18n "form_submit" }}</button>
     </div>
     <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
-    <input type="hidden" name="_next" value="/{{ .Page.Lang }}/gracias/">
+    <input type="hidden" name="_next" value="/{{ .Page.Lang }}/thanks/">
     <input type="hidden" name="_subject" value="GuardianHubX submission!">
     <input type="hidden" name="_autoresponse" value="{{ i18n "form_thanks" }}">
     <input type="hidden" name="_template" value="table">
   </form>
   </div>
 </section>
+<script src="/js/form-submission-handler.js" defer></script>
