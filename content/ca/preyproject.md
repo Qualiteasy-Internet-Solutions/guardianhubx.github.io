@@ -2,6 +2,7 @@
 title: "Prey Project"
 description: "Protegeix, rastreja i recupera els teus dispositius amb Prey Project. Control total dels teus dispositius i portàtils (tot i no tenir GPS) des d'una consola única"
 layout: "products"
+slug: "preyproject"
 logo: "/img/prey-project-logo.png"
 tagline: "Protegeix, rastreja i recupera els teus dispositius"
 intro:

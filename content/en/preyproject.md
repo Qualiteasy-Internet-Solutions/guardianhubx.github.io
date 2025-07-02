@@ -2,6 +2,7 @@
 title: "Prey Project"
 description: "Protect, track, and recover your devices with Prey Project. Full control of your laptops and devices (even without GPS) from a single console."
 layout: "products"
+slug: "preyproject"
 logo: "/img/prey-project-logo.png"
 tagline: "Protect, track and recover your devices"
 intro: 
