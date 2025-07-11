@@ -9,7 +9,7 @@ resources:
 images:
   - src: "/img/outkept-logo.png"
     alt: "Outkept Logo – Phishing Awareness Training"
-  - src: "/img/outkept-screen.jpg"
+  - src: "/img/outkept-screen.png"
     alt: "Outkept Simulation Screens"
   - src: "/img/outkept-info.jpg"
     alt: "Outkept Phishing Features"
@@ -31,7 +31,7 @@ images:
 <section class="screenshots mb-5 container text-center">
   <div class="row justify-content-center">
     <div class="col-md-5 text-center">
-      <img src="/img/outkept-screen.jpg" 
+      <img src="/img/outkept-screen.png" 
            class="img-fluid zoomable-image shadow-sm rounded" 
            alt="Outkept Simulation Screens" 
            onclick="openFullscreen(this)">

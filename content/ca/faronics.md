@@ -43,7 +43,7 @@ external_links:
 </section>
 
 <div class="d-flex justify-content-center gap-4 flex-wrap my-4">
-  <img src="img/faronics-screens.jpg" 
+  <img src="img/faronics-screens.png" 
        class="img-fluid zoomable-image" 
        alt="Interfície de Deep Freeze" 
        onclick="openFullscreen(this)">

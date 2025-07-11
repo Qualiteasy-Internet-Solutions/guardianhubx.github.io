@@ -23,7 +23,7 @@ translations:
       </div>
       <div class="col-lg-6 text-center landing-slide-in-right">
         <div class="landing-hero-img-wrapper">
-          <img src="/img/formacion-phishing.jpg" 
+          <img src="/img/formacion-phishing.svg" 
                alt="Formació en phishing per empreses - Software de seguretat digital" 
                class="landing-hero-img-custom"
                width="500"

@@ -9,7 +9,7 @@ resources:
 images:
   - src: "img/outkept-logo.png"
     alt: "Logo d'Outkept"
-  - src: "img/outkept-screen.jpg"
+  - src: "img/outkept-screen.png"
     alt: "Pantalles d'Outkept"
   - src: "img/outkept-info.jpg"
     alt: "Característiques de phishing d'Outkept"
@@ -28,7 +28,7 @@ images:
 <section class="about mb-5 container text-center">
   <div class="row justify-content-center">
     <div class="col-md-5 text-center">
-      <img src="img/outkept-screen.jpg" class="img-fluid zoomable-image" alt="Pantalles d'Outkept" onclick="openFullscreen(this)">
+      <img src="img/outkept-screen.png" class="img-fluid zoomable-image" alt="Pantalles d'Outkept" onclick="openFullscreen(this)">
     </div>
     <div class="col-md-5 text-center">
       <img src="img/outkept-info.jpg" class="img-fluid zoomable-image" alt="Característiques de phishing d'Outkept" onclick="openFullscreen(this)">
