@@ -23,7 +23,7 @@
  &lt;/div>
  &lt;div class="col-lg-6 text-center landing-slide-in-right">
  &lt;div class="landing-hero-img-wrapper">
- &lt;img src="https://guardianhubx.com/img/formacion-phishing.jpg" alt="Software de formación en phishing para empresas" class="landing-hero-img-custom" width="500" height="400" loading="lazy">
+ &lt;img src="https://guardianhubx.com/img/formacion-phishing.svg" alt="Software de formación en phishing para empresas" class="landing-hero-img-custom" width="500" height="400" loading="lazy">
  &lt;/div>
  &lt;/div>
  &lt;/div>
@@ -216,7 +216,7 @@
 &lt;section class="about mb-5 container text-center">
  &lt;div class="row justify-content-center">
  &lt;div class="col-md-5 text-center">
- &lt;img src="img/outkept-screen.jpg" class="img-fluid zoomable-image" alt="Pantallas de Outkept" onclick="openFullscreen(this)">
+ &lt;img src="img/outkept-screen.png" class="img-fluid zoomable-image" alt="Pantallas de Outkept" onclick="openFullscreen(this)">
  &lt;/div>
  &lt;div class="col-md-5 text-center">
  &lt;img src="img/outkept-info.jpg" class="img-fluid zoomable-image" alt="Características de phishing de Outkept" onclick="openFullscreen(this)">

@@ -233,7 +233,7 @@
 &lt;section class="screenshots mb-5 container text-center">
  &lt;div class="row justify-content-center">
  &lt;div class="col-md-5 text-center">
- &lt;img src="https://guardianhubx.com/img/outkept-screen.jpg" 
+ &lt;img src="https://guardianhubx.com/img/outkept-screen.png" 
  class="img-fluid zoomable-image shadow-sm rounded" 
  alt="Outkept Simulation Screens" 
  onclick="openFullscreen(this)">
@@ -327,7 +327,7 @@
  &lt;/div>
  &lt;div class="col-lg-6 text-center landing-slide-in-right">
  &lt;div class="landing-hero-img-wrapper">
- &lt;img src="https://guardianhubx.com/img/formacion-phishing.jpg" 
+ &lt;img src="https://guardianhubx.com/img/formacion-phishing.svg" 
  alt="Phishing training software for businesses" 
  class="img-fluid landing-hero-img-custom"
  width="500"
