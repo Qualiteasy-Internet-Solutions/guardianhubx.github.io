@@ -86,14 +86,6 @@ opacity: 0;
 transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-/* Para mejorar la experiencia en dispositivos móviles */
-@media (max-width: 768px) {
-#fullscreen-image {
-  max-width: 95%;
-  max-height: 95%;
-}
-}
-
 /* Clase que activa la transición */
 .visible {
 opacity: 1 !important;
@@ -111,10 +103,17 @@ margin-bottom: .75rem; /* igual que mb-3 */
 
 /* Ajuste inicial: el main-nav está 36px más abajo, que es la altura del top-bar */
 #top-bar {
-height: 36px;
-transition: transform 0.3s ease;
-z-index: 1030;
+  height: 36px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1050;
+  background-color: #1232ff; /* o el que toqui al teu cas */
+  color: #fff;
+  transition: transform 0.3s ease;
 }
+
 #main-nav {
 transition: top 0.3s ease;
 z-index: 1020;
@@ -127,4 +126,90 @@ transform: translateY(-100%);
 /* Y subimos el navbar al tope */
 body.scrolled #main-nav {
 top: 0 !important;
+}
+
+body.scrolled header img.logo {
+  max-width: 200px;
+  transition: max-width 0.3s ease;
+}
+
+/* Banner */
+.home-banner {
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  overflow: hidden;
+}
+
+/* Quan fem scroll, el banner desapareix visualment però manté espai */
+body.scrolled .home-banner {
+  max-height: 90px; /* ajusta aquest valor si cal */
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Navbar scroll padding */
+.home-navbar {
+  transition: padding 0.3s ease;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+body.scrolled .home-navbar {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* Evita que el menú pugi si el banner s'amaga */
+.home-banner-container {
+  height: 90px; /* mateixa alçada que el màxim quan està "amagat" */
+  transition: height 0.3s ease;
+}
+
+/* Per a la pàgina d'inici */
+.with-fixed-header {
+  padding-top: 140px;
+}
+
+.with-home-header {
+  padding-top: 320px;
+}
+
+/* Para mejorar la experiencia en dispositivos móviles */
+@media (max-width: 768px) {
+#fullscreen-image {
+  max-width: 95%;
+  max-height: 95%;
+}
+
+  .navbar-toggler {
+    margin-bottom: 1rem;
+  }
+
+  .home-header-wrapper .container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  header img.logo {
+    max-width: 200px;
+    margin: 0 auto;
+  }
+  
+  .with-fixed-header {
+    padding-top: 130px;
+  }
+
+  .with-home-header {
+    padding-top: 150px;
+  }
+
+}
+
+.zoomable-image {
+    max-height: 900px; /* o 100vh si vols sense scroll */
+  }
+
+@media (max-width: 576px) {
+  .zoomable-image {
+    max-height: 80vh; /* o 100vh si vols sense scroll */
+  }
 }

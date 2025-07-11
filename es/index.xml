@@ -86,24 +86,99 @@
  &lt;a href="https://guardianhubx.com/es/">Volver a la página principal&lt;/a>
  &lt;/div>
 &lt;/section></description></item><item><title>iDrive</title><link>https://guardianhubx.com/es/idrive/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/es/idrive/</guid><description>&lt;section class="about mb-5 container text-center">
- &lt;img src="https://www.idrive.com/include/images/authorized_reseller.png" alt="Logo d'iDrive" class="img-fluid mb-2" style="max-height: 100px;">
- &lt;p>&lt;strong>iDrive&lt;/strong>: Còpies de seguretat fiables i solucions de recuperació davant desastres per a dades crítiques.&lt;/p>
+ &lt;img src="https://www.idrive.com/include/images/authorized_reseller.png" alt="Logo de iDrive" class="img-fluid mb-2" style="max-height: 100px;">
+ &lt;p>&lt;strong>iDrive&lt;/strong>: Copias de seguridad fiables y soluciones de recuperación ante desastres para datos críticos.&lt;/p>
  &lt;p>
- Amb el seu sistema d'emmagatzematge al núvol, iDrive permet realitzar còpies de seguretat automàtiques i accedir als dades des de qualsevol dispositiu en qualsevol moment.&lt;br>
- Gràcies a &lt;a href="https://www.idrive.com/idrive/signup?p=qualiteasy" target="_blank">iDrive&lt;/a>, les empreses poden &lt;strong>minimitzar la pèrdua de dades, garantir la continuïtat del negoci i recuperar fitxers en cas d'incidents&lt;/strong>.
+ Con su sistema de almacenamiento en la nube, iDrive permite realizar copias de seguridad automáticas y acceder a los datos desde cualquier dispositivo en cualquier momento.&lt;br>
+ Gracias a &lt;a href="https://www.idrive.com/idrive/signup?p=qualiteasy" target="_blank">iDrive&lt;/a>, las empresas pueden &lt;strong>minimizar la pérdida de datos, garantizar la continuidad del negocio y recuperar archivos en caso de incidentes&lt;/strong>.
  &lt;/p>
  &lt;div class="row justify-content-center my-4">
  &lt;div class="col-md-5">
- &lt;img src="https://guardianhubx.com/img/idrive-screen.png" class="img-fluid zoomable-image" alt="Captures de pantalla d'iDrive Backup" onclick="openFullscreen(this)">
+ &lt;img src="https://guardianhubx.com/img/idrive-screen.png" class="img-fluid zoomable-image" alt="Capturas de pantalla de iDrive Backup" onclick="openFullscreen(this)">
  &lt;/div>
  &lt;div class="col-md-5">
- &lt;img src="https://guardianhubx.com/img/idrive-features.png" class="img-fluid zoomable-image" alt="Característiques d'iDrive Backup" onclick="openFullscreen(this)">
+ &lt;img src="https://guardianhubx.com/img/idrive-features.png" class="img-fluid zoomable-image" alt="Características de iDrive Backup" onclick="openFullscreen(this)">
  &lt;/div>
  &lt;/div>
 &lt;/section>
 &lt;section class="downloads mb-5 container text-center">
- &lt;h3>Descarrega més informació&lt;/h3>
- &lt;p>Accedeix a documentació detallada sobre iDrive i els seus beneficis en ciberseguretat.&lt;/p></description></item><item><title>NordSecurity</title><link>https://guardianhubx.com/es/nordsecurity/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/es/nordsecurity/</guid><description>&lt;section class="about mb-5 container text-center">
+ &lt;h3>Descarga más información&lt;/h3>
+ &lt;p>Accede a documentación detallada sobre iDrive y sus beneficios en ciberseguridad.&lt;/p></description></item><item><title>Newsletter</title><link>https://guardianhubx.com/es/newsletter/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/es/newsletter/</guid><description>&lt;style>
+ @font-face {
+ font-display: block;
+ font-family: Roboto;
+ src: url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/7529907e9eaf8ebb5220c5f9850e3811.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/25c678feafdc175a70922a116c9be3e7.woff) format("woff")
+ }
+ 
+ @font-face {
+ font-display: fallback;
+ font-family: Roboto;
+ font-weight: 600;
+ src: url(https://assets.brevo.com/font/Roboto/Latin/medium/normal/6e9caeeafb1f3491be3e32744bc30440.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/medium/normal/71501f0d8d5aa95960f6475d5487d4c2.woff) format("woff")
+ }
+ 
+ @font-face {
+ font-display: fallback;
+ font-family: Roboto;
+ font-weight: 700;
+ src: url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/3ef7cf158f310cf752d5ad08cd0e7e60.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/ece3a1d82f18b60bcce0211725c476aa.woff) format("woff")
+ }
+ 
+ #sib-container input:-ms-input-placeholder {
+ text-align: left;
+ font-family: Helvetica, sans-serif;
+ color: #c0ccda;
+ }
+ 
+ #sib-container input::placeholder {
+ text-align: left;
+ font-family: Helvetica, sans-serif;
+ color: #c0ccda;
+ }
+ 
+ #sib-container textarea::placeholder {
+ text-align: left;
+ font-family: Helvetica, sans-serif;
+ color: #c0ccda;
+ }
+ 
+ #sib-container a {
+ text-decoration: underline;
+ color: #2BB2FC;
+ }
+ &lt;/style>
+ &lt;link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
+ 
+ &lt;div class="sib-form" style="text-align: center;
+ background-color: #EFF2F7; ">
+ &lt;div id="sib-form-container" class="sib-form-container">
+ &lt;div id="error-message" class="sib-form-message-panel" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;max-width:540px;">
+ &lt;div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+ &lt;svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
+ &lt;path d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-11.49 120h22.979c6.823 0 12.274 5.682 11.99 12.5l-7 168c-.268 6.428-5.556 11.5-11.99 11.5h-8.979c-6.433 0-11.722-5.073-11.99-11.5l-7-168c-.283-6.818 5.167-12.5 11.99-12.5zM256 340c-15.464 0-28 12.536-28 28s12.536 28 28 28 28-12.536 28-28-12.536-28-28-28z" />
+ &lt;/svg>
+ &lt;span class="sib-form-message-panel__inner-text">
+ No hemos podido procesar tu suscripción. Inténtalo de nuevo.
+ &lt;/span>
+ &lt;/div>
+ &lt;/div>
+ &lt;div>&lt;/div>
+ &lt;div id="success-message" class="sib-form-message-panel" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#085229; background-color:#e7faf0; border-radius:3px; border-color:#13ce66;max-width:540px;">
+ &lt;div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+ &lt;svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
+ &lt;path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 464c-118.664 0-216-96.055-216-216 0-118.663 96.055-216 216-216 118.664 0 216 96.055 216 216 0 118.663-96.055 216-216 216zm141.63-274.961L217.15 376.071c-4.705 4.667-12.303 4.637-16.97-.068l-85.878-86.572c-4.667-4.705-4.637-12.303.068-16.97l8.52-8.451c4.705-4.667 12.303-4.637 16.97.068l68.976 69.533 163.441-162.13c4.705-4.667 12.303-4.637 16.97.068l8.451 8.52c4.668 4.705 4.637 12.303-.068 16.97z" />
+ &lt;/svg>
+ &lt;span class="sib-form-message-panel__inner-text">
+ ¡Gracias por suscribirte! Revisa tu correo para confirmar.
+ &lt;/span>
+ &lt;/div>
+ &lt;/div>
+ &lt;div>&lt;/div>
+ &lt;div id="sib-container" class="sib-container--large sib-container--vertical" style="text-align:center; background-color:rgba(255,255,255,1); max-width:540px; border-radius:3px; border-width:1px; border-color:#C0CCD9; border-style:solid; direction:ltr">
+ &lt;form id="sib-form" method="POST" action="https://0a5cf9c7.sibforms.com/serve/MUIFADl6hrXb62LTgmEd6hkqXpe4Q1QXPobf2jzei8EtxNRBUdVlHyAWrvl-vznJCCWcbAtcsng_kHQzsoOEsxn7wumTmCfgjTFcDRqTIfi5FxN7f_nvJFQcfO-J9WK4qVDEtLL01NvFAF7E5N3a6rmv1RWp8nDDFf0MDvKKHZLP9eSPAkvvVYw8ZOH5k77evKhCCrEyO2TchOHm" data-type="subscription">
+ &lt;div style="padding: 8px 0;">
+ &lt;div class="sib-form-block" style="font-size:32px; text-align:left; font-weight:700; font-family:Helvetica, sans-serif; color:#3C4858; background-color:transparent; text-align:left">
+ &lt;p>Newsletter&lt;/p></description></item><item><title>NordSecurity</title><link>https://guardianhubx.com/es/nordsecurity/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/es/nordsecurity/</guid><description>&lt;section class="about mb-5 container text-center">
  &lt;img src="https://guardianhubx.com/img/nordsecurity-logo.png" alt="Logo de Nord-Security" class="img-fluid mb-2" style="max-height: 100px;">
  &lt;p>NordSecurity: Protege el acceso remoto de tu equipo con soluciones VPN avanzadas y gestión de contraseñas.&lt;/p>
 &lt;/section>
