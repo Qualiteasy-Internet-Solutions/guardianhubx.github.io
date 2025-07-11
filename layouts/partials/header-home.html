@@ -1,0 +1,39 @@
+<header>
+  {{ partial "top-bar.html" . }}
+  <div class="home-header-wrapper fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 home-navbar fixed-top">
+      <div class="container-lg">
+        <div class="row w-100 align-items-center">
+          <div class="col-10 col-lg-4 text-start order-1">
+            <a href="{{ .Lang }}/index.html">
+              <img src="{{ "img/logo_GHX_01-01.png" | relURL }}" alt="GuardianHubX - Advanced Cybersecurity Solutions" class="logo">
+            </a>
+          </div>
+          <div class="col-2 d-lg-none text-end order-2">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div class="col-12 col-lg-8 d-flex flex-column align-items-lg-end order-3 mt-3 mt-lg-0">
+            <div class="home-banner mb-2 d-none d-lg-block">
+              <a href="{{ 
+                  cond (eq .Site.Language.Lang "es") ("/es/test-ciberseguridad/" | relLangURL) 
+                  (cond (eq .Site.Language.Lang "ca") ("/ca/test-ciberseguretat/" | relLangURL) 
+                                        ("/en/cybersecurity-test/" | relLangURL)) 
+                }}">
+                <img src="{{ "img/cuestionario.gif" | relURL }}" 
+                     alt="Evalúa tu nivel de ciberseguridad" 
+                     class="img-fluid banner-img"
+                     style="max-height: 220px;">
+              </a>
+            </div>            
+            <div class="collapse navbar-collapse mt-2 mt-lg-0 w-100" id="navbarSupportedContent">
+              {{ partial "menu.html" . }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>

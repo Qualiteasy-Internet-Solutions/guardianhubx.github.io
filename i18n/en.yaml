@@ -64,3 +64,85 @@
   translation: "Your information will remain active for 7 days and then be automatically deleted."
 - id: "descargar_info"
   translation: "Download more information"
+- id : "test_ciberseguridad"
+  translation: "Cybersecurity test"
+- id : "solucions"
+  translation: "Solutions"
+- id : "contact"
+  translation: "Contact"
+- id: "apren"
+  translation: "How to Stay Safe Online"
+- id: "objectius"
+  translation: "Cybersecurity goals"
+
+- id: "newsletter_title"
+  translation: "Newsletter"
+
+- id: "newsletter_description"
+  translation: "Subscribe to receive tips, real-world cases and exclusive cybersecurity resources."
+
+- id: "newsletter_optin_text"
+  translation: "I accept the privacy policy and agree to receive your newsletters."
+
+- id: "newsletter_success"
+  translation: "Thanks for subscribing! Please check your inbox to confirm."
+
+- id: "newsletter_error"
+  translation: "We couldn't process your subscription. Please try again."
+
+- id: "newsletter_cancelar"
+  translation: "You can unsubscribe at any time using the link in our newsletter."
+
+- id: "newletter_politica_brevo"
+  translation: "We use Brevo as our marketing platform. By submitting this form, you agree that the personal data you provide will be transferred to Brevo for processing in accordance with Brevo’s Privacy Policy."
+
+- id: "form_subscribe"
+  translation: "Subscribe"
+
+- id: "placeholder_email"
+  translation: "name@company.com"
+
+- id: "placeholder_name"
+  translation: "First name"
+
+- id: "placeholder_surname"
+  translation: "Last name"
+
+- id: "placeholder_company"
+  translation: "Company"
+
+- id: "newsletter_email"
+  translation: "Enter your EMAIL"
+
+- id: "newsletter_name"
+  translation: "Enter your FIRST NAME"
+
+- id: "newsletter_surname"
+  translation: "Enter your LAST NAME"
+
+- id: "newsletter_company"
+  translation: "Enter your COMPANY"
+
+- id: "newsletter_required_country"
+  translation: "Please select a country code"
+
+- id: "newsletter_invalid_message"
+  translation: "The information you provided is not valid. Please check the field format and try again."
+
+- id: "newsletter_required"
+  translation: "This field cannot be left empty."
+
+- id: "newsletter_selected_list"
+  translation: "{quantity} list selected"
+
+- id: "newsletter_selected_lists"
+  translation: "{quantity} lists selected"
+
+- id: "newsletter_selected_option"
+  translation: "{quantity} option selected"
+
+- id: "newsletter_selected_options"
+  translation: "{quantity} options selected"
+
+- id: "idiomes"
+  translation: "Available languages"

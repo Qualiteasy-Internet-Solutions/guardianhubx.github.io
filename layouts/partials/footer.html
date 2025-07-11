@@ -1,33 +1,160 @@
-<footer class="site-footer bg-light text-center py-4">
+<footer class="site-footer bg-light border-top border-2 border-dark pt-5 pb-5">
   <div class="container">
-    <div class="mb-3">
-      <p class="mb-2">{{ i18n "miembro_desc" }}</p>
-      <a href="https://www.ascicat.cat/"  target="_blank" rel="noopener">
-        <img src="{{ "img/ascicat-logo.avif" | relURL }}" alt="ASCICAT - Associació de Ciberseguretat de Catalunya" style="max-height: 60px;" />
-      </a>
-    </div>
+    <div class="row gy-4 align-items-start">
 
-    <p class="mb-1">&copy; {{ now.Format "2006" }} <strong>GuardianHubX</strong> by 
-      <a href="https://qualiteasy.eu/"  target="_blank" rel="noopener">Qualiteasy Internet Solutions</a>
-    </p>
-    
-    <p class="mb-0">
-      {{- $lang := .Site.Language.Lang -}}
-      <a href="{{ 
-          cond (eq $lang "es") ("/es/politica-privacidad/" | relURL) 
-          (cond (eq $lang "ca") ("/ca/politica-privacitat/" | relURL) 
-                            ("/en/privacy-policy/"    | relURL)) 
-        }}">
-        {{ i18n "politica_privacidad" }}
-      </a>
-      |       
-      <a href="{{ 
-          cond (eq $lang "es") ("/es/politica-cookies/" | relURL) 
-          (cond (eq $lang "ca") ("/ca/politica-galletes/" | relURL) 
-                            ("/en/cookies-policy/"     | relURL)) 
-        }}">
-        {{ i18n "politica_cookies" }}
-      </a>
-    </p>
+      <div class="col-md-4 d-flex flex-column align-items-center align-items-md-start">
+        <a href="{{ .Lang }}/index.html" class="mb-3">
+          <img src="/img/logo_GHX_01-01.png"
+               alt="GuardianHubX"
+               width="160" height="auto"
+               style="max-height:80px;"
+               loading="lazy">
+        </a>
+        <p class="small text-secondary text-center text-md-start mb-4">
+          {{ i18n "miembro_desc" }}
+        </p>
+        <a href="https://www.ascicat.cat/" target="_blank" rel="noopener" class="d-inline-block">
+          <img src="{{ "img/ascicat-logo.avif" | relURL }}"
+               alt="ASCICAT"
+               width="120" height="auto"
+               style="max-height:60px;"
+               loading="lazy">
+        </a>
+      </div>
+
+      <div class="col-md-4">
+        <h6 class="text-uppercase mb-3 small">{{ i18n "menu" }}</h6>
+        <nav class="footer-menu-nav small" aria-label="Enllaços del peu de pàgina">
+          {{ partial "menu.html" . }}
+        </nav>
+      </div>
+
+      <div class="col-md-4 text-center text-md-start">
+        <h6 class="text-uppercase mb-3 small">{{ i18n "contacte" }}</h6>
+
+        <address class="small mb-3">
+          <i class="fas fa-envelope me-2" aria-hidden="true"></i>
+          <a href="mailto:info@guardianhubx.com" class="text-decoration-none text-secondary">
+            info@guardianhubx.com
+          </a><br>
+          <i class="fas fa-phone-alt me-2" aria-hidden="true"></i>
+          <a href="tel:+34934153115" class="text-decoration-none text-secondary">
+            +34 93 415 31 15
+          </a>
+        </address>
+
+        <p class="small mb-3">
+          <i class="fab fa-linkedin me-2"></i>
+          <a href="https://www.linkedin.com/company/qualiteasyeu"
+             target="_blank"
+             class="text-decoration-none text-secondary">
+            LinkedIn
+          </a>
+        </p>
+        <p class="small mb-3">
+          <i class="fab fa-tiktok me-2"></i>
+          <a href="https://www.tiktok.com/@GuardianHubX"
+             target="_blank"
+             class="text-decoration-none text-secondary">
+            TikTok
+          </a>
+        </p>
+        <p class="small mb-3">
+          <i class="fas fa-blog me-2"></i>
+          <a href="/blog" class="text-decoration-none text-secondary">
+            Blog / News
+          </a>
+        </p>
+
+        <div class="small mb-3">
+          <strong>{{ i18n "idiomes" }}:</strong>
+          <a href="/ca/" class="text-decoration-none text-secondary">Català</a>,
+          <a href="/en/" class="text-decoration-none text-secondary">English</a>,
+          <a href="/es/" class="text-decoration-none text-secondary">Español</a>
+        </div>
+
+        <div class="small mb-3">
+          <p class="mb-1">
+            <a href="{{ cond (eq .Lang "es") ("/es/politica-privacidad/" | relURL)
+                         (cond (eq .Lang "ca") ("/ca/politica-privacitat/" | relURL)
+                                         ("/en/privacy-policy/"    | relURL)) }}"
+               class="text-decoration-none text-secondary">
+              · {{ i18n "politica_privacidad" }}
+            </a>
+          </p>
+          <p class="mb-0">
+            <a href="{{ cond (eq .Lang "es") ("/es/politica-cookies/" | relURL)
+                         (cond (eq .Lang "ca") ("/ca/politica-galletes/"  | relURL)
+                                         ("/en/cookies-policy/"     | relURL)) }}"
+               class="text-decoration-none text-secondary">
+              · {{ i18n "politica_cookies" }}
+            </a>
+          </p>
+        </div>
+
+        <p class="small text-secondary mb-0">
+          &copy; {{ now.Format "2006" }} <strong>GuardianHubX</strong> by
+          <a href="https://qualiteasy.eu/" class="text-decoration-none text-primary" target="_blank">
+            Qualiteasy Internet Solutions
+          </a>
+        </p>
+      </div>
+
+    </div>
   </div>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "GuardianHubX",
+    "url": "https://guardianhubx.com",
+    "logo": "https://guardianhubx.com/img/logo_GHX_01-01.png",
+    "email": "info@guardianhubx.com",
+    "telephone": "+34934153115",
+    "sameAs": [
+      "https://www.linkedin.com/company/qualiteasyeu",
+      "https://www.tiktok.com/@GuardianHubX"
+    ]
+  }
+  </script>
 </footer>
+
+<style>
+  .footer-menu-nav .navbar-nav {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: .25rem;
+  }
+  .footer-menu-nav .nav-link {
+    font-size: .8125rem;
+    padding: 0;
+    color: #495057;
+  }
+  .footer-menu-nav .nav-link:hover {
+    color: #0d6efd;
+  }
+  .footer-menu-nav .dropdown-menu {
+    display: block !important;
+    position: static !important;
+    margin-left: 1rem;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+  }
+  .footer-menu-nav .dropdown-item {
+    font-size: .75rem;
+    padding: .125rem 0;
+    color: #6c757d;
+  }
+  .footer-menu-nav .dropdown-item:hover {
+    color: #0d6efd;
+  }
+  .site-footer a.text-secondary:hover,
+  .site-footer a.text-primary:hover {
+    color: #0d6efd;
+  }
+</style>
+
+{{ partial "scripts.html" . }}

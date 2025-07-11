@@ -196,44 +196,6 @@ translations:
   </div>
 </section>
 
-<!-- Scripts -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script> 
-<script>
-    // Navbar scroll effect
-    window.addEventListener('scroll', function() {
-        const navbar = document.querySelector('.landing-navbar');
-        if (navbar && window.scrollY > 50) {
-            navbar.classList.add('landing-scrolled');
-        } else if (navbar) {
-            navbar.classList.remove('landing-scrolled');
-        }
-    });
-
-    // Scroll animations
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    };
-
-    const observer = new IntersectionObserver(function(entries) {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('landing-visible');
-            }
-        });
-    }, observerOptions);
-
-    // Aplica animaciones a elementos visuales
-    document.querySelectorAll('.landing-fade-in, .landing-slide-in-left, .landing-slide-in-right').forEach(el => {
-        observer.observe(el);
-    });
-
-    // Animación de carga
-    window.addEventListener('load', function() {
-        document.body.style.opacity = '1';
-    });
-</script>
-
 <!-- FAQ Section -->
 <section class="landing-section py-5">
 <div class="container">

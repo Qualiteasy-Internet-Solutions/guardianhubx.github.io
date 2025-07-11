@@ -1,51 +1,51 @@
 ---
 title: "iDrive"
 layout: "product"
-description: "Còpies de seguretat fiables i solucions de recuperació davant desastres per a dades crítiques."
+description: "Copias de seguridad fiables y soluciones de recuperación ante desastres para datos críticos."
 video: "https://www.youtube.com/embed/enSn-XPjzCc?rel=0&cc_load_policy=0"
 resources:
-  - name: "Brochure"
+  - name: "Folleto"
     file: "docs/idrive-guardianhubx-es.pdf"
 external_links:
-  - name: "Website"
+  - name: "Sitio web"
     url: "https://www.idrive.com/idrive/signup?p=qualiteasy"
 ---
 
 <section class="about mb-5 container text-center">
-  <img src="https://www.idrive.com/include/images/authorized_reseller.png" alt="Logo d'iDrive" class="img-fluid mb-2" style="max-height: 100px;">
-  <p><strong>iDrive</strong>: Còpies de seguretat fiables i solucions de recuperació davant desastres per a dades crítiques.</p>
+  <img src="https://www.idrive.com/include/images/authorized_reseller.png" alt="Logo de iDrive" class="img-fluid mb-2" style="max-height: 100px;">
+  <p><strong>iDrive</strong>: Copias de seguridad fiables y soluciones de recuperación ante desastres para datos críticos.</p>
   <p>
-    Amb el seu sistema d'emmagatzematge al núvol, iDrive permet realitzar còpies de seguretat automàtiques i accedir als dades des de qualsevol dispositiu en qualsevol moment.<br>
-    Gràcies a <a href="https://www.idrive.com/idrive/signup?p=qualiteasy" target="_blank">iDrive</a>, les empreses poden <strong>minimitzar la pèrdua de dades, garantir la continuïtat del negoci i recuperar fitxers en cas d'incidents</strong>.
+    Con su sistema de almacenamiento en la nube, iDrive permite realizar copias de seguridad automáticas y acceder a los datos desde cualquier dispositivo en cualquier momento.<br>
+    Gracias a <a href="https://www.idrive.com/idrive/signup?p=qualiteasy" target="_blank">iDrive</a>, las empresas pueden <strong>minimizar la pérdida de datos, garantizar la continuidad del negocio y recuperar archivos en caso de incidentes</strong>.
   </p>
 
   <div class="row justify-content-center my-4">
     <div class="col-md-5">
-      <img src="/img/idrive-screen.png" class="img-fluid zoomable-image" alt="Captures de pantalla d'iDrive Backup" onclick="openFullscreen(this)">
+      <img src="/img/idrive-screen.png" class="img-fluid zoomable-image" alt="Capturas de pantalla de iDrive Backup" onclick="openFullscreen(this)">
     </div>
     <div class="col-md-5">
-      <img src="/img/idrive-features.png" class="img-fluid zoomable-image" alt="Característiques d'iDrive Backup" onclick="openFullscreen(this)">
+      <img src="/img/idrive-features.png" class="img-fluid zoomable-image" alt="Características de iDrive Backup" onclick="openFullscreen(this)">
     </div>
   </div>
 </section>
 
 <section class="downloads mb-5 container text-center">
-  <h3>Descarrega més informació</h3>
-  <p>Accedeix a documentació detallada sobre iDrive i els seus beneficis en ciberseguretat.</p>
+  <h3>Descarga más información</h3>
+  <p>Accede a documentación detallada sobre iDrive y sus beneficios en ciberseguridad.</p>
   <div class="d-flex justify-content-center align-items-center gap-2 flex-wrap">
     <a href="/docs/idrive-guardianhubx-es.pdf" class="btn btn-primary pdf-download" target="_blank">
-      <i class="fas fa-file-pdf"></i> Descarrega el Brochure
+      <i class="fas fa-file-pdf"></i> Descargar folleto
     </a>
     <a href="https://www.idrive.com/idrive/signup?p=qualiteasy" class="btn btn-success" target="_blank">
-      <i class="fas fa-globe"></i> Website
+      <i class="fas fa-globe"></i> Sitio web
     </a>
   </div>
 </section>
 
 <section class="solutions mb-5 container text-center">
-  <h3>Demostració d'iDrive</h3>
-  <p>Veu com funciona iDrive amb una demo pràctica:</p>
+  <h3>Demostración de iDrive</h3>
+  <p>Ve cómo funciona iDrive con una demo práctica:</p>
   <div class="ratio ratio-16x9">
-    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/enSn-XPjzCc?rel=0&cc_load_policy=0" allowfullscreen title="Vídeo explicatiu d'iDrive"></iframe>
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/enSn-XPjzCc?rel=0&cc_load_policy=0" allowfullscreen title="Vídeo explicativo de iDrive"></iframe>
   </div>
 </section>

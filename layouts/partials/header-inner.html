@@ -1,0 +1,23 @@
+<!-- HEADER-INNER: per a totes les pàgines interiors -->
+{{ partial "top-bar.html" . }}
+
+<nav id="main-nav"
+     class="navbar landing-navbar navbar-expand-lg navbar-light bg-light fixed-top"
+     style="top: 36px;">
+  <div class="container d-flex align-items-center flex-wrap">
+    
+    <a class="navbar-brand" href="{{ .Lang }}/index.html">
+      <img src="/img/logo_GHX_01-01.png" alt="GuardianHubX" class="logo-petit">
+    </a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse mt-2 mt-lg-0 align-self-end" id="navbarSupportedContent">
+    {{ partial "menu.html" . }}
+    </div>
+
+  </div>
+</nav>

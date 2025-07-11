@@ -64,3 +64,85 @@
   translation: "La teva informació es mantindrà activa durant 7 dies i es suprimirà automàticament si no continues amb el procés."
 - id: "descargar_info"
   translation: "Descarregar més informació"
+- id : "test_ciberseguridad"
+  translation: "Test de ciberseguretat"
+- id : "solucions"
+  translation: "Solucions"
+- id : "contact"
+  translation: "Contacte"
+- id: "apren"
+  translation: "Aprèn a protegir-te"
+- id: "objectius"
+  translation: "Objectius de ciberseguretat"
+
+- id: "newsletter_title"
+  translation: "Butlletí"
+
+- id: "newsletter_description"
+  translation: "Subscriu-te per rebre consells, casos reals i recursos exclusius sobre ciberseguretat."
+
+- id: "newsletter_optin_text"
+  translation: "Accepto la política de privacitat i rebre els vostres butlletins."
+
+- id: "newsletter_success"
+  translation: "Gràcies per subscriure't! Revisa el teu correu per confirmar-ho."
+
+- id: "newsletter_error"
+  translation: "No hem pogut processar la teva subscripció. Torna-ho a intentar."
+
+- id: "newsletter_cancelar"
+  translation: "Pots cancel·lar la teva subscripció en qualsevol moment mitjançant l'enllaç del nostre butlletí."
+
+- id: "newletter_politica_brevo"
+  translation: "Utilitzem Brevo com a plataforma de màrqueting. En enviar aquest formulari, acceptes que les dades personals que proporcionis es transferiran a Brevo per al seu tractament d'acord amb la seva política de privacitat."
+  
+- id: "form_subscribe"
+  translation: "Subscriu-m'hi"
+
+- id: "placeholder_email"
+  translation: "nom@empresa.com"
+
+- id: "placeholder_name"
+  translation: "Nom"
+
+- id: "placeholder_surname"
+  translation: "Cognoms"
+
+- id: "placeholder_company"
+  translation: "Empresa"
+
+- id: "newsletter_email"
+  translation: "Introdueix el teu EMAIL"
+
+- id: "newsletter_name"
+  translation: "Introdueix el teu NOM"
+
+- id: "newsletter_surname"
+  translation: "Introdueix el teus COGNOMS"
+
+- id: "newsletter_company"
+  translation: "Introdueix la teva EMPRESA"
+
+- id: "newsletter_required_country"
+  translation: "Trieu un codi de país"
+
+- id: "newsletter_invalid_message"
+  translation: "La informació proporcionada no és vàlida. Comproveu el format del camp i torneu-ho a intentar."
+
+- id: "newsletter_required"
+  translation: "Aquest camp no pot quedar buit."
+
+- id: "newsletter_selected_list"
+  translation: "{quantity} llista seleccionada"
+
+- id: "newsletter_selected_lists"
+  translation: "{quantity} llistes seleccionades"
+
+- id: "newsletter_selected_option"
+  translation: "{quantity} opció seleccionada"
+
+- id: "newsletter_selected_options"
+  translation: "{quantity} opcions seleccionades"
+
+- id: "idiomes"
+  translation: "Idiomes"

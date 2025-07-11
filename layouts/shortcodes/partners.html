@@ -1,19 +1,12 @@
 {{/* Shortcode: partners */}}
 <div class="row text-center">
   {{ $lang := .Page.Lang }}
-  {{ $partners := slice
-    (dict "key" "faronics"     "url" "faronics"     "img" "img/faronics-logo.png"    "alt" "Faronics Logo"    "name" "Faronics")
-    (dict "key" "nordsecurity" "url" "nordsecurity" "img" "img/nordsecurity-logo.png" "alt" "NordSecurity Logo" "name" "NordSecurity")
-    (dict "key" "passwork"     "url" "passwork"     "img" "img/passwork-logo.png"     "alt" "Passwork Logo"     "name" "Passwork")
-    (dict "key" "edgewatch"    "url" "edgewatch"    "img" "img/edgewatch-logo.jpg"    "alt" "Edgewatch Logo"    "name" "Edgewatch")
-    (dict "key" "outkept"      "url" "outkept"      "img" "img/outkept-logo.png"      "alt" "Outkept Logo"      "name" "Outkept")
-    (dict "key" "idrive"       "url" "idrive"       "img" "https://www.idrive.com/include/images/authorized_reseller.png"
-          "alt" "iDrive Logo"  "name" "iDrive")
-    (dict "key" "prey"         "url" "preyproject"  "img" "img/prey-project-logo.png" "alt" "Prey Project Logo" "name" "Prey Project")
-    (dict "key" "qualiteasy" "url" "https://qualiteasy.eu/"
-          "img" "img/qualiteasy-logo.webp" "alt" "Qualiteasy Logo" "name" "Qualiteasy" "external" true)
-  }}
-
+{{ $partners := partial "partners-list.html" . }}
+<div class="row text-center">
+  {{ range $partners }}
+    <!-- tu rendering actual -->
+  {{ end }}
+</div>
   {{ range $partners }}
     <div class="col-md-4 mb-4 text-center">
       {{ $isExternal := .external | default false }}

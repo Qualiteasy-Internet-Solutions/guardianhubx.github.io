@@ -2,74 +2,16 @@
 <!DOCTYPE html>
 <html lang="{{ .Lang }}">
 <head>
-    {{ partial "head.html" . }}
-    <meta charset="UTF-8">    
-    <title>{{ .Title }}</title>    
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">    
-    <link rel="stylesheet" href="/css/landing_phishing.css">
-    <link rel="canonical" href="https://guardianhubx.com/es/formacion-phishing-software/"> 
-    <link rel="alternate" href="https://guardianhubx.com/es/formacion-phishing-software/"  hreflang="es" />
-    <link rel="alternate" href="https://guardianhubx.com/ca/formacio-phishing-software/"  hreflang="ca" />
-    <link rel="alternate" href="https://guardianhubx.com/en/cybersecurity-phishing-training/"  hreflang="en" />
-    <meta property="og:title" content="Evita el phishing con el software que forma a tus empleados | GuardianHubX">
-    <meta property="og:description" content="Evalúa gratis el estado de la ciberseguridad de tu empresa con nuestro software de simulación de phishing y formación en ciberseguridad.">
-    <meta property="og:image" content="https://guardianhubx.com/img/formacion-phishing.png"> 
-    <meta property="og:url" content="https://guardianhubx.com/es/phishing-formacion-empleados/"> 
-    <meta property="og:type" content="website">
+  {{ partial "head.html" . }}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </head>
-<body>
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-584VRJ97" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- Header -->
-    <nav class="landing-navbar navbar-expand-lg fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="{{ .Lang }}/index.html">
-                <img src="/img/logo_GHX_01-01.png" alt="GuardianHubX" class="logo-petit">
-            </a>
-        </div>
-    </nav>
-
+ <body class="with-small-fixed-header">
+   {{ partial "header-inner.html" . }}
+  
    {{ .Content }}
+  
 
    {{ partial "footer.html" . }}
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // Navbar scroll effect
-        window.addEventListener('scroll', function() {
-            const navbar = document.querySelector('.landing-navbar');
-            if (navbar && window.scrollY > 50) {
-                navbar.classList.add('landing-scrolled');
-            } else if (navbar) {
-                navbar.classList.remove('landing-scrolled');
-            }
-        });
-
-        // Scroll animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver(function(entries) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('landing-visible');
-                }
-            });
-        }, observerOptions);
-
-        // Observe all animation elements
-        document.querySelectorAll('.landing-fade-in, .landing-slide-in-left, .landing-slide-in-right').forEach(el => {
-            observer.observe(el);
-        });
-
-        // Add loading animation
-        window.addEventListener('load', function() {
-            document.body.style.opacity = '1';
-        });
-    </script>
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="/js/script.js" defer></script>
 </body>
 </html>

@@ -67,3 +67,86 @@
   translation: "Tu información permanecerá activa 7 días y luego se eliminará automáticamente."
 - id: "descargar_info"
   translation: "Descargar más información"
+- id : "test_ciberseguridad"
+  translation: "Test de ciberseguridad"
+- id : "solucions"
+  translation: "Soluciones"
+- id : "contact"
+  translation: "Contacto"
+- id: "apren"
+  translation: "Aprende a protegerte"
+- id: "objectius"
+  translation: "Objetivos de ciberseguridad"
+
+- id: "newsletter_title"
+  translation: "Newsletter"
+
+- id: "newsletter_description"
+  translation: "Suscríbete para recibir consejos, casos reales y recursos exclusivos sobre ciberseguridad."
+
+- id: "newsletter_optin_text"
+  translation: "Acepto las condiciones y recibir sus newsletters."
+
+- id: "newsletter_success"
+  translation: "¡Gracias por suscribirte! Revisa tu correo para confirmar."
+
+- id: "newsletter_error"
+  translation: "No hemos podido procesar tu suscripción. Inténtalo de nuevo."
+
+- id: "newsletter_cancelar"
+  translation: "Puede cancelar su suscripción cuando quiera mediante el enlace de nuestra newsletter."
+
+- id: "newletter_politica_brevo"
+  translation: "Usamos Brevo como plataforma de marketing. Al enviar este formulario, aceptas que los datos personales que proporcionaste se transferirán a Brevo para su procesamiento, de acuerdo con la Política de privacidad de Brevo."
+
+
+- id: "form_subscribe"
+  translation: "Suscribirme"
+
+- id: "newsletter_email"
+  translation: "Introduzca su EMAIL"
+
+- id: "placeholder_email"
+  translation: "nombre@empresa.com"
+
+- id: "newsletter_name"
+  translation: "Introduzca su NOMBRE"
+
+- id: "placeholder_name"
+  translation: "Nombre"
+
+- id: "newsletter_surname"
+  translation: "Introduzca sus APELLIDOS"
+
+- id: "placeholder_surname"
+  translation: "Apellidos"
+
+- id: "newsletter_company"
+  translation: "Introduzca su EMPRESA"
+
+- id: "placeholder_company"
+  translation: "Empresa"
+
+- id: "newsletter_required_country"
+  translation: "Elija un código de país"
+
+- id: "newsletter_invalid_message"
+  translation: "La información que ha proporcionado no es válida. Compruebe el formato del campo e inténtelo de nuevo."
+
+- id: "newsletter_required"
+  translation: "Este campo no puede quedarse vacío."
+
+- id: "newsletter_selected_list"
+  translation: "{quantity} lista seleccionada"
+
+- id: "newsletter_selected_lists"
+  translation: "{quantity} listas seleccionadas"
+
+- id: "newsletter_selected_option"
+  translation: "{quantity} seleccionado"
+
+- id: "newsletter_selected_options"
+  translation: "{quantity} seleccionados"
+
+- id: "idiomes"
+  translation: "Idiomas"

@@ -1,0 +1,64 @@
+<ul class="navbar-nav ms-auto">
+{{ if not .IsHome }}
+<li class="nav-item">
+    <a class="nav-link" href="{{ .Lang }}/index.html">Home</a>
+</li>
+{{ end }}
+<li class="nav-item">
+    <a class="nav-link"
+        href="{{ cond (eq .Lang "es") ("/es/test-ciberseguridad/" | relLangURL)
+                (cond (eq .Lang "ca") ("/ca/test-ciberseguretat/" | relLangURL)
+                                ("/en/cybersecurity-test/" | relLangURL)) }}">
+    {{ i18n "test_ciberseguridad" }}
+    </a>
+</li>
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="prevencionDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    {{ i18n "apren" }}
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="prevencionDropdown">
+    <li>
+        <a class="dropdown-item" href="{{ cond (eq .Lang "es") ("/es/formacion-phishing-software/" | relLangURL)
+                (cond (eq .Lang "ca") ("/ca/formacio-phishing-software/" | relLangURL)
+                                ("/en/cybersecurity-phishing-training/" | relLangURL)) }}">
+        Phishing
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item" href="{{ cond (eq .Lang "es") ("/es/objetivos-ciberseguridad/" | relLangURL)
+                (cond (eq .Lang "ca") ("/ca/objectius-ciberseguretat/" | relLangURL)
+                                ("/en/cybersecurity-goals/" | relLangURL)) }}">
+        {{ i18n "objectius" }}
+        </a>
+    </li>
+    </ul>
+</li>
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle"
+        href="#"
+        id="solucionesDropdown"
+        role="button"
+        data-bs-toggle="dropdown"
+        aria-expanded="false">
+    {{ i18n "solucions" }}
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="solucionesDropdown">
+    {{ $partners := partial "partners-list.html" . }}
+    {{ range $partners }}
+        {{ $isExt := .external | default false }}
+        <li>
+        <a class="dropdown-item" href="{{ if $isExt }}{{ .url }}{{ else }}{{ relLangURL (printf "/%s/" .url) }}{{ end }}"
+            {{ if $isExt }}target="_blank"{{ end }}>
+            {{ .name }}
+        </a>
+        </li>
+    {{ end }}
+    </ul>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="/{{ .Lang }}/newsletter/">Newsletter</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="/{{ .Lang }}#contact">{{ i18n "contact" }}</a>
+</li>
+</ul>
