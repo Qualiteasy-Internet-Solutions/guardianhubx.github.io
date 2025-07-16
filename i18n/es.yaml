@@ -150,3 +150,54 @@
 
 - id: "idiomes"
   translation: "Idiomas"
+
+- id: test_title
+  translation: "Conoce el estado de ciberseguridad de tu organización"
+- id: test_disclaimer
+  translation: "Informe gratuito"
+- id: test_duracion
+  translation: "Completa el cuestionario en menos de 2 minutos"
+- id: hacer_test
+  translation: "Hacer el test"
+
+- id: packs_title
+  translation: "Soluciones para cada necesidad"
+
+- id: packs_subtitle
+  translation: "Elige el pack que mejor se adapta al nivel de madurez digital de tu organización"
+
+- id: pack_solo_title
+  translation: "SoloShield"
+
+- id: pack_solo_desc
+  translation: "Ideal para autónomos y profesionales que necesitan protección completa sin complicaciones."
+
+- id: pack_edu_title
+  translation: "EduCraft"
+
+- id: pack_edu_desc
+  translation: "Pensado para centros educativos. Protege a docentes, equipos críticos y sistemas conectados."
+
+- id: pack_light_title
+  translation: "LightCore"
+
+- id: pack_light_desc
+  translation: "Un primer paso para organizaciones que quieren empezar a proteger lo esencial."
+
+- id: pack_smart_title
+  translation: "SmartLayer"
+
+- id: pack_smart_desc
+  translation: "Automatización, control remoto y protección avanzada para equipos y sistemas clave."
+
+- id: pack_iron_title
+  translation: "IronWall"
+
+- id: pack_iron_desc
+  translation: "La solución más completa y robusta para empresas que no se la juegan."
+
+- id: see_more
+  translation: "Ver más"
+
+- id: partners
+  translation: "Partners"

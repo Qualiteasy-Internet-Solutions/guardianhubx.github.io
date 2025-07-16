@@ -43,16 +43,11 @@
     {{ i18n "solucions" }}
     </a>
     <ul class="dropdown-menu" aria-labelledby="solucionesDropdown">
-    {{ $partners := partial "partners-list.html" . }}
-    {{ range $partners }}
-        {{ $isExt := .external | default false }}
-        <li>
-        <a class="dropdown-item" href="{{ if $isExt }}{{ .url }}{{ else }}{{ relLangURL (printf "/%s/" .url) }}{{ end }}"
-            {{ if $isExt }}target="_blank"{{ end }}>
-            {{ .name }}
-        </a>
-        </li>
-    {{ end }}
+        <li><a class="dropdown-item" href="{{ "ironwall" | relLangURL }}">IronWall</a></li>
+        <li><a class="dropdown-item" href="{{ "smartlayer" | relLangURL }}">SmartLayer</a></li>
+        <li><a class="dropdown-item" href="{{ "lightcore" | relLangURL }}">LightCore</a></li>
+        <li><a class="dropdown-item" href="{{ "educraft" | relLangURL }}">EduCraft</a></li>
+        <li><a class="dropdown-item" href="{{ "soloshield" | relLangURL }}">SoloShield</a></li>
     </ul>
 </li>
 <li class="nav-item">

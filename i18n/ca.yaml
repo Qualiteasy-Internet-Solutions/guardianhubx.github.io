@@ -146,3 +146,54 @@
 
 - id: "idiomes"
   translation: "Idiomes"
+
+- id: test_title
+  translation: "Coneix l'estat de ciberseguretat de la teva organització"
+- id: test_disclaimer
+  translation: "Informe gratuït"
+- id: test_duracion
+  translation: "Respon el qüestionari en menys de 2 minuts"
+- id: hacer_test
+  translation: "Fer el test"
+
+- id: packs_title
+  translation: "Solucions per a cada necessitat"
+
+- id: packs_subtitle
+  translation: "Tria el pack que millor s’adapta al nivell de maduresa digital de la teva organització"
+
+- id: pack_solo_title
+  translation: "SoloShield"
+
+- id: pack_solo_desc
+  translation: "Ideal per a autònoms i professionals que necessiten protecció completa sense complicacions."
+
+- id: pack_edu_title
+  translation: "EduCraft"
+
+- id: pack_edu_desc
+  translation: "Pensat per a centres educatius. Protegeix docents, equips crítics i sistemes connectats."
+
+- id: pack_light_title
+  translation: "LightCore"
+
+- id: pack_light_desc
+  translation: "Un primer pas per a organitzacions que volen començar a protegir l’essencial."
+
+- id: pack_smart_title
+  translation: "SmartLayer"
+
+- id: pack_smart_desc
+  translation: "Automatització, control remot i protecció avançada per a equips i sistemes clau."
+
+- id: pack_iron_title
+  translation: "IronWall"
+
+- id: pack_iron_desc
+  translation: "La solució més completa i robusta per a empreses que no es volen arriscar."
+
+- id: see_more
+  translation: "Veure més"
+
+- id: partners
+  translation: "Socis tecnològics"

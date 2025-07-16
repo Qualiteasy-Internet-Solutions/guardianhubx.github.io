@@ -2,7 +2,8 @@
   <div class="container">
     <div class="row gy-4 align-items-start">
 
-      <div class="col-md-4 d-flex flex-column align-items-center align-items-md-start">
+      <!-- LOGO + DESC -->
+      <div class="col-md-3 d-flex flex-column align-items-center align-items-md-start">
         <a href="{{ .Lang }}/index.html" class="mb-3">
           <img src="/img/logo_GHX_01-01.png"
                alt="GuardianHubX"
@@ -22,14 +23,37 @@
         </a>
       </div>
 
-      <div class="col-md-4">
+      <!-- MENÚ -->
+      <div class="col-md-3">
         <h6 class="text-uppercase mb-3 small">{{ i18n "menu" }}</h6>
         <nav class="footer-menu-nav small" aria-label="Enllaços del peu de pàgina">
           {{ partial "menu.html" . }}
         </nav>
       </div>
 
-      <div class="col-md-4 text-center text-md-start">
+      <!-- PARTNERS -->
+      <div class="col-md-3">
+        <h6 class="mb-3 small">  
+          <a class="text-decoration-none text-dark" href="{{ cond (eq .Lang "es") "/es/partners/" (cond (eq .Lang "ca") "/ca/partners/" "/en/partners/") }}">
+            {{ i18n "partners" }}
+          </a>
+        </h6>
+        <ul class="list-unstyled small ms-3">
+          {{ $partners := partial "partners-list.html" . }}
+          {{ range $partners }}
+            {{ $isExt := .external | default false }}
+            <li class="mb-1">
+              <a class="text-secondary text-decoration-none" href="{{ if $isExt }}{{ .url }}{{ else }}{{ relLangURL (printf "/%s/" .url) }}{{ end }}"
+                {{ if $isExt }}target="_blank" rel="noopener"{{ end }}>
+                {{ .name }}
+              </a>
+            </li>
+          {{ end }}
+        </ul>
+      </div>
+
+      <!-- CONTACTE -->
+      <div class="col-md-3 text-center text-md-start">
         <h6 class="text-uppercase mb-3 small">{{ i18n "contacte" }}</h6>
 
         <address class="small mb-3">
@@ -155,6 +179,9 @@
   .site-footer a.text-primary:hover {
     color: #0d6efd;
   }
+  .footer-menu-nav .dropdown-toggle::after {
+  display: none !important;
+}
 </style>
 
 {{ partial "scripts.html" . }}

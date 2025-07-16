@@ -30,7 +30,7 @@
     <div class="row align-items-center">
       <div class="col-lg-8 landing-slide-in-left order-1 order-md-2">        
         <h3>{{ .title }}</h3>
-        <div class="mb-3 landing-text-muted text-start"><div>{{ .description | markdownify }}</div></div>
+        <div class="mb-3 text-start text-white"><div>{{ .description | markdownify }}</div></div>
       </div>
       <div class="col-lg-4 text-center landing-slide-in-right order-2 order-md-1">
         <img src="{{ .img }}" alt=" {{ .alt }}" class="img-fluid landing-training-img">
@@ -45,7 +45,7 @@
     <div class="row align-items-center">
       <div class="col-lg-8 landing-slide-in-left">
         <h2 class="landing-section-title text-start">{{ .Params.texttitle }}</h2>
-        <div class="mb-3 landing-text-muted">{{ .Content }}</div>
+        <div class="mb-3">{{ .Content }}</div>
       </div>
       <div class="col-lg-4 text-center landing-slide-in-right order-2 order-md-1">
         {{ range .Params.screenshots }}
@@ -57,28 +57,36 @@
     </div>
   </div>
 </section>
-
+  {{ if .Params.video }}
   <!-- Video -->
   <section class="product-video container ratio ratio-16x9 mb-5">
     <iframe src="{{ .Params.video }}" allowfullscreen></iframe>
   </section>
+  {{ end }}
 
-  <!-- Downloads & links -->
+  <!-- Downloads & links & test -->
   <section class="landing-steps-section py-5">
     <div class="container text-center mb-8">
-      <h2 class="landing-cta-title">{{ i18n "descargar_info" }}</h2>
-      <div class="d-flex justify-content-center flex-wrap gap-2 mb-3">
-        {{ range .Params.downloads }}
-          <a href="/docs/{{ .file }}-{{ cond (eq $.Site.Language.Lang "ca") "es" $.Site.Language.Lang }}.pdf" class="btn btn-primary pdf-download">
-            <i class="fas fa-file-pdf"></i> {{ .name }}
-          </a>
-        {{ end }}
-        {{ range .Params.links }}
-          <a href="{{ .url }}" class="btn btn-success" target="_blank">
-            <i class="fas fa-globe"></i> {{ .name }}
-          </a>
-        {{ end }}
-      </div>
+
+      {{ if or (isset .Params "downloads") (isset .Params "links") }}
+
+        <h2 class="landing-cta-title">{{ i18n "descargar_info" }}</h2>
+        <div class="d-flex justify-content-center flex-wrap gap-2 mb-3">
+          {{ range .Params.downloads }}
+            <a href="/docs/{{ .file }}-{{ cond (eq $.Site.Language.Lang "ca") "es" $.Site.Language.Lang }}.pdf" class="btn btn-primary pdf-download">
+              <i class="fas fa-file-pdf"></i> {{ .name }}
+            </a>
+          {{ end }}
+          {{ range .Params.links }}
+            <a href="{{ .url }}" class="btn btn-success" target="_blank">
+              <i class="fas fa-globe"></i> {{ .name }}
+            </a>
+          {{ end }}
+        </div>
+
+      {{ else }}
+      {{ partial "test-cta" . }}
+      {{ end }}
     </div>
   </section>
   </article>
