@@ -4,39 +4,52 @@
   {{ if eq $page.Lang "ca" }}
       <h3 class="mb-4">Preparat per millorar la teva seguretat digital?</h3>
       <p class="mb-4">Contacta amb nosaltres per obtenir una demostració personalitzada o resoldre qualsevol dubte sobre {{ $page.Title }}.</p>
-      <a href="/ca/#contact" class="btn btn-success btn-lg">Contacta amb nosaltres</a>
-      <a href="/ca/newsletter/" class="btn btn-info btn-lg">Subscriu-te a la newsletter</a>
+      
+      <div class="row g-3">
+        <div class="col-12 col-md-6">
+          <a href="/ca/newsletter/" class="btn btn-info btn-lg w-100">Subscriu-te a la newsletter</a>
+        </div>
+        <div class="col-12 col-md-6">
+          <a href="/ca/#contact" class="btn btn-primary btn-lg w-100">Contacta amb nosaltres</a>
+        </div>
+      </div>
 
   {{ else if eq $page.Lang "es" }}
-<h3 class="mb-4">¿Listo para mejorar tu seguridad digital?</h3>
-<p class="mb-4">Contáctanos para obtener una demostración personalizada o resolver cualquier duda sobre {{ $page.Title }}.</p>
+      <h3 class="mb-4">¿Listo para mejorar tu seguridad digital?</h3>
+      <p class="mb-4">Contáctanos para obtener una demostración personalizada o resolver cualquier duda sobre {{ $page.Title }}.</p>
 
-<div class="row g-3">
-  <div class="col-12 col-md-6">
-    <a href="/es/newsletter/" class="btn btn-info btn-lg w-100">Suscríbete a nuestra newsletter</a>
-  </div>
-  <div class="col-12 col-md-6">
-    <a href="/es/#contact" class="btn btn-primary btn-lg w-100">Ponte en contacto con nosotros</a>
-  </div>
-</div>
+      <div class="row g-3">
+        <div class="col-12 col-md-6">
+          <a href="/es/newsletter/" class="btn btn-info btn-lg w-100">Suscríbete a nuestra newsletter</a>
+        </div>
+        <div class="col-12 col-md-6">
+          <a href="/es/#contact" class="btn btn-primary btn-lg w-100">Ponte en contacto con nosotros</a>
+        </div>
+      </div>
 
   {{ else if eq $page.Lang "en" }}
       <h3 class="mb-4">Ready to improve your digital security?</h3>
       <p class="mb-4">Contact us for a personalized demo or to resolve any questions about {{ $page.Title }}.</p>
-      <a href="/en/#contact" class="btn btn-success btn-lg">Get in touch with us</a> 
-      <a href="/en/newsletter/" class="btn btn-info btn-lg">Sign up for newsletter</a>
+      <div class="row g-3">
+        <div class="col-12 col-md-6">
+          <a href="/en/newsletter/" class="btn btn-info btn-lg w-100">Sign up for newsletter</a>
+        </div>
+        <div class="col-12 col-md-6">
+          <a href="/en/#contact" class="btn btn-primary btn-lg w-100">Get in touch with us</a>
+        </div>
+      </div>
 
   {{ else }}
-<h3 class="mb-4">¿Listo para mejorar tu seguridad digital?</h3>
-<p class="mb-4">Contáctanos para obtener una demostración personalizada o resolver cualquier duda sobre {{ $page.Title }}.</p>
+      <h3 class="mb-4">¿Listo para mejorar tu seguridad digital?</h3>
+      <p class="mb-4">Contáctanos para obtener una demostración personalizada o resolver cualquier duda sobre {{ $page.Title }}.</p>
 
-<div class="row g-3">
-  <div class="col-12 col-md-6">
-    <a href="/es/#contact" class="btn btn-success btn-lg w-100">Ponte en contacto con nosotros</a>
-  </div>
-  <div class="col-12 col-md-6">
-    <a href="/es/newsletter/" class="btn btn-info btn-lg w-100">Suscríbete a nuestra newsletter</a>
-  </div>
-</div>
+      <div class="row g-3">
+        <div class="col-12 col-md-6">
+          <a href="/es/newsletter/" class="btn btn-info btn-lg w-100">Suscríbete a nuestra newsletter</a>
+        </div>
+        <div class="col-12 col-md-6">
+          <a href="/es/#contact" class="btn btn-primary btn-lg w-100">Ponte en contacto con nosotros</a>
+        </div>
+      </div>
   {{ end }}
 </section>
