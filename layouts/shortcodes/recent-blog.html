@@ -1,0 +1,40 @@
+{{/* layouts/shortcodes/recent-blog.html */}}
+{{ $url := "https://guardianhubx.com/blog/index.json" }}
+{{ $res := try (resources.GetRemote $url) }}
+
+{{ if $res.Err }}
+  {{ warnf "No se pudo descargar index.json: %v" $res.Err }}
+{{ else }}
+  {{ $remote := $res.Value }}
+  {{ if $remote }}
+    {{ $posts := $remote.Content | unmarshal }}
+    {{ $dark := .Get "dark" | default "false" }}
+
+    {{ $cardBg    := cond (eq $dark "true") "bg-secondary text-white" "bg-light" }}
+    {{ $btnClass  := cond (eq $dark "true") "btn-outline-light" "btn-primary" }}
+    {{ $textClass := cond (eq $dark "true") "text-light" "" }}
+
+    {{ range first 3 $posts }}
+      <div class="col-12 col-md-4">
+        <div class="card h-100 shadow-sm border {{ cond (eq $dark "true") "border-light" "border-0" }} {{ $cardBg }}">
+          <div class="card-body d-flex flex-column {{ $textClass }}">
+            <h5 class="card-title">
+              <a href="{{ .permalink }}" class="stretched-link text-decoration-none {{ $textClass }}">
+                {{ .title }}
+              </a>
+            </h5>
+            <p class="card-text mb-4 {{ $textClass }}">
+              {{ .summary | plainify | truncate 120 }}
+            </p>
+            <a href="{{ .permalink }}" class="mt-auto btn {{ $btnClass }}">
+              Leer más
+            </a>
+          </div>
+        </div>
+      </div>
+    {{ end }}
+
+  {{ else }}
+    {{ warnf "Recurso remoto %q no disponible" $url }}
+  {{ end }}
+{{ end }}
