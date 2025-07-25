@@ -25,9 +25,9 @@ Para todos los empleados:
 - Antivirus de última generación
 
 Para los empleados críticos:
-- Gestión de passwords
+- Gestión de contraseñas
 
 Para tus sistemas expuestos a internet:
-- Escaneo tus puntos de acceso abiertos en internet: Webs, Routers, Servidores
+- Escaneo de tus puntos de acceso abiertos en internet: Webs, Routers, Servidores
 
 LightCore ayuda a reducir riesgos digitales, sensibilizar al equipo y garantizar que los básicos estén siempre cubiertos… sin necesidad de un equipo técnico dedicado.

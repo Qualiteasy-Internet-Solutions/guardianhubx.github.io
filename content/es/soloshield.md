@@ -21,7 +21,7 @@ SoloShield está diseñado para freelancers, consultores y profesionales autóno
 - Entrenamiento y formación en Phishing
 - Updater 
 - Antivirus de última generación
-- Gestión de passwords
+- Gestión de contraseñas
 - Gesitón de red segura y encriptada
 - Respaldo de copias extra
 - Sistema antirobo
