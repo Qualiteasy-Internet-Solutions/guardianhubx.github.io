@@ -1,9 +1,20 @@
 {{/* layouts/shortcodes/recent-blog.html */}}
-{{ $url := "https://guardianhubx.com/blog/index.json" }}
-{{ $res := try (resources.GetRemote $url) }}
+
+{{- $baseURL := "https://guardianhubx.com" -}}
+{{- $jsonPath := cond (eq .Site.Language.Lang "ca") "/blog/ca/index.json" "/blog/index.json" -}}
+{{- $finalURL := printf "%s%s" $baseURL $jsonPath -}}
+
+{{- /* Si estem en PRODUCCIÓ ('hugo'), afegim la data per trencar la cau.
+      Si estem en LOCAL ('hugo server'), no afegim res i s'utilitza la cau. */}}
+{{- if hugo.IsProduction -}}
+  {{ $finalURL = printf "%s?t=%d" $finalURL now.Unix }}
+{{- end -}}
+
+{{- /* Intentem descarregar el recurs remot */ -}}
+{{ $res := try (resources.GetRemote $finalURL) }}
 
 {{ if $res.Err }}
-  {{ warnf "No se pudo descargar index.json: %v" $res.Err }}
+  {{ warnf "No s'ha pogut descarregar %s: %v" $finalURL $res.Err }}
 {{ else }}
   {{ $remote := $res.Value }}
   {{ if $remote }}
@@ -27,7 +38,7 @@
               {{ .summary | plainify | truncate 120 }}
             </p>
             <a href="{{ .permalink }}" class="mt-auto btn {{ $btnClass }}">
-              Leer más
+              {{ i18n "readMore" | default "Leer más" }}
             </a>
           </div>
         </div>
@@ -35,6 +46,6 @@
     {{ end }}
 
   {{ else }}
-    {{ warnf "Recurso remoto %q no disponible" $url }}
+    {{ warnf "El recurs remot %q no està disponible" $finalURL }}
   {{ end }}
 {{ end }}

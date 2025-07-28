@@ -35,6 +35,28 @@ markup: "html"
 <!-- Partners / Solutions Section -->
 {{< solutions-cards >}}
 
+
+<!-- Últimns articles-->
+<section class="recent-posts-section bg-light py-5 mb-5 rounded-4 shadow-lg overflow-hidden">
+  <div class="container">
+    <div class="row justify-content-center mb-4">
+      <div class="col-auto">
+        <h2 class="display-5 pb-2">
+          Últims articles del blog
+        </h2>
+      </div>
+    </div>
+    <div class="row g-4">
+      {{< recent-blog dark="false" >}}
+    </div>
+    <div class="text-center mt-4">
+      <a href="/blog/ca/" class="btn btn-outline-primary btn-lg">
+        Veure tots els articles <i class="fas fa-arrow-right ms-2"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
 <!-- CTA Section -->
 <section class="landing-cta-section py-5">
   <div class="container text-center">
