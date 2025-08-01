@@ -17,17 +17,24 @@
           </div>
           <div class="col-12 col-lg-8 d-flex flex-column align-items-lg-end order-3 mt-3 mt-lg-0">
             <div class="home-banner mb-2 d-none d-lg-block">
-              <a href="{{ 
-                  cond (eq .Site.Language.Lang "es") ("/es/test-ciberseguridad/" | relLangURL) 
-                  (cond (eq .Site.Language.Lang "ca") ("/ca/test-ciberseguretat/" | relLangURL) 
-                                        ("/en/cybersecurity-test/" | relLangURL)) 
-                }}">
-                <img src="{{ "img/cuestionario.gif" | relURL }}" 
-                     alt="Evalúa tu nivel de ciberseguridad" 
-                     class="img-fluid banner-img"
-                     style="max-height: 220px;">
-              </a>
-            </div>            
+              <div id="banner-rotator">
+                {{ if eq .Site.Language.Lang "ca" }}
+                  <a href="/ca/test-ciberseguretat/" class="rotator-item active">
+                    <img src="{{ "img/banner-ca-1.webp" | relURL }}" alt="Banner sobre la protecció de les empreses amb enllaç al test de ciberseguretat de Guardianhubx.">
+                  </a>
+                  <a href="/ca/test-ciberseguretat/" class="rotator-item">
+                    <img src="{{ "img/banner-ca-2.webp" | relURL }}" alt="Estadística de ciberatacs a empreses i invitació a completar el qüestionari gratuït de ciberseguretat.">
+                  </a>
+                {{ else if eq .Site.Language.Lang "es" }}
+                  <a href="/es/test-ciberseguridad/" class="rotator-item active">
+                    <img src="{{ "img/banner-es-1.webp" | relURL }}" alt="Banner sobre la protección de las empresas con enlace al test de ciberseguridad de Guardianhubx.">
+                  </a>
+                  <a href="/es/test-ciberseguridad/" class="rotator-item">
+                    <img src="{{ "img/banner-es-2.webp" | relURL }}" alt="Estadística de ciberataques a empresas e invitación a completar el cuestionario gratuito de ciberseguridad.">
+                  </a>
+                {{ end }}
+              </div>
+            </div>
             <div class="collapse navbar-collapse mt-2 mt-lg-0 w-100" id="navbarSupportedContent">
               {{ partial "menu.html" . }}
             </div>
