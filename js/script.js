@@ -50,4 +50,25 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
+  const rotatorContainer = document.getElementById('banner-rotator');
+  
+  if (rotatorContainer) {
+    const items = rotatorContainer.querySelectorAll('.rotator-item');
+    let currentItem = 0;
+
+    if (items.length > 1) {
+      setInterval(() => {
+        if (items[currentItem]) {
+          items[currentItem].classList.remove('active');
+        }
+        
+        currentItem = (currentItem + 1) % items.length;
+        
+        if (items[currentItem]) {
+          items[currentItem].classList.add('active');
+        }
+      }, 7000); // Canvia de banner cada 7 segons
+    }
+  }
+
 });
