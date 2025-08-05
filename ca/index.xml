@@ -384,7 +384,7 @@
  Més del &lt;span class="highlight-circle">72%&lt;/span> de les empreses catalanes ha estat víctima d'un ciberatac en els últims 12 mesos.
  &lt;/p>
  &lt;h1 class="landing-hero-title">CONÈIXER L'ESTAT DE LA TEVA EMPRESA EN CIBERSEGURETAT GRATIS&lt;/h1>
- &lt;button onclick="window.location='https://test.guardianhubx.com'" class="landing-btn landing-btn-primary">
+ &lt;button onclick="window.location='https://guardianhubx.com/ca/test'" class="landing-btn landing-btn-primary">
  COMENÇAR JA &lt;i class="fas fa-arrow-right landing-arrow-soft-green">&lt;/i>
  &lt;/button>
  &lt;/div>
@@ -418,7 +418,7 @@
  &lt;h5 class="step-title">REBRE INFORME DETALLAT&lt;/h5>
  &lt;/div>
  &lt;/div>
- &lt;button onclick="location.href='https://test.guardianhubx.com'" class="landing-btn landing-btn-primary mt-5 landing-fade-in">
+ &lt;button onclick="location.href='https://guardianhubx.com/ca/test'" class="landing-btn landing-btn-primary mt-5 landing-fade-in">
  ACCEDIR AL TEST &lt;i class="fas fa-arrow-right landing-arrow-soft-green">&lt;/i>
  &lt;/button>
  &lt;/div>

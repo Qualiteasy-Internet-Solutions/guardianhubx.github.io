@@ -14,9 +14,6 @@
  &lt;div class="container">
  
  
- 
- 
- 
  &lt;style>
  :root {
  --form-primary-color: #007BFF;
@@ -89,12 +86,22 @@
  border-radius: 50%; width: 60px; height: 60px;
  animation: form-spin 1s linear infinite; margin: 20px auto;
  }
+ .spinner-inline {
+ display: inline-block;
+ width: 16px;
+ height: 16px;
+ vertical-align: text-bottom;
+ border: 3px solid rgba(255,255,255,0.3);
+ border-top-color: #ffffff;
+ border-radius: 50%;
+ animation: form-spin 0.75s linear infinite;
+ margin-right: 8px;
+ }
  @keyframes form-spin {
  0% { transform: rotate(0deg); }
  100% { transform: rotate(360deg); }
  }
  &lt;/style>
- 
  
  &lt;div id="cyber-form-container">
  &lt;div id="progress-bar-container">
@@ -104,42 +111,67 @@
  &lt;/form>
  &lt;/div>
  
- 
+ &lt;script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js">&lt;/script>
  &lt;script>
  document.addEventListener('DOMContentLoaded', function() {
- 
  if (window.cyberFormInitialized) return;
  window.cyberFormInitialized = true;
  
+ 
+ const T = (key, placeholders) => {
+ let str = key;
+ if (placeholders) {
+ for (const p in placeholders) {
+ str = str.replace(`{${p}}`, placeholders[p]);
+ }
+ }
+ return str;
+ };
+ 
  const form = document.getElementById('cyber-form');
  const progressBar = document.getElementById('progress-bar');
+ const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwaliNtuGyG6obfaHE4d9CTmmCq2dkYdCwE7g2QZmI1fyuyKDuG4dwG1ofS0nljNxTnyw/exec';
  
  
- const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyQ16W0q3ItFn2cS9MhEJmxa-tBaWXtDfBvXLnTlb9nnlEN8WPycdC0U1WgU1YWeXVS-A/exec'
+ 
  const questions = [
- 
- 
- { type: 'radio', colIndex: 2, title: '¿Cómo calificarías la probabilidad de que tu organización sufra un ciberataque en los próximos 12 meses?', options: ['Muy baja', 'Baja', 'Media', 'Alta', 'Muy alta'] },
- { type: 'radio', colIndex: 3, title: 'Si tu organización sufriera un ataque de ransomware, ¿cómo de grave crees que sería el impacto?', options: ['Insignificante', 'Leve', 'Moderado', 'Grave', 'Catastrófico'] },
- { type: 'radio', colIndex: 4, title: '¿Cuánto miedo tienes a que un ataque cibernético interrumpa por completo las operaciones de tu empresa?', options: ['Ninguno', 'Poco', 'Moderado', 'Alto', 'Extremadamente alto'] },
- { type: 'radio', colIndex: 5, title: '¿Tu empresa cuenta con un plan de respuesta ante incidentes cibernéticos?', options: ["Sí, y lo hemos probado recientemente", "Sí, pero no lo hemos probado", "No estamos seguros", "No, pero estamos trabajando en ello", "No tenemos ningún plan"] },
- { type: 'radio', colIndex: 6, title: '¿Cada cuánto tiempo se realizan simulacros o ejercicios de ciberseguridad en tu organización?', options: ["Cada tres meses o menos", "Cada seis meses", "Una vez al año", "Nunca"]},
- { type: 'radio', colIndex: 7, title: '¿Tu organización tiene copias de seguridad actualizadas y protegidas contra ransomware?', options: ["Sí, con copias redundantes y pruebas periódicas", "Sí, pero no las probamos regularmente", "No estamos seguros", "No"]},
- { type: 'radio', colIndex: 8, title: '¿Con qué frecuencia se capacita al personal en ciberseguridad?', options: ["Cada trimestre o más", "Dos veces al año", "Una vez al año", "Nunca"]},
- { type: 'radio', colIndex: 9, title: '¿Tu equipo directivo considera la ciberseguridad una prioridad estratégica?', options: ["Sí, está en la agenda de la alta dirección", "Sí, pero sin acciones concretas", "No lo tenemos claro", "No, la ciberseguridad no es una prioridad"]},
- { type: 'radio', colIndex: 10, title: '¿Los empleados son conscientes de los riesgos del phishing y cómo identificarlos?', options: ["Sí, todos", "Sí, pero solo algunos", "No estamos seguros", "No"]},
- { type: 'checkbox', colIndex: 11, title: '¿Qué medidas de seguridad tiene implementadas tu organización?', options: ["Antivirus y firewall actualizado", "Autenticación multifactor (MFA)", "Segmentación de red", "Monitorización de amenazas en tiempo real", "Evaluaciones de seguridad periódicas", "Ninguna de las anteriores"] },
- { type: 'radio', colIndex: 12, title: '¿Tu organización ha sufrido algún incidente de ciberseguridad en los últimos 12 meses?', options: ["No", "Sí, pero fue menor", "Sí, y causó interrupciones graves", "Sí, y aún estamos recuperándonos"]},
- { type: 'radio', colIndex: 13, title: '¿Tu empresa cuenta con un proveedor externo de seguridad informática?', options: ["Sí, y realizamos auditorías regulares", "Sí, pero no estamos seguros de su efectividad", "No, lo gestionamos internamente", "No tenemos ningún proveedor"]},
- { type: 'radio', colIndex: 14, title: '¿Tu organización cumple con normativas de ciberseguridad relevantes (GDPR, etc.)?', options: ["Sí, completamente", "Sí, en gran parte", "No estamos seguros", "No"]},
- { type: 'radio', colIndex: 15, title: '¿Cómo calificarías el nivel de cumplimiento con las mejores prácticas de ciberseguridad?', options: ["Excelente", "Bueno", "Regular", "Deficiente", "Inexistente"]},
- { type: 'radio', colIndex: 16, title: '¿Tu organización cuenta con ciberseguro?', options: ["Sí, con cobertura amplia y revisiones periódicas", "Sí, pero con cobertura limitada", "No estamos seguros", "No contamos con ciberseguro"]}
+ { type: 'radio', colIndex: 2, title: `How would you rate the likelihood of your organization suffering a cyberattack in the next 12 months?`, options: [`Very low`, `Low`, `Medium`, `High`, `Very high`] },
+ { type: 'radio', colIndex: 3, title: `If your organization suffered a ransomware attack, how severe do you think the impact would be?`, options: [`Insignificant`, `Minor`, `Moderate`, `Severe`, `Catastrophic`] },
+ { type: 'radio', colIndex: 4, title: `How concerned are you that a cyberattack could completely disrupt your company\u0027s operations?`, options: [`Not at all`, `Slightly`, `Moderately`, `Highly`, `Extremely`] },
+ { type: 'radio', colIndex: 5, title: `Does your company have a cyber incident response plan?`, options: [`Yes, and we\u0027ve tested it recently`, `Yes, but we haven\u0027t tested it`, `We\u0027re not sure`, `No, but we\u0027re working on it`, `We don\u0027t have a plan`] },
+ { type: 'radio', colIndex: 6, title: `How often are cybersecurity drills or exercises conducted in your organization?`, options: [`Every three months or less`, `Every six months`, `Once a year`, `Never`] },
+ { type: 'radio', colIndex: 7, title: `Does your organization have up-to-date backups protected against ransomware?`, options: [`Yes, with redundant copies and regular testing`, `Yes, but we don\u0027t test them regularly`, `We\u0027re not sure`, `No`] },
+ { type: 'radio', colIndex: 8, title: `How frequently are staff trained in cybersecurity?`, options: [`Quarterly or more`, `Twice a year`, `Once a year`, `Never`] },
+ { type: 'radio', colIndex: 9, title: `Does your management team consider cybersecurity a strategic priority?`, options: [`Yes, it\u0027s on the senior management\u0027s agenda`, `Yes, but without concrete actions`, `We\u0027re not sure`, `No, cybersecurity is not a priority`] },
+ { type: 'radio', colIndex: 10, title: `Are employees aware of phishing risks and how to identify them?`, options: [`Yes, all of them`, `Yes, but only some`, `We\u0027re not sure`, `No`] },
+ { type: 'checkbox', colIndex: 11, title: `What security measures does your organization have in place?`, options: [`Updated antivirus and firewall`, `Multi-factor authentication (MFA)`, `Network segmentation`, `Real-time threat monitoring`, `Regular security assessments`, `None of the above`] },
+ { type: 'radio', colIndex: 12, title: `Has your organization experienced a cybersecurity incident in the last 12 months?`, options: [`No`, `Yes, but it was minor`, `Yes, and it caused serious disruptions`, `Yes, and we are still recovering`] },
+ { type: 'radio', colIndex: 13, title: `Does your company use an external IT security provider?`, options: [`Yes, and we conduct regular audits`, `Yes, but we are unsure of their effectiveness`, `No, we manage it internally`, `We don\u0027t have a provider`] },
+ { type: 'radio', colIndex: 14, title: `Does your organization comply with relevant cybersecurity regulations (GDPR, etc.)?`, options: [`Yes, fully`, `Yes, for the most part`, `We\u0027re not sure`, `No`] },
+ { type: 'radio', colIndex: 15, title: `How would you rate your level of compliance with cybersecurity best practices?`, options: [`Excellent`, `Good`, `Fair`, `Poor`, `Non-existent`] },
+ { type: 'radio', colIndex: 16, title: `Does your organization have cyber insurance?`, options: [`Yes, with broad coverage and periodic reviews`, `Yes, but with limited coverage`, `We\u0027re not sure`, `We do not have cyber insurance`] }
  ];
  
- const contactFields = `
- &lt;div id="result-display">
- &lt;h2>¡Casi listo!&lt;/h2>
- &lt;p>Para recibir tu informe de ciberseguridad completo y personalizado, por favor, introduce tus datos.&lt;/p></description></item><item><title>Cookies Policy</title><link>https://guardianhubx.com/en/cookies-policy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/en/cookies-policy/</guid><description>&lt;p>If you want to learn more about the use of cookies on &lt;strong>GuardianHubX&lt;/strong>, you’re in the right place. Below, we explain what cookies are, what types we use, and how to configure your browser to disable them.&lt;/p>
+ let currentQuestionIndex = 0;
+ const answers = new Array(23).fill('');
+ let informeHtmlFinal = '';
+ 
+ function renderQuestion() {
+ if (currentQuestionIndex &lt; questions.length) {
+ const q = questions[currentQuestionIndex];
+ let optionsHTML = '';
+ if (q.type === 'radio') {
+ optionsHTML = q.options.map(opt => `&lt;button type="button" class="option-button" data-value="${opt}">${opt}&lt;/button>`).join('');
+ } else if (q.type === 'checkbox') {
+ optionsHTML = q.options.map(opt => `&lt;label class="checkbox-label">&lt;input type="checkbox" name="medidas" value="${opt}"> ${opt}&lt;/label>`).join('');
+ optionsHTML += `&lt;button type="button" id="next-checkbox" class="btn btn-primary">Next&lt;/button>`;
+ }
+ form.innerHTML = `&lt;div class="form-slide active">&lt;h2>${q.title}&lt;/h2>&lt;div class="option-group">${optionsHTML}&lt;/div>&lt;/div>`;
+ } else {
+ form.innerHTML = `
+ &lt;div class="form-slide active text-center">
+ &lt;h2 class="title">✅ All set!&lt;/h2>
+ &lt;p class="lead">Click the button to generate your custom report.&lt;/p></description></item><item><title>Cookies Policy</title><link>https://guardianhubx.com/en/cookies-policy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/en/cookies-policy/</guid><description>&lt;p>If you want to learn more about the use of cookies on &lt;strong>GuardianHubX&lt;/strong>, you’re in the right place. Below, we explain what cookies are, what types we use, and how to configure your browser to disable them.&lt;/p>
 &lt;p>Note: Disabling cookies may affect your user experience.&lt;/p>
 &lt;h3 id="what-is-a-cookie">What is a cookie?&lt;/h3>
 &lt;p>A &lt;em>cookie&lt;/em> is a small file downloaded to your device when you visit certain websites. Cookies help store and retrieve browsing information. They may recognize you depending on how you use your device.&lt;/p></description></item><item><title>Cybersecurity Goals</title><link>https://guardianhubx.com/en/cybersecurity-goals/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/en/cybersecurity-goals/</guid><description>&lt;p>At &lt;strong>GuardianHubX&lt;/strong>, our security strategy is based on &lt;strong>three fundamental pillars&lt;/strong>: &lt;em>prevention&lt;/em>, &lt;em>detection&lt;/em> and &lt;em>recovery&lt;/em>. We implement advanced solutions to protect the data and systems of our clients from any cyber threat.&lt;/p>
@@ -167,7 +199,7 @@
  More than &lt;span class="highlight-circle">72%&lt;/span> of Spanish companies have been victims of cyberattacks in the last 12 months.
  &lt;/p>
  &lt;h1 class="landing-hero-title">KNOW YOUR COMPANY'S CYBERSECURITY STATUS FOR FREE&lt;/h1>
- &lt;button onclick="window.location='https://test.guardianhubx.com'" class="landing-btn landing-btn-primary">
+ &lt;button onclick="window.location='https://guardianhubx.com/en/test'" class="landing-btn landing-btn-primary">
  GET STARTED &lt;i class="fas fa-arrow-right landing-arrow-soft-green">&lt;/i>
  &lt;/button>
  &lt;/div>
@@ -201,7 +233,7 @@
  &lt;h5 class="step-title">RECEIVE YOUR DETAILED REPORT&lt;/h5>
  &lt;/div>
  &lt;/div>
- &lt;button onclick="location.href='https://test.guardianhubx.com'" class="landing-btn landing-btn-primary mt-5 landing-fade-in">
+ &lt;button onclick="location.href='https://guardianhubx.com/en/test'" class="landing-btn landing-btn-primary mt-5 landing-fade-in">
  TAKE THE TEST &lt;i class="fas fa-arrow-right landing-arrow-soft-green">&lt;/i>
  &lt;/button>
  &lt;/div>
