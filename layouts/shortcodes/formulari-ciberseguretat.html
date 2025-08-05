@@ -1,11 +1,5 @@
 {{/* /layouts/shortcodes/formulari-ciberseguretat.html */}}
 
-{{/* IMPORTANT: Aquest shortcode està dissenyat per ser autocontingut.
-    Inclou el seu propi estil (CSS) i lògica (JavaScript) per evitar conflictes
-    amb la resta de la teva web.
-*/}}
-
-{{/* ================== CSS DEL FORMULARI ================== */}}
 <style>
     :root {
         --form-primary-color: #007BFF;
@@ -78,13 +72,23 @@
         border-radius: 50%; width: 60px; height: 60px;
         animation: form-spin 1s linear infinite; margin: 20px auto;
     }
+    .spinner-inline {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        vertical-align: text-bottom;
+        border: 3px solid rgba(255,255,255,0.3);
+        border-top-color: #ffffff;
+        border-radius: 50%;
+        animation: form-spin 0.75s linear infinite;
+        margin-right: 8px;
+    }
     @keyframes form-spin {
         0% { transform: rotate(0deg); }
         100% { transform: rotate(360deg); }
     }
 </style>
 
-{{/* ================== HTML DEL FORMULARI ================== */}}
 <div id="cyber-form-container">
     <div id="progress-bar-container">
         <div id="progress-bar"></div>
@@ -93,63 +97,50 @@
         </form>
 </div>
 
-{{/* ================== JAVASCRIPT DEL FORMULARI ================== */}}
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    // Evita que el script s'executi múltiples vegades si s'inclou diverses vegades per error.
     if (window.cyberFormInitialized) return;
     window.cyberFormInitialized = true;
 
+    // Aquesta funció d'ajuda només substitueix placeholders, com {email}
+    const T = (key, placeholders) => {
+        let str = key;
+        if (placeholders) {
+            for (const p in placeholders) {
+                str = str.replace(`{${p}}`, placeholders[p]);
+            }
+        }
+        return str;
+    };
+    
     const form = document.getElementById('cyber-form');
     const progressBar = document.getElementById('progress-bar');
-    
-    // URL del teu Web App de Google Apps Script
-    const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyQ16W0q3ItFn2cS9MhEJmxa-tBaWXtDfBvXLnTlb9nnlEN8WPycdC0U1WgU1YWeXVS-A/exec'
+    const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwaliNtuGyG6obfaHE4d9CTmmCq2dkYdCwE7g2QZmI1fyuyKDuG4dwG1ofS0nljNxTnyw/exec';
+
+    // Construïm l'array de preguntes directament amb les traduccions de Hugo.
+    // Usem `safeJS` per assegurar que les cometes o altres caràcters no trenquin el codi.
     const questions = [
-        // Afegeix aquí totes les teves preguntes en format objecte.
-        // He inclòs les primeres com a exemple. Completa la resta.
-        { type: 'radio', colIndex: 2, title: '¿Cómo calificarías la probabilidad de que tu organización sufra un ciberataque en los próximos 12 meses?', options: ['Muy baja', 'Baja', 'Media', 'Alta', 'Muy alta'] },
-        { type: 'radio', colIndex: 3, title: 'Si tu organización sufriera un ataque de ransomware, ¿cómo de grave crees que sería el impacto?', options: ['Insignificante', 'Leve', 'Moderado', 'Grave', 'Catastrófico'] },
-        { type: 'radio', colIndex: 4, title: '¿Cuánto miedo tienes a que un ataque cibernético interrumpa por completo las operaciones de tu empresa?', options: ['Ninguno', 'Poco', 'Moderado', 'Alto', 'Extremadamente alto'] },
-        { type: 'radio', colIndex: 5, title: '¿Tu empresa cuenta con un plan de respuesta ante incidentes cibernéticos?', options: ["Sí, y lo hemos probado recientemente", "Sí, pero no lo hemos probado", "No estamos seguros", "No, pero estamos trabajando en ello", "No tenemos ningún plan"] },
-        { type: 'radio', colIndex: 6, title: '¿Cada cuánto tiempo se realizan simulacros o ejercicios de ciberseguridad en tu organización?', options: ["Cada tres meses o menos", "Cada seis meses", "Una vez al año", "Nunca"]},
-        { type: 'radio', colIndex: 7, title: '¿Tu organización tiene copias de seguridad actualizadas y protegidas contra ransomware?', options: ["Sí, con copias redundantes y pruebas periódicas", "Sí, pero no las probamos regularmente", "No estamos seguros", "No"]},
-        { type: 'radio', colIndex: 8, title: '¿Con qué frecuencia se capacita al personal en ciberseguridad?', options: ["Cada trimestre o más", "Dos veces al año", "Una vez al año", "Nunca"]},
-        { type: 'radio', colIndex: 9, title: '¿Tu equipo directivo considera la ciberseguridad una prioridad estratégica?', options: ["Sí, está en la agenda de la alta dirección", "Sí, pero sin acciones concretas", "No lo tenemos claro", "No, la ciberseguridad no es una prioridad"]},
-        { type: 'radio', colIndex: 10, title: '¿Los empleados son conscientes de los riesgos del phishing y cómo identificarlos?', options: ["Sí, todos", "Sí, pero solo algunos", "No estamos seguros", "No"]},
-        { type: 'checkbox', colIndex: 11, title: '¿Qué medidas de seguridad tiene implementadas tu organización?', options: ["Antivirus y firewall actualizado", "Autenticación multifactor (MFA)", "Segmentación de red", "Monitorización de amenazas en tiempo real", "Evaluaciones de seguridad periódicas", "Ninguna de las anteriores"] },
-        { type: 'radio', colIndex: 12, title: '¿Tu organización ha sufrido algún incidente de ciberseguridad en los últimos 12 meses?', options: ["No", "Sí, pero fue menor", "Sí, y causó interrupciones graves", "Sí, y aún estamos recuperándonos"]},
-        { type: 'radio', colIndex: 13, title: '¿Tu empresa cuenta con un proveedor externo de seguridad informática?', options: ["Sí, y realizamos auditorías regulares", "Sí, pero no estamos seguros de su efectividad", "No, lo gestionamos internamente", "No tenemos ningún proveedor"]},
-        { type: 'radio', colIndex: 14, title: '¿Tu organización cumple con normativas de ciberseguridad relevantes (GDPR, etc.)?', options: ["Sí, completamente", "Sí, en gran parte", "No estamos seguros", "No"]},
-        { type: 'radio', colIndex: 15, title: '¿Cómo calificarías el nivel de cumplimiento con las mejores prácticas de ciberseguridad?', options: ["Excelente", "Bueno", "Regular", "Deficiente", "Inexistente"]},
-        { type: 'radio', colIndex: 16, title: '¿Tu organización cuenta con ciberseguro?', options: ["Sí, con cobertura amplia y revisiones periódicas", "Sí, pero con cobertura limitada", "No estamos seguros", "No contamos con ciberseguro"]}
+        { type: 'radio', colIndex: 2, title: `{{ i18n "q1_title" | safeJS }}`, options: [`{{ i18n "q1_opt_1" | safeJS }}`, `{{ i18n "q1_opt_2" | safeJS }}`, `{{ i18n "q1_opt_3" | safeJS }}`, `{{ i18n "q1_opt_4" | safeJS }}`, `{{ i18n "q1_opt_5" | safeJS }}`] },
+        { type: 'radio', colIndex: 3, title: `{{ i18n "q2_title" | safeJS }}`, options: [`{{ i18n "q2_opt_1" | safeJS }}`, `{{ i18n "q2_opt_2" | safeJS }}`, `{{ i18n "q2_opt_3" | safeJS }}`, `{{ i18n "q2_opt_4" | safeJS }}`, `{{ i18n "q2_opt_5" | safeJS }}`] },
+        { type: 'radio', colIndex: 4, title: `{{ i18n "q3_title" | safeJS }}`, options: [`{{ i18n "q3_opt_1" | safeJS }}`, `{{ i18n "q3_opt_2" | safeJS }}`, `{{ i18n "q3_opt_3" | safeJS }}`, `{{ i18n "q3_opt_4" | safeJS }}`, `{{ i18n "q3_opt_5" | safeJS }}`] },
+        { type: 'radio', colIndex: 5, title: `{{ i18n "q4_title" | safeJS }}`, options: [`{{ i18n "q4_opt_1" | safeJS }}`, `{{ i18n "q4_opt_2" | safeJS }}`, `{{ i18n "q4_opt_3" | safeJS }}`, `{{ i18n "q4_opt_4" | safeJS }}`, `{{ i18n "q4_opt_5" | safeJS }}`] },
+        { type: 'radio', colIndex: 6, title: `{{ i18n "q5_title" | safeJS }}`, options: [`{{ i18n "q5_opt_1" | safeJS }}`, `{{ i18n "q5_opt_2" | safeJS }}`, `{{ i18n "q5_opt_3" | safeJS }}`, `{{ i18n "q5_opt_4" | safeJS }}`] },
+        { type: 'radio', colIndex: 7, title: `{{ i18n "q6_title" | safeJS }}`, options: [`{{ i18n "q6_opt_1" | safeJS }}`, `{{ i18n "q6_opt_2" | safeJS }}`, `{{ i18n "q6_opt_3" | safeJS }}`, `{{ i18n "q6_opt_4" | safeJS }}`] },
+        { type: 'radio', colIndex: 8, title: `{{ i18n "q7_title" | safeJS }}`, options: [`{{ i18n "q7_opt_1" | safeJS }}`, `{{ i18n "q7_opt_2" | safeJS }}`, `{{ i18n "q7_opt_3" | safeJS }}`, `{{ i18n "q7_opt_4" | safeJS }}`] },
+        { type: 'radio', colIndex: 9, title: `{{ i18n "q8_title" | safeJS }}`, options: [`{{ i18n "q8_opt_1" | safeJS }}`, `{{ i18n "q8_opt_2" | safeJS }}`, `{{ i18n "q8_opt_3" | safeJS }}`, `{{ i18n "q8_opt_4" | safeJS }}`] },
+        { type: 'radio', colIndex: 10, title: `{{ i18n "q9_title" | safeJS }}`, options: [`{{ i18n "q9_opt_1" | safeJS }}`, `{{ i18n "q9_opt_2" | safeJS }}`, `{{ i18n "q9_opt_3" | safeJS }}`, `{{ i18n "q9_opt_4" | safeJS }}`] },
+        { type: 'checkbox', colIndex: 11, title: `{{ i18n "q10_title" | safeJS }}`, options: [`{{ i18n "q10_opt_1" | safeJS }}`, `{{ i18n "q10_opt_2" | safeJS }}`, `{{ i18n "q10_opt_3" | safeJS }}`, `{{ i18n "q10_opt_4" | safeJS }}`, `{{ i18n "q10_opt_5" | safeJS }}`, `{{ i18n "q10_opt_6" | safeJS }}`] },
+        { type: 'radio', colIndex: 12, title: `{{ i18n "q11_title" | safeJS }}`, options: [`{{ i18n "q11_opt_1" | safeJS }}`, `{{ i18n "q11_opt_2" | safeJS }}`, `{{ i18n "q11_opt_3" | safeJS }}`, `{{ i18n "q11_opt_4" | safeJS }}`] },
+        { type: 'radio', colIndex: 13, title: `{{ i18n "q12_title" | safeJS }}`, options: [`{{ i18n "q12_opt_1" | safeJS }}`, `{{ i18n "q12_opt_2" | safeJS }}`, `{{ i18n "q12_opt_3" | safeJS }}`, `{{ i18n "q12_opt_4" | safeJS }}`] },
+        { type: 'radio', colIndex: 14, title: `{{ i18n "q13_title" | safeJS }}`, options: [`{{ i18n "q13_opt_1" | safeJS }}`, `{{ i18n "q13_opt_2" | safeJS }}`, `{{ i18n "q13_opt_3" | safeJS }}`, `{{ i18n "q13_opt_4" | safeJS }}`] },
+        { type: 'radio', colIndex: 15, title: `{{ i18n "q14_title" | safeJS }}`, options: [`{{ i18n "q14_opt_1" | safeJS }}`, `{{ i18n "q14_opt_2" | safeJS }}`, `{{ i18n "q14_opt_3" | safeJS }}`, `{{ i18n "q14_opt_4" | safeJS }}`, `{{ i18n "q14_opt_5" | safeJS }}`] },
+        { type: 'radio', colIndex: 16, title: `{{ i18n "q15_title" | safeJS }}`, options: [`{{ i18n "q15_opt_1" | safeJS }}`, `{{ i18n "q15_opt_2" | safeJS }}`, `{{ i18n "q15_opt_3" | safeJS }}`, `{{ i18n "q15_opt_4" | safeJS }}`] }
     ];
-
-    const contactFields = `
-        <div id="result-display">
-            <h2>¡Casi listo!</h2>
-            <p>Para recibir tu informe de ciberseguridad completo y personalizado, por favor, introduce tus datos.</p>
-        </div>
-        <h2>Tus datos de contacto</h2>
-        <label for="nombre">Nombre completo</label>
-        <input type="text" id="nombre" name="nombre" class="form-input" required>
-        <label for="email">Dirección de correo electrónico</label>
-        <input type="email" id="email" name="email" class="form-input" required>
-        <label for="organizacion">Organización</label>
-        <input type="text" id="organizacion" name="organizacion" class="form-input" required>
-        <button type="submit" id="submit-btn">Generar y Enviar mi Informe</button>
-    `;
-
-    const loaderHTML = `
-        <div id="loader">
-            <p>Estamos generando tu informe personalizado con IA...</p>
-            <div class="spinner"></div>
-            <p>Recibirás el informe en tu correo electrónico en unos instantes. ¡Gracias!</p>
-        </div>
-    `;
-
+    
     let currentQuestionIndex = 0;
     const answers = new Array(23).fill('');
+    let informeHtmlFinal = '';
 
     function renderQuestion() {
         if (currentQuestionIndex < questions.length) {
@@ -159,12 +150,17 @@ document.addEventListener('DOMContentLoaded', function() {
                 optionsHTML = q.options.map(opt => `<button type="button" class="option-button" data-value="${opt}">${opt}</button>`).join('');
             } else if (q.type === 'checkbox') {
                 optionsHTML = q.options.map(opt => `<label class="checkbox-label"><input type="checkbox" name="medidas" value="${opt}"> ${opt}</label>`).join('');
-                optionsHTML += `<button type="button" id="next-checkbox">Siguiente</button>`;
+                optionsHTML += `<button type="button" id="next-checkbox" class="btn btn-primary">{{ i18n "btn_next" | safeJS }}</button>`;
             }
             form.innerHTML = `<div class="form-slide active"><h2>${q.title}</h2><div class="option-group">${optionsHTML}</div></div>`;
         } else {
-            // Mostra els camps de contacte
-            form.innerHTML = `<div class="form-slide active">${contactFields}</div>`;
+            form.innerHTML = `
+                <div class="form-slide active text-center">
+                    <h2 class="title">{{ i18n "form_ready_title" | safeJS }}</h2>
+                    <p class="lead">{{ i18n "form_ready_subtitle" | safeJS }}</p>
+                    <button id="generar-informe-btn" class="btn btn-primary">{{ i18n "btn_generate_report" | safeJS }}</button>
+                </div>`;
+            document.getElementById('generar-informe-btn').addEventListener('click', enviarFormulario);
         }
         updateProgressBar();
     }
@@ -184,23 +180,18 @@ document.addEventListener('DOMContentLoaded', function() {
         if (e.target.id === 'next-checkbox') {
             const q = questions[currentQuestionIndex];
             const checkedValues = Array.from(form.querySelectorAll('input[type="checkbox"]:checked')).map(cb => cb.value).join(', ');
-            answers[q.colIndex] = checkedValues || "Ninguna de las anteriores";
+            answers[q.colIndex] = checkedValues || q.options[q.options.length - 1];
             currentQuestionIndex++;
             renderQuestion();
         }
     });
 
-    form.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        // Omplir dades finals
-        answers[1] = document.getElementById('email').value;
-        answers[17] = document.getElementById('nombre').value;
-        answers[18] = document.getElementById('organizacion').value;
-        answers[0] = new Date().toISOString(); // Marca temporal
-        answers[19] = "He leído y acepto la política de privacidad"; // Checkbox legal
-
-        form.innerHTML = `<div class="form-slide active">${loaderHTML}</div>`;
+    function enviarFormulario() {
+        form.innerHTML = `<div class="form-slide active"><div id="loader"><p>{{ i18n "form_generating_report_title" | safeJS }}</p><div class="spinner"></div><p>{{ i18n "form_generating_report_subtitle" | safeJS }}</p></div></div>`;
+        answers[0] = new Date().toISOString();
+        answers[1] = answers[1] || "no-reply@guardianhubx.com";
+        answers[17] = answers[17] || "Responsable de Ciberseguridad";
+        answers[18] = answers[18] || "Organización Anónima";
 
         const formData = new FormData();
         answers.forEach((value, index) => {
@@ -209,20 +200,87 @@ document.addEventListener('DOMContentLoaded', function() {
 
         fetch(SCRIPT_URL, { method: 'POST', body: formData })
             .then(response => {
-                if (!response.ok) throw new Error('Network response was not ok');
-                return response.json();
+                if (!response.ok) throw new Error(`{{ i18n "server_error" | safeJS }}`);
+                return response.text();
             })
-            .then(data => {
-                console.log('Success!', data);
-                // Canvia el text del loader a un missatge d'èxit
-                document.getElementById('loader').innerHTML = "<p>✅ ¡Informe enviado con éxito! Revisa tu bandeja de entrada.</p>";
+            .then(html => {
+                informeHtmlFinal = marked.parse(html);
+                form.innerHTML = `
+                  <div class="form-slide active">
+                    <h2 class="title">{{ i18n "form_report_generated_title" | safeJS }}</h2>
+                    <div class="informe-container" style="text-align: left;">
+                      ${informeHtmlFinal}
+                    </div>
+                    <p class="mt-4">{{ i18n "form_ask_for_email" | safeJS }}</p>
+                    <button type="button" id="enviar-por-email" class="btn btn-primary mt-2">{{ i18n "btn_send_by_email" | safeJS }}</button>
+                    <div id="formulario-contacto-wrapper" style="display: none; margin-top: 30px;"></div>
+                  </div>`;
+
+                document.getElementById('enviar-por-email').addEventListener('click', () => {
+                    document.getElementById('formulario-contacto-wrapper').innerHTML = `
+                        <h2>{{ i18n "form_contact_details_title" | safeJS }}</h2>
+                        <label for="nombre">{{ i18n "form_label_fullname" | safeJS }}</label>
+                        <input type="text" id="nombre" name="nombre" class="form-input" required>
+                        <label for="email">{{ i18n "form_label_email" | safeJS }}</label>
+                        <input type="email" id="email" name="email" class="form-input" required>
+                        <label for="organizacion">{{ i18n "form_label_organization" | safeJS }}</label>
+                        <input type="text" id="organizacion" name="organizacion" class="form-input" required>
+                        <button id="submit-email-btn" class="btn btn-primary mt-3">{{ i18n "btn_submit_email" | safeJS }}</button>`;
+                    document.getElementById('formulario-contacto-wrapper').style.display = 'block';
+
+                    document.getElementById('submit-email-btn').addEventListener('click', (event) => {
+                        event.preventDefault(); 
+                        const submitBtn = event.target;
+                        const emailInput = document.getElementById('email');
+                        const nombreInput = document.getElementById('nombre');
+                        const organizacionInput = document.getElementById('organizacion');
+                        const wrapper = document.getElementById('formulario-contacto-wrapper');
+
+                        if (!emailInput.value.trim() || !nombreInput.value.trim() || !organizacionInput.value.trim()) {
+                            alert(`{{ i18n "form_validation_error" | safeJS }}`);
+                            return; 
+                        }   
+                        
+                        submitBtn.disabled = true;
+                        submitBtn.innerHTML = `<span class="spinner-inline"></span> {{ i18n "form_sending_email" | safeJS }}`;
+
+                        const emailData = new FormData();
+                        emailData.append('action', 'send_email');
+                        emailData.append('email', emailInput.value);
+                        emailData.append('nombre', nombreInput.value);
+                        emailData.append('organizacion', organizacionInput.value);
+                        emailData.append('html', informeHtmlFinal);
+
+                        fetch(SCRIPT_URL, {
+                            method: 'POST',
+                            body: emailData
+                        })
+                        .then(res => {
+                            if (!res.ok) throw new Error(`{{ i18n "server_error" | safeJS }}`);
+                            return res.text();
+                        })
+                        .then(msg => {
+                            let successMsg = `{{ i18n "form_email_success" | safeJS }}`;
+                            wrapper.innerHTML = `<p style="text-align:center; font-weight:bold;">✅ ${successMsg.replace('{email}', emailInput.value)}</p>`;
+                        })
+                        .catch(err => {
+                            const errorMsgElement = wrapper.querySelector('.error-message');
+                            if (errorMsgElement) errorMsgElement.remove();
+                            let errorMsg = `{{ i18n "form_email_error" | safeJS }}`;
+                            wrapper.insertAdjacentHTML('beforeend', `<p class="error-message" style="color:red; text-align:center;">❌ ${errorMsg.replace('{error}', err.message)}</p>`);
+                            
+                            submitBtn.disabled = false;
+                            submitBtn.innerHTML = `{{ i18n "btn_submit_email" | safeJS }}`;
+                            console.error('Error al enviar:', err);
+                        });
+                    });
+                });
             })
             .catch(error => {
                 console.error('Error!', error.message);
-                document.getElementById('loader').innerHTML = "<p>❌ Ha ocurrido un error. Por favor, inténtalo de nuevo más tarde.</p>";
+                form.innerHTML = `<p>❌ {{ i18n "form_fetch_error" | safeJS }}</p>`;
             });
-    });
-
+    }
     renderQuestion();
 });
 </script>

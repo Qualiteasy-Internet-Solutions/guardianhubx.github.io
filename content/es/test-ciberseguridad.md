@@ -19,7 +19,7 @@ translations:
           Más del <span class="highlight-circle">72%</span> de las empresas españolas ha sido víctima de un ciberataque en los últimos 12 meses.
         </p>
         <h1 class="landing-hero-title">CONOCE EL ESTADO DE LA CIBERSEGURIDAD DE TU EMPRESA GRATIS</h1>
-        <button onclick="window.location='https://test.guardianhubx.com'"  class="landing-btn landing-btn-primary">
+        <button onclick="window.location='https://guardianhubx.com/es/test'"  class="landing-btn landing-btn-primary">
           EMPEZAR AHORA <i class="fas fa-arrow-right landing-arrow-soft-green"></i>
         </button>
       </div>
@@ -54,7 +54,7 @@ translations:
         <h5 class="step-title">RECIBE TU INFORME DETALLADO</h5>
       </div>
     </div>
-    <button onclick="location.href='https://test.guardianhubx.com'"  class="landing-btn landing-btn-primary mt-5 landing-fade-in">
+    <button onclick="location.href='https://guardianhubx.com/es/test'"  class="landing-btn landing-btn-primary mt-5 landing-fade-in">
       ACCEDER AL TEST <i class="fas fa-arrow-right landing-arrow-soft-green"></i>
     </button>
   </div>
@@ -68,7 +68,7 @@ translations:
         <h2 class="landing-section-title text-start">Rápido, sencillo y seguro</h2>
         <p class="mb-3 landing-text-muted">En menos de cinco minutos podrás conocer el nivel de protección digital de tu organización.</p>
         <p class="mb-3 landing-text-muted">Contesta las preguntas y recibirás en tu correo electrónico un informe detallado con las vulnerabilidades detectadas y acciones recomendadas para mejorar tu postura de seguridad.</p>
-        <button onclick="window.location='https://test.guardianhubx.com'"  class="landing-btn landing-btn-primary mt-3">
+        <button onclick="window.location='https://guardianhubx.com/es/test'"  class="landing-btn landing-btn-primary mt-3">
           DESCARGAR TEST GRATIS <i class="fas fa-angle-double-right arrow-soft-green"></i>
         </button>
       </div>
@@ -87,7 +87,7 @@ translations:
         <h2 class="landing-section-title text-start">Recibe tu informe completo <span class="green-pastel">sin coste</span></h2>
         <p class="mb-3 landing-text-muted">Obtendrás un análisis personalizado sobre las debilidades detectadas en tu entorno digital.</p>
         <p class="mb-3 landing-text-muted">Te proporcionaremos recomendaciones específicas para reforzar tu infraestructura y minimizar riesgos.</p>
-        <button onclick="window.location='https://test.guardianhubx.com'"  class="landing-btn landing-btn-primary">
+        <button onclick="window.location='https://guardianhubx.com/es/test'"  class="landing-btn landing-btn-primary">
           GENERAR MI INFORME GRATUITO <i class="fas fa-angle-double-right arrow-soft-green"></i>
         </button>
       </div>
@@ -103,7 +103,7 @@ translations:
   <div class="container text-center">
     <h2 class="landing-cta-title landing-fade-in">Protege tu negocio con datos reales</h2>
     <p class="landing-cta-subtitle landing-fade-in">Miles de empresas ya han evaluado su postura de seguridad con nuestro test gratuito.</p>
-    <button onclick="window.location='https://test.guardianhubx.com'"  class="landing-btn landing-btn-primary">
+    <button onclick="window.location='https://guardianhubx.com/es/test'"  class="landing-btn landing-btn-primary">
       OBTÉN TU INFORME YA <i class="fas fa-angle-double-right arrow-soft-green"></i>
     </button>
   </div>

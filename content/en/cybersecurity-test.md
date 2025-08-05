@@ -18,7 +18,7 @@ translations:
           More than <span class="highlight-circle">72%</span> of Spanish companies have been victims of cyberattacks in the last 12 months.
         </p>
         <h1 class="landing-hero-title">KNOW YOUR COMPANY'S CYBERSECURITY STATUS FOR FREE</h1>
-        <button onclick="window.location='https://test.guardianhubx.com'"  class="landing-btn landing-btn-primary">
+        <button onclick="window.location='https://guardianhubx.com/en/test'"  class="landing-btn landing-btn-primary">
           GET STARTED <i class="fas fa-arrow-right landing-arrow-soft-green"></i>
         </button>
       </div>
@@ -53,7 +53,7 @@ translations:
         <h5 class="step-title">RECEIVE YOUR DETAILED REPORT</h5>
       </div>
     </div>
-    <button onclick="location.href='https://test.guardianhubx.com'"  class="landing-btn landing-btn-primary mt-5 landing-fade-in">
+    <button onclick="location.href='https://guardianhubx.com/en/test'"  class="landing-btn landing-btn-primary mt-5 landing-fade-in">
       TAKE THE TEST <i class="fas fa-arrow-right landing-arrow-soft-green"></i>
     </button>
   </div>
@@ -67,7 +67,7 @@ translations:
         <h2 class="landing-section-title text-start">Fast, easy and secure</h2>
         <p class="mb-3 landing-text-muted">In less than five minutes you can know your organization’s cybersecurity level.</p>
         <p class="mb-3 landing-text-muted">Answer the questions and receive a detailed report by email with detected vulnerabilities and recommended actions to protect your business.</p>
-        <button onclick="window.location='https://test.guardianhubx.com'"  class="landing-btn landing-btn-primary mt-3">
+        <button onclick="window.location='https://guardianhubx.com/en/test'"  class="landing-btn landing-btn-primary mt-3">
           DOWNLOAD FREE TEST <i class="fas fa-angle-double-right arrow-soft-green"></i>
         </button>
       </div>
@@ -86,7 +86,7 @@ translations:
         <h2 class="landing-section-title text-start">Get your complete report <span class="green-pastel">for free</span></h2>
         <p class="mb-3 landing-text-muted">You'll get a personalized analysis of all detected weaknesses and specific recommendations to fix them.</p>
         <p class="mb-3 landing-text-muted">We’ll also suggest an action plan based on risk priorities.</p>
-        <button onclick="window.location='https://test.guardianhubx.com'"  class="landing-btn landing-btn-primary">
+        <button onclick="window.location='https://guardianhubx.com/en/test'"  class="landing-btn landing-btn-primary">
           GET MY FREE REPORT <i class="fas fa-angle-double-right arrow-soft-green"></i>
         </button>
       </div>
@@ -102,7 +102,7 @@ translations:
   <div class="container text-center">
     <h2 class="landing-cta-title landing-fade-in">Ready to protect your organization?</h2>
     <p class="landing-cta-subtitle landing-fade-in">Join thousands of companies that trust GuardianHubX to keep their teams safe.</p>
-    <button onclick="window.location='https://test.guardianhubx.com'"  class="landing-btn landing-btn-primary">
+    <button onclick="window.location='https://guardianhubx.com/en/test'"  class="landing-btn landing-btn-primary">
       GET YOUR FREE REPORT <i class="fas fa-angle-double-right arrow-soft-green"></i>
     </button>
   </div>

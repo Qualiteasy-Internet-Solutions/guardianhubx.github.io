@@ -18,7 +18,7 @@ translations:
           Més del <span class="highlight-circle">72%</span> de les empreses catalanes ha estat víctima d'un ciberatac en els últims 12 mesos.
         </p>
         <h1 class="landing-hero-title">CONÈIXER L'ESTAT DE LA TEVA EMPRESA EN CIBERSEGURETAT GRATIS</h1>
-        <button onclick="window.location='https://test.guardianhubx.com'"  class="landing-btn landing-btn-primary">
+        <button onclick="window.location='https://guardianhubx.com/ca/test'"  class="landing-btn landing-btn-primary">
           COMENÇAR JA <i class="fas fa-arrow-right landing-arrow-soft-green"></i>
         </button>
       </div>
@@ -53,7 +53,7 @@ translations:
         <h5 class="step-title">REBRE INFORME DETALLAT</h5>
       </div>
     </div>
-    <button onclick="location.href='https://test.guardianhubx.com'"  class="landing-btn landing-btn-primary mt-5 landing-fade-in">
+    <button onclick="location.href='https://guardianhubx.com/ca/test'"  class="landing-btn landing-btn-primary mt-5 landing-fade-in">
       ACCEDIR AL TEST <i class="fas fa-arrow-right landing-arrow-soft-green"></i>
     </button>
   </div>
@@ -68,7 +68,7 @@ translations:
         <p class="mb-3 landing-text-muted">En menys de 5 minuts podràs conèixer el nivell de protecció digital de la teva empresa.</p>
         <p class="mb-3 landing-text-muted">Respon les preguntes i reb un informe complet amb les vulnerabilitats detectades i possibles millores per reforçar la teva postura de seguretat.</p>
         <p class="mb-4 landing-text-muted">Un cop finalitzat el test, et donarem recomanacions personalitzades per millorar la seguretat digital de la teva organització.</p>
-        <button onclick="window.location='https://test.guardianhubx.com'"  class="landing-btn landing-btn-primary">
+        <button onclick="window.location='https://guardianhubx.com/ca/test'"  class="landing-btn landing-btn-primary">
           DESCARREGAR TEST GRATIS <i class="fas fa-angle-double-right arrow-soft-green"></i>
         </button>
       </div>
@@ -87,7 +87,7 @@ translations:
         <h2 class="landing-section-title text-start">Reb el teu informe complet <span class="green-pastel">gratis</span></h2>
         <p class="mb-3 landing-text-muted">Obtindras un anàlisi detallat de totes les vulnerabilitats detectades i recomanacions per solventar-les.</p>
         <p class="mb-3 landing-text-muted">Et proposarem també un pla d’actuació prioritzat segons les teves necessitats.</p>
-        <button onclick="window.location='https://test.guardianhubx.com'"  class="landing-btn landing-btn-primary">
+        <button onclick="window.location='https://guardianhubx.com/ca/test'"  class="landing-btn landing-btn-primary">
           REBRE EL MEU INFORME <i class="fas fa-angle-double-right arrow-soft-green"></i>
         </button>
       </div>
@@ -199,7 +199,7 @@ translations:
   <div class="container text-center">
     <h2 class="landing-cta-title landing-fade-in">Preparat per protegir la teva organització?</h2>
     <p class="landing-cta-subtitle landing-fade-in">Uneix-te a les empreses que ja confien en GuardianHubX per mantenir els seus equips preparats davant atacs de phishing.</p>
-    <button onclick="window.location='https://test.guardianhubx.com'"  class="landing-btn landing-btn-primary">
+    <button onclick="window.location='https://guardianhubx.com/ca/test'"  class="landing-btn landing-btn-primary">
       GENERAR INFORME GRATUÏT <i class="fas fa-angle-double-right arrow-soft-green"></i>
     </button>
   </div>
