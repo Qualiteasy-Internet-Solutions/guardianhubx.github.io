@@ -41,10 +41,16 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Detects scroll
+const homeBanner = document.querySelector('.home-banner');
+  let bannerHasBeenHidden = false;
+
   window.addEventListener('scroll', function() {
     if (window.scrollY > 10) {
       document.body.classList.add('scrolled');
+      if (homeBanner && !bannerHasBeenHidden) {
+        homeBanner.classList.add('hide-permanently');
+        bannerHasBeenHidden = true;
+      }
     } else {
       document.body.classList.remove('scrolled');
     }
