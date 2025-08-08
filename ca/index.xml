@@ -33,7 +33,7 @@
 &lt;li>Sistema de còpies de seguretat extra&lt;/li>
 &lt;li>Antirobatori i localització de dispositius&lt;/li>
 &lt;/ul>
-&lt;p>Per als teus sistemes exposats a internet:&lt;/p></description></item><item><title>Evita el phishing amb el software que forma els teus empleats</title><link>https://guardianhubx.com/ca/formacio-phishing-software/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/ca/formacio-phishing-software/</guid><description>&lt;!-- Hero Section -->
+&lt;p>Per als teus sistemes exposats a internet:&lt;/p></description></item><item><title>Els Pilars de la Ciberseguretat Moderna</title><link>https://guardianhubx.com/ca/objectius-ciberseguretat/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/ca/objectius-ciberseguretat/</guid><description/></item><item><title>Evita el phishing amb el software que forma els teus empleats</title><link>https://guardianhubx.com/ca/formacio-phishing-software/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/ca/formacio-phishing-software/</guid><description>&lt;!-- Hero Section -->
 &lt;section class="landing-hero-section">
  &lt;div class="container">
  &lt;div class="row align-items-center">
@@ -259,23 +259,7 @@
 &lt;/p>
 &lt;p class="mt-5 text-center">
  Els productes de NordSecurity ens ajuden a &lt;strong>protegir la privacitat, assegurar les dades i garantir l’accés segur&lt;/strong>, pilars fonamentals de la ciberseguretat.
-&lt;/p></description></item><item><title>Objectius de ciberseguretat</title><link>https://guardianhubx.com/ca/objectius-ciberseguretat/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/ca/objectius-ciberseguretat/</guid><description>&lt;p>A &lt;strong>GuardianHubX&lt;/strong>, la nostra estratègia de seguretat es basa en &lt;strong>tres pilars fonamentals&lt;/strong>: &lt;em>prevenció&lt;/em>, &lt;em>detecció&lt;/em> i &lt;em>recuperació&lt;/em>. Implementem solucions avançades per protegir les dades i sistemes dels nostres clients davant qualsevol amenaça cibernètica.&lt;/p>
-&lt;div class="d-flex justify-content-center my-4">
- &lt;img src="https://guardianhubx.com/img/seguridad-prevencion-deteccion-recuperacion.jpg" class="img-fluid rounded shadow-sm" alt="Ciberseguretat: Prevenció, Detecció i Recuperació">
-&lt;/div>
-&lt;h2 id="-prevenció">🔒 Prevenció&lt;/h2>
-&lt;p>Evitar que les amenaçes arribin als sistemes és el primer pas essencial cap a una bona ciberseguretat. Ens basem en solucions avançades com:&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="https://guardianhubx.com/ca/faronics/">&lt;strong>Faronics&lt;/strong>&lt;/a> – Protecció contra canvis no desitjats&lt;/li>
-&lt;li>&lt;a href="https://guardianhubx.com/ca/nordsecurity/">&lt;strong>NordLayer&lt;/strong>&lt;/a> – Seguretat remota i accés segur&lt;/li>
-&lt;li>&lt;a href="https://guardianhubx.com/ca/outkept/">&lt;strong>Outkept&lt;/strong>&lt;/a> – Formació pràctica contra phishing&lt;/li>
-&lt;li>&lt;a href="https://guardianhubx.com/ca/nordsecurity/">&lt;strong>NordPass&lt;/strong>&lt;/a> – Gestor de contrasenyes segur&lt;/li>
-&lt;li>&lt;a href="https://guardianhubx.com/ca/passwork/">&lt;strong>Passwork&lt;/strong>&lt;/a> – Gestió centralitzada de credencials&lt;/li>
-&lt;li>&lt;a href="https://qualiteasy.eu">&lt;strong>Qualiteasy&lt;/strong>&lt;/a> – Gdocumental i el compliment normatiu (ISO, LOPD, etc.)&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;h2 id="-detecció">🛡️ Detecció&lt;/h2>
-&lt;p>Detectar amenaçes en temps real és clau per mitigar riscos abans que causin danys. Comptem amb eines com:&lt;/p></description></item><item><title>Outkept</title><link>https://guardianhubx.com/ca/outkept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/ca/outkept/</guid><description>&lt;section class="about mb-5 container text-center">
+&lt;/p></description></item><item><title>Outkept</title><link>https://guardianhubx.com/ca/outkept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/ca/outkept/</guid><description>&lt;section class="about mb-5 container text-center">
  &lt;img src="https://guardianhubx.com/img/outkept-logo.png" alt="Logo d'Outkept" class="img-fluid mb-2" style="max-height: 100px;">
  &lt;p>Formació en phishing per a empleats amb simulacions realistes i anàlisi detallats.&lt;/p>
  &lt;p>&lt;strong>Outkept&lt;/strong> ajuda les organitzacions a reforçar la sensibilització sobre ciberseguretat mitjançant campanyes de phishing personalitzades i avaluacions contínues.&lt;/p>

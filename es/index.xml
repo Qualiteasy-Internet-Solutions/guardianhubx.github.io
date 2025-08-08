@@ -326,7 +326,7 @@
 &lt;ul>
 &lt;li>Gestión de contraseñas&lt;/li>
 &lt;/ul>
-&lt;p>Para tus sistemas expuestos a internet:&lt;/p></description></item><item><title>Newsletter</title><link>https://guardianhubx.com/es/newsletter/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/es/newsletter/</guid><description>&lt;style>
+&lt;p>Para tus sistemas expuestos a internet:&lt;/p></description></item><item><title>Los Pilares de la Ciberseguridad Moderna</title><link>https://guardianhubx.com/es/objetivos-ciberseguridad/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/es/objetivos-ciberseguridad/</guid><description/></item><item><title>Newsletter</title><link>https://guardianhubx.com/es/newsletter/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/es/newsletter/</guid><description>&lt;style>
  @font-face {
  font-display: block;
  font-family: Roboto;
@@ -414,23 +414,7 @@
 &lt;/p>
 &lt;p class="mt-5 text-center">
  Los productos de NordSecurity nos ayudan a &lt;strong>proteger la privacidad, asegurar los datos y garantizar el acceso seguro&lt;/strong>, pilares fundamentales de la ciberseguridad.
-&lt;/p></description></item><item><title>Objetivos de ciberseguridad</title><link>https://guardianhubx.com/es/objetivos-ciberseguridad/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/es/objetivos-ciberseguridad/</guid><description>&lt;p>En &lt;strong>GuardianHubX&lt;/strong>, nuestra estrategia de seguridad se basa en &lt;strong>tres pilares fundamentales&lt;/strong>: &lt;em>prevención&lt;/em>, &lt;em>detección&lt;/em> y &lt;em>recuperación&lt;/em>. Implementamos soluciones avanzadas para proteger los datos y sistemas de nuestros clientes frente a cualquier amenaza cibernética.&lt;/p>
-&lt;div class="d-flex justify-content-center my-4">
- &lt;img src="https://guardianhubx.com/img/seguridad-prevencion-deteccion-recuperacion.jpg" class="img-fluid rounded shadow-sm" alt="Ciberseguridad: Prevención, Detección y Recuperación">
-&lt;/div>
-&lt;h2 id="-prevención">🔒 Prevención&lt;/h2>
-&lt;p>Evitar que las amenazas lleguen a los sistemas es el primer paso esencial hacia una buena ciberseguridad. Nos basamos en soluciones avanzadas como:&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="https://guardianhubx.com/es/faronics/">&lt;strong>Faronics&lt;/strong>&lt;/a> – Protección contra cambios no deseados&lt;/li>
-&lt;li>&lt;a href="https://guardianhubx.com/es/nordsecurity/">&lt;strong>NordLayer&lt;/strong>&lt;/a> – Seguridad remota y acceso seguro&lt;/li>
-&lt;li>&lt;a href="https://guardianhubx.com/es/outkept/">&lt;strong>Outkept&lt;/strong>&lt;/a> – Formación práctica contra phishing&lt;/li>
-&lt;li>&lt;a href="https://guardianhubx.com/es/nordsecurity/">&lt;strong>NordPass&lt;/strong>&lt;/a> – Gestor seguro de contraseñas&lt;/li>
-&lt;li>&lt;a href="https://guardianhubx.com/es/passwork/">&lt;strong>Passwork&lt;/strong>&lt;/a> – Gestión centralizada de credenciales&lt;/li>
-&lt;li>&lt;a href="https://qualiteasy.eu">&lt;strong>Qualiteasy&lt;/strong>&lt;/a> – Gestión documental y cumplimiento normativo (ISO, LOPD, etc.)&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;h2 id="-detección">🛡️ Detección&lt;/h2>
-&lt;p>Detectar amenazas en tiempo real es clave para mitigar riesgos antes de que causen daños. Contamos con herramientas como:&lt;/p></description></item><item><title>Outkept</title><link>https://guardianhubx.com/es/outkept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/es/outkept/</guid><description>&lt;section class="about mb-5 container text-center">
+&lt;/p></description></item><item><title>Outkept</title><link>https://guardianhubx.com/es/outkept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/es/outkept/</guid><description>&lt;section class="about mb-5 container text-center">
  &lt;img src="https://guardianhubx.com/img/outkept-logo.png" alt="Logo de Outkept" class="img-fluid mb-2" style="max-height: 100px;">
  &lt;p>Formación en phishing para empleados con simulaciones realistas y análisis detallados.&lt;/p>
  &lt;p>&lt;strong>Outkept&lt;/strong> ayuda a las organizaciones a reforzar la concienciación sobre ciberseguridad mediante campañas de phishing personalizadas y evaluaciones continuas.&lt;/p>
