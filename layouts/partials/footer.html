@@ -25,7 +25,8 @@
       <!-- MENÚ -->
       <div class="col-md-3">
         <h6 class="text-uppercase mb-3 small">{{ i18n "menu" }}</h6>
-        <nav class="footer-menu-nav small" aria-label="Enllaços del peu de pàgina">
+        <nav class="footer-menu-nav small" aria-label="{{ cond (eq .Lang "es") "Enlaces del pie de página" (cond (eq .Lang "en") "Footer links" "Enllaços del peu de pàgina") }}">
+
           {{ partial "menu.html" . }}
         </nav>
       </div>
@@ -84,9 +85,9 @@
         </p>
         <p class="small mb-3">
           <i class="fas fa-blog me-2"></i>
-          <a href="{{ cond (eq .Lang "ca") "/blog/ca/" "/blog/" | relURL }}" class="text-decoration-none text-secondary">
-            Blog / News
-          </a>
+            <a href="{{ if eq .Lang "ca" }}/blog/ca/{{ else }}/blog/{{ end }}" class="text-decoration-none text-secondary">
+              Blog / News
+            </a>
         </p>
 
         <div class="small mb-3">
