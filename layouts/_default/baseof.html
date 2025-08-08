@@ -2,6 +2,7 @@
 <html lang="{{ .Lang }}">
 <head>
   {{ partial "head.html" . }}
+  {{ partial "faq-schema.html" . }}
 </head>
 <body class="{{ if .IsHome }}with-home-header{{ else }}with-fixed-header{{ end }}">
   <!-- Google Tag Manager (noscript) -->
@@ -14,6 +15,7 @@
   {{ end }}
 
   {{ block "main" . }}{{ end }}
+  {{ partial "faq.html" . }}
   {{ partial "footer.html" . }}
 
   <!-- Bootstrap Bundle -->

@@ -1,49 +1,107 @@
 ---
-title: "Objectius de ciberseguretat"
+title: "Els Pilars de la Ciberseguretat Moderna"
+layout: "objectives" 
 slug: "objectius-ciberseguretat"
 url: "/ca/objectius-ciberseguretat/"
-layout: "single"
 translations:
   - lang: es
     path: "/es/objetivos-ciberseguridad/"
   - lang: en
     path: /en/cybersecurity-goals/
+
+header:
+  introduction: "A GuardianHubX, la nostra estratègia de seguretat es basa en tres pilars fonamentals per oferir una protecció integral. Implementem solucions avançades per protegir les dades i sistemes dels nostres clients davant qualsevol amenaça cibernètica."
+  image: "/img/seguridad-prevencion-deteccion-recuperacion.jpg"
+  image_alt: "Diagrama dels pilars de la Ciberseguretat: Prevenció, Detecció i Recuperació"
+
+pillars:
+  - title: "Prevenció"
+    icon: "fas fa-shield-alt"
+    content: "Aquesta és la primera línia de defensa. L'objectiu és impedir l'entrada d'intrusos mitjançant el control d'accessos, la protecció dels dispositius i la formació dels usuaris."
+    tools:
+      - name: "Faronics"
+        url: "/ca/faronics/"
+        description: "Protecció contra canvis no desitjats"
+      - name: "NordLayer"
+        url: "/ca/nordsecurity/"
+        description: "Seguretat remota i accés segur"
+      - name: "Outkept"
+        url: "/ca/outkept/"
+        description: "Formació pràctica contra phishing"
+      - name: "NordPass"
+        url: "/ca/nordsecurity/"
+        description: "Gestor de contrasenyes segur"
+      - name: "Passwork"
+        url: "/ca/passwork/"
+        description: "Gestió centralitzada de credencials"
+
+  - title: "Detecció"
+    icon: "fas fa-search"
+    content: "La detecció funciona com un sistema d'alarmes. Ens permet identificar activitats sospitoses en temps real per poder reaccionar immediatament, abans que un atacant causi danys."
+    tools:
+      - name: "Edgewatch"
+        url: "/ca/edgewatch/"
+        description: "Monitorització contínua d’amenaces"
+      - name: "Passwork"
+        url: "/ca/passwork/"
+        description: "Control d’accés i ús de contrasenyes"
+      - name: "NordPass"
+        url: "/ca/nordsecurity/"
+        description: "Alertes i auditoria de seguretat"
+      - name: "Faronics Antivirus"
+        url: "/ca/faronics/"
+        description: "Protecció activa contra malware"
+
+  - title: "Recuperació"
+    icon: "fas fa-history"
+    content: "Aquest pilar és el nostre pla d'emergència. Ens assegura que podem restaurar els sistemes i les dades ràpidament per minimitzar l'impacte i garantir la continuïtat del negoci."
+    tools:
+      - name: "Faronics Cloud"
+        url: "/ca/faronics/"
+        description: "Restabliment ràpid de sistemes"
+      - name: "iDrive"
+        url: "/ca/idrive/"
+        description: "Còpia de seguretat i recuperació eficient"
+      - name: "Prey Project"
+        url: "https://preyproject.com/es?source=guardianhub"
+        description: "Protecció i localització de dispositius"
+
+faq_title: "Conceptes Clau de Ciberseguretat"
+faq_items:
+    - question: "Per què és important la ciberseguretat si soc un autònom o una pime?"
+      answer: "Els ciberdelinqüents ataquen massivament i busquen les víctimes més fàcils, que solen ser les petites empreses per tenir menys proteccions. Un atac pot robar dades de clients, paralitzar la teva activitat o buidar els teus comptes bancaris. La ciberseguretat no és només per a grans multinacionals, és la base per a la supervivència de qualsevol negoci digital."
+    - question: "Quina diferència hi ha entre el suport informàtic (IT) i la ciberseguretat?"
+      answer: "El suport informàtic s'assegura que la tecnologia funcioni correctament (ordinadors, impressores, xarxes). La ciberseguretat se centra a protegir tota aquesta tecnologia i la informació que conté contra atacs, robatoris o danys. Són disciplines complementàries: una fa que el cotxe funcioni, l'altra li posa l'alarma i els panys."
+    - question: "Què és el phishing i com el puc reconèixer?"
+      answer: "El phishing és un frau on un atacant es fa passar per una entitat de confiança (el teu banc, Correus, Netflix) per enganyar-te i que li donis les teves contrasenyes o dades bancàries. Desconfia sempre de correus o missatges que demanin informació urgent, continguin enllaços sospitosos, tinguin errors gramaticals o un remitent que no coincideix exactament amb l'oficial."
+    - question: "Què és exactament el ransomware?"
+      answer: "És un 'segrest digital'. Un malware que bloqueja l'accés a tots els teus arxius xifrant-los i demana un rescat econòmic per alliberar-los. La millor defensa és la prevenció i, sobretot, tenir còpies de seguretat externes i desconnectades."
+    - question: "Quina diferència hi ha entre un virus, un cuc i un troià?"
+      answer: "Tots són tipus de malware. Un **virus** necessita un programa per infectar i propagar-se (com un virus biològic). Un **cuc** (worm) es pot propagar per si mateix a través de la xarxa, sense ajuda humana. Un **troià** (trojan) es disfressa de programa legítim per enganyar-te i que l'instal·lis, obrint una porta del darrere al teu sistema."
+    - question: "És realment perillós connectar-se a una Wi-Fi pública?"
+      answer: "Sí, pot ser-ho molt. En una xarxa Wi-Fi oberta (d'un aeroport, cafeteria, etc.), un atacant connectat a la mateixa xarxa pot interceptar tot el que envies i reps, incloent contrasenyes i dades personals. Per evitar-ho, mai facis operacions sensibles en xarxes públiques i utilitza sempre una VPN (Xarxa Privada Virtual)."
+    - question: "A part d'una contrasenya forta, què és el més important per protegir els meus comptes?"
+      answer: "L'**Autenticació Multifactor (MFA o 2FA)**. És una segona capa de seguretat que consisteix a verificar la teva identitat amb alguna cosa que tens (com un codi al mòbil) a més d'alguna cosa que saps (la contrasenya). Activa-la a tots els serveis que ho permetin (correu, xarxes socials, banc...)."
+    - question: "Què és una VPN i quan l'hauria d'utilitzar?"
+      answer: "Una VPN (Virtual Private Network) crea un túnel privat i xifrat per a la teva connexió a internet. Amaga la teva activitat i protegeix les teves dades de possibles espies. Hauries d'utilitzar-la sempre que et connectis a una xarxa Wi-Fi que no sigui la teva de confiança, especialment si treballes a distància."
+    - question: "Per què són tan insistents les actualitzacions de programari?"
+      answer: "Perquè són un dels pilars de la seguretat. Moltes actualitzacions no afegeixen funcions noves, sinó que corregeixen forats de seguretat que els ciberdelinqüents han descobert. Mantenir el sistema operatiu, el navegador i les aplicacions actualitzades és com tapar les escletxes a la muralla del teu castell."
+    - question: "Realment necessito un gestor de contrasenyes?"
+      answer: "Absolutament. És impossible recordar una contrasenya llarga, única i complexa per a cada servei. Un gestor de contrasenyes ho fa per tu: crea i emmagatzema de forma segura totes les teves credencials. Tu només has de recordar una única 'contrasenya mestra'. És un canvi radical en la teva seguretat."
+    - question: "Com puc protegir el meu telèfon mòbil?"
+      answer: "Tracta'l com un ordinador. Utilitza un bloqueig segur (empremta, PIN llarg), instal·la només aplicacions de botigues oficials, mantén el sistema operatiu i les apps actualitzades, no et connectis a xarxes Wi-Fi obertes sense una VPN i considera instal·lar una solució de seguretat que inclogui antivirus i localització remota."
+    - question: "Què significa el 'Principi de Mínim Privilegi'?"
+      answer: "És un concepte fonamental en seguretat empresarial. Significa que cada usuari només ha de tenir accés a la informació i a les eines estrictament necessàries per fer la seva feina, i res més. Això limita enormement el dany potencial si el compte d'un empleat es veu compromès."
+    - question: "Amb quina freqüència i on hauria de guardar les còpies de seguretat?"
+      answer: "Segueix la **regla 3-2-1**: Tingues almenys **3** còpies de les teves dades importants, en **2** suports diferents (ex: disc dur extern i al núvol), amb **1** d'elles guardada en una ubicació externa (fora de l'oficina). Les dades crítiques s'haurien de copiar diàriament."
+    - question: "Quins són els primers passos a fer després de sospitar d'un incident de seguretat?"
+      answer: "1. **Aïllar:** Desconnecta l'equip afectat d'internet i de la xarxa local per evitar que l'atac es propagui. 2. **No apagar:** No reiniciïs ni apaguis l'equip, ja que es podrien perdre proves volàtils importants per a la investigació. 3. **Notificar:** Avisa immediatament el teu responsable o el teu proveïdor de serveis de ciberseguretat. 4. **Registrar:** Anota tot el que recordis: què estaves fent, quins missatges han aparegut, etc."
+    - question: "La ciberseguretat és una cosa que s'instal·la un cop i ja està?"
+      answer: "No, és un procés continu. Les amenaces evolucionen constantment, per la qual cosa la seguretat ha de ser una combinació d'eines tecnològiques actualitzades, formació regular per als empleats i revisions periòdiques de les polítiques de seguretat. És un cicle de prevenció, detecció i millora constant."
+
+cta_block:
+  title: "No saps per on començar?"
+  text: "Coneix l'estat real de la teva seguretat en menys de 2 minuts."
+  button_text: "Fes el nostre Test de Ciberseguretat Gratuït"
+  button_link: "/ca/test-ciberseguretat/"
 ---
-
-A **GuardianHubX**, la nostra estratègia de seguretat es basa en **tres pilars fonamentals**: *prevenció*, *detecció* i *recuperació*. Implementem solucions avançades per protegir les dades i sistemes dels nostres clients davant qualsevol amenaça cibernètica.
-
-<div class="d-flex justify-content-center my-4">
-  <img src="/img/seguridad-prevencion-deteccion-recuperacion.jpg" class="img-fluid rounded shadow-sm" alt="Ciberseguretat: Prevenció, Detecció i Recuperació">
-</div>
-
-## 🔒 Prevenció
-
-Evitar que les amenaçes arribin als sistemes és el primer pas essencial cap a una bona ciberseguretat. Ens basem en solucions avançades com:
-
-- [**Faronics**](/ca/faronics/) – Protecció contra canvis no desitjats  
-- [**NordLayer**](/ca/nordsecurity/) – Seguretat remota i accés segur  
-- [**Outkept**](/ca/outkept/) – Formació pràctica contra phishing  
-- [**NordPass**](/ca/nordsecurity/) – Gestor de contrasenyes segur  
-- [**Passwork**](/ca/passwork/) – Gestió centralitzada de credencials
-- [**Qualiteasy**](https://qualiteasy.eu) – Gdocumental i el compliment normatiu (ISO, LOPD, etc.)
-
----
-
-## 🛡️ Detecció
-
-Detectar amenaçes en temps real és clau per mitigar riscos abans que causin danys. Comptem amb eines com:
-
-- [**Edgewatch**](/ca/edgewatch/) – Monitorització contínua d’amenaçes  
-- [**Passwork**](/ca/passwork/) – Control d’accés i ús de contrasenyes  
-- [**NordPass**](/ca/nordsecurity/) – Alertes i auditoria de seguretat  
-- [**Faronics Antivirus**](/ca/faronics/) – Protecció activa contra malware  
-
----
-
-## 🔄 Recuperació
-
-Davant un incident de seguretat, la capacitat de recuperació és fonamental per minimitzar l’impacte operatiu. Ofereixem solucions com:
-
-- [**Faronics Cloud**](/ca/faronics/) – Restabliment ràpid de sistemes  
-- [**iDrive**](/ca/idrive/) – Còpia de seguretat automàtica i recuperació eficient
-- [**Prey Project**](https://preyproject.com/es?source=guardianhub) – Protecció i localització de dispositius perduts o robats

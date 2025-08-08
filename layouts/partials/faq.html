@@ -1,0 +1,40 @@
+{{/*
+  Aquest partial s'activa si troba '.Params.faq_items'.
+  Després, comprova si també existeixen un títol o subtítol específics.
+*/}}
+{{ with .Params.faq_items }}
+<section class="faq-section bg-light py-5">
+  <div class="container">
+    {{/*
+      LÒGICA DEL TÍTOL:
+      1. Busca un 'faq_title' al front matter de la pàgina ($).
+      2. Si no el troba, fa servir la traducció 'faq_title' per defecte.
+    */}}
+    {{ $title := $.Params.faq_title | default (T "faq_title") }}
+    <h2 class="text-center mb-4">{{ $title }}</h2>
+
+    {{/* LÒGICA DEL SUBTÍTOL: Només es mostra si existeix 'faq_subtitle' al front matter. */}}
+    {{ with $.Params.faq_subtitle }}
+      <p class="text-center mb-5 landing-text-muted">{{ . }}</p>
+    {{ end }}
+    
+    <div class="accordion" id="faqAccordion">
+      {{/* El bucle itera sobre la llista 'faq_items' trobada. */}}
+      {{ range $index, $item := . }}
+      <div class="accordion-item">
+        <h3 class="accordion-header" id="faq{{ add $index 1 }}">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse{{ add $index 1 }}" aria-expanded="false" aria-controls="faqCollapse{{ add $index 1 }}">
+            {{ $item.question }}
+          </button>
+        </h3>
+        <div id="faqCollapse{{ add $index 1 }}" class="accordion-collapse collapse" aria-labelledby="faq{{ add $index 1 }}" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+                {{ $item.answer | markdownify }}
+            </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

@@ -7,6 +7,17 @@ translations:
     path: "/es/formacion-phishing-software/"
   - lang: en
     path: "/en/cybersecurity-phishing-training/"
+faq_items:
+  - question: "Què és el phishing?"
+    answer: "El phishing és una tècnica utilitzada per ciberdelinqüents per obtenir informació sensible fent-se passar per fonts fiables. Se sol realitzar mitjançant correus electrònics o missatges falsos que semblen legítims."
+  - question: "Com funciona la formació en phishing de GuardianHubX?"
+    answer: "Oferim simulacions realistes i personalitzades que posen a prova els teus empleats davant d'intents de phishing. Després de cada simulació, proporcionem retroalimentació immediata i recursos educatius per millorar la consciència de l'equip."
+  - question: "És necessari instal·lar programari addicional?"
+    answer: "No, el nostre sistema és completament al núvol. Només necessites accés a internet i un navegador web estàndard. La integració amb la teva empresa és ràpida i no requereix instal·lacions complexes."
+  - question: "Compleix amb el RGPD i altres normatives de seguretat?"
+    answer: "Sí, totes les nostres eines compleixen amb el Reglament General de Protecció de Dades (RGPD) i altres estàndards internacionals de ciberseguretat. A més, oferim acords de tractament de dades signats digitalment."
+  - question: "Es poden personalitzar les simulacions de phishing?"
+    answer: "Sí, pots adaptar els escenaris de phishing a la teva indústria, nivell de risc i estil de comunicació habitual a la teva empresa."
 ---
 
 <!-- Hero Section -->
@@ -209,34 +220,3 @@ translations:
   </div>
 </section>
 
-<section class="landing-section py-5">
-  <div class="container">
-    <h2 class="landing-section-title text-center mb-4">Preguntes freqüents</h2>
-    <div class="accordion" id="faqAccordion">
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="faq1">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1-collapse" aria-expanded="false" aria-controls="faq1-collapse">
-            ¿Què és el phishing?
-          </button>
-        </h2>
-        <div id="faq1-collapse" class="accordion-collapse collapse" aria-labelledby="faq1">
-          <div class="accordion-body">
-            El phishing és un tipus d'atac cibernètic on es pretén enganyar una persona perquè reveli informació sensible com contrasenyes o dades bancàries.
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item mt-3">
-        <h2 class="accordion-header" id="faq2">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-collapse" aria-expanded="false" aria-controls="faq2-collapse">
-            ¿Com funciona la vostra formació?
-          </button>
-        </h2>
-        <div id="faq2-collapse" class="accordion-collapse collapse" aria-labelledby="faq2">
-          <div class="accordion-body">
-            La nostra plataforma genera simulacions reals de phishing i mesura com respon els empleats, oferint retroalimentació immediata i recursos educatius.
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>

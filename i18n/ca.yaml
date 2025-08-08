@@ -424,3 +424,6 @@
   translation: "No n'estem segurs"
 - id: "q15_opt_4"
   translation: "No tenim ciberassegurança"
+
+- id: "logo"
+  translation: "GuardianHubX - Solucions avançades ciberseguretat per empreses"

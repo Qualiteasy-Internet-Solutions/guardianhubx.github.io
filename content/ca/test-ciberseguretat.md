@@ -7,6 +7,22 @@ translations:
     path: "/es/test-ciberseguridad/"
   - lang: en
     path: "/en/cybersecurity-test/"
+
+faq_title: "Preguntes freqüents"
+faq_subtitle: "Resol els teus dubtes més comuns sobre l'ús del nostre test i la protecció de dades."
+faq_items:
+  - question: "Què feu amb les meves dades?"
+    answer: "Les dades recopilades s'utilitzen únicament per generar el teu informe de ciberseguretat. No les compartim amb tercers ni les fem servir per a altres finalitats."
+  - question: "Compartireu les meves dades amb altres empreses?"
+    answer: "No. Totes les dades són estrictament privades i només es fan servir per oferir-te el servei sol·licitat."
+  - question: "Estan protegides les meves dades?"
+    answer: "Sí. El nostre sistema compleix amb el RGPD i té mesures tècniques avançades per garantir la seguretat de les teves dades personals."
+  - question: "Rebré correus comercials després del test?"
+    answer: "Només rebràs comunicacions si les acceptes explícitament. Durant el test no hi ha subscripció automàtica a butlletins informatius."
+  - question: "Les dades es guarden indefinidament?"
+    answer: "No. Les dades es conserven durant un màxim de 5 anys, i pots sol·licitar-ne l'eliminació en qualsevol moment escrivint a <a href='mailto:info@guardianhubx.com'>info@guardianhubx.com</a>."
+  - question: "Què passa si envio el formulari però no vull seguir?"
+    answer: "Si no continues amb el procés, la teva informació es mantindrà activa durant 7 dies i després s'eliminarà automàticament."
 ---
 
 <!-- Hero Section -->
@@ -96,102 +112,6 @@ translations:
       </div>
     </div>
   </div>
-</section>
-
-<!-- FAQ Section -->
-<section class="landing-section py-5">
-<div class="container">
-<h2 class="landing-section-title text-center mb-4">Preguntes freqüents</h2>
-<p class="text-center mb-5 landing-text-muted">Resol els dubtes més habituals sobre com utilitzem les dades i com t’ajudem a millorar la teva postura de seguretat.</p>
-
-<div class="accordion" id="faqAccordion" data-bs-theme="light">
-
-  <!-- Pregunta 1 -->
-  <div class="accordion-item">
-    <h3 class="accordion-header" id="faq1">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1-collapse" aria-expanded="false" aria-controls="faq1-collapse">
-        ¿Què feu amb les meves dades?
-      </button>
-    </h3>
-    <div id="faq1-collapse" class="accordion-collapse collapse" aria-labelledby="faq1" data-bs-parent="#faqAccordion">
-      <div class="accordion-body">
-        Les dades recollides s’utilitzen només per generar el teu informe de ciberseguretat. No les compartim amb tercers ni les fem servir per cap altra finalitat.
-      </div>
-    </div>
-  </div>
-
-  <!-- Pregunta 2 -->
-  <div class="accordion-item mt-3">
-    <h3 class="accordion-header" id="faq2">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-collapse" aria-expanded="false" aria-controls="faq2-collapse">
-        ¿Compartireu les meves dades amb altres empreses?
-      </button>
-    </h3>
-    <div id="faq2-collapse" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#faqAccordion">
-      <div class="accordion-body">
-        No. Totes les dades resten estrictament privades i només són emprades per oferir-te el servei sol·licitat.
-      </div>
-    </div>
-  </div>
-
-  <!-- Pregunta 3 -->
-  <div class="accordion-item mt-3">
-    <h3 class="accordion-header" id="faq3">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3-collapse" aria-expanded="false" aria-controls="faq3-collapse">
-        ¿Estan protegides les meves dades?
-      </button>
-    </h3>
-    <div id="faq3-collapse" class="accordion-collapse collapse" aria-labelledby="faq3" data-bs-parent="#faqAccordion">
-      <div class="accordion-body">
-        Sí. El nostre sistema compleix el RGPD i disposa de mesures avançades per garantir la seguretat de les teves dades.
-      </div>
-    </div>
-  </div>
-
-  <!-- Pregunta 4 -->
-  <div class="accordion-item mt-3">
-    <h3 class="accordion-header" id="faq4">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4-collapse" aria-expanded="false" aria-controls="faq4-collapse">
-        ¿Rebré correus comercials després del test?
-      </button>
-    </h3>
-    <div id="faq4-collapse" class="accordion-collapse collapse" aria-labelledby="faq4" data-bs-parent="#faqAccordion">
-      <div class="accordion-body">
-        Només rebràs comunicacions si ho acceptes explícitament. Durant el test no hi ha subscripció automàtica a newsletters.
-      </div>
-    </div>
-  </div>
-
-  <!-- Pregunta 5 -->
-  <div class="accordion-item mt-3">
-    <h3 class="accordion-header" id="faq5">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5-collapse" aria-expanded="false" aria-controls="faq5-collapse">
-        ¿Les dades queden emmagatzemades indefinidament?
-      </button>
-    </h3>
-    <div id="faq5-collapse" class="accordion-collapse collapse" aria-labelledby="faq5" data-bs-parent="#faqAccordion">
-      <div class="accordion-body">
-        No. Les dades es conserven durant un màxim de 5 anys i pots sol·licitar-ne la supressió en qualsevol moment escrivint a <a href="mailto:info@guardianhubx.com">info@guardianhubx.com</a>.
-      </div>
-    </div>
-  </div>
-
-  <!-- Pregunta 6 -->
-  <div class="accordion-item mt-3">
-    <h3 class="accordion-header" id="faq6">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6-collapse" aria-expanded="false" aria-controls="faq6-collapse">
-        ¿Què passa si envio el formulari però no vull continuar?
-      </button>
-    </h3>
-    <div id="faq6-collapse" class="accordion-collapse collapse" aria-labelledby="faq6" data-bs-parent="#faqAccordion">
-      <div class="accordion-body">
-        Si no continues amb el procés, la teva informació es mantindrà activa durant 7 dies i es suprimirà automàticament.
-      </div>
-    </div>
-  </div>
-
-</div>
-</div>
 </section>
 
 <!-- CTA Final -->

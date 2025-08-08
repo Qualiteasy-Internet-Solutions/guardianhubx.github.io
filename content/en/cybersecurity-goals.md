@@ -1,49 +1,107 @@
 ---
-title: "Cybersecurity Goals"
+title: "The Pillars of Modern Cybersecurity"
+layout: "objectives" 
 slug: "cybersecurity-goals"
 url: "/en/cybersecurity-goals/"
-layout: "single"
 translations:
-  - lang: es
-    path: "/es/objetivos-ciberseguridad/"
   - lang: ca
     path: "/ca/objectius-ciberseguretat/"
+  - lang: es
+    path: "/es/objetivos-ciberseguridad/"
+
+header:
+  introduction: "At GuardianHubX, our security strategy is based on three fundamental pillars to offer comprehensive protection. We implement advanced solutions to protect our clients' data and systems against any cyber threat."
+  image: "/img/seguridad-prevencion-deteccion-recuperacion.jpg"
+  image_alt: "Diagram of the Pillars of Cybersecurity: Prevention, Detection, and Recovery"
+
+pillars:
+  - title: "Prevention"
+    icon: "fas fa-shield-alt"
+    content: "This is the first line of defense. The goal is to prevent intruders from gaining access through access control, device protection, and user training."
+    tools:
+      - name: "Faronics"
+        url: "/en/faronics/"
+        description: "Protection against unwanted changes"
+      - name: "NordLayer"
+        url: "/en/nordsecurity/"
+        description: "Remote security and secure access"
+      - name: "Outkept"
+        url: "/en/outkept/"
+        description: "Practical anti-phishing training"
+      - name: "NordPass"
+        url: "/en/nordsecurity/"
+        description: "Secure password manager"
+      - name: "Passwork"
+        url: "/en/passwork/"
+        description: "Centralized credential management"
+
+  - title: "Detection"
+    icon: "fas fa-search"
+    content: "Detection acts as an alarm system. It allows us to identify suspicious activities in real-time to react immediately before an attacker can cause damage."
+    tools:
+      - name: "Edgewatch"
+        url: "/en/edgewatch/"
+        description: "Continuous threat monitoring"
+      - name: "Passwork"
+        url: "/en/passwork/"
+        description: "Access and password usage control"
+      - name: "NordPass"
+        url: "/en/nordsecurity/"
+        description: "Alerts and security auditing"
+      - name: "Faronics Antivirus"
+        url: "/en/faronics/"
+        description: "Active protection against malware"
+
+  - title: "Recovery"
+    icon: "fas fa-history"
+    content: "This pillar is our emergency plan. It ensures that we can quickly restore systems and data to minimize impact and guarantee business continuity."
+    tools:
+      - name: "Faronics Cloud"
+        url: "/en/faronics/"
+        description: "Rapid system restoration"
+      - name: "iDrive"
+        url: "/en/idrive/"
+        description: "Efficient backup and recovery"
+      - name: "Prey Project"
+        url: "https://preyproject.com/es?source=guardianhub"
+        description: "Protection and location of devices"
+
+faq_title: "Key Cybersecurity Concepts"
+faq_items:
+    - question: "Why is cybersecurity important if I am a freelancer or an SMB?"
+      answer: "Cybercriminals attack on a massive scale and look for the easiest targets, which are often small businesses due to having fewer protections. A single attack can steal customer data, halt your operations, or empty your bank accounts. Cybersecurity is not just for large multinationals; it's the foundation for the survival of any digital business."
+    - question: "What is the difference between IT support and cybersecurity?"
+      answer: "IT support ensures that technology works correctly (computers, printers, networks). Cybersecurity focuses on protecting all that technology and the information it contains from attacks, theft, or damage. They are complementary disciplines: one makes the car run, the other installs the alarm and locks."
+    - question: "What is phishing and how can I recognize it?"
+      answer: "Phishing is a type of fraud where an attacker impersonates a trusted entity (your bank, the post office, Netflix) to trick you into giving them your passwords or financial data. Always be wary of emails or messages that demand urgent action, contain suspicious links, have grammatical errors, or a sender address that doesn't exactly match the official one."
+    - question: "What exactly is ransomware?"
+      answer: "It's a 'digital kidnapping'. Malware that blocks access to all your files by encrypting them and then demands a ransom to release them. The best defense is prevention and, above all, having external and offline backups."
+    - question: "What's the difference between a virus, a worm, and a Trojan?"
+      answer: "All are types of malware. A **virus** needs a host program to infect and spread (like a biological virus). A **worm** can self-propagate across a network without human help. A **Trojan** disguises itself as a legitimate program to trick you into installing it, thereby opening a backdoor to your system."
+    - question: "Is it really dangerous to connect to public Wi-Fi?"
+      answer: "Yes, it can be very dangerous. On an open Wi-Fi network (at an airport, café, etc.), an attacker on the same network can intercept everything you send and receive, including passwords and personal data. To avoid this, never perform sensitive operations on public networks and always use a VPN (Virtual Private Network)."
+    - question: "Besides a strong password, what is the most important thing to protect my accounts?"
+      answer: "**Multi-Factor Authentication (MFA or 2FA)**. It's a second layer of security that involves verifying your identity with something you have (like a code on your phone) in addition to something you know (your password). Enable it on every service that allows it (email, social media, banking...)."
+    - question: "What is a VPN and when should I use it?"
+      answer: "A VPN (Virtual Private Network) creates a private, encrypted tunnel for your internet connection. It hides your activity and protects your data from potential eavesdroppers. You should always use it when connecting to a Wi-Fi network you don't trust, especially when working remotely."
+    - question: "Why are software updates so persistent?"
+      answer: "Because they are a cornerstone of security. Many updates don't add new features but instead patch security holes that cybercriminals have discovered. Keeping your operating system, browser, and applications updated is like sealing the cracks in your castle walls."
+    - question: "Do I really need a password manager?"
+      answer: "Absolutely. It's impossible to remember a long, unique, and complex password for every service. A password manager does it for you: it creates and securely stores all your credentials. You only need to remember a single 'master password'. It's a radical improvement to your security."
+    - question: "How can I protect my mobile phone?"
+      answer: "Treat it like a computer. Use a secure lock (fingerprint, long PIN), only install apps from official stores, keep the OS and apps updated, don't connect to open Wi-Fi networks without a VPN, and consider installing a security solution that includes antivirus and remote location services."
+    - question: "What is the 'Principle of Least Privilege'?"
+      answer: "It's a fundamental concept in business security. It means that each user should only have access to the information and tools strictly necessary to do their job, and nothing more. This greatly limits the potential damage if an employee's account is compromised."
+    - question: "How often and where should I store my backups?"
+      answer: "Follow the **3-2-1 rule**: Have at least **3** copies of your important data, on **2** different types of media (e.g., an external hard drive and the cloud), with **1** of them stored in an off-site location. Critical data should be backed up daily."
+    - question: "What are the first steps to take after suspecting a security incident?"
+      answer: "1. **Isolate:** Disconnect the affected device from the internet and the local network to prevent the attack from spreading. 2. **Don't power off:** Do not restart or shut down the device, as important volatile evidence for investigation could be lost. 3. **Notify:** Immediately inform your manager or your cybersecurity service provider. 4. **Log:** Write down everything you remember: what you were doing, what messages appeared, etc."
+    - question: "Is cybersecurity a one-time setup?"
+      answer: "No, it's a continuous process. Threats are constantly evolving, so security must be a combination of updated technological tools, regular employee training, and periodic reviews of security policies. It's a cycle of prevention, detection, and constant improvement."
+
+cta_block:
+  title: "Don't know where to start?"
+  text: "Find out the real state of your security in less than 2 minutes."
+  button_text: "Take our Free Cybersecurity Test"
+  button_link: "/en/cybersecurity-test/"
 ---
-
-At **GuardianHubX**, our security strategy is based on **three fundamental pillars**: *prevention*, *detection* and *recovery*. We implement advanced solutions to protect the data and systems of our clients from any cyber threat.
-
-<div class="d-flex justify-content-center my-4">
-  <img src="/img/seguridad-prevencion-deteccion-recuperacion.jpg" class="img-fluid rounded shadow-sm" alt="Cybersecurity: Prevention, Detection and Recovery">
-</div>
-
-## 🔒 Prevention
-
-Preventing threats from reaching systems is the essential first step toward strong cybersecurity. We rely on advanced solutions such as:
-
-- [**Faronics**](/en/faronics/) – Protection against unwanted changes  
-- [**NordLayer**](/en/nordsecurity/) – Remote access security and network protection  
-- [**Outkept**](/en/outkept/) – Practical phishing awareness training  
-- [**NordPass**](/en/nordsecurity/) – Secure password management  
-- [**Passwork**](/en/passwork/) – Centralized credential management  
-- [**Qualiteasy**](https://qualiteasy.eu)  – Document management and regulatory compliance (ISO, GDPR, etc.)
-
----
-
-## 🛡️ Detection
-
-Detecting threats in real-time is key to mitigating risks before they cause damage. We use tools like:
-
-- [**Edgewatch**](/en/edgewatch/) – Continuous threat monitoring  
-- [**Passwork**](/en/passwork/) – Access control and password usage tracking  
-- [**NordPass**](/en/nordsecurity/) – Security alerts and audit capabilities  
-- [**Faronics Antivirus**](/en/faronics/) – Active malware protection  
-
----
-
-## 🔄 Recovery
-
-In the event of a security incident, recovery capabilities are crucial for minimizing operational impact. We offer solutions such as:
-
-- [**Faronics Cloud**](/en/faronics/) – Rapid system restoration  
-- [**iDrive**](/en/idrive/) – Automatic backup with efficient recovery  
-- [**Prey Project**](https://preyproject.com/?source=guardianhub) – Device protection and location tracking  

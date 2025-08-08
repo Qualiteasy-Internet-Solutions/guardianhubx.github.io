@@ -3,6 +3,7 @@
 <html lang="{{ .Lang }}">
 <head>
   {{ partial "head.html" . }}
+  {{ partial "faq-schema.html" . }}
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </head>
  <body class="with-small-fixed-header">
@@ -10,7 +11,7 @@
   
    {{ .Content }}
   
-
+    {{ partial "faq.html" . }}
    {{ partial "footer.html" . }}
 
 </body>

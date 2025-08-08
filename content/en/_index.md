@@ -2,6 +2,19 @@
 title: "GuardianHubX - Advanced Cybersecurity Solutions"
 description: "Integrated cybersecurity solutions: password management, phishing training, backups, and threat detection."
 markup: "html"
+faq_items:
+  - question: "Does GuardianHubX offer cybersecurity consulting services?"
+    answer: "No. At GuardianHubX, we are not consultants. We offer ready-to-use cybersecurity technology products that you can implement directly in your company without lengthy processes or external advisory."
+  - question: "What do I need to start using your solutions?"
+    answer: "Nothing more than your interest in protecting your business. Our products are designed for a quick and autonomous implementation. They include guides and technical support to help you at all times."
+  - question: "Can I integrate your solutions with my current tools?"
+    answer: "Yes. Our products are designed to integrate easily with environments like Microsoft 365, on-premise servers, cloud solutions, and other common business platforms."
+  - question: "Do you offer support if I have questions?"
+    answer: "Yes. We have specialized product support. We help you get the most out of our solutions."
+  - question: "Is GuardianHubX suitable for small businesses?"
+    answer: "Absolutely. Our solutions are designed to be accessible, scalable, and easy to use. You don't need an IT team to start protecting your business."
+  - question: "Do your products comply with GDPR and other regulations?"
+    answer: "Yes. Our solutions are designed to facilitate regulatory compliance automatically, without the need to hire an external legal or technical consultant."
 ---
 
 <main class="container my-5">
@@ -74,84 +87,4 @@ markup: "html"
 <section class="contact-section mb-5">
   {{< contact-form >}}
 </section>
-<section class="faq-section bg-light py-5">
-  <div class="container">
-    <h2 class="text-center mb-4">Frequently Asked Questions</h2>
-    <div class="accordion" id="faqAccordion">
-      <div class="accordion-item">
-        <h3 class="accordion-header" id="faq1">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="false" aria-controls="faqCollapse1">
-            Does GuardianHubX offer cybersecurity consulting services?
-          </button>
-        </h3>
-        <div id="faqCollapse1" class="accordion-collapse collapse" aria-labelledby="faq1" data-bs-parent="#faqAccordion">
-          <div class="accordion-body">
-            No. At GuardianHubX we’re not consultants. We offer ready-to-use cybersecurity technology products that you can implement directly in your company without long processes or external advice.
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h3 class="accordion-header" id="faq2">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
-            What do I need to start using your solutions?
-          </button>
-        </h3>
-        <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#faqAccordion">
-          <div class="accordion-body">
-            Just the willingness to protect your business. Our products are designed for quick and autonomous deployment. They include guides and technical support to help you every step of the way.
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h3 class="accordion-header" id="faq3">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
-            Can your solutions integrate with my current tools?
-          </button>
-        </h3>
-        <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faq3" data-bs-parent="#faqAccordion">
-          <div class="accordion-body">
-            Yes. Our products are designed to integrate easily with environments such as Microsoft 365, local servers, cloud services and other common business platforms.
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h3 class="accordion-header" id="faq4">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
-            Do you offer support if I have questions?
-          </button>
-        </h3>
-        <div id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="faq4" data-bs-parent="#faqAccordion">
-          <div class="accordion-body">
-            Yes. We provide specialized product technical support. We'll help you get the most out of our solutions.
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h3 class="accordion-header" id="faq5">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse5" aria-expanded="false" aria-controls="faqCollapse5">
-            Is GuardianHubX suitable for small businesses?
-          </button>
-        </h3>
-        <div id="faqCollapse5" class="accordion-collapse collapse" aria-labelledby="faq5" data-bs-parent="#faqAccordion">
-          <div class="accordion-body">
-            Absolutely. Our solutions are designed to be accessible, scalable, and easy to use. You don't need an IT team to start protecting your business.
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h3 class="accordion-header" id="faq6">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse6" aria-expanded="false" aria-controls="faqCollapse6">
-            Do your products comply with GDPR and other regulations?
-          </button>
-        </h3>
-        <div id="faqCollapse6" class="accordion-collapse collapse" aria-labelledby="faq6" data-bs-parent="#faqAccordion">
-          <div class="accordion-body">
-            Yes. Our solutions are designed to help you meet compliance requirements automatically, without needing to hire legal or technical consultants.
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 </main>

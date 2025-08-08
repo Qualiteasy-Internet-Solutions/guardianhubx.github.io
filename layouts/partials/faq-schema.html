@@ -1,0 +1,25 @@
+{{/*
+  Aquest partial comprova si la pàgina actual té 'faq_items' al seu front matter.
+  Si existeix, genera l'script JSON-LD per a l'schema FAQPage.
+*/}}
+{{ with .Params.faq_items }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {{ range $index, $item := . }}
+    {{ if $index }},{{ end }}
+    {
+      "@type": "Question",
+      "name": "{{ $item.question | safeJS }}",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "{{ $item.answer | safeJS }}"
+      }
+    }
+    {{ end }}
+  ]
+}
+</script>
+{{ end }}

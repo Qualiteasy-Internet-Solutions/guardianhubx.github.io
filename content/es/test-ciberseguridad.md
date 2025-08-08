@@ -7,7 +7,23 @@ translations:
   - lang: ca
     path: "/ca/test-ciberseguretat/"
   - lang: en
-    path: /en/cibersecurity-test/
+    path: /en/cybersecurity-test/
+
+faq_title: "Preguntas frecuentes"
+faq_subtitle: "Resuelve tus dudas más comunes sobre el uso de nuestro test y protección de datos."
+faq_items:
+  - question: "¿Qué hacéis con mis datos?"
+    answer: "Los datos recopilados se utilizan únicamente para generar tu informe de ciberseguridad. No los compartimos con terceros ni los usamos con otros fines."
+  - question: "¿Compartiréis mis datos con otras empresas?"
+    answer: "No. Todos los datos son estrictamente privados y solo se emplean para ofrecerte el servicio solicitado."
+  - question: "¿Están protegidos mis datos?"
+    answer: "Sí. Nuestro sistema cumple con el RGPD y tiene medidas técnicas avanzadas para garantizar la seguridad de tus datos personales."
+  - question: "¿Recibiré correos comerciales después del test?"
+    answer: "Solo recibirás comunicaciones si las aceptas explícitamente. Durante el test no hay suscripción automática a newsletters."
+  - question: "¿Los datos se guardan indefinidamente?"
+    answer: "No. Los datos se conservan durante un máximo de 5 años, y puedes solicitar su eliminación en cualquier momento escribiendo a <a href='mailto:info@guardianhubx.com'>info@guardianhubx.com</a>."
+  - question: "¿Qué pasa si envío el formulario pero no quiero seguir?"
+    answer: "Si no continúas con el proceso, tu información se mantendrá activa durante 7 días y luego se eliminará automáticamente."
 ---
 
 <!-- Hero Section -->
@@ -124,100 +140,4 @@ translations:
       </div>
     </div>
   </div>
-</section>
-
-<!-- FAQ Section -->
-<section class="landing-section py-5">
-<div class="container">
-<h2 class="landing-section-title text-center mb-4">Preguntas frecuentes</h2>
-<p class="text-center mb-5 landing-text-muted">Resuelve tus dudas más comunes sobre el uso de nuestro test y protección de datos.</p>
-
-<div class="accordion" id="faqAccordion" data-bs-theme="light">
-
-  <!-- Pregunta 1 -->
-  <div class="accordion-item">
-    <h3 class="accordion-header" id="faq1">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1-collapse" aria-expanded="false" aria-controls="faq1-collapse">
-        ¿Qué hacéis con mis datos?
-      </button>
-    </h3>
-    <div id="faq1-collapse" class="accordion-collapse collapse" aria-labelledby="faq1" data-bs-parent="#faqAccordion">
-      <div class="accordion-body">
-        Los datos recopilados se utilizan únicamente para generar tu informe de ciberseguridad. No los compartimos con terceros ni los usamos con otros fines.
-      </div>
-    </div>
-  </div>
-
-  <!-- Pregunta 2 -->
-  <div class="accordion-item mt-3">
-    <h3 class="accordion-header" id="faq2">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-collapse" aria-expanded="false" aria-controls="faq2-collapse">
-        ¿Compartiréis mis datos con otras empresas?
-      </button>
-    </h3>
-    <div id="faq2-collapse" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#faqAccordion">
-      <div class="accordion-body">
-        No. Todos los datos son estrictamente privados y solo se emplean para ofrecerte el servicio solicitado.
-      </div>
-    </div>
-  </div>
-
-  <!-- Pregunta 3 -->
-  <div class="accordion-item mt-3">
-    <h3 class="accordion-header" id="faq3">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3-collapse" aria-expanded="false" aria-controls="faq3-collapse">
-        ¿Están protegidos mis datos?
-      </button>
-    </h3>
-    <div id="faq3-collapse" class="accordion-collapse collapse" aria-labelledby="faq3" data-bs-parent="#faqAccordion">
-      <div class="accordion-body">
-        Sí. Nuestro sistema cumple con el RGPD y tiene medidas técnicas avanzadas para garantizar la seguridad de tus datos personales.
-      </div>
-    </div>
-  </div>
-
-  <!-- Pregunta 4 -->
-  <div class="accordion-item mt-3">
-    <h3 class="accordion-header" id="faq4">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4-collapse" aria-expanded="false" aria-controls="faq4-collapse">
-        ¿Recibiré correos comerciales después del test?
-      </button>
-    </h3>
-    <div id="faq4-collapse" class="accordion-collapse collapse" aria-labelledby="faq4" data-bs-parent="#faqAccordion">
-      <div class="accordion-body">
-        Solo recibirás comunicaciones si las aceptas explícitamente. Durante el test no hay suscripción automática a newsletters.
-      </div>
-    </div>
-  </div>
-
-  <!-- Pregunta 5 -->
-  <div class="accordion-item mt-3">
-    <h3 class="accordion-header" id="faq5">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5-collapse" aria-expanded="false" aria-controls="faq5-collapse">
-        ¿Los datos se guardan indefinidamente?
-      </button>
-    </h3>
-    <div id="faq5-collapse" class="accordion-collapse collapse" aria-labelledby="faq5" data-bs-parent="#faqAccordion">
-      <div class="accordion-body">
-        No. Los datos se conservan durante un máximo de 5 años, y puedes solicitar su eliminación en cualquier momento escribiendo a <a href="mailto:info@guardianhubx.com">info@guardianhubx.com</a>.
-      </div>
-    </div>
-  </div>
-
-  <!-- Pregunta 6 -->
-  <div class="accordion-item mt-3">
-    <h3 class="accordion-header" id="faq6">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6-collapse" aria-expanded="false" aria-controls="faq6-collapse">
-        ¿Qué pasa si envío el formulario pero no quiero seguir?
-      </button>
-    </h3>
-    <div id="faq6-collapse" class="accordion-collapse collapse" aria-labelledby="faq6" data-bs-parent="#faqAccordion">
-      <div class="accordion-body">
-        Si no continúas con el proceso, tu información se mantendrá activa durante 7 días y luego se eliminará automáticamente.
-      </div>
-    </div>
-  </div>
-
-</div>
-</div>
 </section>

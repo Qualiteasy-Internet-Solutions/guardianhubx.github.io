@@ -7,6 +7,17 @@ translations:
     path: "/ca/formacio-phishing-software/"
   - lang: en
     path: "/en/cybersecurity-phishing-training/"
+faq_items:
+  - question: "¿Qué es el phishing?"
+    answer: "El phishing es una técnica utilizada por ciberdelincuentes para obtener información sensible haciéndose pasar por fuentes confiables. Suele realizarse mediante correos electrónicos o mensajes falsos que parecen legítimos."
+  - question: "¿Cómo funciona la formación en phishing de GuardianHubX?"
+    answer: "Ofrecemos simulaciones realistas y personalizadas que ponen a prueba a tus empleados ante intentos de phishing. Tras cada simulación, proporcionamos retroalimentación inmediata y recursos educativos para mejorar la conciencia del equipo."
+  - question: "¿Es necesario instalar software adicional?"
+    answer: "No, nuestro sistema es completamente en la nube. Solo necesitas acceso a internet y un navegador web estándar. La integración con tu empresa es rápida y no requiere instalaciones complejas."
+  - question: "¿Cumple con el RGPD y otras normativas de seguridad?"
+    answer: "Sí, todas nuestras herramientas cumplen con el Reglamento General de Protección de Datos (RGPD) y otros estándares internacionales de ciberseguridad. Además, ofrecemos acuerdos de tratamiento de datos firmados digitalmente."
+  - question: "¿Se pueden personalizar las simulaciones de phishing?"
+    answer: "Sí, puedes adaptar los escenarios de phishing a tu industria, nivel de riesgo y estilo de comunicación habitual en tu empresa."
 ---
 
 <!-- Hero Section -->
@@ -194,83 +205,4 @@ translations:
     <input type="hidden" name="_template" value="table">
   </form>
   </div>
-</section>
-
-<!-- FAQ Section -->
-<section class="landing-section py-5">
-<div class="container">
-<h2 class="landing-section-title text-center mb-4">Preguntas frecuentes</h2>
-<div class="accordion" id="faqAccordion">
-   
-<!-- Pregunta 1 -->
-<div class="accordion-item">
-<h3 class="accordion-header" id="faq1">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1-collapse" aria-expanded="false" aria-controls="faq1-collapse">
-    ¿Qué es el phishing?
-    </button>
-</h3>
-<div id="faq1-collapse" class="accordion-collapse collapse" aria-labelledby="faq1" data-bs-parent="#faqAccordion">
-    <div class="accordion-body">
-    El phishing es una técnica utilizada por ciberdelincuentes para obtener información sensible haciéndose pasar por fuentes confiables. Suele realizarse mediante correos electrónicos o mensajes falsos que parecen legítimos.
-    </div>
-</div>
-</div>
-
-<!-- Pregunta 2 -->
-<div class="accordion-item mt-3">
-<h3 class="accordion-header" id="faq2">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-collapse" aria-expanded="false" aria-controls="faq2-collapse">
-    ¿Cómo funciona la formación en phishing de GuardianHubX?
-    </button>
-</h3>
-<div id="faq2-collapse" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#faqAccordion">
-    <div class="accordion-body">
-    Ofrecemos simulaciones realistas y personalizadas que ponen a prueba a tus empleados ante intentos de phishing. Tras cada simulación, proporcionamos retroalimentación inmediata y recursos educativos para mejorar la conciencia del equipo.
-    </div>
-</div>
-</div>
-
-<!-- Pregunta 3 -->
-<div class="accordion-item mt-3">
-<h3 class="accordion-header" id="faq3">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3-collapse" aria-expanded="false" aria-controls="faq3-collapse">
-    ¿Es necesario instalar software adicional?
-    </button>
-</h3>
-<div id="faq3-collapse" class="accordion-collapse collapse" aria-labelledby="faq3" data-bs-parent="#faqAccordion">
-    <div class="accordion-body">
-    No, nuestro sistema es completamente en la nube. Solo necesitas acceso a internet y un navegador web estándar. La integración con tu empresa es rápida y no requiere instalaciones complejas.
-    </div>
-</div>
-</div>
-
-<!-- Pregunta 4 -->
-<div class="accordion-item mt-3">
-<h3 class="accordion-header" id="faq4">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4-collapse" aria-expanded="false" aria-controls="faq4-collapse">
-    ¿Cumple con el RGPD y otras normativas de seguridad?
-    </button>
-</h3>
-<div id="faq4-collapse" class="accordion-collapse collapse" aria-labelledby="faq4" data-bs-parent="#faqAccordion">
-    <div class="accordion-body">
-    Sí, todas nuestras herramientas cumplen con el Reglamento General de Protección de Datos (RGPD) y otros estándares internacionales de ciberseguridad. Además, ofrecemos acuerdos de tratamiento de datos firmados digitalmente.
-    </div>
-</div>
-</div>
-
-<!-- Pregunta 5 -->
-<div class="accordion-item mt-3">
-<h3 class="accordion-header" id="faq5">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5-collapse" aria-expanded="false" aria-controls="faq5-collapse">
-    ¿Se pueden personalizar las simulaciones de phishing?
-    </button>
-</h3>
-<div id="faq5-collapse" class="accordion-collapse collapse" aria-labelledby="faq5" data-bs-parent="#faqAccordion">
-    <div class="accordion-body">
-    Sí, puedes adaptar los escenarios de phishing a tu industria, nivel de riesgo y estilo de comunicación habitual en tu empresa.
-    </div>
-</div>
-</div>
-</div>
-</div>
 </section>

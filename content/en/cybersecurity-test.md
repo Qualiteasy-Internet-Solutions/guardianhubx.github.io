@@ -7,6 +7,22 @@ translations:
     path: "/es/test-ciberseguridad/"
   - lang: ca
     path: "/ca/test-ciberseguretat/"
+
+faq_title: "Frequently Asked Questions"
+faq_subtitle: "Resolve your most common questions about using our test and data protection."
+faq_items:
+  - question: "What do you do with my data?"
+    answer: "The collected data is used solely to generate your cybersecurity report. We do not share it with third parties or use it for other purposes."
+  - question: "Will you share my data with other companies?"
+    answer: "No. All data is strictly private and is only used to provide you with the requested service."
+  - question: "Is my data protected?"
+    answer: "Yes. Our system complies with GDPR and has advanced technical measures to ensure the security of your personal data."
+  - question: "Will I receive marketing emails after the test?"
+    answer: "You will only receive communications if you explicitly accept them. There is no automatic subscription to newsletters during the test."
+  - question: "Is the data stored indefinitely?"
+    answer: "No. The data is kept for a maximum of 5 years, and you can request its deletion at any time by writing to <a href='mailto:info@guardianhubx.com'>info@guardianhubx.com</a>."
+  - question: "What happens if I submit the form but don't want to proceed?"
+    answer: "If you do not continue with the process, your information will remain active for 7 days and will then be automatically deleted."
 ---
 
 <!-- Hero Section -->
@@ -123,100 +139,4 @@ translations:
       </div>
     </div>
   </div>
-</section>
-
-<!-- FAQ Section -->
-<section class="landing-section py-5">
-<div class="container">
-<h2 class="landing-section-title text-center mb-4">Frequently Asked Questions</h2>
-<p class="text-center mb-5 landing-text-muted">Resolve common doubts about how we use your data and how we help improve your security posture.</p>
-
-<div class="accordion" id="faqAccordion" data-bs-theme="light">
-
-  <!-- Pregunta 1 -->
-  <div class="accordion-item">
-    <h3 class="accordion-header" id="faq1">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1-collapse" aria-expanded="false" aria-controls="faq1-collapse">
-        What do you do with my data?
-      </button>
-    </h3>
-    <div id="faq1-collapse" class="accordion-collapse collapse" aria-labelledby="faq1" data-bs-parent="#faqAccordion">
-      <div class="accordion-body">
-        Your data is used exclusively to generate your cybersecurity report. We don’t share it with third parties or use it for any other purpose.
-      </div>
-    </div>
-  </div>
-
-  <!-- Pregunta 2 -->
-  <div class="accordion-item mt-3">
-    <h3 class="accordion-header" id="faq2">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-collapse" aria-expanded="false" aria-controls="faq2-collapse">
-        Will you share my data with other companies?
-      </button>
-    </h3>
-    <div id="faq2-collapse" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#faqAccordion">
-      <div class="accordion-body">
-        No. All data remains strictly private and is only used to provide the requested service.
-      </div>
-    </div>
-  </div>
-
-  <!-- Pregunta 3 -->
-  <div class="accordion-item mt-3">
-    <h3 class="accordion-header" id="faq3">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3-collapse" aria-expanded="false" aria-controls="faq3-collapse">
-        Are my data protected?
-      </button>
-    </h3>
-    <div id="faq3-collapse" class="accordion-collapse collapse" aria-labelledby="faq3" data-bs-parent="#faqAccordion">
-      <div class="accordion-body">
-        Yes. Our system complies with the GDPR and has advanced technical and organizational measures to guarantee data protection.
-      </div>
-    </div>
-  </div>
-
-  <!-- Pregunta 4 -->
-  <div class="accordion-item mt-3">
-    <h3 class="accordion-header" id="faq4">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4-collapse" aria-expanded="false" aria-controls="faq4-collapse">
-        Will I receive marketing emails after the test?
-      </button>
-    </h3>
-    <div id="faq4-collapse" class="accordion-collapse collapse" aria-labelledby="faq4" data-bs-parent="#faqAccordion">
-      <div class="accordion-body">
-        You will only receive communications if you explicitly accept them. There is no automatic newsletter subscription during the test.
-      </div>
-    </div>
-  </div>
-
-  <!-- Pregunta 5 -->
-  <div class="accordion-item mt-3">
-    <h3 class="accordion-header" id="faq5">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5-collapse" aria-expanded="false" aria-controls="faq5-collapse">
-        Will my data be stored indefinitely?
-      </button>
-    </h3>
-    <div id="faq5-collapse" class="accordion-collapse collapse" aria-labelledby="faq5" data-bs-parent="#faqAccordion">
-      <div class="accordion-body">
-        No. Data is retained for a maximum of 5 years, and you can request its deletion at any time by emailing <a href="mailto:info@guardianhubx.com">info@guardianhubx.com</a>.
-      </div>
-    </div>
-  </div>
-
-  <!-- Pregunta 6 -->
-  <div class="accordion-item mt-3">
-    <h3 class="accordion-header" id="faq6">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6-collapse" aria-expanded="false" aria-controls="faq6-collapse">
-        What happens if I submit the form but decide not to continue?
-      </button>
-    </h3>
-    <div id="faq6-collapse" class="accordion-collapse collapse" aria-labelledby="faq6" data-bs-parent="#faqAccordion">
-      <div class="accordion-body">
-        If you don't continue with the process, your information will remain active for 7 days and then be automatically deleted.
-      </div>
-    </div>
-  </div>
-
-</div>
-</div>
 </section>

@@ -1,49 +1,107 @@
 ---
-title: "Objetivos de ciberseguridad"
+title: "Los Pilares de la Ciberseguridad Moderna"
+layout: "objectives" 
 slug: "objetivos-ciberseguridad"
 url: "/es/objetivos-ciberseguridad/"
-layout: "single"
 translations:
   - lang: ca
     path: "/ca/objectius-ciberseguretat/"
   - lang: en
-    path: "/en/cybersecurity-goals/"
+    path: /en/cybersecurity-goals/
+
+header:
+  introduction: "En GuardianHubX, nuestra estrategia de seguridad se basa en tres pilares fundamentales para ofrecer una protección integral. Implementamos soluciones avanzadas para proteger los datos y sistemas de nuestros clientes ante cualquier amenaza cibernética."
+  image: "/img/seguridad-prevencion-deteccion-recuperacion.jpg"
+  image_alt: "Diagrama de los pilares de la Ciberseguridad: Prevención, Detección y Recuperación"
+
+pillars:
+  - title: "Prevención"
+    icon: "fas fa-shield-alt"
+    content: "Esta es la primera línea de defensa. El objetivo es impedir la entrada de intrusos mediante el control de accesos, la protección de los dispositivos y la formación de los usuarios."
+    tools:
+      - name: "Faronics"
+        url: "/es/faronics/"
+        description: "Protección contra cambios no deseados"
+      - name: "NordLayer"
+        url: "/es/nordsecurity/"
+        description: "Seguridad remota y acceso seguro"
+      - name: "Outkept"
+        url: "/es/outkept/"
+        description: "Formación práctica contra phishing"
+      - name: "NordPass"
+        url: "/es/nordsecurity/"
+        description: "Gestor de contraseñas seguro"
+      - name: "Passwork"
+        url: "/es/passwork/"
+        description: "Gestión centralizada de credenciales"
+
+  - title: "Detección"
+    icon: "fas fa-search"
+    content: "La detección funciona como un sistema de alarmas. Nos permite identificar actividades sospechosas en tiempo real para poder reaccionar inmediatamente, antes de que un atacante cause daños."
+    tools:
+      - name: "Edgewatch"
+        url: "/es/edgewatch/"
+        description: "Monitorización continua de amenazas"
+      - name: "Passwork"
+        url: "/es/passwork/"
+        description: "Control de acceso y uso de contraseñas"
+      - name: "NordPass"
+        url: "/es/nordsecurity/"
+        description: "Alertas y auditoría de seguridad"
+      - name: "Faronics Antivirus"
+        url: "/es/faronics/"
+        description: "Protección activa contra malware"
+
+  - title: "Recuperación"
+    icon: "fas fa-history"
+    content: "Este pilar es nuestro plan de emergencia. Nos asegura que podemos restaurar los sistemas y los datos rápidamente para minimizar el impacto y garantizar la continuidad del negocio."
+    tools:
+      - name: "Faronics Cloud"
+        url: "/es/faronics/"
+        description: "Restablecimiento rápido de sistemas"
+      - name: "iDrive"
+        url: "/es/idrive/"
+        description: "Copia de seguridad y recuperación eficiente"
+      - name: "Prey Project"
+        url: "https://preyproject.com/es?source=guardianhub"
+        description: "Protección y localización de dispositivos"
+
+faq_title: "Conceptos Clave de Ciberseguridad"
+faq_items:
+    - question: "¿Por qué es importante la ciberseguridad si soy un autónomo o una pyme?"
+      answer: "Los ciberdelincuentes atacan masivamente y buscan a las víctimas más fáciles, que suelen ser las pequeñas empresas por tener menos protecciones. Un ataque puede robar datos de clientes, paralizar tu actividad o vaciar tus cuentas bancarias. La ciberseguridad no es solo para grandes multinacionales, es la base para la supervivencia de cualquier negocio digital."
+    - question: "¿Qué diferencia hay entre el soporte informático (IT) y la ciberseguridad?"
+      answer: "El soporte informático se asegura de que la tecnología funcione correctamente (ordenadores, impresoras, redes). La ciberseguridad se centra en proteger toda esa tecnología y la información que contiene contra ataques, robos o daños. Son disciplinas complementarias: una hace que el coche funcione, la otra le pone la alarma y las cerraduras."
+    - question: "¿Qué es el phishing y cómo puedo reconocerlo?"
+      answer: "El phishing es un fraude en el que un atacante se hace pasar por una entidad de confianza (tu banco, Correos, Netflix) para engañarte y que le des tus contraseñas o datos bancarios. Desconfía siempre de correos o mensajes que pidan información urgente, contengan enlaces sospechosos, tengan errores gramaticales o un remitente que no coincide exactamente con el oficial."
+    - question: "¿Qué es exactamente el ransomware?"
+      answer: "Es un 'secuestro digital'. Un malware que bloquea el acceso a todos tus archivos cifrándolos y pide un rescate económico para liberarlos. La mejor defensa es la prevención y, sobre todo, tener copias de seguridad externas y desconectadas."
+    - question: "¿Qué diferencia hay entre un virus, un gusano y un troyano?"
+      answer: "Todos son tipos de malware. Un **virus** necesita un programa para infectar y propagarse (como un virus biológico). Un **gusano** (worm) puede propagarse por sí mismo a través de la red, sin ayuda humana. Un **troyano** (trojan) se disfraza de programa legítimo para engañarte y que lo instales, abriendo una puerta trasera a tu sistema."
+    - question: "¿Es realmente peligroso conectarse a una Wi-Fi pública?"
+      answer: "Sí, puede serlo mucho. En una red Wi-Fi abierta (de un aeropuerto, cafetería, etc.), un atacante conectado a la misma red puede interceptar todo lo que envías y recibes, incluyendo contraseñas y datos personales. Para evitarlo, nunca realices operaciones sensibles en redes públicas y utiliza siempre una VPN (Red Privada Virtual)."
+    - question: "Aparte de una contraseña fuerte, ¿qué es lo más importante para proteger mis cuentas?"
+      answer: "La **Autenticación Multifactor (MFA o 2FA)**. Es una segunda capa de seguridad que consiste en verificar tu identidad con algo que tienes (como un código en tu móvil) además de algo que sabes (la contraseña). Actívala en todos los servicios que lo permitan (correo, redes sociales, banco...)."
+    - question: "¿Qué es una VPN y cuándo debería usarla?"
+      answer: "Una VPN (Virtual Private Network) crea un túnel privado y cifrado para tu conexión a internet. Oculta tu actividad y protege tus datos de posibles espías. Deberías usarla siempre que te conectes a una red Wi-Fi que no sea de tu confianza, especialmente si trabajas en remoto."
+    - question: "¿Por qué son tan insistentes las actualizaciones de software?"
+      answer: "Porque son uno de los pilares de la seguridad. Muchas actualizaciones no añaden funciones nuevas, sino que corrigen agujeros de seguridad que los ciberdelincuentes han descubierto. Mantener el sistema operativo, el navegador y las aplicaciones actualizadas es como tapar las grietas en la muralla de tu castillo."
+    - question: "¿Realmente necesito un gestor de contraseñas?"
+      answer: "Absolutamente. Es imposible recordar una contraseña larga, única y compleja para cada servicio. Un gestor de contraseñas lo hace por ti: crea y almacena de forma segura todas tus credenciales. Tú solo tienes que recordar una única 'contraseña maestra'. Es un cambio radical en tu seguridad."
+    - question: "¿Cómo puedo proteger mi teléfono móvil?"
+      answer: "Trátalo como un ordenador. Utiliza un bloqueo seguro (huella, PIN largo), instala solo aplicaciones de tiendas oficiales, mantén el sistema operativo y las apps actualizadas, no te conectes a redes Wi-Fi abiertas sin una VPN y considera instalar una solución de seguridad que incluya antivirus y localización remota."
+    - question: "¿Qué significa el 'Principio de Mínimo Privilegio'?"
+      answer: "Es un concepto fundamental en seguridad empresarial. Significa que cada usuario solo debe tener acceso a la información y a las herramientas estrictamente necesarias para hacer su trabajo, y nada más. Esto limita enormemente el daño potencial si la cuenta de un empleado se ve comprometida."
+    - question: "¿Con qué frecuencia y dónde debería guardar las copias de seguridad?"
+      answer: "Sigue la **regla 3-2-1**: Ten al menos **3** copias de tus datos importantes, en **2** soportes distintos (ej: disco duro externo y en la nube), con **1** de ellas guardada en una ubicación externa (fuera de la oficina). Los datos críticos deberían copiarse diariamente."
+    - question: "¿Cuáles son los primeros pasos a dar tras sospechar de un incidente de seguridad?"
+      answer: "1. **Aislar:** Desconecta el equipo afectado de internet y de la red local para evitar que el ataque se propague. 2. **No apagar:** No reinicies ni apagues el equipo, ya que se podrían perder pruebas volátiles importantes para la investigación. 3. **Notificar:** Avisa inmediatamente a tu responsable o a tu proveedor de servicios de ciberseguridad. 4. **Registrar:** Anota todo lo que recuerdes: qué estabas haciendo, qué mensajes han aparecido, etc."
+    - question: "¿La ciberseguridad es algo que se instala una vez y ya está?"
+      answer: "No, es un proceso continuo. Las amenazas evolucionan constantemente, por lo que la seguridad debe ser una combinación de herramientas tecnológicas actualizadas, formación regular para los empleados y revisiones periódicas de las políticas de seguridad. Es un ciclo de prevención, detección y mejora constante."
+
+cta_block:
+  title: "¿No sabes por dónde empezar?"
+  text: "Conoce el estado real de tu seguridad en menos de 2 minutos."
+  button_text: "Haz nuestro Test de Ciberseguridad Gratuito"
+  button_link: "/es/test-ciberseguridad/"
 ---
-
-En **GuardianHubX**, nuestra estrategia de seguridad se basa en **tres pilares fundamentales**: *prevención*, *detección* y *recuperación*. Implementamos soluciones avanzadas para proteger los datos y sistemas de nuestros clientes frente a cualquier amenaza cibernética.
-
-<div class="d-flex justify-content-center my-4">
-  <img src="/img/seguridad-prevencion-deteccion-recuperacion.jpg" class="img-fluid rounded shadow-sm" alt="Ciberseguridad: Prevención, Detección y Recuperación">
-</div>
-
-## 🔒 Prevención
-
-Evitar que las amenazas lleguen a los sistemas es el primer paso esencial hacia una buena ciberseguridad. Nos basamos en soluciones avanzadas como:
-
-- [**Faronics**](/es/faronics/) – Protección contra cambios no deseados  
-- [**NordLayer**](/es/nordsecurity/) – Seguridad remota y acceso seguro  
-- [**Outkept**](/es/outkept/) – Formación práctica contra phishing  
-- [**NordPass**](/es/nordsecurity/) – Gestor seguro de contraseñas  
-- [**Passwork**](/es/passwork/) – Gestión centralizada de credenciales  
-- [**Qualiteasy**](https://qualiteasy.eu)  – Gestión documental y cumplimiento normativo (ISO, LOPD, etc.)
-
----
-
-## 🛡️ Detección
-
-Detectar amenazas en tiempo real es clave para mitigar riesgos antes de que causen daños. Contamos con herramientas como:
-
-- [**Edgewatch**](/es/edgewatch/) – Monitorización continua de amenazas  
-- [**Passwork**](/es/passwork/) – Control de acceso y uso de contraseñas  
-- [**NordPass**](/es/nordsecurity/) – Alertas y auditoría de seguridad  
-- [**Faronics Antivirus**](/es/faronics/) – Protección activa contra malware  
-
----
-
-## 🔄 Recuperación
-
-Ante un incidente de seguridad, la capacidad de recuperación es fundamental para minimizar el impacto operativo. Ofrecemos soluciones como:
-
-- [**Faronics Cloud**](/es/faronics/) – Restablecimiento rápido de sistemas  
-- [**iDrive**](/es/idrive/) – Copia de seguridad automática y recuperación eficiente  
-- [**Prey Project**](https://preyproject.com/es?source=guardianhub) – Protección y localización de dispositivos perdidos o robados
