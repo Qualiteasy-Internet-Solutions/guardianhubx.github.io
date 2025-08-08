@@ -1,58 +1,128 @@
-<section class="landing-section landing-section-alt">
-  <div class="container">
+<section class="landing-section landing-section-alt" id="packs">
+  <div class="container" itemscope itemtype="https://schema.org/ItemList">
+    <meta itemprop="itemListOrder" content="http://schema.org/ItemListOrderAscending">
+
     <h2 class="landing-section-title landing-fade-in">{{ i18n "packs_title" }}</h2>
     <p class="landing-section-subtitle landing-fade-in">{{ i18n "packs_subtitle" }}</p>
+
     <div class="row g-4">
-      {{/* LightCore */}}
-      <div class="col-lg-4 col-md-6 landing-fade-in">
-        <div class="landing-benefit-card h-100">
-          <div class="landing-benefit-icon"><i class="fas fa-feather-alt"></i></div>
-          <h5 class="landing-benefit-title">{{ i18n "pack_light_title" }}</h5>
-          <p class="landing-benefit-text">{{ i18n "pack_light_desc" }}</p>
-          <a href="{{ "lightcore" | relLangURL }}" class="btn btn-outline-primary mt-2">{{ i18n "see_more" }}</a>
+
+      {{/* ---------- LightCore ---------- */}}
+      <div class="col-lg-4 col-md-6 landing-fade-in" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <meta itemprop="position" content="1">
+        <div class="landing-benefit-card h-100" itemscope itemtype="https://schema.org/Service">
+          <div class="landing-benefit-icon" aria-hidden="true"><i class="fas fa-feather-alt"></i></div>
+          {{ $t := i18n "pack_light_title" }}
+          <h3 class="landing-benefit-title" itemprop="name">{{ $t }}</h3>
+          <p class="landing-benefit-text" itemprop="description">{{ i18n "pack_light_desc" }}</p>
+          <a href="{{ "lightcore" | relLangURL }}"
+             class="btn btn-outline-primary mt-2"
+             title="{{ printf "%s %s" (i18n "see_more_prefix") $t }}"
+             aria-label="{{ printf "%s %s" (i18n "see_more_prefix") $t }}"
+             itemprop="url">
+            {{ printf "%s %s" (i18n "see_more_prefix") $t }}
+          </a>
+          <meta itemprop="serviceType" content="Cybersecurity starter pack">
         </div>
       </div>
 
-      {{/* SmartLayer */}}
-      <div class="col-lg-4 col-md-6 landing-fade-in">
-        <div class="landing-benefit-card h-100">
-          <div class="landing-benefit-icon"><i class="fas fa-puzzle-piece"></i></div>
-          <h5 class="landing-benefit-title">{{ i18n "pack_smart_title" }}</h5>
-          <p class="landing-benefit-text">{{ i18n "pack_smart_desc" }}</p>
-          <a href="{{ "smartlayer" | relLangURL }}" class="btn btn-outline-primary mt-2">{{ i18n "see_more" }}</a>
+      {{/* ---------- SmartLayer ---------- */}}
+      <div class="col-lg-4 col-md-6 landing-fade-in" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <meta itemprop="position" content="2">
+        <div class="landing-benefit-card h-100" itemscope itemtype="https://schema.org/Service">
+          <div class="landing-benefit-icon" aria-hidden="true"><i class="fas fa-puzzle-piece"></i></div>
+          {{ $t := i18n "pack_smart_title" }}
+          <h3 class="landing-benefit-title" itemprop="name">{{ $t }}</h3>
+          <p class="landing-benefit-text" itemprop="description">{{ i18n "pack_smart_desc" }}</p>
+          <a href="{{ "smartlayer" | relLangURL }}"
+             class="btn btn-outline-primary mt-2"
+             title="{{ printf "%s %s" (i18n "see_more_prefix") $t }}"
+             aria-label="{{ printf "%s %s" (i18n "see_more_prefix") $t }}"
+             itemprop="url">
+            {{ printf "%s %s" (i18n "see_more_prefix") $t }}
+          </a>
+          <meta itemprop="serviceType" content="Endpoint management & protection">
         </div>
       </div>
 
-      {{/* IronWall */}}
-      <div class="col-lg-4 col-md-6 landing-fade-in">
-        <div class="landing-benefit-card h-100">
-          <div class="landing-benefit-icon"><i class="fas fa-shield-alt"></i></div>
-          <h5 class="landing-benefit-title">{{ i18n "pack_iron_title" }}</h5>
-          <p class="landing-benefit-text">{{ i18n "pack_iron_desc" }}</p>
-          <a href="{{ "ironwall" | relLangURL }}" class="btn btn-outline-primary mt-2">{{ i18n "see_more" }}</a>
+      {{/* ---------- IronWall ---------- */}}
+      <div class="col-lg-4 col-md-6 landing-fade-in" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <meta itemprop="position" content="3">
+        <div class="landing-benefit-card h-100" itemscope itemtype="https://schema.org/Service">
+          <div class="landing-benefit-icon" aria-hidden="true"><i class="fas fa-shield-alt"></i></div>
+          {{ $t := i18n "pack_iron_title" }}
+          <h3 class="landing-benefit-title" itemprop="name">{{ $t }}</h3>
+          <p class="landing-benefit-text" itemprop="description">{{ i18n "pack_iron_desc" }}</p>
+          <a href="{{ "ironwall" | relLangURL }}"
+             class="btn btn-outline-primary mt-2"
+             title="{{ printf "%s %s" (i18n "see_more_prefix") $t }}"
+             aria-label="{{ printf "%s %s" (i18n "see_more_prefix") $t }}"
+             itemprop="url">
+            {{ printf "%s %s" (i18n "see_more_prefix") $t }}
+          </a>
+          <meta itemprop="serviceType" content="Full-stack cybersecurity pack">
         </div>
       </div>
 
-      {{/* EduCraft */}}
-      <div class="col-lg-4 col-md-6 landing-fade-in">
-        <div class="landing-benefit-card h-100">
-          <div class="landing-benefit-icon"><i class="fas fa-brain"></i></div>
-          <h5 class="landing-benefit-title">{{ i18n "pack_edu_title" }}</h5>
-          <p class="landing-benefit-text">{{ i18n "pack_edu_desc" }}</p>
-          <a href="{{ "educraft" | relLangURL }}" class="btn btn-outline-primary mt-2">{{ i18n "see_more" }}</a>
+      {{/* ---------- EduCraft ---------- */}}
+      <div class="col-lg-4 col-md-6 landing-fade-in" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <meta itemprop="position" content="4">
+        <div class="landing-benefit-card h-100" itemscope itemtype="https://schema.org/Service">
+          <div class="landing-benefit-icon" aria-hidden="true"><i class="fas fa-brain"></i></div>
+          {{ $t := i18n "pack_edu_title" }}
+          <h3 class="landing-benefit-title" itemprop="name">{{ $t }}</h3>
+          <p class="landing-benefit-text" itemprop="description">{{ i18n "pack_edu_desc" }}</p>
+          <a href="{{ "educraft" | relLangURL }}"
+             class="btn btn-outline-primary mt-2"
+             title="{{ printf "%s %s" (i18n "see_more_prefix") $t }}"
+             aria-label="{{ printf "%s %s" (i18n "see_more_prefix") $t }}"
+             itemprop="url">
+            {{ printf "%s %s" (i18n "see_more_prefix") $t }}
+          </a>
+          <meta itemprop="serviceType" content="Education-focused cybersecurity">
         </div>
       </div>
 
-      {{/* SoloShield */}}
-      <div class="col-lg-4 col-md-6 landing-fade-in">
-        <div class="landing-benefit-card h-100">
-          <div class="landing-benefit-icon"><i class="fas fa-user-shield"></i></div>
-          <h5 class="landing-benefit-title">{{ i18n "pack_solo_title" }}</h5>
-          <p class="landing-benefit-text">{{ i18n "pack_solo_desc" }}</p>
-          <a href="{{ "soloshield" | relLangURL }}" class="btn btn-outline-primary mt-2">{{ i18n "see_more" }}</a>
+      {{/* ---------- SoloShield ---------- */}}
+      <div class="col-lg-4 col-md-6 landing-fade-in" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <meta itemprop="position" content="5">
+        <div class="landing-benefit-card h-100" itemscope itemtype="https://schema.org/Service">
+          <div class="landing-benefit-icon" aria-hidden="true"><i class="fas fa-user-shield"></i></div>
+          {{ $t := i18n "pack_solo_title" }}
+          <h3 class="landing-benefit-title" itemprop="name">{{ $t }}</h3>
+          <p class="landing-benefit-text" itemprop="description">{{ i18n "pack_solo_desc" }}</p>
+          <a href="{{ "soloshield" | relLangURL }}"
+             class="btn btn-outline-primary mt-2"
+             title="{{ printf "%s %s" (i18n "see_more_prefix") $t }}"
+             aria-label="{{ printf "%s %s" (i18n "see_more_prefix") $t }}"
+             itemprop="url">
+            {{ printf "%s %s" (i18n "see_more_prefix") $t }}
+          </a>
+          <meta itemprop="serviceType" content="Solo & freelancer protection">
         </div>
       </div>
 
     </div>
   </div>
+
+  {{/* ---------- JSON-LD: ItemList amb Services ---------- */}}
+  {{ $items := slice
+    (dict "position" 1 "name" (i18n "pack_light_title") "url" ("lightcore" | relLangURL))
+    (dict "position" 2 "name" (i18n "pack_smart_title") "url" ("smartlayer" | relLangURL))
+    (dict "position" 3 "name" (i18n "pack_iron_title")  "url" ("ironwall" | relLangURL))
+    (dict "position" 4 "name" (i18n "pack_edu_title")   "url" ("educraft" | relLangURL))
+    (dict "position" 5 "name" (i18n "pack_solo_title")  "url" ("soloshield" | relLangURL))
+  }}
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"ItemList",
+    "itemListElement":[
+      {{- range $i, $it := $items -}}
+      {{- if $i }},{{ end -}}
+      {"@type":"ListItem","position":{{ $it.position }},"item":{"@type":"Service","name":"{{ $it.name }}","url":"{{ $it.url }}"}} 
+      {{- end -}}
+    ]
+  }
+  </script>
 </section>

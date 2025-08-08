@@ -18,6 +18,7 @@
 {{ end }}
 
 <meta name="description" content="{{ $description }}">
+<meta name="robots" content="index,follow,max-image-preview:large">
 
 <!-- hreflang para cambio dinámico de idioma -->
 <link rel="canonical" href="{{ .Permalink }}" />
@@ -25,6 +26,8 @@
 {{ range .Translations }}
 <link rel="alternate" href="{{ .Permalink }}" hreflang="{{ .Lang }}" />
 {{ end }}
+<link rel="alternate" href="{{ site.BaseURL }}" hreflang="x-default" />
+
 
 <!-- Favicon y manifest -->
 <link rel="icon" type="image/png" href="/icons/favicon-96x96.png" sizes="96x96" />
@@ -41,6 +44,8 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
 <!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
 
@@ -62,19 +67,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script>
 <!-- End GTM -->
 
-<!-- Open Graph dinàmic -->
+<!-- Open Graph -->
+<meta property="og:site_name" content="GuardianHubX" />
 <meta property="og:title" content="{{ with .Params.ogTitle }}{{ . }}{{ else }}{{ .Title }}{{ end }}" />
-<meta property="og:description" content="{{ with .Params.ogDescription }}{{ . }}{{ else }}{{ .Summary | plainify }}{{ end }}" />
-<meta property="og:image" content="{{ with .Params.ogImage }}{{ . | absURL }}{{ else }}{{ "img/logo_GHX_01-01.png" | absURL }}{{ end }}" />
-<meta property="og:url"   content="{{ .Permalink }}" />
-<meta property="og:type"  content="website" />
+<meta property="og:description" content="{{ with .Params.ogDescription }}{{ . | plainify }}{{ else }}{{ $description }}{{ end }}" />
+{{- $ogDefault := (print "img/og-default-" .Lang ".jpg") | absURL -}}
+<meta property="og:image" content="{{ with .Params.ogImage }}{{ . | absURL }}{{ else }}{{ $ogDefault }}{{ end }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
 
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Prey Project">
-<meta name="twitter:image" content="https://guardianhubx.com/img/logo_GHX_01-01.png">
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{{ with .Params.twitterTitle }}{{ . }}{{ else }}{{ .Title }}{{ end }}" />
+<meta name="twitter:description" content="{{ with .Params.twitterDescription }}{{ . | plainify }}{{ else }}{{ $description }}{{ end }}" />
+{{- $twDefault := $ogDefault -}}
+<meta name="twitter:image" content="{{ with .Params.twitterImage }}{{ . | absURL }}{{ else }}{{ with .Params.ogImage }}{{ . | absURL }}{{ else }}{{ $twDefault }}{{ end }}{{ end }}" />
+
 
 <!-- JS adicionales -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
 <script src="/js/script.js" defer></script>
 
 <script>

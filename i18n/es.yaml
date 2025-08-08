@@ -199,6 +199,9 @@
 - id: see_more
   translation: "Ver más"
 
+- id: "see_more_prefix"
+  translation: "Ver"
+
 - id: partners
   translation: "Partners"
 

@@ -195,6 +195,9 @@
 - id: see_more
   translation: "Veure més"
 
+- id: "see_more_prefix"
+  translation: "Veure"
+
 - id: partners
   translation: "Socis tecnològics"
 
