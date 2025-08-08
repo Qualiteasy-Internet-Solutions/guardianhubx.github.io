@@ -135,14 +135,22 @@ body.scrolled header img.logo {
 
 /* Banner */
 .home-banner {
-  transition: max-height 0.3s ease, opacity 0.3s ease;
+  transition: max-height 0.3s ease, opacity 0.3s ease, visibility 0s 0.3s;
   overflow: hidden;
 }
 
 body.scrolled .home-banner {
-  max-height: 90px; /* ajusta aquest valor si cal */
+  max-height: 0;
   opacity: 0;
+  visibility: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease, visibility 0s;
   pointer-events: none;
+}
+
+.home-banner.hide-permanently {
+  visibility: hidden !important; 
+  max-height: 220px !important;
+  opacity: 0 !important;
 }
 
 #banner-rotator {
