@@ -9,9 +9,9 @@ markup: "html"
   <div class="container">
     <div class="row align-items-center">      
       <div class="col-lg-7 landing-slide-in-left">
-        <h2 class="landing-section-title text-start mb-3">
+        <h1 class="landing-section-title text-start mb-3">
           Soluciones Integrales de Ciberseguridad para Empresas
-        </h2>
+        </h1>
         <p class="mb-3 landing-text-muted">
           Protege tu negocio con las soluciones de GuardianHubX. Seguridad digital de confianza.
         </p>

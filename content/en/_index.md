@@ -11,7 +11,7 @@ markup: "html"
       <div class="col-lg-7 landing-slide-in-left">
         <h2 class="landing-section-title text-start mb-3">
           Comprehensive Cybersecurity Solutions for Businesses
-        </h2>
+        </h1>
         <p class="mb-3 landing-text-muted">
           Protect your business with GuardianHubX solutions. Trusted digital security.
         </p>

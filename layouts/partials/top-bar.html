@@ -11,9 +11,9 @@
       <a href="{{ cond (eq .Lang "ca") "/blog/ca/" "/blog/" | relURL }}" class="text-white d-none d-md-inline text-decoration-none">News / Blog</a>
     </div>
     <select id="languageSwitcher" class="form-select form-select-sm w-auto">
-      <option value="ca">Català</option>
-      <option value="en">English</option>
-      <option value="es">Español</option>
+      <option value="ca" {{ if eq .Lang "ca" }}selected{{ end }}>Català</option>
+      <option value="en" {{ if eq .Lang "en" }}selected{{ end }}>English</option>
+      <option value="es" {{ if or (eq .Lang "es") (not (in (slice "ca" "en") .Lang)) }}selected{{ end }}>Español</option>
     </select>
   </div>
 </div>
