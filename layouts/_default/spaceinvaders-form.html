@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>¡Felicidades por tu puntuación!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link id="arcade-css" rel="stylesheet" href="/css/arcade.css">
+  <link id="main-css" rel="stylesheet" href="{{ "css/style.css" | relURL }}" disabled>
+  <link id="phishing-css" rel="stylesheet" href="/css/landing_phishing.css" disabled>
+</head>
+<body>
+<div class="box-arcade" id="arcade-container">
+  <div class="arcade-bg-img"></div>
+  <div class="arcade-header">
+    <span class="pixel-star">★</span>
+    ¡Felicidades por tu puntuación en <span style="color:#ffd900;">Space Invaders!</span>
+    <span class="pixel-star">★</span>
+    <div style="font-size:2em;letter-spacing:0.12em;text-align:center;margin-bottom:12px;">
+  👾👾👾🚀👾👾👾
+</div>
+  </div>
+  <div class="arcade-score-img">
+    <div class="score-title">Puntuación:</div>
+    <div class="score-points" id="score-value"></div>
+  </div>
+  <form id="score-form">
+    <input type="text" id="score-name" name="name" placeholder="Nombre" required><br>
+    <input type="email" id="score-email" name="email" placeholder="Email" required><br>
+    <input type="hidden" id="score-hidden" name="score">
+    <button type="submit">Guardar puntuación</button>
+    <div id="score-status"></div>
+  </form>
+</div>
+
+
+
+  <div id="next-test" style="display:none;">
+    <!-- Aquí se inserta el test de ciberseguridad -->
+    {{ .Content }}
+  </div>
+
+ <script type="module">
+import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm";
+const supabase = createClient(
+  "https://uqqgrlxkzplgwonjweun.supabase.co",
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVxcWdybHhrenBsZ3dvbmp3ZXVuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTkzNzA1NDcsImV4cCI6MjA3NDk0NjU0N30.EzK0A81ghdnKgYkx9_qLDEcr8ROKpFd-4UM9K924d0M"
+);
+
+function getScoreFromURL() {
+  const urlParams = new URLSearchParams(window.location.search);
+  return urlParams.get('score') || '';
+}
+
+document.getElementById('score-value').innerText = getScoreFromURL();
+document.getElementById('score-hidden').value = getScoreFromURL();
+
+document.getElementById('score-form').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  const name = document.getElementById('score-name').value.trim();
+  const email = document.getElementById('score-email').value.trim();
+  const score = document.getElementById('score-hidden').value;
+  if (!name || !email || !score) {
+    document.getElementById('score-status').innerText = "Introduce tu nombre y correo.";
+    return;
+  }
+  document.getElementById('score-status').innerText = "Guardando tu puntuación...";
+  const { error } = await supabase
+    .from('scores')
+    .insert([{ user: name, email: email, score: parseInt(score) }]);
+  if (error) {
+    document.getElementById('score-status').innerText = "Error al guardar el score.";
+  } else {
+    document.getElementById('score-status').innerText = "¡Puntuación guardada correctamente!";
+    setTimeout(() => {
+      document.getElementById('score-form').style.display = "none";
+      document.getElementById('arcade-container').style.display = "none";
+      document.getElementById('next-test').style.display = "block";
+
+      // --- Aquí canviem l'estil: ---
+      // Si uses IDs als links dels estils:
+      let arcade = document.getElementById('arcade-css');
+      if (arcade) arcade.disabled = true;
+      let main = document.getElementById('main-css');
+      if (main) main.disabled = false;
+      let phishing = document.getElementById('phishing-css');
+      if (phishing) phishing.disabled = false;
+    }, 1200);
+  }
+});
+</script>
+
+</body>
+</html>
