@@ -1,4 +1,165 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>GuardianHubX - Soluciones avanzadas de ciberseguridad on GuardianHubX - Seguridad Cibernética</title><link>https://guardianhubx.com/es/</link><description>Recent content in GuardianHubX - Soluciones avanzadas de ciberseguridad on GuardianHubX - Seguridad Cibernética</description><generator>Hugo</generator><language>es</language><lastBuildDate>Mon, 04 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://guardianhubx.com/es/index.xml" rel="self" type="application/rss+xml"/><item><title>Descubre tu Nivel de Riesgo en Ciberseguridad</title><link>https://guardianhubx.com/es/test/</link><pubDate>Mon, 04 Aug 2025 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/es/test/</guid><description>&lt;section class="section">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>GuardianHubX - Soluciones avanzadas de ciberseguridad on GuardianHubX - Seguridad Cibernética</title><link>https://guardianhubx.com/es/</link><description>Recent content in GuardianHubX - Soluciones avanzadas de ciberseguridad on GuardianHubX - Seguridad Cibernética</description><generator>Hugo</generator><language>es</language><lastBuildDate>Thu, 02 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://guardianhubx.com/es/index.xml" rel="self" type="application/rss+xml"/><item><title>Test Space Invaders - ¡Felicidades por tu puntuación!</title><link>https://guardianhubx.com/es/test-spaceinvaders/</link><pubDate>Thu, 02 Oct 2025 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/es/test-spaceinvaders/</guid><description>&lt;section class="section">
+ &lt;div class="container">
+ 
+ 
+ &lt;style>
+ :root {
+ --form-primary-color: #007BFF;
+ --form-background-color: #f0f2f5;
+ --form-text-color: #333;
+ --form-container-bg: #ffffff;
+ --form-button-hover-bg: #0056b3;
+ }
+ #cyber-form-container {
+ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+ background-color: var(--form-container-bg);
+ color: var(--form-text-color);
+ width: 100%;
+ max-width: 700px;
+ border-radius: 8px;
+ box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+ overflow: hidden;
+ position: relative;
+ margin: 40px auto; 
+ }
+ .form-slide {
+ display: none;
+ padding: 40px 50px;
+ animation: form-fadeIn 0.5s ease-in-out;
+ }
+ .form-slide.active { display: block; }
+ @keyframes form-fadeIn {
+ from { opacity: 0; transform: translateY(20px); }
+ to { opacity: 1; transform: translateY(0); }
+ }
+ #cyber-form-container h2 {
+ font-size: 24px;
+ margin-top: 0;
+ margin-bottom: 25px;
+ font-weight: 600;
+ color: var(--form-text-color);
+ }
+ .option-group { display: flex; flex-direction: column; gap: 12px; }
+ .option-button, .checkbox-label {
+ display: block; width: 100%; padding: 15px 20px;
+ background-color: var(--form-background-color);
+ border: 1px solid #ddd; border-radius: 6px; cursor: pointer;
+ transition: all 0.2s ease; text-align: left; font-size: 16px;
+ }
+ .option-button:hover, .checkbox-label:hover {
+ background-color: #e9ecef; border-color: var(--form-primary-color);
+ }
+ .option-button.selected {
+ background-color: var(--form-primary-color); color: white; border-color: var(--form-primary-color);
+ }
+ .form-input {
+ width: 100%; padding: 12px; border: 1px solid #ccc;
+ border-radius: 5px; font-size: 16px; margin-top: 5px; margin-bottom: 15px;
+ box-sizing: border-box;
+ }
+ #progress-bar-container { width: 100%; background-color: #e9ecef; }
+ #progress-bar { width: 0%; height: 8px; background-color: var(--form-primary-color); transition: width 0.3s ease; }
+ #submit-btn, #next-checkbox {
+ background-color: var(--form-primary-color); color: white; padding: 15px 25px;
+ border: none; border-radius: 5px; cursor: pointer; font-size: 18px;
+ margin-top: 20px; transition: background-color 0.2s ease;
+ }
+ #submit-btn:hover, #next-checkbox:hover { background-color: var(--form-button-hover-bg); }
+ #loader { text-align: center; padding: 50px; }
+ #loader p { font-size: 20px; font-weight: 500; }
+ #result-display { text-align: center; }
+ #result-display h3 { color: var(--form-primary-color); font-size: 22px; }
+ .spinner {
+ border: 8px solid #f3f3f3; border-top: 8px solid var(--form-primary-color);
+ border-radius: 50%; width: 60px; height: 60px;
+ animation: form-spin 1s linear infinite; margin: 20px auto;
+ }
+ .spinner-inline {
+ display: inline-block;
+ width: 16px;
+ height: 16px;
+ vertical-align: text-bottom;
+ border: 3px solid rgba(255,255,255,0.3);
+ border-top-color: #ffffff;
+ border-radius: 50%;
+ animation: form-spin 0.75s linear infinite;
+ margin-right: 8px;
+ }
+ @keyframes form-spin {
+ 0% { transform: rotate(0deg); }
+ 100% { transform: rotate(360deg); }
+ }
+ &lt;/style>
+ 
+ &lt;div id="cyber-form-container">
+ &lt;div id="progress-bar-container">
+ &lt;div id="progress-bar">&lt;/div>
+ &lt;/div>
+ &lt;form id="cyber-form" novalidate>
+ &lt;/form>
+ &lt;/div>
+ 
+ &lt;script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js">&lt;/script>
+ &lt;script>
+ document.addEventListener('DOMContentLoaded', function() {
+ if (window.cyberFormInitialized) return;
+ window.cyberFormInitialized = true;
+ 
+ 
+ const T = (key, placeholders) => {
+ let str = key;
+ if (placeholders) {
+ for (const p in placeholders) {
+ str = str.replace(`{${p}}`, placeholders[p]);
+ }
+ }
+ return str;
+ };
+ 
+ const form = document.getElementById('cyber-form');
+ const progressBar = document.getElementById('progress-bar');
+ const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwaliNtuGyG6obfaHE4d9CTmmCq2dkYdCwE7g2QZmI1fyuyKDuG4dwG1ofS0nljNxTnyw/exec';
+ 
+ 
+ 
+ const questions = [
+ { type: 'radio', colIndex: 2, title: `¿Cómo calificarías la probabilidad de que tu organización sufra un ciberataque en los próximos 12 meses?`, options: [`Muy baja`, `Baja`, `Media`, `Alta`, `Muy alta`] },
+ { type: 'radio', colIndex: 3, title: `¿Si tu organización sufriera un ataque de ransomware, ¿cómo de grave crees que sería el impacto?`, options: [`Insignificante`, `Leve`, `Moderado`, `Grave`, `Catastrófico`] },
+ { type: 'radio', colIndex: 4, title: `¿Cuánto miedo tienes a que un ataque cibernético interrumpa por completo las operaciones de tu empresa?`, options: [`Ninguno`, `Poco`, `Moderado`, `Alto`, `Extremadamente alto`] },
+ { type: 'radio', colIndex: 5, title: `¿Tu empresa cuenta con un plan de respuesta ante incidentes cibernéticos?`, options: [`Sí, y lo hemos probado recientemente`, `Sí, pero no lo hemos probado`, `No estamos seguros`, `No, pero estamos trabajando en ello`, `No tenemos ningún plan`] },
+ { type: 'radio', colIndex: 6, title: `¿Cada cuánto tiempo se realizan simulacros o ejercicios de ciberseguridad en tu organización?`, options: [`Cada tres meses o menos`, `Cada seis meses`, `Una vez al año`, `Nunca`] },
+ { type: 'radio', colIndex: 7, title: `¿Tu organización tiene copias de seguridad actualizadas y protegidas contra ransomware?`, options: [`Sí, con copias redundantes y pruebas periódicas`, `Sí, pero no las probamos regularmente`, `No estamos seguros`, `No`] },
+ { type: 'radio', colIndex: 8, title: `¿Con qué frecuencia se capacita al personal en ciberseguridad?`, options: [`Cada trimestre o más`, `Dos veces al año`, `Una vez al año`, `Nunca`] },
+ { type: 'radio', colIndex: 9, title: `¿Tu equipo directivo considera la ciberseguridad una prioridad estratégica?`, options: [`Sí, está en la agenda de la alta dirección`, `Sí, pero sin acciones concretas`, `No lo tenemos claro`, `No, la ciberseguridad no es una prioridad`] },
+ { type: 'radio', colIndex: 10, title: `¿Los empleados son conscientes de los riesgos del phishing y cómo identificarlos?`, options: [`Sí, todos`, `Sí, pero solo algunos`, `No estamos seguros`, `No`] },
+ { type: 'checkbox', colIndex: 11, title: `¿Qué medidas de seguridad tiene implementadas tu organización?`, options: [`Antivirus y firewall actualizado`, `Autenticación multifactor (MFA)`, `Segmentación de red`, `Monitorización de amenazas en tiempo real`, `Evaluaciones de seguridad periódicas`, `Ninguna de las anteriores`] },
+ { type: 'radio', colIndex: 12, title: `¿Tu organización ha sufrido algún incidente de ciberseguridad en los últimos 12 meses?`, options: [`No`, `Sí, pero fue menor`, `Sí, y causó interrupciones graves`, `Sí, y aún estamos recuperándonos`] },
+ { type: 'radio', colIndex: 13, title: `¿Tu empresa cuenta con un proveedor externo de seguridad informática?`, options: [`Sí, y realizamos auditorías regulares`, `Sí, pero no estamos seguros de su efectividad`, `No, lo gestionamos internamente`, `No tenemos ningún proveedor`] },
+ { type: 'radio', colIndex: 14, title: `¿Tu organización cumple con normativas de ciberseguridad relevantes (GDPR, etc.)?`, options: [`Sí, completamente`, `Sí, en gran parte`, `No estamos seguros`, `No`] },
+ { type: 'radio', colIndex: 15, title: `¿Cómo calificarías el nivel de cumplimiento con las mejores prácticas de ciberseguridad?`, options: [`Excelente`, `Bueno`, `Regular`, `Deficiente`, `Inexistente`] },
+ { type: 'radio', colIndex: 16, title: `¿Tu organización cuenta con ciberseguro?`, options: [`Sí, con cobertura amplia y revisiones periódicas`, `Sí, pero con cobertura limitada`, `No estamos seguros`, `No contamos con ciberseguro`] }
+ ];
+ 
+ let currentQuestionIndex = 0;
+ const answers = new Array(23).fill('');
+ let informeHtmlFinal = '';
+ 
+ function renderQuestion() {
+ if (currentQuestionIndex &lt; questions.length) {
+ const q = questions[currentQuestionIndex];
+ let optionsHTML = '';
+ if (q.type === 'radio') {
+ optionsHTML = q.options.map(opt => `&lt;button type="button" class="option-button" data-value="${opt}">${opt}&lt;/button>`).join('');
+ } else if (q.type === 'checkbox') {
+ optionsHTML = q.options.map(opt => `&lt;label class="checkbox-label">&lt;input type="checkbox" name="medidas" value="${opt}"> ${opt}&lt;/label>`).join('');
+ optionsHTML += `&lt;button type="button" id="next-checkbox" class="btn btn-primary">Siguiente&lt;/button>`;
+ }
+ form.innerHTML = `&lt;div class="form-slide active">&lt;h2>${q.title}&lt;/h2>&lt;div class="option-group">${optionsHTML}&lt;/div>&lt;/div>`;
+ } else {
+ form.innerHTML = `
+ &lt;div class="form-slide active text-center">
+ &lt;h2 class="title">✅ Listo&lt;/h2>
+ &lt;p class="lead">Haz clic en el botón para generar tu informe personalizado.&lt;/p></description></item><item><title>Descubre tu Nivel de Riesgo en Ciberseguridad</title><link>https://guardianhubx.com/es/test/</link><pubDate>Mon, 04 Aug 2025 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/es/test/</guid><description>&lt;section class="section">
  &lt;div class="container">
  &lt;h1 class="title-xl">Descubre tu Nivel de Riesgo en Ciberseguridad&lt;/h1>
  &lt;p class="lead">¿Te preocupa un posible ciberataque? ¿No sabes si tu organización está realmente protegida?&lt;/p>
