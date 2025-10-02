@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <link rel="shortcut icon" href="/spaceinvaders/assets/favicon-96-n6qe-woG.png">
+  <link rel="apple-touch-icon" href="/spaceinvaders/assets/favicon-180-qvZHKIvo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Space Invaders</title>
+  <meta name="description" content="Space Invaders by GuardianHubX">
+  <meta property="og:title" content="Space Invaders by GuardianHubX in your browser" />
+  <meta property="og:type" content="game" />
+  <meta property="og:site_name" content="Space Invaders by GuardianHubX" />
+  <meta property="og:description" content="Juega a Space Invaders de la mano de GuardianHubX." />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@johnpitchers">
+  <meta name="twitter:creator" content="@johnpitchers">
+  <meta name="twitter:title" content="Space Invaders by GuardianHubX">
+  <meta name="twitter:description" content="Space Invaders by GuardianHubX in your browser.">
+  <meta name="twitter:image:src" content="https://guardianhubx.com/spaceinvaders/assets/images/space_Invaders_babylonjs_3.jpg">  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <!-- Google Tag Manager -->
+    <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-584VRJ97');
+    </script>
+  <!-- End GTM -->
+  <script type="module" crossorigin src="/spaceinvaders/assets/index-doNGJBca.js"></script>
+  <link rel="stylesheet" crossorigin href="/spaceinvaders/assets/index-CHJOp3bZ.css">
+</head>
+<body>
+<div id="container">
+  <div id="bg-logo"></div>
+  <canvas></canvas>
+  <div id="ui" class="active">
+    <div id="title-screen" class="active">
+      <div id="title">
+        <div class="layer layer1">
+          SPACE INVADERS <br/> <span style="font-size: 0.3em;">by GuardianHubX</span>
+        </div>
+        <div class="layer layer2">
+          SPACE INVADERS <br/> <span style="font-size: 0.3em;">by GuardianHubX</span>
+        </div>
+        <div class="layer layer3">
+          SPACE INVADERS <br/> <span style="font-size: 0.3em;">by GuardianHubX</span>
+        </div>
+      </div>
+      <div id="portrait-warning">Mejor jugalo en formato horizontal</div>
+      <div id="credits">
+        <div>          
+          <p>Usa las teclas para moverte Shift, Space or Enter para disparar</p>          
+        </div>
+      </div>
+    </div>
+    
+    <div id="game-ui" class="">
+      <div id="panel-game-over" class="">
+        GAME OVER
+      </div>
+      <div id="panel-new-highscore" class="">
+        **** NUEVO HIGH SCORE ****<br>
+        <div class="value">0</div>
+      </div>
+      <div id="panel-game-hints">
+        ---==Ξ <span class="lg">!</span> Ξ==---
+        <div class="value"></div>
+        ---==Ξ==---
+      </div>
+    </div>
+  </div>
+</div>
+<div id="loading" class="active">LOADING<br/>...</div>
+<div id="intro" class="">
+  <p>Selecciona modo<br/><select id="change-mode">
+    <option value="0">Tradicional 2D</option>
+    <option value="1">Pantalla Antigua 2D</option>
+    <option value="2">Action 3D</option>
+  </select></p>
+  <p>
+    <button id="start-game">EMPEZAR</button>
+  </p>
+  <div id="leaderboard"></div>
+</div>
+
+<div id="panel-play-again" class="">
+  <button id="play-again">CONTINUAR</button>
+</div>
+<script>
+  loading();
+
+  function loading() {
+    setTimeout(function () {
+      let el = document.querySelector("#loading")
+      el.append(".");
+      if (el.classList.contains("active")) {
+        loading();
+      }
+    }, 1000);
+  }
+</script>
+</body>
+</html>
