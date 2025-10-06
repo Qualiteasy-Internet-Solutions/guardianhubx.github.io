@@ -50,19 +50,47 @@
     .option-button.selected {
         background-color: var(--form-primary-color); color: white; border-color: var(--form-primary-color);
     }
-    .form-input {
+    #cyber-form-container.form-input {
         width: 100%; padding: 12px; border: 1px solid #ccc;
         border-radius: 5px; font-size: 16px; margin-top: 5px; margin-bottom: 15px;
         box-sizing: border-box;
     }
     #progress-bar-container { width: 100%; background-color: #e9ecef; }
     #progress-bar { width: 0%; height: 8px; background-color: var(--form-primary-color); transition: width 0.3s ease; }
-    #submit-btn, #next-checkbox {
+    #cyber-form-container #submit-btn, #cyber-form-container #next-checkbox  {
         background-color: var(--form-primary-color); color: white; padding: 15px 25px;
         border: none; border-radius: 5px; cursor: pointer; font-size: 18px;
         margin-top: 20px; transition: background-color 0.2s ease;
     }
-    #submit-btn:hover, #next-checkbox:hover { background-color: var(--form-button-hover-bg); }
+    #cyber-form-container .btn {
+    display: inline-block;
+    font-family: inherit; /* Hereda la font del formulari */
+    font-weight: 600;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+    }
+
+    /* Estil específic per al botó primari (blau) */
+    #cyber-form-container .btn-primary {
+    color: #fff;
+    background-color: var(--form-primary-color);
+    border-color: var(--form-primary-color);
+    }
+
+    /* Efecte hover per al botó primari */
+    #cyber-form-container .btn-primary:hover {
+    background-color: var(--form-button-hover-bg);
+    border-color: var(--form-button-hover-bg);
+    }
+    #cyber-form-container #submit-btn:hover, #cyber-form-container #next-checkbox:hover { background-color: var(--form-button-hover-bg); }
     #loader { text-align: center; padding: 50px; }
     #loader p { font-size: 20px; font-weight: 500; }
     #result-display { text-align: center; }
@@ -185,6 +213,7 @@ document.addEventListener('DOMContentLoaded', function() {
             renderQuestion();
         }
     });
+
     function sendReportByEmail(name, email, organization, wrapperElement) {
         const emailBtn = wrapperElement.querySelector('button');
         if (emailBtn) {
@@ -206,7 +235,21 @@ document.addEventListener('DOMContentLoaded', function() {
             })
             .then(msg => {
                 let successMsg = `{{ i18n "form_email_success" | safeJS }}`;
-                wrapperElement.innerHTML = `<p style="text-align:center; font-weight:bold;">✅ ${successMsg.replace('{email}', email)}</p>`;
+
+                if (window.initialUserData) {
+                    wrapperElement.innerHTML = `
+                    <div style="text-align:center;">
+                        <p style="font-weight:bold;">✅ ${successMsg.replace('{email}', email)}</p>
+                        <br>
+                        <button type="button" id="play-again-btn" class="btn btn-primary mt-3">Jugar a Space Invaders 🚀</button>
+                    </div>
+                    `;
+                    document.getElementById('play-again-btn').addEventListener('click', () => {
+                    window.location.href = '/spaceinvaders/'; 
+                    });
+                } else {
+                    wrapperElement.innerHTML = `<p style="text-align:center; font-weight:bold;">✅ ${successMsg.replace('{email}', email)}</p>`;
+                }
             })
             .catch(err => {
                 let errorMsg = `{{ i18n "form_email_error" | safeJS }}`;
