@@ -17,8 +17,8 @@
     ¡Felicidades por tu puntuación en <span style="color:#ffd900;">Space Invaders!</span>
     <span class="pixel-star">★</span>
     <div style="font-size:2em;letter-spacing:0.12em;text-align:center;margin-bottom:12px;">
-  👾👾👾🚀👾👾👾
-</div>
+      👾👾👾🚀👾👾👾
+    </div>
   </div>
   <div class="arcade-score-img">
     <div class="score-title">Puntuación:</div>
@@ -33,61 +33,150 @@
   </form>
 </div>
 
-
-
-  <div id="next-test" style="display:none;">
-    <!-- Aquí se inserta el test de ciberseguridad -->
-    {{ .Content }}
+<!-- Leaderboard -->
+<div id="leaderboard-wrap" class="leaderboard" style="display:none;">
+  <h3>🏆 Top 5</h3>
+  <table class="lb-table" id="lb-table">
+    <thead>
+      <tr><th>#</th><th>Jugador</th><th style="text-align:right;">Puntos</th></tr>
+    </thead>
+    <tbody id="lb-body"></tbody>
+  </table>
+  <div class="lb-meta">
+    <div id="lb-rank">Tu posición: –</div>
+    <div id="lb-total">Participantes: –</div>
   </div>
+  <div class="btn-container">
+  <a href="#" id="btn-continue" class="btn-next">Continuar ➜</a>
+</div>
+</div>
 
- <script type="module">
+<div id="next-test" style="display:none;">
+  <!-- Aquí se inserta el test de ciberseguridad -->
+  {{ .Content }}
+</div>
+
+<script type="module">
 import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm";
+
 const supabase = createClient(
   "https://uqqgrlxkzplgwonjweun.supabase.co",
   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVxcWdybHhrenBsZ3dvbmp3ZXVuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTkzNzA1NDcsImV4cCI6MjA3NDk0NjU0N30.EzK0A81ghdnKgYkx9_qLDEcr8ROKpFd-4UM9K924d0M"
 );
 
+// Utils
 function getScoreFromURL() {
   const urlParams = new URLSearchParams(window.location.search);
   return urlParams.get('score') || '';
 }
 
-document.getElementById('score-value').innerText = getScoreFromURL();
-document.getElementById('score-hidden').value = getScoreFromURL();
+function renderLeaderboard(top, yourId, totals, yourRank) {
+  const tbody = document.getElementById('lb-body');
+  if (!tbody) return;
 
-document.getElementById('score-form').addEventListener('submit', async function(e) {
-  e.preventDefault();
-  const name = document.getElementById('score-name').value.trim();
-  const email = document.getElementById('score-email').value.trim();
-  const score = document.getElementById('score-hidden').value;
-  if (!name || !email || !score) {
-    document.getElementById('score-status').innerText = "Introduce tu nombre y correo.";
-    return;
-  }
-  window.initialUserData = { name, email };
-  document.getElementById('score-status').innerText = "Guardando tu puntuación...";
-  const { error } = await supabase
-    .from('scores')
-    .insert([{ user: name, email: email, score: parseInt(score) }]);
-  if (error) {
-    document.getElementById('score-status').innerText = "Error al guardar el score.";
-  } else {
-    document.getElementById('score-status').innerText = "¡Puntuación guardada correctamente!";
-    setTimeout(() => {
-      document.getElementById('score-form').style.display = "none";
-      document.getElementById('arcade-container').style.display = "none";
-      document.getElementById('next-test').style.display = "block";
+  tbody.innerHTML = '';
+  top.forEach((row, idx) => {
+    const tr = document.createElement('tr');
+    if (row.id === yourId) tr.classList.add('you');     // marca només la teva fila
+    tr.innerHTML = `
+      <td>${idx + 1}</td>
+      <td>${row.user ?? '—'}</td>
+      <td style="text-align:right;">${row.score}</td>
+    `;
+    tbody.appendChild(tr);
+  });
 
-      // --- Aquí canviem l'estil: ---
-      // Si uses IDs als links dels estils:
+  const rankEl = document.getElementById('lb-rank');
+  const totEl  = document.getElementById('lb-total');
+  if (rankEl) rankEl.textContent = `Tu posición: #${yourRank ?? '—'}`;
+  if (totEl)  totEl.textContent  = `Participantes: ${totals ?? '—'}`;
+
+  const wrap = document.getElementById('leaderboard-wrap');
+  if (wrap) wrap.style.display = 'block';
+
+  const btn = document.getElementById('btn-continue');
+  if (btn) {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      document.getElementById('leaderboard-wrap').style.display = 'none';
+      document.getElementById('arcade-container').style.display = 'none';
+      document.getElementById('next-test').style.display = 'block';
+
       let arcade = document.getElementById('arcade-css');
       if (arcade) arcade.disabled = true;
       let main = document.getElementById('main-css');
       if (main) main.disabled = false;
       let phishing = document.getElementById('phishing-css');
       if (phishing) phishing.disabled = false;
-    }, 1200);
+    }, { once: true });
   }
+}
+
+async function loadLeaderboardAfterSave(yourId, score) {
+  // 1) Top 5
+  const { data: top, error: topErr } = await supabase
+    .from('scores')
+    .select('id,user,email,score')
+    .order('score', { ascending: false })
+    .limit(5);
+  if (topErr) { console.error(topErr); return; }
+
+  // 2) Total participants (sense descarregar files)
+  const { count: totalCount, error: totalErr } = await supabase
+    .from('scores')
+    .select('id', { count: 'exact', head: true });
+  if (totalErr) console.error(totalErr);
+
+  // 3) Rank = (# de puntuacions > la teva) + 1
+  const { count: betterCount, error: rankErr } = await supabase
+    .from('scores')
+    .select('id', { count: 'exact', head: true })
+    .gt('score', Number(score));
+  if (rankErr) console.error(rankErr);
+
+  const yourRank = (betterCount ?? 0) + 1;
+
+  // Render
+  renderLeaderboard(top || [], yourId, totalCount ?? '—', yourRank);
+}
+
+// Pinta puntuació proporcionada per URL
+document.getElementById('score-value').innerText = getScoreFromURL();
+document.getElementById('score-hidden').value = getScoreFromURL();
+
+// Guarda i mostra rànquing
+document.getElementById('score-form').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  const name  = document.getElementById('score-name').value.trim();
+  const email = document.getElementById('score-email').value.trim();
+  const score = document.getElementById('score-hidden').value;
+
+  if (!name || !email || !score) {
+    document.getElementById('score-status').innerText = "Introduce tu nombre y correo.";
+    return;
+  }
+
+  window.initialUserData = { name, email };
+  document.getElementById('score-status').innerText = "Guardando tu puntuación...";
+
+  // Inserim UNA sola vegada i recuperem l'ID
+  const { data: inserted, error } = await supabase
+    .from('scores')
+    .insert([{ user: name, email, score: parseInt(score, 10) }])
+    .select('id')
+    .single();
+
+  if (error) {
+    console.error(error);
+    document.getElementById('score-status').innerText = "Error al guardar el score.";
+    return;
+  }
+
+  document.getElementById('score-status').innerText = "¡Puntuación guardada correctamente!";
+  setTimeout(async () => {
+    document.getElementById('score-form').style.display = "none";
+    await loadLeaderboardAfterSave(inserted.id, score);
+  }, 800);
 });
 </script>
 
