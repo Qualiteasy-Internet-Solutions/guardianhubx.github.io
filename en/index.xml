@@ -147,7 +147,7 @@
  { type: 'checkbox', colIndex: 11, title: `What security measures does your organization have in place?`, options: [`Updated antivirus and firewall`, `Multi-factor authentication (MFA)`, `Network segmentation`, `Real-time threat monitoring`, `Regular security assessments`, `None of the above`] },
  { type: 'radio', colIndex: 12, title: `Has your organization experienced a cybersecurity incident in the last 12 months?`, options: [`No`, `Yes, but it was minor`, `Yes, and it caused serious disruptions`, `Yes, and we are still recovering`] },
  { type: 'radio', colIndex: 13, title: `Does your company use an external IT security provider?`, options: [`Yes, and we conduct regular audits`, `Yes, but we are unsure of their effectiveness`, `No, we manage it internally`, `We don\u0027t have a provider`] },
- { type: 'radio', colIndex: 14, title: `Does your organization comply with relevant cybersecurity regulations (GDPR, etc.)?`, options: [`Yes, fully`, `Yes, for the most part`, `We\u0027re not sure`, `No`] },
+ { type: 'radio', colIndex: 14, title: `Is your organization aligned with cybersecurity and data protection regulations and best practices (GDPR, ENS, ISO, NIST, others)?`, options: [`Yes, fully`, `Yes, for the most part`, `We\u0027re not sure`, `No`] },
  { type: 'radio', colIndex: 15, title: `How would you rate your level of compliance with cybersecurity best practices?`, options: [`Excellent`, `Good`, `Fair`, `Poor`, `Non-existent`] },
  { type: 'radio', colIndex: 16, title: `Does your organization have cyber insurance?`, options: [`Yes, with broad coverage and periodic reviews`, `Yes, but with limited coverage`, `We\u0027re not sure`, `We do not have cyber insurance`] }
  ];

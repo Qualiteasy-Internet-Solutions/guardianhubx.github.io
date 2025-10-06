@@ -135,7 +135,7 @@
  { type: 'checkbox', colIndex: 11, title: `¿Qué medidas de seguridad tiene implementadas tu organización?`, options: [`Antivirus y firewall actualizado`, `Autenticación multifactor (MFA)`, `Segmentación de red`, `Monitorización de amenazas en tiempo real`, `Evaluaciones de seguridad periódicas`, `Ninguna de las anteriores`] },
  { type: 'radio', colIndex: 12, title: `¿Tu organización ha sufrido algún incidente de ciberseguridad en los últimos 12 meses?`, options: [`No`, `Sí, pero fue menor`, `Sí, y causó interrupciones graves`, `Sí, y aún estamos recuperándonos`] },
  { type: 'radio', colIndex: 13, title: `¿Tu empresa cuenta con un proveedor externo de seguridad informática?`, options: [`Sí, y realizamos auditorías regulares`, `Sí, pero no estamos seguros de su efectividad`, `No, lo gestionamos internamente`, `No tenemos ningún proveedor`] },
- { type: 'radio', colIndex: 14, title: `¿Tu organización cumple con normativas de ciberseguridad relevantes (GDPR, etc.)?`, options: [`Sí, completamente`, `Sí, en gran parte`, `No estamos seguros`, `No`] },
+ { type: 'radio', colIndex: 14, title: `¿Tu organización está alineada con las normativas y buenas prácticas de ciberseguridad y protección de datos (RGPD, ENS, ISO, NIST, otras)?`, options: [`Sí, completamente`, `Sí, en gran parte`, `No estamos seguros`, `No`] },
  { type: 'radio', colIndex: 15, title: `¿Cómo calificarías el nivel de cumplimiento con las mejores prácticas de ciberseguridad?`, options: [`Excelente`, `Bueno`, `Regular`, `Deficiente`, `Inexistente`] },
  { type: 'radio', colIndex: 16, title: `¿Tu organización cuenta con ciberseguro?`, options: [`Sí, con cobertura amplia y revisiones periódicas`, `Sí, pero con cobertura limitada`, `No estamos seguros`, `No contamos con ciberseguro`] }
  ];
@@ -308,7 +308,7 @@
  { type: 'checkbox', colIndex: 11, title: `¿Qué medidas de seguridad tiene implementadas tu organización?`, options: [`Antivirus y firewall actualizado`, `Autenticación multifactor (MFA)`, `Segmentación de red`, `Monitorización de amenazas en tiempo real`, `Evaluaciones de seguridad periódicas`, `Ninguna de las anteriores`] },
  { type: 'radio', colIndex: 12, title: `¿Tu organización ha sufrido algún incidente de ciberseguridad en los últimos 12 meses?`, options: [`No`, `Sí, pero fue menor`, `Sí, y causó interrupciones graves`, `Sí, y aún estamos recuperándonos`] },
  { type: 'radio', colIndex: 13, title: `¿Tu empresa cuenta con un proveedor externo de seguridad informática?`, options: [`Sí, y realizamos auditorías regulares`, `Sí, pero no estamos seguros de su efectividad`, `No, lo gestionamos internamente`, `No tenemos ningún proveedor`] },
- { type: 'radio', colIndex: 14, title: `¿Tu organización cumple con normativas de ciberseguridad relevantes (GDPR, etc.)?`, options: [`Sí, completamente`, `Sí, en gran parte`, `No estamos seguros`, `No`] },
+ { type: 'radio', colIndex: 14, title: `¿Tu organización está alineada con las normativas y buenas prácticas de ciberseguridad y protección de datos (RGPD, ENS, ISO, NIST, otras)?`, options: [`Sí, completamente`, `Sí, en gran parte`, `No estamos seguros`, `No`] },
  { type: 'radio', colIndex: 15, title: `¿Cómo calificarías el nivel de cumplimiento con las mejores prácticas de ciberseguridad?`, options: [`Excelente`, `Bueno`, `Regular`, `Deficiente`, `Inexistente`] },
  { type: 'radio', colIndex: 16, title: `¿Tu organización cuenta con ciberseguro?`, options: [`Sí, con cobertura amplia y revisiones periódicas`, `Sí, pero con cobertura limitada`, `No estamos seguros`, `No contamos con ciberseguro`] }
  ];
