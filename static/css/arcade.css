@@ -24,8 +24,9 @@ body {
   position: relative;
   overflow: hidden;
   border-radius: 16px;
-  max-width: 410px;
-  margin: 60px auto;
+  max-width: 600px;
+  margin: 30px auto;
+  text-align:center;
   box-shadow: 0 0 36px #012d;
   padding: 2.2em 1.4em 1em 1.4em;
   z-index: 1;
@@ -61,7 +62,7 @@ body {
 
 .arcade-score-img .score-title {
   font-size: 1.25em;
-  margin-bottom: 6px;
+  margin-bottom: 22px;
   color: #fff;
   letter-spacing: 0.02em;
   text-shadow: 0 0 8px #0ff, 0 0 20px #fff2;
@@ -118,7 +119,7 @@ body {
   position: relative;
   z-index: 2;
   max-width: 820px;                  /* una mica més ample */
-  margin: 28px auto;
+  margin: 16px auto;
   padding: 0;                        /* passem padding al contenidor intern */
   border-radius: 16px;
   background: rgba(12,15,22,0.9);
@@ -195,13 +196,14 @@ body {
 /* Meta info i botó */
 #leaderboard-wrap .lb-meta{
   display: flex; justify-content: space-between; gap: 16px;
-  padding: 12px 18px 4px;
+  margin-top: 16px;
+  padding-bottom: 8px;
   font-size: 12px; color: #e9edff;
 }
 /* contenidor del botó */
 #leaderboard-wrap .btn-container {
   text-align: center;    /* només aquest bloc té el centre */
-  margin: 14px 0 18px;
+  margin: 18px 0;
 }
 
 /* botó dins el contenidor */
