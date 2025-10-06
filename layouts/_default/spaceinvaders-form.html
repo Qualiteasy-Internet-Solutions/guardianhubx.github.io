@@ -64,6 +64,7 @@ document.getElementById('score-form').addEventListener('submit', async function(
     document.getElementById('score-status').innerText = "Introduce tu nombre y correo.";
     return;
   }
+  window.initialUserData = { name, email };
   document.getElementById('score-status').innerText = "Guardando tu puntuación...";
   const { error } = await supabase
     .from('scores')

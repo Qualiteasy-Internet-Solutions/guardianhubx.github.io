@@ -395,7 +395,7 @@
   translation: "No tenemos ningún proveedor"
 
 - id: "q13_title"
-  translation: "¿Tu organización cumple con normativas de ciberseguridad relevantes (GDPR, etc.)?"
+  translation: "¿Tu organización está alineada con las normativas y buenas prácticas de ciberseguridad y protección de datos (RGPD, ENS, ISO, NIST, otras)?"
 - id: "q13_opt_1"
   translation: "Sí, completamente"
 - id: "q13_opt_2"

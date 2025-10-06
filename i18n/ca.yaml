@@ -391,7 +391,7 @@
   translation: "No tenim cap proveïdor"
 
 - id: "q13_title"
-  translation: "La teva organització compleix normatives de ciberseguretat rellevants (GDPR, etc.)?"
+  translation: "La teva organització està alineada amb les regulacions i bones pràctiques de ciberseguretat i protecció de dades (RGPD, ENS, ISO, NIST, altres)?"
 - id: "q13_opt_1"
   translation: "Sí, completament"
 - id: "q13_opt_2"

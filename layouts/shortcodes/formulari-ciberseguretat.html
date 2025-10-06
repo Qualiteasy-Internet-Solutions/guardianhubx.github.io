@@ -185,7 +185,40 @@ document.addEventListener('DOMContentLoaded', function() {
             renderQuestion();
         }
     });
+    function sendReportByEmail(name, email, organization, wrapperElement) {
+        const emailBtn = wrapperElement.querySelector('button');
+        if (emailBtn) {
+            emailBtn.disabled = true;
+            emailBtn.innerHTML = `<span class="spinner-inline"></span> {{ i18n "form_sending_email" | safeJS }}`;
+        }
 
+        const emailData = new FormData();
+        emailData.append('action', 'send_email');
+        emailData.append('email', email);
+        emailData.append('nombre', name);
+        emailData.append('organizacion', organization);
+        emailData.append('html', informeHtmlFinal);
+
+        fetch(SCRIPT_URL, { method: 'POST', body: emailData })
+            .then(res => {
+                if (!res.ok) throw new Error(`{{ i18n "server_error" | safeJS }}`);
+                return res.text();
+            })
+            .then(msg => {
+                let successMsg = `{{ i18n "form_email_success" | safeJS }}`;
+                wrapperElement.innerHTML = `<p style="text-align:center; font-weight:bold;">✅ ${successMsg.replace('{email}', email)}</p>`;
+            })
+            .catch(err => {
+                let errorMsg = `{{ i18n "form_email_error" | safeJS }}`;
+                wrapperElement.innerHTML += `<p class="error-message" style="color:red; text-align:center;">❌ ${errorMsg.replace('{error}', err.message)}</p>`;
+                if (emailBtn) {
+                    emailBtn.disabled = false;
+                    emailBtn.innerHTML = `{{ i18n "btn_submit_email" | safeJS }}`;
+                }
+                console.error('Error al enviar:', err);
+            });
+    }
+    
     function enviarFormulario() {
         form.innerHTML = `<div class="form-slide active"><div id="loader"><p>{{ i18n "form_generating_report_title" | safeJS }}</p><div class="spinner"></div><p>{{ i18n "form_generating_report_subtitle" | safeJS }}</p></div></div>`;
         answers[0] = new Date().toISOString();
@@ -205,16 +238,35 @@ document.addEventListener('DOMContentLoaded', function() {
             })
             .then(html => {
                 informeHtmlFinal = marked.parse(html);
-                form.innerHTML = `
-                  <div class="form-slide active">
-                    <h2 class="title">{{ i18n "form_report_generated_title" | safeJS }}</h2>
-                    <div class="informe-container" style="text-align: left;">
-                      ${informeHtmlFinal}
-                    </div>
-                    <p class="mt-4">{{ i18n "form_ask_for_email" | safeJS }}</p>
-                    <button type="button" id="enviar-por-email" class="btn btn-primary mt-2">{{ i18n "btn_send_by_email" | safeJS }}</button>
-                    <div id="formulario-contacto-wrapper" style="display: none; margin-top: 30px;"></div>
-                  </div>`;
+                if (window.initialUserData && window.initialUserData.email) {
+                    // CAS 1: Tenim les dades, enviem automàticament
+                    form.innerHTML = `
+                      <div class="form-slide active">
+                        <h2 class="title">{{ i18n "form_report_generated_title" | safeJS }}</h2>
+                        <div class="informe-container" style="text-align: left;">${informeHtmlFinal}</div>
+                        <div id="auto-send-status" style="margin-top: 30px;">
+                          <p>{{ i18n "form_sending_auto" | safeJS }} <strong>${window.initialUserData.email}</strong>...</p>
+                          <div class="spinner"></div>
+                        </div>
+                      </div>`;
+                      sendReportByEmail(
+                        window.initialUserData.name,
+                        window.initialUserData.email,
+                        "Participant del joc",
+                        document.getElementById('auto-send-status')
+                    );
+
+                } else {
+                    form.innerHTML = `
+                    <div class="form-slide active">
+                        <h2 class="title">{{ i18n "form_report_generated_title" | safeJS }}</h2>
+                        <div class="informe-container" style="text-align: left;">
+                        ${informeHtmlFinal}
+                        </div>
+                        <p class="mt-4">{{ i18n "form_ask_for_email" | safeJS }}</p>
+                        <button type="button" id="enviar-por-email" class="btn btn-primary mt-2">{{ i18n "btn_send_by_email" | safeJS }}</button>
+                        <div id="formulario-contacto-wrapper" style="display: none; margin-top: 30px;"></div>
+                    </div>`;
 
                 document.getElementById('enviar-por-email').addEventListener('click', () => {
                     document.getElementById('formulario-contacto-wrapper').innerHTML = `
@@ -230,51 +282,22 @@ document.addEventListener('DOMContentLoaded', function() {
 
                     document.getElementById('submit-email-btn').addEventListener('click', (event) => {
                         event.preventDefault(); 
-                        const submitBtn = event.target;
-                        const emailInput = document.getElementById('email');
-                        const nombreInput = document.getElementById('nombre');
-                        const organizacionInput = document.getElementById('organizacion');
+                        const name = document.getElementById('nombre').value;
+                        const email = document.getElementById('email').value;
+                        const org = document.getElementById('organizacion').value;
                         const wrapper = document.getElementById('formulario-contacto-wrapper');
 
-                        if (!emailInput.value.trim() || !nombreInput.value.trim() || !organizacionInput.value.trim()) {
+
+                        if (!name.trim() || !email.trim() || !org.trim()) {
                             alert(`{{ i18n "form_validation_error" | safeJS }}`);
                             return; 
                         }   
                         
-                        submitBtn.disabled = true;
-                        submitBtn.innerHTML = `<span class="spinner-inline"></span> {{ i18n "form_sending_email" | safeJS }}`;
+                        sendReportByEmail(name, email, org, wrapper);
 
-                        const emailData = new FormData();
-                        emailData.append('action', 'send_email');
-                        emailData.append('email', emailInput.value);
-                        emailData.append('nombre', nombreInput.value);
-                        emailData.append('organizacion', organizacionInput.value);
-                        emailData.append('html', informeHtmlFinal);
-
-                        fetch(SCRIPT_URL, {
-                            method: 'POST',
-                            body: emailData
-                        })
-                        .then(res => {
-                            if (!res.ok) throw new Error(`{{ i18n "server_error" | safeJS }}`);
-                            return res.text();
-                        })
-                        .then(msg => {
-                            let successMsg = `{{ i18n "form_email_success" | safeJS }}`;
-                            wrapper.innerHTML = `<p style="text-align:center; font-weight:bold;">✅ ${successMsg.replace('{email}', emailInput.value)}</p>`;
-                        })
-                        .catch(err => {
-                            const errorMsgElement = wrapper.querySelector('.error-message');
-                            if (errorMsgElement) errorMsgElement.remove();
-                            let errorMsg = `{{ i18n "form_email_error" | safeJS }}`;
-                            wrapper.insertAdjacentHTML('beforeend', `<p class="error-message" style="color:red; text-align:center;">❌ ${errorMsg.replace('{error}', err.message)}</p>`);
-                            
-                            submitBtn.disabled = false;
-                            submitBtn.innerHTML = `{{ i18n "btn_submit_email" | safeJS }}`;
-                            console.error('Error al enviar:', err);
                         });
                     });
-                });
+                }
             })
             .catch(error => {
                 console.error('Error!', error.message);

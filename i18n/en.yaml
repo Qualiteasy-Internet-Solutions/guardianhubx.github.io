@@ -388,7 +388,7 @@
   translation: "We don't have a provider"
 
 - id: "q13_title"
-  translation: "Does your organization comply with relevant cybersecurity regulations (GDPR, etc.)?"
+  translation: "Is your organization aligned with cybersecurity and data protection regulations and best practices (GDPR, ENS, ISO, NIST, others)?"
 - id: "q13_opt_1"
   translation: "Yes, fully"
 - id: "q13_opt_2"
