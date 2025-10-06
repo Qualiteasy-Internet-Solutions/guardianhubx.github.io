@@ -52,19 +52,47 @@
  .option-button.selected {
  background-color: var(--form-primary-color); color: white; border-color: var(--form-primary-color);
  }
- .form-input {
+ #cyber-form-container.form-input {
  width: 100%; padding: 12px; border: 1px solid #ccc;
  border-radius: 5px; font-size: 16px; margin-top: 5px; margin-bottom: 15px;
  box-sizing: border-box;
  }
  #progress-bar-container { width: 100%; background-color: #e9ecef; }
  #progress-bar { width: 0%; height: 8px; background-color: var(--form-primary-color); transition: width 0.3s ease; }
- #submit-btn, #next-checkbox {
+ #cyber-form-container #submit-btn, #cyber-form-container #next-checkbox {
  background-color: var(--form-primary-color); color: white; padding: 15px 25px;
  border: none; border-radius: 5px; cursor: pointer; font-size: 18px;
  margin-top: 20px; transition: background-color 0.2s ease;
  }
- #submit-btn:hover, #next-checkbox:hover { background-color: var(--form-button-hover-bg); }
+ #cyber-form-container .btn {
+ display: inline-block;
+ font-family: inherit; 
+ font-weight: 600;
+ text-align: center;
+ vertical-align: middle;
+ cursor: pointer;
+ user-select: none;
+ background-color: transparent;
+ border: 1px solid transparent;
+ padding: 12px 20px;
+ font-size: 16px;
+ border-radius: 5px;
+ transition: all 0.2s ease-in-out;
+ }
+ 
+ 
+ #cyber-form-container .btn-primary {
+ color: #fff;
+ background-color: var(--form-primary-color);
+ border-color: var(--form-primary-color);
+ }
+ 
+ 
+ #cyber-form-container .btn-primary:hover {
+ background-color: var(--form-button-hover-bg);
+ border-color: var(--form-button-hover-bg);
+ }
+ #cyber-form-container #submit-btn:hover, #cyber-form-container #next-checkbox:hover { background-color: var(--form-button-hover-bg); }
  #loader { text-align: center; padding: 50px; }
  #loader p { font-size: 20px; font-weight: 500; }
  #result-display { text-align: center; }
@@ -225,19 +253,47 @@
  .option-button.selected {
  background-color: var(--form-primary-color); color: white; border-color: var(--form-primary-color);
  }
- .form-input {
+ #cyber-form-container.form-input {
  width: 100%; padding: 12px; border: 1px solid #ccc;
  border-radius: 5px; font-size: 16px; margin-top: 5px; margin-bottom: 15px;
  box-sizing: border-box;
  }
  #progress-bar-container { width: 100%; background-color: #e9ecef; }
  #progress-bar { width: 0%; height: 8px; background-color: var(--form-primary-color); transition: width 0.3s ease; }
- #submit-btn, #next-checkbox {
+ #cyber-form-container #submit-btn, #cyber-form-container #next-checkbox {
  background-color: var(--form-primary-color); color: white; padding: 15px 25px;
  border: none; border-radius: 5px; cursor: pointer; font-size: 18px;
  margin-top: 20px; transition: background-color 0.2s ease;
  }
- #submit-btn:hover, #next-checkbox:hover { background-color: var(--form-button-hover-bg); }
+ #cyber-form-container .btn {
+ display: inline-block;
+ font-family: inherit; 
+ font-weight: 600;
+ text-align: center;
+ vertical-align: middle;
+ cursor: pointer;
+ user-select: none;
+ background-color: transparent;
+ border: 1px solid transparent;
+ padding: 12px 20px;
+ font-size: 16px;
+ border-radius: 5px;
+ transition: all 0.2s ease-in-out;
+ }
+ 
+ 
+ #cyber-form-container .btn-primary {
+ color: #fff;
+ background-color: var(--form-primary-color);
+ border-color: var(--form-primary-color);
+ }
+ 
+ 
+ #cyber-form-container .btn-primary:hover {
+ background-color: var(--form-button-hover-bg);
+ border-color: var(--form-button-hover-bg);
+ }
+ #cyber-form-container #submit-btn:hover, #cyber-form-container #next-checkbox:hover { background-color: var(--form-button-hover-bg); }
  #loader { text-align: center; padding: 50px; }
  #loader p { font-size: 20px; font-weight: 500; }
  #result-display { text-align: center; }
