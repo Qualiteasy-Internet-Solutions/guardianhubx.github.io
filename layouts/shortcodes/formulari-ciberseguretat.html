@@ -245,7 +245,11 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
                     `;
                     document.getElementById('play-again-btn').addEventListener('click', () => {
-                    window.location.href = '/spaceinvaders/'; 
+                        let gameUrl = '/spaceinvaders/';
+                        if (window.isEventMode === true) {
+                            gameUrl = '/spaceinvaders/?mode=event';
+                        }
+                        window.location.href = gameUrl; 
                     });
                 } else {
                     wrapperElement.innerHTML = `<p style="text-align:center; font-weight:bold;">✅ ${successMsg.replace('{email}', email)}</p>`;

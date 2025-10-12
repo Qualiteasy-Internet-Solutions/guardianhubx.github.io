@@ -57,6 +57,13 @@
 </div>
 
 <script type="module">
+
+const urlParams = new URLSearchParams(window.location.search);
+if (urlParams.get('mode') === 'event') {
+  window.isEventMode = true; // Creem la "bandera" global
+  console.log("Mode esdeveniment detectat. Variable global 'isEventMode' establerta.");
+}
+
 import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm";
 
 const supabase = createClient(
