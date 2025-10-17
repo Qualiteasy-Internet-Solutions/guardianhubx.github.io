@@ -54,9 +54,41 @@ const supabase = createClient(
 );
 
 
-function getScoreFromURL() {
-  const urlParams = new URLSearchParams(window.location.search);
-  return urlParams.get('score') || '';
+
+const SECRET_KEY = "ElMeuEventSpaceInvadersSuperSecret777!";
+function simpleHash(str, seed = 0) {
+  let h1 = 0xdeadbeef ^ seed, h2 = 0x41c6ce57 ^ seed;
+  for(let i = 0, ch; i < str.length; i++) {
+    ch = str.charCodeAt(i);
+    h1 = Math.imul(h1 ^ ch, 2654435761);
+    h2 = Math.imul(h2 ^ ch, 1597334677);
+  }
+  h1  = Math.imul(h1 ^ (h1 >>> 16), 2246822507);
+  h1 ^= Math.imul(h2 ^ (h2 >>> 13), 3266489909);
+  h2  = Math.imul(h2 ^ (h2 >>> 16), 2246822507);
+  h2 ^= Math.imul(h1 ^ (h1 >>> 13), 3266489909);
+  return 4294967296 * (2097151 & h2) + (h1 >>> 0);
+};
+
+const score = urlParams.get('score') || '';
+const receivedHash = urlParams.get('verify') || '';
+const gameId = urlParams.get('gid') || '';
+const expectedHash = simpleHash(score + gameId + SECRET_KEY).toString();
+const isScoreValid = expectedHash === receivedHash && gameId !== '';
+
+
+if (!isScoreValid && score !== '') {
+  console.error("ALERTA DE SEGURETAT: El hash de la puntuació no coincideix. Trampa detectada.");
+  document.getElementById('score-value').innerText = "???";
+  document.getElementById('score-hidden').value = "0";
+  const form = document.getElementById('score-form');
+  if (form) {
+    form.innerHTML = `<p style="color:red; text-align:center; font-size:1.2em;">La puntuació rebuda no és vàlida.</p>`;
+  }
+} else if (score) {
+  if(score) console.log("Puntuació verificada correctament.");
+  document.getElementById('score-value').innerText = score;
+  document.getElementById('score-hidden').value = score;
 }
 
 function renderLeaderboard(top, yourId, totals, yourRank) {
@@ -66,7 +98,7 @@ function renderLeaderboard(top, yourId, totals, yourRank) {
   tbody.innerHTML = '';
   top.forEach((row, idx) => {
     const tr = document.createElement('tr');
-    if (row.id === yourId) tr.classList.add('you');     
+    if (row.id === yourId) tr.classList.add('you');
     tr.innerHTML = `
       <td>${idx + 1}</td>
       <td>${row.user ?? '—'}</td>
@@ -130,12 +162,12 @@ async function loadLeaderboardAfterSave(yourId, score) {
 }
 
 
-document.getElementById('score-value').innerText = getScoreFromURL();
-document.getElementById('score-hidden').value = getScoreFromURL();
-
-
 document.getElementById('score-form').addEventListener('submit', async function(e) {
   e.preventDefault();
+  if (!document.getElementById('score-name')) {
+    console.warn("S'ha intentat enviar un formulari de puntuació invàlida.");
+    return;
+  }
   const name  = document.getElementById('score-name').value.trim();
   const email = document.getElementById('score-email').value.trim();
   const score = document.getElementById('score-hidden').value;
@@ -151,13 +183,17 @@ document.getElementById('score-form').addEventListener('submit', async function(
   
   const { data: inserted, error } = await supabase
     .from('scores')
-    .insert([{ user: name, email, score: parseInt(score, 10) }])
+    .insert([{ user: name, email, score: parseInt(score, 10), game_id: gameId }])
     .select('id')
     .single();
 
   if (error) {
-    console.error(error);
-    document.getElementById('score-status').innerText = "Error al guardar el score.";
+    console.error(error);  
+    if (error.code === '23505') {
+      document.getElementById('score-status').innerText = "Error: Esta puntuación ya ha estado registrada.";
+    } else {
+      document.getElementById('score-status').innerText = "Error al guardar el score.";
+    }
     return;
   }
 
