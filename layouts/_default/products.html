@@ -65,6 +65,7 @@
   {{ end }}
 
   <!-- Downloads & links & test -->
+  {{ if not .Params.hide_extra_ctas }}
   <section class="landing-steps-section py-5">
     <div class="container text-center mb-8">
 
@@ -85,13 +86,18 @@
         </div>
 
       {{ else }}
-      {{ partial "test-cta" . }}
+        
+          {{ partial "test-cta" . }}
+        
       {{ end }}
     </div>
   </section>
+  {{ end }}
   </article>
   <!-- Contact Form Partial -->
-  {{ partial "contact-cta-product" . }}
+  {{ if not .Params.hide_extra_ctas }}
+    {{ partial "contact-cta-product" . }}
+  {{ end }}
 
   {{ partial "footer.html" . }}
 
@@ -137,3 +143,94 @@
             document.body.style.opacity = '1';
         });
     </script>
+
+{{ if .Params.popup }} <div id="modalPedido" class="modal-overlay" style="display: none;">
+  <div class="modal-content">
+    <span class="close-modal" onclick="cerrarPopup()">&times;</span>
+    
+    <div class="modal-header">      
+      <h3>{{ .Params.popup.title }}</h3>
+      <p>{{ .Params.popup.subtitle }}</p>
+    </div>
+
+    <form id="formPedido" onsubmit="enviarPedidoWhatsapp(event)">
+      
+      <input type="hidden" id="wa_intro" value="{{ .Params.popup.wa_intro }}">
+      <input type="hidden" id="wa_ending" value="{{ .Params.popup.wa_ending }}">
+
+      <div class="form-group">
+        <label>{{ .Params.popup.label_name }}</label>
+        <input type="text" id="clienteNombre" required placeholder="Ej: Max">
+      </div>
+
+      <div class="form-group">
+        <label>{{ .Params.popup.label_email }}</label>
+        <input type="email" id="clienteEmail" required placeholder="email@domain.com">
+      </div>
+
+      <div class="form-group">
+        <label>{{ .Params.popup.label_plan }}</label>
+        <select id="clientePlan">
+          {{ range .Params.popup.plans }}
+            <option value="{{ . }}">{{ . }}</option>
+          {{ end }}
+        </select>
+      </div>
+
+      <button type="submit" class="btn-submit-whatsapp">
+        <i class="fab fa-whatsapp"></i> {{ .Params.popup.btn_text }}
+      </button>
+      
+      <p class="legal-note">{{ .Params.popup.legal }}</p>
+    </form>
+  </div>
+</div>
+
+<style>
+  .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7); z-index: 9999; display: flex; justify-content: center; align-items: center; backdrop-filter: blur(5px); }
+  .modal-content { background-color: white; padding: 30px; border-radius: 15px; width: 90%; max-width: 450px; position: relative; box-shadow: 0 10px 25px rgba(0,0,0,0.2); animation: slideDown 0.3s ease-out; text-align: left; }
+  @keyframes slideDown { from { transform: translateY(-50px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+  .close-modal { position: absolute; top: 15px; right: 20px; font-size: 28px; font-weight: bold; color: #aaa; cursor: pointer; }
+  .close-modal:hover { color: #000; }
+  .modal-header { text-align: center; margin-bottom: 20px; }
+  .modal-header h3 { margin: 10px 0 5px; color: #0d2c56; }
+  .modal-header p { font-size: 0.9rem; color: #666; }
+  .form-group { margin-bottom: 15px; }
+  .form-group label { display: block; font-weight: 600; margin-bottom: 5px; font-size: 0.9rem; color: #333; }
+  .form-group input, .form-group select { width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 8px; font-size: 1rem; }
+  .btn-submit-whatsapp { width: 100%; background-color: #25D366; color: white; border: none; padding: 12px; font-size: 1.1rem; font-weight: bold; border-radius: 8px; cursor: pointer; margin-top: 10px; transition: background 0.3s; }
+  .btn-submit-whatsapp:hover { background-color: #128C7E; }
+  .legal-note { font-size: 0.75rem; color: #999; text-align: center; margin-top: 15px; }
+</style>
+
+<script>
+  function abrirPopup() { document.getElementById('modalPedido').style.display = 'flex'; }
+  function cerrarPopup() { document.getElementById('modalPedido').style.display = 'none'; }
+  window.onclick = function(event) {
+    var modal = document.getElementById('modalPedido');
+    if (event.target == modal) { modal.style.display = "none"; }
+  }
+
+  function enviarPedidoWhatsapp(e) {
+    e.preventDefault(); 
+    var teuMobil = "34618985130";
+        
+    var introText = document.getElementById('wa_intro').value;
+    var endingText = document.getElementById('wa_ending').value;
+
+    var nombre = document.getElementById('clienteNombre').value;
+    var email = document.getElementById('clienteEmail').value;
+    var plan = document.getElementById('clientePlan').value;
+    
+    var missatge = "*" + introText + "* 🚀\n\n" +
+                   "👤 *Name:* " + nombre + "\n" +
+                   "📧 *Email:* " + email + "\n" +
+                   "🛡️ *Plan:* " + plan + "\n\n" +
+                   endingText;
+
+    var url = "https://wa.me/" + teuMobil + "?text=" + encodeURIComponent(missatge);
+    window.open(url, '_blank');
+    cerrarPopup();
+  }
+</script>
+{{ end }}
