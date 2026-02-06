@@ -36,7 +36,7 @@ popup:
 
 Tu negocio en Internet vigilado como lo haría un hacker... pero para avisarte a tiempo.
 
-### Tu escudo digital en 5 puntos:
+### Tu escudo digital en 7 puntos:
 
 * 📧 **Tus cuentas y dominio:** Monitorizamos tu identidad corporativa.
 * 🕵️ **La Dark Web:** Rastreo continuo de tus datos filtrados.
