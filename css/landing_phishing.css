@@ -597,3 +597,140 @@ body.scrolled #page-title {
     padding-right: 2rem;
   }
 }
+
+/* Estil per a la Caixa de Preus estil Flyer */
+.pricing-box {
+  background-color: #f8f9fa; /* Gris molt claret de fons */
+  border: 1px solid #e9ecef;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 30px 0;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.pricing-header h3 {
+  color: #0d2c56; /* Blau fosc corporatiu */
+  margin-bottom: 5px;
+}
+
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-family: sans-serif;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden; /* Perque les cantonades rodones funcionin */
+}
+
+.styled-table th {
+  background-color: #0d2c56; /* Blau Fosc (IronWall) */
+  color: #ffffff;
+  padding: 15px;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.styled-table td {
+  padding: 15px;
+  border-bottom: 1px solid #dddddd;
+  text-align: center;
+  color: #333;
+}
+
+/* La fila verda de l'oferta (Com al Flyer) */
+.styled-table tr.offer-row {
+  background-color: #28a745; /* Verd Oferta */
+  color: white;
+  font-size: 1.1rem;
+}
+
+.styled-table tr.offer-row td {
+  color: white; /* Assegurar text blanc */
+  border-bottom: none;
+}
+
+/* Preu ratllat */
+.crossed {
+  text-decoration: line-through;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.pricing-note {
+  font-size: 0.8rem;
+  color: #666;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+/* Contenidor per centrar els botons */
+.cta-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+/* Estil base dels botons */
+.btn-action {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 50px; /* Botons rodons moderns */
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Botó Principal (Verd Oferta) */
+.btn-primary-action {
+  background: linear-gradient(45deg, #28a745, #218838);
+  color: white;
+  border: 2px solid #28a745;
+}
+
+.btn-primary-action:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(40, 167, 69, 0.3);
+  color: white;
+  text-decoration: none;
+}
+
+/* Botó WhatsApp (Secundari) */
+.btn-whatsapp-action {
+  background-color: white;
+  color: #25D366;
+  border: 2px solid #25D366;
+}
+
+.btn-whatsapp-action:hover {
+  background-color: #f0fff4;
+  color: #128C7E;
+  text-decoration: none;
+}
+
+/* Text de garantia petit a sota */
+.money-back-guarantee {
+  font-size: 0.8rem;
+  color: #888;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Si la pantalla és gran, posa'ls de costat */
+@media (min-width: 768px) {
+  .cta-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
