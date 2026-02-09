@@ -334,28 +334,28 @@
  &lt;div class="feature-card">
  &lt;div class="feature-icon">&lt;i class="fas fa-envelope">&lt;/i>&lt;/div>
  &lt;div class="feature-content">
- &lt;h4>Accounts &amp; Domain&lt;/h4>
+ &lt;div class="h5 fw-bold">Accounts &amp; Domain&lt;/div>
  &lt;p>We monitor your corporate identity and prevent spoofing.&lt;/p>
  &lt;/div>
  &lt;/div>
  &lt;div class="feature-card">
  &lt;div class="feature-icon">&lt;i class="fas fa-user-secret">&lt;/i>&lt;/div>
  &lt;div class="feature-content">
- &lt;h4>The Dark Web&lt;/h4>
+ &lt;div class="h5 fw-bold">The Dark Web&lt;/div>
  &lt;p>Continuous tracking of your data leaked in black markets.&lt;/p>
  &lt;/div>
  &lt;/div>
  &lt;div class="feature-card">
  &lt;div class="feature-icon">&lt;i class="fas fa-key">&lt;/i>&lt;/div>
  &lt;div class="feature-content">
- &lt;h4>Passwords&lt;/h4>
+ &lt;div class="h5 fw-bold">Passwords&lt;/div>
  &lt;p>We warn you instantly if your old or current passwords are compromised.&lt;/p>
  &lt;/div>
  &lt;/div>
  &lt;div class="feature-card">
  &lt;div class="feature-icon">&lt;i class="fas fa-id-card">&lt;/i>&lt;/div>
  &lt;div class="feature-content">
- &lt;h4>Critical Data&lt;/h4>
+ &lt;div class="h5 fw-bold">Critical Data&lt;/div>
  &lt;p>Surveillance of exposed ID numbers, credit cards, and bank accounts.&lt;/p></description></item><item><title>iDrive | Secure Cloud Backup &amp; Disaster Recovery</title><link>https://guardianhubx.com/en/idrive/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/en/idrive/</guid><description>&lt;section class="about mb-5 container text-center">
  &lt;img src=" https://www.idrive.com/include/images/authorized_reseller.png " 
  alt="iDrive Logo – Authorized Reseller" 

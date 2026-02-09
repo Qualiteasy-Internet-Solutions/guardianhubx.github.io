@@ -130,28 +130,28 @@
  &lt;div class="feature-card">
  &lt;div class="feature-icon">&lt;i class="fas fa-envelope">&lt;/i>&lt;/div>
  &lt;div class="feature-content">
- &lt;h4>Comptes i Domini&lt;/h4>
+ &lt;div class="h5 fw-bold">Comptes i Domini&lt;/div>
  &lt;p>Monitoritzem la teva identitat corporativa i evitem suplantacions.&lt;/p>
  &lt;/div>
  &lt;/div>
  &lt;div class="feature-card">
  &lt;div class="feature-icon">&lt;i class="fas fa-user-secret">&lt;/i>&lt;/div>
  &lt;div class="feature-content">
- &lt;h4>La Dark Web&lt;/h4>
+ &lt;div class="h5 fw-bold">La Dark Web&lt;/div>
  &lt;p>Rastreig continu de les teves dades filtrades en mercats negres.&lt;/p>
  &lt;/div>
  &lt;/div>
  &lt;div class="feature-card">
  &lt;div class="feature-icon">&lt;i class="fas fa-key">&lt;/i>&lt;/div>
  &lt;div class="feature-content">
- &lt;h4>Contrasenyes&lt;/h4>
+ &lt;div class="h5 fw-bold">Contrasenyes&lt;/div>
  &lt;p>T'avisem a l'instant si les teves claus antigues o actuals estan compromeses.&lt;/p>
  &lt;/div>
  &lt;/div>
  &lt;div class="feature-card">
  &lt;div class="feature-icon">&lt;i class="fas fa-id-card">&lt;/i>&lt;/div>
  &lt;div class="feature-content">
- &lt;h4>Dades Crítiques&lt;/h4>
+ &lt;div class="h5 fw-bold">Dades Crítiques&lt;/div>
  &lt;p>Vigilància de DNI, targetes de crèdit i comptes bancaris exposats.&lt;/p></description></item><item><title>iDrive</title><link>https://guardianhubx.com/ca/idrive/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/ca/idrive/</guid><description>&lt;section class="about mb-5 container text-center">
  &lt;img src="https://www.idrive.com/include/images/authorized_reseller.png" alt="Logo d'iDrive" class="img-fluid mb-2" style="max-height: 100px;">
  &lt;p>&lt;strong>iDrive&lt;/strong>: Còpies de seguretat fiables i solucions de recuperació davant desastres per a dades crítiques.&lt;/p>

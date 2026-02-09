@@ -506,28 +506,28 @@
  &lt;div class="feature-card">
  &lt;div class="feature-icon">&lt;i class="fas fa-envelope">&lt;/i>&lt;/div>
  &lt;div class="feature-content">
- &lt;h4>Cuentas y Dominio&lt;/h4>
+ &lt;div class="h5 fw-bold">Cuentas y Dominio&lt;/div>
  &lt;p>Monitorizamos tu identidad corporativa y evitamos suplantaciones.&lt;/p>
  &lt;/div>
  &lt;/div>
  &lt;div class="feature-card">
  &lt;div class="feature-icon">&lt;i class="fas fa-user-secret">&lt;/i>&lt;/div>
  &lt;div class="feature-content">
- &lt;h4>La Dark Web&lt;/h4>
+ &lt;div class="h5 fw-bold">La Dark Web&lt;/div>
  &lt;p>Rastreo continuo de tus datos filtrados en mercados negros.&lt;/p>
  &lt;/div>
  &lt;/div>
  &lt;div class="feature-card">
  &lt;div class="feature-icon">&lt;i class="fas fa-key">&lt;/i>&lt;/div>
  &lt;div class="feature-content">
- &lt;h4>Contraseñas&lt;/h4>
+ &lt;div class="h5 fw-bold">Contraseñas&lt;/div>
  &lt;p>Te avisamos al instante si tus claves antiguas o actuales están comprometidas.&lt;/p>
  &lt;/div>
  &lt;/div>
  &lt;div class="feature-card">
  &lt;div class="feature-icon">&lt;i class="fas fa-id-card">&lt;/i>&lt;/div>
  &lt;div class="feature-content">
- &lt;h4>Datos Críticos&lt;/h4>
+ &lt;div class="h5 fw-bold">Datos Críticos&lt;/div>
  &lt;p>Vigilancia de DNI, tarjetas de crédito y cuentas bancarias expuestas.&lt;/p></description></item><item><title>iDrive</title><link>https://guardianhubx.com/es/idrive/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/es/idrive/</guid><description>&lt;section class="about mb-5 container text-center">
  &lt;img src="https://www.idrive.com/include/images/authorized_reseller.png" alt="Logo de iDrive" class="img-fluid mb-2" style="max-height: 100px;">
  &lt;p>&lt;strong>iDrive&lt;/strong>: Copias de seguridad fiables y soluciones de recuperación ante desastres para datos críticos.&lt;/p>
