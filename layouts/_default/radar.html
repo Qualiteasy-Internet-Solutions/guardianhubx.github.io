@@ -12,7 +12,7 @@
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-6 landing-fade-in">              
-        <h1 class="landing-hero-title {{ .Slug }}">{{ .Title }}</h1>
+        <h1 class="landing-hero-title {{ .Slug }}">{{ .Params.hero_title | default .Title }}</h1>
         <h2 class="landing-hero-subtitle">{{ .Params.tagline }}</h2>
       </div>
       <div class="col-lg-6 text-center landing-slide-in-right">
@@ -239,5 +239,29 @@
     }
   </script>
   {{ end }}
+
+  <script type="application/ld+json">
+    {
+    "@context": "https://schema.org/",
+    "@type": "SoftwareApplication",
+    "name": "GuardianRadar",
+    "applicationCategory": "SecurityApplication",
+    "operatingSystem": "Web, Cloud",
+    "offers": {
+        "@type": "Offer",
+        "price": "9.99",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock"
+    },
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "ratingCount": "50",
+        "bestRating": "5",
+        "worstRating": "1"
+    },
+    "description": "{{ .Params.description }}"
+    }
+</script>
 </body>
 </html>

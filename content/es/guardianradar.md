@@ -1,5 +1,10 @@
 ---
-title: "GuardianRadar"
+title: "GuardianRadar | Ciberseguridad para Autónomos y Pymes"
+description: "Protege tu negocio de hackers y filtraciones. Servicio de vigilancia digital y alertas para autónomos y pequeñas empresas. Sin instalaciones. Desde 9,99€."
+
+hero_title: "GuardianRadar: Vigilancia Digital" 
+ogImage: "/img/guardianradar-og-es.jpg"
+
 slug: "guardianradar"
 layout: "radar"
 logo: "/img/guardianradar-logo.webp"
