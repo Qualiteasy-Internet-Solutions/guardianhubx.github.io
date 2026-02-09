@@ -16,8 +16,8 @@
         <h2 class="landing-hero-subtitle">{{ .Params.tagline }}</h2>
       </div>
       <div class="col-lg-6 text-center landing-slide-in-right">
-        <div class="landing-hero-img-wrapper">
-          <img src="{{ .Params.logo }}" alt="{{ .Title }} Logo" class="img-fluid mb-3">
+        <div class="landing-hero-img-wrapper">          
+          <img src="{{ .Params.logo }}" alt="{ .Title }} Logo" class="img-fluid mb-3" fetchpriority="high" loading="eager" width="500" height="auto">
         </div>
       </div>
     </div>
