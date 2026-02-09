@@ -45,7 +45,7 @@ testimonials:
   - name: "Anna Muñoz"
     role: "Agency - Prois Business"
     image: "/img/testimonials/anna-munoz.webp"
-    quote: "After seeing how exposed we were without knowing it, we not only hired it but started recommending it to our own clients. It is the simplest way to know if your business is safe."
+    quote: "Our clients' confidentiality is sacred. We implemented GuardianRadar to armor our internal security, and seeing the peace of mind it brings, we decided to actively recommend it. It is necessary prevention."
 
   - name: "Albert Beltran"
     role: "Lawyer"

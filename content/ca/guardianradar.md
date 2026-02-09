@@ -45,7 +45,7 @@ testimonials:
   - name: "Anna Muñoz"
     role: "Gestoria - Prois Empresarial"
     image: "/img/testimonials/anna-munoz.webp"
-    quote: "En veure com estàvem d'exposats sense saber-ho, no només el vam contractar, sinó que hem començat a recomanar-lo als nostres propis clients. És la forma més senzilla de saber si la teva empresa està segura."
+    quote: "La confidencialitat dels nostres clients és sagrada. Vam implementar GuardianRadar per blindar la nostra seguretat interna i, en veure la tranquil·litat que dona, hem decidit recomanar-lo activament. És prevenció necessària."
 
   - name: "Albert Beltran"
     role: "Advocat"
