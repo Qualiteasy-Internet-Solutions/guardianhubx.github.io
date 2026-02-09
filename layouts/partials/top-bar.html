@@ -3,13 +3,23 @@
     <div class="d-md-flex align-items-center">
       <a href="tel:+34934153115" class="text-white" aria-label="{{ i18n "aria-phone" }}"><i class="fa fa-phone me-2"></i></a>
       <a href="tel:+34934153115" class="d-none d-md-inline text-white me-4 text-decoration-none">+34 93 415 31 15</a>
+      
       <a href="mailto:info@guardianhubx.com" class="text-white" aria-label="Email"><i class="fa fa-envelope me-2"></i></a>
       <a href="mailto:info@guardianhubx.com" class="d-none d-md-inline text-white me-4 text-decoration-none">info@guardianhubx.com</a>
+      
       <a href="https://www.tiktok.com/@guardianhubx" class="text-white" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok me-2"></i></a>
       <a href="https://www.tiktok.com/@guardianhubx" class="d-none d-md-inline text-white me-4 text-decoration-none" target="_blank">GuardianHubX</a>
+
+      <a href="https://www.youtube.com/@GuardianHubX" class="text-white" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube me-2"></i></a>
+      <a href="https://www.youtube.com/@GuardianHubX" class="d-none d-md-inline text-white me-4 text-decoration-none" target="_blank">GuardianHubX</a>
+
+      <a href="https://www.instagram.com/guardianhubx" class="text-white" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram me-2"></i></a>
+      <a href="https://www.instagram.com/guardianhubx" class="d-none d-md-inline text-white me-4 text-decoration-none" target="_blank">GuardianHubX</a>
+
       <a href="{{ cond (eq .Lang "ca") "/blog/ca/" "/blog/" | relURL }}" class="text-white" aria-label="Blog"><i class="fa fa-blog me-2"></i></a>
       <a href="{{ cond (eq .Lang "ca") "/blog/ca/" "/blog/" | relURL }}" class="text-white d-none d-md-inline text-decoration-none">News / Blog</a>
     </div>
+    
     <select id="languageSwitcher" class="form-select form-select-sm w-auto">
       <option value="ca" {{ if eq .Lang "ca" }}selected{{ end }}>Català</option>
       <option value="en" {{ if eq .Lang "en" }}selected{{ end }}>English</option>

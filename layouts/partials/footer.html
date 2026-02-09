@@ -2,9 +2,8 @@
   <div class="container">
     <div class="row gy-4 align-items-start">
 
-      <!-- LOGO + DESC -->
       <div class="col-md-3 d-flex flex-column align-items-center align-items-md-start">
-        <a href="/{{ .Lang }}/index.html" class="mb-3">
+        <a href="/{{ .Lang }}/" class="mb-3">
           <img src="/img/logo_GHX_01-01.png"
                alt="GuardianHubX"
                width="160"
@@ -22,16 +21,13 @@
         </a>
       </div>
 
-      <!-- MENÚ -->
       <div class="col-md-3">
         <h6 class="text-uppercase mb-3 small">{{ i18n "menu" }}</h6>
         <nav class="footer-menu-nav small" aria-label="{{ cond (eq .Lang "es") "Enlaces del pie de página" (cond (eq .Lang "en") "Footer links" "Enllaços del peu de pàgina") }}">
-
           {{ partial "menu.html" . }}
         </nav>
       </div>
 
-      <!-- PARTNERS -->
       <div class="col-md-3">
         <h6 class="mb-3 small">  
           <a class="text-decoration-none text-dark" href="{{ cond (eq .Lang "es") "/es/partners/" (cond (eq .Lang "ca") "/ca/partners/" "/en/partners/") }}">
@@ -52,9 +48,8 @@
         </ul>
       </div>
 
-      <!-- CONTACTE -->
       <div class="col-md-3 text-center text-md-start">
-        <h6 class="text-uppercase mb-3 small">{{ i18n "contact" }}</h6>
+        <h6 class="text-uppercase mb-3 small">{{ i18n "contact" | default "Contacte" }}</h6>
 
         <address class="small mb-3">
           <i class="fas fa-envelope me-2" aria-hidden="true"></i>
@@ -83,6 +78,23 @@
             TikTok
           </a>
         </p>
+        <p class="small mb-3">
+          <i class="fab fa-youtube me-2"></i>
+          <a href="https://www.youtube.com/@GuardianHubX"
+             target="_blank"
+             class="text-decoration-none text-secondary">
+            YouTube
+          </a>
+        </p>
+        <p class="small mb-3">
+          <i class="fab fa-instagram me-2"></i>
+          <a href="https://www.instagram.com/guardianhubx"
+             target="_blank"
+             class="text-decoration-none text-secondary">
+            Instagram
+          </a>
+        </p>
+
         <p class="small mb-3">
           <i class="fas fa-blog me-2"></i>
             <a href="{{ if eq .Lang "ca" }}/blog/ca/{{ else }}/blog/{{ end }}" class="text-decoration-none text-secondary">
