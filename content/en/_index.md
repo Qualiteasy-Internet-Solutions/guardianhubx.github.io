@@ -44,7 +44,7 @@ faq_items:
         </div>
       </div>      
       <div class="col-lg-5 text-center landing-slide-in-right mt-5 mt-lg-0">
-        <img src="/img/test-1.svg" alt="Easy cybersecurity for companies and freelancers" class="img-fluid" loading="lazy" width="500" height="400">
+        <img src="/img/seguridad-autonomos-empresas.jpg" alt="Easy cybersecurity for companies and freelancers" class="img-fluid" loading="lazy" width="500" height="400">
       </div>
     </div>
   </div>
