@@ -435,3 +435,6 @@
 
 - id: "menu"
   translation: "Menu"
+
+- id: "pack_radar_desc"
+  translation: "24/7 monitoring without installation. We track your identity and passwords online for you."

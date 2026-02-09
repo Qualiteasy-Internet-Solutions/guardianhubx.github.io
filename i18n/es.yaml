@@ -442,3 +442,6 @@
 
 - id: "menu"
   translation: "Menú"
+
+- id: "pack_radar_desc"
+  translation: "Vigilancia 24/7 sin instalaciones. Monitorizamos tu identidad y claves en la red por ti."

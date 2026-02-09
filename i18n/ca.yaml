@@ -438,3 +438,6 @@
 
 - id: "menu"
   translation: "Menú"
+
+- id: "pack_radar_desc"
+  translation: "Vigilància 24/7 sense instal·lacions. Monitoritzem la teva identitat i claus a la xarxa per tu."

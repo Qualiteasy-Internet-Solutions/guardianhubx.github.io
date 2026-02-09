@@ -1,5 +1,5 @@
 /* ==============================================
-   LANDING PHISHING MEJORADA - CSS INDEPENDIENTE
+   LANDING PHISHING & GUARDIANRADAR - CSS UNIFICAT
    ============================================== */
 
 /* Variables CSS para esta landing específica */
@@ -127,7 +127,6 @@ body {
 }
 
 .navbar-brand img {
-  /* ajusta según necesites */
   max-height: 5.5rem;
 }
 .navbar-brand h1 {
@@ -322,6 +321,35 @@ body {
     line-height: 1.6 !important;
 }
 
+/* --- ESTILS PER A LA CARD DESTACADA (GuardianRadar) --- */
+.featured-card {
+    border: 2px solid #0d6efd !important; /* Blau corporatiu */
+    background-color: #f8f9fa !important;
+    box-shadow: 0 4px 15px rgba(13, 110, 253, 0.15) !important;
+    transform: translateY(-5px); 
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 10;
+}
+
+.featured-card:hover {
+    transform: translateY(-10px) !important;
+    box-shadow: 0 8px 25px rgba(13, 110, 253, 0.25) !important;
+}
+
+.featured-card .btn-primary {
+    background-color: #0d6efd !important;
+    border-color: #0d6efd !important;
+    font-weight: 600 !important;
+    width: 100%;
+}
+
+.featured-card .badge {
+    vertical-align: middle;
+    margin-left: 5px;
+    box-shadow: 0 2px 5px rgba(220, 53, 69, 0.3);
+}
+
 /* CTA Section */
 .landing-cta-section {
     background: var(--landing-gradient-primary) !important;
@@ -403,15 +431,15 @@ body {
 .landing-slide-in-left {
     opacity: 0;
     transform: translateX(-50px);
-    transition: opacity 0.6s ease, transform 0.6s ease; /* Es buena práctica ser explícito */
-    will-change: transform, opacity; /* <-- ¡AQUÍ LA MAGIA! */
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    will-change: transform, opacity;
 }
 
 .landing-slide-in-right {
     opacity: 0;
     transform: translateX(50px);
-    transition: opacity 0.6s ease, transform 0.6s ease; /* Es buena práctica ser explícito */
-    will-change: transform, opacity; /* <-- ¡AQUÍ LA MAGIA! */
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    will-change: transform, opacity;
 }
 
 /* Cuando se hacen visibles */
@@ -579,16 +607,14 @@ body.scrolled #page-title {
 }
 
 @media (max-width: 768px) {
-  /* Desactiva la animación float por completo */
   .landing-hero-img-custom {
     animation: none !important;
     transform: none !important;
     margin-top: 1rem !important;
   }
 
-  /* Asegura que no haya offsets raros */
   .landing-hero-section {
-    padding-top: 10rem !important;  /* ajusta el espacio superior si lo necesitas */
+    padding-top: 10rem !important;
     padding-bottom: 2rem !important;
   }
 
@@ -600,7 +626,7 @@ body.scrolled #page-title {
 
 /* Estil per a la Caixa de Preus estil Flyer */
 .pricing-box {
-  background-color: #f8f9fa; /* Gris molt claret de fons */
+  background-color: #f8f9fa;
   border: 1px solid #e9ecef;
   border-radius: 10px;
   padding: 20px;
@@ -610,7 +636,7 @@ body.scrolled #page-title {
 }
 
 .pricing-header h3 {
-  color: #0d2c56; /* Blau fosc corporatiu */
+  color: #0d2c56;
   margin-bottom: 5px;
 }
 
@@ -621,11 +647,11 @@ body.scrolled #page-title {
   font-family: sans-serif;
   background-color: white;
   border-radius: 8px;
-  overflow: hidden; /* Perque les cantonades rodones funcionin */
+  overflow: hidden;
 }
 
 .styled-table th {
-  background-color: #0d2c56; /* Blau Fosc (IronWall) */
+  background-color: #0d2c56;
   color: #ffffff;
   padding: 15px;
   text-align: center;
@@ -641,19 +667,17 @@ body.scrolled #page-title {
   color: #333;
 }
 
-/* La fila verda de l'oferta (Com al Flyer) */
 .styled-table tr.offer-row {
-  background-color: #28a745; /* Verd Oferta */
+  background-color: #28a745;
   color: white;
   font-size: 1.1rem;
 }
 
 .styled-table tr.offer-row td {
-  color: white; /* Assegurar text blanc */
+  color: white;
   border-bottom: none;
 }
 
-/* Preu ratllat */
 .crossed {
   text-decoration: line-through;
   color: #888;
@@ -684,7 +708,7 @@ body.scrolled #page-title {
   font-size: 1.1rem;
   font-weight: 700;
   text-decoration: none;
-  border-radius: 50px; /* Botons rodons moderns */
+  border-radius: 50px;
   transition: all 0.3s ease;
   width: 100%;
   max-width: 350px;
@@ -719,7 +743,6 @@ body.scrolled #page-title {
   text-decoration: none;
 }
 
-/* Text de garantia petit a sota */
 .money-back-guarantee {
   font-size: 0.8rem;
   color: #888;
@@ -727,7 +750,6 @@ body.scrolled #page-title {
   margin-top: 10px;
 }
 
-/* Si la pantalla és gran, posa'ls de costat */
 @media (min-width: 768px) {
   .cta-container {
     flex-direction: row;

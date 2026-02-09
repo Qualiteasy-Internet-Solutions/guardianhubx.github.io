@@ -60,7 +60,18 @@ jobs:
           cd blog-src
           hugo --gc --minify --destination ../public/blog
       
-      # 6) Publicar todo en la rama gh-pages
+      # 6) [NOU] Minificació agressiva extra amb Node.js
+      # Això busca tots els CSS i JS a la carpeta public (incloent blog)
+      # i els re-comprimeix al màxim sobreescrivint el fitxer original.
+      - name: Post-process Minification (CSS & JS)
+        run: |
+          npm install -g terser clean-css-cli
+          echo "Minifying CSS..."
+          find public -type f -name "*.css" -exec cleancss -o {} {} \;
+          echo "Minifying JS..."
+          find public -type f -name "*.js" -exec terser {} -c -m -o {} \;
+      
+      # 7) Publicar todo en la rama gh-pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:

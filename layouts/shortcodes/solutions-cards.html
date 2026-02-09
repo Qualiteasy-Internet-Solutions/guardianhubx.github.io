@@ -7,9 +7,30 @@
 
     <div class="row g-4">
 
-      {{/* ---------- LightCore ---------- */}}
+      {{/* ---------- NOU: GuardianRadar (DESTACAT) ---------- */}}
       <div class="col-lg-4 col-md-6 landing-fade-in" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
         <meta itemprop="position" content="1">
+        <div class="landing-benefit-card h-100 featured-card" itemscope itemtype="https://schema.org/Service">
+          <div class="landing-benefit-icon text-primary" aria-hidden="true">
+            <i class="fas fa-bullseye"></i> </div>
+          {{ $t := "GuardianRadar" }} <h3 class="landing-benefit-title fw-bold text-primary" itemprop="name">
+            {{ $t }} <span class="badge bg-danger align-middle" style="font-size: 0.6em;">NEW</span>
+          </h3>
+          <p class="landing-benefit-text" itemprop="description">{{ i18n "pack_radar_desc" | default "Vigilància digital 24/7 i alertes per a autònoms." }}</p>
+          <a href="{{ "guardianradar" | relLangURL }}"
+             class="btn btn-primary mt-2" 
+             title="{{ printf "%s %s" (i18n "see_more_prefix") $t }}"
+             aria-label="{{ printf "%s %s" (i18n "see_more_prefix") $t }}"
+             itemprop="url">
+            {{ printf "%s %s" (i18n "see_more_prefix") $t }}
+          </a>
+          <meta itemprop="serviceType" content="Digital Surveillance & Dark Web Monitoring">
+        </div>
+      </div>
+
+      {{/* ---------- LightCore ---------- */}}
+      <div class="col-lg-4 col-md-6 landing-fade-in" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <meta itemprop="position" content="2">
         <div class="landing-benefit-card h-100" itemscope itemtype="https://schema.org/Service">
           <div class="landing-benefit-icon" aria-hidden="true"><i class="fas fa-feather-alt"></i></div>
           {{ $t := i18n "pack_light_title" }}
@@ -28,7 +49,7 @@
 
       {{/* ---------- SmartLayer ---------- */}}
       <div class="col-lg-4 col-md-6 landing-fade-in" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-        <meta itemprop="position" content="2">
+        <meta itemprop="position" content="3">
         <div class="landing-benefit-card h-100" itemscope itemtype="https://schema.org/Service">
           <div class="landing-benefit-icon" aria-hidden="true"><i class="fas fa-puzzle-piece"></i></div>
           {{ $t := i18n "pack_smart_title" }}
@@ -47,7 +68,7 @@
 
       {{/* ---------- IronWall ---------- */}}
       <div class="col-lg-4 col-md-6 landing-fade-in" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-        <meta itemprop="position" content="3">
+        <meta itemprop="position" content="4">
         <div class="landing-benefit-card h-100" itemscope itemtype="https://schema.org/Service">
           <div class="landing-benefit-icon" aria-hidden="true"><i class="fas fa-shield-alt"></i></div>
           {{ $t := i18n "pack_iron_title" }}
@@ -66,7 +87,7 @@
 
       {{/* ---------- EduCraft ---------- */}}
       <div class="col-lg-4 col-md-6 landing-fade-in" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-        <meta itemprop="position" content="4">
+        <meta itemprop="position" content="5">
         <div class="landing-benefit-card h-100" itemscope itemtype="https://schema.org/Service">
           <div class="landing-benefit-icon" aria-hidden="true"><i class="fas fa-brain"></i></div>
           {{ $t := i18n "pack_edu_title" }}
@@ -85,7 +106,7 @@
 
       {{/* ---------- SoloShield ---------- */}}
       <div class="col-lg-4 col-md-6 landing-fade-in" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-        <meta itemprop="position" content="5">
+        <meta itemprop="position" content="6">
         <div class="landing-benefit-card h-100" itemscope itemtype="https://schema.org/Service">
           <div class="landing-benefit-icon" aria-hidden="true"><i class="fas fa-user-shield"></i></div>
           {{ $t := i18n "pack_solo_title" }}
@@ -105,13 +126,14 @@
     </div>
   </div>
 
-  {{/* ---------- JSON-LD: ItemList amb Services ---------- */}}
+  {{/* ---------- JSON-LD: ItemList amb Services (Actualitzat) ---------- */}}
   {{ $items := slice
-    (dict "position" 1 "name" (i18n "pack_light_title") "url" ("lightcore" | relLangURL))
-    (dict "position" 2 "name" (i18n "pack_smart_title") "url" ("smartlayer" | relLangURL))
-    (dict "position" 3 "name" (i18n "pack_iron_title")  "url" ("ironwall" | relLangURL))
-    (dict "position" 4 "name" (i18n "pack_edu_title")   "url" ("educraft" | relLangURL))
-    (dict "position" 5 "name" (i18n "pack_solo_title")  "url" ("soloshield" | relLangURL))
+    (dict "position" 1 "name" "GuardianRadar"           "url" ("guardianradar" | relLangURL))
+    (dict "position" 2 "name" (i18n "pack_light_title") "url" ("lightcore" | relLangURL))
+    (dict "position" 3 "name" (i18n "pack_smart_title") "url" ("smartlayer" | relLangURL))
+    (dict "position" 4 "name" (i18n "pack_iron_title")  "url" ("ironwall" | relLangURL))
+    (dict "position" 5 "name" (i18n "pack_edu_title")   "url" ("educraft" | relLangURL))
+    (dict "position" 6 "name" (i18n "pack_solo_title")  "url" ("soloshield" | relLangURL))
   }}
   <script type="application/ld+json">
   {
