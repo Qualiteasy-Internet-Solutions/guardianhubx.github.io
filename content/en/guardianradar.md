@@ -51,7 +51,7 @@ testimonials:
     image: "/img/testimonials/anna-munoz.webp"
     quote: "Our clients' confidentiality is sacred. We implemented GuardianRadar to armor our internal security, and seeing the peace of mind it brings, we decided to actively recommend it. It is necessary prevention."
 
-  - name: "Albert Beltran"
+  - name: "Albert Bertrán"
     role: "Lawyer"
     image: "/img/testimonials/albert-betran.webp"
     quote: "I thought an antivirus was enough, but the real risk is out there. Thanks to GuardianRadar, I know if my firm's data is exposed before anyone uses it. It's total peace of mind."
@@ -214,7 +214,7 @@ Your business on the Internet monitored like a hacker would... but to warn you i
       🚀 Activate my Radar Now
     </button>
 
-   <a href="https://wa.me/34618985130?text=Hi%20GuardianHubX,%20I%20have%20some%20questions%20about%20GuardianRadar%20before%20hiring." target="_blank" class="btn-action btn-whatsapp-action">
+   <a href="https://wa.me/34934153115?text=Hi%20GuardianHubX,%20I%20have%20some%20questions%20about%20GuardianRadar%20before%20hiring." target="_blank" class="btn-action btn-whatsapp-action">
       <i class="fab fa-whatsapp"></i> I have doubts, let's talk
     </a>
   </div>

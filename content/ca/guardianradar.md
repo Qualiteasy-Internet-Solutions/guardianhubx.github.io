@@ -50,7 +50,7 @@ testimonials:
     image: "/img/testimonials/anna-munoz.webp"
     quote: "La confidencialitat dels nostres clients és sagrada. Vam implementar GuardianRadar per blindar la nostra seguretat interna i, en veure la tranquil·litat que dona, hem decidit recomanar-lo activament. És prevenció necessària."
 
-  - name: "Albert Beltran"
+  - name: "Albert Bertrán"
     role: "Advocat"
     image: "/img/testimonials/albert-betran.webp"
     quote: "Pensava que amb l'antivirus n'hi havia prou, però el risc real està a fora. Gràcies a GuardianRadar sé si les dades del meu despatx estan exposades abans que algú les faci servir. És tranquil·litat total."
@@ -213,7 +213,7 @@ El teu negoci a Internet vigilat com ho faria un hacker... però per avisar-te a
       🚀 Activar el meu Radar Ara
     </button>
 
-   <a href="https://wa.me/34618985130?text=Hola%20GuardianHubX,%20tinc%20alguns%20dubtes%20sobre%20GuardianRadar%20abans%20de%20contractar." target="_blank" class="btn-action btn-whatsapp-action">
+   <a href="https://wa.me/34934153115?text=Hola%20GuardianHubX,%20tinc%20alguns%20dubtes%20sobre%20GuardianRadar%20abans%20de%20contractar." target="_blank" class="btn-action btn-whatsapp-action">
       <i class="fab fa-whatsapp"></i> Tinc dubtes, parlem
     </a>
   </div>
