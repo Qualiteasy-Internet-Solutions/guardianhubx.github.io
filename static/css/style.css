@@ -313,3 +313,54 @@ body.scrolled .home-navbar {
     max-height: 80vh; /* o 100vh si vols sense scroll */
   }
 }
+
+/* =========================================
+   MILLORA MÒBIL TOP BAR (Afegir al final)
+   ========================================= */
+
+/* 1. Forcem que el contenidor mai trenqui la línia (no wrap) */
+#top-bar .container {
+    display: flex !important;
+    flex-wrap: nowrap !important; 
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 8px; 
+    padding-right: 8px;
+    height: 100%; /* Assegura que ocupi els 36px d'alçada */
+}
+
+/* 2. Assegurem que el grup d'icones es comporti com una fila */
+#top-bar .d-md-flex {
+    display: flex !important; 
+    align-items: center;
+    gap: 0; /* Sense espai extra, ho gestiona l'amplada de l'enllaç */
+}
+
+/* 3. Estils EXCLUSIUS per a Mòbil (pantalles < 768px) */
+@media (max-width: 768px) {
+    
+    /* Convertim cada enllaç en un botó quadrat fàcil de tocar */
+    #top-bar a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 34px;  /* Amplada fixa per al dit */
+        height: 36px; /* Tota l'alçada de la barra */
+        text-decoration: none;
+    }
+
+    /* Centrem la icona i traiem marges que molesten */
+    #top-bar a i {
+        margin: 0 !important; 
+        font-size: 1rem; /* Mida visible */
+    }
+
+    /* Ajustem el selector d'idioma perquè no ocupi massa */
+    #languageSwitcher {
+        font-size: 0.75rem;
+        padding: 0 2px 0 5px;
+        height: 24px;
+        width: auto;
+        margin-left: 2px;
+    }
+}
