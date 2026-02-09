@@ -49,5 +49,5 @@ external_links:
 </section>
 
 <div id="fullscreen-overlay" onclick="closeFullscreen()">
-  <img id="fullscreen-image">
+  <img id="fullscreen-image" alt="fullscreen image">
 </div>
