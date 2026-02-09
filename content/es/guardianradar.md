@@ -11,7 +11,7 @@ logo: "/img/guardianradar-logo.webp"
 tagline: "Sin instalaciones. Sin tecnicismos. Sin complicaciones."
 intro:
   - title: "Te avisamos antes de que sea un problema"
-    description: "Si algo le pasa a tu email, tu web o tus datos en Internet, tienes que saberlo. Hemos diseñado este servicio para autónomos y pequeñas empresas (hasta 10 empleados) que no quieren saber de ciberseguridad… pero sí quieren saber si están en riesgo. Sin perder el tiempo."
+    description: "Si algo le pasa a tu email o web, tienes que saberlo. Hemos diseñado este servicio de **ciberseguridad para autónomos y Pymes** que no quieren complicaciones, pero sí protegerse. Vigilancia digital simple y efectiva."
     img: "/img/guardianradar-cover.webp"
     alt: "Vigilancia digital GuardianRadar"
 hide_extra_ctas: true
@@ -88,7 +88,7 @@ Tu negocio en Internet vigilado como lo haría un hacker... pero para avisarte a
   <div class="feature-card">
     <div class="feature-icon"><i class="fas fa-envelope"></i></div>
     <div class="feature-content">
-      <h4>Cuentas y Dominio</h4>
+      <div class="h5 fw-bold">Cuentas y Dominio</div>
       <p>Monitorizamos tu identidad corporativa y evitamos suplantaciones.</p>
     </div>
   </div>
@@ -96,7 +96,7 @@ Tu negocio en Internet vigilado como lo haría un hacker... pero para avisarte a
   <div class="feature-card">
     <div class="feature-icon"><i class="fas fa-user-secret"></i></div>
     <div class="feature-content">
-      <h4>La Dark Web</h4>
+      <div class="h5 fw-bold">La Dark Web</div>
       <p>Rastreo continuo de tus datos filtrados en mercados negros.</p>
     </div>
   </div>
@@ -104,7 +104,7 @@ Tu negocio en Internet vigilado como lo haría un hacker... pero para avisarte a
   <div class="feature-card">
     <div class="feature-icon"><i class="fas fa-key"></i></div>
     <div class="feature-content">
-      <h4>Contraseñas</h4>
+      <div class="h5 fw-bold">Contraseñas</div>
       <p>Te avisamos al instante si tus claves antiguas o actuales están comprometidas.</p>
     </div>
   </div>
@@ -112,7 +112,7 @@ Tu negocio en Internet vigilado como lo haría un hacker... pero para avisarte a
   <div class="feature-card">
     <div class="feature-icon"><i class="fas fa-id-card"></i></div>
     <div class="feature-content">
-      <h4>Datos Críticos</h4>
+      <div class="h5 fw-bold">Datos Críticos</div>
       <p>Vigilancia de DNI, tarjetas de crédito y cuentas bancarias expuestas.</p>
     </div>
   </div>
@@ -120,7 +120,7 @@ Tu negocio en Internet vigilado como lo haría un hacker... pero para avisarte a
   <div class="feature-card">
     <div class="feature-icon"><i class="fas fa-bullhorn"></i></div>
     <div class="feature-content">
-      <h4>Alertas de Fraude Masivo</h4>
+      <div class="h5 fw-bold">Alertas de Fraude Masivo</div>
       <p>Avisos preventivos sobre estafas de Endesa, Hacienda o Correos antes de que te lleguen.</p>
     </div>
   </div>
@@ -128,7 +128,7 @@ Tu negocio en Internet vigilado como lo haría un hacker... pero para avisarte a
   <div class="feature-card">
     <div class="feature-icon"><i class="fas fa-bell"></i></div>
     <div class="feature-content">
-      <h4>Alertas Inmediatas</h4>
+      <div class="h5 fw-bold">Alertas Inmediatas</div>
       <p>Notificación al móvil en el momento exacto que detectamos una amenaza.</p>
     </div>
   </div>
@@ -136,7 +136,7 @@ Tu negocio en Internet vigilado como lo haría un hacker... pero para avisarte a
   <div class="feature-card feature-card-whatsapp">
     <div class="feature-icon"><i class="fab fa-whatsapp"></i></div>
     <div class="feature-content">
-      <h4>Soporte Humano</h4>
+      <div class="h5 fw-bold">Soporte Humano</div>
       <p>¿Dudas ante un email raro? Envíanoslo por WhatsApp y te decimos si es seguro.</p>
     </div>
   </div>
@@ -153,25 +153,25 @@ Tu negocio en Internet vigilado como lo haría un hacker... pero para avisarte a
   
   <div class="process-step">
     <div class="step-number">1</div>
-    <h4>Activación</h4>
+    <div class="h5 fw-bold">Activación</div>
     <p>Nos das tu dominio y tu email. Sin instalar nada. En 24h el radar está activo.</p>
   </div>
   
   <div class="process-step">
     <div class="step-number">2</div>
-    <h4>Vigilancia 24/7</h4>
+    <div class="h5 fw-bold">Vigilancia 24/7</div>
     <p>Nuestros sistemas rastrean Internet y la Dark Web. Si todo va bien, silencio absoluto.</p>
   </div>
 
   <div class="process-step">
     <div class="step-number step-number-green">3</div>
-    <h4>Tu "Botón del Pánico"</h4>
+    <div class="h5 fw-bold">Tu "Botón del Pánico"</div>
     <p>¿Un email raro? Mándanos la foto por WhatsApp y te decimos si es seguro.</p>
   </div>
 
   <div class="process-step">
     <div class="step-number">4</div>
-    <h4>Alerta y Solución</h4>
+    <div class="h5 fw-bold">Alerta y Solución</div>
     <p>Si detectamos una amenaza real, te avisamos al móvil y te decimos cómo cerrarla.</p>
   </div>
 
@@ -188,7 +188,7 @@ Tu negocio en Internet vigilado como lo haría un hacker... pero para avisarte a
       <tr>
         <th>Plan</th>
         <th>Autónomo <small>(1 persona)</small></th>
-        <th>Empresa <small>(Hasta 10)</small></th>
+        <th>Pyme / Empresa <small>(Hasta 10)</small></th>
       </tr>
     </thead>
     <tbody>

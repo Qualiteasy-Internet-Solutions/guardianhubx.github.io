@@ -432,3 +432,9 @@
 
 - id: "testimonials_title"
   translation: "El que diuen els nostres clients"
+
+- id: "aria-phone"
+  translation: "Número de telèfon"
+
+- id: "menu"
+  translation: "Menú"

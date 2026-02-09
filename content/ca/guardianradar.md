@@ -9,7 +9,7 @@ logo: "/img/guardianradar-logo.webp"
 tagline: "Sense instal·lacions. Sense tecnicismes. Sense complicacions."
 intro:
   - title: "T'avisem abans que sigui un problema"
-    description: "Si li passa alguna cosa al teu email, al teu web o a les teves dades a Internet, ho has de saber. Hem dissenyat aquest servei per a autònoms i petites empreses (fins a 10 treballadors) que no volen saber de ciberseguretat… però sí que volen saber si estan en risc. Sense perdre el temps."
+    description: "Si li passa alguna cosa al teu email o web, ho has de saber. Hem dissenyat aquest servei de **ciberseguretat per a autònoms i Pimes** que no volen complicacions, però sí protegir-se. Vigilància digital simple i efectiva."    
     img: "/img/guardianradar-cover.webp"
     alt: "Vigilància digital GuardianRadar"
 hide_extra_ctas: true
@@ -86,7 +86,7 @@ El teu negoci a Internet vigilat com ho faria un hacker... però per avisar-te a
   <div class="feature-card">
     <div class="feature-icon"><i class="fas fa-envelope"></i></div>
     <div class="feature-content">
-      <h4>Comptes i Domini</h4>
+      <div class="h5 fw-bold">Comptes i Domini</div>
       <p>Monitoritzem la teva identitat corporativa i evitem suplantacions.</p>
     </div>
   </div>
@@ -94,7 +94,7 @@ El teu negoci a Internet vigilat com ho faria un hacker... però per avisar-te a
   <div class="feature-card">
     <div class="feature-icon"><i class="fas fa-user-secret"></i></div>
     <div class="feature-content">
-      <h4>La Dark Web</h4>
+      <div class="h5 fw-bold">La Dark Web</div>
       <p>Rastreig continu de les teves dades filtrades en mercats negres.</p>
     </div>
   </div>
@@ -102,7 +102,7 @@ El teu negoci a Internet vigilat com ho faria un hacker... però per avisar-te a
   <div class="feature-card">
     <div class="feature-icon"><i class="fas fa-key"></i></div>
     <div class="feature-content">
-      <h4>Contrasenyes</h4>
+      <div class="h5 fw-bold">Contrasenyes</div>
       <p>T'avisem a l'instant si les teves claus antigues o actuals estan compromeses.</p>
     </div>
   </div>
@@ -110,7 +110,7 @@ El teu negoci a Internet vigilat com ho faria un hacker... però per avisar-te a
   <div class="feature-card">
     <div class="feature-icon"><i class="fas fa-id-card"></i></div>
     <div class="feature-content">
-      <h4>Dades Crítiques</h4>
+      <div class="h5 fw-bold">Dades Crítiques</div>
       <p>Vigilància de DNI, targetes de crèdit i comptes bancaris exposats.</p>
     </div>
   </div>
@@ -118,7 +118,7 @@ El teu negoci a Internet vigilat com ho faria un hacker... però per avisar-te a
   <div class="feature-card">
     <div class="feature-icon"><i class="fas fa-bullhorn"></i></div>
     <div class="feature-content">
-      <h4>Alertes de Frau Massiu</h4>
+      <div class="h5 fw-bold">Alertes de Frau Massiu</div>
       <p>Avisos preventius sobre estafes d'Endesa, Hisenda o Correos abans que t'arribin.</p>
     </div>
   </div>
@@ -126,7 +126,7 @@ El teu negoci a Internet vigilat com ho faria un hacker... però per avisar-te a
   <div class="feature-card">
     <div class="feature-icon"><i class="fas fa-bell"></i></div>
     <div class="feature-content">
-      <h4>Alertes Immediates</h4>
+      <div class="h5 fw-bold">Alertes Immediates</div>
       <p>Notificació al mòbil en el moment exacte que detectem una amenaça.</p>
     </div>
   </div>
@@ -134,7 +134,7 @@ El teu negoci a Internet vigilat com ho faria un hacker... però per avisar-te a
   <div class="feature-card feature-card-whatsapp">
     <div class="feature-icon"><i class="fab fa-whatsapp"></i></div>
     <div class="feature-content">
-      <h4>Suport Humà</h4>
+      <div class="h5 fw-bold">Suport Humà</div>
       <p>Dubtes davant un email rar? Envia'ns-el per WhatsApp i et diem si és segur.</p>
     </div>
   </div>
@@ -151,25 +151,25 @@ El teu negoci a Internet vigilat com ho faria un hacker... però per avisar-te a
   
   <div class="process-step">
     <div class="step-number">1</div>
-    <h4>Activació</h4>
+    <div class="h5 fw-bold">Activació</div>
     <p>Ens dones el teu domini i el teu email. Sense instal·lar res. En 24h el radar està actiu.</p>
   </div>
   
   <div class="process-step">
     <div class="step-number">2</div>
-    <h4>Vigilància 24/7</h4>
+    <div class="h5 fw-bold">Vigilància 24/7</div>
     <p>Els nostres sistemes rastregen Internet i la Dark Web. Si tot va bé, silenci absolut.</p>
   </div>
 
   <div class="process-step">
     <div class="step-number step-number-green">3</div>
-    <h4>El teu "Botó del Pànic"</h4>
+    <div class="h5 fw-bold">El teu "Botó del Pànic"</div>
     <p>Un email rar? Envia'ns la foto per WhatsApp i et diem si és segur.</p>
   </div>
 
   <div class="process-step">
     <div class="step-number">4</div>
-    <h4>Alerta i Solució</h4>
+    <div class="h5 fw-bold">Alerta i Solució</div>
     <p>Si detectem una amenaça real, t'avisem al mòbil i et diem com tancar-la.</p>
   </div>
 
@@ -186,7 +186,7 @@ El teu negoci a Internet vigilat com ho faria un hacker... però per avisar-te a
       <tr>
         <th>Pla</th>
         <th>Autònom <small>(1 persona)</small></th>
-        <th>Empresa <small>(Fins a 10)</small></th>
+        <th>Pime / Empresa <small>(Fins a 10)</small></th>
       </tr>
     </thead>
     <tbody>

@@ -429,3 +429,9 @@
 
 - id: "testimonials_title"
   translation: "What our clients say"
+
+- id: "aria-phone"
+  translation: "Phone number"
+
+- id: "menu"
+  translation: "Menu"
