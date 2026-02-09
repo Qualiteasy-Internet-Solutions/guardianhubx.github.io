@@ -1,24 +1,27 @@
 ---
 title: "GuardianRadar"
 slug: "guardianradar"
-layout: "products"
-logo: "/img/guardianradar-logo.png"
+layout: "radar"
+logo: "/img/guardianradar-logo.webp"
 tagline: "Sense instal·lacions. Sense tecnicismes. Sense complicacions."
 intro:
   - title: "T'avisem abans que sigui un problema"
-    description: "Si li passa alguna cosa al teu correu, al teu web o a les teves dades a Internet, ho has de saber. Hem dissenyat aquest servei per a autònoms i petites empreses (fins a 10 treballadors) que no volen saber de ciberseguretat… però sí que volen saber si estan en risc. Sense perdre temps."
-    img: "/img/guardianradar-cover.png"
+    description: "Si li passa alguna cosa al teu email, al teu web o a les teves dades a Internet, ho has de saber. Hem dissenyat aquest servei per a autònoms i petites empreses (fins a 10 treballadors) que no volen saber de ciberseguretat… però sí que volen saber si estan en risc. Sense perdre el temps."
+    img: "/img/guardianradar-cover.webp"
     alt: "Vigilància digital GuardianRadar"
 hide_extra_ctas: true
 
 texttitle: "Vigilem per tu 24/7:"
 screenshots:
-  - image: "/img/guardianradar-whatsapp.png"
+  - image: "/img/guardianradar-whatsapp.webp"
     alt: "Alertes immediates al mòbil"
-  - image: "/img/guardianradar-whatsapp-consulta.png"
+  - image: "/img/guardianradar-whatsapp-consulta.webp"
     alt: "Consultes per WhatsApp"
-  - image: "/img/guardianradar-informe.png"
+  - image: "/img/guardianradar-informe.webp"
     alt: "Informe d'estat clar i simple"
+  - image: "/img/guardianradar-seguro.webp"
+    alt: "Vigilància Activa: Sense amenaces"
+
 popup:
   title: "Activar Vigilància"
   subtitle: "Omple les teves dades i et contactem directament per WhatsApp."
@@ -32,29 +35,142 @@ popup:
   plans:
     - "Pla SOLO (Autònom) - 9,99€"
     - "Pla SQUAD (Empresa) - 29,99€"
+  
+testimonials:
+  - name: "Marc Tomás"
+    role: "Assessor Energètic"
+    image: "/img/testimonials/marc-tomas.webp"
+    quote: "GuardianRadar em va avisar d'una filtració de credencials que ni sabia que existia. Vaig canviar els accessos a temps i vaig evitar un problema seriós amb dades dels meus clients. Qualsevol autònom l'hauria de tenir."
+  
+  - name: "Anna Muñoz"
+    role: "Gestoria - Prois Empresarial"
+    image: "/img/testimonials/anna-munoz.webp"
+    quote: "En veure com estàvem d'exposats sense saber-ho, no només el vam contractar, sinó que hem començat a recomanar-lo als nostres propis clients. És la forma més senzilla de saber si la teva empresa està segura."
+
+  - name: "Albert Beltran"
+    role: "Advocat"
+    image: "/img/testimonials/albert-betran.webp"
+    quote: "Pensava que amb l'antivirus n'hi havia prou, però el risc real està a fora. Gràcies a GuardianRadar sé si les dades del meu despatx estan exposades abans que algú les faci servir. És tranquil·litat total."
+
+  - name: "Frank Santos"
+    role: "Director Sanblach - Reformes"
+    image: "/img/testimonials/frank-santos.webp"
+    quote: "Vam rebre una alerta de la Dark Web. En 10 minuts, seguint les seves indicacions per WhatsApp, ho vam solucionar. No vull imaginar què hauria passat si no ens arribem a assabentar."
+
+faq_title: "Preguntes Freqüents i Dubtes Habituals"
+faq_subtitle: "Resolem els dubtes que solen tenir els nostres clients abans de començar."
+faq_items:
+  - question: "Ja tinc un antivirus instal·lat, per què necessito això?"
+    answer: "**L'antivirus protegeix el teu ordinador, nosaltres protegim la teva identitat.** L'antivirus evita que entrin virus al teu PC, però no pot saber si algú ha robat la teva contrasenya a la Dark Web, si estan suplantant el teu domini per estafar els teus clients o si hi ha una onada de frau activa. Són serveis complementaris: l'antivirus és el pany de la porta, **GuardianRadar és l'alarma i les càmeres de seguretat**."
+  - question: "Llegireu els meus correus o veureu els meus arxius?"
+    answer: "**Absolutament NO.** No instal·lem res al teu ordinador ni tenim accés a la teva bústia. Nosaltres vigilem **des de fora**: rastregem internet i bases de dades filtrades buscant la teva adreça d'email o el teu domini. Si apareix alguna cosa allà fora, és quan t'avisem."
+  - question: "No soc gens tècnic, sabré fer-ho servir?"
+    answer: "**Si saps fer servir WhatsApp, saps fer servir GuardianRadar.** No has de configurar panells de control complexos. Si detectem un perill, t'arriba un missatge al mòbil explicant-te què passa i quin botó prémer per solucionar-ho. I si dubtes, ens contestes al WhatsApp i un humà t'ajuda."
+  - question: "Què passa si rebo un correu sospitós d'Hisenda, Correos o un banc?"
+    answer: "Aquesta és la part preferida dels nostres clients. Abans de fer clic, **fes una captura de pantalla i envia'ns-la per WhatsApp.** El nostre equip l'analitzarà al moment i et dirà: *'És una estafa, esborra-ho'* o *'És legítim, pots obrir-lo'*. És com tenir un expert en ciberseguretat a la butxaca."
+  - question: "El preu pujarà després del primer any?"
+    answer: "L'oferta actual (9,99€ o 29,99€) és un preu especial de llançament per als primers 50 clients. Si ho contractes ara, **et mantenim aquest preu durant els primers 12 mesos**. Després, la renovació és al preu estàndard, però t'avisarem amb antelació i podràs cancel·lar si ho desitges."
+  - question: "Com funciona l''Informe Tècnic' de 100€ i quan el necessito?"
+    answer: "El servei mensual vigila la teva identitat. L'**Informe Tècnic** és una auditoria puntual profunda del teu web: mirem si el teu domini està mal configurat (DNS, DMARC), si tens ports oberts o si el teu certificat SSL és vulnerable. Recomanem demanar-lo un cop l'any o si acabes de llançar un web nou."
 ---
 
 El teu negoci a Internet vigilat com ho faria un hacker... però per avisar-te a temps.
 
-### El teu escut digital en 7 punts:
+<h3 class="mb-4">El teu escut digital cobreix aquests 7 fronts:</h3>
 
-* 📧 **Els teus comptes i domini:** Monitoritzem la teva identitat corporativa.
-* 🕵️ **La Dark Web:** Rastreig continu de les teves dades filtrades.
-* 🔐 **Contrasenyes:** T'avisem si les teves claus estan compromeses.
-* 🪪 **Dades Crítiques:** Vigilància de DNI, targetes i comptes exposats.
-* 📢 **Alertes d'Onades de Frau:** Hi ha una estafa massiva d'Endesa o Hisenda circulant? T'avisem **abans que t'arribi el correu** perquè tu i el teu equip estigueu previnguts.
-* 🚨 **Alertes Immediates:** Avís al mòbil en el moment que detectem alguna cosa.
-* 💬 **Suport Humà (WhatsApp):** Resolem els teus dubtes davant d'emails o SMS sospitosos.
+<div class="features-grid">
+  
+  <div class="feature-card">
+    <div class="feature-icon"><i class="fas fa-envelope"></i></div>
+    <div class="feature-content">
+      <h4>Comptes i Domini</h4>
+      <p>Monitoritzem la teva identitat corporativa i evitem suplantacions.</p>
+    </div>
+  </div>
 
----
+  <div class="feature-card">
+    <div class="feature-icon"><i class="fas fa-user-secret"></i></div>
+    <div class="feature-content">
+      <h4>La Dark Web</h4>
+      <p>Rastreig continu de les teves dades filtrades en mercats negres.</p>
+    </div>
+  </div>
 
-### Com funciona?
+  <div class="feature-card">
+    <div class="feature-icon"><i class="fas fa-key"></i></div>
+    <div class="feature-content">
+      <h4>Contrasenyes</h4>
+      <p>T'avisem a l'instant si les teves claus antigues o actuals estan compromeses.</p>
+    </div>
+  </div>
 
-1.  **T'avisem** al moment si detectem una amenaça.
-2.  **T'expliquem** què significa sense llenguatge tècnic.
-3.  **T'indiquem** què has de fer pas a pas.
+  <div class="feature-card">
+    <div class="feature-icon"><i class="fas fa-id-card"></i></div>
+    <div class="feature-content">
+      <h4>Dades Crítiques</h4>
+      <p>Vigilància de DNI, targetes de crèdit i comptes bancaris exposats.</p>
+    </div>
+  </div>
 
----
+  <div class="feature-card">
+    <div class="feature-icon"><i class="fas fa-bullhorn"></i></div>
+    <div class="feature-content">
+      <h4>Alertes de Frau Massiu</h4>
+      <p>Avisos preventius sobre estafes d'Endesa, Hisenda o Correos abans que t'arribin.</p>
+    </div>
+  </div>
+
+  <div class="feature-card">
+    <div class="feature-icon"><i class="fas fa-bell"></i></div>
+    <div class="feature-content">
+      <h4>Alertes Immediates</h4>
+      <p>Notificació al mòbil en el moment exacte que detectem una amenaça.</p>
+    </div>
+  </div>
+
+  <div class="feature-card feature-card-whatsapp">
+    <div class="feature-icon"><i class="fab fa-whatsapp"></i></div>
+    <div class="feature-content">
+      <h4>Suport Humà</h4>
+      <p>Dubtes davant un email rar? Envia'ns-el per WhatsApp i et diem si és segur.</p>
+    </div>
+  </div>
+
+</div>
+
+<span id="splithere"></span>
+
+<hr class="radar-section-divider">
+
+<h3 class="radar-process-title">Com funciona el servei?</h3>
+
+<div class="process-container">
+  
+  <div class="process-step">
+    <div class="step-number">1</div>
+    <h4>Activació</h4>
+    <p>Ens dones el teu domini i el teu email. Sense instal·lar res. En 24h el radar està actiu.</p>
+  </div>
+  
+  <div class="process-step">
+    <div class="step-number">2</div>
+    <h4>Vigilància 24/7</h4>
+    <p>Els nostres sistemes rastregen Internet i la Dark Web. Si tot va bé, silenci absolut.</p>
+  </div>
+
+  <div class="process-step">
+    <div class="step-number step-number-green">3</div>
+    <h4>El teu "Botó del Pànic"</h4>
+    <p>Un email rar? Envia'ns la foto per WhatsApp i et diem si és segur.</p>
+  </div>
+
+  <div class="process-step">
+    <div class="step-number">4</div>
+    <h4>Alerta i Solució</h4>
+    <p>Si detectem una amenaça real, t'avisem al mòbil i et diem com tancar-la.</p>
+  </div>
+
+</div>
 
 <div class="pricing-box">
   <div class="pricing-header">
@@ -67,7 +183,7 @@ El teu negoci a Internet vigilat com ho faria un hacker... però per avisar-te a
       <tr>
         <th>Pla</th>
         <th>Autònom <small>(1 persona)</small></th>
-        <th>Empresa <small>(Fins a 10 persones)</small></th>
+        <th>Empresa <small>(Fins a 10)</small></th>
       </tr>
     </thead>
     <tbody>
@@ -95,7 +211,7 @@ El teu negoci a Internet vigilat com ho faria un hacker... però per avisar-te a
     </button>
 
    <a href="https://wa.me/34618985130?text=Hola%20GuardianHubX,%20tinc%20alguns%20dubtes%20sobre%20GuardianRadar%20abans%20de%20contractar." target="_blank" class="btn-action btn-whatsapp-action">
-      <i class="fab fa-whatsapp"></i> Tinc dubtes, parlem-ne
+      <i class="fab fa-whatsapp"></i> Tinc dubtes, parlem
     </a>
   </div>
 

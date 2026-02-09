@@ -426,3 +426,6 @@
   translation: "GuardianHubX - Advanced enterprise cybersecurity solutions"
 - id: "eines_destacades"
   translation: "Recommended tools:"
+
+- id: "testimonials_title"
+  translation: "What our clients say"

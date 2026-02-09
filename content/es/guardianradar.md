@@ -1,24 +1,27 @@
 ---
 title: "GuardianRadar"
 slug: "guardianradar"
-layout: "products"
-logo: "/img/guardianradar-logo.png"
+layout: "radar"
+logo: "/img/guardianradar-logo.webp"
 tagline: "Sin instalaciones. Sin tecnicismos. Sin complicaciones."
 intro:
   - title: "Te avisamos antes de que sea un problema"
     description: "Si algo le pasa a tu email, tu web o tus datos en Internet, tienes que saberlo. Hemos diseñado este servicio para autónomos y pequeñas empresas (hasta 10 empleados) que no quieren saber de ciberseguridad… pero sí quieren saber si están en riesgo. Sin perder el tiempo."
-    img: "/img/guardianradar-cover.png"
+    img: "/img/guardianradar-cover.webp"
     alt: "Vigilancia digital GuardianRadar"
 hide_extra_ctas: true
 
 texttitle: "Vigilamos por ti 24/7:"
 screenshots:
-  - image: "/img/guardianradar-whatsapp.png"
+  - image: "/img/guardianradar-whatsapp.webp"
     alt: "Alertas inmediatas al móvil"
-  - image: "/img/guardianradar-whatsapp-consulta.png"
+  - image: "/img/guardianradar-whatsapp-consulta.webp"
     alt: "Consultas por WhatsApp"
-  - image: "/img/guardianradar-informe.png"
+  - image: "/img/guardianradar-informe.webp"
     alt: "Informe de estado claro y simple"
+  - image: "/img/guardianradar-seguro.webp"
+    alt: "Vigilancia Activa: Sin amenazas"
+
 popup:
   title: "Activar Vigilancia"
   subtitle: "Rellena tus datos y te contactamos directamente por WhatsApp."
@@ -32,29 +35,142 @@ popup:
   plans:
     - "Plan SOLO (Autónomo) - 9,99€"
     - "Plan SQUAD (Empresa) - 29,99€"
+  
+testimonials:
+  - name: "Marc Tomás"
+    role: "Asesor Energético"
+    image: "/img/testimonials/marc-tomas.webp"
+    quote: "GuardianRadar me avisó de una filtración de credenciales que ni sabía que existía. Cambié los accesos a tiempo y evité un problema serio con datos de mis clientes. Cualquier autónomo debería tenerlo."
+  
+  - name: "Anna Muñoz"
+    role: "Gestoría - Prois Empresarial"
+    image: "/img/testimonials/anna-munoz.webp"
+    quote: "Al ver lo expuestos que estábamos sin saberlo, no solo lo contratamos, sino que hemos empezado a recomendarlo a nuestros propios clientes. Es la forma más sencilla de saber si tu empresa está segura."
+
+  - name: "Albert Beltran"
+    role: "Abogado"
+    image: "/img/testimonials/albert-betran.webp"
+    quote: "Pensaba que con el antivirus era suficiente, pero el riesgo real está fuera. Gracias a GuardianRadar sé si los datos de mi despacho están expuestos antes de que alguien los use. Es tranquilidad total."
+
+  - name: "Frank Santos"
+    role: "Director Sanblach - Reformas"
+    image: "/img/testimonials/frank-santos.webp"
+    quote: "Recibimos una alerta de la Dark Web. En 10 minutos, siguiendo sus indicaciones por WhatsApp, lo solucionamos. No quiero imaginar qué habría pasado si no nos llegamos a enterar."
+
+faq_title: "Preguntas Frecuentes y Dudas Habituales"
+faq_subtitle: "Resolvemos las dudas que suelen tener nuestros clientes antes de empezar."
+faq_items:
+  - question: "Ya tengo un antivirus instalado, ¿por qué necesito esto?"
+    answer: "**El antivirus protege tu ordenador, nosotros protegemos tu identidad.** El antivirus evita que entren virus en tu PC, pero no puede saber si alguien ha robado tu contraseña en la Dark Web, si están suplantando tu dominio para estafar a tus clientes o si hay una oleada de fraude activa. Son servicios complementarios: el antivirus es la cerradura de la puerta, **GuardianRadar es la alarma y las cámaras de seguridad**."
+  - question: "¿Vais a leer mis correos o ver mis archivos?"
+    answer: "**Absolutamente NO.** No instalamos nada en tu ordenador ni tenemos acceso a tu buzón. Nosotros vigilamos **desde fuera**: rastreamos internet y bases de datos filtradas buscando tu dirección de email o tu dominio. Si aparece algo ahí fuera, es cuando te avisamos."
+  - question: "No soy nada técnico, ¿sabré usarlo?"
+    answer: "**Si sabes usar WhatsApp, sabes usar GuardianRadar.** No tienes que configurar paneles de control complejos. Si detectamos un peligro, te llega un mensaje al móvil explicándote qué pasa y qué botón apretar para solucionarlo. Y si dudas, nos contestas al WhatsApp y un humano te ayuda."
+  - question: "¿Qué pasa si recibo un correo sospechoso de Hacienda, Correos o un banco?"
+    answer: "Esta es la parte favorita de nuestros clientes. Antes de hacer clic, **haz una captura de pantalla y envíanosla por WhatsApp.** Nuestro equipo la analizará al momento y te dirá: *'Es una estafa, bórralo'* o *'Es legítimo, puedes abrirlo'*. Es como tener un experto en ciberseguridad en el bolsillo."
+  - question: "¿El precio subirá después del primer año?"
+    answer: "La oferta actual (9,99€ o 29,99€) es un precio especial de lanzamiento para los primeros 50 clientes. Si lo contratas ahora, **te mantenemos este precio durante los primeros 12 meses**. Después, la renovación es al precio estándar, pero te avisaremos con antelación y podrás cancelar si lo deseas."
+  - question: "¿Cómo funciona el 'Informe Técnico' de 100€ y cuándo lo necesito?"
+    answer: "El servicio mensual vigila tu identidad. El **Informe Técnico** es una auditoría puntual profunda de tu web: miramos si tu dominio está mal configurado (DNS, DMARC), si tienes puertos abiertos o si tu certificado SSL es vulnerable. Recomendamos pedirlo una vez al año o si acabas de lanzar una web nueva."
 ---
 
 Tu negocio en Internet vigilado como lo haría un hacker... pero para avisarte a tiempo.
 
-### Tu escudo digital en 7 puntos:
+<h3 class="mb-4">Tu escudo digital cubre estos 7 frentes:</h3>
 
-* 📧 **Tus cuentas y dominio:** Monitorizamos tu identidad corporativa.
-* 🕵️ **La Dark Web:** Rastreo continuo de tus datos filtrados.
-* 🔐 **Contraseñas:** Te avisamos si tus claves están comprometidas.
-* 🪪 **Datos Críticos:** Vigilancia de DNI, tarjetas y cuentas expuestas.
-* 📢 **Alertas de Oleadas de Fraude:** ¿Hay una estafa masiva de Endesa o Hacienda circulando? Te avisamos **antes de que te llegue el correo** para que tú y tu equipo estéis prevenidos.
-* 🚨 **Alertas Inmediatas:** Aviso al móvil en el momento que detectamos algo.
-* 💬 **Soporte Humano (WhatsApp):** Resolvemos tus dudas ante emails o SMS sospechosos.
+<div class="features-grid">
+  
+  <div class="feature-card">
+    <div class="feature-icon"><i class="fas fa-envelope"></i></div>
+    <div class="feature-content">
+      <h4>Cuentas y Dominio</h4>
+      <p>Monitorizamos tu identidad corporativa y evitamos suplantaciones.</p>
+    </div>
+  </div>
 
----
+  <div class="feature-card">
+    <div class="feature-icon"><i class="fas fa-user-secret"></i></div>
+    <div class="feature-content">
+      <h4>La Dark Web</h4>
+      <p>Rastreo continuo de tus datos filtrados en mercados negros.</p>
+    </div>
+  </div>
 
-### ¿Cómo funciona?
+  <div class="feature-card">
+    <div class="feature-icon"><i class="fas fa-key"></i></div>
+    <div class="feature-content">
+      <h4>Contraseñas</h4>
+      <p>Te avisamos al instante si tus claves antiguas o actuales están comprometidas.</p>
+    </div>
+  </div>
 
-1.  **Te avisamos** al momento si detectamos una amenaza.
-2.  **Te explicamos** qué significa sin lenguaje técnico.
-3.  **Te indicamos** qué debes hacer paso a paso.
+  <div class="feature-card">
+    <div class="feature-icon"><i class="fas fa-id-card"></i></div>
+    <div class="feature-content">
+      <h4>Datos Críticos</h4>
+      <p>Vigilancia de DNI, tarjetas de crédito y cuentas bancarias expuestas.</p>
+    </div>
+  </div>
 
----
+  <div class="feature-card">
+    <div class="feature-icon"><i class="fas fa-bullhorn"></i></div>
+    <div class="feature-content">
+      <h4>Alertas de Fraude Masivo</h4>
+      <p>Avisos preventivos sobre estafas de Endesa, Hacienda o Correos antes de que te lleguen.</p>
+    </div>
+  </div>
+
+  <div class="feature-card">
+    <div class="feature-icon"><i class="fas fa-bell"></i></div>
+    <div class="feature-content">
+      <h4>Alertas Inmediatas</h4>
+      <p>Notificación al móvil en el momento exacto que detectamos una amenaza.</p>
+    </div>
+  </div>
+
+  <div class="feature-card feature-card-whatsapp">
+    <div class="feature-icon"><i class="fab fa-whatsapp"></i></div>
+    <div class="feature-content">
+      <h4>Soporte Humano</h4>
+      <p>¿Dudas ante un email raro? Envíanoslo por WhatsApp y te decimos si es seguro.</p>
+    </div>
+  </div>
+
+</div>
+
+<span id="splithere"></span>
+
+<hr class="radar-section-divider">
+
+<h3 class="radar-process-title">¿Cómo funciona el servicio?</h3>
+
+<div class="process-container">
+  
+  <div class="process-step">
+    <div class="step-number">1</div>
+    <h4>Activación</h4>
+    <p>Nos das tu dominio y tu email. Sin instalar nada. En 24h el radar está activo.</p>
+  </div>
+  
+  <div class="process-step">
+    <div class="step-number">2</div>
+    <h4>Vigilancia 24/7</h4>
+    <p>Nuestros sistemas rastrean Internet y la Dark Web. Si todo va bien, silencio absoluto.</p>
+  </div>
+
+  <div class="process-step">
+    <div class="step-number step-number-green">3</div>
+    <h4>Tu "Botón del Pánico"</h4>
+    <p>¿Un email raro? Mándanos la foto por WhatsApp y te decimos si es seguro.</p>
+  </div>
+
+  <div class="process-step">
+    <div class="step-number">4</div>
+    <h4>Alerta y Solución</h4>
+    <p>Si detectamos una amenaza real, te avisamos al móvil y te decimos cómo cerrarla.</p>
+  </div>
+
+</div>
 
 <div class="pricing-box">
   <div class="pricing-header">
@@ -67,7 +183,7 @@ Tu negocio en Internet vigilado como lo haría un hacker... pero para avisarte a
       <tr>
         <th>Plan</th>
         <th>Autónomo <small>(1 persona)</small></th>
-        <th>Empresa <small>(Hasta 10 personas)</small></th>
+        <th>Empresa <small>(Hasta 10)</small></th>
       </tr>
     </thead>
     <tbody>

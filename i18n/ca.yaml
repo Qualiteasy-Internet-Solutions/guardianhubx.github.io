@@ -429,3 +429,6 @@
   translation: "GuardianHubX - Solucions avançades ciberseguretat per empreses"
 - id: "eines_destacades"
   translation: "Eines destacades:"
+
+- id: "testimonials_title"
+  translation: "El que diuen els nostres clients"

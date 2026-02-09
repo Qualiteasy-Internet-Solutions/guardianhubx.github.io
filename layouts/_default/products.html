@@ -93,6 +93,47 @@
     </div>
   </section>
   {{ end }}
+
+  {{ if .Params.testimonials }}
+  <section class="testimonials-section py-5 bg-white">
+    <div class="container">
+      <h2 class="text-center mb-5" style="color: #0d2c56;">{{ i18n "que_diuen_clients" | default "Lo que dicen nuestros clientes" }}</h2>
+      <div class="row">
+        {{ range .Params.testimonials }}
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="testimonial-card h-100 p-4 shadow-sm d-flex flex-column justify-content-between" style="background: #f8f9fa; border-radius: 10px; border-left: 4px solid #0d2c56;">
+            
+            <div>
+              <div class="mb-3 text-warning">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p class="fst-italic text-muted mb-4">"{{ .quote }}"</p>
+            </div>
+
+            <div class="d-flex align-items-center mt-3 pt-3 border-top">
+                
+                {{ if .image }}
+                <div class="flex-shrink-0 me-4"> <img src="{{ .image }}" alt="{{ .name }}" class="rounded-circle" style="width: 85px; height: 85px; object-fit: cover; border: 3px solid #e9ecef;">
+                </div>
+                {{ end }}
+
+                <div>
+                  <h5 class="mb-1" style="font-size: 1.1rem; font-weight: bold; color: #0d2c56;">{{ .name }}</h5>
+                  <small class="text-muted" style="font-size: 0.9rem;">{{ .role }}</small>
+                </div>
+              </div>
+
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{ partial "faq.html" . }}
+
+
   </article>
   <!-- Contact Form Partial -->
   {{ if not .Params.hide_extra_ctas }}

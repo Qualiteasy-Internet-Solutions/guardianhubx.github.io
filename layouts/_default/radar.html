@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="{{ .Lang }}">
+<head>
+    {{ partial "head.html" . }}
+    <link rel="stylesheet" href="/css/radar.css">
+</head>
+<body>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-584VRJ97" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  {{ partial "header-inner.html" . }}
+
+<section class="landing-hero-section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 landing-fade-in">              
+        <h1 class="landing-hero-title {{ .Slug }}">{{ .Title }}</h1>
+        <h2 class="landing-hero-subtitle">{{ .Params.tagline }}</h2>
+      </div>
+      <div class="col-lg-6 text-center landing-slide-in-right">
+        <div class="landing-hero-img-wrapper">
+          <img src="{{ .Params.logo }}" alt="{{ .Title }} Logo" class="img-fluid mb-3">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<article>
+  <section class="landing-cta-section">
+    {{ range .Params.intro }}
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8 landing-slide-in-left order-1 order-md-2">        
+          <h3>{{ .title }}</h3>
+          <div class="mb-3 text-start text-white"><div>{{ .description | markdownify }}</div></div>
+        </div>
+        <div class="col-lg-4 text-center landing-slide-in-right order-2 order-md-1">
+          <img src="{{ .img }}" alt=" {{ .alt }}" class="img-fluid landing-training-img">
+        </div>
+      </div>
+    </div>
+    {{ end }}    
+  </section>
+
+  <section class="landing-section py-5"> 
+    <div class="container">
+
+     {{ $contentParts := split .Content "<span id=\"splithere\"></span>" }}
+      
+      <div class="row align-items-start mb-5">
+        
+        <div class="row align-items-center mb-5">
+        
+        <div class="col-lg-6 landing-slide-in-left"> <h2 class="landing-section-title text-start">{{ .Params.texttitle }}</h2>
+          <div class="mb-3">
+            {{ index $contentParts 0 | safeHTML }}
+          </div>
+        </div>
+        
+        <div class="col-lg-6 landing-slide-in-right order-2 order-md-1 radar-sticky-col">
+          
+          <div class="radar-image-grid">
+            {{ range .Params.screenshots }}
+            <div class="text-center">
+              <img src="{{ .image }}" class="img-fluid zoomable-image radar-img-limit" alt="{{ .alt }}" onclick="openFullscreen(this)" />
+            </div>
+            {{ end }}
+          </div>
+
+        </div>
+
+      </div>
+
+      {{ if gt (len $contentParts) 1 }}
+      <div class="row mt-5">
+        <div class="col-12 landing-fade-in">
+          {{ index $contentParts 1 | safeHTML }}
+        </div>
+      </div>
+      {{ end }}
+
+    </div>
+  </section>
+
+  {{ if .Params.video }}
+  <section class="product-video container ratio ratio-16x9 mb-5">
+    <iframe src="{{ .Params.video }}" allowfullscreen></iframe>
+  </section>
+  {{ end }}
+
+  {{ if .Params.testimonials }}
+  <section class="testimonials-section py-5 bg-white">
+    <div class="container">
+      <h2 class="text-center mb-5" style="color: #0d2c56;">{{ i18n "testimonials_title" }}</h2>
+      <div class="row">
+        {{ range .Params.testimonials }}
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="testimonial-card-radar shadow-sm">
+            <div>
+              <div class="mb-3 text-warning">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p class="fst-italic text-muted mb-4">"{{ .quote }}"</p>
+            </div>
+            <div class="d-flex align-items-center mt-3 pt-3 border-top">
+                {{ if .image }}
+                <div class="flex-shrink-0 me-4"> 
+                  <img src="{{ .image }}" alt="{{ .name }}" class="rounded-circle testimonial-avatar">
+                </div>
+                {{ end }}
+                <div>
+                  <h5 class="testimonial-name mb-1">{{ .name }}</h5>
+                  <small class="text-muted testimonial-role">{{ .role }}</small>
+                </div>
+            </div>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{ partial "faq.html" . }}
+
+  {{ if not .Params.hide_extra_ctas }}
+  <section class="landing-steps-section py-5">
+    <div class="container text-center mb-8">
+      {{ if or (isset .Params "downloads") (isset .Params "links") }}
+        <h2 class="landing-cta-title">{{ i18n "descargar_info" }}</h2>
+        <div class="d-flex justify-content-center flex-wrap gap-2 mb-3">
+          {{ range .Params.downloads }}
+            <a href="/docs/{{ .file }}-{{ cond (eq $.Site.Language.Lang "ca") "es" $.Site.Language.Lang }}.pdf" class="btn btn-primary pdf-download">
+              <i class="fas fa-file-pdf"></i> {{ .name }}
+            </a>
+          {{ end }}
+          {{ range .Params.links }}
+            <a href="{{ .url }}" class="btn btn-success" target="_blank">
+              <i class="fas fa-globe"></i> {{ .name }}
+            </a>
+          {{ end }}
+        </div>
+      {{ else }}
+          {{ partial "test-cta" . }}
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+</article>
+
+  {{ if not .Params.hide_extra_ctas }}
+  <div id="zona-contacte">
+    {{ partial "contact-cta-product" . }}
+  </div>
+  {{ end }}
+
+  {{ partial "footer.html" . }}
+  {{ partial "fullscreen-overlay.html" . }}
+  <script src="/js/util/fullscreen.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+      window.addEventListener('scroll', function() {
+          const navbar = document.querySelector('.landing-navbar');
+          if (navbar && window.scrollY > 50) navbar.classList.add('landing-scrolled');
+          else if (navbar) navbar.classList.remove('landing-scrolled');
+      });
+      const observer = new IntersectionObserver(function(entries) {
+          entries.forEach(entry => {
+              if (entry.isIntersecting) entry.target.classList.add('landing-visible');
+          });
+      }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+      document.querySelectorAll('.landing-fade-in, .landing-slide-in-left, .landing-slide-in-right').forEach(el => observer.observe(el));
+      window.addEventListener('load', function() { document.body.style.opacity = '1'; });
+  </script>
+
+  {{ if .Params.popup }} 
+  <div id="modalPedido" class="modal-overlay" style="display: none;">
+    <div class="modal-content">
+      <span class="close-modal" onclick="cerrarPopup()">&times;</span>
+      <div class="modal-header">      
+        <img src="{{ .Params.logo }}" alt="{{ .Title }}" style="height: 40px; margin-bottom: 10px;">
+        <h3>{{ .Params.popup.title }}</h3>
+        <p>{{ .Params.popup.subtitle }}</p>
+      </div>
+      <form id="formPedido" onsubmit="enviarPedidoWhatsapp(event)">
+        <input type="hidden" id="wa_intro" value="{{ .Params.popup.wa_intro }}">
+        <input type="hidden" id="wa_ending" value="{{ .Params.popup.wa_ending }}">
+        <div class="form-group">
+          <label>{{ .Params.popup.label_name }}</label>
+          <input type="text" id="clienteNombre" required placeholder="Ej: Max">
+        </div>
+        <div class="form-group">
+          <label>{{ .Params.popup.label_email }}</label>
+          <input type="email" id="clienteEmail" required placeholder="email@domain.com">
+        </div>
+        <div class="form-group">
+          <label>{{ .Params.popup.label_plan }}</label>
+          <select id="clientePlan">
+            {{ range .Params.popup.plans }}
+              <option value="{{ . }}">{{ . }}</option>
+            {{ end }}
+          </select>
+        </div>
+        <button type="submit" class="btn-submit-whatsapp">
+          <i class="fab fa-whatsapp"></i> {{ .Params.popup.btn_text }}
+        </button>
+        <p class="legal-note">{{ .Params.popup.legal }}</p>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function abrirPopup() { document.getElementById('modalPedido').style.display = 'flex'; }
+    function cerrarPopup() { document.getElementById('modalPedido').style.display = 'none'; }
+    window.onclick = function(event) {
+      var modal = document.getElementById('modalPedido');
+      if (event.target == modal) { modal.style.display = "none"; }
+    }
+
+    function enviarPedidoWhatsapp(e) {
+      e.preventDefault(); 
+      var teuMobil = "34618985130";
+      var introText = document.getElementById('wa_intro').value;
+      var endingText = document.getElementById('wa_ending').value;
+      var nombre = document.getElementById('clienteNombre').value;
+      var email = document.getElementById('clienteEmail').value;
+      var plan = document.getElementById('clientePlan').value;
+      
+      var missatge = "*" + introText + "* 🚀\n\n" +
+                    "👤 *Name:* " + nombre + "\n" +
+                    "📧 *Email:* " + email + "\n" +
+                    "🛡️ *Plan:* " + plan + "\n\n" +
+                    endingText;
+
+      var url = "https://wa.me/" + teuMobil + "?text=" + encodeURIComponent(missatge);
+      window.open(url, '_blank');
+      cerrarPopup();
+    }
+  </script>
+  {{ end }}
+</body>
+</html>
