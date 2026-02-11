@@ -8,7 +8,7 @@ draft: false
 <section class="section">
   <div class="container" style="text-align: center; margin-bottom: 40px;">
     <h1 class="title-xl">Activa tu Radar</h1>
-    <p class="lead">Para que GuardianRadar pueda protegerte, necesitamos vincular tu pedido con los dominios y correos que debemos vigilar en la <strong>Dark Web</strong>.</p>
+    <p class="lead">Para que GuardianRadar pueda protegerte, necesitamos pedirte algunos datos para activar el servicio.</p>
   </div>
 </section>
 
