@@ -65,6 +65,17 @@ testimonials:
 faq_title: "Preguntas Frecuentes y Dudas Habituales"
 faq_subtitle: "Resolvemos las dudas que suelen tener nuestros clientes antes de empezar."
 faq_items:
+  - question: "¿Qué servicios incluye exactamente la cuota mensual?"
+    answer: "Tu suscripción activa inmediatamente estos **7 puntos de defensa**:<br>
+    1. **Vigilancia de Dominio:** Detectamos imitadores de tu web.<br>
+    2. **Rastreo Dark Web:** Buscamos tus datos en mercados negros.<br>
+    3. **Control de Contraseñas:** Alertas de claves robadas a empleados.<br>
+    4. **Datos Críticos:** Monitorización de DNI, IBAN y Tarjetas.<br>
+    5. **Alertas de Fraude:** Avisos anticipados de estafas virales.<br>
+    6. **Notificaciones Urgentes:** Alertas al móvil en tiempo real.<br>
+    7. **Soporte Humano:** Consultas de seguridad por WhatsApp."
+  - question: "¿Qué significa 'Vigilancia de Dominio'? ¿Arregláis mi web?"
+    answer: "Es importante diferenciarlo: **No entramos en tu web para buscar fallos técnicos** (eso sería una auditoría). Lo que hacemos es vigilar la **reputación y la marca**: detectamos si alguien compra un dominio casi idéntico al tuyo (ej: `tubanco.org` en vez de `.com`) para suplantar tu identidad y estafar a tus clientes. Es protección de marca, no mantenimiento web."
   - question: "Ya tengo un antivirus instalado, ¿por qué necesito esto?"
     answer: "**El antivirus protege tu ordenador, nosotros protegemos tu identidad.** El antivirus evita que entren virus en tu PC, pero no puede saber si alguien ha robado tu contraseña en la Dark Web, si están suplantando tu dominio para estafar a tus clientes o si hay una oleada de fraude activa. Son servicios complementarios: el antivirus es la cerradura de la puerta, **GuardianRadar es la alarma y las cámaras de seguridad**."
   - question: "¿Vais a leer mis correos o ver mis archivos?"
@@ -72,9 +83,7 @@ faq_items:
   - question: "No soy nada técnico, ¿sabré usarlo?"
     answer: "**Si sabes usar WhatsApp, sabes usar GuardianRadar.** No tienes que configurar paneles de control complejos. Si detectamos un peligro, te llega un mensaje al móvil explicándote qué pasa y qué botón apretar para solucionarlo. Y si dudas, nos contestas al WhatsApp y un humano te ayuda."
   - question: "¿Qué pasa si recibo un correo sospechoso de Hacienda, Correos o un banco?"
-    answer: "Esta es la parte favorita de nuestros clientes. Antes de hacer clic, **haz una captura de pantalla y envíanosla por WhatsApp.** Nuestro equipo la analizará al momento y te dirá: *'Es una estafa, bórralo'* o *'Es legítimo, puedes abrirlo'*. Es como tener un experto en ciberseguridad en el bolsillo."
-  - question: "¿El precio subirá después del primer año?"
-    answer: "La oferta actual (9,99€ o 29,99€) es un precio especial de lanzamiento para los primeros 50 clientes. Si lo contratas ahora, **te mantenemos este precio durante los primeros 12 meses**. Después, la renovación es al precio estándar, pero te avisaremos con antelación y podrás cancelar si lo deseas."
+    answer: "Esta es la parte favorita de nuestros clientes. Antes de hacer clic, **haz una captura de pantalla y envíanosla por WhatsApp.** Nuestro equipo la analizará al momento y te dirá: *'Es una estafa, bórralo'* o *'Es legítimo, puedes abrirlo'*. Es como tener un experto en ciberseguridad en el bolsillo."  
   - question: "¿Cómo funciona el 'Informe Técnico' de 100€ y cuándo lo necesito?"
     answer: "El servicio mensual vigila tu identidad. El **Informe Técnico** es una auditoría puntual profunda de tu web: miramos si tu dominio está mal configurado (DNS, DMARC), si tienes puertos abiertos o si tu certificado SSL es vulnerable. Recomendamos pedirlo una vez al año o si acabas de lanzar una web nueva."
 ---

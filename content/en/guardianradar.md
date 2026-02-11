@@ -64,18 +64,28 @@ testimonials:
 faq_title: "Frequently Asked Questions"
 faq_subtitle: "We answer the doubts our clients usually have before starting."
 faq_items:
-  - question: "I already have an antivirus installed, why do I need this?"
-    answer: "**Antivirus protects your computer, we protect your identity.** An antivirus prevents viruses from entering your PC, but it cannot know if someone stole your password on the Dark Web, if they are spoofing your domain to scam your clients, or if there is an active fraud wave. They are complementary services: the antivirus is the lock on the door, **GuardianRadar is the alarm and security cameras**."
+  - question: "What exactly does the monthly fee cover?"
+    answer: "Your subscription immediately activates these **7 defense points**:<br>
+    1. **Domain Monitoring:** We detect website imitators.<br>
+    2. **Dark Web Tracking:** We search for your data in black markets.<br>
+    3. **Password Control:** Alerts for stolen employee credentials.<br>
+    4. **Critical Data:** Monitoring of ID cards, IBANs, and Credit Cards.<br>
+    5. **Fraud Alerts:** Early warnings of viral scams.<br>
+    6. **Urgent Notifications:** Real-time mobile alerts.<br>
+    7. **Human Support:** Security consultations via WhatsApp."
+  - question: "What does 'Domain Monitoring' mean? Do you fix my website?"
+    answer: "It is important to distinguish: **We do not enter your website to look for technical bugs** (that would be an audit). What we do is monitor **reputation and brand**: we detect if someone buys a domain almost identical to yours (e.g., `yourbank.org` instead of `.com`) to impersonate you and scam your clients. It is brand protection, not web maintenance."
+  - question: "I already have an antivirus, why do I need this?"
+    answer: "**Antivirus protects your computer; we protect your identity.** An antivirus prevents viruses from entering your PC, but it cannot know if someone has stolen your password on the Dark Web, if they are impersonating your domain, or if there is an active fraud wave. They are complementary services: the antivirus is the door lock, **GuardianRadar is the alarm and security cameras**."
   - question: "Will you read my emails or see my files?"
-    answer: "**Absolutely NOT.** We do not install anything on your computer nor do we have access to your inbox. We watch **from the outside**: we track the internet and leaked databases looking for your email address or domain. If something appears out there, that's when we warn you."
-  - question: "I'm not technical at all, will I know how to use it?"
-    answer: "**If you know how to use WhatsApp, you know how to use GuardianRadar.** You don't have to configure complex control panels. If we detect a danger, you get a message on your mobile explaining what is happening and which button to press to solve it. And if you have doubts, you reply on WhatsApp and a human helps you."
-  - question: "What happens if I receive a suspicious email from the Tax Office, Post Office, or a bank?"
+    answer: "**Absolutely NOT.** We do not install anything on your computer, nor do we access your mailbox. We monitor **from the outside**: we track the internet and leaked databases looking for your email address or domain. If something appears out there, that's when we alert you."
+  - question: "I'm not tech-savvy at all, will I know how to use it?"
+    answer: "**If you know how to use WhatsApp, you know how to use GuardianRadar.** You don't have to configure complex control panels. If we detect danger, you get a message on your mobile explaining what's happening and what button to press to fix it. And if you have doubts, reply on WhatsApp, and a human will help you."
+  - question: "What if I receive a suspicious email from the Tax Office, Post Office, or a bank?"
     answer: "This is our clients' favorite part. Before clicking, **take a screenshot and send it to us via WhatsApp.** Our team will analyze it instantly and tell you: *'It's a scam, delete it'* or *'It's legitimate, you can open it'*. It's like having a cybersecurity expert in your pocket."
-  - question: "Will the price go up after the first year?"
-    answer: "The current offer (9.99€ or 29.99€) is a special launch price for the first 50 clients. If you sign up now, **we keep this price for the first 12 months**. After that, renewal is at the standard price, but we will notify you in advance, and you can cancel if you wish."
   - question: "How does the 100€ 'Technical Report' work and when do I need it?"
-    answer: "The monthly service monitors your identity. The **Technical Report** is a deep, one-time audit of your website: we check if your domain is misconfigured (DNS, DMARC), if you have open ports, or if your SSL certificate is vulnerable. We recommend requesting it once a year or if you have just launched a new website."
+    answer: "The monthly service monitors your identity. The **Technical Report** is a one-off deep audit of your website: we check if your domain is poorly configured (DNS, DMARC), if you have open ports, or if your SSL certificate is vulnerable. We recommend requesting it once a year or if you have just launched a new website."
+
 ---
 
 Your business on the Internet monitored like a hacker would... but to warn you in time.

@@ -63,18 +63,27 @@ testimonials:
 faq_title: "Preguntes Freqüents i Dubtes Habituals"
 faq_subtitle: "Resolem els dubtes que solen tenir els nostres clients abans de començar."
 faq_items:
+  - question: "Quins serveis inclou exactament la quota mensual?"
+    answer: "La teva subscripció activa immediatament aquests **7 punts de defensa**:<br>
+    1. **Vigilància de Domini:** Detectem imitadors de la teva web.<br>
+    2. **Rastreig Dark Web:** Busquem les teves dades en mercats negres.<br>
+    3. **Control de Contrasenyes:** Alertes de claus robades a empleats.<br>
+    4. **Dades Crítiques:** Monitoratge de DNI, IBAN i Targetes.<br>
+    5. **Alertes de Frau:** Avisos anticipats d'estafes virals.<br>
+    6. **Notificacions Urgents:** Alertes al mòbil en temps real.<br>
+    7. **Suport Humà:** Consultes de seguretat per WhatsApp."
+  - question: "Què vol dir 'Vigilància de Domini'? Arregleu la meva web?"
+    answer: "És important diferenciar-ho: **No entrem a la teva web per buscar errors tècnics** (això seria una auditoria). El que fem és vigilar la **reputació i la marca**: detectem si algú compra un domini gairebé idèntic al teu (ex: `teubanc.org` en lloc de `.com`) per suplantar la teva identitat i estafar els teus clients. És protecció de marca, no manteniment web."
   - question: "Ja tinc un antivirus instal·lat, per què necessito això?"
-    answer: "**L'antivirus protegeix el teu ordinador, nosaltres protegim la teva identitat.** L'antivirus evita que entrin virus al teu PC, però no pot saber si algú ha robat la teva contrasenya a la Dark Web, si estan suplantant el teu domini per estafar els teus clients o si hi ha una onada de frau activa. Són serveis complementaris: l'antivirus és el pany de la porta, **GuardianRadar és l'alarma i les càmeres de seguretat**."
-  - question: "Llegireu els meus correus o veureu els meus arxius?"
-    answer: "**Absolutament NO.** No instal·lem res al teu ordinador ni tenim accés a la teva bústia. Nosaltres vigilem **des de fora**: rastregem internet i bases de dades filtrades buscant la teva adreça d'email o el teu domini. Si apareix alguna cosa allà fora, és quan t'avisem."
+    answer: "**L'antivirus protegeix el teu ordinador, nosaltres protegim la teva identitat.** L'antivirus evita que entrin virus al teu PC, però no pot saber si algú ha robat la teva contrasenya a la Dark Web, si estan suplantant el teu domini o si hi ha una onada de frau activa. Són serveis complementaris: l'antivirus és el pany de la porta, **GuardianRadar és l'alarma i les càmeres de seguretat**."
+  - question: "Llegireu els meus correus o veureu els meus fitxers?"
+    answer: "**Absolutament NO.** No instal·lem res al teu ordinador ni tenim accés a la teva bústia. Nosaltres vigilem **des de fora**: rastregem internet i bases de dades filtrades buscant la teva adreça de correu o el teu domini. Si apareix alguna cosa allà fora, és quan t'avisem."
   - question: "No soc gens tècnic, sabré fer-ho servir?"
     answer: "**Si saps fer servir WhatsApp, saps fer servir GuardianRadar.** No has de configurar panells de control complexos. Si detectem un perill, t'arriba un missatge al mòbil explicant-te què passa i quin botó prémer per solucionar-ho. I si dubtes, ens contestes al WhatsApp i un humà t'ajuda."
   - question: "Què passa si rebo un correu sospitós d'Hisenda, Correos o un banc?"
-    answer: "Aquesta és la part preferida dels nostres clients. Abans de fer clic, **fes una captura de pantalla i envia'ns-la per WhatsApp.** El nostre equip l'analitzarà al moment i et dirà: *'És una estafa, esborra-ho'* o *'És legítim, pots obrir-lo'*. És com tenir un expert en ciberseguretat a la butxaca."
-  - question: "El preu pujarà després del primer any?"
-    answer: "L'oferta actual (9,99€ o 29,99€) és un preu especial de llançament per als primers 50 clients. Si ho contractes ara, **et mantenim aquest preu durant els primers 12 mesos**. Després, la renovació és al preu estàndard, però t'avisarem amb antelació i podràs cancel·lar si ho desitges."
+    answer: "Aquesta és la part preferida dels nostres clients. Abans de fer clic, **fes una captura de pantalla i envia-ns-la per WhatsApp.** El nostre equip l'analitzarà al moment i et dirà: *'És una estafa, esborra-ho'* o *'És legítim, pots obrir-lo'*. És com tenir un expert en ciberseguretat a la butxaca."
   - question: "Com funciona l''Informe Tècnic' de 100€ i quan el necessito?"
-    answer: "El servei mensual vigila la teva identitat. L'**Informe Tècnic** és una auditoria puntual profunda del teu web: mirem si el teu domini està mal configurat (DNS, DMARC), si tens ports oberts o si el teu certificat SSL és vulnerable. Recomanem demanar-lo un cop l'any o si acabes de llançar un web nou."
+    answer: "El servei mensual vigila la teva identitat. L'**Informe Tècnic** és una auditoria puntual profunda de la teva web: mirem si el teu domini està mal configurat (DNS, DMARC), si tens ports oberts o si el teu certificat SSL és vulnerable. Recomanem demanar-lo un cop l'any o si acabes de llançar una web nova."
 ---
 
 El teu negoci a Internet vigilat com ho faria un hacker... però per avisar-te a temps.
