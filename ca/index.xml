@@ -79,11 +79,13 @@
  document.addEventListener('DOMContentLoaded', function() {
  const form = document.getElementById('radar-form');
  const progressFill = document.getElementById('progress-fill');
- const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzjApoCRR9VuhMRjDQx4i_Xn3Q8vFYoQ3jeOEw98z_pBYgVYpouScUwEI6IVldpLR5h/exec'; 
+ const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxWKa87uGXUPg_ofz7je1mziDz0TlBmB_8m_8ZRFtT2uwVc8PJq9ieiPFiUdtDC6vtJ/exec'; 
  
  let step = 0;
  let data = { 
- pack: '', num_comanda: '', nif_compra: '',
+ pack: '', 
+ empresa: '', contacte_nom: '', adreca: '', cp: '', poblacio: '', 
+ provincia: '', pais: 'Espanya', nif: '', telefon: '', email_reg: '',
  admin_nom: '', admin_dni: '', contacte_whatsapp: '',
  dominis: '', emails_radar: '' 
  };
@@ -96,7 +98,7 @@
  &lt;div class="form-slide active">
  &lt;div style="text-align:center; margin-bottom:30px;"> 
  &lt;h2 style="margin-top:10px; font-size:1.5rem;">Quin pla vols activar?&lt;/h2>
- &lt;p style="color:var(--text-light);">Selecciona el pack que acabes de contractar.&lt;/p></description></item><item><title>Descobreix el teu Nivell de Risc en Ciberseguretat</title><link>https://guardianhubx.com/ca/test/</link><pubDate>Mon, 04 Aug 2025 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/ca/test/</guid><description>&lt;section class="section">
+ &lt;p style="color:var(--text-light);">Selecciona el pack que has contractat per personalitzar la configuració.&lt;/p></description></item><item><title>Descobreix el teu Nivell de Risc en Ciberseguretat</title><link>https://guardianhubx.com/ca/test/</link><pubDate>Mon, 04 Aug 2025 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/ca/test/</guid><description>&lt;section class="section">
  &lt;div class="container">
  &lt;h1 class="title-xl">Descobreix el teu Nivell de Risc en Ciberseguretat&lt;/h1>
  &lt;p class="lead">Et preocupa un possible ciberatac? No saps si la teva organització està realment protegida?&lt;/p>
