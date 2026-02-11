@@ -71,11 +71,13 @@
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('radar-form');
     const progressFill = document.getElementById('progress-fill');
-    const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzjApoCRR9VuhMRjDQx4i_Xn3Q8vFYoQ3jeOEw98z_pBYgVYpouScUwEI6IVldpLR5h/exec'; 
+    const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxWKa87uGXUPg_ofz7je1mziDz0TlBmB_8m_8ZRFtT2uwVc8PJq9ieiPFiUdtDC6vtJ/exec'; 
 
     let step = 0;
     let data = { 
-        pack: '', num_comanda: '', nif_compra: '',
+        pack: '', 
+        empresa: '', contacte_nom: '', adreca: '', cp: '', poblacio: '', 
+        provincia: '', pais: 'Espanya', nif: '', telefon: '', email_reg: '',
         admin_nom: '', admin_dni: '', contacte_whatsapp: '',
         dominis: '', emails_radar: '' 
     };
@@ -84,37 +86,83 @@ document.addEventListener('DOMContentLoaded', function() {
         let html = "";
         switch(step) {
             case 0: // PAS 0: TRIAR PACK
-    html = `
-    <div class="form-slide active">
-        <div style="text-align:center; margin-bottom:30px;">            
-            <h2 style="margin-top:10px; font-size:1.5rem;">{{ i18n "radar_welcome_title" | safeJS }}</h2>
-            <p style="color:var(--text-light);">{{ i18n "radar_subtitle" | safeJS }}</p>
-        </div>
-        <div class="pack-selection">
-            <div class="pack-card" data-pack="autonom"><i class="fas fa-user-tie"></i><span>{{ i18n "radar_pack_autonom" | safeJS }}</span></div>
-            <div class="pack-card" data-pack="pime"><i class="fas fa-building"></i><span>{{ i18n "radar_pack_pime" | safeJS }}</span></div>
-        </div>
-    </div>`;
-    break;
-
-            case 1:
                 html = `
                 <div class="form-slide active">
-                    <h3 style="margin-bottom:20px;"><i class="fas fa-link" style="color:var(--primary); margin-right:10px;"></i> {{ i18n "radar_link_order_title" | safeJS }}</h3>
-                    <div class="field-group">
-                        <div class="field-label"><i class="fas fa-hashtag"></i> {{ i18n "radar_order_number_label" | safeJS }}</div>
-                        <input type="text" id="val-comanda" class="form-input" placeholder="{{ i18n "radar_order_placeholder" | safeJS }}" value="${data.num_comanda}">
-                        <span class="help-text">{{ i18n "radar_order_number_help" | safeJS }}</span>
+                    <div style="text-align:center; margin-bottom:30px;">            
+                        <h2 style="margin-top:10px; font-size:1.5rem;">{{ i18n "radar_welcome_title" | safeJS }}</h2>
+                        <p style="color:var(--text-light);">{{ i18n "radar_subtitle" | safeJS }}</p>
                     </div>
-                    <div class="field-group">
-                        <div class="field-label"><i class="fas fa-id-card"></i> {{ i18n "radar_nif_cif_label" | safeJS }}</div>
-                        <input type="text" id="val-nif" class="form-input" placeholder="{{ i18n "radar_nif_placeholder" | safeJS }}" value="${data.nif_compra}">
+                    <div class="pack-selection">
+                        <div class="pack-card" data-pack="autonom"><i class="fas fa-user-tie"></i><span>{{ i18n "radar_pack_autonom" | safeJS }}</span></div>
+                        <div class="pack-card" data-pack="pime"><i class="fas fa-building"></i><span>{{ i18n "radar_pack_pime" | safeJS }}</span></div>
                     </div>
-                    <button type="button" onclick="window.goNext(2)" class="btn-main">{{ i18n "radar_btn_verify_continue" | safeJS }} <i class="fas fa-arrow-right"></i></button>
                 </div>`;
                 break;
 
-            case 2:
+            case 1: // PAS 1: DADES FISCALS (NOU)
+                html = `
+                <div class="form-slide active">
+                    <h3 style="margin-bottom:20px;"><i class="fas fa-file-invoice" style="color:var(--primary); margin-right:10px;"></i> {{ i18n "radar_fiscal_title" | safeJS }}</h3>
+                    
+                    <div class="field-group">
+                        <div class="field-label"><i class="fas fa-building"></i> {{ i18n "radar_label_company" | safeJS }}</div>
+                        <input type="text" id="val-empresa" class="form-input" value="${data.empresa}">
+                    </div>
+
+                    <div style="display:grid; grid-template-columns: 1fr 1fr; gap:15px;">
+                        <div class="field-group">
+                            <div class="field-label"><i class="fas fa-user"></i> {{ i18n "radar_label_contact" | safeJS }}</div>
+                            <input type="text" id="val-contacte" class="form-input" value="${data.contacte_nom}">
+                        </div>
+                        <div class="field-group">
+                            <div class="field-label"><i class="fas fa-id-card"></i> {{ i18n "radar_label_nif" | safeJS }}</div>
+                            <input type="text" id="val-nif" class="form-input" value="${data.nif}">
+                        </div>
+                    </div>
+
+                    <div class="field-group">
+                        <div class="field-label"><i class="fas fa-map-marker-alt"></i> {{ i18n "radar_label_address" | safeJS }}</div>
+                        <input type="text" id="val-adreca" class="form-input" value="${data.adreca}">
+                    </div>
+
+                    <div style="display:grid; grid-template-columns: 1fr 2fr; gap:15px;">
+                        <div class="field-group">
+                            <div class="field-label">{{ i18n "radar_label_cp" | safeJS }}</div>
+                            <input type="text" id="val-cp" class="form-input" value="${data.cp}">
+                        </div>
+                        <div class="field-group">
+                            <div class="field-label">{{ i18n "radar_label_city" | safeJS }}</div>
+                            <input type="text" id="val-poblacio" class="form-input" value="${data.poblacio}">
+                        </div>
+                    </div>
+
+                    <div style="display:grid; grid-template-columns: 1fr 1fr; gap:15px;">
+                        <div class="field-group">
+                            <div class="field-label">{{ i18n "radar_label_prov" | safeJS }}</div>
+                            <input type="text" id="val-provincia" class="form-input" value="${data.provincia}">
+                        </div>
+                        <div class="field-group">
+                            <div class="field-label">{{ i18n "radar_label_country" | safeJS }}</div>
+                            <input type="text" id="val-pais" class="form-input" value="${data.pais}">
+                        </div>
+                    </div>
+
+                    <div style="display:grid; grid-template-columns: 1fr 1fr; gap:15px;">
+                        <div class="field-group">
+                            <div class="field-label"><i class="fas fa-phone"></i> {{ i18n "radar_label_phone" | safeJS }}</div>
+                            <input type="tel" id="val-tel" class="form-input" value="${data.telefon}">
+                        </div>
+                        <div class="field-group">
+                            <div class="field-label"><i class="fas fa-envelope"></i> {{ i18n "radar_label_reg_email" | safeJS }}</div>
+                            <input type="email" id="val-email-reg" class="form-input" value="${data.email_reg}">
+                        </div>
+                    </div>
+
+                    <button type="button" onclick="window.goNext(2)" class="btn-main">{{ i18n "radar_btn_continue" | safeJS }} <i class="fas fa-arrow-right"></i></button>
+                </div>`;
+                break;
+
+            case 2: // PAS 2: IDENTITAT (ADMIN)
                 html = `
                 <div class="form-slide active">
                     <h3 style="margin-bottom:25px;"><i class="fas fa-user-shield" style="color:var(--primary); margin-right:10px;"></i> {{ i18n "radar_identity_monitor_title" | safeJS }}</h3>
@@ -135,10 +183,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>`;
                 break;
 
-            case 3:
+            case 3: // PAS 3: ACTIUS TÈCNICS
                 const max = data.pack === 'pime' ? 10 : 2;
                 const emailLabel = `{{ i18n "radar_emails_label" | safeJS }}`.replace('%max%', max);
-                
                 html = `
                 <div class="form-slide active">
                     <h3 style="margin-bottom:20px;"><i class="fas fa-microchip" style="margin-right:10px; color:var(--primary);"></i> {{ i18n "radar_assets_title" | safeJS }}</h3>
@@ -158,12 +205,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>`;
                 break;
 
-            case 4:
-                const successMsg = `{{ i18n "radar_success_msg" | safeJS }}`.replace('%s%', data.num_comanda);
+            case 4: // PAS 4: ÈXIT
                 html = `<div class="form-slide active" style="text-align:center; padding: 50px 10px;">
                     <i class="fas fa-check-circle" style="font-size:60px; color:#48bb78; margin-bottom:20px;"></i>
                     <h2>{{ i18n "radar_success_title" | safeJS }}</h2>
-                    <p>${successMsg}</p>
+                    <p>{{ i18n "radar_success_msg_simple" | safeJS }}</p>
                 </div>`;
                 break;
         }
@@ -191,45 +237,49 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         if (document.getElementById('final-btn')) {
-    document.getElementById('final-btn').onclick = () => {
-        // 1. Recollim les dades finals
-        data.dominis = document.getElementById('val-dominis').value;
-        data.emails_radar = Array.from(document.querySelectorAll('.email-item')).map(i => i.value).filter(v => v !== '').join(', ');
+            document.getElementById('final-btn').onclick = () => {
+                data.dominis = document.getElementById('val-dominis').value;
+                data.emails_radar = Array.from(document.querySelectorAll('.email-item')).map(i => i.value).filter(v => v !== '').join(', ');
 
-        // 2. Mostrem una pantalla de càrrega artificial
-        form.innerHTML = `
-            <div class="form-slide active" style="text-align:center; padding: 60px 20px;">
-                <i class="fas fa-circle-notch fa-spin" style="font-size:50px; color:var(--primary); margin-bottom:20px;"></i>
-                <h2 id="loading-text">{{ i18n "radar_saving_title" | safeJS }}</h2>
-                <p>{{ i18n "radar_saving_subtitle" | safeJS }}</p>
-            </div>`;
+                form.innerHTML = `
+                    <div class="form-slide active" style="text-align:center; padding: 60px 20px;">
+                        <i class="fas fa-circle-notch fa-spin" style="font-size:50px; color:var(--primary); margin-bottom:20px;"></i>
+                        <h2 id="loading-text">{{ i18n "radar_saving_title" | safeJS }}</h2>
+                        <p>{{ i18n "radar_saving_subtitle" | safeJS }}</p>
+                    </div>`;
 
-        // 3. Enviem les dades realment al Google Script
-        const formData = new FormData();
-        for (const key in data) { formData.append(key, data[key]); }
-        
-        const fetchPromise = fetch(SCRIPT_URL, { method: 'POST', body: formData });
+                const formData = new FormData();
+                for (const key in data) { formData.append(key, data[key]); }
+                
+                const fetchPromise = fetch(SCRIPT_URL, { method: 'POST', body: formData });
 
-        // 4. Forçem una espera de 2 segons perquè l'usuari vegi que "estem treballant"
-        setTimeout(() => {
-            fetchPromise.then(() => {
-                step = 4; // Passem al missatge d'èxit
-                render();
-            }).catch(() => {
-                // En cas d'error, també mostrem l'èxit per no bloquejar l'usuari (les dades solen arribar igual)
-                step = 4;
-                render();
-            });
-        }, 2000); 
-    };
-}
+                setTimeout(() => {
+                    fetchPromise.then(() => {
+                        step = 4;
+                        render();
+                    }).catch(() => {
+                        step = 4;
+                        render();
+                    });
+                }, 2000); 
+            };
+        }
     }
 
     window.goNext = (s) => {
         if (s === 2) {
-            data.num_comanda = document.getElementById('val-comanda').value;
-            data.nif_compra = document.getElementById('val-nif').value;
-            if (!data.num_comanda || !data.nif_compra) { alert("{{ i18n "radar_error_required" | safeJS }}"); return; }
+            data.empresa = document.getElementById('val-empresa').value;
+            data.contacte_nom = document.getElementById('val-contacte').value;
+            data.adreca = document.getElementById('val-adreca').value;
+            data.cp = document.getElementById('val-cp').value;
+            data.poblacio = document.getElementById('val-poblacio').value;
+            data.provincia = document.getElementById('val-provincia').value;
+            data.pais = document.getElementById('val-pais').value;
+            data.nif = document.getElementById('val-nif').value;
+            data.telefon = document.getElementById('val-tel').value;
+            data.email_reg = document.getElementById('val-email-reg').value;
+
+            if (!data.empresa || !data.nif) { alert("{{ i18n "radar_error_required" | safeJS }}"); return; }
         }
         if (s === 3) {
             data.admin_nom = document.getElementById('val-admin-nom').value;
