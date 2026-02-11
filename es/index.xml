@@ -1,4 +1,102 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>GuardianHubX - Ciberseguridad para Empresas y Autónomos on GuardianHubX - Seguridad Cibernética</title><link>https://guardianhubx.com/es/</link><description>Recent content in GuardianHubX - Ciberseguridad para Empresas y Autónomos on GuardianHubX - Seguridad Cibernética</description><generator>Hugo</generator><language>es</language><lastBuildDate>Thu, 02 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://guardianhubx.com/es/index.xml" rel="self" type="application/rss+xml"/><item><title>Test Space Invaders - ¡Felicidades por tu puntuación!</title><link>https://guardianhubx.com/es/test-spaceinvaders/</link><pubDate>Thu, 02 Oct 2025 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/es/test-spaceinvaders/</guid><description>&lt;section class="section">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>GuardianHubX - Ciberseguridad para Empresas y Autónomos on GuardianHubX - Seguridad Cibernética</title><link>https://guardianhubx.com/es/</link><description>Recent content in GuardianHubX - Ciberseguridad para Empresas y Autónomos on GuardianHubX - Seguridad Cibernética</description><generator>Hugo</generator><language>es</language><lastBuildDate>Wed, 11 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://guardianhubx.com/es/index.xml" rel="self" type="application/rss+xml"/><item><title>Configuración de tu GuardianRadar</title><link>https://guardianhubx.com/es/guardianradar-config/</link><pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/es/guardianradar-config/</guid><description>&lt;section class="section">
+ &lt;div class="container" style="text-align: center; margin-bottom: 40px;">
+ &lt;h1 class="title-xl">Activa tu Radar&lt;/h1>
+ &lt;p class="lead">Para que GuardianRadar pueda protegerte, necesitamos vincular tu pedido con los dominios y correos que debemos vigilar en la &lt;strong>Dark Web&lt;/strong>.&lt;/p>
+ &lt;/div>
+&lt;/section>
+&lt;section class="section">
+ &lt;div class="container">
+ &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+ 
+ &lt;style>
+ :root {
+ --primary: #007BFF;
+ --text-dark: #1a202c;
+ --text-light: #718096;
+ --border: #e2e8f0;
+ --bg-soft: #f8fafc;
+ }
+ #radar-form-container {
+ font-family: 'Inter', -apple-system, sans-serif;
+ max-width: 600px;
+ margin: 20px auto;
+ background: #fff;
+ border-radius: 12px;
+ box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+ border: 1px solid var(--border);
+ overflow: hidden;
+ }
+ .form-slide { display: none; padding: 35px 25px; animation: fadeIn 0.4s ease; }
+ .form-slide.active { display: block; }
+ @keyframes fadeIn { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
+ 
+ .pack-selection { display: flex; flex-direction: column; gap: 15px; margin-top: 15px; }
+ @media (min-width: 480px) { .pack-selection { flex-direction: row; } }
+ 
+ .pack-card {
+ flex: 1; border: 2px solid var(--border); border-radius: 12px;
+ padding: 20px; text-align: center; cursor: pointer; transition: all 0.2s;
+ }
+ .pack-card i { font-size: 28px; color: #cbd5e0; margin-bottom: 8px; display: block; }
+ .pack-card span { font-weight: 700; color: var(--text-dark); font-size: 1rem; }
+ .pack-card:hover, .pack-card.selected { border-color: var(--primary); background: #f0f7ff; }
+ .pack-card.selected i { color: var(--primary); }
+ 
+ .field-group { margin-bottom: 22px; }
+ .field-label {
+ display: flex; align-items: center; gap: 10px;
+ font-weight: 700; font-size: 0.9rem; color: var(--text-dark);
+ margin-bottom: 8px;
+ }
+ .field-label i { 
+ color: var(--primary); background: var(--bg-soft); 
+ width: 32px; height: 32px; display: flex; align-items: center; 
+ justify-content: center; border-radius: 8px; font-size: 0.9rem;
+ }
+ .form-input {
+ width: 100%; padding: 14px 16px; border: 1.5px solid var(--border);
+ border-radius: 10px; font-size: 16px; box-sizing: border-box;
+ }
+ .form-input:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px rgba(0,123,255,0.1); }
+ .help-text { font-size: 0.8rem; color: var(--text-light); margin-top: 4px; display: block; }
+ 
+ .btn-main {
+ background: var(--primary); color: white; width: 100%; padding: 16px;
+ border: none; border-radius: 10px; font-size: 1.05rem; font-weight: 700;
+ cursor: pointer; display: flex; align-items: center; justify-content: center;
+ gap: 10px; margin-top: 15px; transition: 0.2s;
+ }
+ .btn-main:hover { background: #006ae0; }
+ #progress-fill { height: 5px; background: var(--primary); width: 0%; transition: width 0.4s; }
+ &lt;/style>
+ 
+ &lt;div id="radar-form-container">
+ &lt;div style="background: #edf2f7;">&lt;div id="progress-fill">&lt;/div>&lt;/div>
+ &lt;form id="radar-form" novalidate>&lt;/form>
+ &lt;/div>
+ 
+ &lt;script>
+ document.addEventListener('DOMContentLoaded', function() {
+ const form = document.getElementById('radar-form');
+ const progressFill = document.getElementById('progress-fill');
+ const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzjApoCRR9VuhMRjDQx4i_Xn3Q8vFYoQ3jeOEw98z_pBYgVYpouScUwEI6IVldpLR5h/exec'; 
+ 
+ let step = 0;
+ let data = { 
+ pack: '', num_comanda: '', nif_compra: '',
+ admin_nom: '', admin_dni: '', contacte_whatsapp: '',
+ dominis: '', emails_radar: '' 
+ };
+ 
+ function render() {
+ let html = "";
+ switch(step) {
+ case 0: 
+ html = `
+ &lt;div class="form-slide active">
+ &lt;div style="text-align:center; margin-bottom:30px;"> 
+ &lt;h2 style="margin-top:10px; font-size:1.5rem;">¿Qué plan quieres activar?&lt;/h2>
+ &lt;p style="color:var(--text-light);">Selecciona el pack que acabas de contratar.&lt;/p></description></item><item><title>Test Space Invaders - ¡Felicidades por tu puntuación!</title><link>https://guardianhubx.com/es/test-spaceinvaders/</link><pubDate>Thu, 02 Oct 2025 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/es/test-spaceinvaders/</guid><description>&lt;section class="section">
  &lt;div class="container">
  
  
