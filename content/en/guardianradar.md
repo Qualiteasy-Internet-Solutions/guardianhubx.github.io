@@ -220,9 +220,9 @@ Your business on the Internet monitored like a hacker would... but to warn you i
   </div>
 
   <div class="cta-container">  
-   <button onclick="abrirPopup()" class="btn-action btn-primary-action" style="cursor: pointer; border: none;">
+   <a href="/en/guardianradar-config" class="btn-action btn-primary-action" style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center; cursor: pointer; border: none;">
       🚀 Activate my Radar Now
-    </button>
+    </a>
 
    <a href="https://wa.me/34934153115?text=Hi%20GuardianHubX,%20I%20have%20some%20questions%20about%20GuardianRadar%20before%20hiring." target="_blank" class="btn-action btn-whatsapp-action">
       <i class="fab fa-whatsapp"></i> I have doubts, let's talk

@@ -218,9 +218,9 @@ El teu negoci a Internet vigilat com ho faria un hacker... però per avisar-te a
   </div>
 
   <div class="cta-container">  
-   <button onclick="abrirPopup()" class="btn-action btn-primary-action" style="cursor: pointer; border: none;">
+   <a href="/ca/guardianradar-config" class="btn-action btn-primary-action" style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center; cursor: pointer; border: none;">
       🚀 Activar el meu Radar Ara
-    </button>
+    </a>
 
    <a href="https://wa.me/34934153115?text=Hola%20GuardianHubX,%20tinc%20alguns%20dubtes%20sobre%20GuardianRadar%20abans%20de%20contractar." target="_blank" class="btn-action btn-whatsapp-action">
       <i class="fab fa-whatsapp"></i> Tinc dubtes, parlem
