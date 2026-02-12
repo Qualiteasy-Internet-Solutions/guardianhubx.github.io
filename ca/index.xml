@@ -42,6 +42,8 @@
  .pack-card:hover, .pack-card.selected { border-color: var(--primary); background: #f0f7ff; }
  .pack-card.selected i { color: var(--primary); }
  
+ .pack-desc { font-size: 0.8rem; color: var(--text-light); margin-top: 5px; display: block; font-weight: 400; line-height: 1.2; }
+ 
  .field-group { margin-bottom: 22px; }
  .field-label {
  display: flex; align-items: center; gap: 10px;
@@ -68,6 +70,23 @@
  }
  .btn-main:hover { background: #006ae0; }
  #progress-fill { height: 5px; background: var(--primary); width: 0%; transition: width 0.4s; }
+ 
+ .form-grid { 
+ display: grid; 
+ grid-template-columns: 1fr; 
+ gap: 15px;
+ margin-bottom: 22px;
+ }
+ 
+ @media (min-width: 580px) { 
+ .form-grid.cols-2 { grid-template-columns: 1fr 1fr; } 
+ .form-grid.cols-cp-city { grid-template-columns: 1fr 2fr; } 
+ }
+ 
+ @media (max-width: 480px) {
+ .form-slide { padding: 25px 15px; }
+ .form-input { padding: 12px; }
+ }
  &lt;/style>
  
  &lt;div id="radar-form-container">
@@ -78,22 +97,22 @@
  &lt;script>
  document.addEventListener('DOMContentLoaded', function() {
  const form = document.getElementById('radar-form');
+ const container = document.getElementById('radar-form-container');
  const progressFill = document.getElementById('progress-fill');
- const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxWKa87uGXUPg_ofz7je1mziDz0TlBmB_8m_8ZRFtT2uwVc8PJq9ieiPFiUdtDC6vtJ/exec'; 
+ const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyGiAqMI1jOXAFaZ16Q1EpeHnyUMQeDdXS8K1HrZBOWRgkI39if4Nk_HMPITosZgFx8/exec'; 
  
  let step = 0;
  let data = { 
- pack: '', 
- empresa: '', contacte_nom: '', adreca: '', cp: '', poblacio: '', 
- provincia: '', pais: 'Espanya', nif: '', telefon: '', email_reg: '',
- admin_nom: '', admin_dni: '', contacte_whatsapp: '',
- dominis: '', emails_radar: '' 
+ pack: '', empresa: '', contacte_nom: '', adreca: '', cp: '', poblacio: '', 
+ provincia: '', pais: 'Espanya',
+ nif: '', telefon: '', email_reg: '', admin_nom: '', admin_dni: '', 
+ contacte_whatsapp: '', dominis: '', emails_radar: '', pagament: ''
  };
  
  function render() {
  let html = "";
  switch(step) {
- case 0: 
+ case 0:
  html = `
  &lt;div class="form-slide active">
  &lt;div style="text-align:center; margin-bottom:30px;"> 
