@@ -151,7 +151,7 @@
  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
  overflow: hidden;
  position: relative;
- margin: 40px auto; 
+ margin: 40px auto;
  }
  .form-slide {
  display: none;
@@ -183,66 +183,37 @@
  .option-button.selected {
  background-color: var(--form-primary-color); color: white; border-color: var(--form-primary-color);
  }
- #cyber-form-container.form-input {
+ #cyber-form-container .form-input {
  width: 100%; padding: 12px; border: 1px solid #ccc;
  border-radius: 5px; font-size: 16px; margin-top: 5px; margin-bottom: 15px;
  box-sizing: border-box;
  }
  #progress-bar-container { width: 100%; background-color: #e9ecef; }
  #progress-bar { width: 0%; height: 8px; background-color: var(--form-primary-color); transition: width 0.3s ease; }
- #cyber-form-container #submit-btn, #cyber-form-container #next-checkbox {
- background-color: var(--form-primary-color); color: white; padding: 15px 25px;
- border: none; border-radius: 5px; cursor: pointer; font-size: 18px;
- margin-top: 20px; transition: background-color 0.2s ease;
- }
  #cyber-form-container .btn {
  display: inline-block;
- font-family: inherit; 
  font-weight: 600;
  text-align: center;
- vertical-align: middle;
  cursor: pointer;
- user-select: none;
- background-color: transparent;
- border: 1px solid transparent;
  padding: 12px 20px;
  font-size: 16px;
  border-radius: 5px;
  transition: all 0.2s ease-in-out;
+ border: 1px solid transparent;
+ text-decoration: none;
  }
- 
- 
  #cyber-form-container .btn-primary {
  color: #fff;
  background-color: var(--form-primary-color);
- border-color: var(--form-primary-color);
  }
- 
- 
  #cyber-form-container .btn-primary:hover {
  background-color: var(--form-button-hover-bg);
- border-color: var(--form-button-hover-bg);
  }
- #cyber-form-container #submit-btn:hover, #cyber-form-container #next-checkbox:hover { background-color: var(--form-button-hover-bg); }
  #loader { text-align: center; padding: 50px; }
- #loader p { font-size: 20px; font-weight: 500; }
- #result-display { text-align: center; }
- #result-display h3 { color: var(--form-primary-color); font-size: 22px; }
  .spinner {
  border: 8px solid #f3f3f3; border-top: 8px solid var(--form-primary-color);
  border-radius: 50%; width: 60px; height: 60px;
  animation: form-spin 1s linear infinite; margin: 20px auto;
- }
- .spinner-inline {
- display: inline-block;
- width: 16px;
- height: 16px;
- vertical-align: text-bottom;
- border: 3px solid rgba(255,255,255,0.3);
- border-top-color: #ffffff;
- border-radius: 50%;
- animation: form-spin 0.75s linear infinite;
- margin-right: 8px;
  }
  @keyframes form-spin {
  0% { transform: rotate(0deg); }
@@ -254,71 +225,122 @@
  &lt;div id="progress-bar-container">
  &lt;div id="progress-bar">&lt;/div>
  &lt;/div>
- &lt;form id="cyber-form" novalidate>
- &lt;/form>
+ &lt;form id="cyber-form" novalidate>&lt;/form>
  &lt;/div>
  
- &lt;script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js">&lt;/script>
  &lt;script>
  document.addEventListener('DOMContentLoaded', function() {
  if (window.cyberFormInitialized) return;
  window.cyberFormInitialized = true;
  
- 
- const T = (key, placeholders) => {
- let str = key;
- if (placeholders) {
- for (const p in placeholders) {
- str = str.replace(`{${p}}`, placeholders[p]);
- }
- }
- return str;
- };
- 
  const form = document.getElementById('cyber-form');
  const progressBar = document.getElementById('progress-bar');
- const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwaliNtuGyG6obfaHE4d9CTmmCq2dkYdCwE7g2QZmI1fyuyKDuG4dwG1ofS0nljNxTnyw/exec';
+ const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxNSMoUe72OstdspSYzzRRoI9PGnNepmR9CdaHuMDq604hgI_FxfqqAWK5iHkRStJH68Q/exec';
  
+ const questionsData = {
+ gateway: {
+ id: 'role',
+ title: `To tailor the report to your reality, what is your primary role?`,
+ options: [
+ { text: `Management \/ Executive \/ Owner`, path: 'pathA' },
+ { text: `IT Manager \/ Technical Lead \/ CISO`, path: 'pathB' },
+ { text: `Employee \/ Individual User`, path: 'pathC' }
+ ]
+ },
+ pathA: [
+ { title: `If a cyberattack locked all systems today and you couldn\u0027t work for 3 days, what would be the impact?`, options: [`Catastrophic: Severe financial losses and immediate reputational damage.`, `Severe: It would be chaotic, but we could operate manually with difficulty.`, `Minimal: We have guaranteed backup systems and continuity plans.`] },
+ { title: `Do you believe your employees could distinguish a sophisticated phishing email from a real one?`, options: [`No, someone would likely fall for the trap.`, `We\u0027ve done some spot training, but I\u0027m not 100% sure.`, `Yes, we conduct continuous training and monthly tests.`] },
+ { title: `If you suffered an attack right now, do you have a clear action protocol (who to call, what to disconnect)?`, options: [`No, we would improvise or call emergency IT support.`, `We have something written down, but we\u0027ve never run a drill.`, `Yes, we have an Incident Response Plan tested annually.`] },
+ { title: `Does your insurance policy specifically cover cybersecurity incidents (ransom, fines, downtime)?`, options: [`We don\u0027t have cyber insurance or I don\u0027t know.`, `Yes, but I think the coverage is basic or limited.`, `Yes, we have a specific policy that is reviewed regularly.`] },
+ { title: `How would you define the investment in cybersecurity in your company?`, options: [`Reactive: We only invest when something breaks.`, `Basic: We have a budget for antivirus and standard licenses.`, `Strategic: It is a priority with a dedicated and recurring budget.`] }
+ ],
+ pathB: [
+ { title: `What is the level of Multi-Factor Authentication (MFA\/2FA) implementation?`, options: [`Non-existent or only for some administrators.`, `Partial: Only on email (Microsoft 365 \/ Google).`, `Total: On email, VPN, server access, and critical applications.`] },
+ { title: `How do you manage backups against Ransomware?`, options: [`Local or network backups (USB\/NAS) accessible from the workstations.`, `Cloud backup, but without immutability guarantees.`, `Immutable backups (Object Lock \/ Air-gapped) and 3-2-1 rule.`] },
+ { title: `What technology do you use to protect endpoints (workstations)?`, options: [`Traditional signature-based antivirus.`, `Next-generation antivirus (NGAV).`, `EDR \/ XDR with active monitoring or SOC service.`] },
+ { title: `Do you run active Phishing simulation campaigns?`, options: [`No, never.`, `Occasionally (once a year).`, `Yes, on a recurring and automated basis.`] },
+ { title: `How often do you perform vulnerability scans or patch management?`, options: [`Manual or when the operating system forces it.`, `Automated patch management, but no vulnerability scans.`, `Recurring scans and a strict patching policy.`] }
+ ],
+ pathC: [
+ { title: `Honestly, do you use the same password (or very similar variations) for personal email, social media, and work?`, options: [`Yes, it\u0027s impossible to remember them all otherwise.`, `In some unimportant services yes, but I try to vary them.`, `No, I use a password manager and they are all unique.`] },
+ { title: `When you receive an urgent email from a bank or courier with a link, what do you do?`, options: [`If it looks important, I click to see what happens.`, `I check the sender, but if the logo looks real, I trust it.`, `I never click. I enter the official website or app manually.`] },
+ { title: `When you connect to public Wi-Fi (hotel, airport, café)...`, options: [`I connect and browse normally.`, `I connect but avoid logging into banking sites.`, `I always turn on the VPN or use mobile data (4G\/5G).`] },
+ { title: `When your device notifies you of a pending security update...`, options: [`I postpone it indefinitely (\u0027Remind me later\u0027).`, `I do it after a few days or weeks.`, `I update immediately.`] }
+ ]
+ };
  
- 
- const questions = [
- { type: 'radio', colIndex: 2, title: `How would you rate the likelihood of your organization suffering a cyberattack in the next 12 months?`, options: [`Very low`, `Low`, `Medium`, `High`, `Very high`] },
- { type: 'radio', colIndex: 3, title: `If your organization suffered a ransomware attack, how severe do you think the impact would be?`, options: [`Insignificant`, `Minor`, `Moderate`, `Severe`, `Catastrophic`] },
- { type: 'radio', colIndex: 4, title: `How concerned are you that a cyberattack could completely disrupt your company\u0027s operations?`, options: [`Not at all`, `Slightly`, `Moderately`, `Highly`, `Extremely`] },
- { type: 'radio', colIndex: 5, title: `Does your company have a cyber incident response plan?`, options: [`Yes, and we\u0027ve tested it recently`, `Yes, but we haven\u0027t tested it`, `We\u0027re not sure`, `No, but we\u0027re working on it`, `We don\u0027t have a plan`] },
- { type: 'radio', colIndex: 6, title: `How often are cybersecurity drills or exercises conducted in your organization?`, options: [`Every three months or less`, `Every six months`, `Once a year`, `Never`] },
- { type: 'radio', colIndex: 7, title: `Does your organization have up-to-date backups protected against ransomware?`, options: [`Yes, with redundant copies and regular testing`, `Yes, but we don\u0027t test them regularly`, `We\u0027re not sure`, `No`] },
- { type: 'radio', colIndex: 8, title: `How frequently are staff trained in cybersecurity?`, options: [`Quarterly or more`, `Twice a year`, `Once a year`, `Never`] },
- { type: 'radio', colIndex: 9, title: `Does your management team consider cybersecurity a strategic priority?`, options: [`Yes, it\u0027s on the senior management\u0027s agenda`, `Yes, but without concrete actions`, `We\u0027re not sure`, `No, cybersecurity is not a priority`] },
- { type: 'radio', colIndex: 10, title: `Are employees aware of phishing risks and how to identify them?`, options: [`Yes, all of them`, `Yes, but only some`, `We\u0027re not sure`, `No`] },
- { type: 'checkbox', colIndex: 11, title: `What security measures does your organization have in place?`, options: [`Updated antivirus and firewall`, `Multi-factor authentication (MFA)`, `Network segmentation`, `Real-time threat monitoring`, `Regular security assessments`, `None of the above`] },
- { type: 'radio', colIndex: 12, title: `Has your organization experienced a cybersecurity incident in the last 12 months?`, options: [`No`, `Yes, but it was minor`, `Yes, and it caused serious disruptions`, `Yes, and we are still recovering`] },
- { type: 'radio', colIndex: 13, title: `Does your company use an external IT security provider?`, options: [`Yes, and we conduct regular audits`, `Yes, but we are unsure of their effectiveness`, `No, we manage it internally`, `We don\u0027t have a provider`] },
- { type: 'radio', colIndex: 14, title: `Is your organization aligned with cybersecurity and data protection regulations and best practices (GDPR, ENS, ISO, NIST, others)?`, options: [`Yes, fully`, `Yes, for the most part`, `We\u0027re not sure`, `No`] },
- { type: 'radio', colIndex: 15, title: `How would you rate your level of compliance with cybersecurity best practices?`, options: [`Excellent`, `Good`, `Fair`, `Poor`, `Non-existent`] },
- { type: 'radio', colIndex: 16, title: `Does your organization have cyber insurance?`, options: [`Yes, with broad coverage and periodic reviews`, `Yes, but with limited coverage`, `We\u0027re not sure`, `We do not have cyber insurance`] }
- ];
- 
- let currentQuestionIndex = 0;
- const answers = new Array(23).fill('');
- let informeHtmlFinal = '';
+ let currentPath = null; 
+ let currentIndex = 0;
+ let userRole = '';
+ const answers = new Array(25).fill('');
+ let storedReportHTML = ''; 
  
  function renderQuestion() {
- if (currentQuestionIndex &lt; questions.length) {
- const q = questions[currentQuestionIndex];
+ form.innerHTML = '';
+ let q = null;
  let optionsHTML = '';
- if (q.type === 'radio') {
- optionsHTML = q.options.map(opt => `&lt;button type="button" class="option-button" data-value="${opt}">${opt}&lt;/button>`).join('');
- } else if (q.type === 'checkbox') {
- optionsHTML = q.options.map(opt => `&lt;label class="checkbox-label">&lt;input type="checkbox" name="medidas" value="${opt}"> ${opt}&lt;/label>`).join('');
- optionsHTML += `&lt;button type="button" id="next-checkbox" class="btn btn-primary">Next&lt;/button>`;
+ 
+ if (!currentPath) {
+ q = questionsData.gateway;
+ optionsHTML = q.options.map((opt) => 
+ `&lt;button type="button" class="option-button gateway-btn" data-path="${opt.path}" data-role="${opt.text}">${opt.text}&lt;/button>`
+ ).join('');
+ updateProgressBar(0, 1); 
+ } else {
+ const pathQuestions = questionsData[currentPath];
+ if (currentIndex &lt; pathQuestions.length) {
+ q = pathQuestions[currentIndex];
+ optionsHTML = q.options.map(opt => 
+ `&lt;button type="button" class="option-button answer-btn" data-value="${opt}">${opt}&lt;/button>`
+ ).join('');
+ updateProgressBar(currentIndex, pathQuestions.length);
+ } else {
+ showGenerationScreen();
+ return;
+ }
  }
  form.innerHTML = `&lt;div class="form-slide active">&lt;h2>${q.title}&lt;/h2>&lt;div class="option-group">${optionsHTML}&lt;/div>&lt;/div>`;
+ }
+ 
+ function updateProgressBar() {
+ 
+ const totalSteps = 6; 
+ let currentStep = 0;
+ 
+ if (!currentPath) {
+ 
+ currentStep = 0.5; 
  } else {
+ 
+ currentStep = 1 + currentIndex;
+ }
+ 
+ const progress = (currentStep / totalSteps) * 100;
+ progressBar.style.width = `${progress}%`;
+ }
+ 
+ form.addEventListener('click', function(e) {
+ if (e.target.classList.contains('gateway-btn')) {
+ currentPath = e.target.dataset.path;
+ userRole = e.target.dataset.role;
+ currentIndex = 0;
+ answers[2] = userRole; 
+ setTimeout(renderQuestion, 200);
+ }
+ if (e.target.classList.contains('answer-btn')) {
+ const val = e.target.dataset.value;
+ const qTitle = questionsData[currentPath][currentIndex].title;
+ answers[3 + currentIndex] = `${qTitle}: ${val}`;
+ currentIndex++;
+ setTimeout(renderQuestion, 200);
+ }
+ });
+ 
+ function showGenerationScreen() {
  form.innerHTML = `
- &lt;div class="form-slide active text-center">
+ &lt;div class="form-slide active text-center" style="text-align:center;">
  &lt;h2 class="title">✅ All set!&lt;/h2>
- &lt;p class="lead">Click the button to generate your custom report.&lt;/p></description></item><item><title>Cookies Policy</title><link>https://guardianhubx.com/en/cookies-policy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/en/cookies-policy/</guid><description>&lt;p>If you want to learn more about the use of cookies on &lt;strong>GuardianHubX&lt;/strong>, you’re in the right place. Below, we explain what cookies are, what types we use, and how to configure your browser to disable them.&lt;/p>
+ &lt;p class="lead">We have analyzed your security profile.&lt;/p></description></item><item><title>Cookies Policy</title><link>https://guardianhubx.com/en/cookies-policy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/en/cookies-policy/</guid><description>&lt;p>If you want to learn more about the use of cookies on &lt;strong>GuardianHubX&lt;/strong>, you’re in the right place. Below, we explain what cookies are, what types we use, and how to configure your browser to disable them.&lt;/p>
 &lt;p>Note: Disabling cookies may affect your user experience.&lt;/p>
 &lt;h3 id="what-is-a-cookie">What is a cookie?&lt;/h3>
 &lt;p>A &lt;em>cookie&lt;/em> is a small file downloaded to your device when you visit certain websites. Cookies help store and retrieve browsing information. They may recognize you depending on how you use your device.&lt;/p></description></item><item><title>Cybersecurity Test</title><link>https://guardianhubx.com/en/cybersecurity-test/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/en/cybersecurity-test/</guid><description>&lt;!-- Hero Section -->
