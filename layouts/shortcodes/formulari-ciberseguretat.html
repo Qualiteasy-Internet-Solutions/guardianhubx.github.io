@@ -18,7 +18,7 @@
         box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         overflow: hidden;
         position: relative;
-        margin: 40px auto; /* Centra el formulari a la pàgina */
+        margin: 40px auto;
     }
     .form-slide {
         display: none;
@@ -50,66 +50,37 @@
     .option-button.selected {
         background-color: var(--form-primary-color); color: white; border-color: var(--form-primary-color);
     }
-    #cyber-form-container.form-input {
+    #cyber-form-container .form-input {
         width: 100%; padding: 12px; border: 1px solid #ccc;
         border-radius: 5px; font-size: 16px; margin-top: 5px; margin-bottom: 15px;
         box-sizing: border-box;
     }
     #progress-bar-container { width: 100%; background-color: #e9ecef; }
     #progress-bar { width: 0%; height: 8px; background-color: var(--form-primary-color); transition: width 0.3s ease; }
-    #cyber-form-container #submit-btn, #cyber-form-container #next-checkbox  {
-        background-color: var(--form-primary-color); color: white; padding: 15px 25px;
-        border: none; border-radius: 5px; cursor: pointer; font-size: 18px;
-        margin-top: 20px; transition: background-color 0.2s ease;
-    }
     #cyber-form-container .btn {
-    display: inline-block;
-    font-family: inherit; /* Hereda la font del formulari */
-    font-weight: 600;
-    text-align: center;
-    vertical-align: middle;
-    cursor: pointer;
-    user-select: none;
-    background-color: transparent;
-    border: 1px solid transparent;
-    padding: 12px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    transition: all 0.2s ease-in-out;
+        display: inline-block;
+        font-weight: 600;
+        text-align: center;
+        cursor: pointer;
+        padding: 12px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        transition: all 0.2s ease-in-out;
+        border: 1px solid transparent;
+        text-decoration: none;
     }
-
-    /* Estil específic per al botó primari (blau) */
     #cyber-form-container .btn-primary {
-    color: #fff;
-    background-color: var(--form-primary-color);
-    border-color: var(--form-primary-color);
+        color: #fff;
+        background-color: var(--form-primary-color);
     }
-
-    /* Efecte hover per al botó primari */
     #cyber-form-container .btn-primary:hover {
-    background-color: var(--form-button-hover-bg);
-    border-color: var(--form-button-hover-bg);
+        background-color: var(--form-button-hover-bg);
     }
-    #cyber-form-container #submit-btn:hover, #cyber-form-container #next-checkbox:hover { background-color: var(--form-button-hover-bg); }
     #loader { text-align: center; padding: 50px; }
-    #loader p { font-size: 20px; font-weight: 500; }
-    #result-display { text-align: center; }
-    #result-display h3 { color: var(--form-primary-color); font-size: 22px; }
     .spinner {
         border: 8px solid #f3f3f3; border-top: 8px solid var(--form-primary-color);
         border-radius: 50%; width: 60px; height: 60px;
         animation: form-spin 1s linear infinite; margin: 20px auto;
-    }
-    .spinner-inline {
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        vertical-align: text-bottom;
-        border: 3px solid rgba(255,255,255,0.3);
-        border-top-color: #ffffff;
-        border-radius: 50%;
-        animation: form-spin 0.75s linear infinite;
-        margin-right: 8px;
     }
     @keyframes form-spin {
         0% { transform: rotate(0deg); }
@@ -121,236 +92,262 @@
     <div id="progress-bar-container">
         <div id="progress-bar"></div>
     </div>
-    <form id="cyber-form" novalidate>
-        </form>
+    <form id="cyber-form" novalidate></form>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     if (window.cyberFormInitialized) return;
     window.cyberFormInitialized = true;
 
-    // Aquesta funció d'ajuda només substitueix placeholders, com {email}
-    const T = (key, placeholders) => {
-        let str = key;
-        if (placeholders) {
-            for (const p in placeholders) {
-                str = str.replace(`{${p}}`, placeholders[p]);
-            }
-        }
-        return str;
-    };
-    
     const form = document.getElementById('cyber-form');
     const progressBar = document.getElementById('progress-bar');
-    const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwaliNtuGyG6obfaHE4d9CTmmCq2dkYdCwE7g2QZmI1fyuyKDuG4dwG1ofS0nljNxTnyw/exec';
+    const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxNSMoUe72OstdspSYzzRRoI9PGnNepmR9CdaHuMDq604hgI_FxfqqAWK5iHkRStJH68Q/exec';
 
-    // Construïm l'array de preguntes directament amb les traduccions de Hugo.
-    // Usem `safeJS` per assegurar que les cometes o altres caràcters no trenquin el codi.
-    const questions = [
-        { type: 'radio', colIndex: 2, title: `{{ i18n "q1_title" | safeJS }}`, options: [`{{ i18n "q1_opt_1" | safeJS }}`, `{{ i18n "q1_opt_2" | safeJS }}`, `{{ i18n "q1_opt_3" | safeJS }}`, `{{ i18n "q1_opt_4" | safeJS }}`, `{{ i18n "q1_opt_5" | safeJS }}`] },
-        { type: 'radio', colIndex: 3, title: `{{ i18n "q2_title" | safeJS }}`, options: [`{{ i18n "q2_opt_1" | safeJS }}`, `{{ i18n "q2_opt_2" | safeJS }}`, `{{ i18n "q2_opt_3" | safeJS }}`, `{{ i18n "q2_opt_4" | safeJS }}`, `{{ i18n "q2_opt_5" | safeJS }}`] },
-        { type: 'radio', colIndex: 4, title: `{{ i18n "q3_title" | safeJS }}`, options: [`{{ i18n "q3_opt_1" | safeJS }}`, `{{ i18n "q3_opt_2" | safeJS }}`, `{{ i18n "q3_opt_3" | safeJS }}`, `{{ i18n "q3_opt_4" | safeJS }}`, `{{ i18n "q3_opt_5" | safeJS }}`] },
-        { type: 'radio', colIndex: 5, title: `{{ i18n "q4_title" | safeJS }}`, options: [`{{ i18n "q4_opt_1" | safeJS }}`, `{{ i18n "q4_opt_2" | safeJS }}`, `{{ i18n "q4_opt_3" | safeJS }}`, `{{ i18n "q4_opt_4" | safeJS }}`, `{{ i18n "q4_opt_5" | safeJS }}`] },
-        { type: 'radio', colIndex: 6, title: `{{ i18n "q5_title" | safeJS }}`, options: [`{{ i18n "q5_opt_1" | safeJS }}`, `{{ i18n "q5_opt_2" | safeJS }}`, `{{ i18n "q5_opt_3" | safeJS }}`, `{{ i18n "q5_opt_4" | safeJS }}`] },
-        { type: 'radio', colIndex: 7, title: `{{ i18n "q6_title" | safeJS }}`, options: [`{{ i18n "q6_opt_1" | safeJS }}`, `{{ i18n "q6_opt_2" | safeJS }}`, `{{ i18n "q6_opt_3" | safeJS }}`, `{{ i18n "q6_opt_4" | safeJS }}`] },
-        { type: 'radio', colIndex: 8, title: `{{ i18n "q7_title" | safeJS }}`, options: [`{{ i18n "q7_opt_1" | safeJS }}`, `{{ i18n "q7_opt_2" | safeJS }}`, `{{ i18n "q7_opt_3" | safeJS }}`, `{{ i18n "q7_opt_4" | safeJS }}`] },
-        { type: 'radio', colIndex: 9, title: `{{ i18n "q8_title" | safeJS }}`, options: [`{{ i18n "q8_opt_1" | safeJS }}`, `{{ i18n "q8_opt_2" | safeJS }}`, `{{ i18n "q8_opt_3" | safeJS }}`, `{{ i18n "q8_opt_4" | safeJS }}`] },
-        { type: 'radio', colIndex: 10, title: `{{ i18n "q9_title" | safeJS }}`, options: [`{{ i18n "q9_opt_1" | safeJS }}`, `{{ i18n "q9_opt_2" | safeJS }}`, `{{ i18n "q9_opt_3" | safeJS }}`, `{{ i18n "q9_opt_4" | safeJS }}`] },
-        { type: 'checkbox', colIndex: 11, title: `{{ i18n "q10_title" | safeJS }}`, options: [`{{ i18n "q10_opt_1" | safeJS }}`, `{{ i18n "q10_opt_2" | safeJS }}`, `{{ i18n "q10_opt_3" | safeJS }}`, `{{ i18n "q10_opt_4" | safeJS }}`, `{{ i18n "q10_opt_5" | safeJS }}`, `{{ i18n "q10_opt_6" | safeJS }}`] },
-        { type: 'radio', colIndex: 12, title: `{{ i18n "q11_title" | safeJS }}`, options: [`{{ i18n "q11_opt_1" | safeJS }}`, `{{ i18n "q11_opt_2" | safeJS }}`, `{{ i18n "q11_opt_3" | safeJS }}`, `{{ i18n "q11_opt_4" | safeJS }}`] },
-        { type: 'radio', colIndex: 13, title: `{{ i18n "q12_title" | safeJS }}`, options: [`{{ i18n "q12_opt_1" | safeJS }}`, `{{ i18n "q12_opt_2" | safeJS }}`, `{{ i18n "q12_opt_3" | safeJS }}`, `{{ i18n "q12_opt_4" | safeJS }}`] },
-        { type: 'radio', colIndex: 14, title: `{{ i18n "q13_title" | safeJS }}`, options: [`{{ i18n "q13_opt_1" | safeJS }}`, `{{ i18n "q13_opt_2" | safeJS }}`, `{{ i18n "q13_opt_3" | safeJS }}`, `{{ i18n "q13_opt_4" | safeJS }}`] },
-        { type: 'radio', colIndex: 15, title: `{{ i18n "q14_title" | safeJS }}`, options: [`{{ i18n "q14_opt_1" | safeJS }}`, `{{ i18n "q14_opt_2" | safeJS }}`, `{{ i18n "q14_opt_3" | safeJS }}`, `{{ i18n "q14_opt_4" | safeJS }}`, `{{ i18n "q14_opt_5" | safeJS }}`] },
-        { type: 'radio', colIndex: 16, title: `{{ i18n "q15_title" | safeJS }}`, options: [`{{ i18n "q15_opt_1" | safeJS }}`, `{{ i18n "q15_opt_2" | safeJS }}`, `{{ i18n "q15_opt_3" | safeJS }}`, `{{ i18n "q15_opt_4" | safeJS }}`] }
-    ];
-    
-    let currentQuestionIndex = 0;
-    const answers = new Array(23).fill('');
-    let informeHtmlFinal = '';
+    const questionsData = {
+        gateway: {
+            id: 'role',
+            title: `{{ i18n "q0_role" | safeJS }}`,
+            options: [
+                { text: `{{ i18n "q0_opt_1" | safeJS }}`, path: 'pathA' },
+                { text: `{{ i18n "q0_opt_2" | safeJS }}`, path: 'pathB' },
+                { text: `{{ i18n "q0_opt_3" | safeJS }}`, path: 'pathC' }
+            ]
+        },
+        pathA: [
+            { title: `{{ i18n "qa_1_impact" | safeJS }}`, options: [`{{ i18n "qa_1_opt_1" | safeJS }}`, `{{ i18n "qa_1_opt_2" | safeJS }}`, `{{ i18n "qa_1_opt_3" | safeJS }}`] },
+            { title: `{{ i18n "qa_2_human" | safeJS }}`, options: [`{{ i18n "qa_2_opt_1" | safeJS }}`, `{{ i18n "qa_2_opt_2" | safeJS }}`, `{{ i18n "qa_2_opt_3" | safeJS }}`] },
+            { title: `{{ i18n "qa_3_response" | safeJS }}`, options: [`{{ i18n "qa_3_opt_1" | safeJS }}`, `{{ i18n "qa_3_opt_2" | safeJS }}`, `{{ i18n "qa_3_opt_3" | safeJS }}`] },
+            { title: `{{ i18n "qa_4_insurance" | safeJS }}`, options: [`{{ i18n "qa_4_opt_1" | safeJS }}`, `{{ i18n "qa_4_opt_2" | safeJS }}`, `{{ i18n "qa_4_opt_3" | safeJS }}`] },
+            { title: `{{ i18n "qa_5_budget" | safeJS }}`, options: [`{{ i18n "qa_5_opt_1" | safeJS }}`, `{{ i18n "qa_5_opt_2" | safeJS }}`, `{{ i18n "qa_5_opt_3" | safeJS }}`] }
+        ],
+        pathB: [
+            { title: `{{ i18n "qb_1_mfa" | safeJS }}`, options: [`{{ i18n "qb_1_opt_1" | safeJS }}`, `{{ i18n "qb_1_opt_2" | safeJS }}`, `{{ i18n "qb_1_opt_3" | safeJS }}`] },
+            { title: `{{ i18n "qb_2_backup" | safeJS }}`, options: [`{{ i18n "qb_2_opt_1" | safeJS }}`, `{{ i18n "qb_2_opt_2" | safeJS }}`, `{{ i18n "qb_2_opt_3" | safeJS }}`] },
+            { title: `{{ i18n "qb_3_endpoint" | safeJS }}`, options: [`{{ i18n "qb_3_opt_1" | safeJS }}`, `{{ i18n "qb_3_opt_2" | safeJS }}`, `{{ i18n "qb_3_opt_3" | safeJS }}`] },
+            { title: `{{ i18n "qb_4_phishing_sim" | safeJS }}`, options: [`{{ i18n "qb_4_opt_1" | safeJS }}`, `{{ i18n "qb_4_opt_2" | safeJS }}`, `{{ i18n "qb_4_opt_3" | safeJS }}`] },
+            { title: `{{ i18n "qb_5_vuln" | safeJS }}`, options: [`{{ i18n "qb_5_opt_1" | safeJS }}`, `{{ i18n "qb_5_opt_2" | safeJS }}`, `{{ i18n "qb_5_opt_3" | safeJS }}`] }
+        ],
+        pathC: [
+            { title: `{{ i18n "qc_1_passwords" | safeJS }}`, options: [`{{ i18n "qc_1_opt_1" | safeJS }}`, `{{ i18n "qc_1_opt_2" | safeJS }}`, `{{ i18n "qc_1_opt_3" | safeJS }}`] },
+            { title: `{{ i18n "qc_2_phishing" | safeJS }}`, options: [`{{ i18n "qc_2_opt_1" | safeJS }}`, `{{ i18n "qc_2_opt_2" | safeJS }}`, `{{ i18n "qc_2_opt_3" | safeJS }}`] },
+            { title: `{{ i18n "qc_3_wifi" | safeJS }}`, options: [`{{ i18n "qc_3_opt_1" | safeJS }}`, `{{ i18n "qc_3_opt_2" | safeJS }}`, `{{ i18n "qc_3_opt_3" | safeJS }}`] },
+            { title: `{{ i18n "qc_4_updates" | safeJS }}`, options: [`{{ i18n "qc_4_opt_1" | safeJS }}`, `{{ i18n "qc_4_opt_2" | safeJS }}`, `{{ i18n "qc_4_opt_3" | safeJS }}`] }
+        ]
+    };
+
+    let currentPath = null; 
+    let currentIndex = 0;
+    let userRole = '';
+    const answers = new Array(25).fill('');
+    let storedReportHTML = ''; 
 
     function renderQuestion() {
-        if (currentQuestionIndex < questions.length) {
-            const q = questions[currentQuestionIndex];
-            let optionsHTML = '';
-            if (q.type === 'radio') {
-                optionsHTML = q.options.map(opt => `<button type="button" class="option-button" data-value="${opt}">${opt}</button>`).join('');
-            } else if (q.type === 'checkbox') {
-                optionsHTML = q.options.map(opt => `<label class="checkbox-label"><input type="checkbox" name="medidas" value="${opt}"> ${opt}</label>`).join('');
-                optionsHTML += `<button type="button" id="next-checkbox" class="btn btn-primary">{{ i18n "btn_next" | safeJS }}</button>`;
-            }
-            form.innerHTML = `<div class="form-slide active"><h2>${q.title}</h2><div class="option-group">${optionsHTML}</div></div>`;
+        form.innerHTML = '';
+        let q = null;
+        let optionsHTML = '';
+
+        if (!currentPath) {
+            q = questionsData.gateway;
+            optionsHTML = q.options.map((opt) => 
+                `<button type="button" class="option-button gateway-btn" data-path="${opt.path}" data-role="${opt.text}">${opt.text}</button>`
+            ).join('');
+            updateProgressBar(0, 1); 
         } else {
-            form.innerHTML = `
-                <div class="form-slide active text-center">
-                    <h2 class="title">{{ i18n "form_ready_title" | safeJS }}</h2>
-                    <p class="lead">{{ i18n "form_ready_subtitle" | safeJS }}</p>
-                    <button id="generar-informe-btn" class="btn btn-primary">{{ i18n "btn_generate_report" | safeJS }}</button>
-                </div>`;
-            document.getElementById('generar-informe-btn').addEventListener('click', enviarFormulario);
+            const pathQuestions = questionsData[currentPath];
+            if (currentIndex < pathQuestions.length) {
+                q = pathQuestions[currentIndex];
+                optionsHTML = q.options.map(opt => 
+                    `<button type="button" class="option-button answer-btn" data-value="${opt}">${opt}</button>`
+                ).join('');
+                updateProgressBar(currentIndex, pathQuestions.length);
+            } else {
+                showGenerationScreen();
+                return;
+            }
         }
-        updateProgressBar();
+        form.innerHTML = `<div class="form-slide active"><h2>${q.title}</h2><div class="option-group">${optionsHTML}</div></div>`;
     }
 
     function updateProgressBar() {
-        const progress = (currentQuestionIndex / questions.length) * 100;
+        // Total de passos: 1 (Gateway) + 5 (Preguntes del camí)
+        const totalSteps = 6; 
+        let currentStep = 0;
+
+        if (!currentPath) {
+            // Estem a la primera pantalla (Gateway)
+            currentStep = 0.5; // Comencem amb una mica de barra
+        } else {
+            // Ja hem passat el Gateway (1) + l'índex actual de la pregunta
+            currentStep = 1 + currentIndex;
+        }
+
+        const progress = (currentStep / totalSteps) * 100;
         progressBar.style.width = `${progress}%`;
     }
 
     form.addEventListener('click', function(e) {
-        if (e.target.classList.contains('option-button')) {
-            const q = questions[currentQuestionIndex];
-            answers[q.colIndex] = e.target.dataset.value;
-            currentQuestionIndex++;
+        if (e.target.classList.contains('gateway-btn')) {
+            currentPath = e.target.dataset.path;
+            userRole = e.target.dataset.role;
+            currentIndex = 0;
+            answers[2] = userRole; 
             setTimeout(renderQuestion, 200);
         }
-        if (e.target.id === 'next-checkbox') {
-            const q = questions[currentQuestionIndex];
-            const checkedValues = Array.from(form.querySelectorAll('input[type="checkbox"]:checked')).map(cb => cb.value).join(', ');
-            answers[q.colIndex] = checkedValues || q.options[q.options.length - 1];
-            currentQuestionIndex++;
-            renderQuestion();
+        if (e.target.classList.contains('answer-btn')) {
+            const val = e.target.dataset.value;
+            const qTitle = questionsData[currentPath][currentIndex].title;
+            answers[3 + currentIndex] = `${qTitle}: ${val}`;
+            currentIndex++;
+            setTimeout(renderQuestion, 200);
         }
     });
 
-    function sendReportByEmail(name, email, organization, wrapperElement) {
-        const emailBtn = wrapperElement.querySelector('button');
-        if (emailBtn) {
-            emailBtn.disabled = true;
-            emailBtn.innerHTML = `<span class="spinner-inline"></span> {{ i18n "form_sending_email" | safeJS }}`;
+    function showGenerationScreen() {
+        form.innerHTML = `
+            <div class="form-slide active text-center" style="text-align:center;">
+                <h2 class="title">{{ i18n "form_ready_title" | safeJS }}</h2>
+                <p class="lead">{{ i18n "form_analyzed_msg" | safeJS }}</p>
+                <button type="button" id="generar-informe-btn" class="btn btn-primary">{{ i18n "btn_generate_report" | safeJS }}</button>
+            </div>`;
+        document.getElementById('generar-informe-btn').addEventListener('click', procesarYGenerar);
+    }
+
+    function procesarYGenerar() {
+        form.innerHTML = `<div class="form-slide active"><div id="loader"><p>{{ i18n "form_generating_report_title" | safeJS }}</p><div class="spinner"></div><p>Analizando vulnerabilidades críticas...</p></div></div>`;
+        answers[0] = new Date().toISOString();
+        const formData = new FormData();
+        answers.forEach((value, index) => { formData.append(`col${index}`, value); });
+
+        fetch(SCRIPT_URL, { method: 'POST', body: formData })
+            .then(response => response.json()) // ✅ Ara llegim JSON
+            .then(data => {
+                // Guardem les dades reals que venen de l'Excel/IA
+                storedReportHTML = data.html;
+                const realScore = data.score;
+                mostrarTeaserYCaptura(realScore); // ✅ Passem la nota real
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                form.innerHTML = `<p>❌ Ha habido un error de conexión.</p>`;
+            });
+    }
+
+    function mostrarTeaserYCaptura(score) {
+        form.innerHTML = '';
+        
+        // Convertim a número per seguretat
+        let finalScore = parseInt(score) || 0;
+
+        // Lògica de colors segons la nota real de l'Excel
+        let color = "#dc3545"; // Vermell (0-39)
+        let label = "RIESGO CRÍTICO";
+        let desc = "Tu nivel de protección es muy bajo. Necesitas actuar urgentemente.";
+
+        if (finalScore >= 40 && finalScore < 70) {
+            color = "#ffc107"; // Groc (40-69)
+            label = "RIESGO MODERADO";
+            desc = "Tienes medidas básicas, pero existen brechas de seguridad.";
+        } else if (finalScore >= 70) {
+            color = "#28a745"; // Verd (70-100)
+            label = "NIVEL SEGURO";
+            desc = "Tu organización sigue buenas prácticas de seguridad.";
         }
+
+        const strokeDash = (finalScore * 251.2) / 100;
+
+        form.innerHTML = `
+            <div class="form-slide active" style="text-align:center; padding: 10px 0;">
+                
+                <div style="position: relative; width: 150px; height: 150px; margin: 0 auto 20px;">
+                    <svg width="150" height="150" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="40" stroke="#eeeeee" stroke-width="8" fill="transparent" />
+                        <circle cx="50" cy="50" r="40" stroke="${color}" stroke-width="8" fill="transparent" 
+                                stroke-dasharray="${strokeDash} 251.2" stroke-linecap="round" transform="rotate(-90 50 50)" />
+                    </svg>
+                    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                        <span style="font-size: 32px; font-weight: 800; color: #333;">${finalScore}</span>
+                        <span style="font-size: 14px; color: #999;">/100</span>
+                    </div>
+                </div>
+
+                <div style="margin-bottom: 25px;">
+                    <div style="display: inline-block; padding: 6px 20px; background: ${color}; color: white; border-radius: 50px; font-weight: bold; font-size: 16px; margin-bottom: 10px;">
+                        ${label}
+                    </div>
+                    <p style="color: #666; font-size: 15px; max-width: 400px; margin: 0 auto;">${desc}</p>
+                </div>
+                
+                <div style="background:#f8f9fa; padding:20px; border-radius:12px; margin-bottom: 30px; text-align:left; border: 1px solid #eee;">
+                    <p style="font-weight: bold; color: var(--form-primary-color); margin-bottom: 12px; font-size: 16px;">🔓 Tu auditoría personalizada incluye:</p>
+                    <ul style="list-style: none; padding: 0; margin: 0; font-size: 14px; color: #444;">
+                        <li style="margin-bottom: 8px; display: flex; align-items: start;"><span style="color: #28a745; margin-right: 10px;">✔</span> <span><strong>Análisis de Vulnerabilidades:</strong> Los 3 puntos críticos detectados.</span></li>
+                        <li style="margin-bottom: 8px; display: flex; align-items: start;"><span style="color: #28a745; margin-right: 10px;">✔</span> <span><strong>Hoja de Ruta:</strong> Cómo mejorar tu nota hoy mismo.</span></li>
+                    </ul>
+                </div>
+
+                <div id="email-gate-container" style="max-width: 450px; margin: 0 auto; text-align: left;">
+                    <p style="font-weight: bold; margin-bottom: 15px; text-align: center;">Completa los datos para recibir el informe:</p>
+                    <div style="display: flex; flex-direction: column; gap: 12px;">
+                        <input type="text" id="nombre-gate" placeholder="Tu nombre" class="form-input" style="margin:0;">
+                        <input type="email" id="email-gate" placeholder="Tu email profesional" class="form-input" style="margin:0;">
+                        <input type="text" id="org-gate" placeholder="Tu organización" class="form-input" style="margin:0;">
+                        <button type="button" id="unlock-report-btn" class="btn btn-primary" style="width:100%; height: 50px; font-size: 17px; font-weight: bold; margin-top: 10px; box-shadow: 0 4px 12px rgba(0,123,255,0.2);">
+                            📩 Desbloquear Auditoría Completa
+                        </button>
+                    </div>
+                </div>
+            </div>`;
+
+        document.getElementById('unlock-report-btn').addEventListener('click', function() {
+            const name = document.getElementById('nombre-gate').value;
+            const email = document.getElementById('email-gate').value;
+            const org = document.getElementById('org-gate').value || "Individual";
+            if (!email.includes('@') || name.length < 2) { alert("Por favor, introduce datos válidos."); return; }
+            enviarEmailFinal(name, email, org);
+        });
+    }
+
+    function enviarEmailFinal(name, email, org) {
+        const container = document.getElementById('email-gate-container');
+        container.innerHTML = `<div class="spinner"></div><p style="text-align:center;">Enviando informe a ${email}...</p>`;
 
         const emailData = new FormData();
         emailData.append('action', 'send_email');
         emailData.append('email', email);
         emailData.append('nombre', name);
-        emailData.append('organizacion', organization);
-        emailData.append('html', informeHtmlFinal);
+        emailData.append('organizacion', org);
+        emailData.append('html', storedReportHTML); 
 
         fetch(SCRIPT_URL, { method: 'POST', body: emailData })
-            .then(res => {
-                if (!res.ok) throw new Error(`{{ i18n "server_error" | safeJS }}`);
-                return res.text();
-            })
-            .then(msg => {
-                let successMsg = `{{ i18n "form_email_success" | safeJS }}`;
-
-                if (window.initialUserData) {
-                    wrapperElement.innerHTML = `
-                    <div style="text-align:center;">
-                        <p style="font-weight:bold;">✅ ${successMsg.replace('{email}', email)}</p>
-                        <br>
-                        <button type="button" id="play-again-btn" class="btn btn-primary mt-3">Jugar a Space Invaders 🚀</button>
-                    </div>
-                    `;
-                    document.getElementById('play-again-btn').addEventListener('click', () => {
-                        let gameUrl = '/spaceinvaders/';
-                        if (window.isEventMode === true) {
-                            gameUrl = '/spaceinvaders/?mode=event';
-                        }
-                        window.location.href = gameUrl; 
-                    });
-                } else {
-                    wrapperElement.innerHTML = `<p style="text-align:center; font-weight:bold;">✅ ${successMsg.replace('{email}', email)}</p>`;
-                }
+            .then(() => {
+                form.innerHTML = `
+                    <div class="form-slide active" style="text-align:center; padding: 30px 10px;">
+                        <div style="font-size: 60px; margin-bottom: 20px;">🚀</div>
+                        <h2 style="font-size: 26px; color: #28a745; margin-bottom: 10px;">¡Auditoría enviada!</h2>
+                        <p style="font-size: 16px; color: #555; margin-bottom: 30px;">Revisa tu correo <strong>${email}</strong>.</p>
+                        
+                        <div style="background: #f0f7ff; padding: 25px; border-radius: 15px; border: 1px solid #cfe2ff; max-width: 450px; margin: 0 auto;">
+                            <h3 style="font-size: 18px; margin-bottom: 20px; color: #0056b3; font-weight: bold;">¿Qué quieres hacer ahora?</h3>
+                            <div style="display: flex; flex-direction: column; gap: 15px;">
+                                <a href="https://guardianhubx.com/es/guardianradar/" class="btn btn-primary" style="display: flex; align-items: center; justify-content: center; gap: 10px; padding: 14px; text-decoration: none; font-weight: bold;">
+                                    🛡️ Protegerme con GuardianRadar
+                                </a>
+                                <a href="https://wa.me/34934153115" target="_blank" style="display: flex; align-items: center; justify-content: center; gap: 10px; padding: 14px; background: #25D366; color: white; border-radius: 5px; text-decoration: none; font-weight: bold;">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="20" height="20" alt="WhatsApp"> Consultar por WhatsApp
+                                </a>
+                                <a href="https://guardianhubx.com/es/index.html#contact" style="color: #666; text-decoration: underline; font-size: 13px; margin-top: 5px;">
+                                    O usa el formulario de contacto tradicional
+                                </a>
+                            </div>
+                        </div>
+                    </div>`;
             })
             .catch(err => {
-                let errorMsg = `{{ i18n "form_email_error" | safeJS }}`;
-                wrapperElement.innerHTML += `<p class="error-message" style="color:red; text-align:center;">❌ ${errorMsg.replace('{error}', err.message)}</p>`;
-                if (emailBtn) {
-                    emailBtn.disabled = false;
-                    emailBtn.innerHTML = `{{ i18n "btn_submit_email" | safeJS }}`;
-                }
-                console.error('Error al enviar:', err);
+                container.innerHTML = `<p style="color:red;">Error al enviar. Inténtalo de nuevo.</p>`;
             });
     }
-    
-    function enviarFormulario() {
-        form.innerHTML = `<div class="form-slide active"><div id="loader"><p>{{ i18n "form_generating_report_title" | safeJS }}</p><div class="spinner"></div><p>{{ i18n "form_generating_report_subtitle" | safeJS }}</p></div></div>`;
-        answers[0] = new Date().toISOString();
-        answers[1] = answers[1] || "no-reply@guardianhubx.com";
-        answers[17] = answers[17] || "Responsable de Ciberseguridad";
-        answers[18] = answers[18] || "Organización Anónima";
 
-        const formData = new FormData();
-        answers.forEach((value, index) => {
-            formData.append(`col${index}`, value);
-        });
-
-        fetch(SCRIPT_URL, { method: 'POST', body: formData })
-            .then(response => {
-                if (!response.ok) throw new Error(`{{ i18n "server_error" | safeJS }}`);
-                return response.text();
-            })
-            .then(html => {
-                informeHtmlFinal = marked.parse(html);
-                if (window.initialUserData && window.initialUserData.email) {
-                    // CAS 1: Tenim les dades, enviem automàticament
-                    form.innerHTML = `
-                      <div class="form-slide active">
-                        <h2 class="title">{{ i18n "form_report_generated_title" | safeJS }}</h2>
-                        <div class="informe-container" style="text-align: left;">${informeHtmlFinal}</div>
-                        <div id="auto-send-status" style="margin-top: 30px;">
-                          <p>{{ i18n "form_sending_auto" | safeJS }} <strong>${window.initialUserData.email}</strong>...</p>
-                          <div class="spinner"></div>
-                        </div>
-                      </div>`;
-                      sendReportByEmail(
-                        window.initialUserData.name,
-                        window.initialUserData.email,
-                        "Participant del joc",
-                        document.getElementById('auto-send-status')
-                    );
-
-                } else {
-                    form.innerHTML = `
-                    <div class="form-slide active">
-                        <h2 class="title">{{ i18n "form_report_generated_title" | safeJS }}</h2>
-                        <div class="informe-container" style="text-align: left;">
-                        ${informeHtmlFinal}
-                        </div>
-                        <p class="mt-4">{{ i18n "form_ask_for_email" | safeJS }}</p>
-                        <button type="button" id="enviar-por-email" class="btn btn-primary mt-2">{{ i18n "btn_send_by_email" | safeJS }}</button>
-                        <div id="formulario-contacto-wrapper" style="display: none; margin-top: 30px;"></div>
-                    </div>`;
-
-                document.getElementById('enviar-por-email').addEventListener('click', () => {
-                    document.getElementById('formulario-contacto-wrapper').innerHTML = `
-                        <h2>{{ i18n "form_contact_details_title" | safeJS }}</h2>
-                        <label for="nombre">{{ i18n "form_label_fullname" | safeJS }}</label>
-                        <input type="text" id="nombre" name="nombre" class="form-input" required>
-                        <label for="email">{{ i18n "form_label_email" | safeJS }}</label>
-                        <input type="email" id="email" name="email" class="form-input" required>
-                        <label for="organizacion">{{ i18n "form_label_organization" | safeJS }}</label>
-                        <input type="text" id="organizacion" name="organizacion" class="form-input" required>
-                        <button id="submit-email-btn" class="btn btn-primary mt-3">{{ i18n "btn_submit_email" | safeJS }}</button>`;
-                    document.getElementById('formulario-contacto-wrapper').style.display = 'block';
-
-                    document.getElementById('submit-email-btn').addEventListener('click', (event) => {
-                        event.preventDefault(); 
-                        const name = document.getElementById('nombre').value;
-                        const email = document.getElementById('email').value;
-                        const org = document.getElementById('organizacion').value;
-                        const wrapper = document.getElementById('formulario-contacto-wrapper');
-
-
-                        if (!name.trim() || !email.trim() || !org.trim()) {
-                            alert(`{{ i18n "form_validation_error" | safeJS }}`);
-                            return; 
-                        }   
-                        
-                        sendReportByEmail(name, email, org, wrapper);
-
-                        });
-                    });
-                }
-            })
-            .catch(error => {
-                console.error('Error!', error.message);
-                form.innerHTML = `<p>❌ {{ i18n "form_fetch_error" | safeJS }}</p>`;
-            });
-    }
     renderQuestion();
 });
 </script>
