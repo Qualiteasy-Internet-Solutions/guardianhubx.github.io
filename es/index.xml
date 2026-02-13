@@ -328,7 +328,7 @@
  form.innerHTML = `
  &lt;div class="form-slide active text-center" style="text-align:center;">
  &lt;h2 class="title">✅ Listo&lt;/h2>
- &lt;p class="lead">Hem analitzat el teu perfil de seguretat.&lt;/p></description></item><item><title>Descubre tu Nivel de Riesgo en Ciberseguridad</title><link>https://guardianhubx.com/es/test/</link><pubDate>Mon, 04 Aug 2025 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/es/test/</guid><description>&lt;section class="section">
+ &lt;p class="lead">Hemos analizado tu perfil de seguridad.&lt;/p></description></item><item><title>Descubre tu Nivel de Riesgo en Ciberseguridad</title><link>https://guardianhubx.com/es/test/</link><pubDate>Mon, 04 Aug 2025 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/es/test/</guid><description>&lt;section class="section">
  &lt;div class="container">
  &lt;h1 class="title-xl">Descubre tu Nivel de Riesgo en Ciberseguridad&lt;/h1>
  &lt;p class="lead">¿Te preocupa un posible ciberataque? ¿No sabes si tu organización está realmente protegida?&lt;/p>
@@ -551,7 +551,7 @@
  form.innerHTML = `
  &lt;div class="form-slide active text-center" style="text-align:center;">
  &lt;h2 class="title">✅ Listo&lt;/h2>
- &lt;p class="lead">Hem analitzat el teu perfil de seguretat.&lt;/p></description></item><item><title>Edgewatch | Monitorización Continua de Amenazas Cibernéticas</title><link>https://guardianhubx.com/es/edgewatch/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/es/edgewatch/</guid><description>&lt;section class="about mb-5 container text-center">
+ &lt;p class="lead">Hemos analizado tu perfil de seguridad.&lt;/p></description></item><item><title>Edgewatch | Monitorización Continua de Amenazas Cibernéticas</title><link>https://guardianhubx.com/es/edgewatch/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/es/edgewatch/</guid><description>&lt;section class="about mb-5 container text-center">
  &lt;h2>Protección Cibernética Proactiva con Edgewatch&lt;/h2>
  &lt;img src="https://guardianhubx.com/img/edgewatch-logo.jpg" alt="Logo de Edgewatch - Solución avanzada de ciberseguridad" class="img-fluid mb-2" style="max-height: 100px;">
  &lt;p>
