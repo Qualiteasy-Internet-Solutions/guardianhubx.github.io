@@ -188,8 +188,9 @@
  border-radius: 5px; font-size: 16px; margin-top: 5px; margin-bottom: 15px;
  box-sizing: border-box;
  }
- #progress-bar-container { width: 100%; background-color: #e9ecef; }
- #progress-bar { width: 0%; height: 8px; background-color: var(--form-primary-color); transition: width 0.3s ease; }
+ #progress-bar-container { width: 100%; background-color: #e9ecef; height: 8px; }
+ #progress-bar { width: 0%; height: 100%; background-color: var(--form-primary-color); transition: width 0.3s ease; }
+ 
  #cyber-form-container .btn {
  display: inline-block;
  font-weight: 600;
@@ -233,9 +234,41 @@
  if (window.cyberFormInitialized) return;
  window.cyberFormInitialized = true;
  
+ 
+ 
+ const t = {
+ risk_critical: `CRITICAL RISK`,
+ risk_moderate: `MODERATE RISK`,
+ risk_safe: `SECURE LEVEL`,
+ desc_critical: `Your protection level is very low.`,
+ desc_moderate: `You have basic measures, but gaps exist.`,
+ desc_safe: `Your organization follows good practices.`,
+ desc_fallback: `We detected serious vulnerabilities in your infrastructure.`,
+ audit_includes: `🔓 Your personalized audit includes:`,
+ audit_analysis: `Detailed Analysis`,
+ audit_analysis_desc: `Technical explanation of your risks.`,
+ audit_roadmap: `Action Plan`,
+ audit_roadmap_desc: `Concrete steps to protect yourself today.`,
+ form_complete_data: `Complete the details to receive the report:`,
+ placeholder_name: `Your name`,
+ placeholder_email: `Your professional email`,
+ placeholder_org: `Your organization`,
+ btn_unlock: `📩 Unlock Full Audit`,
+ alert_invalid: `Please enter valid data.`,
+ loading_generating: `Generating detailed report...\u003cbr\u003e\u003csmall\u003e(This may take about 60 seconds)\u003c\/small\u003e`,
+ success_sent: `Audit sent!`,
+ success_check_email: `Check your email`,
+ next_steps: `What would you like to do now?`,
+ btn_protect: `🛡️ Protect me with GuardianRadar`,
+ btn_whatsapp: `Consult via WhatsApp`,
+ link_contact: `Or use the traditional contact form`,
+ error_sending: `Error sending. Please try again.`
+ };
+ 
+ const CURRENT_LANG = "en";
  const form = document.getElementById('cyber-form');
  const progressBar = document.getElementById('progress-bar');
- const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycby8Ol8vA1q8-Zw17N3Nc5RxmnkG2wollTRUZnvGQdifLYzows4oDODWZgIAMKuloxsXYQ/exec';
+ const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx9oHFYzUigU3UuHKeZyWqz5tGN70gd3ADIDvf2PYVO-Ya0uZFz9Iow4TgFpb30ycuEmA/exec';
  
  const questionsData = {
  gateway: {
@@ -272,8 +305,8 @@
  let currentPath = null; 
  let currentIndex = 0;
  let userRole = '';
+ let calculatedScore = 0;
  const answers = new Array(25).fill('');
- let storedReportHTML = ''; 
  
  function renderQuestion() {
  form.innerHTML = '';
@@ -285,15 +318,18 @@
  optionsHTML = q.options.map((opt) => 
  `&lt;button type="button" class="option-button gateway-btn" data-path="${opt.path}" data-role="${opt.text}">${opt.text}&lt;/button>`
  ).join('');
- updateProgressBar(0, 1); 
+ 
+ updateProgressBar();
  } else {
  const pathQuestions = questionsData[currentPath];
  if (currentIndex &lt; pathQuestions.length) {
  q = pathQuestions[currentIndex];
- optionsHTML = q.options.map(opt => 
- `&lt;button type="button" class="option-button answer-btn" data-value="${opt}">${opt}&lt;/button>`
- ).join('');
- updateProgressBar(currentIndex, pathQuestions.length);
+ optionsHTML = q.options.map((opt, idx) => {
+ const points = idx * 10; 
+ return `&lt;button type="button" class="option-button answer-btn" data-value="${opt}" data-points="${points}">${opt}&lt;/button>`;
+ }).join('');
+ 
+ updateProgressBar();
  } else {
  showGenerationScreen();
  return;
@@ -303,18 +339,13 @@
  }
  
  function updateProgressBar() {
- 
- const totalSteps = 6; 
+ const totalSteps = 6;
  let currentStep = 0;
- 
  if (!currentPath) {
- 
- currentStep = 0.5; 
+ currentStep = 0.5;
  } else {
- 
  currentStep = 1 + currentIndex;
  }
- 
  const progress = (currentStep / totalSteps) * 100;
  progressBar.style.width = `${progress}%`;
  }
@@ -329,6 +360,9 @@
  }
  if (e.target.classList.contains('answer-btn')) {
  const val = e.target.dataset.value;
+ const points = parseInt(e.target.dataset.points) || 0;
+ calculatedScore += points;
+ 
  const qTitle = questionsData[currentPath][currentIndex].title;
  answers[3 + currentIndex] = `${qTitle}: ${val}`;
  currentIndex++;
@@ -337,6 +371,8 @@
  });
  
  function showGenerationScreen() {
+ progressBar.style.width = '100%';
+ 
  form.innerHTML = `
  &lt;div class="form-slide active text-center" style="text-align:center;">
  &lt;h2 class="title">✅ All set!&lt;/h2>

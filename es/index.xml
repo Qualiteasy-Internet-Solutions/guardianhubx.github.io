@@ -176,8 +176,9 @@
  border-radius: 5px; font-size: 16px; margin-top: 5px; margin-bottom: 15px;
  box-sizing: border-box;
  }
- #progress-bar-container { width: 100%; background-color: #e9ecef; }
- #progress-bar { width: 0%; height: 8px; background-color: var(--form-primary-color); transition: width 0.3s ease; }
+ #progress-bar-container { width: 100%; background-color: #e9ecef; height: 8px; }
+ #progress-bar { width: 0%; height: 100%; background-color: var(--form-primary-color); transition: width 0.3s ease; }
+ 
  #cyber-form-container .btn {
  display: inline-block;
  font-weight: 600;
@@ -221,9 +222,41 @@
  if (window.cyberFormInitialized) return;
  window.cyberFormInitialized = true;
  
+ 
+ 
+ const t = {
+ risk_critical: `RIESGO CRÍTICO`,
+ risk_moderate: `RIESGO MODERADO`,
+ risk_safe: `NIVEL SEGURO`,
+ desc_critical: `Tu nivel de protección es muy bajo.`,
+ desc_moderate: `Tienes medidas básicas, pero existen brechas.`,
+ desc_safe: `Tu organización sigue buenas prácticas.`,
+ desc_fallback: `Hemos detectado vulnerabilidades graves en tu infraestructura.`,
+ audit_includes: `🔓 Tu auditoría personalizada incluye:`,
+ audit_analysis: `Análisis Detallado`,
+ audit_analysis_desc: `Explicación técnica de tus riesgos.`,
+ audit_roadmap: `Plan de Acción`,
+ audit_roadmap_desc: `Pasos concretos para protegerte hoy.`,
+ form_complete_data: `Completa los datos para recibir el informe:`,
+ placeholder_name: `Tu nombre`,
+ placeholder_email: `Tu email profesional`,
+ placeholder_org: `Tu organización`,
+ btn_unlock: `📩 Desbloquear Auditoría Completa`,
+ alert_invalid: `Por favor, introduce datos válidos.`,
+ loading_generating: `Generando informe detallado...\u003cbr\u003e\u003csmall\u003e(Esto puede tardar unos 60 segundos)\u003c\/small\u003e`,
+ success_sent: `¡Auditoría enviada!`,
+ success_check_email: `Revisa tu correo`,
+ next_steps: `¿Qué quieres hacer ahora?`,
+ btn_protect: `🛡️ Protegerme con GuardianRadar`,
+ btn_whatsapp: `Consultar por WhatsApp`,
+ link_contact: `O usa el formulario de contacto tradicional`,
+ error_sending: `Error al enviar. Inténtalo de nuevo.`
+ };
+ 
+ const CURRENT_LANG = "es";
  const form = document.getElementById('cyber-form');
  const progressBar = document.getElementById('progress-bar');
- const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycby8Ol8vA1q8-Zw17N3Nc5RxmnkG2wollTRUZnvGQdifLYzows4oDODWZgIAMKuloxsXYQ/exec';
+ const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx9oHFYzUigU3UuHKeZyWqz5tGN70gd3ADIDvf2PYVO-Ya0uZFz9Iow4TgFpb30ycuEmA/exec';
  
  const questionsData = {
  gateway: {
@@ -260,8 +293,8 @@
  let currentPath = null; 
  let currentIndex = 0;
  let userRole = '';
+ let calculatedScore = 0;
  const answers = new Array(25).fill('');
- let storedReportHTML = ''; 
  
  function renderQuestion() {
  form.innerHTML = '';
@@ -273,15 +306,18 @@
  optionsHTML = q.options.map((opt) => 
  `&lt;button type="button" class="option-button gateway-btn" data-path="${opt.path}" data-role="${opt.text}">${opt.text}&lt;/button>`
  ).join('');
- updateProgressBar(0, 1); 
+ 
+ updateProgressBar();
  } else {
  const pathQuestions = questionsData[currentPath];
  if (currentIndex &lt; pathQuestions.length) {
  q = pathQuestions[currentIndex];
- optionsHTML = q.options.map(opt => 
- `&lt;button type="button" class="option-button answer-btn" data-value="${opt}">${opt}&lt;/button>`
- ).join('');
- updateProgressBar(currentIndex, pathQuestions.length);
+ optionsHTML = q.options.map((opt, idx) => {
+ const points = idx * 10; 
+ return `&lt;button type="button" class="option-button answer-btn" data-value="${opt}" data-points="${points}">${opt}&lt;/button>`;
+ }).join('');
+ 
+ updateProgressBar();
  } else {
  showGenerationScreen();
  return;
@@ -291,18 +327,13 @@
  }
  
  function updateProgressBar() {
- 
- const totalSteps = 6; 
+ const totalSteps = 6;
  let currentStep = 0;
- 
  if (!currentPath) {
- 
- currentStep = 0.5; 
+ currentStep = 0.5;
  } else {
- 
  currentStep = 1 + currentIndex;
  }
- 
  const progress = (currentStep / totalSteps) * 100;
  progressBar.style.width = `${progress}%`;
  }
@@ -317,6 +348,9 @@
  }
  if (e.target.classList.contains('answer-btn')) {
  const val = e.target.dataset.value;
+ const points = parseInt(e.target.dataset.points) || 0;
+ calculatedScore += points;
+ 
  const qTitle = questionsData[currentPath][currentIndex].title;
  answers[3 + currentIndex] = `${qTitle}: ${val}`;
  currentIndex++;
@@ -325,6 +359,8 @@
  });
  
  function showGenerationScreen() {
+ progressBar.style.width = '100%';
+ 
  form.innerHTML = `
  &lt;div class="form-slide active text-center" style="text-align:center;">
  &lt;h2 class="title">✅ Listo&lt;/h2>
@@ -399,8 +435,9 @@
  border-radius: 5px; font-size: 16px; margin-top: 5px; margin-bottom: 15px;
  box-sizing: border-box;
  }
- #progress-bar-container { width: 100%; background-color: #e9ecef; }
- #progress-bar { width: 0%; height: 8px; background-color: var(--form-primary-color); transition: width 0.3s ease; }
+ #progress-bar-container { width: 100%; background-color: #e9ecef; height: 8px; }
+ #progress-bar { width: 0%; height: 100%; background-color: var(--form-primary-color); transition: width 0.3s ease; }
+ 
  #cyber-form-container .btn {
  display: inline-block;
  font-weight: 600;
@@ -444,9 +481,41 @@
  if (window.cyberFormInitialized) return;
  window.cyberFormInitialized = true;
  
+ 
+ 
+ const t = {
+ risk_critical: `RIESGO CRÍTICO`,
+ risk_moderate: `RIESGO MODERADO`,
+ risk_safe: `NIVEL SEGURO`,
+ desc_critical: `Tu nivel de protección es muy bajo.`,
+ desc_moderate: `Tienes medidas básicas, pero existen brechas.`,
+ desc_safe: `Tu organización sigue buenas prácticas.`,
+ desc_fallback: `Hemos detectado vulnerabilidades graves en tu infraestructura.`,
+ audit_includes: `🔓 Tu auditoría personalizada incluye:`,
+ audit_analysis: `Análisis Detallado`,
+ audit_analysis_desc: `Explicación técnica de tus riesgos.`,
+ audit_roadmap: `Plan de Acción`,
+ audit_roadmap_desc: `Pasos concretos para protegerte hoy.`,
+ form_complete_data: `Completa los datos para recibir el informe:`,
+ placeholder_name: `Tu nombre`,
+ placeholder_email: `Tu email profesional`,
+ placeholder_org: `Tu organización`,
+ btn_unlock: `📩 Desbloquear Auditoría Completa`,
+ alert_invalid: `Por favor, introduce datos válidos.`,
+ loading_generating: `Generando informe detallado...\u003cbr\u003e\u003csmall\u003e(Esto puede tardar unos 60 segundos)\u003c\/small\u003e`,
+ success_sent: `¡Auditoría enviada!`,
+ success_check_email: `Revisa tu correo`,
+ next_steps: `¿Qué quieres hacer ahora?`,
+ btn_protect: `🛡️ Protegerme con GuardianRadar`,
+ btn_whatsapp: `Consultar por WhatsApp`,
+ link_contact: `O usa el formulario de contacto tradicional`,
+ error_sending: `Error al enviar. Inténtalo de nuevo.`
+ };
+ 
+ const CURRENT_LANG = "es";
  const form = document.getElementById('cyber-form');
  const progressBar = document.getElementById('progress-bar');
- const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycby8Ol8vA1q8-Zw17N3Nc5RxmnkG2wollTRUZnvGQdifLYzows4oDODWZgIAMKuloxsXYQ/exec';
+ const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx9oHFYzUigU3UuHKeZyWqz5tGN70gd3ADIDvf2PYVO-Ya0uZFz9Iow4TgFpb30ycuEmA/exec';
  
  const questionsData = {
  gateway: {
@@ -483,8 +552,8 @@
  let currentPath = null; 
  let currentIndex = 0;
  let userRole = '';
+ let calculatedScore = 0;
  const answers = new Array(25).fill('');
- let storedReportHTML = ''; 
  
  function renderQuestion() {
  form.innerHTML = '';
@@ -496,15 +565,18 @@
  optionsHTML = q.options.map((opt) => 
  `&lt;button type="button" class="option-button gateway-btn" data-path="${opt.path}" data-role="${opt.text}">${opt.text}&lt;/button>`
  ).join('');
- updateProgressBar(0, 1); 
+ 
+ updateProgressBar();
  } else {
  const pathQuestions = questionsData[currentPath];
  if (currentIndex &lt; pathQuestions.length) {
  q = pathQuestions[currentIndex];
- optionsHTML = q.options.map(opt => 
- `&lt;button type="button" class="option-button answer-btn" data-value="${opt}">${opt}&lt;/button>`
- ).join('');
- updateProgressBar(currentIndex, pathQuestions.length);
+ optionsHTML = q.options.map((opt, idx) => {
+ const points = idx * 10; 
+ return `&lt;button type="button" class="option-button answer-btn" data-value="${opt}" data-points="${points}">${opt}&lt;/button>`;
+ }).join('');
+ 
+ updateProgressBar();
  } else {
  showGenerationScreen();
  return;
@@ -514,18 +586,13 @@
  }
  
  function updateProgressBar() {
- 
- const totalSteps = 6; 
+ const totalSteps = 6;
  let currentStep = 0;
- 
  if (!currentPath) {
- 
- currentStep = 0.5; 
+ currentStep = 0.5;
  } else {
- 
  currentStep = 1 + currentIndex;
  }
- 
  const progress = (currentStep / totalSteps) * 100;
  progressBar.style.width = `${progress}%`;
  }
@@ -540,6 +607,9 @@
  }
  if (e.target.classList.contains('answer-btn')) {
  const val = e.target.dataset.value;
+ const points = parseInt(e.target.dataset.points) || 0;
+ calculatedScore += points;
+ 
  const qTitle = questionsData[currentPath][currentIndex].title;
  answers[3 + currentIndex] = `${qTitle}: ${val}`;
  currentIndex++;
@@ -548,6 +618,8 @@
  });
  
  function showGenerationScreen() {
+ progressBar.style.width = '100%';
+ 
  form.innerHTML = `
  &lt;div class="form-slide active text-center" style="text-align:center;">
  &lt;h2 class="title">✅ Listo&lt;/h2>
