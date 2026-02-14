@@ -55,8 +55,9 @@
         border-radius: 5px; font-size: 16px; margin-top: 5px; margin-bottom: 15px;
         box-sizing: border-box;
     }
-    #progress-bar-container { width: 100%; background-color: #e9ecef; }
-    #progress-bar { width: 0%; height: 8px; background-color: var(--form-primary-color); transition: width 0.3s ease; }
+    #progress-bar-container { width: 100%; background-color: #e9ecef; height: 8px; }
+    #progress-bar { width: 0%; height: 100%; background-color: var(--form-primary-color); transition: width 0.3s ease; }
+    
     #cyber-form-container .btn {
         display: inline-block;
         font-weight: 600;
@@ -100,9 +101,41 @@ document.addEventListener('DOMContentLoaded', function() {
     if (window.cyberFormInitialized) return;
     window.cyberFormInitialized = true;
 
+    // 🌍 OBJECTE DE TRADUCCIONS (Injectat per Hugo)
+    // Això elimina tots els textos hardcoded del JS
+    const t = {
+        risk_critical: `{{ i18n "risk_critical" | safeJS }}`,
+        risk_moderate: `{{ i18n "risk_moderate" | safeJS }}`,
+        risk_safe: `{{ i18n "risk_safe" | safeJS }}`,
+        desc_critical: `{{ i18n "desc_critical" | safeJS }}`,
+        desc_moderate: `{{ i18n "desc_moderate" | safeJS }}`,
+        desc_safe: `{{ i18n "desc_safe" | safeJS }}`,
+        desc_fallback: `{{ i18n "desc_fallback" | safeJS }}`,
+        audit_includes: `{{ i18n "audit_includes" | safeJS }}`,
+        audit_analysis: `{{ i18n "audit_analysis" | safeJS }}`,
+        audit_analysis_desc: `{{ i18n "audit_analysis_desc" | safeJS }}`,
+        audit_roadmap: `{{ i18n "audit_roadmap" | safeJS }}`,
+        audit_roadmap_desc: `{{ i18n "audit_roadmap_desc" | safeJS }}`,
+        form_complete_data: `{{ i18n "form_complete_data" | safeJS }}`,
+        placeholder_name: `{{ i18n "placeholder_name" | safeJS }}`,
+        placeholder_email: `{{ i18n "placeholder_email" | safeJS }}`,
+        placeholder_org: `{{ i18n "placeholder_org" | safeJS }}`,
+        btn_unlock: `{{ i18n "btn_unlock" | safeJS }}`,
+        alert_invalid: `{{ i18n "alert_invalid" | safeJS }}`,
+        loading_generating: `{{ i18n "loading_generating" | safeJS }}`,
+        success_sent: `{{ i18n "success_sent" | safeJS }}`,
+        success_check_email: `{{ i18n "success_check_email" | safeJS }}`,
+        next_steps: `{{ i18n "next_steps" | safeJS }}`,
+        btn_protect: `{{ i18n "btn_protect" | safeJS }}`,
+        btn_whatsapp: `{{ i18n "btn_whatsapp" | safeJS }}`,
+        link_contact: `{{ i18n "link_contact" | safeJS }}`,
+        error_sending: `{{ i18n "error_sending" | safeJS }}`
+    };
+
+    const CURRENT_LANG = "{{ .Page.Language.Lang }}";
     const form = document.getElementById('cyber-form');
     const progressBar = document.getElementById('progress-bar');
-    const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycby8Ol8vA1q8-Zw17N3Nc5RxmnkG2wollTRUZnvGQdifLYzows4oDODWZgIAMKuloxsXYQ/exec';
+    const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx9oHFYzUigU3UuHKeZyWqz5tGN70gd3ADIDvf2PYVO-Ya0uZFz9Iow4TgFpb30ycuEmA/exec';
 
     const questionsData = {
         gateway: {
@@ -139,8 +172,8 @@ document.addEventListener('DOMContentLoaded', function() {
     let currentPath = null; 
     let currentIndex = 0;
     let userRole = '';
+    let calculatedScore = 0;
     const answers = new Array(25).fill('');
-    let storedReportHTML = ''; 
 
     function renderQuestion() {
         form.innerHTML = '';
@@ -152,15 +185,18 @@ document.addEventListener('DOMContentLoaded', function() {
             optionsHTML = q.options.map((opt) => 
                 `<button type="button" class="option-button gateway-btn" data-path="${opt.path}" data-role="${opt.text}">${opt.text}</button>`
             ).join('');
-            updateProgressBar(0, 1); 
+            
+            updateProgressBar();
         } else {
             const pathQuestions = questionsData[currentPath];
             if (currentIndex < pathQuestions.length) {
                 q = pathQuestions[currentIndex];
-                optionsHTML = q.options.map(opt => 
-                    `<button type="button" class="option-button answer-btn" data-value="${opt}">${opt}</button>`
-                ).join('');
-                updateProgressBar(currentIndex, pathQuestions.length);
+                optionsHTML = q.options.map((opt, idx) => {
+                    const points = idx * 10; 
+                    return `<button type="button" class="option-button answer-btn" data-value="${opt}" data-points="${points}">${opt}</button>`;
+                }).join('');
+                
+                updateProgressBar();
             } else {
                 showGenerationScreen();
                 return;
@@ -170,18 +206,13 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function updateProgressBar() {
-        // Total de passos: 1 (Gateway) + 5 (Preguntes del camí)
-        const totalSteps = 6; 
+        const totalSteps = 6;
         let currentStep = 0;
-
         if (!currentPath) {
-            // Estem a la primera pantalla (Gateway)
-            currentStep = 0.5; // Comencem amb una mica de barra
+            currentStep = 0.5;
         } else {
-            // Ja hem passat el Gateway (1) + l'índex actual de la pregunta
             currentStep = 1 + currentIndex;
         }
-
         const progress = (currentStep / totalSteps) * 100;
         progressBar.style.width = `${progress}%`;
     }
@@ -196,6 +227,9 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         if (e.target.classList.contains('answer-btn')) {
             const val = e.target.dataset.value;
+            const points = parseInt(e.target.dataset.points) || 0;
+            calculatedScore += points;
+
             const qTitle = questionsData[currentPath][currentIndex].title;
             answers[3 + currentIndex] = `${qTitle}: ${val}`;
             currentIndex++;
@@ -204,6 +238,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     function showGenerationScreen() {
+        progressBar.style.width = '100%';
+
         form.innerHTML = `
             <div class="form-slide active text-center" style="text-align:center;">
                 <h2 class="title">{{ i18n "form_ready_title" | safeJS }}</h2>
@@ -214,44 +250,50 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function procesarYGenerar() {
-        form.innerHTML = `<div class="form-slide active"><div id="loader"><p>{{ i18n "form_generating_report_title" | safeJS }}</p><div class="spinner"></div><p>Analizando vulnerabilidades críticas...</p></div></div>`;
+        form.innerHTML = `<div class="form-slide active"><div id="loader"><p>{{ i18n "form_generating_report_title" | safeJS }}</p><div class="spinner"></div><p>${t.loading_generating}</p></div></div>`;
         answers[0] = new Date().toISOString();
         const formData = new FormData();
         answers.forEach((value, index) => { formData.append(`col${index}`, value); });
+        formData.append('calculatedScore', calculatedScore);
+        formData.append('lang', CURRENT_LANG);
 
         fetch(SCRIPT_URL, { method: 'POST', body: formData })
-            .then(response => response.json()) // ✅ Ara llegim JSON
+            .then(response => response.json())
             .then(data => {
-                // Guardem les dades reals que venen de l'Excel/IA
-                storedReportHTML = data.html;
-                const realScore = data.score;
-                mostrarTeaserYCaptura(realScore); // ✅ Passem la nota real
+                mostrarTeaserYCaptura(data.score, data.summary);
             })
             .catch(error => {
                 console.error('Error:', error);
-                form.innerHTML = `<p>❌ Ha habido un error de conexión.</p>`;
+                mostrarTeaserYCaptura(calculatedScore, null);
             });
     }
 
-    function mostrarTeaserYCaptura(score) {
-        form.innerHTML = '';
+    function mostrarTeaserYCaptura(score, aiSummary) {
+        document.getElementById('progress-bar-container').style.display = 'none';
         
-        // Convertim a número per seguretat
+        form.innerHTML = '';
         let finalScore = parseInt(score) || 0;
 
-        // Lògica de colors segons la nota real de l'Excel
-        let color = "#dc3545"; // Vermell (0-39)
-        let label = "RIESGO CRÍTICO";
-        let desc = "Tu nivel de protección es muy bajo. Necesitas actuar urgentemente.";
+        let color = "#dc3545"; 
+        let label = t.risk_critical;
+        let desc = t.desc_fallback; // Text per defecte si falla tot
 
         if (finalScore >= 40 && finalScore < 70) {
-            color = "#ffc107"; // Groc (40-69)
-            label = "RIESGO MODERADO";
-            desc = "Tienes medidas básicas, pero existen brechas de seguridad.";
+            color = "#ffc107";
+            label = t.risk_moderate;
         } else if (finalScore >= 70) {
-            color = "#28a745"; // Verd (70-100)
-            label = "NIVEL SEGURO";
-            desc = "Tu organización sigue buenas prácticas de seguridad.";
+            color = "#28a745";
+            label = t.risk_safe;
+        }
+
+        // Si tenim teaser de la IA, l'usem
+        if (aiSummary && aiSummary.length > 5) {
+            desc = aiSummary;
+        } else {
+            // Si no, usem els textos estàtics traduïts
+            if (finalScore < 40) desc = t.desc_critical;
+            else if (finalScore < 70) desc = t.desc_moderate;
+            else desc = t.desc_safe;
         }
 
         const strokeDash = (finalScore * 251.2) / 100;
@@ -263,7 +305,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     <svg width="150" height="150" viewBox="0 0 100 100">
                         <circle cx="50" cy="50" r="40" stroke="#eeeeee" stroke-width="8" fill="transparent" />
                         <circle cx="50" cy="50" r="40" stroke="${color}" stroke-width="8" fill="transparent" 
-                                stroke-dasharray="${strokeDash} 251.2" stroke-linecap="round" transform="rotate(-90 50 50)" />
+                                stroke-dasharray="${strokeDash} 251.2" stroke-linecap="round" transform="rotate(-90 50 50)" 
+                                style="transition: stroke-dasharray 1s ease-out;" />
                     </svg>
                     <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
                         <span style="font-size: 32px; font-weight: 800; color: #333;">${finalScore}</span>
@@ -272,28 +315,31 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>
 
                 <div style="margin-bottom: 25px;">
-                    <div style="display: inline-block; padding: 6px 20px; background: ${color}; color: white; border-radius: 50px; font-weight: bold; font-size: 16px; margin-bottom: 10px;">
+                    <div style="display: inline-block; padding: 6px 20px; background: ${color}; color: white; border-radius: 50px; font-weight: bold; font-size: 16px; margin-bottom: 15px;">
                         ${label}
                     </div>
-                    <p style="color: #666; font-size: 15px; max-width: 400px; margin: 0 auto;">${desc}</p>
+                    
+                    <div style="background-color: #fff3cd; border-left: 5px solid ${color}; padding: 15px; text-align: left; border-radius: 4px; color: #555; font-size: 15px; max-width: 500px; margin: 0 auto; line-height: 1.5; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+                        ${desc}
+                    </div>
                 </div>
                 
                 <div style="background:#f8f9fa; padding:20px; border-radius:12px; margin-bottom: 30px; text-align:left; border: 1px solid #eee;">
-                    <p style="font-weight: bold; color: var(--form-primary-color); margin-bottom: 12px; font-size: 16px;">🔓 Tu auditoría personalizada incluye:</p>
+                    <p style="font-weight: bold; color: var(--form-primary-color); margin-bottom: 12px; font-size: 16px;">${t.audit_includes}</p>
                     <ul style="list-style: none; padding: 0; margin: 0; font-size: 14px; color: #444;">
-                        <li style="margin-bottom: 8px; display: flex; align-items: start;"><span style="color: #28a745; margin-right: 10px;">✔</span> <span><strong>Análisis de Vulnerabilidades:</strong> Los 3 puntos críticos detectados.</span></li>
-                        <li style="margin-bottom: 8px; display: flex; align-items: start;"><span style="color: #28a745; margin-right: 10px;">✔</span> <span><strong>Hoja de Ruta:</strong> Cómo mejorar tu nota hoy mismo.</span></li>
+                        <li style="margin-bottom: 8px; display: flex; align-items: start;"><span style="color: #28a745; margin-right: 10px;">✔</span> <span><strong>${t.audit_analysis}</strong> ${t.audit_analysis_desc}</span></li>
+                        <li style="margin-bottom: 8px; display: flex; align-items: start;"><span style="color: #28a745; margin-right: 10px;">✔</span> <span><strong>${t.audit_roadmap}</strong> ${t.audit_roadmap_desc}</span></li>
                     </ul>
                 </div>
 
                 <div id="email-gate-container" style="max-width: 450px; margin: 0 auto; text-align: left;">
-                    <p style="font-weight: bold; margin-bottom: 15px; text-align: center;">Completa los datos para recibir el informe:</p>
+                    <p style="font-weight: bold; margin-bottom: 15px; text-align: center;">${t.form_complete_data}</p>
                     <div style="display: flex; flex-direction: column; gap: 12px;">
-                        <input type="text" id="nombre-gate" placeholder="Tu nombre" class="form-input" style="margin:0;">
-                        <input type="email" id="email-gate" placeholder="Tu email profesional" class="form-input" style="margin:0;">
-                        <input type="text" id="org-gate" placeholder="Tu organización" class="form-input" style="margin:0;">
+                        <input type="text" id="nombre-gate" placeholder="${t.placeholder_name}" class="form-input" style="margin:0;">
+                        <input type="email" id="email-gate" placeholder="${t.placeholder_email}" class="form-input" style="margin:0;">
+                        <input type="text" id="org-gate" placeholder="${t.placeholder_org}" class="form-input" style="margin:0;">
                         <button type="button" id="unlock-report-btn" class="btn btn-primary" style="width:100%; height: 50px; font-size: 17px; font-weight: bold; margin-top: 10px; box-shadow: 0 4px 12px rgba(0,123,255,0.2);">
-                            📩 Desbloquear Auditoría Completa
+                            ${t.btn_unlock}
                         </button>
                     </div>
                 </div>
@@ -303,48 +349,48 @@ document.addEventListener('DOMContentLoaded', function() {
             const name = document.getElementById('nombre-gate').value;
             const email = document.getElementById('email-gate').value;
             const org = document.getElementById('org-gate').value || "Individual";
-            if (!email.includes('@') || name.length < 2) { alert("Por favor, introduce datos válidos."); return; }
+            if (!email.includes('@') || name.length < 2) { alert(t.alert_invalid); return; }
             enviarEmailFinal(name, email, org);
         });
     }
 
     function enviarEmailFinal(name, email, org) {
         const container = document.getElementById('email-gate-container');
-        container.innerHTML = `<div class="spinner"></div><p style="text-align:center;">Enviando informe a ${email}...</p>`;
+        container.innerHTML = `<div class="spinner"></div><p style="text-align:center;">${t.loading_generating}</p>`;
 
         const emailData = new FormData();
         emailData.append('action', 'send_email');
         emailData.append('email', email);
         emailData.append('nombre', name);
         emailData.append('organizacion', org);
-        emailData.append('html', storedReportHTML); 
+        emailData.append('lang', CURRENT_LANG);
 
         fetch(SCRIPT_URL, { method: 'POST', body: emailData })
             .then(() => {
                 form.innerHTML = `
                     <div class="form-slide active" style="text-align:center; padding: 30px 10px;">
                         <div style="font-size: 60px; margin-bottom: 20px;">🚀</div>
-                        <h2 style="font-size: 26px; color: #28a745; margin-bottom: 10px;">¡Auditoría enviada!</h2>
-                        <p style="font-size: 16px; color: #555; margin-bottom: 30px;">Revisa tu correo <strong>${email}</strong>.</p>
+                        <h2 style="font-size: 26px; color: #28a745; margin-bottom: 10px;">${t.success_sent}</h2>
+                        <p style="font-size: 16px; color: #555; margin-bottom: 30px;">${t.success_check_email} <strong>${email}</strong>.</p>
                         
                         <div style="background: #f0f7ff; padding: 25px; border-radius: 15px; border: 1px solid #cfe2ff; max-width: 450px; margin: 0 auto;">
-                            <h3 style="font-size: 18px; margin-bottom: 20px; color: #0056b3; font-weight: bold;">¿Qué quieres hacer ahora?</h3>
+                            <h3 style="font-size: 18px; margin-bottom: 20px; color: #0056b3; font-weight: bold;">${t.next_steps}</h3>
                             <div style="display: flex; flex-direction: column; gap: 15px;">
                                 <a href="https://guardianhubx.com/es/guardianradar/" class="btn btn-primary" style="display: flex; align-items: center; justify-content: center; gap: 10px; padding: 14px; text-decoration: none; font-weight: bold;">
-                                    🛡️ Protegerme con GuardianRadar
+                                    ${t.btn_protect}
                                 </a>
                                 <a href="https://wa.me/34934153115" target="_blank" style="display: flex; align-items: center; justify-content: center; gap: 10px; padding: 14px; background: #25D366; color: white; border-radius: 5px; text-decoration: none; font-weight: bold;">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="20" height="20" alt="WhatsApp"> Consultar por WhatsApp
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="20" height="20" alt="WhatsApp"> ${t.btn_whatsapp}
                                 </a>
                                 <a href="https://guardianhubx.com/es/index.html#contact" style="color: #666; text-decoration: underline; font-size: 13px; margin-top: 5px;">
-                                    O usa el formulario de contacto tradicional
+                                    ${t.link_contact}
                                 </a>
                             </div>
                         </div>
                     </div>`;
             })
             .catch(err => {
-                container.innerHTML = `<p style="color:red;">Error al enviar. Inténtalo de nuevo.</p>`;
+                container.innerHTML = `<p style="color:red;">${t.error_sending}</p>`;
             });
     }
 
