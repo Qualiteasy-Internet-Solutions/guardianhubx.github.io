@@ -223,7 +223,7 @@
  
  const form = document.getElementById('cyber-form');
  const progressBar = document.getElementById('progress-bar');
- const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxNSMoUe72OstdspSYzzRRoI9PGnNepmR9CdaHuMDq604hgI_FxfqqAWK5iHkRStJH68Q/exec';
+ const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycby8Ol8vA1q8-Zw17N3Nc5RxmnkG2wollTRUZnvGQdifLYzows4oDODWZgIAMKuloxsXYQ/exec';
  
  const questionsData = {
  gateway: {
@@ -446,7 +446,7 @@
  
  const form = document.getElementById('cyber-form');
  const progressBar = document.getElementById('progress-bar');
- const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxNSMoUe72OstdspSYzzRRoI9PGnNepmR9CdaHuMDq604hgI_FxfqqAWK5iHkRStJH68Q/exec';
+ const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycby8Ol8vA1q8-Zw17N3Nc5RxmnkG2wollTRUZnvGQdifLYzows4oDODWZgIAMKuloxsXYQ/exec';
  
  const questionsData = {
  gateway: {
