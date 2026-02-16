@@ -1,12 +1,13 @@
 ---
 title: "Política de Cookies"
 description: "Información sobre el uso de cookies en GuardianHubX."
+translationKey: "cookies-policy"
 slug: "politica-cookies"
 translations:
   - lang: en
     path: "/en/cookies-policy/"
   - lang: ca
-    path: /ca/politica-privacitat/
+    path: /ca/politica-cookies/
 ---
 
 Si quieres saber más sobre el uso de cookies que realiza este sitio web **GuardianHubX**, estás en el lugar indicado. A continuación, vamos a explicarte qué son exactamente las cookies; qué tipo de cookies utilizamos y para qué; y cómo puedes ejercer tu derecho para configurar tu navegador y desestimar el uso de cualquiera de ellas.

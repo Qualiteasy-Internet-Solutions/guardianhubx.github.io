@@ -1,6 +1,7 @@
 ---
 title: "Evita el phishing amb el software que forma els teus empleats"
 description: "Avalua gratis l'estat de la ciberseguretat de la teva empresa amb simulacions realistes i formació pràctica."
+translationKey: "phishing-training"
 layout: "landing-ciberseguridad"
 translations:
   - lang: es

@@ -1,5 +1,6 @@
 ---
 title: "EduCraft"
+description: "Cybersecurity for educational centers. Protect your teaching staff, automate device maintenance and train your team against phishing."
 layout: "products"
 logo: "/img/educraft-logo.png"
 tagline: "Tailored cybersecurity for minds that teach"

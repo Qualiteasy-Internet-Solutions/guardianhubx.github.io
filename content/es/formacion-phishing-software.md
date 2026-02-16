@@ -1,6 +1,7 @@
 ---
 title: "Evita el phishing con el software que entrena a tus empleados"
-description: "Evalúa gratis el estado de la ciberseguridad de tu empresa con GuardianHubX. Entrena a tu equipo contra ataques de phishing con simulaciones realistas y personalizadas."
+description: "Entrena a tu equipo contra ataques de phishing con simulaciones realistas y personalizadas. Software de concienciación de GuardianHubX."
+translationKey: "phishing-training"
 layout: "landing-ciberseguridad"
 translations:
   - lang: es

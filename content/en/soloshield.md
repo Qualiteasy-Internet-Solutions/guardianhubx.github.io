@@ -1,5 +1,6 @@
 ---
 title: "SoloShield"
+description: "Digital protection for freelancers and independent professionals. Antivirus, VPN, password manager and automatic backup."
 layout: "products"
 logo: "/img/soloshield-logo.png"
 tagline: "For those who work solo but want a strong shield"

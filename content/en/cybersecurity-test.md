@@ -1,6 +1,7 @@
 ---
 title: "Cybersecurity Test"
 description: "Evaluate your company's cybersecurity posture for free with GuardianHubX."
+translationKey: "cybersecurity-test"
 layout: "landing-ciberseguridad"
 translations:
   - lang: es

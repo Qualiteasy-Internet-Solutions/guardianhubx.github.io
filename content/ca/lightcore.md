@@ -1,5 +1,6 @@
 ---
 title: "LightCore"
+description: "Pack essencial de ciberseguretat per a equips petits. Inclou antivirus avançat, gestor de contrasenyes i formació anti-phishing."
 layout: "products"
 logo: "/img/lightcore-logo.png"
 tagline: "Lleuger, essencial i eficaç. El punt de partida perfecte."

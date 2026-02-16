@@ -1,6 +1,7 @@
 ---
 title: "Cookies Policy"
 description: "Information about the use of cookies at GuardianHubX."
+translationKey: "cookies-policy"
 url: "/en/cookies-policy/"
 slug: "cookies-policy"
 translations:

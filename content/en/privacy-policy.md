@@ -1,6 +1,7 @@
 ---
 title: "Privacy Policy"
 description: "Commitment to the protection of personal data under GDPR and LOPDGDD."
+translationKey: "privacy-policy"
 url: "/en/privacy-policy/"
 slug: "privacy-policy"
 translations:

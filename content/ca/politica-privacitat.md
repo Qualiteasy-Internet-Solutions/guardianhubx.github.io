@@ -1,6 +1,7 @@
 ---
 title: "Política de privacitat"
 description: "Compromís amb la protecció de dades personals segons el RGPD i la LOPDGDD."
+translationKey: "privacy-policy"
 slug: "politica-privacitat"
 translations:
   - lang: es

@@ -1,6 +1,8 @@
 ---
 title: "Los Pilares de la Ciberseguridad Moderna"
-layout: "objectives" 
+description: "Descubre los pilares de la ciberseguridad moderna: prevención, detección y recuperación. Estrategia integral de protección para empresas."
+translationKey: "cybersecurity-goals"
+layout: "objectives"
 slug: "objetivos-ciberseguridad"
 url: "/es/objetivos-ciberseguridad/"
 translations:

@@ -1,6 +1,7 @@
 ---
 title: "Test de Ciberseguretat"
 description: "Avalua gratis l'estat de la ciberseguretat de la teva empresa amb GuardianHubX"
+translationKey: "cybersecurity-test"
 layout: "landing-ciberseguridad"
 translations:
   - lang: es

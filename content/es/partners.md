@@ -1,6 +1,6 @@
 ---
 title: "GuardianHubX - Ecosistema de ciberseguridad con los mejores partners"
-description: "Trabajamos con los principales proveedores de ciberseguridad para ofrecer soluciones fiables, potentes y complementarias: contraseñas, backups, phishing, antivirus, MDM y más."
+description: "Partners de ciberseguridad de GuardianHubX: soluciones fiables y complementarias de contraseñas, backups, antivirus, MDM y más."
 markup: "html"
 ---
 

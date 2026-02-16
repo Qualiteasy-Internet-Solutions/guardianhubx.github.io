@@ -1,6 +1,8 @@
 ---
 title: "The Pillars of Modern Cybersecurity"
-layout: "objectives" 
+description: "Discover the pillars of modern cybersecurity: prevention, detection and recovery. A comprehensive protection strategy for businesses."
+translationKey: "cybersecurity-goals"
+layout: "objectives"
 slug: "cybersecurity-goals"
 url: "/en/cybersecurity-goals/"
 translations:

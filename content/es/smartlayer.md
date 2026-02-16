@@ -1,5 +1,6 @@
 ---
 title: "SmartLayer"
+description: "Ciberseguridad avanzada para empresas en crecimiento. Gestión centralizada de dispositivos, backup, acceso remoto seguro y formación."
 layout: "products"
 logo: "/img/smartlayer-logo.png"
 tagline: "Un paso más allá: todo conectado, todo bajo control."

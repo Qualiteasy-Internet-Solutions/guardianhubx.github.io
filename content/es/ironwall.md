@@ -1,5 +1,6 @@
 ---
 title: "IronWall"
+description: "Solución integral de ciberseguridad para empresas. Protege dispositivos, accesos y cultura de seguridad interna. Modular y escalable."
 layout: "products"
 logo: "/img/ironwall-logo.png"
 tagline: "El todo en uno que hace que los ciberdelincuentes se lo piensen dos veces."

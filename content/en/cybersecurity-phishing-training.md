@@ -1,6 +1,7 @@
 ---
 title: "Stop phishing with the software that trains your employees"
 description: "Evaluate your company's cybersecurity status for free with GuardianHubX. Train your team against phishing attacks with realistic and customizable simulations."
+translationKey: "phishing-training"
 layout: "landing-ciberseguridad"
 translations:
   - lang: es

@@ -1,5 +1,6 @@
 ---
 title: "EduCraft"
+description: "Ciberseguridad para centros educativos. Protege al profesorado, automatiza el mantenimiento de dispositivos y forma a tu equipo contra el phishing."
 layout: "products"
 logo: "/img/educraft-logo.png"
 tagline: "Ciberseguridad a medida para mentes que enseñan"
