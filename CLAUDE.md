@@ -78,7 +78,7 @@ Pages support these SEO-related params:
 - Supabase: used in Space Invaders leaderboard (spaceinvaders-form.html)
 - Brevo (Sendinblue): newsletter forms
 
-### My Project Rules
-- ALWAYS use Claude 3.5 Haiku for simple tasks.
+# My Project Rules
+- ALWAYS use Haiku model for simple tasks.
 - ASK for permission before running broad audits or reading more than 5 files.
 - WARNING: We are on a tight token budget. Be concise.
