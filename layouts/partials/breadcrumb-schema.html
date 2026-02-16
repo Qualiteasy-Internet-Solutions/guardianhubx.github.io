@@ -1,0 +1,53 @@
+{{ if not .IsHome -}}
+{{- $layout := .Layout | default "" -}}
+{{- $category := "" -}}
+{{- $categoryName := "" -}}
+
+{{/* Aprende a protegerte */}}
+{{- if in (slice "landing-ciberseguridad" "objectives") $layout -}}
+  {{- $category = "apren" -}}
+  {{- $categoryName = i18n "apren" -}}
+
+{{/* Soluciones */}}
+{{- else if in (slice "products" "radar") $layout -}}
+  {{- $category = "solucions" -}}
+  {{- $categoryName = i18n "solucions" -}}
+
+{{/* Partners */}}
+{{- else if eq $layout "product" -}}
+  {{- $category = "partners" -}}
+  {{- $categoryName = "Partners" -}}
+
+{{- end -}}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "{{ site.Title }}",
+      "item": "{{ (printf "/%s/" .Lang) | absURL }}"
+    }{{ if $categoryName }},
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "{{ $categoryName }}",
+      "item": "{{ (printf "/%s/%s/" .Lang $category) | absURL }}"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "{{ .Title }}"
+    }{{ else }},
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "{{ .Title }}"
+    }{{ end }}
+  ]
+}
+</script>
+{{- end }}

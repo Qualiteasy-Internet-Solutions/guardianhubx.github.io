@@ -3,6 +3,7 @@
 <!-- Meta y Configuración General -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:locale" content="{{ .Lang }}" />
 <title>{{ .Title }}</title>
 
 {{ $description := "" }}
@@ -18,13 +19,16 @@
 {{ end }}
 
 <meta name="description" content="{{ $description }}">
+<meta name="author" content="{{ site.Params.author }}">
 <meta name="robots" content="index,follow,max-image-preview:large">
 
 <!-- hreflang para cambio dinámico de idioma -->
+{{- $langMap := dict "es" "es-ES" "ca" "ca-ES" "en" "en-US" -}}
+
 <link rel="canonical" href="{{ .Permalink }}" />
-<link rel="alternate" href="{{ .Permalink }}" hreflang="{{ .Lang }}" />
+<link rel="alternate" href="{{ .Permalink }}" hreflang="{{ index $langMap .Lang }}" />
 {{ range .Translations }}
-<link rel="alternate" href="{{ .Permalink }}" hreflang="{{ .Lang }}" />
+<link rel="alternate" href="{{ .Permalink }}" hreflang="{{ index $langMap .Lang }}" />
 {{ end }}
 <link rel="alternate" href="{{ site.BaseURL }}" hreflang="x-default" />
 
@@ -47,12 +51,15 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" media="print" onload="this.media='all'">
-<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"></noscript>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
 
 <!-- Estilos propios -->
 <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
-<link rel="stylesheet" href="/css/landing_phishing.css">
+
+<!-- Preconnect third-party scripts -->
+<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+<link rel="preconnect" href="https://consent.cookiebot.com" crossorigin>
 
 <!-- Cookiebot -->
 <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="bf39c032-5ccc-4753-b2b0-e9fb087679ae" type="text/javascript" async></script>
@@ -82,10 +89,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="twitter:description" content="{{ with .Params.twitterDescription }}{{ . | plainify }}{{ else }}{{ $description }}{{ end }}" />
 {{- $twDefault := $ogDefault -}}
 <meta name="twitter:image" content="{{ with .Params.twitterImage }}{{ . | absURL }}{{ else }}{{ with .Params.ogImage }}{{ . | absURL }}{{ else }}{{ $twDefault }}{{ end }}{{ end }}" />
-
+<meta name="twitter:site" content="@GuardianHubX" />
 
 <!-- JS adicionales -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
 <script src="/js/script.js" defer></script>
 
 <script>

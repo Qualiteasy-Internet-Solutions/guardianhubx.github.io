@@ -227,23 +227,6 @@
   </div>
 </div>
 
-<style>
-  .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7); z-index: 9999; display: flex; justify-content: center; align-items: center; backdrop-filter: blur(5px); }
-  .modal-content { background-color: white; padding: 30px; border-radius: 15px; width: 90%; max-width: 450px; position: relative; box-shadow: 0 10px 25px rgba(0,0,0,0.2); animation: slideDown 0.3s ease-out; text-align: left; }
-  @keyframes slideDown { from { transform: translateY(-50px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
-  .close-modal { position: absolute; top: 15px; right: 20px; font-size: 28px; font-weight: bold; color: #aaa; cursor: pointer; }
-  .close-modal:hover { color: #000; }
-  .modal-header { text-align: center; margin-bottom: 20px; }
-  .modal-header h3 { margin: 10px 0 5px; color: #0d2c56; }
-  .modal-header p { font-size: 0.9rem; color: #666; }
-  .form-group { margin-bottom: 15px; }
-  .form-group label { display: block; font-weight: 600; margin-bottom: 5px; font-size: 0.9rem; color: #333; }
-  .form-group input, .form-group select { width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 8px; font-size: 1rem; }
-  .btn-submit-whatsapp { width: 100%; background-color: #25D366; color: white; border: none; padding: 12px; font-size: 1.1rem; font-weight: bold; border-radius: 8px; cursor: pointer; margin-top: 10px; transition: background 0.3s; }
-  .btn-submit-whatsapp:hover { background-color: #128C7E; }
-  .legal-note { font-size: 0.75rem; color: #999; text-align: center; margin-top: 15px; }
-</style>
-
 <script>
   function abrirPopup() { document.getElementById('modalPedido').style.display = 'flex'; }
   function cerrarPopup() { document.getElementById('modalPedido').style.display = 'none'; }

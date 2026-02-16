@@ -2,7 +2,6 @@ baseURL = "https://guardianhubx.com/"
 title = "GuardianHubX"
 defaultContentLanguage = "es"
 defaultContentLanguageInSubdir = true
-enableRobotsTXT = true
 
 disableKinds = ["taxonomy"]
 
@@ -32,3 +31,7 @@ disableKinds = ["taxonomy"]
     weight = 3
     contentDir = "content/en"
     title = "GuardianHubX - Cybersecurity"
+
+[params]
+  description = "Soluciones avanzadas de ciberseguridad para empresas y autónomos"
+  author = "GuardianHubX"
