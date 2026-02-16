@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - GuardianHubX</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="/icons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg">
+  <style>
+    body {
+      font-family: 'DM Sans', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background: #f8f9fa;
+      margin: 0;
+    }
+    .nav-404 {
+      background: #e4e4e4;
+      padding: 1rem 0;
+    }
+    .nav-404 img {
+      max-width: 200px;
+    }
+    .content-404 {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+    .error-code {
+      font-size: 8rem;
+      font-weight: 900;
+      color: #1232ff;
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+    .error-message {
+      font-size: 1.5rem;
+      color: #333;
+      margin-bottom: 0.5rem;
+    }
+    .error-sub {
+      color: #6c757d;
+      margin-bottom: 2rem;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .btn-home {
+      background-color: #1232ff;
+      color: #fff;
+      border: none;
+      padding: 0.75rem 2rem;
+      border-radius: 0.375rem;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-block;
+      transition: opacity 0.2s;
+    }
+    .btn-home:hover {
+      opacity: 0.85;
+      color: #fff;
+    }
+    .footer-404 {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.85rem;
+      color: #6c757d;
+      border-top: 2px solid #212529;
+      background: #f8f9fa;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav-404">
+    <div class="container">
+      <a id="logo-link" href="/es/">
+        <img src="/img/logo_GHX_01-01.webp" alt="GuardianHubX">
+      </a>
+    </div>
+  </nav>
+
+  <main class="content-404">
+    <div>
+      <div class="error-code">404</div>
+      <p class="error-message" id="msg"></p>
+      <p class="error-sub" id="sub"></p>
+      <a id="btn" class="btn-home" href="/es/"></a>
+    </div>
+  </main>
+
+  <footer class="footer-404">
+    &copy; <span id="year"></span> <strong>GuardianHubX</strong> by
+    <a href="https://qualiteasy.eu/" class="text-decoration-none" style="color:#1232ff;" target="_blank" rel="noopener">
+      Qualiteasy Internet Solutions
+    </a>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    var texts = {
+      es: {
+        msg: "Página no encontrada",
+        sub: "Lo sentimos, la página que buscas no existe o ha sido movida.",
+        btn: "Volver al inicio"
+      },
+      ca: {
+        msg: "Pàgina no trobada",
+        sub: "Ho sentim, la pàgina que busques no existeix o s'ha mogut.",
+        btn: "Tornar a l'inici"
+      },
+      en: {
+        msg: "Page not found",
+        sub: "Sorry, the page you're looking for doesn't exist or has been moved.",
+        btn: "Back to home"
+      }
+    };
+
+    var lang = "es";
+    var path = window.location.pathname;
+    if (path.indexOf("/ca/") === 0) lang = "ca";
+    else if (path.indexOf("/en/") === 0) lang = "en";
+
+    document.documentElement.lang = lang;
+    document.getElementById('msg').textContent = texts[lang].msg;
+    document.getElementById('sub').textContent = texts[lang].sub;
+    document.getElementById('btn').textContent = texts[lang].btn;
+    document.getElementById('btn').href = "/" + lang + "/";
+    document.getElementById('logo-link').href = "/" + lang + "/";
+  </script>
+
+</body>
+</html>
