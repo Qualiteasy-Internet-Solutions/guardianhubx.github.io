@@ -20,37 +20,26 @@
   {{- $matchedPosts := slice -}}
 
   {{- if $keywordString -}}
-    {{- $keywords := $keywordString | strings.Split "," -}}
+    {{- $keywords := split $keywordString "," -}}
 
-    {{- range $posts -}}
-      {{- $post := . -}}
-      {{- $matched := false -}}
+    {{- range $idx, $post := $posts -}}
+      {{- $postMatched := false -}}
 
       {{- range $keywords -}}
-        {{- $keyword := strings.ToLower (strings.TrimSpace .) -}}
-        {{- $titleMatch := in (strings.ToLower $post.title) $keyword -}}
-        {{- $tagsStr := "" -}}
-        {{- if $post.tags -}}
-          {{- $tagsStr = delimit $post.tags ", " -}}
-        {{- end -}}
-        {{- $tagsMatch := false -}}
-        {{- if gt (len $tagsStr) 0 -}}
-          {{- $tagsMatch = in (strings.ToLower $tagsStr) $keyword -}}
-        {{- end -}}
-        {{- $categoriesStr := "" -}}
-        {{- if $post.categories -}}
-          {{- $categoriesStr = delimit $post.categories ", " -}}
-        {{- end -}}
-        {{- $categoriesMatch := false -}}
-        {{- if gt (len $categoriesStr) 0 -}}
-          {{- $categoriesMatch = in (strings.ToLower $categoriesStr) $keyword -}}
-        {{- end -}}
-        {{- if or $titleMatch $tagsMatch $categoriesMatch -}}
-          {{- $matched = true -}}
+        {{- if not $postMatched -}}
+          {{- $kw := strings.ToLower (strings.TrimSpace .) -}}
+          {{- range $post.tags -}}
+            {{- if not $postMatched -}}
+              {{- $tagLower := strings.ToLower . -}}
+              {{- if eq $tagLower $kw -}}
+                {{- $postMatched = true -}}
+              {{- end -}}
+            {{- end -}}
+          {{- end -}}
         {{- end -}}
       {{- end -}}
 
-      {{- if $matched -}}
+      {{- if $postMatched -}}
         {{- $matchedPosts = $matchedPosts | append $post -}}
       {{- end -}}
     {{- end -}}

@@ -8,23 +8,39 @@
   <!-- Related Blog Posts Section (ES/CA only - no English blog) -->
   {{ if or (eq .Lang "es") (eq .Lang "ca") }}
   {{ $keywords := "" }}
-  {{- $slug := strings.TrimPrefix (printf "/%s/" .Lang) .RelPermalink -}}
-  {{- $slug = strings.TrimSuffix "/" $slug -}}
 
-  {{ if eq $slug "idrive" }}
-    {{ $keywords = "Copias de Seguridad,Backups,Protección de Datos,Respuesta a Incidentes" }}
-  {{ else if eq $slug "faronics" }}
-    {{ $keywords = "Faronics,Ransomware,Cybersecurity,IT,Malware y Phishing" }}
-  {{ else if eq $slug "nordsecurity" }}
-    {{ $keywords = "Protección de Datos,Seguridad de Cuentas,Gestión de Identidades,Privacidad" }}
-  {{ else if eq $slug "passwork" }}
-    {{ $keywords = "Contraseñas,Gestión de Contrasenas,Gestión de Identidades,Protección de Datos" }}
-  {{ else if eq $slug "edgewatch" }}
-    {{ $keywords = "Gestión de Riesgos,Respuesta a Incidentes,Amenazas Digitales,Ciberseguridad" }}
-  {{ else if eq $slug "outkept" }}
-    {{ $keywords = "Phishing,Concienciación y Formación,Ingeniería Social,Seguridad Informática" }}
-  {{ else if eq $slug "prey" }}
-    {{ $keywords = "Dispositivos Móviles,Prey Project,Protección de Datos,Seguridad Física" }}
+  {{ if eq .Lang "es" }}
+    {{ if in .Title "iDrive" }}
+      {{ $keywords = "Backups,Copias de Seguridad" }}
+    {{ else if in .Title "Faronics" }}
+      {{ $keywords = "Faronics,gestión de dispositivos" }}
+    {{ else if in .Title "NordSecurity" }}
+      {{ $keywords = "Contraseñas,Identidad Digital" }}
+    {{ else if in .Title "Passwork" }}
+      {{ $keywords = "Contraseñas,Gestión de Contrasenas" }}
+    {{ else if in .Title "Edgewatch" }}
+      {{ $keywords = "Gestión de Riesgos,Vulnerab" }}
+    {{ else if in .Title "Outkept" }}
+      {{ $keywords = "Phishing,Ingeniería Social" }}
+    {{ else if in .Title "Prey" }}
+      {{ $keywords = "Prey Project,Dispositivos Móviles,BYOD" }}
+    {{ end }}
+  {{ else if eq .Lang "ca" }}
+    {{ if in .Title "iDrive" }}
+      {{ $keywords = "Còpies de Seguretat,Backups,Resposta a Incidents" }}
+    {{ else if in .Title "Faronics" }}
+      {{ $keywords = "Faronics,Ransomware,Malware i Phishing" }}
+    {{ else if in .Title "NordSecurity" }}
+      {{ $keywords = "Seguretat de Comptes,Gestió d'Identitats" }}
+    {{ else if in .Title "Passwork" }}
+      {{ $keywords = "Contrasenyes,Gestió de Contrasenyes" }}
+    {{ else if in .Title "Edgewatch" }}
+      {{ $keywords = "Gestió de Riscos,Resposta a Incidents" }}
+    {{ else if in .Title "Outkept" }}
+      {{ $keywords = "Phishing,Enginyeria social" }}
+    {{ else if in .Title "Prey" }}
+      {{ $keywords = "Dispositius Mòbils,Prey Project,BYOD" }}
+    {{ end }}
   {{ end }}
 
   {{ if $keywords }}

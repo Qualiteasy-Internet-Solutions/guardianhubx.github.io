@@ -154,21 +154,35 @@
   <!-- Related Blog Posts Section (ES/CA only - no English blog) -->
   {{ if or (eq .Lang "es") (eq .Lang "ca") }}
   {{ $keywords := "" }}
-  {{- $slug := strings.TrimPrefix (printf "/%s/" .Lang) .RelPermalink -}}
-  {{- $slug = strings.TrimSuffix "/" $slug -}}
 
-  {{ if eq $slug "ironwall" }}
-    {{ $keywords = "Ransomware,Copias de Seguridad,Ciberseguridad,Pymes,Protección de Datos" }}
-  {{ else if eq $slug "smartlayer" }}
-    {{ $keywords = "Ciberseguridad,Cloud Computing,Amenazas Digitales,Protección de Datos,Seguridad Informática" }}
-  {{ else if eq $slug "soloshield" }}
-    {{ $keywords = "Concienciación y Formación,Phishing,Ingeniería Social,Malware y Phishing" }}
-  {{ else if eq $slug "lightcore" }}
-    {{ $keywords = "NIS2,Protección de Datos,Cumplimiento,Normativa,Ciberseguridad" }}
-  {{ else if eq $slug "educraft" }}
-    {{ $keywords = "Ciberseguridad,Protección de Datos,Concienciación y Formación,Formación" }}
-  {{ else if eq $slug "guardianradar" }}
-    {{ $keywords = "Gestión de Riesgos,Respuesta a Incidentes,Ciberseguridad,Amenazas Digitales" }}
+  {{ if eq .Lang "es" }}
+    {{ if in .Title "IronWall" }}
+      {{ $keywords = "Ransomware,Backups,respuesta" }}
+    {{ else if in .Title "SmartLayer" }}
+      {{ $keywords = "Cloud Computing,Dispositivos Móviles,Trabajo Remoto" }}
+    {{ else if in .Title "SoloShield" }}
+      {{ $keywords = "Phishing,Ingeniería" }}
+    {{ else if in .Title "LightCore" }}
+      {{ $keywords = "NIS2,Auditoría,normativa" }}
+    {{ else if in .Title "EduCraft" }}
+      {{ $keywords = "EduCraft,Concienciación" }}
+    {{ else if in .Title "GuardianRadar" }}
+      {{ $keywords = "GuardianRadar,Gestión de Riesgos" }}
+    {{ end }}
+  {{ else if eq .Lang "ca" }}
+    {{ if in .Title "IronWall" }}
+      {{ $keywords = "Ransomware,Còpies de Seguretat,Pimes,Malware" }}
+    {{ else if in .Title "SmartLayer" }}
+      {{ $keywords = "Cloud Computing,Amenaces Digitals,Seguretat Informàtica" }}
+    {{ else if in .Title "SoloShield" }}
+      {{ $keywords = "Conscienciació i Formació,Phishing,Enginyeria social" }}
+    {{ else if in .Title "LightCore" }}
+      {{ $keywords = "NIS2,Compliment,Normativa" }}
+    {{ else if in .Title "EduCraft" }}
+      {{ $keywords = "EduCraft,Conscienciació i Formació" }}
+    {{ else if in .Title "GuardianRadar" }}
+      {{ $keywords = "Gestió de Riscos,Resposta a Incidents,GuardianRadar" }}
+    {{ end }}
   {{ end }}
 
   {{ if $keywords }}
