@@ -762,7 +762,11 @@
  &lt;div class="feature-content">
  &lt;div class="h5 fw-bold">Datos Críticos&lt;/div>
  &lt;p>Vigilancia de DNI, tarjetas de crédito y cuentas bancarias expuestas.&lt;/p></description></item><item><title>iDrive</title><link>https://guardianhubx.com/es/idrive/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/es/idrive/</guid><description>&lt;section class="about mb-5 container text-center">
- &lt;img src="https://www.idrive.com/include/images/authorized_reseller.png" alt="Logo de iDrive" class="img-fluid mb-2" style="max-height: 100px;">
+ &lt;picture>
+ &lt;source srcset="https://guardianhubx.com/img/idrive-logo.avif" type="image/avif">
+ &lt;source srcset="https://guardianhubx.com/img/idrive-logo.webp" type="image/webp">
+ &lt;img src="https://guardianhubx.com/img/idrive-logo.png" alt="Logo de iDrive" class="img-fluid mb-2" style="max-height: 100px;">
+ &lt;/picture>
  &lt;p>&lt;strong>iDrive&lt;/strong>: Copias de seguridad fiables y soluciones de recuperación ante desastres para datos críticos.&lt;/p>
  &lt;p>
  Con su sistema de almacenamiento en la nube, iDrive permite realizar copias de seguridad automáticas y acceder a los datos desde cualquier dispositivo en cualquier momento.&lt;br>
@@ -770,10 +774,18 @@
  &lt;/p>
  &lt;div class="row justify-content-center my-4">
  &lt;div class="col-md-5">
+ &lt;picture>
+ &lt;source srcset="https://guardianhubx.com/img/idrive-screen.avif" type="image/avif">
+ &lt;source srcset="https://guardianhubx.com/img/idrive-screen.webp" type="image/webp">
  &lt;img src="https://guardianhubx.com/img/idrive-screen.png" class="img-fluid zoomable-image" alt="Capturas de pantalla de iDrive Backup" onclick="openFullscreen(this)">
+ &lt;/picture>
  &lt;/div>
  &lt;div class="col-md-5">
+ &lt;picture>
+ &lt;source srcset="https://guardianhubx.com/img/idrive-features.avif" type="image/avif">
+ &lt;source srcset="https://guardianhubx.com/img/idrive-features.webp" type="image/webp">
  &lt;img src="https://guardianhubx.com/img/idrive-features.png" class="img-fluid zoomable-image" alt="Características de iDrive Backup" onclick="openFullscreen(this)">
+ &lt;/picture>
  &lt;/div>
  &lt;/div>
 &lt;/section>

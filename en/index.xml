@@ -532,10 +532,14 @@
  &lt;div class="feature-content">
  &lt;div class="h5 fw-bold">Critical Data&lt;/div>
  &lt;p>Surveillance of exposed ID numbers, credit cards, and bank accounts.&lt;/p></description></item><item><title>iDrive | Secure Cloud Backup &amp; Disaster Recovery</title><link>https://guardianhubx.com/en/idrive/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/en/idrive/</guid><description>&lt;section class="about mb-5 container text-center">
- &lt;img src=" https://www.idrive.com/include/images/authorized_reseller.png " 
- alt="iDrive Logo – Authorized Reseller" 
- class="img-fluid mb-2" 
+ &lt;picture>
+ &lt;source srcset="https://guardianhubx.com/img/idrive-logo.avif" type="image/avif">
+ &lt;source srcset="https://guardianhubx.com/img/idrive-logo.webp" type="image/webp">
+ &lt;img src="https://guardianhubx.com/img/idrive-logo.png"
+ alt="iDrive Logo – Authorized Reseller"
+ class="img-fluid mb-2"
  style="max-height: 100px;">
+ &lt;/picture>
  &lt;h2 class="mb-4">Reliable Cloud Backup &amp; Instant Recovery&lt;/h2>
  &lt;p>&lt;strong>iDrive&lt;/strong> offers secure online backup solutions designed for businesses that need continuous protection of critical data.&lt;/p>
  &lt;p>
