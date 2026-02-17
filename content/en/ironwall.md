@@ -1,6 +1,8 @@
 ---
 title: "IronWall"
 description: "Comprehensive cybersecurity solution for businesses. Protect devices, access points and internal security culture. Modular and scalable."
+ogImage: "/img/ironwall-pack.png"
+ogImageAlt: "IronWall: Complete Cybersecurity Solution for Enterprises - Antivirus, VPN, Password Manager and More"
 layout: "products"
 logo: "/img/ironwall-logo.png"
 tagline: "The all-in-one solution that makes cybercriminals think twice."

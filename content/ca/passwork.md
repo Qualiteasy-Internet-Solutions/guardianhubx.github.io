@@ -2,6 +2,8 @@
 title: "Passwork"
 layout: "product"
 description: "Gestió segura offline i online de contrasenyes per a empreses i individus."
+ogImage: "/img/passwork-features-es.webp"
+ogImageAlt: "Passwork: Gestió segura de contrasenyes per a empreses - Emmagatzematge encriptat i accés remot"
 video: "https://www.youtube.com/embed/459a86W3o0U?rel=0&cc_load_policy=0"
 resources:
   - name: "Brochure"

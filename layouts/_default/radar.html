@@ -15,8 +15,15 @@
         <h2 class="landing-hero-subtitle">{{ .Params.tagline }}</h2>
       </div>
       <div class="col-lg-6 text-center landing-slide-in-right">
-        <div class="landing-hero-img-wrapper">          
-          <img src="{{ .Params.logo }}" alt="{ .Title }} Logo" class="img-fluid mb-3" fetchpriority="high" loading="eager" width="500" height="auto">
+        <div class="landing-hero-img-wrapper">
+          {{ partial "picture.html" (dict
+            "src" .Params.logo
+            "alt" (printf "%s Logo" .Title)
+            "width" "500"
+            "height" "500"
+            "class" "img-fluid mb-3"
+            "priority" true
+          )}}
         </div>
       </div>
     </div>
@@ -33,7 +40,12 @@
           <div class="mb-3 text-start text-white"><div>{{ .description | markdownify }}</div></div>
         </div>
         <div class="col-lg-4 text-center landing-slide-in-right order-2 order-md-1">
-          <img src="{{ .img }}" alt=" {{ .alt }}" class="img-fluid landing-training-img">
+          {{ partial "picture.html" (dict
+            "src" .img
+            "alt" .alt
+            "class" "img-fluid landing-training-img"
+            "lazy" true
+          )}}
         </div>
       </div>
     </div>
@@ -60,7 +72,13 @@
           <div class="radar-image-grid">
             {{ range .Params.screenshots }}
             <div class="text-center">
-              <img src="{{ .image }}" class="img-fluid zoomable-image radar-img-limit" alt="{{ .alt }}" onclick="openFullscreen(this)" />
+              {{ partial "picture.html" (dict
+                "src" .image
+                "alt" .alt
+                "class" "img-fluid zoomable-image radar-img-limit"
+                "onclick" "openFullscreen(this)"
+                "lazy" true
+              )}}
             </div>
             {{ end }}
           </div>
@@ -102,8 +120,15 @@
             </div>
             <div class="d-flex align-items-center mt-3 pt-3 border-top">
                 {{ if .image }}
-                <div class="flex-shrink-0 me-4"> 
-                  <img src="{{ .image }}" alt="{{ .name }}" class="rounded-circle testimonial-avatar">
+                <div class="flex-shrink-0 me-4">
+                  {{ partial "picture.html" (dict
+                    "src" .image
+                    "alt" .name
+                    "width" "85"
+                    "height" "85"
+                    "class" "rounded-circle testimonial-avatar"
+                    "lazy" true
+                  )}}
                 </div>
                 {{ end }}
                 <div>
@@ -178,7 +203,7 @@
     <div class="modal-content">
       <span class="close-modal" onclick="cerrarPopup()">&times;</span>
       <div class="modal-header">      
-        <img src="{{ .Params.logo }}" alt="{{ .Title }}" style="height: 40px; margin-bottom: 10px;">
+        <img src="{{ .Params.logo }}" alt="{{ .Title }}" style="height: 40px; margin-bottom: 10px;" loading="lazy" decoding="async">
         <h3>{{ .Params.popup.title }}</h3>
         <p>{{ .Params.popup.subtitle }}</p>
       </div>

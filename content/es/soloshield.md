@@ -1,6 +1,8 @@
 ---
 title: "SoloShield"
 description: "Protección digital para autónomos y profesionales independientes. Antivirus, VPN, gestor de contraseñas y backup automático."
+ogImage: "/img/solo-pack.png"
+ogImageAlt: "SoloShield: Protección digital completa para autónomos - Antivirus, VPN, gestor de contraseñas y backup"
 layout: "products"
 logo: "/img/soloshield-logo.png"
 tagline: "Para los que navegan solos, pero quieren un buen escudo"

@@ -1,6 +1,8 @@
 ---
 title: "Stop phishing with the software that trains your employees"
 description: "Evaluate your company's cybersecurity status for free with GuardianHubX. Train your team against phishing attacks with realistic and customizable simulations."
+ogImage: "/img/phishing-software.svg"
+ogImageAlt: "Phishing Training Software: Train Your Team with Realistic Simulations"
 translationKey: "phishing-training"
 layout: "landing-ciberseguridad"
 translations:

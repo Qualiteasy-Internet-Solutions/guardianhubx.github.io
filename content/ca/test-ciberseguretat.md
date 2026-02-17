@@ -1,6 +1,8 @@
 ---
 title: "Test de Ciberseguretat"
 description: "Avalua gratis l'estat de la ciberseguretat de la teva empresa amb GuardianHubX"
+ogImage: "/img/guardianradar-cover.webp"
+ogImageAlt: "Test de Ciberseguretat: Avalua gratis el nivell de protecció de la teva empresa"
 translationKey: "cybersecurity-test"
 layout: "landing-ciberseguridad"
 translations:

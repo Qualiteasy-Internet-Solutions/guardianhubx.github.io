@@ -1,6 +1,8 @@
 ---
 title: "SmartLayer"
 description: "Advanced cybersecurity for growing businesses. Centralized device management, backup, secure remote access and team training."
+ogImage: "/img/smartlayer-pack.png"
+ogImageAlt: "SmartLayer: Centralized Security Management for Enterprises - Device Control, Backup and Remote Access"
 layout: "products"
 logo: "/img/smartlayer-logo.png"
 tagline: "One step further: everything connected, everything under control."

@@ -1,6 +1,8 @@
 ---
 title: "Evita el phishing con el software que entrena a tus empleados"
 description: "Entrena a tu equipo contra ataques de phishing con simulaciones realistas y personalizadas. Software de concienciación de GuardianHubX."
+ogImage: "/img/phishing-software.svg"
+ogImageAlt: "Software de formación contra phishing: Entrena a tu equipo con simulaciones realistas"
 translationKey: "phishing-training"
 layout: "landing-ciberseguridad"
 translations:

@@ -1,0 +1,32 @@
+{{/*
+  Image Optimization Partial
+
+  Usage:
+  {{ partial "image.html" (dict
+    "src" "/img/example.jpg"
+    "alt" "Image description"
+    "width" "500"
+    "height" "400"
+    "lazy" true
+    "class" "img-fluid"
+  )}}
+*/}}
+
+{{ $src := .src }}
+{{ $alt := .alt | default "GuardianHubX" }}
+{{ $title := .title }}
+{{ $lazy := .lazy | default true }}
+{{ $width := .width }}
+{{ $height := .height }}
+{{ $class := .class | default "img-fluid" }}
+{{ $decoding := .decoding | default "async" }}
+
+<img
+  src="{{ $src | relURL }}"
+  alt="{{ $alt }}"
+  {{ if $title }}title="{{ $title }}"{{ end }}
+  {{ if $width }}width="{{ $width }}"{{ end }}
+  {{ if $height }}height="{{ $height }}"{{ end }}
+  loading="{{ if $lazy }}lazy{{ else }}eager{{ end }}"
+  decoding="{{ $decoding }}"
+  class="{{ $class }}">

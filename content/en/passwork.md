@@ -2,6 +2,8 @@
 title: "Passwork"
 layout: "product"
 description: "Secure offline and online password management for businesses and individuals."
+ogImage: "/img/passwork-features-es.webp"
+ogImageAlt: "Passwork: Secure Password Management for Enterprises - Encrypted Storage and Remote Access"
 video: "https://www.youtube.com/embed/PDk5Hg_m_3o?rel=0&cc_load_policy=0"
 resources:
   - name: "Passwork Brochure"

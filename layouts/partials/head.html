@@ -79,7 +79,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta property="og:title" content="{{ with .Params.ogTitle }}{{ . }}{{ else }}{{ .Title }}{{ end }}" />
 <meta property="og:description" content="{{ with .Params.ogDescription }}{{ . | plainify }}{{ else }}{{ $description }}{{ end }}" />
 {{- $ogDefault := (print "img/og-default-" .Lang ".jpg") | absURL -}}
-<meta property="og:image" content="{{ with .Params.ogImage }}{{ . | absURL }}{{ else }}{{ $ogDefault }}{{ end }}" />
+{{ if .Params.ogImage }}
+  {{- $ogImage := .Params.ogImage | absURL -}}
+  <meta property="og:image" content="{{ $ogImage }}" />
+{{ else }}
+  <meta property="og:image" content="{{ $ogDefault }}" />
+{{ end }}
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:type" content="image/jpeg" />
+{{ with .Params.ogImageAlt }}<meta property="og:image:alt" content="{{ . }}" />{{ else }}<meta property="og:image:alt" content="{{ .Title }} - GuardianHubX" />{{ end }}
 <meta property="og:url" content="{{ .Permalink }}" />
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
 
@@ -87,9 +96,40 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="{{ with .Params.twitterTitle }}{{ . }}{{ else }}{{ .Title }}{{ end }}" />
 <meta name="twitter:description" content="{{ with .Params.twitterDescription }}{{ . | plainify }}{{ else }}{{ $description }}{{ end }}" />
-{{- $twDefault := $ogDefault -}}
-<meta name="twitter:image" content="{{ with .Params.twitterImage }}{{ . | absURL }}{{ else }}{{ with .Params.ogImage }}{{ . | absURL }}{{ else }}{{ $twDefault }}{{ end }}{{ end }}" />
+{{ if .Params.twitterImage }}
+  <meta name="twitter:image" content="{{ .Params.twitterImage | absURL }}" />
+{{ else if .Params.ogImage }}
+  <meta name="twitter:image" content="{{ .Params.ogImage | absURL }}" />
+{{ else }}
+  <meta name="twitter:image" content="{{ $ogDefault }}" />
+{{ end }}
+{{ with .Params.twitterImageAlt }}<meta name="twitter:image:alt" content="{{ . }}" />{{ else }}{{ with .Params.ogImageAlt }}<meta name="twitter:image:alt" content="{{ . }}" />{{ else }}<meta name="twitter:image:alt" content="{{ .Title }}" />{{ end }}{{ end }}
 <meta name="twitter:site" content="@GuardianHubX" />
+
+<!-- Image Schema JSON-LD -->
+{{ if or .Params.ogImage .Params.featuredImage }}
+{{ $imageUrl := "" }}
+{{ if .Params.ogImage }}
+  {{ $imageUrl = .Params.ogImage | absURL }}
+{{ else if .Params.featuredImage }}
+  {{ $imageUrl = .Params.featuredImage | absURL }}
+{{ end }}
+{{ if $imageUrl }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ImageObject",
+  "url": "{{ $imageUrl }}",
+  "name": "{{ .Title }}",
+  "description": "{{ .Title }} - GuardianHubX",
+  "author": {
+    "@type": "Organization",
+    "name": "GuardianHubX"
+  }
+}
+</script>
+{{ end }}
+{{ end }}
 
 <!-- JS adicionales -->
 <script src="/js/script.js" defer></script>

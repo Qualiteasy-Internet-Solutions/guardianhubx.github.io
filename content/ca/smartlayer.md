@@ -1,6 +1,8 @@
 ---
 title: "SmartLayer"
 description: "Ciberseguretat avançada per a empreses en creixement. Gestió centralitzada de dispositius, backup, accés remot segur i formació."
+ogImage: "/img/smartlayer-pack.png"
+ogImageAlt: "SmartLayer: Gestió centralitzada de seguretat per a empreses - Control de dispositius, backup i accés remot"
 layout: "products"
 logo: "/img/smartlayer-logo.png"
 tagline: "Un pas més enllà: tot connectat, tot sota control."

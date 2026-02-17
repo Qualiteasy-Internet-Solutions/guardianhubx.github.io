@@ -1,0 +1,106 @@
+{{/*
+  Modern Image Partial with Auto-Format Detection
+
+  Automatically detects and serves AVIF/WebP with fallback to original format.
+  No configuration needed - just use it like the image partial!
+
+  Usage:
+  {{ partial "picture.html" (dict
+    "src" "/img/ironwall-pack.png"
+    "alt" "IronWall Security Pack"
+    "width" "800"
+    "height" "600"
+    "class" "img-fluid"
+    "priority" false
+  )}}
+
+  Parameters:
+  - src (required): Image path relative to static/
+  - alt (required): Alt text (SEO critical)
+  - width (optional): Image width in pixels
+  - height (optional): Image height in pixels
+  - class (optional): CSS classes (default: "img-fluid")
+  - priority (optional): High priority image (eager load + fetchpriority, default: false)
+  - lazy (optional): Lazy load (default: true, ignored if priority=true)
+  - style (optional): Inline styles
+  - onclick (optional): Click handler
+  - title (optional): Tooltip text
+
+  Auto-Detection Logic:
+  - Checks for .avif version in static/
+  - Checks for .webp version in static/
+  - If formats exist, wraps in <picture> element
+  - If not, falls back to simple <img> tag
+  - Format priority: AVIF > WebP > Original
+*/}}
+
+{{ $src := .src }}
+{{ $alt := .alt | default "GuardianHubX" }}
+{{ $title := .title }}
+{{ $width := .width }}
+{{ $height := .height }}
+{{ $class := .class | default "img-fluid" }}
+{{ $priority := .priority | default false }}
+{{ $lazy := .lazy | default true }}
+{{ $style := .style | default "" }}
+{{ $onclick := .onclick | default "" }}
+
+{{/* Extract base filename without extension */}}
+{{ $basename := $src | path.BaseName | replaceRE "\\.[^.]+$" "" }}
+{{ $dirname := $src | path.Dir }}
+
+{{/* Check for modern format versions */}}
+{{ $avifPath := printf "%s/%s.avif" $dirname $basename }}
+{{ $webpPath := printf "%s/%s.webp" $dirname $basename }}
+{{ $avifExists := fileExists (printf "static%s" $avifPath) }}
+{{ $webpExists := fileExists (printf "static%s" $webpPath) }}
+
+{{/* Determine loading attributes */}}
+{{ $loading := "lazy" }}
+{{ $fetchpriority := "auto" }}
+{{ $decoding := "async" }}
+{{ if not $lazy }}
+  {{ $loading = "eager" }}
+{{ end }}
+{{ if $priority }}
+  {{ $loading = "eager" }}
+  {{ $fetchpriority = "high" }}
+  {{ $decoding = "sync" }}
+{{ end }}
+
+{{/* Render picture element if modern formats exist, otherwise simple img */}}
+{{ if or $avifExists $webpExists }}
+  <picture>
+    {{ if $avifExists }}
+      <source srcset="{{ $avifPath | relURL }}" type="image/avif">
+    {{ end }}
+    {{ if $webpExists }}
+      <source srcset="{{ $webpPath | relURL }}" type="image/webp">
+    {{ end }}
+    <img
+      src="{{ $src | relURL }}"
+      alt="{{ $alt }}"
+      {{ if $title }}title="{{ $title }}"{{ end }}
+      {{ if $width }}width="{{ $width }}"{{ end }}
+      {{ if $height }}height="{{ $height }}"{{ end }}
+      loading="{{ $loading }}"
+      decoding="{{ $decoding }}"
+      fetchpriority="{{ $fetchpriority }}"
+      {{ if $onclick }}onclick="{{ $onclick }}"{{ end }}
+      {{ if $style }}style="{{ $style }}"{{ end }}
+      class="{{ $class }}">
+  </picture>
+{{ else }}
+  <img
+    src="{{ $src | relURL }}"
+    alt="{{ $alt }}"
+    {{ if $title }}title="{{ $title }}"{{ end }}
+    {{ if $width }}width="{{ $width }}"{{ end }}
+    {{ if $height }}height="{{ $height }}"{{ end }}
+    loading="{{ $loading }}"
+    decoding="{{ $decoding }}"
+    fetchpriority="{{ $fetchpriority }}"
+    {{ if $onclick }}onclick="{{ $onclick }}"{{ end }}
+    {{ if $style }}style="{{ $style }}"{{ end }}
+    class="{{ $class }}">
+{{ end }}

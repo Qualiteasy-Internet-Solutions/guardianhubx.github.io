@@ -1,6 +1,8 @@
 ---
 title: "SoloShield"
 description: "Digital protection for freelancers and independent professionals. Antivirus, VPN, password manager and automatic backup."
+ogImage: "/img/solo-pack.png"
+ogImageAlt: "SoloShield: Complete Digital Protection for Freelancers - Antivirus, VPN, Password Manager and Backup"
 layout: "products"
 logo: "/img/soloshield-logo.png"
 tagline: "For those who work solo but want a strong shield"

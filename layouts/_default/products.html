@@ -17,7 +17,14 @@
       </div>
       <div class="col-lg-6 text-center landing-slide-in-right">
         <div class="landing-hero-img-wrapper">
-          <img src="{{ .Params.logo }}" alt="{{ .Title }} Logo" class="img-fluid mb-3">
+          {{ partial "picture.html" (dict
+            "src" .Params.logo
+            "alt" (printf "%s Logo" .Title)
+            "width" "300"
+            "height" "300"
+            "class" "img-fluid mb-3"
+            "priority" true
+          )}}
         </div>
       </div>
     </div>
@@ -33,7 +40,12 @@
         <div class="mb-3 text-start text-white"><div>{{ .description | markdownify }}</div></div>
       </div>
       <div class="col-lg-4 text-center landing-slide-in-right order-2 order-md-1">
-        <img src="{{ .img }}" alt=" {{ .alt }}" class="img-fluid landing-training-img">
+        {{ partial "picture.html" (dict
+          "src" .img
+          "alt" .alt
+          "class" "img-fluid landing-training-img"
+          "lazy" true
+        )}}
       </div>
     </div>
   </div>
@@ -50,7 +62,13 @@
       <div class="col-lg-4 text-center landing-slide-in-right order-2 order-md-1">
         {{ range .Params.screenshots }}
         <div class="text-center mb-2">
-          <img src="{{ .image }}" class="img-fluid zoomable-image" alt="{{ .alt }}" onclick="openFullscreen(this)" />
+          {{ partial "picture.html" (dict
+            "src" .image
+            "alt" .alt
+            "class" "img-fluid zoomable-image"
+            "onclick" "openFullscreen(this)"
+            "lazy" true
+          )}}
         </div>
         {{ end }}
       </div>

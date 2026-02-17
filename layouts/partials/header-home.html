@@ -6,7 +6,12 @@
         <div class="row w-100 align-items-center">
           <div class="col-10 col-lg-4 text-start order-1">
             <a href="/{{ .Lang }}/index.html">
-              <img src="{{ "img/logo_GHX_01-01.webp" | relURL }}" alt="{{ i18n "logo" }}" class="logo">
+              {{ partial "picture.html" (dict
+                "src" "img/logo_GHX_01-01.webp"
+                "alt" (i18n "logo")
+                "class" "logo"
+                "priority" true
+              )}}
             </a>
           </div>
           <div class="col-2 d-lg-none text-end order-2">
@@ -20,17 +25,41 @@
               <div id="banner-rotator">
                 {{ if eq .Site.Language.Lang "ca" }}
                   <a href="/ca/test-ciberseguretat/" class="rotator-item active">
-                    <img src="{{ "img/banner-ca-1.webp" | relURL }}" alt="Banner sobre la protecció de les empreses amb enllaç al test de ciberseguretat de Guardianhubx.">
+                    {{ partial "picture.html" (dict
+                      "src" "img/banner-ca-1.webp"
+                      "alt" "Banner sobre la protecció de les empreses amb enllaç al test de ciberseguretat de Guardianhubx."
+                      "width" "400"
+                      "height" "100"
+                      "lazy" true
+                    )}}
                   </a>
                   <a href="/ca/test-ciberseguretat/" class="rotator-item">
-                    <img src="{{ "img/banner-ca-2.webp" | relURL }}" alt="Estadística de ciberatacs a empreses i invitació a completar el qüestionari gratuït de ciberseguretat.">
+                    {{ partial "picture.html" (dict
+                      "src" "img/banner-ca-2.webp"
+                      "alt" "Estadística de ciberatacs a empreses i invitació a completar el qüestionari gratuït de ciberseguretat."
+                      "width" "400"
+                      "height" "100"
+                      "lazy" true
+                    )}}
                   </a>
                 {{ else if eq .Site.Language.Lang "es" }}
                   <a href="/es/test-ciberseguridad/" class="rotator-item active">
-                    <img src="{{ "img/banner-es-1.webp" | relURL }}" alt="Banner sobre la protección de las empresas con enlace al test de ciberseguridad de Guardianhubx.">
+                    {{ partial "picture.html" (dict
+                      "src" "img/banner-es-1.webp"
+                      "alt" "Banner sobre la protección de las empresas con enlace al test de ciberseguridad de Guardianhubx."
+                      "width" "400"
+                      "height" "100"
+                      "lazy" true
+                    )}}
                   </a>
                   <a href="/es/test-ciberseguridad/" class="rotator-item">
-                    <img src="{{ "img/banner-es-2.webp" | relURL }}" alt="Estadística de ciberataques a empresas e invitación a completar el cuestionario gratuito de ciberseguridad.">
+                    {{ partial "picture.html" (dict
+                      "src" "img/banner-es-2.webp"
+                      "alt" "Estadística de ciberataques a empresas e invitación a completar el cuestionario gratuito de ciberseguridad."
+                      "width" "400"
+                      "height" "100"
+                      "lazy" true
+                    )}}
                   </a>
                 {{ end }}
               </div>
