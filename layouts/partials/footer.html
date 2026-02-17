@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row gy-4 gx-5 align-items-start">
 
-      <div class="col-6 col-md-2 d-flex flex-column align-items-center align-items-md-start">
+      <div class="col-6 {{ if or (eq .Lang "es") (eq .Lang "ca") }}col-md-2{{ else }}col-md-3{{ end }} d-flex flex-column align-items-center align-items-md-start">
         <a href="/{{ .Lang }}/" class="mb-3">
           {{ partial "picture.html" (dict
             "src" "/img/logo_GHX_01-01.png"
@@ -27,14 +27,14 @@
         </a>
       </div>
 
-      <div class="col-6 col-md-2">
+      <div class="col-6 {{ if or (eq .Lang "es") (eq .Lang "ca") }}col-md-2{{ else }}col-md-3{{ end }}">
         <h6 class="text-uppercase mb-3 small">{{ i18n "menu" }}</h6>
         <nav class="footer-menu-nav small" aria-label="{{ cond (eq .Lang "es") "Enlaces del pie de página" (cond (eq .Lang "en") "Footer links" "Enllaços del peu de pàgina") }}">
           {{ partial "menu.html" . }}
         </nav>
       </div>
 
-      <div class="col-6 col-md-2">
+      <div class="col-6 {{ if or (eq .Lang "es") (eq .Lang "ca") }}col-md-2{{ else }}col-md-3{{ end }}">
         <h6 class="mb-3 small">
           <a class="text-decoration-none text-dark" href="{{ cond (eq .Lang "es") "/es/partners/" (cond (eq .Lang "ca") "/ca/partners/" "/en/partners/") }}">
             {{ i18n "partners" }}
@@ -54,6 +54,7 @@
         </ul>
       </div>
 
+      {{ if or (eq .Lang "es") (eq .Lang "ca") }}
       <div class="col-6 col-md-4">
         <h6 class="mb-3 small">
           <i class="fas fa-blog me-2"></i>{{ cond (eq .Lang "es") "Artículos" (cond (eq .Lang "ca") "Articles" "Articles") }}
@@ -84,6 +85,7 @@
           {{- end }}
         </ul>
       </div>
+      {{ end }}
 
     </div>
   </div>

@@ -151,29 +151,31 @@
 
   {{ partial "faq.html" . }}
 
-  <!-- Related Blog Posts Section -->
+  <!-- Related Blog Posts Section (ES/CA only - no English blog) -->
+  {{ if or (eq .Lang "es") (eq .Lang "ca") }}
   {{ $keywords := "" }}
   {{- $slug := strings.TrimPrefix (printf "/%s/" .Lang) .RelPermalink -}}
   {{- $slug = strings.TrimSuffix "/" $slug -}}
 
   {{ if eq $slug "ironwall" }}
-    {{ $keywords = "ransomware,endpoint security,backup,antivirus,malware" }}
+    {{ $keywords = "Ransomware,Copias de Seguridad,Ciberseguridad,Pymes,Protección de Datos" }}
   {{ else if eq $slug "smartlayer" }}
-    {{ $keywords = "network security,firewalls,threats,VPN,encryption" }}
+    {{ $keywords = "Ciberseguridad,Cloud Computing,Amenazas Digitales,Protección de Datos,Seguridad Informática" }}
   {{ else if eq $slug "soloshield" }}
-    {{ $keywords = "employee training,phishing,awareness,security culture" }}
+    {{ $keywords = "Concienciación y Formación,Phishing,Ingeniería Social,Malware y Phishing" }}
   {{ else if eq $slug "lightcore" }}
-    {{ $keywords = "compliance,GDPR,audits,regulations,data protection" }}
+    {{ $keywords = "NIS2,Protección de Datos,Cumplimiento,Normativa,Ciberseguridad" }}
   {{ else if eq $slug "educraft" }}
-    {{ $keywords = "education,schools,students,data,cybersecurity" }}
+    {{ $keywords = "Ciberseguridad,Protección de Datos,Concienciación y Formación,Formación" }}
   {{ else if eq $slug "guardianradar" }}
-    {{ $keywords = "monitoring,detection,incidents,threats,alerts" }}
+    {{ $keywords = "Gestión de Riesgos,Respuesta a Incidentes,Ciberseguridad,Amenazas Digitales" }}
   {{ end }}
 
   {{ if $keywords }}
   <div class="container my-5">
     {{ partial "related-blog-posts.html" (dict "keywords" $keywords "count" 3 "page" .) }}
   </div>
+  {{ end }}
   {{ end }}
 
   </article>

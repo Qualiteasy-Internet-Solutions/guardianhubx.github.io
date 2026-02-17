@@ -5,31 +5,33 @@
     {{ partial "contact-cta-product.html" . }}
   </div>
 
-  <!-- Related Blog Posts Section -->
+  <!-- Related Blog Posts Section (ES/CA only - no English blog) -->
+  {{ if or (eq .Lang "es") (eq .Lang "ca") }}
   {{ $keywords := "" }}
   {{- $slug := strings.TrimPrefix (printf "/%s/" .Lang) .RelPermalink -}}
   {{- $slug = strings.TrimSuffix "/" $slug -}}
 
   {{ if eq $slug "idrive" }}
-    {{ $keywords = "backup,disaster recovery,data,restoration" }}
+    {{ $keywords = "Copias de Seguridad,Backups,Protección de Datos,Respuesta a Incidentes" }}
   {{ else if eq $slug "faronics" }}
-    {{ $keywords = "antivirus,endpoint,IT management,malware" }}
+    {{ $keywords = "Faronics,Ransomware,Cybersecurity,IT,Malware y Phishing" }}
   {{ else if eq $slug "nordsecurity" }}
-    {{ $keywords = "VPN,encryption,privacy,seguridad" }}
+    {{ $keywords = "Protección de Datos,Seguridad de Cuentas,Gestión de Identidades,Privacidad" }}
   {{ else if eq $slug "passwork" }}
-    {{ $keywords = "password manager,credentials,seguridad" }}
+    {{ $keywords = "Contraseñas,Gestión de Contrasenas,Gestión de Identidades,Protección de Datos" }}
   {{ else if eq $slug "edgewatch" }}
-    {{ $keywords = "monitoring,incidents,threats,detection" }}
+    {{ $keywords = "Gestión de Riesgos,Respuesta a Incidentes,Amenazas Digitales,Ciberseguridad" }}
   {{ else if eq $slug "outkept" }}
-    {{ $keywords = "email security,phishing,awareness" }}
+    {{ $keywords = "Phishing,Concienciación y Formación,Ingeniería Social,Seguridad Informática" }}
   {{ else if eq $slug "prey" }}
-    {{ $keywords = "mobile,anti-theft,tracking,devices" }}
+    {{ $keywords = "Dispositivos Móviles,Prey Project,Protección de Datos,Seguridad Física" }}
   {{ end }}
 
   {{ if $keywords }}
   <div class="container my-5">
     {{ partial "related-blog-posts.html" (dict "keywords" $keywords "count" 3 "page" .) }}
   </div>
+  {{ end }}
   {{ end }}
 
   <!-- Overlay -->
