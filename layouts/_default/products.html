@@ -151,8 +151,33 @@
 
   {{ partial "faq.html" . }}
 
+  <!-- Related Blog Posts Section -->
+  {{ $keywords := "" }}
+  {{- $slug := strings.TrimPrefix (printf "/%s/" .Lang) .RelPermalink -}}
+  {{- $slug = strings.TrimSuffix "/" $slug -}}
+
+  {{ if eq $slug "ironwall" }}
+    {{ $keywords = "ransomware,endpoint security,backup,antivirus,malware" }}
+  {{ else if eq $slug "smartlayer" }}
+    {{ $keywords = "network security,firewalls,threats,VPN,encryption" }}
+  {{ else if eq $slug "soloshield" }}
+    {{ $keywords = "employee training,phishing,awareness,security culture" }}
+  {{ else if eq $slug "lightcore" }}
+    {{ $keywords = "compliance,GDPR,audits,regulations,data protection" }}
+  {{ else if eq $slug "educraft" }}
+    {{ $keywords = "education,schools,students,data,cybersecurity" }}
+  {{ else if eq $slug "guardianradar" }}
+    {{ $keywords = "monitoring,detection,incidents,threats,alerts" }}
+  {{ end }}
+
+  {{ if $keywords }}
+  <div class="container my-5">
+    {{ partial "related-blog-posts.html" (dict "keywords" $keywords "count" 3 "page" .) }}
+  </div>
+  {{ end }}
 
   </article>
+
   <!-- Contact Form Partial -->
   {{ if not .Params.hide_extra_ctas }}
     {{ partial "contact-cta-product" . }}

@@ -1,8 +1,36 @@
 {{ define "main" }}
   <div class="container my-5">
     {{ .Content }}
+
     {{ partial "contact-cta-product.html" . }}
   </div>
+
+  <!-- Related Blog Posts Section -->
+  {{ $keywords := "" }}
+  {{- $slug := strings.TrimPrefix (printf "/%s/" .Lang) .RelPermalink -}}
+  {{- $slug = strings.TrimSuffix "/" $slug -}}
+
+  {{ if eq $slug "idrive" }}
+    {{ $keywords = "backup,disaster recovery,data,restoration" }}
+  {{ else if eq $slug "faronics" }}
+    {{ $keywords = "antivirus,endpoint,IT management,malware" }}
+  {{ else if eq $slug "nordsecurity" }}
+    {{ $keywords = "VPN,encryption,privacy,seguridad" }}
+  {{ else if eq $slug "passwork" }}
+    {{ $keywords = "password manager,credentials,seguridad" }}
+  {{ else if eq $slug "edgewatch" }}
+    {{ $keywords = "monitoring,incidents,threats,detection" }}
+  {{ else if eq $slug "outkept" }}
+    {{ $keywords = "email security,phishing,awareness" }}
+  {{ else if eq $slug "prey" }}
+    {{ $keywords = "mobile,anti-theft,tracking,devices" }}
+  {{ end }}
+
+  {{ if $keywords }}
+  <div class="container my-5">
+    {{ partial "related-blog-posts.html" (dict "keywords" $keywords "count" 3 "page" .) }}
+  </div>
+  {{ end }}
 
   <!-- Overlay -->
   {{ partial "fullscreen-overlay.html" . }}
