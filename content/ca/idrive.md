@@ -12,7 +12,11 @@ external_links:
 ---
 
 <section class="about mb-5 container text-center">
-  <img src="https://www.idrive.com/include/images/authorized_reseller.png" alt="Logo d'iDrive" class="img-fluid mb-2" style="max-height: 100px;">
+  <picture>
+    <source srcset="/img/idrive-logo.avif" type="image/avif">
+    <source srcset="/img/idrive-logo.webp" type="image/webp">
+    <img src="/img/idrive-logo.png" alt="Logo d'iDrive" class="img-fluid mb-2" style="max-height: 100px;">
+  </picture>
   <p><strong>iDrive</strong>: Còpies de seguretat fiables i solucions de recuperació davant desastres per a dades crítiques.</p>
   <p>
     Amb el seu sistema d'emmagatzematge al núvol, iDrive permet realitzar còpies de seguretat automàtiques i accedir als dades des de qualsevol dispositiu en qualsevol moment.<br>
@@ -21,10 +25,18 @@ external_links:
 
   <div class="row justify-content-center my-4">
     <div class="col-md-5">
-      <img src="/img/idrive-screen.png" class="img-fluid zoomable-image" alt="Captures de pantalla d'iDrive Backup" onclick="openFullscreen(this)">
+      <picture>
+        <source srcset="/img/idrive-screen.avif" type="image/avif">
+        <source srcset="/img/idrive-screen.webp" type="image/webp">
+        <img src="/img/idrive-screen.png" class="img-fluid zoomable-image" alt="Captures de pantalla d'iDrive Backup" onclick="openFullscreen(this)">
+      </picture>
     </div>
     <div class="col-md-5">
-      <img src="/img/idrive-features.png" class="img-fluid zoomable-image" alt="Característiques d'iDrive Backup" onclick="openFullscreen(this)">
+      <picture>
+        <source srcset="/img/idrive-features.avif" type="image/avif">
+        <source srcset="/img/idrive-features.webp" type="image/webp">
+        <img src="/img/idrive-features.png" class="img-fluid zoomable-image" alt="Característiques d'iDrive Backup" onclick="openFullscreen(this)">
+      </picture>
     </div>
   </div>
 </section>

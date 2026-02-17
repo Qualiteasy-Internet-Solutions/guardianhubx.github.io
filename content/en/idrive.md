@@ -12,10 +12,14 @@ external_links:
 ---
 
 <section class="about mb-5 container text-center">
-  <img src=" https://www.idrive.com/include/images/authorized_reseller.png " 
-       alt="iDrive Logo – Authorized Reseller" 
-       class="img-fluid mb-2" 
-       style="max-height: 100px;">
+  <picture>
+    <source srcset="/img/idrive-logo.avif" type="image/avif">
+    <source srcset="/img/idrive-logo.webp" type="image/webp">
+    <img src="/img/idrive-logo.png"
+         alt="iDrive Logo – Authorized Reseller"
+         class="img-fluid mb-2"
+         style="max-height: 100px;">
+  </picture>
 
   <h2 class="mb-4">Reliable Cloud Backup & Instant Recovery</h2>
   <p><strong>iDrive</strong> offers secure online backup solutions designed for businesses that need continuous protection of critical data.</p>
@@ -27,16 +31,24 @@ external_links:
 
   <div class="row justify-content-center my-4">
     <div class="col-md-5">
-      <img src="/img/idrive-screen.png" 
-           class="img-fluid zoomable-image shadow-sm rounded" 
-           alt="iDrive Backup Interface Screenshots" 
-           onclick="openFullscreen(this)">
+      <picture>
+        <source srcset="/img/idrive-screen.avif" type="image/avif">
+        <source srcset="/img/idrive-screen.webp" type="image/webp">
+        <img src="/img/idrive-screen.png"
+             class="img-fluid zoomable-image shadow-sm rounded"
+             alt="iDrive Backup Interface Screenshots"
+             onclick="openFullscreen(this)">
+      </picture>
     </div>
     <div class="col-md-5">
-      <img src="/img/idrive-features.png" 
-           class="img-fluid zoomable-image shadow-sm rounded" 
-           alt="iDrive Key Features" 
-           onclick="openFullscreen(this)">
+      <picture>
+        <source srcset="/img/idrive-features.avif" type="image/avif">
+        <source srcset="/img/idrive-features.webp" type="image/webp">
+        <img src="/img/idrive-features.png"
+             class="img-fluid zoomable-image shadow-sm rounded"
+             alt="iDrive Key Features"
+             onclick="openFullscreen(this)">
+      </picture>
     </div>
   </div>
 </section>

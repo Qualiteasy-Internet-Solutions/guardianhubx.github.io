@@ -12,7 +12,11 @@ external_links:
 ---
 
 <section class="about mb-5 container text-center">
-  <img src="https://www.idrive.com/include/images/authorized_reseller.png" alt="Logo de iDrive" class="img-fluid mb-2" style="max-height: 100px;">
+  <picture>
+    <source srcset="/img/idrive-logo.avif" type="image/avif">
+    <source srcset="/img/idrive-logo.webp" type="image/webp">
+    <img src="/img/idrive-logo.png" alt="Logo de iDrive" class="img-fluid mb-2" style="max-height: 100px;">
+  </picture>
   <p><strong>iDrive</strong>: Copias de seguridad fiables y soluciones de recuperación ante desastres para datos críticos.</p>
   <p>
     Con su sistema de almacenamiento en la nube, iDrive permite realizar copias de seguridad automáticas y acceder a los datos desde cualquier dispositivo en cualquier momento.<br>
@@ -21,10 +25,18 @@ external_links:
 
   <div class="row justify-content-center my-4">
     <div class="col-md-5">
-      <img src="/img/idrive-screen.png" class="img-fluid zoomable-image" alt="Capturas de pantalla de iDrive Backup" onclick="openFullscreen(this)">
+      <picture>
+        <source srcset="/img/idrive-screen.avif" type="image/avif">
+        <source srcset="/img/idrive-screen.webp" type="image/webp">
+        <img src="/img/idrive-screen.png" class="img-fluid zoomable-image" alt="Capturas de pantalla de iDrive Backup" onclick="openFullscreen(this)">
+      </picture>
     </div>
     <div class="col-md-5">
-      <img src="/img/idrive-features.png" class="img-fluid zoomable-image" alt="Características de iDrive Backup" onclick="openFullscreen(this)">
+      <picture>
+        <source srcset="/img/idrive-features.avif" type="image/avif">
+        <source srcset="/img/idrive-features.webp" type="image/webp">
+        <img src="/img/idrive-features.png" class="img-fluid zoomable-image" alt="Características de iDrive Backup" onclick="openFullscreen(this)">
+      </picture>
     </div>
   </div>
 </section>
