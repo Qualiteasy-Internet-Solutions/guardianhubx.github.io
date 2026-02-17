@@ -35,26 +35,60 @@
       </div>
 
       <div class="col-md-3">
-        <h6 class="mb-3 small">  
-          <a class="text-decoration-none text-dark" href="{{ cond (eq .Lang "es") "/es/partners/" (cond (eq .Lang "ca") "/ca/partners/" "/en/partners/") }}">
-            {{ i18n "partners" }}
-          </a>
-        </h6>
-        <ul class="list-unstyled small ms-3">
-          {{ $partners := partial "partners-list.html" . }}
-          {{ range $partners }}
-            {{ $isExt := .external | default false }}
-            <li class="mb-1">
-              <a class="text-secondary text-decoration-none" href="{{ if $isExt }}{{ .url }}{{ else }}{{ relLangURL (printf "/%s/" .url) }}{{ end }}"
-                {{ if $isExt }}target="_blank" rel="noopener"{{ end }}>
-                {{ .name }}
+        <div class="row">
+          <div class="col-sm-6">
+            <h6 class="mb-3 small">
+              <a class="text-decoration-none text-dark" href="{{ cond (eq .Lang "es") "/es/partners/" (cond (eq .Lang "ca") "/ca/partners/" "/en/partners/") }}">
+                {{ i18n "partners" }}
               </a>
-            </li>
-          {{ end }}
-        </ul>
+            </h6>
+            <ul class="list-unstyled small ms-3">
+              {{ $partners := partial "partners-list.html" . }}
+              {{ range $partners }}
+                {{ $isExt := .external | default false }}
+                <li class="mb-1">
+                  <a class="text-secondary text-decoration-none" href="{{ if $isExt }}{{ .url }}{{ else }}{{ relLangURL (printf "/%s/" .url) }}{{ end }}"
+                    {{ if $isExt }}target="_blank" rel="noopener"{{ end }}>
+                    {{ .name }}
+                  </a>
+                </li>
+              {{ end }}
+            </ul>
+          </div>
+          <div class="col-sm-6">
+            <h6 class="mb-3 small">
+              <i class="fas fa-blog me-2"></i>{{ cond (eq .Lang "es") "Últimos" (cond (eq .Lang "ca") "Últims" "Latest") }}
+            </h6>
+            <ul class="list-unstyled small">
+              {{- $baseURL := "https://guardianhubx.com" -}}
+              {{- $jsonPath := cond (eq .Site.Language.Lang "ca") "/blog/ca/index.json" "/blog/index.json" -}}
+              {{- $finalURL := printf "%s%s" $baseURL $jsonPath -}}
+              {{- if hugo.IsProduction -}}
+                {{ $finalURL = printf "%s?t=%d" $finalURL now.Unix }}
+              {{- end -}}
+              {{- $res := try (resources.GetRemote $finalURL) }}
+              {{- if and (not $res.Err) $res.Value }}
+                {{- $posts := $res.Value.Content | unmarshal }}
+                {{- range first 3 $posts }}
+              <li class="mb-2">
+                <a href="{{ .permalink }}" class="text-decoration-none text-secondary small" title="{{ .title }}">
+                  {{ .title | truncate 35 }}
+                </a>
+              </li>
+                {{- end }}
+              {{- else }}
+              <li class="mb-2">
+                <a href="{{ if eq .Lang "ca" }}/blog/ca/{{ else }}/blog/{{ end }}" class="text-decoration-none text-secondary small">
+                  {{ cond (eq .Lang "es") "Ver blog →" (cond (eq .Lang "ca") "Veure blog →" "View blog →") }}
+                </a>
+              </li>
+              {{- end }}
+            </ul>
+          </div>
+        </div>
       </div>
 
-      <div class="col-md-3 text-center text-md-start">
+      <div class="col-md-2">
         <h6 class="text-uppercase mb-3 small">{{ i18n "contact" | default "Contacte" }}</h6>
 
         <address class="small mb-3">
@@ -101,13 +135,6 @@
           </a>
         </p>
 
-        <p class="small mb-3">
-          <i class="fas fa-blog me-2"></i>
-            <a href="{{ if eq .Lang "ca" }}/blog/ca/{{ else }}/blog/{{ end }}" class="text-decoration-none text-secondary">
-              Blog / News
-            </a>
-        </p>
-
         <div class="small mb-3">
           <strong>{{ i18n "idiomes" }}:</strong>
           <a href="/ca/" class="text-decoration-none text-secondary">Català</a>,
@@ -141,6 +168,7 @@
           </a>
         </p>
       </div>
+
 
     </div>
   </div>
