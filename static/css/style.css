@@ -606,6 +606,79 @@ body.scrolled .home-navbar {
     line-height: 1.6 !important;
 }
 
+/* Threat Cards */
+.landing-threat-card {
+    border-radius: 12px !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05) !important;
+    transition: all 0.4s ease !important;
+    background-color: #ffffff !important;
+}
+
+.landing-threat-card--phishing {
+    border-left: 5px solid #FF6B6B !important;
+    background: linear-gradient(135deg, rgba(255, 107, 107, 0.03) 0%, #ffffff 100%) !important;
+}
+
+.landing-threat-card--ransomware {
+    border-left: 5px solid #FFA500 !important;
+    background: linear-gradient(135deg, rgba(255, 165, 0, 0.03) 0%, #ffffff 100%) !important;
+}
+
+.landing-threat-card--malware {
+    border-left: 5px solid #9B59B6 !important;
+    background: linear-gradient(135deg, rgba(155, 89, 182, 0.03) 0%, #ffffff 100%) !important;
+}
+
+.landing-threat-card--ddos {
+    border-left: 5px solid #3498DB !important;
+    background: linear-gradient(135deg, rgba(52, 152, 219, 0.03) 0%, #ffffff 100%) !important;
+}
+
+.landing-threat-title {
+    font-size: 1.2rem !important;
+    font-weight: 700 !important;
+    color: var(--landing-text-dark) !important;
+    margin-bottom: 0.5rem !important;
+}
+
+.landing-threat-text {
+    color: var(--landing-text-muted) !important;
+    line-height: 1.6 !important;
+    font-size: 0.95rem !important;
+}
+
+/* Alert variants for threat cards */
+.alert-threat-phishing {
+    background-color: rgba(255, 107, 107, 0.15) !important;
+    border: none !important;
+    color: #333 !important;
+}
+
+.alert-threat-ransomware {
+    background-color: rgba(255, 165, 0, 0.15) !important;
+    border: none !important;
+    color: #333 !important;
+}
+
+.alert-threat-malware {
+    background-color: rgba(155, 89, 182, 0.15) !important;
+    border: none !important;
+    color: #333 !important;
+}
+
+.alert-threat-ddos {
+    background-color: rgba(52, 152, 219, 0.15) !important;
+    border: none !important;
+    color: #333 !important;
+}
+
+/* AI Threat Alert */
+.alert-threat-ai {
+    background: linear-gradient(135deg, rgba(255, 193, 7, 0.1) 0%, transparent 100%) !important;
+    border-left: 5px solid #FFC107 !important;
+    border: none !important;
+}
+
 /* Featured card (GuardianRadar) */
 .featured-card {
     border: 2px solid #0d6efd !important;

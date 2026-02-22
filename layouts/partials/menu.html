@@ -18,6 +18,13 @@
     </a>
     <ul class="dropdown-menu" aria-labelledby="prevencionDropdown">
     <li>
+        <a class="dropdown-item" href="{{ cond (eq .Lang "es") ("/es/que-es-la-ciberseguridad/" | relLangURL)
+                (cond (eq .Lang "ca") ("/ca/que-es-la-ciberseguritat/" | relLangURL)
+                                ("/en/what-is-cybersecurity/" | relLangURL)) }}">
+        {{ i18n "what_is_cybersecurity" }}
+        </a>
+    </li>
+    <li>
         <a class="dropdown-item" href="{{ cond (eq .Lang "es") ("/es/formacion-phishing-software/" | relLangURL)
                 (cond (eq .Lang "ca") ("/ca/formacio-phishing-software/" | relLangURL)
                                 ("/en/cybersecurity-phishing-training/" | relLangURL)) }}">

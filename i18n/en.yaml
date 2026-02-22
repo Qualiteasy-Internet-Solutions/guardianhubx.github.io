@@ -74,6 +74,8 @@
   translation: "How to Stay Safe Online"
 - id: "objectius"
   translation: "Cybersecurity goals"
+- id: "what_is_cybersecurity"
+  translation: "What is cybersecurity?"
 
 - id: "newsletter_title"
   translation: "Newsletter"

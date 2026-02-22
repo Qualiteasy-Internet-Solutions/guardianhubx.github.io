@@ -77,6 +77,8 @@
   translation: "Aprende a protegerte"
 - id: "objectius"
   translation: "Objetivos de ciberseguridad"
+- id: "what_is_cybersecurity"
+  translation: "¿Qué es la ciberseguridad?"
 
 - id: "newsletter_title"
   translation: "Newsletter"
