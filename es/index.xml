@@ -1,4 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>GuardianHubX - Ciberseguridad para Empresas y Autónomos on GuardianHubX - Seguridad Cibernética</title><link>https://guardianhubx.com/es/</link><description>Recent content in GuardianHubX - Ciberseguridad para Empresas y Autónomos on GuardianHubX - Seguridad Cibernética</description><generator>Hugo</generator><language>es</language><lastBuildDate>Wed, 11 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://guardianhubx.com/es/index.xml" rel="self" type="application/rss+xml"/><item><title>Configuración de tu GuardianRadar</title><link>https://guardianhubx.com/es/guardianradar-config/</link><pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/es/guardianradar-config/</guid><description>&lt;section class="section">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>GuardianHubX - Ciberseguridad para Empresas y Autónomos on GuardianHubX - Seguridad Cibernética</title><link>https://guardianhubx.com/es/</link><description>Recent content in GuardianHubX - Ciberseguridad para Empresas y Autónomos on GuardianHubX - Seguridad Cibernética</description><generator>Hugo</generator><language>es</language><lastBuildDate>Sun, 22 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://guardianhubx.com/es/index.xml" rel="self" type="application/rss+xml"/><item><title>¿Qué es la Ciberseguridad? Tu escudo en la era hiperconectada</title><link>https://guardianhubx.com/es/que-es-la-ciberseguridad/</link><pubDate>Sun, 22 Feb 2026 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/es/que-es-la-ciberseguridad/</guid><description>&lt;script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "headline": "¿Qué es la Ciberseguridad? Tu escudo en la era hiperconectada",
+ "description": "Guía completa sobre ciberseguridad: desde definiciones básicas hasta la Tríada CIA y las amenazas actuales. Protege tu información con GuardianHubX.",
+ "image": "/img/cybersecurity-illustration.webp",
+ "author": {
+ "@type": "Organization",
+ "name": "GuardianHubX"
+ },
+ "datePublished": "2026-02-22T00:00:00+00:00",
+ "dateModified": "2026-02-22T00:00:00+00:00",
+ "publisher": {
+ "@type": "Organization",
+ "name": "GuardianHubX",
+ "logo": {
+ "@type": "ImageObject",
+ "url": "/img/guardianhubx-logo.webp"
+ }
+ }
+}
+&lt;/script>
+&lt;!-- Hero Section -->
+&lt;section class="landing-hero-section">
+ &lt;div class="container">
+ &lt;div class="row align-items-center">
+ &lt;div class="col-lg-6 landing-fade-in">
+ &lt;h1 class="landing-hero-title">¿Qué es la Ciberseguridad? Tu escudo en la era hiperconectada&lt;/h1>
+ &lt;p class="landing-hero-subtitle">No se trata solo de instalar un antivirus. Es la estrategia, la tecnología y la cultura que protegen lo que más importa: tu información, tu operativa y tu tranquilidad.&lt;/p></description></item><item><title>Configuración de tu GuardianRadar</title><link>https://guardianhubx.com/es/guardianradar-config/</link><pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/es/guardianradar-config/</guid><description>&lt;section class="section">
  &lt;div class="container" style="text-align: center; margin-bottom: 40px;">
  &lt;h1 class="title-xl">Activa tu Radar&lt;/h1>
  &lt;p class="lead">Para que GuardianRadar pueda protegerte, necesitamos pedirte algunos datos para activar el servicio.&lt;/p>

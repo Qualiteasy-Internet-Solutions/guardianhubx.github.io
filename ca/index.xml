@@ -1,4 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>GuardianHubX - Ciberseguretat per a Empreses i Autònoms on GuardianHubX - Ciberseguretat</title><link>https://guardianhubx.com/ca/</link><description>Recent content in GuardianHubX - Ciberseguretat per a Empreses i Autònoms on GuardianHubX - Ciberseguretat</description><generator>Hugo</generator><language>ca</language><lastBuildDate>Wed, 11 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://guardianhubx.com/ca/index.xml" rel="self" type="application/rss+xml"/><item><title>Configuració del teu GuardianRadar</title><link>https://guardianhubx.com/ca/guardianradar-config/</link><pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/ca/guardianradar-config/</guid><description>&lt;section class="section">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>GuardianHubX - Ciberseguretat per a Empreses i Autònoms on GuardianHubX - Ciberseguretat</title><link>https://guardianhubx.com/ca/</link><description>Recent content in GuardianHubX - Ciberseguretat per a Empreses i Autònoms on GuardianHubX - Ciberseguretat</description><generator>Hugo</generator><language>ca</language><lastBuildDate>Sun, 22 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://guardianhubx.com/ca/index.xml" rel="self" type="application/rss+xml"/><item><title>Què és la Ciberseguretat? El teu escut a l'era hiperconnectada</title><link>https://guardianhubx.com/ca/que-es-la-ciberseguritat/</link><pubDate>Sun, 22 Feb 2026 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/ca/que-es-la-ciberseguritat/</guid><description>&lt;script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "headline": "Què és la Ciberseguretat? El teu escut a l'era hiperconnectada",
+ "description": "Guia completa sobre ciberseguretat: des de definicions bàsiques fins a la Tríada CIA i les amenaces actuals. Protegeix la teva informació amb GuardianHubX.",
+ "image": "/img/cybersecurity-illustration.webp",
+ "author": {
+ "@type": "Organization",
+ "name": "GuardianHubX"
+ },
+ "datePublished": "2026-02-22T00:00:00+00:00",
+ "dateModified": "2026-02-22T00:00:00+00:00",
+ "publisher": {
+ "@type": "Organization",
+ "name": "GuardianHubX",
+ "logo": {
+ "@type": "ImageObject",
+ "url": "/img/guardianhubx-logo.webp"
+ }
+ }
+}
+&lt;/script>
+&lt;!-- Hero Section -->
+&lt;section class="landing-hero-section">
+ &lt;div class="container">
+ &lt;div class="row align-items-center">
+ &lt;div class="col-lg-6 landing-fade-in">
+ &lt;h1 class="landing-hero-title">Què és la Ciberseguretat? El teu escut a l'era hiperconnectada&lt;/h1>
+ &lt;p class="landing-hero-subtitle">No es tracta només d'instal·lar un antivirus. És l'estratègia, la tecnologia i la cultura que protegeixen el que més importa: la teva informació, la teva operativa i la teva tranquil·litat.&lt;/p></description></item><item><title>Configuració del teu GuardianRadar</title><link>https://guardianhubx.com/ca/guardianradar-config/</link><pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/ca/guardianradar-config/</guid><description>&lt;section class="section">
  &lt;div class="container" style="text-align: center; margin-bottom: 40px;">
  &lt;h1 class="title-xl">Activa el teu Radar&lt;/h1>
  &lt;p class="lead">Perquè GuardianRadar pugui protegir-te, et demanarem algunes dades per poder activar el teu servei.&lt;/p>
