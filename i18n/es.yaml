@@ -36,7 +36,9 @@
   translation: "Enviar"
 - id: "form_thanks"
   translation: "Gracias, hemos recibido tu mensaje. Nos pondremos en contacto contigo pronto."
-  
+- id: "form_sending"
+  translation: "Enviando"
+
 - id: "faq_title"
   translation: "Preguntas frecuentes"
 - id: "faq_subtitle"

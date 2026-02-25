@@ -60,15 +60,32 @@
   function handleFormSubmit(event) {
     event.preventDefault();
     var form = event.target;
+    var submitButton = form.querySelector("button[type='submit']");
+    var loadingOverlay = document.getElementById("formLoadingOverlay");
+
     //Verificación de reCAPTCHA v3
     if (typeof grecaptcha === "undefined") {
       alert("Error: Google reCAPTCHA no está disponible. Recarga la página.");
       return false;
     }
 
+    // Show loading state
+    if (submitButton) {
+      submitButton.disabled = true;
+    }
+    if (loadingOverlay) {
+      loadingOverlay.classList.add("show");
+    }
+
     grecaptcha.execute('6LfRmeoqAAAAAH-Dizpt81ZOBrU5YT-utPXeBUNn', { action: 'submit' }).then(function(token) {
       if (!token) {
           alert("Por favor, verifica que no eres un robot antes de enviar el formulario.");
+          if (submitButton) {
+            submitButton.disabled = false;
+          }
+          if (loadingOverlay) {
+            loadingOverlay.classList.remove("show");
+          }
           return false;
       }
       // Insertar el token en un campo oculto del formulario
@@ -78,30 +95,54 @@
       recaptchaInput.setAttribute("value", token);
       form.appendChild(recaptchaInput);
 
-    var formData = getFormData(form);
-    if (formData.honeypot) return false;
-
-    disableAllButtons(form);
-    var xhr = new XMLHttpRequest();
-    xhr.open('POST', form.action);
-    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-          form.reset();
-          var nextUrl = form.querySelector("input[name='_next']").value;
-          if (nextUrl) window.location.href = nextUrl;
+      var formData = getFormData(form);
+      if (formData.honeypot) {
+        if (submitButton) {
+          submitButton.disabled = false;
         }
-    };
+        if (loadingOverlay) {
+          loadingOverlay.classList.remove("show");
+        }
+        return false;
+      }
 
-    var encoded = Object.keys(formData.data).map(function(k) {
-        return encodeURIComponent(k) + "=" + encodeURIComponent(formData.data[k]);
-    }).join('&');
-    
-    xhr.send(encoded);
-  }).catch(function(error) {
-    alert("Error con reCAPTCHA: " + error);
-    return false;
-  });
+      disableAllButtons(form);
+      var xhr = new XMLHttpRequest();
+      xhr.open('POST', form.action);
+      xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+      xhr.onreadystatechange = function() {
+          if (xhr.readyState === 4) {
+            if (xhr.status === 200) {
+              form.reset();
+              var nextUrl = form.querySelector("input[name='_next']").value;
+              if (nextUrl) window.location.href = nextUrl;
+            } else {
+              alert("Error al enviar el formulario. Por favor, intenta de nuevo.");
+              if (submitButton) {
+                submitButton.disabled = false;
+              }
+              if (loadingOverlay) {
+                loadingOverlay.classList.remove("show");
+              }
+            }
+          }
+      };
+
+      var encoded = Object.keys(formData.data).map(function(k) {
+          return encodeURIComponent(k) + "=" + encodeURIComponent(formData.data[k]);
+      }).join('&');
+
+      xhr.send(encoded);
+    }).catch(function(error) {
+      alert("Error con reCAPTCHA: " + error);
+      if (submitButton) {
+        submitButton.disabled = false;
+      }
+      if (loadingOverlay) {
+        loadingOverlay.classList.remove("show");
+      }
+      return false;
+    });
   }
 
   function loaded() {
