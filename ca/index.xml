@@ -314,12 +314,40 @@
  &lt;div class="text-center">
  &lt;a href="https://guardianhubx.com/ca/">Vols conèxixer més les nostres solucions de de ciberseguretat? Explora els nostres serveis!&lt;/a>
  &lt;/div>
-&lt;/section></description></item><item><title>Gràcies</title><link>https://guardianhubx.com/ca/thanks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/ca/thanks/</guid><description>&lt;section class="thanks mb-5">
- &lt;h2 class="text-center mb-4">Gràcies per contactar amb GuardianHubX. Hem rebut el teu missatge i ens posarem en contacte amb tu ben aviat.&lt;/h2>
- &lt;div class="text-center">
- &lt;a href="https://guardianhubx.com/ca/">Tornar a la pàgina principal&lt;/a>
- &lt;/div>
-&lt;/section></description></item><item><title>GuardianHubX - Ecosistema de ciberseguretat amb els millors partners</title><link>https://guardianhubx.com/ca/partners/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/ca/partners/</guid><description>&lt;main class="container my-5">
+&lt;/section></description></item><item><title>Gràcies!</title><link>https://guardianhubx.com/ca/thanks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/ca/thanks/</guid><description>&lt;!-- Success Section -->
+&lt;section class="thanks-hero py-5">
+&lt;div class="container text-center">
+&lt;div class="thanks-success-icon mb-4">
+&lt;i class="fas fa-check-circle">&lt;/i>
+&lt;/div>
+&lt;h1 class="thanks-title mb-3">¡Gràcies!&lt;/h1>
+&lt;p class="thanks-subtitle mb-5">Hem rebut el teu missatge i ens posarem en contacte amb tu ben aviat. Un dels nostres experts revisarà la teva consulta i et respondràs en les pròximes hores.&lt;/p>
+&lt;/div>
+&lt;/section>
+&lt;!-- Next Steps Section -->
+&lt;section class="thanks-section py-5">
+&lt;div class="container">
+&lt;h2 class="thanks-section-title text-center mb-5">Què fer ara?&lt;/h2>
+&lt;div class="row g-4 mb-5">
+&lt;!-- Learn More -->
+&lt;div class="col-md-6 col-lg-3">
+&lt;div class="thanks-card">
+&lt;div class="thanks-card-icon">
+ &lt;i class="fas fa-book-open">&lt;/i>
+&lt;/div>
+&lt;h5 class="thanks-card-title">Aprèn&lt;/h5>
+&lt;p class="thanks-card-text">Descobreix què és la ciberseguretat i com protegir-te.&lt;/p>
+&lt;a href="https://guardianhubx.com/ca/que-es-la-ciberseguritat/" class="thanks-card-link">Llegir guia →&lt;/a>
+&lt;/div>
+&lt;/div>
+&lt;!-- Explore Products -->
+&lt;div class="col-md-6 col-lg-3">
+&lt;div class="thanks-card">
+&lt;div class="thanks-card-icon">
+ &lt;i class="fas fa-shield-alt">&lt;/i>
+&lt;/div>
+&lt;h5 class="thanks-card-title">Solucions&lt;/h5>
+&lt;p class="thanks-card-text">Coneix els nostres productes de ciberseguretat.&lt;/p></description></item><item><title>GuardianHubX - Ecosistema de ciberseguretat amb els millors partners</title><link>https://guardianhubx.com/ca/partners/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/ca/partners/</guid><description>&lt;main class="container my-5">
 
  &lt;!-- About Section -->
  &lt;section class="about mb-5">
