@@ -644,7 +644,8 @@ body.scrolled .home-navbar {
     text-align: center !important;
     margin-bottom: 2rem !important;
     font-size: 2rem !important;
-    color: var(--landing-primary-color) !important;
+    color: #fff !important;
+    font-weight: 700 !important;
 }
 
 /* Threat Cards Icon Styles */
@@ -1704,6 +1705,89 @@ body.scrolled #page-title {
 
 .thanks-card-link:hover {
   color: #45a049;
+}
+
+/* Malware vs Virus Article - Timeline Card Styling */
+.landing-timeline-card {
+  background: #fff;
+  border-left: 4px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 25px;
+  height: 100%;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.landing-timeline-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-left-color: #4CAF50;
+}
+
+.timeline-badge {
+  display: inline-block;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+/* Malware Article Icon Colors */
+.icon-warning {
+  background: #fff3cd !important;
+  color: #f0ad4e !important;
+}
+
+.icon-danger {
+  background: #f8d7da !important;
+  color: #d9534f !important;
+}
+
+.icon-success {
+  background: #5cb85c !important;
+  color: #fff !important;
+}
+
+.icon-primary {
+  background: #0275d8 !important;
+  color: #fff !important;
+}
+
+.icon-orange {
+  background: #f0ad4e !important;
+  color: #fff !important;
+}
+
+.icon-danger-light {
+  background: #d9534f !important;
+  color: #fff !important;
+}
+
+.icon-info {
+  background: #5bc0de !important;
+  color: #fff !important;
+}
+
+.icon-dark {
+  background: #777 !important;
+  color: #fff !important;
+}
+
+/* Timeline Badge Colors */
+.badge-2000s {
+  background: #d9534f !important;
+}
+
+.badge-2010s {
+  background: #f0ad4e !important;
+}
+
+.badge-2015-2020 {
+  background: #5cb85c !important;
+}
+
+.badge-2020s {
+  background: #0275d8 !important;
 }
 
 @media (max-width: 576px) {

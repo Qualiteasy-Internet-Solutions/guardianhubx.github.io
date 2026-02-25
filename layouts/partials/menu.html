@@ -39,6 +39,13 @@
         </a>
     </li>
     <li>
+        <a class="dropdown-item" href="{{ cond (eq .Lang "es") ("/es/malware-vs-virus-diferencia/" | relLangURL)
+                (cond (eq .Lang "ca") ("/ca/malware-vs-virus-diferencia/" | relLangURL)
+                                ("/en/malware-vs-virus-difference/" | relLangURL)) }}">
+        {{ cond (eq .Lang "es") "Malware vs Virus" (cond (eq .Lang "ca") "Malware vs Virus" "Malware vs Virus") }}
+        </a>
+    </li>
+    <li>
         <a class="dropdown-item" href="{{ cond (eq .Lang "es") ("/es/objetivos-ciberseguridad/" | relLangURL)
                 (cond (eq .Lang "ca") ("/ca/objectius-ciberseguretat/" | relLangURL)
                                 ("/en/cybersecurity-goals/" | relLangURL)) }}">
