@@ -1,4 +1,63 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>GuardianHubX - Ciberseguretat per a Empreses i Autònoms on GuardianHubX - Ciberseguretat</title><link>https://guardianhubx.com/ca/</link><description>Recent content in GuardianHubX - Ciberseguretat per a Empreses i Autònoms on GuardianHubX - Ciberseguretat</description><generator>Hugo</generator><language>ca</language><lastBuildDate>Sun, 22 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://guardianhubx.com/ca/index.xml" rel="self" type="application/rss+xml"/><item><title>Què és la Ciberseguretat? El teu escut a l'era hiperconnectada</title><link>https://guardianhubx.com/ca/que-es-la-ciberseguritat/</link><pubDate>Sun, 22 Feb 2026 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/ca/que-es-la-ciberseguritat/</guid><description>&lt;script type="application/ld+json">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>GuardianHubX - Ciberseguretat per a Empreses i Autònoms on GuardianHubX - Ciberseguretat</title><link>https://guardianhubx.com/ca/</link><description>Recent content in GuardianHubX - Ciberseguretat per a Empreses i Autònoms on GuardianHubX - Ciberseguretat</description><generator>Hugo</generator><language>ca</language><lastBuildDate>Sun, 22 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://guardianhubx.com/ca/index.xml" rel="self" type="application/rss+xml"/><item><title>Phishing: Què és i com evitar. La amenaça número una de 2026</title><link>https://guardianhubx.com/ca/phishing-que-es-i-com-evitar/</link><pubDate>Sun, 22 Feb 2026 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/ca/phishing-que-es-i-com-evitar/</guid><description>&lt;script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "Article",
+"headline": "Phishing: Què és i com evitar. La amenaça número una de 2026",
+"description": "Guia completa sobre phishing: tipus d'atacs (smishing, vishing, frau del CEO), com identificar-los i estratègies per protegir-te. Formació i simulacres efectius.",
+"image": "/img/phishing-fishing-attack.svg",
+"author": {
+ "@type": "Organization",
+ "name": "GuardianHubX"
+},
+"datePublished": "2026-02-22T00:00:00+00:00",
+"dateModified": "2026-02-22T00:00:00+00:00",
+"publisher": {
+ "@type": "Organization",
+ "name": "GuardianHubX",
+ "logo": {
+ "@type": "ImageObject",
+ "url": "/img/guardianhubx-logo.webp"
+ }
+}
+}
+&lt;/script>
+&lt;script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "HowTo",
+ "name": "Com respondre a un atac de phishing amb I.C.E.R.",
+ "description": "Guia pas a pas per respondre ràpidament a un atac de phishing utilitzant el model I.C.E.R.",
+ "step": [
+ {
+ "@type": "HowToStep",
+ "name": "IDENTIFICAR",
+ "text": "Determina quina informació es va comprometre: contraseyes, dades bancàries, arxius corporatius. Identifica quin va ser el vector d'entrada de l'atac."
+ },
+ {
+ "@type": "HowToStep",
+ "name": "CONTENIR",
+ "text": "Bloqueja accés immediat, desconnecta dispositius infectats, avisa al teu banc si dades financeres estan en risc, canvia contraseyes crítiques."
+ },
+ {
+ "@type": "HowToStep",
+ "name": "ERRADICAR",
+ "text": "Elimina el malware, revoca tokens d'accés compromesos, neteja profundament els dispositius amb eines de seguretat especialitzades."
+ },
+ {
+ "@type": "HowToStep",
+ "name": "RECUPERAR",
+ "text": "Restaura sistemes des de còpies de seguretat verificades, canvia totes les contraseyes, documenta l'incident per millorar controls futurs."
+ }
+ ]
+}
+&lt;/script>
+&lt;!-- Hero Section -->
+&lt;section class="landing-hero-section">
+&lt;div class="container">
+ &lt;div class="row align-items-center">
+ &lt;div class="col-lg-6 landing-fade-in">
+ &lt;h1 class="landing-hero-title">Phishing: Què és i com evitar. La amenaça número una&lt;/h1>
+ &lt;p class="landing-hero-subtitle">Inicia el 91% dels atacs reeixits. Aprèn a identificar correus falsos, entrenar el teu equip i crear defenses que funcionen.&lt;/p></description></item><item><title>Què és la Ciberseguretat? El teu escut a l'era hiperconnectada</title><link>https://guardianhubx.com/ca/que-es-la-ciberseguritat/</link><pubDate>Sun, 22 Feb 2026 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/ca/que-es-la-ciberseguritat/</guid><description>&lt;script type="application/ld+json">
 {
  "@context": "https://schema.org",
  "@type": "Article",

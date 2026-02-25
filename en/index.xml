@@ -1,4 +1,63 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>GuardianHubX - Cybersecurity for Businesses and Freelancers on GuardianHubX - Cybersecurity</title><link>https://guardianhubx.com/en/</link><description>Recent content in GuardianHubX - Cybersecurity for Businesses and Freelancers on GuardianHubX - Cybersecurity</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 22 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://guardianhubx.com/en/index.xml" rel="self" type="application/rss+xml"/><item><title>What is Cybersecurity? Your Shield in the Hyperconnected Era</title><link>https://guardianhubx.com/en/what-is-cybersecurity/</link><pubDate>Sun, 22 Feb 2026 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/en/what-is-cybersecurity/</guid><description>&lt;script type="application/ld+json">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>GuardianHubX - Cybersecurity for Businesses and Freelancers on GuardianHubX - Cybersecurity</title><link>https://guardianhubx.com/en/</link><description>Recent content in GuardianHubX - Cybersecurity for Businesses and Freelancers on GuardianHubX - Cybersecurity</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 22 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://guardianhubx.com/en/index.xml" rel="self" type="application/rss+xml"/><item><title>Phishing: What is it and how to avoid. The number one threat of 2026</title><link>https://guardianhubx.com/en/phishing-what-is-and-how-to-avoid/</link><pubDate>Sun, 22 Feb 2026 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/en/phishing-what-is-and-how-to-avoid/</guid><description>&lt;script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "Article",
+"headline": "Phishing: What is it and how to avoid. The number one threat of 2026",
+"description": "Complete guide to phishing: attack types (smishing, vishing, CEO fraud), how to identify them and strategies to protect yourself. Effective training and simulations.",
+"image": "/img/phishing-fishing-attack.svg",
+"author": {
+ "@type": "Organization",
+ "name": "GuardianHubX"
+},
+"datePublished": "2026-02-22T00:00:00+00:00",
+"dateModified": "2026-02-22T00:00:00+00:00",
+"publisher": {
+ "@type": "Organization",
+ "name": "GuardianHubX",
+ "logo": {
+ "@type": "ImageObject",
+ "url": "/img/guardianhubx-logo.webp"
+ }
+}
+}
+&lt;/script>
+&lt;script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "HowTo",
+ "name": "How to respond to a phishing attack with I.C.E.R.",
+ "description": "Step-by-step guide to quickly respond to a phishing attack using the I.C.E.R. model.",
+ "step": [
+ {
+ "@type": "HowToStep",
+ "name": "IDENTIFY",
+ "text": "Determine what information was compromised: passwords, bank data, corporate files. Identify what was the entry vector of the attack."
+ },
+ {
+ "@type": "HowToStep",
+ "name": "CONTAIN",
+ "text": "Block immediate access, disconnect infected devices, alert your bank if financial data is at risk, change critical passwords."
+ },
+ {
+ "@type": "HowToStep",
+ "name": "ERADICATE",
+ "text": "Remove malware, revoke compromised access tokens, thoroughly clean devices with specialized security tools."
+ },
+ {
+ "@type": "HowToStep",
+ "name": "RECOVER",
+ "text": "Restore systems from verified backups, change all passwords, document the incident to improve future controls."
+ }
+ ]
+}
+&lt;/script>
+&lt;!-- Hero Section -->
+&lt;section class="landing-hero-section">
+&lt;div class="container">
+ &lt;div class="row align-items-center">
+ &lt;div class="col-lg-6 landing-fade-in">
+ &lt;h1 class="landing-hero-title">Phishing: What is it and how to avoid. The number one threat&lt;/h1>
+ &lt;p class="landing-hero-subtitle">Initiates 91% of successful attacks. Learn to identify fake emails, train your team, and create defenses that work.&lt;/p></description></item><item><title>What is Cybersecurity? Your Shield in the Hyperconnected Era</title><link>https://guardianhubx.com/en/what-is-cybersecurity/</link><pubDate>Sun, 22 Feb 2026 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/en/what-is-cybersecurity/</guid><description>&lt;script type="application/ld+json">
 {
  "@context": "https://schema.org",
  "@type": "Article",

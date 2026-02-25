@@ -27,7 +27,66 @@
  &lt;div class="row align-items-center">
  &lt;div class="col-lg-6 landing-fade-in">
  &lt;h1 class="landing-hero-title">¿Qué es la Ciberseguridad? Tu escudo en la era hiperconectada&lt;/h1>
- &lt;p class="landing-hero-subtitle">No se trata solo de instalar un antivirus. Es la estrategia, la tecnología y la cultura que protegen lo que más importa: tu información, tu operativa y tu tranquilidad.&lt;/p></description></item><item><title>Configuración de tu GuardianRadar</title><link>https://guardianhubx.com/es/guardianradar-config/</link><pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/es/guardianradar-config/</guid><description>&lt;section class="section">
+ &lt;p class="landing-hero-subtitle">No se trata solo de instalar un antivirus. Es la estrategia, la tecnología y la cultura que protegen lo que más importa: tu información, tu operativa y tu tranquilidad.&lt;/p></description></item><item><title>Phishing: Qué es y cómo evitar. La amenaza número uno de 2026</title><link>https://guardianhubx.com/es/phishing-que-es-y-como-evitar/</link><pubDate>Sun, 22 Feb 2026 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/es/phishing-que-es-y-como-evitar/</guid><description>&lt;script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "Article",
+"headline": "Phishing: Qué es y cómo evitar. La amenaza número uno de 2026",
+"description": "Guía completa sobre phishing: tipos de ataques (smishing, vishing, CEO fraud), cómo identificarlos y estrategias para protegerte. Formación y simulacros efectivos.",
+"image": "/img/phishing-fishing-attack.svg",
+"author": {
+ "@type": "Organization",
+ "name": "GuardianHubX"
+},
+"datePublished": "2026-02-22T00:00:00+00:00",
+"dateModified": "2026-02-22T00:00:00+00:00",
+"publisher": {
+ "@type": "Organization",
+ "name": "GuardianHubX",
+ "logo": {
+ "@type": "ImageObject",
+ "url": "/img/guardianhubx-logo.webp"
+ }
+}
+}
+&lt;/script>
+&lt;script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "HowTo",
+ "name": "Cómo responder a un ataque de phishing con I.C.E.R.",
+ "description": "Guía paso a paso para responder rápidamente a un ataque de phishing usando el modelo I.C.E.R.",
+ "step": [
+ {
+ "@type": "HowToStep",
+ "name": "IDENTIFICAR",
+ "text": "Determina qué información se comprometió: contraseñas, datos bancarios, archivos corporativos. Identifica cuál fue el vector de entrada del ataque."
+ },
+ {
+ "@type": "HowToStep",
+ "name": "CONTENER",
+ "text": "Bloquea acceso inmediato, desconecta dispositivos infectados, avisa a tu banco si datos financieros están en riesgo, cambia contraseñas críticas."
+ },
+ {
+ "@type": "HowToStep",
+ "name": "ERRADICAR",
+ "text": "Elimina el malware, revoca tokens de acceso comprometidos, limpia profundamente los dispositivos con herramientas de seguridad especializadas."
+ },
+ {
+ "@type": "HowToStep",
+ "name": "RECUPERAR",
+ "text": "Restaura sistemas desde copias de seguridad verificadas, cambia todas las contraseñas, documenta el incidente para mejorar controles futuros."
+ }
+ ]
+}
+&lt;/script>
+&lt;!-- Hero Section -->
+&lt;section class="landing-hero-section">
+&lt;div class="container">
+ &lt;div class="row align-items-center">
+ &lt;div class="col-lg-6 landing-fade-in">
+ &lt;h1 class="landing-hero-title">Phishing: Qué es y cómo evitar. La amenaza número uno&lt;/h1>
+ &lt;p class="landing-hero-subtitle">Inicia el 91% de los ataques exitosos. Aprende a identificar correos falsos, entrenar a tu equipo y crear defensas que funcionan.&lt;/p></description></item><item><title>Configuración de tu GuardianRadar</title><link>https://guardianhubx.com/es/guardianradar-config/</link><pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/es/guardianradar-config/</guid><description>&lt;section class="section">
  &lt;div class="container" style="text-align: center; margin-bottom: 40px;">
  &lt;h1 class="title-xl">Activa tu Radar&lt;/h1>
  &lt;p class="lead">Para que GuardianRadar pueda protegerte, necesitamos pedirte algunos datos para activar el servicio.&lt;/p>
