@@ -606,6 +606,102 @@ body.scrolled .home-navbar {
     line-height: 1.6 !important;
 }
 
+/* I.C.E.R. Response Section */
+.icer-card-identificar {
+    border-left: 4px solid #FF9800 !important;
+}
+.icer-card-identificar .landing-benefit-icon {
+    background: transparent !important;
+    border: 2px solid #FF9800 !important;
+}
+
+.icer-card-contener {
+    border-left: 4px solid #E74C3C !important;
+}
+.icer-card-contener .landing-benefit-icon {
+    background: transparent !important;
+    border: 2px solid #E74C3C !important;
+}
+
+.icer-card-erradicar {
+    border-left: 4px solid #C0392B !important;
+}
+.icer-card-erradicar .landing-benefit-icon {
+    background: transparent !important;
+    border: 2px solid #C0392B !important;
+}
+
+.icer-card-recuperar {
+    border-left: 4px solid #27AE60 !important;
+}
+.icer-card-recuperar .landing-benefit-icon {
+    background: transparent !important;
+    border: 2px solid #27AE60 !important;
+}
+
+/* Stats Section */
+.stats-title {
+    text-align: center !important;
+    margin-bottom: 2rem !important;
+    font-size: 2rem !important;
+    color: var(--landing-primary-color) !important;
+}
+
+/* Threat Cards Icon Styles */
+.threat-icon-search {
+    color: #FF6B6B !important;
+    margin-right: 8px !important;
+}
+
+.threat-icon-link {
+    color: #FFA500 !important;
+    margin-right: 8px !important;
+}
+
+.threat-icon-warning {
+    color: #9B59B6 !important;
+    margin-right: 8px !important;
+}
+
+.threat-icon-spell {
+    color: #3498DB !important;
+    margin-right: 8px !important;
+}
+
+.threat-list {
+    list-style: none !important;
+    padding: 0 !important;
+}
+
+/* Alert Icons */
+.alert-icon-lg {
+    font-size: 1.5rem !important;
+}
+
+.alert-icon-warning {
+    color: #FFC107 !important;
+}
+
+.icer-icon-orange {
+    color: #FF9800 !important;
+    font-size: 1.5rem !important;
+}
+
+.icer-icon-red {
+    color: #E74C3C !important;
+    font-size: 1.5rem !important;
+}
+
+.icer-icon-darkred {
+    color: #C0392B !important;
+    font-size: 1.5rem !important;
+}
+
+.icer-icon-green {
+    color: #27AE60 !important;
+    font-size: 1.5rem !important;
+}
+
 /* Threat Cards */
 .landing-threat-card {
     border-radius: 12px !important;

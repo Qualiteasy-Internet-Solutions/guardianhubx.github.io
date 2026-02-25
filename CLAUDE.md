@@ -72,6 +72,26 @@ Pages support these SEO-related params:
 - `translations` — array of `{lang, path}` for language switcher JS
 - `layout` — determines which template and breadcrumb category
 
+### Hugo Shortcodes
+Landing pages use centralized Hugo shortcodes for contact components (DRY principle):
+
+```html
+{{< contact-cta >}}
+
+<div id="contact"></div>
+<section class="contact-section mb-5">
+  {{< contact-form >}}
+</section>
+```
+
+**Pattern:** Replace inline contact form HTML with these shortcodes. The form automatically handles:
+- Multilingual labels (pulls from i18n files)
+- Google Forms submission
+- Privacy policy links per language
+- Form validation and recaptcha
+
+**Applied to:** All landing pages with `layout: landing-ciberseguridad` (phishing training, cybersecurity guide, cyber test, etc.)
+
 ### Third-Party Integrations
 - Google Tag Manager: `GTM-584VRJ97` (in head.html + noscript in baseof)
 - Cookiebot: consent management (GDPR)
@@ -82,3 +102,4 @@ Pages support these SEO-related params:
 - ALWAYS use Haiku model for simple tasks.
 - ASK for permission before running broad audits or reading more than 5 files.
 - WARNING: We are on a tight token budget. Be concise.
+- **DO NOT auto-commit changes** — User will commit manually. Only stage changes with `git add` and prepare commit messages if requested.

@@ -301,62 +301,9 @@ faq_items:
   </div>
 </section>
 
-<!-- CTA Section -->
-<section class="landing-cta-section py-5">
-  <div class="container text-center">
-    <h2 class="landing-cta-title landing-fade-in">¿Listo para blindar tu seguridad digital?</h2>
-    <p class="landing-cta-subtitle landing-fade-in">Habla con un experto de GuardianHubX y descubre cómo protegemos a empresas como la tuya frente a las amenazas más sofisticadas de 2026.</p>
-  </div>
-</section>
+{{< contact-cta >}}
 
-<!-- Contact Form Section -->
-<section class="landing-contact-section py-5">
-  <div class="container">
-    <h2 class="landing-section-title text-center mb-4">Contáctanos para una consulta gratuita</h2>
-    <div class="row justify-content-md-center mb-5">
-      <div class="col-12 col-md-4 d-flex align-items-center justify-content-start mb-3">
-        <i class="fas fa-envelope fa-2x landing-text-primary me-3"></i>
-        <a href="mailto:info@guardianhubx.com" class="landing-text-muted fs-5">
-          info@guardianhubx.com
-        </a>
-      </div>
-      <div class="col-12 col-md-4 d-flex align-items-center justify-content-start mb-3">
-        <i class="fas fa-phone fa-2x landing-text-primary me-3"></i>
-        <a href="tel:+34934153115" class="landing-text-muted fs-5">
-          +34 93 415 31 15
-        </a>
-      </div>
-    </div>
-
-  <form class="gform row g-4" id="contactForm" action="https://script.google.com/macros/s/AKfycbyJO3Rs4loBRevIsltI1Fcg48BH_WAtGm6Rezhea-0g_FutfYbM0MwOQfEkDI0XXGF5/exec"  method="POST" novalidate>
-    <div class="col-12 col-md-6">
-    <label for="name" class="form-label">Nombre:</label>
-    <input type="text" id="name" name="name" class="form-control" required aria-required="true">
-    </div>
-    <div class="col-12 col-md-6">
-    <label for="email" class="form-label">Correo Electrónico:</label>
-    <input type="email" id="email" name="email" class="form-control" required aria-required="true">
-    </div>
-    <div class="col-12">
-    <label for="message" class="form-label">Mensaje:</label>
-    <textarea id="message" name="message" rows="5" class="form-control" required aria-required="true"></textarea>
-    </div>
-    <div class="col-12">
-    <div class="form-check bg-light p-3 ps-5 rounded border">
-        <input class="form-check-input" type="checkbox" id="privacy-policy" name="privacy-policy" required>
-        <label class="form-check-label fw-bold ms-2" for="privacy-policy">
-        He leído y acepto la <a href="/es/politica-privacidad/" target="_blank" rel="noopener">Política de Privacidad</a>.
-        </label>
-    </div>
-    </div>
-    <div class="col-12 text-center">
-    <button type="submit" class="landing-btn landing-btn-primary px-5">Enviar Consulta</button>
-    </div>
-    <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
-    <input type="hidden" name="_next" value="/es/thanks/">
-    <input type="hidden" name="_subject" value="Solicitud de información - Ciberseguridad">
-    <input type="hidden" name="_autoresponse" value="Gracias por tu consulta. Nos pondremos en contacto contigo lo antes posible.">
-    <input type="hidden" name="_template" value="table">
-  </form>
-  </div>
+<div id="contact"></div>
+<section class="contact-section mb-5">
+  {{< contact-form >}}
 </section>
