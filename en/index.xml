@@ -933,7 +933,30 @@
  &lt;div class="row align-items-center">
  &lt;div class="col-lg-8 landing-slide-in-left">
  &lt;h2 class="landing-section-title text-start">Start your training.&lt;br>Defend against phishing.&lt;/h2>
- &lt;p class="mb-3 landing-text-muted">Cybercrime never stops, and phishing attacks are becoming increasingly sophisticated. With GuardianHubX, you can stay ahead of the curve.&lt;/p></description></item><item><title>Thank You!</title><link>https://guardianhubx.com/en/thanks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/en/thanks/</guid><description>&lt;!-- Success Section -->
+ &lt;p class="mb-3 landing-text-muted">Cybercrime never stops, and phishing attacks are becoming increasingly sophisticated. With GuardianHubX, you can stay ahead of the curve.&lt;/p></description></item><item><title>Test Completed!</title><link>https://guardianhubx.com/en/thanks-test/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/en/thanks-test/</guid><description>&lt;!-- Success Section -->
+&lt;section class="thanks-hero py-5">
+&lt;div class="container text-center">
+&lt;div class="thanks-success-icon mb-4">
+&lt;i class="fas fa-award">&lt;/i>
+&lt;/div>
+&lt;h1 class="thanks-title mb-3">Test Completed!&lt;/h1>
+&lt;p class="thanks-subtitle mb-5">Excellent! We’ve processed your answers and are preparing your personalized security report. You will receive the information in your email within &lt;strong>5 minutes&lt;/strong>.&lt;/p>
+&lt;p class="thanks-email-note">If you don’t receive it, please check your spam folder or write to us at &lt;a href="mailto:info@guardianhubx.com" style="color: #4CAF50; text-decoration: none; font-weight: 600;">info@guardianhubx.com&lt;/a>&lt;/p>
+&lt;/div>
+&lt;/section>
+&lt;!-- Next Steps Section -->
+&lt;section class="thanks-section py-5">
+&lt;div class="container">
+&lt;h2 class="thanks-section-title text-center mb-5">What to do next?&lt;/h2>
+&lt;div class="row g-4 mb-5">
+&lt;!-- Phishing Training -->
+&lt;div class="col-md-6 col-lg-3">
+&lt;div class="thanks-card">
+ &lt;div class="thanks-card-icon">
+ &lt;i class="fas fa-graduation-cap">&lt;/i>
+ &lt;/div>
+ &lt;h5 class="thanks-card-title">Training&lt;/h5>
+ &lt;p class="thanks-card-text">Train your team to prevent phishing attacks.&lt;/p></description></item><item><title>Thank You!</title><link>https://guardianhubx.com/en/thanks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/en/thanks/</guid><description>&lt;!-- Success Section -->
 &lt;section class="thanks-hero py-5">
 &lt;div class="container text-center">
 &lt;div class="thanks-success-icon mb-4">
@@ -955,10 +978,4 @@
  &lt;i class="fas fa-book-open">&lt;/i>
 &lt;/div>
 &lt;h5 class="thanks-card-title">Learn&lt;/h5>
-&lt;p class="thanks-card-text">Discover what cybersecurity is and how to protect yourself.&lt;/p></description></item><item><title>Thanks</title><link>https://guardianhubx.com/en/thanks-test/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/en/thanks-test/</guid><description>&lt;section class="thanks mb-5">
- &lt;h2 class="text-center mb-4">Thank you for filling out the form! You will receive the information in your email within 5 minutes.&lt;/h2>
- &lt;h5 class="text-center mb-4">If you don’t receive it, please check your spam folder or write to us at info@guardianhubx.com&lt;/h5>
- &lt;div class="text-center">
- &lt;a href="https://guardianhubx.com/en/">Want to learn more about our cybersecurity solutions? Explore our services!&lt;/a>
- &lt;/div>
-&lt;/section></description></item><item><title>The Pillars of Modern Cybersecurity</title><link>https://guardianhubx.com/en/cybersecurity-goals/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/en/cybersecurity-goals/</guid><description/></item></channel></rss>
+&lt;p class="thanks-card-text">Discover what cybersecurity is and how to protect yourself.&lt;/p></description></item><item><title>The Pillars of Modern Cybersecurity</title><link>https://guardianhubx.com/en/cybersecurity-goals/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/en/cybersecurity-goals/</guid><description/></item></channel></rss>

@@ -308,20 +308,14 @@
  &lt;/ul>
  &lt;p class="mt-4">
  Els productes de Faronics, ara en versió Cloud, ajuden les organitzacions a &lt;strong>prevenir, detectar i recuperar-se d’incidents&lt;/strong>, &lt;a href="https://guardianhubx.com/ca/objectius-ciberseguretat/">els tres pilars fonamentals de la ciberseguretat&lt;/a>.
- &lt;/p></description></item><item><title>Gràcies</title><link>https://guardianhubx.com/ca/thanks-test/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/ca/thanks-test/</guid><description>&lt;section class="thanks mb-5">
- &lt;h2 class="text-center mb-4">Gràcies per omplir el formulari! Rebrás la informació en el teu email en un màxim de 5 minuts.&lt;/h2>
- &lt;h5 class="text-center mb-4">Si no ho reps, revisa la teva carpeta de spam o escriu-nos a info@guardianhubx.com&lt;/h5>
- &lt;div class="text-center">
- &lt;a href="https://guardianhubx.com/ca/">Vols conèxixer més les nostres solucions de de ciberseguretat? Explora els nostres serveis!&lt;/a>
- &lt;/div>
-&lt;/section></description></item><item><title>Gràcies!</title><link>https://guardianhubx.com/ca/thanks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/ca/thanks/</guid><description>&lt;!-- Success Section -->
+ &lt;/p></description></item><item><title>Gràcies!</title><link>https://guardianhubx.com/ca/thanks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/ca/thanks/</guid><description>&lt;!-- Success Section -->
 &lt;section class="thanks-hero py-5">
 &lt;div class="container text-center">
 &lt;div class="thanks-success-icon mb-4">
 &lt;i class="fas fa-check-circle">&lt;/i>
 &lt;/div>
 &lt;h1 class="thanks-title mb-3">¡Gràcies!&lt;/h1>
-&lt;p class="thanks-subtitle mb-5">Hem rebut el teu missatge i ens posarem en contacte amb tu ben aviat. Un dels nostres experts revisarà la teva consulta i et respondràs en les pròximes hores.&lt;/p>
+&lt;p class="thanks-subtitle mb-5">Hem rebut el teu missatge i ens posarem en contacte amb tu ben aviat. Un dels nostres experts revisarà la teva consulta i et respondrà en les pròximes hores.&lt;/p>
 &lt;/div>
 &lt;/section>
 &lt;!-- Next Steps Section -->
@@ -632,7 +626,30 @@
 &lt;ul>
 &lt;li>Anàlisi dels punts d’accés oberts: webs, routers i servidors&lt;/li>
 &lt;/ul>
-&lt;p>Ideal per a qui treballa amb dades sensibles i no vol ensurts digitals.&lt;/p></description></item><item><title>Test de Ciberseguretat</title><link>https://guardianhubx.com/ca/test-ciberseguretat/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/ca/test-ciberseguretat/</guid><description>&lt;!-- Hero Section -->
+&lt;p>Ideal per a qui treballa amb dades sensibles i no vol ensurts digitals.&lt;/p></description></item><item><title>Test Completat!</title><link>https://guardianhubx.com/ca/thanks-test/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/ca/thanks-test/</guid><description>&lt;!-- Success Section -->
+&lt;section class="thanks-hero py-5">
+&lt;div class="container text-center">
+&lt;div class="thanks-success-icon mb-4">
+&lt;i class="fas fa-award">&lt;/i>
+&lt;/div>
+&lt;h1 class="thanks-title mb-3">Test Completat!&lt;/h1>
+&lt;p class="thanks-subtitle mb-5">Excel·lent! Hem processat les teves respostes i estem preparant el teu informe de seguritat personalitzat. Rebrás la informació en el teu correu en un màxim de &lt;strong>5 minuts&lt;/strong>.&lt;/p>
+&lt;p class="thanks-email-note">Si no ho reps, revisa la teva carpeta de spam o escriu-nos a &lt;a href="mailto:info@guardianhubx.com" style="color: #4CAF50; text-decoration: none; font-weight: 600;">info@guardianhubx.com&lt;/a>&lt;/p>
+&lt;/div>
+&lt;/section>
+&lt;!-- Next Steps Section -->
+&lt;section class="thanks-section py-5">
+&lt;div class="container">
+&lt;h2 class="thanks-section-title text-center mb-5">Què fer ara?&lt;/h2>
+&lt;div class="row g-4 mb-5">
+&lt;!-- Phishing Training -->
+&lt;div class="col-md-6 col-lg-3">
+&lt;div class="thanks-card">
+ &lt;div class="thanks-card-icon">
+ &lt;i class="fas fa-graduation-cap">&lt;/i>
+ &lt;/div>
+ &lt;h5 class="thanks-card-title">Formació&lt;/h5>
+ &lt;p class="thanks-card-text">Entrena el teu equip per prevenir atacs de phishing.&lt;/p></description></item><item><title>Test de Ciberseguretat</title><link>https://guardianhubx.com/ca/test-ciberseguretat/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/ca/test-ciberseguretat/</guid><description>&lt;!-- Hero Section -->
 &lt;section class="landing-hero-section">
  &lt;div class="container">
  &lt;div class="row align-items-center">
