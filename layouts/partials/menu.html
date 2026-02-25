@@ -25,10 +25,17 @@
         </a>
     </li>
     <li>
+        <a class="dropdown-item" href="{{ cond (eq .Lang "es") ("/es/phishing-que-es-y-como-evitar/" | relLangURL)
+                (cond (eq .Lang "ca") ("/ca/phishing-que-es-i-com-evitar/" | relLangURL)
+                                ("/en/phishing-what-is-and-how-to-avoid/" | relLangURL)) }}">
+        {{ i18n "what_is_phishing" }}
+        </a>
+    </li>
+    <li>
         <a class="dropdown-item" href="{{ cond (eq .Lang "es") ("/es/formacion-phishing-software/" | relLangURL)
                 (cond (eq .Lang "ca") ("/ca/formacio-phishing-software/" | relLangURL)
                                 ("/en/cybersecurity-phishing-training/" | relLangURL)) }}">
-        Phishing
+        {{ i18n "phishing_training" }}
         </a>
     </li>
     <li>

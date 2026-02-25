@@ -76,6 +76,10 @@
   translation: "Objectius de ciberseguretat"
 - id: "what_is_cybersecurity"
   translation: "Què és la ciberseguretat?"
+- id: "what_is_phishing"
+  translation: "Què és el phishing?"
+- id: "phishing_training"
+  translation: "Formació en phishing"
 
 - id: "newsletter_title"
   translation: "Butlletí"

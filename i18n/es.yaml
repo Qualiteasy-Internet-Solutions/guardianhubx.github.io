@@ -79,6 +79,10 @@
   translation: "Objetivos de ciberseguridad"
 - id: "what_is_cybersecurity"
   translation: "¿Qué es la ciberseguridad?"
+- id: "what_is_phishing"
+  translation: "¿Qué es el phishing?"
+- id: "phishing_training"
+  translation: "Formación en phishing"
 
 - id: "newsletter_title"
   translation: "Newsletter"

@@ -76,6 +76,10 @@
   translation: "Cybersecurity goals"
 - id: "what_is_cybersecurity"
   translation: "What is cybersecurity?"
+- id: "what_is_phishing"
+  translation: "What is Phishing?"
+- id: "phishing_training"
+  translation: "Phishing Training"
 
 - id: "newsletter_title"
   translation: "Newsletter"
