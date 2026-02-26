@@ -100,7 +100,7 @@ faq_items:
         <h2 class="landing-section-title text-start">The Definition: Beyond the Theory</h2>
         <p class="mb-3 landing-text-muted">In simple terms, <strong>cybersecurity</strong> is the practice of protecting computers, servers, mobile devices, electronic systems, networks, and data from malicious attacks. It's also known as information technology security or electronic information security.</p>
         <p class="mb-3 landing-text-muted">But in the real world, cybersecurity is <strong>digital survival</strong>. As our lives and businesses move to the cloud, attackers evolve too. Nowadays, a cyberattack isn't a matter of "if" but "when."</p>
-        <p class="mb-4 landing-text-muted">If you're just starting your journey toward digital security, our <a href="/en/blog/20260108-guia-ciberseguridad-autonomo-desde-cero/">beginner's guide to cybersecurity</a> provides practical, applicable steps from day one.</p>
+        <p class="mb-4 landing-text-muted">Start with the fundamentals: understand the CIA Triad, recognize common threats, and implement basic security hygiene. These principles will guide your digital protection strategy.</p>
         <a href="/en/cybersecurity-test/" class="landing-btn landing-btn-primary">
           EVALUATE YOUR SECURITY <i class="fas fa-arrow-right landing-arrow-soft-green"></i>
         </a>
@@ -171,7 +171,6 @@ faq_items:
         <strong>91%</strong> of successful attacks start here
       </div>
       <div class="d-flex gap-3 flex-wrap">
-        <a href="/en/blog/20251221-ciberestafas-ceo-autonomos-pymes/" class="small text-decoration-none"><i class="fas fa-book" style="margin-right: 4px;"></i>How to Avoid It</a>
         <a href="/en/phishing-training-software/" class="small text-decoration-none"><i class="fas fa-graduation-cap" style="margin-right: 4px;"></i>Train Your Team</a>
       </div>
     </div>
@@ -192,7 +191,6 @@ faq_items:
         Present in <strong>44%</strong> of all attacks
       </div>
       <div class="d-flex gap-3 flex-wrap">
-        <a href="/en/blog/20250910-guia-60-minutos-ataque-ransomware/" class="small text-decoration-none"><i class="fas fa-hourglass-end" style="margin-right: 4px;"></i>First 60 Minutes</a>
         <a href="/en/ironwall/" class="small text-decoration-none"><i class="fas fa-shield-alt" style="margin-right: 4px;"></i>Protect with IronWall</a>
       </div>
     </div>
@@ -211,10 +209,6 @@ faq_items:
       <p class="landing-threat-text mb-4">Viruses, trojans, and worms designed to damage or exploit devices and corporate networks.</p>
       <div class="alert alert-threat-malware py-3 px-4 mb-4" style="font-size: 0.9rem;">
         <strong>94% ↑</strong> increase in 2025
-      </div>
-      <div class="d-flex gap-3 flex-wrap">
-        <a href="/en/blog/20250430-malware-red-informe-watchguard/" class="small text-decoration-none"><i class="fas fa-chart-bar" style="margin-right: 4px;"></i>WatchGuard Report</a>
-        <a href="/en/blog/20260222-captchas-falsos-malware-ingenieria-social/" class="small text-decoration-none"><i class="fas fa-triangle-exclamation" style="margin-right: 4px;"></i>New Traps</a>
       </div>
     </div>
   </div>

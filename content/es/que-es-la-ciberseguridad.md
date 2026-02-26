@@ -100,7 +100,7 @@ faq_items:
         <h2 class="landing-section-title text-start">La Definición: Más allá de la teoría</h2>
         <p class="mb-3 landing-text-muted">En términos sencillos, la <strong>ciberseguridad</strong> es la práctica de defender ordenadores, servidores, dispositivos móviles, sistemas electrónicos, redes y datos de ataques maliciosos. También se conoce como seguridad de la tecnología de la información o seguridad de la información electrónica.</p>
         <p class="mb-3 landing-text-muted">Pero en el mundo real, la ciberseguridad es <strong>supervivencia digital</strong>. A medida que nuestras vidas y negocios se trasladan a la nube, los atacantes también evolucionan. Hoy en día, un ataque cibernético no es una cuestión de "si pasará", sino de "cuándo pasará".</p>
-        <p class="mb-4 landing-text-muted">Si acabas de empezar tu camino hacia la seguridad digital, nuestra <a href="/es/blog/20260108-guia-ciberseguridad-autonomo-desde-cero/">guía de primeros pasos en ciberseguridad</a> te proporciona pasos prácticos y aplicables desde el primer día.</p>
+        <p class="mb-4 landing-text-muted">Si acabas de empezar tu camino hacia la seguridad digital, nuestra <a href="/blog/guia-ciberseguridad-autonomo-desde-cero/">guía de primeros pasos en ciberseguridad</a> te proporciona pasos prácticos y aplicables desde el primer día.</p>
         <a href="/es/test-ciberseguridad/" class="landing-btn landing-btn-primary">
           EVALÚA TU SEGURIDAD <i class="fas fa-arrow-right landing-arrow-soft-green"></i>
         </a>
@@ -171,7 +171,7 @@ faq_items:
         <strong>91%</strong> de los ataques exitosos comienzan aquí
       </div>
       <div class="d-flex gap-3 flex-wrap">
-        <a href="/es/blog/20251221-ciberestafas-ceo-autonomos-pymes/" class="small text-decoration-none"><i class="fas fa-book" style="margin-right: 4px;"></i>Cómo evitarla</a>
+        <a href="/blog/ciberestafas-ceo-autonomos-pymes/" class="small text-decoration-none"><i class="fas fa-book" style="margin-right: 4px;"></i>Cómo evitarla</a>
         <a href="/es/formacion-phishing-software/" class="small text-decoration-none"><i class="fas fa-graduation-cap" style="margin-right: 4px;"></i>Entrena tu equipo</a>
       </div>
     </div>
@@ -192,7 +192,7 @@ faq_items:
         Presente en <strong>44%</strong> de todos los ataques
       </div>
       <div class="d-flex gap-3 flex-wrap">
-        <a href="/es/blog/20250910-guia-60-minutos-ataque-ransomware/" class="small text-decoration-none"><i class="fas fa-hourglass-end" style="margin-right: 4px;"></i>Primeros 60 minutos</a>
+        <a href="/blog/guia-60-minutos-ataque-ransomware/" class="small text-decoration-none"><i class="fas fa-hourglass-end" style="margin-right: 4px;"></i>Primeros 60 minutos</a>
         <a href="/es/ironwall/" class="small text-decoration-none"><i class="fas fa-shield-alt" style="margin-right: 4px;"></i>Protégete con IronWall</a>
       </div>
     </div>
@@ -213,8 +213,8 @@ faq_items:
         <strong>94% ↑</strong> aumento en 2025
       </div>
       <div class="d-flex gap-3 flex-wrap">
-        <a href="/es/blog/20250430-malware-red-informe-watchguard/" class="small text-decoration-none"><i class="fas fa-chart-bar" style="margin-right: 4px;"></i>Informe WatchGuard</a>
-        <a href="/es/blog/20260222-captchas-falsos-malware-ingenieria-social/" class="small text-decoration-none"><i class="fas fa-triangle-exclamation" style="margin-right: 4px;"></i>Nuevas trampas</a>
+        <a href="/blog/malware-red-informe-watchguard/" class="small text-decoration-none"><i class="fas fa-chart-bar" style="margin-right: 4px;"></i>Informe WatchGuard</a>
+        <a href="/blog/captchas-falsos-malware-ingenieria-social/" class="small text-decoration-none"><i class="fas fa-triangle-exclamation" style="margin-right: 4px;"></i>Nuevas trampas</a>
       </div>
     </div>
   </div>

@@ -133,7 +133,7 @@ faq_items:
       <p class="mb-3 landing-text-muted">El phishing es un ataque de ingeniería social que suplanta la identidad de entidades legítimas (bancos, empresas, colegas) para obtener información confidencial o acceso a sistemas.</p>
       <p class="mb-3 landing-text-muted">Los atacantes utilizan correos electrónicos que parecen genuinos, incluyendo logos, diseños y lenguaje idénticos a la marca original. Incluyen enlaces o adjuntos maliciosos que, si haces clic, comprometen tu dispositivo o roban tus credenciales.</p>
       <p class="mb-4 landing-text-muted">Lo más peligroso del phishing es que <strong>no requiere vulnerabilidades técnicas</strong>. Explota la psicología humana: urgencia, confianza, miedo y autoridad. Por eso es la puerta de entrada más efectiva para ransomware, malware y robo de datos.</p>
-      <a href="/blog/es/ciberestafas-ceo-autonomos-pymes/" class="landing-btn landing-btn-primary">
+      <a href="/blog/ciberestafas-ceo-autonomos-pymes/" class="landing-btn landing-btn-primary">
         Casos Reales: CEO Fraud <i class="fas fa-arrow-right landing-arrow-soft-green"></i>
       </a>
     </div>
@@ -224,7 +224,7 @@ faq_items:
         <li class="mb-2">Archivos en la nube: Google Drive con "contratos urgentes"</li>
       </ul>
       <p class="mb-4 landing-text-muted">En 2025, el CEO Fraud representó pérdidas de millones de euros en Europa. Para pymes, un único ataque exitoso puede ser catastrófico, incluso irreversible.</p>
-      <a href="/blog/es/ciberestafas-ceo-autonomos-pymes/" class="landing-btn landing-btn-primary">
+      <a href="/blog/ciberestafas-ceo-autonomos-pymes/" class="landing-btn landing-btn-primary">
         Lee Historias Reales <i class="fas fa-arrow-right landing-arrow-soft-green"></i>
       </a>
     </div>
@@ -292,7 +292,7 @@ faq_items:
 
 <div class="row mt-4">
   <div class="col-12 text-center landing-fade-in">
-    <a href="/blog/es/errores-comuns-ciberseguretat-pimes/" class="landing-btn landing-btn-primary">
+    <a href="/blog/errores-comunes-ciberseguridad-pymes/" class="landing-btn landing-btn-primary">
       Errores Comunes en Ciberseguridad <i class="fas fa-arrow-right"></i>
     </a>
   </div>
@@ -407,7 +407,7 @@ faq_items:
       <a href="/es/guardianradar/" class="landing-btn landing-btn-primary">
         Explora Nuestras Soluciones <i class="fas fa-arrow-right landing-arrow-soft-green"></i>
       </a>
-      <a href="/blog/es/vector-atac-proteccio-empresa/" class="landing-btn landing-btn-primary mt-2">
+      <a href="/blog/vector-ataque-como-proteger-empresa/" class="landing-btn landing-btn-primary mt-2">
         Vectores de Ataque y Protección <i class="fas fa-arrow-right"></i>
       </a>
     </div>

@@ -100,7 +100,7 @@ faq_items:
         <h2 class="landing-section-title text-start">La Definició: Més allà de la teoria</h2>
         <p class="mb-3 landing-text-muted">En termes senzills, la <strong>ciberseguretat</strong> és la pràctica de defensar ordinadors, servidors, dispositius mòbils, sistemes electrònics, xarxes i dades d'atacs maliciosos. També es coneix com a seguretat de la tecnologia de la informació o seguretat de la informació electrònica.</p>
         <p class="mb-3 landing-text-muted">Però en el món real, la ciberseguretat és <strong>supervivència digital</strong>. A mesura que les nostres vides i negocis es traslladen al núvol, els atacants també evolucionen. Avui en dia, un atac cibernètic no és una qüestió de "si passarà", sinó de "quan passarà".</p>
-        <p class="mb-4 landing-text-muted">Si acabes de començar el teu camí vers la seguretat digital, la nostra <a href="/ca/blog/20260108-guia-ciberseguretat-autonomo-desde-cero/">guia de primers passos en ciberseguretat</a> et proporciona passos pràctics i aplicables des del primer dia.</p>
+        <p class="mb-4 landing-text-muted">Si acabes de començar el teu camí vers la seguretat digital, la nostra <a href="/blog/ca/guia-ciberseguretat-autonom-des-de-zero/">guia de primers passos en ciberseguretat</a> et proporciona passos pràctics i aplicables des del primer dia.</p>
         <a href="/ca/test-ciberseguridad/" class="landing-btn landing-btn-primary">
           AVALUA LA TEVA SEGURETAT <i class="fas fa-arrow-right landing-arrow-soft-green"></i>
         </a>
@@ -171,7 +171,7 @@ faq_items:
         <strong>91%</strong> dels atacs exitosos comencen aquí
       </div>
       <div class="d-flex gap-3 flex-wrap">
-        <a href="/ca/blog/20251221-ciberestafas-ceo-autonomos-pymes/" class="small text-decoration-none"><i class="fas fa-book" style="margin-right: 4px;"></i>Com evitar-la</a>
+        <a href="/blog/ca/ciberestafes-ceo-autonoms-pimes/" class="small text-decoration-none"><i class="fas fa-book" style="margin-right: 4px;"></i>Com evitar-la</a>
         <a href="/ca/formacion-phishing-software/" class="small text-decoration-none"><i class="fas fa-graduation-cap" style="margin-right: 4px;"></i>Entrena el teu equip</a>
       </div>
     </div>
@@ -192,7 +192,7 @@ faq_items:
         Present en <strong>44%</strong> de tots els atacs
       </div>
       <div class="d-flex gap-3 flex-wrap">
-        <a href="/ca/blog/20250910-guia-60-minutos-ataque-ransomware/" class="small text-decoration-none"><i class="fas fa-hourglass-end" style="margin-right: 4px;"></i>Primers 60 minuts</a>
+        <a href="/blog/ca/guia-60-minuts-atac-ransomware/" class="small text-decoration-none"><i class="fas fa-hourglass-end" style="margin-right: 4px;"></i>Primers 60 minuts</a>
         <a href="/ca/ironwall/" class="small text-decoration-none"><i class="fas fa-shield-alt" style="margin-right: 4px;"></i>Protegeix-te amb IronWall</a>
       </div>
     </div>
@@ -213,8 +213,8 @@ faq_items:
         <strong>94% ↑</strong> augment el 2025
       </div>
       <div class="d-flex gap-3 flex-wrap">
-        <a href="/ca/blog/20250430-malware-red-informe-watchguard/" class="small text-decoration-none"><i class="fas fa-chart-bar" style="margin-right: 4px;"></i>Informe WatchGuard</a>
-        <a href="/ca/blog/20260222-captchas-falsos-malware-ingenieria-social/" class="small text-decoration-none"><i class="fas fa-triangle-exclamation" style="margin-right: 4px;"></i>Noves trampes</a>
+        <a href="/blog/ca/malware-xarxa-informe-watchguard/" class="small text-decoration-none"><i class="fas fa-chart-bar" style="margin-right: 4px;"></i>Informe WatchGuard</a>
+        <a href="/blog/ca/captchas-falsos-malware-enginyeria-social/" class="small text-decoration-none"><i class="fas fa-triangle-exclamation" style="margin-right: 4px;"></i>Noves trampes</a>
       </div>
     </div>
   </div>
