@@ -25,6 +25,7 @@
       {{ end }}
 
       <!-- Blog Posts List -->
+      <!-- DEBUG: Total pages = {{ len .Pages }} -->
       {{ $paginator := .Paginate .Pages }}
 
       {{ if $paginator.Pages }}
