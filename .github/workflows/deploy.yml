@@ -57,3 +57,105 @@ jobs:
           publish_dir: public
           user_name: "github-actions[bot]"
           user_email: "github-actions[bot]@users.noreply.github.com"
+
+      # 6) Notify Bing IndexNow about updated URLs
+      - name: Notify Bing IndexNow
+        run: |
+          python3 << 'PYTHON_EOF'
+          import json
+          import subprocess
+          import requests
+          from pathlib import Path
+
+          # IndexNow configuration
+          INDEXNOW_KEY = "69caace2e14746e7b6040ff8c5b15c48"
+          INDEXNOW_HOST = "guardianhubx.com"
+          INDEXNOW_KEY_LOCATION = "https://guardianhubx.com/IndexNow.xml"
+          INDEXNOW_API = "https://api.indexnow.org/indexnow"
+
+          # Get changed files from git
+          try:
+              # For push events, compare with the previous commit
+              result = subprocess.run(
+                  ["git", "diff", "--name-only", "HEAD~1..HEAD"],
+                  capture_output=True,
+                  text=True
+              )
+              changed_files = result.stdout.strip().split('\n') if result.stdout.strip() else []
+          except:
+              # Fallback: get all HTML files in public/
+              changed_files = []
+              for html_file in Path('public').rglob('*.html'):
+                  changed_files.append(str(html_file))
+
+          # Convert file paths to URLs
+          urls = set()
+          for file_path in changed_files:
+              if not file_path:
+                  continue
+
+              # Skip certain files
+              if any(skip in file_path for skip in ['.github', '.git', 'node_modules', '.DS_Store']):
+                  continue
+
+              # Convert content files to URLs
+              if file_path.startswith('content/'):
+                  # Extract language and slug from path
+                  parts = file_path.split('/')
+                  if len(parts) >= 3:
+                      lang = parts[1]  # es, ca, en
+                      filename = parts[2].replace('.md', '')  # Remove .md extension
+
+                      if filename == '_index':
+                          url = f"https://{INDEXNOW_HOST}/{lang}/"
+                      else:
+                          url = f"https://{INDEXNOW_HOST}/{lang}/{filename}/"
+                      urls.add(url)
+
+              # Also include HTML files from public/
+              elif file_path.startswith('public/'):
+                  file_path_clean = file_path.replace('public/', '').replace('/index.html', '/')
+                  if file_path_clean and not file_path_clean.endswith('index.html'):
+                      url = f"https://{INDEXNOW_HOST}/{file_path_clean}"
+                      urls.add(url)
+
+          # If no specific changes detected, notify about key pages
+          if not urls:
+              print("No specific changes detected, notifying about sitemap update...")
+              urls = {
+                  "https://guardianhubx.com/sitemap.xml",
+                  "https://guardianhubx.com/es/sitemap.xml",
+                  "https://guardianhubx.com/ca/sitemap.xml",
+                  "https://guardianhubx.com/en/sitemap.xml"
+              }
+
+          # Prepare IndexNow payload
+          url_list = list(urls)[:10000]  # IndexNow limit is 10k URLs per request
+
+          payload = {
+              "host": INDEXNOW_HOST,
+              "key": INDEXNOW_KEY,
+              "keyLocation": INDEXNOW_KEY_LOCATION,
+              "urlList": url_list
+          }
+
+          print(f"📢 Notifying Bing IndexNow about {len(url_list)} URLs...")
+          print(f"First 5 URLs: {url_list[:5]}")
+
+          try:
+              response = requests.post(
+                  INDEXNOW_API,
+                  json=payload,
+                  headers={"Content-Type": "application/json"},
+                  timeout=10
+              )
+
+              if response.status_code == 200:
+                  print(f"✓ IndexNow notification successful! ({len(url_list)} URLs)")
+              else:
+                  print(f"⚠ IndexNow response: {response.status_code} - {response.text}")
+          except Exception as e:
+              print(f"⚠ Error notifying IndexNow: {e}")
+
+          PYTHON_EOF
+        continue-on-error: true
