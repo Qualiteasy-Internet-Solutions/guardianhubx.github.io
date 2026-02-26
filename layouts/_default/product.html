@@ -1,4 +1,5 @@
 {{ define "main" }}
+  <h1 class="sr-only">{{ index (split .Title " | ") 0 }}</h1>
   <div class="container my-5">
     {{ .Content }}
 

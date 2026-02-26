@@ -1,6 +1,6 @@
 ---
-title: "¡Gracias!"
-description: "Gracias por contactar con GuardianHubX. Hemos recibido tu mensaje y nos pondremos en contacto contigo pronto."
+title: "¡Gracias! | Mensaje de Confirmación"
+description: "Gracias por contactar con GuardianHubX. Hemos recibido tu mensaje y nos pondremos en contacto contigo muy pronto."
 layout: "landing-thanks"
 ---
 

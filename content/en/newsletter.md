@@ -1,6 +1,6 @@
 ---
-title: "Newsletter"
-description: "Protect your organization by staying informed. Subscribe to our newsletter and receive each month the most practical insights to improve your cybersecurity."
+title: "Cybersecurity Newsletter | Monthly Tips & Best Practices"
+description: "Cybersecurity Newsletter. Subscribe to GuardianHubX and receive practical monthly tips to improve your business security."
 ---
 
 

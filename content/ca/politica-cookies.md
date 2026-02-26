@@ -1,6 +1,6 @@
 ---
-title: "Política de Cookies"
-description: "Informació sobre l'ús de cookies al lloc web de GuardianHubX."
+title: "Política de Cookies | Configuració de la teva Privacitat"
+description: "Política de Cookies de GuardianHubX. Informació sobre l'ús de cookies i tecnologies de seguiment al nostre lloc web."
 translationKey: "cookies-policy"
 translations:
   - lang: es

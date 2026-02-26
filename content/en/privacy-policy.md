@@ -1,6 +1,6 @@
 ---
-title: "Privacy Policy"
-description: "Commitment to the protection of personal data under GDPR and LOPDGDD."
+title: "Privacy Policy | Protection of Your Personal Data"
+description: "Privacy Policy of GuardianHubX. Commitment to the protection of personal data under GDPR and data protection regulations."
 translationKey: "privacy-policy"
 url: "/en/privacy-policy/"
 slug: "privacy-policy"

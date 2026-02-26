@@ -1,6 +1,6 @@
 ---
-title: "EduCraft"
-description: "Ciberseguretat per a centres educatius. Protegeix el professorat, automatitza el manteniment de dispositius i forma el teu equip contra el phishing."
+title: "EduCraft | Protecció Digital per a Centres Educatius"
+description: "EduCraft | Ciberseguretat per a centres educatius. Protegeix el professorat, automatitza el manteniment i forma el teu equip."
 ogImage: "/img/edu-pack.png"
 ogImageAlt: "EduCraft: Ciberseguretat per a centres educatius - Protecció de professorat i automatització de dispositius"
 layout: "products"

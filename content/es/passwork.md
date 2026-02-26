@@ -1,7 +1,7 @@
 ---
-title: "Passwork"
+title: "Passwork | Gestión Segura de Contraseñas para Empresas"
 layout: "product"
-description: "Gestión segura offline y online de contraseñas para empresas e individuos."
+description: "Passwork | Gestión segura offline y online de contraseñas para empresas e individuos. Almacenamiento encriptado y acceso remoto."
 ogImage: "/img/passwork-features-es.webp"
 ogImageAlt: "Passwork: Gestión segura de contraseñas para empresas - Almacenamiento encriptado y acceso remoto"
 video: "https://www.youtube.com/embed/459a86W3o0U?rel=0&cc_load_policy=0"
@@ -12,6 +12,7 @@ external_links:
   - name: "Website"
     url: "https://passwork.pro/es/?utm_source=partner&utm_medium=qualiteasy"
 ---
+
 
 <section class="about mb-5 container text-center">
   <img src="/img/passwork-logo.png" alt="Logo de Passwork" class="img-fluid mb-2" style="max-height: 100px;">

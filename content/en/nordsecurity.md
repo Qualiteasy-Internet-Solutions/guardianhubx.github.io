@@ -1,7 +1,7 @@
 ---
-title: "NordSecurity"
+title: "NordSecurity | Online Privacy Protection & Data Security"
 layout: "product"
-description: "NordSecurity offers a full suite of tools designed to protect online privacy and secure enterprise data."
+description: "NordSecurity | Online privacy protection and enterprise data security with advanced VPN and password management tools."
 video: "https://www.youtube.com/embed/q9GNO9wwZTI?rel=0&cc_load_policy=0"
 resources:
   - name: "NordPass Brochure"
@@ -9,6 +9,7 @@ resources:
   - name: "NordLayer Technical Sheet"
     file: "docs/nordlayer-guardianhubx-en.pdf"
 ---
+
 
 <section class="about mb-5 container text-center">
   <img src="/img/nordsecurity-logo.png" alt="NordSecurity Logo" class="img-fluid mb-2" style="max-height: 100px;">

@@ -1,6 +1,6 @@
 ---
-title: "IronWall"
-description: "Solució integral de ciberseguretat per a empreses. Protegeix dispositius, accessos i cultura de seguretat interna. Modular i escalable."
+title: "IronWall | Solució Integral de Ciberseguretat Empresarial"
+description: "IronWall | Solució integral de ciberseguretat empresarial. Protegeix dispositius, accessos i cultura de seguretat interna. Modular i escalable."
 ogImage: "/img/ironwall-pack.png"
 ogImageAlt: "IronWall: Solució completa de ciberseguretat per a empreses - Antivirus, VPN, Gestor de contrasenyes i més"
 layout: "products"

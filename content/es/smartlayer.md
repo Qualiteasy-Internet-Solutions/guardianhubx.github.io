@@ -1,6 +1,6 @@
 ---
-title: "SmartLayer"
-description: "Ciberseguridad avanzada para empresas en crecimiento. Gestión centralizada de dispositivos, backup, acceso remoto seguro y formación."
+title: "SmartLayer | Ciberseguridad Avanzada para Empresas"
+description: "SmartLayer | Ciberseguridad avanzada para empresas en crecimiento. Gestión centralizada de dispositivos, backup, acceso remoto seguro y formación."
 ogImage: "/img/smartlayer-pack.png"
 ogImageAlt: "SmartLayer: Gestión centralizada de seguridad para empresas - Control de dispositivos, backup y acceso remoto"
 layout: "products"

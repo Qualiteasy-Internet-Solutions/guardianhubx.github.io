@@ -1,6 +1,6 @@
 ---
 title: "Evita el phishing amb el software que forma els teus empleats"
-description: "Avalua gratis l'estat de la ciberseguretat de la teva empresa amb simulacions realistes i formació pràctica."
+description: "Formació en Phishing. Avalua gratis l'estat de la ciberseguretat de la teva empresa amb simulacions realistes i formació."
 ogImage: "/img/phishing-software.svg"
 ogImageAlt: "Software de formació contra phishing: Entrena l'equip amb simulacions realistes"
 translationKey: "phishing-training"

@@ -1,7 +1,7 @@
 ---
-title: "NordSecurity"
+title: "NordSecurity | Protección de Privacidad Online y Datos"
 layout: "product"
-description: "NordSecurity ofrece una amplia gama de productos diseñados para proteger la privacidad en línea y garantizar la seguridad de los datos."
+description: "NordSecurity | Protección de privacidad online y seguridad de datos empresariales con soluciones VPN y gestión de contraseñas."
 video: "https://www.youtube.com/embed/q9GNO9wwZTI?rel=0&cc_load_policy=0"
 resources:
   - name: "Brochure Nordpass"
@@ -9,6 +9,7 @@ resources:
   - name: "Ficha técnica Nordlayer"
     file: "docs/nordlayer-guardianhubx-es.pdf"
 ---
+
 
 <section class="about mb-5 container text-center">
   <img src="/img/nordsecurity-logo.png" alt="Logo de Nord-Security" class="img-fluid mb-2" style="max-height: 100px;">

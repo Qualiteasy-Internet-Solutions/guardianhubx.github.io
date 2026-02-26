@@ -1,5 +1,5 @@
 ---
-title: "Thank You!"
+title: "Thank You! | Confirmation Message"
 description: "Thank you for contacting GuardianHubX. We have received your message and will get in touch with you shortly."
 layout: "landing-thanks"
 ---

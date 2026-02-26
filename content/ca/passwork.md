@@ -1,7 +1,7 @@
 ---
-title: "Passwork"
+title: "Passwork | Gestió Segura de Contrasenyes per a Empreses"
 layout: "product"
-description: "Gestió segura offline i online de contrasenyes per a empreses i individus."
+description: "Passwork | Gestió segura offline i online de contrasenyes per a empreses i individus. Emmagatzematge encriptat."
 ogImage: "/img/passwork-features-es.webp"
 ogImageAlt: "Passwork: Gestió segura de contrasenyes per a empreses - Emmagatzematge encriptat i accés remot"
 video: "https://www.youtube.com/embed/459a86W3o0U?rel=0&cc_load_policy=0"
@@ -12,6 +12,7 @@ external_links:
   - name: "Lloc web"
     url: "https://passwork.pro/ca/?utm_source=partner&utm_medium=qualiteasy"
 ---
+
 
 <section class="about mb-5 container text-center">
   <img src="/img/passwork-logo.png" alt="Logo de Passwork" class="img-fluid mb-2" style="max-height: 100px;">

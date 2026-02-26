@@ -1,6 +1,6 @@
 ---
 title: "Discover Your Cybersecurity Risk Level"
-description: "Free cybersecurity test by GuardianHubX. Get an AI-generated report with your risk score and personalized security recommendations."
+description: "Free Cybersecurity Test. Discover your security risk level with GuardianHubX and get personalized recommendations."
 date: 2025-08-04
 draft: false
 ---

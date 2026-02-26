@@ -1,6 +1,6 @@
 ---
-title: "Prey Project"
-description: "Protegeix, rastreja i recupera els teus dispositius amb Prey Project. Control total de portàtils i mòbils des d'una consola única."
+title: "Prey Project | Protecció i Recuperació de Dispositius"
+description: "Prey Project | Protegeix, rastreig i recupera els teus dispositius. Control total de dispositius des d'una consola única."
 layout: "products"
 slug: "preyproject"
 logo: "/img/prey-project-logo.png"

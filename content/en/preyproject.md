@@ -1,6 +1,6 @@
 ---
-title: "Prey Project"
-description: "Protect, track, and recover your devices with Prey Project. Full control of your laptops and devices (even without GPS) from a single console."
+title: "Prey Project | Device Protection & Recovery Solutions"
+description: "Prey Project | Protect, track, and recover your devices with full control from a single console, even without GPS."
 layout: "products"
 slug: "preyproject"
 logo: "/img/prey-project-logo.png"

@@ -1,5 +1,5 @@
 ---
-title: "GuardianRadar | Ciberseguretat i Alertes per a Autònoms"
+title: "GuardianRadar | Ciberseguretat per a Autònoms i Pimes"
 hero_title: "GuardianRadar: Vigilància Digital"
 description: "Protegeix el teu negoci de hackers i filtracions. Vigilància digital i alertes per a autònoms i pimes. Sense instal·lacions ni tecnicismes. Des de 9,99€."
 ogImage: "/img/guardianradar-og-ca.jpg"

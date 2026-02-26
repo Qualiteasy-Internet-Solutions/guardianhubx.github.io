@@ -1,7 +1,7 @@
 ---
-title: "iDrive"
+title: "iDrive | Copias de Seguridad en Nube y Recuperación ante Desastres"
 layout: "product"
-description: "Copias de seguridad fiables y soluciones de recuperación ante desastres para datos críticos."
+description: "iDrive | Copias de seguridad fiables y soluciones de recuperación ante desastres para datos críticos en la nube."
 video: "https://www.youtube.com/embed/enSn-XPjzCc?rel=0&cc_load_policy=0"
 resources:
   - name: "Folleto"
@@ -10,6 +10,7 @@ external_links:
   - name: "Sitio web"
     url: "https://www.idrive.com/idrive/signup?p=qualiteasy"
 ---
+
 
 <section class="about mb-5 container text-center">
   <picture>

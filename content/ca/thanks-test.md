@@ -1,6 +1,6 @@
 ---
-title: "Test Completat!"
-description: "Gràcies per realitzar el test de ciberseguritat. El teu informe està en camí."
+title: "Test Completat! | Resultats de la teva Avaluació"
+description: "Gràcies per realitzar el test de ciberseguretat amb GuardianHubX. El teu informe personalitzat està en camí."
 layout: "landing-thanks"
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: "Setup your GuardianRadar"
-description: "We need some extra information to start monitoring your digital identity."
+title: "GuardianRadar Setup | Configure Your Digital Monitoring"
+description: "GuardianRadar Setup. We need some extra information to start monitoring your digital identity safely and securely."
 date: 2026-02-11
 draft: false
 ---

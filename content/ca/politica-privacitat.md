@@ -1,6 +1,6 @@
 ---
-title: "Política de privacitat"
-description: "Compromís amb la protecció de dades personals segons el RGPD i la LOPDGDD."
+title: "Política de Privacitat | Protecció de les teves Dades"
+description: "Política de Privacitat de GuardianHubX. Compromís amb la protecció de dades personals segons el RGPD i la LOPDGDD."
 translationKey: "privacy-policy"
 slug: "politica-privacitat"
 translations:

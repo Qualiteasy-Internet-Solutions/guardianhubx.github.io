@@ -1,7 +1,7 @@
 ---
-title: "Faronics"
+title: "Faronics | Cybersecurity & System Management Solutions"
 layout: "product"
-description: "Faronics offers cybersecurity and system management solutions to protect and manage multi-user computing environments."
+description: "Faronics | Cybersecurity and system management solutions to protect multi-user computing environments."
 video: "https://www.youtube.com/embed/AR43wDZ5zH8?rel=0"
 resources:
   - name: "Deep Freeze Cloud Brochure"
@@ -14,6 +14,7 @@ external_links:
   - name: "Sitio oficial"
     url: "https://faronicscloud.com?dl=BRUYN"
 ---
+
 
 <section class="about mb-5 container">
   <div class="text-center">

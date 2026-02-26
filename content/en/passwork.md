@@ -1,7 +1,7 @@
 ---
-title: "Passwork"
+title: "Passwork | Secure Password Management for Enterprises"
 layout: "product"
-description: "Secure offline and online password management for businesses and individuals."
+description: "Passwork | Secure offline and online password management for businesses and individuals. Encrypted storage and remote access."
 ogImage: "/img/passwork-features-es.webp"
 ogImageAlt: "Passwork: Secure Password Management for Enterprises - Encrypted Storage and Remote Access"
 video: "https://www.youtube.com/embed/PDk5Hg_m_3o?rel=0&cc_load_policy=0"
@@ -12,6 +12,7 @@ external_links:
   - name: "Official Website"
     url: " https://passwork.pro/?utm_source=partner&utm_medium=qualiteasy"
 ---
+
 
 <section class="about mb-5 container text-center">
   <img src="/img/passwork-logo.png" alt="Passwork Logo" class="img-fluid mb-2" style="max-height: 100px;">

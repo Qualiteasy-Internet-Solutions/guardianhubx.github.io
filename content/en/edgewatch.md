@@ -12,6 +12,7 @@ external_links:
     url: "https://edgewatch.com "
 ---
 
+
 <section class="about mb-5 container text-center">
   <h2>Proactive Cyber Defense with Edgewatch</h2>
   <img src="/img/edgewatch-logo.jpg" alt="Edgewatch Logo - Advanced Cybersecurity Solution" class="img-fluid mb-2" style="max-height: 100px;">

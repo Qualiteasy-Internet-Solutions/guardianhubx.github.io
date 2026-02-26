@@ -1,6 +1,6 @@
 ---
-title: "LightCore"
-description: "Pack essencial de ciberseguretat per a equips petits. Inclou antivirus avançat, gestor de contrasenyes i formació anti-phishing."
+title: "LightCore | Ciberseguretat Essencial per a Equips Petits"
+description: "LightCore | Pack essencial de ciberseguretat per a equips petits. Inclou antivirus avançat, gestor de contrasenyes i formació."
 ogImage: "/img/lightcore-pack.png"
 ogImageAlt: "LightCore: Pack essencial de ciberseguretat - Antivirus, gestor de contrasenyes i formació anti-phishing"
 layout: "products"

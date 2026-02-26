@@ -1,6 +1,6 @@
 ---
-title: "EduCraft"
-description: "Cybersecurity for educational centers. Protect your teaching staff, automate device maintenance and train your team against phishing."
+title: "EduCraft | Cybersecurity Protection for Educational Centers"
+description: "EduCraft | Cybersecurity for educational centers. Protect staff, automate device maintenance, and train your team effectively."
 ogImage: "/img/edu-pack.png"
 ogImageAlt: "EduCraft: Cybersecurity for Educational Centers - Staff Protection and Device Automation"
 layout: "products"

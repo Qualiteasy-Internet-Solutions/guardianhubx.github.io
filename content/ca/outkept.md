@@ -1,7 +1,7 @@
 ---
-title: "Outkept"
+title: "Outkept | Formació en Phishing per a Empleats"
 layout: "product"
-description: "Formació en phishing per a empleats amb simulacions realistes i anàlisi detallats."
+description: "Outkept | Formació en phishing per a empleats amb simulacions realistes i anàlisi detallats. Millora la consciència de seguretat."
 video: "https://www.youtube.com/embed/rGMYFlEWx0U?rel=0&cc_load_policy=0"
 resources:
   - name: "Brochure Outkept"
@@ -14,6 +14,7 @@ images:
   - src: "img/outkept-info.jpg"
     alt: "Característiques de phishing d'Outkept"
 ---
+
 
 <section class="about mb-5 container text-center">
   <img src="/img/outkept-logo.png" alt="Logo d'Outkept" class="img-fluid mb-2" style="max-height: 100px;">

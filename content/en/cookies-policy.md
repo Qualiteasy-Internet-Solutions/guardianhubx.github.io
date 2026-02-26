@@ -1,6 +1,6 @@
 ---
-title: "Cookies Policy"
-description: "Information about the use of cookies at GuardianHubX."
+title: "Cookies Policy | Manage Your Privacy Settings"
+description: "Cookies Policy of GuardianHubX. Information about the use of cookies and tracking technologies on our website."
 translationKey: "cookies-policy"
 url: "/en/cookies-policy/"
 slug: "cookies-policy"

@@ -1,6 +1,6 @@
 ---
-title: "LightCore"
-description: "Pack esencial de ciberseguridad para equipos pequeños. Incluye antivirus avanzado, gestor de contraseñas y formación anti-phishing."
+title: "LightCore | Ciberseguridad Esencial para Equipos Pequeños"
+description: "LightCore | Pack esencial de ciberseguridad para equipos pequeños. Incluye antivirus avanzado, gestor de contraseñas y formación anti-phishing."
 ogImage: "/img/lightcore-pack.png"
 ogImageAlt: "LightCore: Pack esencial de ciberseguridad - Antivirus, gestor de contraseñas y formación anti-phishing"
 layout: "products"

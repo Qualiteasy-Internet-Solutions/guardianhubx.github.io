@@ -1,7 +1,7 @@
 ---
-title: "Outkept"
+title: "Outkept | Employee Phishing Awareness Training Platform"
 layout: "product"
-description: "Phishing awareness training for employees with realistic simulations and detailed analytics."
+description: "Outkept | Employee phishing awareness training with realistic simulations and detailed analytics. Improve security awareness."
 video: "https://www.youtube.com/embed/rGMYFlEWx0U?rel=0&cc_load_policy=0"
 resources:
   - name: "Outkept Brochure"
@@ -14,6 +14,7 @@ images:
   - src: "/img/outkept-info.jpg"
     alt: "Outkept Phishing Features"
 ---
+
 
 <section class="about mb-5 container text-center">
   <img src="/img/outkept-logo.png" 

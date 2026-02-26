@@ -1,6 +1,6 @@
 ---
-title: "Test Completed!"
-description: "Thank you for taking the cybersecurity test. Your report is on its way."
+title: "Test Completed! | Your Assessment Results"
+description: "Thank you for taking the cybersecurity test with GuardianHubX. Your personalized report is on its way to your email."
 layout: "landing-thanks"
 ---
 

@@ -1,7 +1,7 @@
 ---
-title: "Faronics"
+title: "Faronics | Solucions de Ciberseguretat i Gestió de Sistemes"
 layout: "product"
-description: "Faronics ofereix solucions de ciberseguretat i gestió de sistemes per protegir i administrar entorns informàtics de múltiples usuaris."
+description: "Faronics | Solucions de ciberseguretat i gestió de sistemes per a protegir entorns informàtics multi-usuari."
 video: "https://www.youtube.com/embed/7OKaXe-Ym9Q?rel=0&cc_load_policy=0"
 resources:
   - name: "Brochure Deep Freeze Cloud"
@@ -14,6 +14,7 @@ external_links:
   - name: "Lloc oficial"
     url: "https://faronicscloud.com?dl=BRUYN"
 ---
+
 
 <section class="about mb-5 container">
   <div class="text-center">

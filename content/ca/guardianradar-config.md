@@ -1,6 +1,6 @@
 ---
-title: "Configuració del teu GuardianRadar"
-description: "Necessitem unes dades extres per començar a monitoritzar la teva identitat digital."
+title: "GuardianRadar Setup | Configuració de la teva Vigilància Digital"
+description: "Configuració de GuardianRadar. Necessitem unes dades extres per començar a monitoritzar la teva identitat digital de forma segura."
 date: 2026-02-11
 draft: false
 ---

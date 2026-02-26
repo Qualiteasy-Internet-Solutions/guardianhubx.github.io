@@ -13,6 +13,7 @@ external_links:
     url: "https://edgewatch.com"      
 ---
 
+
 <section class="about mb-5 container text-center">
   <h2>Protección Cibernética Proactiva con Edgewatch</h2>
   <img src="/img/edgewatch-logo.jpg" alt="Logo de Edgewatch - Solución avanzada de ciberseguridad" class="img-fluid mb-2" style="max-height: 100px;">

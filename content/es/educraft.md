@@ -1,6 +1,6 @@
 ---
-title: "EduCraft"
-description: "Ciberseguridad para centros educativos. Protege al profesorado, automatiza el mantenimiento de dispositivos y forma a tu equipo contra el phishing."
+title: "EduCraft | Protección Digital para Centros Educativos"
+description: "EduCraft | Ciberseguridad para centros educativos. Protege al profesorado, automatiza el mantenimiento de dispositivos y forma a tu equipo."
 ogImage: "/img/edu-pack.png"
 ogImageAlt: "EduCraft: Ciberseguridad para centros educativos - Protección de profesorado y automatización de dispositivos"
 layout: "products"

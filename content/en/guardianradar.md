@@ -1,5 +1,5 @@
 ---
-title: "GuardianRadar | Cybersecurity & Alerts for Freelancers"
+title: "GuardianRadar | Cybersecurity for Small Businesses"
 hero_title: "GuardianRadar: Digital Surveillance"
 
 description: "Protect your business from hackers and data leaks. Digital surveillance and instant alerts for freelancers and SMBs. No installation required. From €9.99/mo."

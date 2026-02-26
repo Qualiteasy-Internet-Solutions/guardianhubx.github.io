@@ -1,6 +1,6 @@
 ---
 title: "Test Space Invaders - ¡Felicidades por tu puntuación!"
-description: "Introduce tu nombre y email para guardar tu score y accede al Test de Ciberseguridad de GuardianHubX."
+description: "Space Invaders Ciberseguridad. Introduce tu nombre y email para guardar tu score y acceder al test de ciberseguridad."
 date: 2025-10-02
 draft: false
 layout: "spaceinvaders-form"

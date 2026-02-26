@@ -1,6 +1,6 @@
 ---
-title: "LightCore"
-description: "Essential cybersecurity pack for small teams. Includes advanced antivirus, password manager and anti-phishing training."
+title: "LightCore | Essential Cybersecurity for Small Teams"
+description: "LightCore | Essential cybersecurity pack for small teams. Includes advanced antivirus, password manager and anti-phishing training."
 ogImage: "/img/lightcore-pack.png"
 ogImageAlt: "LightCore: Essential Cybersecurity Pack - Antivirus, Password Manager and Anti-Phishing Training"
 layout: "products"
