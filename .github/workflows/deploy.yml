@@ -1,11 +1,8 @@
 # .github/workflows/deploy.yml
-name: Deploy site + blog
+name: Build & Deploy GuardianHubX
 
 on:
-  # Trigger manual o via repository_dispatch desde el repo del blog
-  repository_dispatch:
-    types: [ blog-updated ]
-  # También rebuild automático si haces push directamente sobre main
+  # Rebuild automático al hacer push a main
   push:
     branches: [ main ]
 
@@ -18,51 +15,25 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1) Checkout de la web principal
+      # 1) Checkout main site (includes integrated blog)
       - name: Checkout main site
         uses: actions/checkout@v3
         with:
           submodules: false
 
-      # 2) Checkout del blog Hugo desde otro repo
-      - name: Checkout blog repo
-        uses: actions/checkout@v3
-        with:
-          repository: Qualiteasy-Internet-Solutions/guardianhubx-blog
-          path: blog-src
-          ref: main
-          token: ${{ secrets.GITHUB_TOKEN }}
-          submodules: recursive
-          fetch-depth: 0
-
-      # 2.b) Debug: comprobar que el tema PaperMod existe
-      - name: Debug list blog themes
-        run: |
-          echo "===== blog-src/themes ====="
-          ls -R blog-src/themes
-          echo "==========================="
-
-      # 3) Instalar Hugo
+      # 2) Setup Hugo
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: '0.146.0'
           extended: true
 
-      # 4) Preparar directorio public/ copiando la web principal
-      - name: Build main Hugo site
+      # 3) Build Hugo site (includes main site + integrated blog)
+      - name: Build Hugo site
         run: |
           hugo --gc --minify --destination public
 
-      # 5) Compilar el blog Hugo en public/blog
-      - name: Build blog
-        run: |
-          cd blog-src
-          hugo --gc --minify --destination ../public/blog
-      
-      # 6) [NOU] Minificació agressiva extra amb Node.js
-      # Això busca tots els CSS i JS a la carpeta public (incloent blog)
-      # i els re-comprimeix al màxim sobreescrivint el fitxer original.
+      # 4) Post-process minification with Node.js (CSS & JS)
       - name: Post-process Minification (CSS & JS)
         run: |
           npm install -g terser clean-css-cli
@@ -70,8 +41,8 @@ jobs:
           find public -type f -name "*.css" -exec cleancss -o {} {} \;
           echo "Minifying JS..."
           find public -type f -name "*.js" -exec terser {} -c -m -o {} \;
-      
-      # 7) Publicar todo en la rama gh-pages
+
+      # 5) Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:

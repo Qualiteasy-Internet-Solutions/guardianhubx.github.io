@@ -18,6 +18,11 @@
   {{- $category = "partners" -}}
   {{- $categoryName = "Partners" -}}
 
+{{/* Blog */}}
+{{- else if eq $layout "blog" -}}
+  {{- $category = "blog" -}}
+  {{- $categoryName = "Blog" -}}
+
 {{- end -}}
 
 <script type="application/ld+json">

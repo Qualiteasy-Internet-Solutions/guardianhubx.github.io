@@ -1,0 +1,119 @@
+{{ define "main" }}
+<div class="container my-5">
+  <div class="row justify-content-md-center">
+    <div class="col-lg-10">
+      <!-- Taxonomy Header -->
+      <header class="blog-list-header mb-5">
+        <h1 class="display-5 mb-2">
+          {{ if eq .Kind "category" }}
+            {{ i18n "category" | default "Category" }}: {{ .Title }}
+          {{ else if eq .Kind "tag" }}
+            {{ i18n "tag" | default "Tag" }}: {{ .Title }}
+          {{ else }}
+            {{ .Title }}
+          {{ end }}
+        </h1>
+        {{ if .Description }}
+        <p class="lead text-muted">{{ .Description }}</p>
+        {{ end }}
+      </header>
+
+      <!-- Posts in this taxonomy -->
+      <div class="blog-list">
+        {{ $paginator := .Paginate .Pages }}
+        {{ range $paginator.Pages }}
+        <article class="blog-post-card mb-5 pb-5 border-bottom">
+          <!-- Featured Image -->
+          {{ if .Params.cover }}
+          {{ if .Params.cover.image }}
+          <div class="blog-card-image mb-4">
+            <a href="{{ .RelPermalink }}">
+              <img src="{{ .Params.cover.image }}" alt="{{ .Params.cover.alt | default .Title }}" class="img-fluid rounded">
+            </a>
+          </div>
+          {{ end }}
+          {{ end }}
+
+          <!-- Post Content -->
+          <div class="blog-card-content">
+            <!-- Title -->
+            <h2 class="blog-card-title mb-3">
+              <a href="{{ .RelPermalink }}" class="text-decoration-none">
+                {{ .Title }}
+              </a>
+            </h2>
+
+            <!-- Metadata -->
+            <div class="blog-card-meta text-muted mb-3 small">
+              <span class="blog-date">
+                <i class="fas fa-calendar"></i>
+                {{ .PublishDate.Format "2 de January de 2006" }}
+              </span>
+              {{ if .ReadingTime }}
+              <span class="blog-reading-time ms-3">
+                <i class="fas fa-clock"></i>
+                {{ .ReadingTime }} min
+              </span>
+              {{ end }}
+              {{ if .Params.author }}
+              <span class="blog-author ms-3">
+                <i class="fas fa-user"></i>
+                {{ .Params.author }}
+              </span>
+              {{ end }}
+            </div>
+
+            <!-- Excerpt -->
+            <div class="blog-card-excerpt mb-4">
+              {{ if .Description }}
+              <p>{{ .Description }}</p>
+              {{ else }}
+              <p>{{ .Summary }}</p>
+              {{ end }}
+            </div>
+
+            <!-- Read More Link -->
+            <a href="{{ .RelPermalink }}" class="btn btn-sm btn-outline-primary">
+              {{ i18n "read_more" | default "Read More" }} →
+            </a>
+          </div>
+        </article>
+        {{ end }}
+      </div>
+
+      <!-- Pagination -->
+      {{ if gt $paginator.TotalPages 1 }}
+      <nav class="pagination mt-5 d-flex justify-content-center" aria-label="Taxonomy pagination">
+        <ul class="list-unstyled d-flex gap-2">
+          {{ if $paginator.HasPrev }}
+          <li>
+            <a href="{{ $paginator.Prev.URL }}" class="btn btn-sm btn-outline-secondary">
+              ← {{ i18n "previous" | default "Previous" }}
+            </a>
+          </li>
+          {{ end }}
+
+          {{ range $paginator.Pagers }}
+          <li>
+            {{ if eq . $.Paginator }}
+            <span class="btn btn-sm btn-primary disabled">{{ .PageNumber }}</span>
+            {{ else }}
+            <a href="{{ .URL }}" class="btn btn-sm btn-outline-secondary">{{ .PageNumber }}</a>
+            {{ end }}
+          </li>
+          {{ end }}
+
+          {{ if $paginator.HasNext }}
+          <li>
+            <a href="{{ $paginator.Next.URL }}" class="btn btn-sm btn-outline-secondary">
+              {{ i18n "next" | default "Next" }} →
+            </a>
+          </li>
+          {{ end }}
+        </ul>
+      </nav>
+      {{ end }}
+    </div>
+  </div>
+</div>
+{{ end }}

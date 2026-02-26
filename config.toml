@@ -3,8 +3,6 @@ title = "GuardianHubX"
 defaultContentLanguage = "es"
 defaultContentLanguageInSubdir = true
 
-disableKinds = ["taxonomy"]
-
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
@@ -32,6 +30,17 @@ disableKinds = ["taxonomy"]
     contentDir = "content/en"
     title = "GuardianHubX - Cybersecurity"
 
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  page = ["HTML"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
+  term = ["HTML", "RSS"]
+
 [params]
   description = "Soluciones avanzadas de ciberseguridad para empresas y autónomos"
   author = "GuardianHubX"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"

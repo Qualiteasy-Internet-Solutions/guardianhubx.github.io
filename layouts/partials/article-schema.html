@@ -1,0 +1,57 @@
+{{ if eq .Layout "blog" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ .Permalink }}"
+  },
+  "headline": "{{ .Title }}",
+  "description": "{{ with .Description }}{{ . | plainify }}{{ else }}{{ .Summary | plainify }}{{ end }}",
+  "image": {
+    "@type": "ImageObject",
+    {{ if .Params.cover.image }}
+    "url": "{{ .Params.cover.image | absURL }}",
+    "width": {{ with .Params.cover.width }}{{ . }}{{ else }}1200{{ end }},
+    "height": {{ with .Params.cover.height }}{{ . }}{{ else }}630{{ end }}
+    {{ else }}
+    "url": "{{ (print "img/og-default-" .Lang ".jpg") | absURL }}",
+    "width": 1200,
+    "height": 630
+    {{ end }}
+  },
+  "datePublished": "{{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" }}",
+  {{ if .Lastmod }}
+  "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
+  {{ end }}
+  "author": {
+    "@type": "Organization",
+    "name": "{{ with .Params.author }}{{ . }}{{ else }}{{ site.Params.author }}{{ end }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ "img/logo.webp" | absURL }}",
+      "width": 200,
+      "height": 60
+    }
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "GuardianHubX",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ "img/logo.webp" | absURL }}",
+      "width": 200,
+      "height": 60
+    }
+  },
+  {{ if .Params.categories }}
+  "articleSection": "{{ index .Params.categories 0 }}",
+  {{ end }}
+  {{ if .Params.tags }}
+  "keywords": "{{ delimit .Params.tags ", " }}",
+  {{ end }}
+  "articleBody": "{{ .Content | plainify | truncate 500 }}"
+}
+</script>
+{{ end }}

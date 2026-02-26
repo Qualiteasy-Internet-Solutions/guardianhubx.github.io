@@ -1,0 +1,100 @@
+{{ define "main" }}
+<!-- Breadcrumb Navigation -->
+<nav aria-label="breadcrumb" class="pt-5 pb-3 mb-2">
+  <div class="container">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item">
+        <a href="{{ "/" | relLangURL }}">GuardianHubX</a>
+      </li>
+      <li class="breadcrumb-item">
+        {{ $lang := .Site.Language.Lang }}
+        <a href="{{ if eq $lang "ca" }}/blog/ca/{{ else }}/blog/{{ end }}">Blog</a>
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">
+        {{ .Title }}
+      </li>
+    </ol>
+  </div>
+</nav>
+
+<article class="container mt-3">
+  <div class="row justify-content-md-center">
+    <div class="col-lg-8">
+      <!-- Blog Header -->
+      <header class="blog-header mb-5">
+        <h1 class="blog-title mb-3">{{ .Title }}</h1>
+
+        <!-- Blog Meta -->
+        <div class="blog-meta text-muted mb-4">
+          <span class="blog-date">
+            <i class="fas fa-calendar"></i>
+            {{ .PublishDate.Format "2 January 2006" }}
+          </span>
+          {{ if .Params.author }}
+          <span class="blog-author ms-3">
+            <i class="fas fa-user"></i>
+            {{ .Params.author }}
+          </span>
+          {{ end }}
+        </div>
+
+        <!-- Featured Image -->
+        {{ if .Params.cover }}
+        {{ if .Params.cover.image }}
+        <figure class="blog-featured-image mb-4">
+          <img
+            src="{{ .Params.cover.image }}"
+            alt="{{ .Params.cover.alt }}"
+            class="img-fluid rounded"
+            loading="lazy">
+          {{ if .Params.cover.caption }}
+          <figcaption class="text-muted small mt-2">{{ .Params.cover.caption }}</figcaption>
+          {{ end }}
+        </figure>
+        {{ end }}
+        {{ end }}
+      </header>
+
+      <!-- Blog Content -->
+      <div class="blog-content">
+        {{ .Content }}
+      </div>
+
+      <!-- Blog Footer -->
+      <footer class="blog-footer mt-5 pt-4 border-top">
+        <!-- Categories & Tags -->
+        {{ if or .Params.categories .Params.tags }}
+        <div class="blog-taxonomy mb-4">
+          {{ if .Params.categories }}
+          <div class="blog-categories mb-2">
+            <strong>{{ i18n "categories" | default "Categories" }}:</strong>
+            {{ range .Params.categories }}
+            <a href="{{ `/categories/` | relLangURL }}{{ . | urlize }}/" class="badge bg-secondary me-1">
+              {{ . }}
+            </a>
+            {{ end }}
+          </div>
+          {{ end }}
+
+          {{ if .Params.tags }}
+          <div class="blog-tags">
+            <strong>{{ i18n "tags" | default "Tags" }}:</strong>
+            {{ range .Params.tags }}
+            <a href="{{ `/tags/` | relLangURL }}{{ . | urlize }}/" class="badge bg-light text-dark me-1">
+              #{{ . }}
+            </a>
+            {{ end }}
+          </div>
+          {{ end }}
+        </div>
+        {{ end }}
+      </footer>
+
+      <!-- Related Posts -->
+      {{ if .Params.tags }}
+      {{ partial "related-blog-posts.html" (dict "page" . "keywords" (delimit .Params.tags ",") "count" 3) }}
+      {{ end }}
+    </div>
+  </div>
+</article>
+{{ end }}

@@ -17,12 +17,11 @@ Hugo **0.146.0 extended** is required. No Node.js dependencies at project level 
 ## Deployment
 
 GitHub Actions workflow (`.github/workflows/deploy.yml`) handles deployment:
-1. Builds main site with Hugo → `public/`
-2. Clones blog repo (`guardianhubx-blog`) and builds it → `public/blog/`
-3. Post-processes all CSS/JS with clean-css-cli and terser
-4. Deploys to `gh-pages` branch (GitHub Pages)
+1. Builds entire site (main + blog) with Hugo → `public/`
+2. Post-processes all CSS/JS with clean-css-cli and terser
+3. Deploys to `gh-pages` branch (GitHub Pages)
 
-Triggers: push to `main` or `repository_dispatch` from blog repo.
+Triggers: push to `main`. **Note:** Blog repo is now integrated into main repo at `/content/blog/`
 
 ## Architecture
 
@@ -97,6 +96,17 @@ Landing pages use centralized Hugo shortcodes for contact components (DRY princi
 - Cookiebot: consent management (GDPR)
 - Supabase: used in Space Invaders leaderboard (spaceinvaders-form.html)
 - Brevo (Sendinblue): newsletter forms
+
+### Blog Integration
+
+Blog content is integrated into main site at `/content/blog/{es,ca}/`. Blog posts use `type: "blog"` in front matter and are rendered with `layouts/_default/blog.html`.
+
+**Blog URLs (SEO-preserved):**
+- Spanish: `/blog/article-slug/` (no language prefix)
+- Catalan: `/blog/ca/article-slug-ca/` (with `/ca/` prefix)
+- English: **NO BLOG**
+
+Blog posts automatically output to these paths regardless of language directory structure, preserving all existing Google indexing.
 
 ### Blog Links: Language-Specific Slugs
 **CRITICAL:** Blog article slugs are DIFFERENT for each language. Do NOT copy Spanish slugs and just add `/ca/` prefix.
