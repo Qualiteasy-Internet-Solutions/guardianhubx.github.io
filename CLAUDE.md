@@ -98,6 +98,20 @@ Landing pages use centralized Hugo shortcodes for contact components (DRY princi
 - Supabase: used in Space Invaders leaderboard (spaceinvaders-form.html)
 - Brevo (Sendinblue): newsletter forms
 
+### Blog Links: Language-Specific Slugs
+**CRITICAL:** Blog article slugs are DIFFERENT for each language. Do NOT copy Spanish slugs and just add `/ca/` prefix.
+
+**Blog URL Structure:**
+- Spanish: `/blog/article-slug/` (no language prefix)
+- Catalan: `/blog/ca/article-slug-ca/` (DIFFERENT slug, must include `/ca/`)
+- English: **NO BLOG** — remove all `/blog/` links from `/en/` files
+
+**Example translations of same article:**
+- Spanish: `/blog/ciberestafas-ceo-autonomos-pymes/`
+- Catalan: `/blog/ca/ciberestafes-ceo-autonoms-pimes/` (slug is different!)
+
+**Before editing:** Always verify the actual blog article slug exists in the correct language. Slugs are NOT automatically translated.
+
 # My Project Rules
 - ALWAYS use Haiku model for simple tasks.
 - ASK for permission before running broad audits or reading more than 5 files.
