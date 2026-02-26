@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Rdm on GuardianHubX - Seguridad Cibernética</title><link>https://guardianhubx.com/es/tags/rdm/</link><description>Recent content in Rdm on GuardianHubX - Seguridad Cibernética</description><generator>Hugo</generator><language>es</language><lastBuildDate>Sat, 09 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://guardianhubx.com/es/tags/rdm/index.xml" rel="self" type="application/rss+xml"/><item><title>¿Cuáles son las principales diferencias entre RDM y RMM?</title><link>https://guardianhubx.com/blog/diferencias-rdm-rmm/</link><pubDate>Sat, 09 Sep 2023 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/blog/diferencias-rdm-rmm/</guid><description>&lt;p>En el mundo de la gestión de TI, a menudo surgen acrónimos que pueden parecer confusos. Dos de los más comunes son RDM y RMM. Aunque ambos se relacionan con la administración remota, sus funciones y objetivos son muy diferentes. En este artículo, aclaramos las diferencias clave.&lt;/p>
+&lt;p>&lt;strong>Lecturas relacionadas:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://guardianhubx.com/blog/plataforma-gestion-para-cios-ctos/">La Solución de Gestión Integral para CIOs y CTOs&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://guardianhubx.com/blog/gestion-unificada-endpoints-uem/">Optimizando la Gestión de Dispositivos con Software UEM&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://guardianhubx.com/blog/gestion-remota-parches/">Gestión Remota de Parches: Simplifica tus Actualizaciones y Refuerza tu Seguridad&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="remote-desktop-management-rdm">Remote Desktop Management (RDM)&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Acceso Remoto&lt;/strong>: El RDM se centra en proporcionar acceso remoto a ordenadores o sistemas específicos. Su objetivo principal es permitir a los administradores o usuarios controlar un ordenador de forma remota, generalmente para fines de soporte técnico.&lt;/li>
+&lt;li>&lt;strong>Control de un Equipo Específico&lt;/strong>: Se utiliza para tomar el control de un dispositivo, lo que permite solucionar problemas, configurar software o acceder a archivos en ese equipo en particular.&lt;/li>
+&lt;li>&lt;strong>Enfoque en la Interacción Humana&lt;/strong>: El RDM está diseñado para la interacción directa entre el administrador y el equipo remoto.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Escenario de Uso Principal&lt;/strong>: El RDM se utiliza principalmente en situaciones que requieren un acceso directo y control completo de un ordenador remoto, como brindar soporte técnico a usuarios finales.&lt;/p></description></item></channel></rss>

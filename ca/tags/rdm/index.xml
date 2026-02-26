@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Rdm on GuardianHubX - Ciberseguretat</title><link>https://guardianhubx.com/ca/tags/rdm/</link><description>Recent content in Rdm on GuardianHubX - Ciberseguretat</description><generator>Hugo</generator><language>ca</language><lastBuildDate>Sat, 09 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://guardianhubx.com/ca/tags/rdm/index.xml" rel="self" type="application/rss+xml"/><item><title>Quines són les principals diferències entre RDM i RMM?</title><link>https://guardianhubx.com/blog/ca/diferencies-rdm-rmm/</link><pubDate>Sat, 09 Sep 2023 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/blog/ca/diferencies-rdm-rmm/</guid><description>&lt;p>En el món de la gestió de TI, sovint sorgeixen acrònims que poden semblar confusos. Dos dels més comuns són RDM i RMM. Encara que tots dos es relacionen amb l&amp;rsquo;administració remota, les seves funcions i objectius són molt diferents. En aquest article, n&amp;rsquo;aclarim les diferències clau.&lt;/p>
+&lt;p>&lt;strong>Lecturas relacionadas:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://guardianhubx.com/blog/plataforma-gestio-per-a-cios-ctos/">La Solució de Gestió Integral per a CIOs i CTOs&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://guardianhubx.com/blog/gestio-unificada-endpoints-uem/">Optimitzant la Gestió de Dispositius amb Programari UEM&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://guardianhubx.com/blog/gestio-remota-actualitzacions/">Gestió Remota d&amp;rsquo;Actualitzacions: Simplifica el teu Manteniment i Reforça la teva Seguretat&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="remote-desktop-management-rdm">Remote Desktop Management (RDM)&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Accés Remot&lt;/strong>: L&amp;rsquo;RDM se centra a proporcionar accés remot a ordinadors o sistemes específics. El seu objectiu principal és permetre als administradors o usuaris controlar un ordinador de forma remota, generalment per a finalitats de suport tècnic.&lt;/li>
+&lt;li>&lt;strong>Control d&amp;rsquo;un Equip Específic&lt;/strong>: S&amp;rsquo;utilitza per prendre el control d&amp;rsquo;un dispositiu, la qual cosa permet solucionar problemes, configurar programari o accedir a arxius en aquell equip en particular.&lt;/li>
+&lt;li>&lt;strong>Enfocament en la Interacció Humana&lt;/strong>: L&amp;rsquo;RDM està dissenyat per a la interacció directa entre l&amp;rsquo;administrador i l&amp;rsquo;equip remot.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Escenari d&amp;rsquo;Ús Principal&lt;/strong>: L&amp;rsquo;RDM s&amp;rsquo;utilitza principalment en situacions que requereixen un accés directe i control complet d&amp;rsquo;un ordinador remot, com ara donar suport tècnic a usuaris finals.&lt;/p></description></item></channel></rss>
