@@ -383,3 +383,123 @@ Creating 5 website pages will:
 **Timeline:** 4 weeks to implement
 
 Ready to build these pages? 🎯
+
+---
+
+## 📝 NEXT 20 BLOG POSTS PLANNED (2026)
+
+**Rules applied:**
+- ❌ No cannibalization of existing/planned website pages
+- ❌ No duplication of existing 47 blog posts
+- ✅ Specific angles, not general definitions
+- ✅ Links back to website pages where possible
+
+---
+
+### 🔴 SEASONAL / URGENT
+
+| # | Title | Keywords | Publish | Links To |
+|---|-------|----------|---------|----------|
+| 1 | **Estafas de la Declaración de la Renta 2026: SMS y Emails Falsos de Hacienda** | "estafas hacienda 2026", "SMS falso AEAT" | Marzo | Phishing page, GuardianRadar |
+| 2 | **Vishing: Cuando la Llamada de "tu Banco" es un Fraude** | "vishing españa", "llamada falsa banco" | Marzo | Phishing page |
+| 3 | **Smishing en España: Los SMS Fraudulentos más Activos en 2026** | "smishing españa", "SMS fraude correos" | Abril | Phishing page, MDM product |
+
+**Indications:**
+- **#1:** Screenshots SMS reales, cómo verificar emails de Hacienda, qué hacer si has caído
+- **#2:** Casos reales en España, guión típico de un ataque, técnicas que usan
+- **#3:** Galería SMS reales circulando (Correos, bancos, Hacienda), señales de alerta
+
+---
+
+### 🤖 AI / DEEPFAKES
+
+| # | Title | Keywords | Publish | Links To |
+|---|-------|----------|---------|----------|
+| 4 | **Deepfakes de Voz: Cómo los Ciberdelincuentes Imitan a tu CEO para Vaciarte la Cuenta** | "deepfake voz empresa", "fraude CEO audio" | Abril | Post CEO estafas (internal), GuardianRadar |
+| 5 | **Quishing: El Phishing que Llega por Código QR** | "quishing qué es", "QR falso phishing" | Mayo | Phishing page, tipos ataques page |
+
+**Indications:**
+- **#4:** Caso Ferrari (2024), cómo detectarlo, protocolo de verificación telefónica obligatorio
+- **#5:** QR maliciosos en parking, restaurantes, oficinas — cómo funciona técnicamente, extensiones protectoras
+
+---
+
+### 🏢 PYMES / AUTÓNOMOS ESPECÍFICO
+
+| # | Title | Keywords | Publish | Links To |
+|---|-------|----------|---------|----------|
+| 6 | **Checklist de Seguridad cuando un Empleado Deja la Empresa** | "seguridad baja empleado", "revocar accesos empleado" | Marzo | MDM product, GuardianRadar |
+| 7 | **El Peligro de Usar WhatsApp y Telegram para Asuntos de Empresa** | "whatsapp empresa seguridad", "mensajería segura empresa" | Abril | RGPD page, seguridad datos page |
+| 8 | **WiFi Público y Coworking: Cómo Proteger tu Empresa cuando Trabajas Fuera** | "wifi coworking seguridad", "vpn wifi público empresa" | Mayo | VPN product, seguridad teletrabajo page |
+| 9 | **Ciberseguridad para Clínicas, Consultas y el Sector Sanitario** | "ciberseguridad clinicas", "proteccion datos medicos pymes" | Junio | RGPD page, GuardianRadar, backups |
+| 10 | **Ciberseguridad para tu Tienda Online: Protege tu eCommerce y a tus Clientes** | "seguridad ecommerce pymes", "proteger tienda online" | Junio | Seguridad datos page, antivirus pymes page |
+
+**Indications:**
+- **#6:** Checklist descargable 15 puntos (cuentas, accesos, dispositivos, email reenvío)
+- **#7:** Shadow IT, RGPD + seguridad, qué información NO debe circular por WhatsApp, alternativas
+- **#8:** Man-in-the-middle explicado simple, configuración VPN paso a paso para autónomos
+- **#9:** Obligaciones legales sector sanitario, tipos ataque más frecuentes, soluciones concretas
+- **#10:** PCI-DSS básico, plugins seguridad WooCommerce/Shopify, certificados SSL
+
+---
+
+### ⚖️ COMPLIANCE ESPECÍFICO
+
+| # | Title | Keywords | Publish | Links To |
+|---|-------|----------|---------|----------|
+| 11 | **NIS2 en España 2026: Las Primeras Sanciones ya Han Llegado** | "NIS2 españa multas", "directiva NIS2 pymes 2026" | Julio | RGPD page, GuardianRadar |
+| 12 | **ISO 27001 para Pymes: ¿Vale la Pena Certificarse en 2026?** | "ISO 27001 pymes españa", "certificacion ciberseguridad empresa" | Julio | RGPD page, seguridad datos page |
+
+**Indications:**
+- **#11:** Diferente del post ley ciberseguridad 2025 — ahora con casos reales de multas, qué sectores afecta
+- **#12:** ROI de la certificación, coste real, tiempo, qué clientes lo exigen, alternativas si no puedes
+
+---
+
+### 🦠 AMENAZAS ESPECÍFICAS
+
+| # | Title | Keywords | Publish | Links To |
+|---|-------|----------|---------|----------|
+| 13 | **Ransomware-as-a-Service: El Modelo Criminal que te Ataca aunque Seas Pequeño** | "ransomware as a service", "RaaS pymes" | Agosto | Ransomware page, IronWall, backups |
+| 14 | **Troyanos Bancarios en España: Las Familias de Malware que Roban tu Dinero** | "troyano bancario españa", "malware bancario pymes" | Agosto | Malware page, IronWall, GuardianRadar |
+| 15 | **Supply Chain Attacks: Cuando el Peligro Viene de tus Proveedores de Software** | "ataque cadena suministro", "supply chain attack pymes" | Septiembre | Tipos ataques page, GuardianRadar |
+
+**Indications:**
+- **#13:** Grupos activos (LockBit, etc.), precio en darkweb, por qué las pymes son objetivo ahora
+- **#14:** Grandoreiro, Mekotio — familias activas en España, cómo llegan, qué roban exactamente
+- **#15:** SolarWinds/XZ Utils explicado para no técnicos, preguntas que hacer a proveedores, red flags
+
+---
+
+### 🛠️ GUÍAS PRÁCTICAS
+
+| # | Title | Keywords | Publish | Links To |
+|---|-------|----------|---------|----------|
+| 16 | **Cómo Saber si tu Contraseña ha Sido Filtrada (y Qué Hacer en 5 Pasos)** | "contraseña filtrada cómo saber", "haveibeenpwned español" | Abril | NordPass product |
+| 17 | **Configuración Segura de Microsoft Teams y Zoom para tu Empresa** | "teams seguridad configuración", "zoom seguridad empresa" | Mayo | Seguridad teletrabajo page, MDM product |
+| 18 | **Ataques de Fuerza Bruta: Por Qué tu Contraseña ya no es Suficiente** | "ataque fuerza bruta empresa", "credential stuffing pymes" | Agosto | Tipos ataques page, NordPass product |
+| 19 | **El Seguro de Ciberriesgos: Qué Cubre, Qué no Cubre y Cuánto Cuesta para una Pyme** | "seguro ciberriesgos pymes", "ciberseguro empresa españa" | Mayo | GuardianRadar (requisito aseguradoras) |
+| 20 | **OSINT: Cómo los Hackers Investigan tu Empresa antes de Atacarla** | "OSINT empresa", "información pública empresa hackers" | Junio | Tipos ataques page, GuardianRadar |
+
+**Indications:**
+- **#16:** Tutorial con capturas HaveIBeenPwned, qué hacer si apareces, gestor contraseñas como solución
+- **#17:** 10 ajustes seguridad en Teams + 10 en Zoom, errores comunes de configuración
+- **#18:** Tabla velocidad crackeo por longitud de contraseña, MFA como solución real
+- **#19:** Comparativa coberturas, preguntas al broker, requisitos que piden las aseguradoras
+- **#20:** Shodan, Google Dorks, LinkedIn scraping — qué información es pública sin saberlo y cómo protegerla
+
+---
+
+### 📅 Publishing Calendar
+
+| Month | Posts |
+|-------|-------|
+| **Marzo 2026** | #1 Hacienda, #2 Vishing, #6 Empleado que se va |
+| **Abril 2026** | #4 Deepfakes voz, #7 WhatsApp empresa, #16 Contraseña filtrada |
+| **Mayo 2026** | #8 WiFi coworking, #17 Teams/Zoom, #19 Seguro ciberriesgos |
+| **Junio 2026** | #9 Sector sanitario, #10 eCommerce, #20 OSINT |
+| **Julio 2026** | #3 Smishing, #11 NIS2 multas, #12 ISO 27001 |
+| **Agosto 2026** | #13 RaaS, #14 Troyanos bancarios, #18 Fuerza bruta |
+| **Septiembre 2026** | #5 Quishing, #15 Supply chain |
+
+**Target:** 2-3 posts/month to maintain current publishing velocity.

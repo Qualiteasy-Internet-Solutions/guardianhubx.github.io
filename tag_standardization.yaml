@@ -1,0 +1,439 @@
+# Format: old_tag -> canonical_tag
+# Language: ES (Spanish) and CA (Catalan)
+# Canonical format: lowercase, hyphens for multi-word tags, no quotes
+
+# SPANISH TAGS
+spanish_mappings:
+  # A
+  "Amenaza Agéntica": "amenaza-agéntica"
+  "Amenazas Digitales": "amenazas-digitales"
+  amenazas-digitales: "amenazas-digitales"
+  "Auditoría": "auditoría"
+  "Autónomos": "autónomos"
+  autónomos: "autónomos"
+
+  # B
+  "BYOD": "byod"
+  BYOD: "byod"
+  "Backups": "backups"
+  backup: "backups"
+  "Black Friday": "black-friday"
+  "Buenas Prácticas": "buenas-prácticas"
+  "Mejores Prácticas": "buenas-prácticas"
+
+  # C
+  "Ciberataques": "ciberataques"
+  "Ciberseguridad Empresarial": "ciberseguridad-empresarial"
+  "Ciberseguridad": "ciberseguridad"
+  ciberseguridad: "ciberseguridad"
+  "Cybersecurity": "ciberseguridad"
+  Cybersecurity: "ciberseguridad"
+  "Cloud Computing": "cloud-computing"
+  "Comercio Electrónico": "comercio-electrónico"
+  "Compras Online": "compras-online"
+  "Concienciación y Formación": "concienciación-y-formación"
+  concienciación-y-formación: "concienciación-y-formación"
+  "Contraseñas": "contraseñas"
+  contraseñas: "contraseñas"
+  gestión-de-contrasenas: "contraseñas"
+  "Copias de Seguridad": "copias-de-seguridad"
+  copias-de-seguridad: "copias-de-seguridad"
+  "Cybersecurity": "ciberseguridad"
+  "Concienciación": "concienciación-y-formación"
+
+  # D
+  "Dark Web": "dark-web"
+  "Deepfakes": "deepfakes"
+  "Derechos digitales": "derechos-digitales"
+  "Dispositivos Móviles": "dispositivos-móviles"
+
+  # E
+  "Emprendedores": "emprendedores"
+  "Education": "educación"
+  Education: "educación"
+
+  # F
+  "Fraude Digital": "fraude-digital"
+  "Fraude digital": "fraude-digital"
+  "Fraude del CEO": "fraude-del-ceo"
+  "Formación": "concienciación-y-formación"
+  formación: "concienciación-y-formación"
+  "Faronics": "faronics"
+  Faronics: "faronics"
+
+  # G
+  "Gestión de Identidades": "gestión-de-identidades"
+  "Gestión de Riesgos": "gestión-de-riesgos"
+  "Gestión de incidentes": "gestión-de-incidentes"
+  gestión-de-dispositivos: "gestión-de-dispositivos"
+  "GuardianRadar": "guardianaradar"
+  "Guía Básica": "guía-básica"
+
+  # I
+  "IA": "inteligencia-artificial"
+  "Inteligencia Artificial": "inteligencia-artificial"
+  "IT": "tecnología-información"
+  IT: "tecnología-información"
+  "Identidad Digital": "identidad-digital"
+  "Impacto Económico": "impacto-económico"
+  "Infostealers": "infostealers"
+  "Ingeniería Social": "ingeniería-social"
+  "Ingeniería social": "ingeniería-social"
+  "IoT": "iot"
+  IoT: "iot"
+
+  # M
+  "MFA": "autenticación-multifactor"
+  MDM: "gestión-de-dispositivos"
+  "Malware y Phishing": "malware-y-phishing"
+  "Malware": "malware"
+  malware: "malware"
+  "Mitos Ciberseguridad": "mitos-ciberseguridad"
+
+  # N
+  "NIS2": "normativa-nis2"
+  "Normativa": "normativa"
+
+  # P
+  "Passkeys": "passkeys"
+  "Phishing": "phishing"
+  phishing: "phishing"
+  "Planificación 2026": "tendencias-2026"
+  "PowerSave": "powersave"
+  "Prey Project": "prey-project"
+  "Privacidad": "privacidad"
+  "Protección de Datos": "protección-de-datos"
+  "Protección de datos": "protección-de-datos"
+  protección-de-datos: "protección-de-datos"
+  "Pymes": "pymes"
+  pymes: "pymes"
+
+  # R
+  "Ransomware": "ransomware"
+  ransomware: "ransomware"
+  "Rebajas": "promociones-ofertas"
+  "Recopilatorio": "recopilatorio"
+  "Riesgos Digitales": "riesgos-digitales"
+  "Riesgos digitales": "riesgos-digitales"
+  riesgos-digitales: "riesgos-digitales"
+  respuesta-incidentes: "respuesta-incidentes"
+
+  # S
+  "Seguridad Física": "seguridad-física"
+  "Seguridad Informática": "seguridad-informática"
+  seguridad-informática: "seguridad-informática"
+  "Seguridad IoT": "seguridad-iot"
+  "Seguridad de Cuentas": "seguridad-de-cuentas"
+  "Suplantación de Identidad": "suplantación-de-identidad"
+  "Sostenibilidad": "sostenibilidad"
+  sostenibilidad: "sostenibilidad"
+
+  # T
+  "Tendencias 2026": "tendencias-2026"
+  "Trabajo Remoto": "trabajo-remoto"
+
+  # W
+  "WORM": "gusanos-malware"
+  "watchguard": "watchguard"
+
+  # Z/A (lowercase variants)
+  "ahorro energético": "ahorro-energético"
+  "automatización": "automatización"
+  automatización: "automatización"
+  actualizaciones: "actualizaciones"
+  "criptojacking": "criptojacking"
+  criptojacking: "criptojacking"
+  "lotl": "living-off-the-land"
+  lotl: "living-off-the-land"
+  "zero-day": "zero-day"
+
+  # NEW TAGS FOR 2026 BLOG POSTS
+  "Vishing": "vishing"
+  vishing: "vishing"
+  "Smishing": "smishing"
+  smishing: "smishing"
+  "Quishing": "quishing"
+  quishing: "quishing"
+  "Hacienda": "estafas-hacienda"
+  "AEAT": "estafas-hacienda"
+  "WiFi Pública": "wifi-publica"
+  "Coworking": "coworking"
+  "Sector Sanitario": "sector-sanitario"
+  "Clínicas": "sector-sanitario"
+  "eCommerce": "ecommerce"
+  "Tienda Online": "ecommerce"
+  "ISO 27001": "iso-27001"
+  "Ransomware-as-a-Service": "ransomware-servicio"
+  "RaaS": "ransomware-servicio"
+  "Troyanos Bancarios": "troyanos-bancarios"
+  "Cadena de Suministro": "cadena-suministro"
+  "Supply Chain": "cadena-suministro"
+  "HaveIBeenPwned": "haveibeenpwned"
+  "HIBP": "haveibeenpwned"
+  "Microsoft Teams": "microsoft-teams"
+  "Teams": "microsoft-teams"
+  "Zoom": "zoom"
+  "OSINT": "osint"
+  "Inteligencia de Código Abierto": "osint"
+  "Fuerza Bruta": "fuerza-bruta"
+  "Brute Force": "fuerza-bruta"
+  "Credential Stuffing": "credential-stuffing"
+  "Seguro de Ciberriesgos": "seguro-ciberriesgos"
+  "Cyber Insurance": "seguro-ciberriesgos"
+  "Insider Threat": "amenaza-interna"
+  "Amenaza Interna": "amenaza-interna"
+  "Offboarding": "amenaza-interna"
+  "Man-in-the-Middle": "man-in-the-middle"
+  "MITM": "man-in-the-middle"
+
+# CATALAN TAGS
+catalan_mappings:
+  # A
+  "Amenaces Digitals": "amenaces-digitals"
+  amenaces-digitals: "amenaces-digitals"
+  "Amenaces actives": "amenaces-actives"
+  "Amenaça Agèntica": "amenaça-agèntica"
+  "Auditoria": "auditoria"
+  "Autònoms": "autònoms"
+  autonoms: "autònoms"
+
+  # B
+  "BYOD": "byod"
+  BYOD: "byod"
+  "Backups": "backups"
+  "Black Friday": "black-friday"
+  "Bones Pràctiques": "bones-pràctiques"
+  "Millors Pràctiques": "bones-pràctiques"
+
+  # C
+  "Ciberatacs": "ciberatacs"
+  "Ciberseguretat Empresarial": "ciberseguretat-empresarial"
+  "Ciberseguretat": "ciberseguretat"
+  ciberseguretat: "ciberseguretat"
+  "Cloud Computing": "cloud-computing"
+  "Cybersecurity": "ciberseguretat"
+  Cybersecurity: "ciberseguretat"
+  "Comerç Electrònic": "comerç-electrònic"
+  "Compres Online": "compres-online"
+  "Conscienciació i Formació": "conscienciació-i-formació"
+  conscienciacio-i-formacio: "conscienciació-i-formació"
+  formacio: "conscienciació-i-formació"
+  "Contrasenyes": "contrasenyes"
+  contrasenyes: "contrasenyes"
+  gestio-de-contrasenyes: "contrasenyes"
+  "Còpies de Seguretat": "còpies-de-seguretat"
+  copies-de-seguretat: "còpies-de-seguretat"
+  còpia-de-seguretat: "còpies-de-seguretat"
+  "Cultura digital": "cultura-digital"
+
+  # D
+  "Deepfakes": "deepfakes"
+  "Dispositius Mòbils": "dispositius-mòbils"
+
+  # E
+  "Emprenedors": "emprenedors"
+  "Enginyeria Social": "enginyeria-social"
+  "Enginyeria social": "enginyeria-social"
+  "Education": "educació"
+  Education: "educació"
+
+  # F
+  "Formació i conscienciació": "conscienciació-i-formació"
+  "Formació": "conscienciació-i-formació"
+  "Frau Digital": "frau-digital"
+  "Frau digital": "frau-digital"
+  "Frau del CEO": "frau-del-ceo"
+  "Faronics": "faronics"
+  Faronics: "faronics"
+
+  # G
+  "Gestió d'identitats": "gestió-d-identitats"
+  "Gestió de Riscos": "gestió-de-riscos"
+  "GuardianRadar": "guardianaradar"
+  "Guia Bàsica": "guia-bàsica"
+  gestio-de-dispositius: "gestió-de-dispositius"
+
+  # I
+  "IA": "intel·ligència-artificial"
+  "Intel·ligència Artificial": "intel·ligència-artificial"
+  "IT": "tecnologia-informació"
+  IT: "tecnologia-informació"
+  "Identitat Digital": "identitat-digital"
+  "Impacte Econòmic": "impacte-econòmic"
+  "Infostealers": "infostealers"
+  "IoT": "iot"
+  IoT: "iot"
+
+  # M
+  "MFA": "autenticació-multifactor"
+  MDM: "gestió-de-dispositius"
+  "Malware i Phishing": "malware-i-phishing"
+  "Malware": "malware"
+  malware: "malware"
+  "Mites Ciberseguretat": "mites-ciberseguretat"
+
+  # N
+  "NIS2": "normativa-nis2"
+  "Normativa": "normativa"
+
+  # P
+  "Passkeys": "passkeys"
+  "Phishing": "phishing"
+  phishing: "phishing"
+  "Pimes": "pimes"
+  "Planificació 2026": "tendències-2026"
+  "PowerSave": "powersave"
+  "Prey Project": "prey-project"
+  "Protecció de Dades": "protecció-de-dades"
+  "Protecció de dades": "protecció-de-dades"
+  protecció-de-dades: "protecció-de-dades"
+
+  # R
+  "Ransomware": "ransomware"
+  ransomware: "ransomware"
+  "Rebaixes": "promocions-ofertes"
+  "Recopilatori": "recopilatori"
+  "Resposta a incidents": "resposta-a-incidents"
+  resposta-incidents: "resposta-a-incidents"
+  "Riscos Digitals": "riscos-digitals"
+  "Riscos digitals": "riscos-digitals"
+  riscos-digitals: "riscos-digitals"
+
+  # S
+  "Seguretat Física": "seguretat-física"
+  "Seguretat Informàtica": "seguretat-informàtica"
+  seguretat-informatica: "seguretat-informàtica"
+  seguretat-informàtica: "seguretat-informàtica"
+  "Seguretat IoT": "seguretat-iot"
+  "Suplantació d'Identitat": "suplantació-d-identitat"
+  "Sostenibilitat": "sostenibilitat"
+  sostenibilitat: "sostenibilitat"
+
+  # T
+  "Teletreball": "teletreball"
+  "Tendències 2026": "tendències-2026"
+
+  # W
+  "WORM": "gusans-malware"
+  "watchguard": "watchguard"
+
+  # Z/A (lowercase variants)
+  "estalvi energètic": "estalvi-energètic"
+  "automatització": "automatització"
+  automatització: "automatització"
+  actualitzacions: "actualitzacions"
+  "criptojacking": "criptojacking"
+  criptojacking: "criptojacking"
+  "lotl": "living-off-the-land"
+  lotl: "living-off-the-land"
+  "zero-day": "zero-day"
+  "Vishing": "vishing"
+  vishing: "vishing"
+  "Smishing": "smishing"
+  smishing: "smishing"
+  "Quishing": "quishing"
+  quishing: "quishing"
+  "Hisenda": "estafes-hisenda"
+  "AEAT": "estafes-hisenda"
+  "WiFi Pública": "wifi-publica"
+  "WiFi Públic": "wifi-publica"
+  "Coworking": "coworking"
+  "Sector Sanitari": "sector-sanitari"
+  "Clíniques": "sector-sanitari"
+  "eCommerce": "ecommerce"
+  "Botiga Online": "ecommerce"
+  "ISO 27001": "iso-27001"
+  "Ransomware-as-a-Service": "ransomware-servei"
+  "RaaS": "ransomware-servei"
+  "Troians Bancaris": "troians-bancaris"
+  "Cadena de Subministrament": "cadena-subministrament"
+  "Supply Chain": "cadena-subministrament"
+  "HaveIBeenPwned": "haveibeenpwned"
+  "HIBP": "haveibeenpwned"
+  "Microsoft Teams": "microsoft-teams"
+  "Teams": "microsoft-teams"
+  "Zoom": "zoom"
+  "OSINT": "osint"
+  "Intel·ligència de Codi Obert": "osint"
+  "Força Bruta": "força-bruta"
+  "Brute Force": "força-bruta"
+  "Credential Stuffing": "credential-stuffing"
+  "Segur de Ciberriscos": "segur-ciberriscos"
+  "Cyber Insurance": "segur-ciberriscos"
+  "Amenaça Interna": "amenaça-interna"
+  "Insider Threat": "amenaça-interna"
+  "Offboarding": "amenaça-interna"
+  "Man-in-the-Middle": "man-in-the-middle"
+  "MITM": "man-in-the-middle"
+
+---
+
+## 📦 PRODUCT TAGS
+# Use these tags to link content to specific GuardianHubX products
+
+product_tags:
+  guardianaradar:
+    label_es: "GuardianRadar"
+    label_ca: "GuardianRadar"
+    description_es: "Detección activa de amenazas en tiempo real"
+    description_ca: "Detecció activa d'amenaces en temps real"
+
+  ironwall:
+    label_es: "IronWall"
+    label_ca: "IronWall"
+    description_es: "Protección contra malware y ransomware"
+    description_ca: "Protecció contra malware i ransomware"
+
+  smartlayer:
+    label_es: "SmartLayer"
+    label_ca: "SmartLayer"
+    description_es: "Gestión segura de contraseñas"
+    description_ca: "Gestió segura de contrasenyes"
+
+---
+
+## 📋 FRONT MATTER TEMPLATE FOR SPANISH
+
+title: "Título (máx 60 caracteres)"
+description: "Meta descripción (120-160 caracteres)"
+slug: "slug-url-amigable"
+publishDate: 2026-03-15
+type: "blog"
+category: "threat-analysis"  # threat-analysis | how-to-guide | news | compliance | product | educational
+tags:
+  - phishing
+  - estafas-hacienda
+  - concienciación-y-formación
+relatedProduct: "guardianaradar"  # optional
+featured: false
+keywords:
+  - "palabra clave 1"
+  - "palabra clave 2"
+
+---
+
+## 📚 CONTENT CATEGORIES
+
+threat-analysis: Análisis de amenazas y vulnerabilidades específicas
+how-to-guide: Guías prácticas paso a paso
+news: Noticias y tendencias actuales
+compliance: Normativa y regulaciones
+product: Casos de uso y features de productos
+educational: Definiciones y educación básica
+
+---
+
+## ✅ CHECKLIST FOR BLOG DRAFTS
+
+When your writer submits a draft:
+
+- [ ] Title: 40-60 characters, keyword-focused
+- [ ] Description: 120-160 characters (meta quality)
+- [ ] Slug: lowercase, hyphens, no accents
+- [ ] Tags: 3-8 from standardized list
+- [ ] Category: Only ONE from approved list
+- [ ] Internal links: At least 2-3 to website pages
+- [ ] Product link: If applicable, 1 CTA
+- [ ] Word count: Minimum 800 words
+- [ ] Formatting: H2/H3 headers, bullet points
+- [ ] Images: Format blog/YYYY/descriptive-name.png

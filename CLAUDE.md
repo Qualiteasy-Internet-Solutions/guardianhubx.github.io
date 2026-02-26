@@ -96,6 +96,12 @@ Landing pages use centralized Hugo shortcodes for contact components (DRY princi
 - Cookiebot: consent management (GDPR)
 - Supabase: used in Space Invaders leaderboard (spaceinvaders-form.html)
 - Brevo (Sendinblue): newsletter forms
+- **Google Apps Script:** Cybersecurity Assessment Form (Gemini AI + PDF generation)
+  - Form: `layouts/shortcodes/formulari-ciberseguretat.html`
+  - API: Google Sheets + Gemini 2.0 Flash
+  - Features: 3-attempt retry logic for all API calls, multilingual reports (ES/CA/EN)
+  - Deploys: PDF reports + email with disclaimer
+  - Note: Update `SCRIPT_URL` in form JavaScript when redeploying Apps Script
 
 ### Blog Integration
 
@@ -121,6 +127,49 @@ Blog posts automatically output to these paths regardless of language directory 
 - Catalan: `/blog/ca/ciberestafes-ceo-autonoms-pimes/` (slug is different!)
 
 **Before editing:** Always verify the actual blog article slug exists in the correct language. Slugs are NOT automatically translated.
+
+### Blog Posting Standards (2026+)
+
+**Standards Files:**
+- `tag_standardization.yaml` — Master tag reference (ES + CA) with 6 content categories
+- `SEO_STRATEGY_COMPREHENSIVE_92_BLOG_POSTS.md` — 20 planned posts (Mar-Sep 2026) + SEO gaps
+
+**Front Matter Required:**
+```yaml
+---
+title: "Title (max 60 chars)"
+description: "Meta description (120-160 chars)"
+slug: "slug-url-lowercase-hyphens"
+publishDate: 2026-03-15
+type: "blog"
+category: "threat-analysis"  # threat-analysis | how-to-guide | news | compliance | product | educational
+tags:
+  - tag-from-standardized-list
+  - max-8-tags-minimum-3
+relatedProduct: "guardianaradar"  # optional
+featured: false
+keywords:
+  - "primary keyword"
+---
+```
+
+**Content Categories Allowed:**
+- `threat-analysis` — Specific threat deep-dives
+- `how-to-guide` — Practical step-by-step guides
+- `news` — Trends & breaking news
+- `compliance` — Regulatory & standards content
+- `product` — Product-focused articles
+- `educational` — Definitions & basics
+
+**Tags:** Use ONLY canonical tags from `tag_standardization.yaml`. New 2026 tags include: vishing, smishing, quishing, estafas-hacienda, sector-sanitario, ecommerce, ransomware-servicio, osint, fuerza-bruta, seguro-ciberriesgos, etc.
+
+**Publishing Workflow:**
+1. Human writer creates first draft (Markdown)
+2. Review checklist: title, description, slug, tags, category, internal links (2-3 min), product CTA, formatting (H2/H3), 800+ words
+3. Create CA version with different slug if needed (e.g., es: `ciberestafas-hacienda`, ca: `ciberestafes-hisenda`)
+4. Deploy via git push to main (builds automatically)
+
+**Publishing Schedule:** 2-3 posts/month (Mar-Sep 2026: 20 planned posts)
 
 # My Project Rules
 - ALWAYS use Haiku model for simple tasks.
