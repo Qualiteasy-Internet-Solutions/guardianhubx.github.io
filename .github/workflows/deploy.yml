@@ -5,6 +5,12 @@ on:
   # Rebuild automático al hacer push a main
   push:
     branches: [ main ]
+  # Daily scheduled deploy to publish articles with future dates
+  schedule:
+    # 06:05 Europe/Madrid (summer = UTC+2) -> 04:05 UTC
+    - cron: "5 4 * * *"
+  # Manual trigger
+  workflow_dispatch: {}
 
 permissions:
   contents: read
