@@ -383,7 +383,7 @@
  const CURRENT_LANG = "en";
  const form = document.getElementById('cyber-form');
  const progressBar = document.getElementById('progress-bar');
- const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx9oHFYzUigU3UuHKeZyWqz5tGN70gd3ADIDvf2PYVO-Ya0uZFz9Iow4TgFpb30ycuEmA/exec';
+ const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx3OtS4saXEyaWHKJsgyXEOPa6oLb4IhhPjGrmAYam-FGv8ld6asUFlNXBSQipvPLK11A/exec';
  
  const questionsData = {
  gateway: {
