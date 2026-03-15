@@ -409,7 +409,7 @@ Discover how to apply these concepts <i class="fas fa-arrow-right landing-arrow-
 <li><strong>OAuth</strong> — Open standard allowing users to authenticate without sharing passwords.</li>
 <li><strong>Onion Routing</strong> — Technology (Tor) anonymizing internet traffic through multiple layers.</li>
 <li><strong>OSINT (Open Source Intelligence)</strong> — Gathering intelligence from publicly available sources.</li>
-<li><strong>Overflow Attack</strong> — Exploiting programs by sending more data than buffer can hold.</li>
+<li><strong>Overflow Attack</strong> — Exploiting programs by sending more data than the buffer can hold.</li>
 </ul>
 </div>
 <div class="col-lg-6">
