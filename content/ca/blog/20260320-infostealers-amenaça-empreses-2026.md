@@ -175,6 +175,6 @@ Si vols avaluar el nivell d'exposició de la teva empresa enfront d'aquest tipus
 
 ## Protecció amb IronWall
 
-IronWall, la nostra solució de protecció contra malware i ransomware, inclou capacitats de detecció comportamental que poden identificar activitat típica dels infostealers. La monitorització en temps real i l'anàlisi de patrons sospitosos et permeten detectar infeccions abans que les dades crítics siguin exfiltraded.
+IronWall, la nostra solució de protecció contra malware i ransomware, inclou capacitats de detecció comportamental que poden identificar activitat típica dels infostealers. La monitorització en temps real i l'anàlisi de patrons sospitosos et permeten detectar infeccions abans que les dades crítiques siguin exfiltrades.
 
 [Coneix com IronWall protegeix els teus dispositius →](/ca/ironwall/)

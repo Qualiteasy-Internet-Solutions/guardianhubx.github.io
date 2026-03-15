@@ -157,7 +157,7 @@ Si fas clic en un enllaç de phishing poden ocórrer vàries coses immediates:
 
 ### 🔴 Accions crítiques (primers 30 minuts)
 
-- **Canvia contraseñes** — Si vas introduir credencials, canvia-les immediatament en aquest compte
+- **Canvia contrasenyes** — Si vas introduir credencials, canvia-les immediatament en aquest compte
 - **Activa MFA** — Habilita autenticació multifactor en comptes crítics si no estava activa
 - **Notifica a IT** — A empresa, comunica al departament d'IT ara mateix
 
@@ -174,7 +174,7 @@ Si fas clic en un enllaç de phishing poden ocórrer vàries coses immediates:
 [ ] Notifica a bancs si vas compartir dades financeres<br>
 [ ] Considera congelar crèdit a agències de crèdit (si vas compartir dades personals)<br>
 [ ] Revisa informes de crèdit en línia<br>
-[ ] Considera canviar altres contraseñes relacionades
+[ ] Considera canviar altres contrasenyes relacionades
 </div>
 
 **Recorda:** La rapidesa és crítica. Com més ràpid actuïs, menys dany pot causar l'atacant.

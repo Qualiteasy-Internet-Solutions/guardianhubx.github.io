@@ -55,7 +55,7 @@ Segons estudis recents:
 
 ### 1. Falsa Sensació de Seguretat
 
-Moltes organitzacions creixen que no són un objectiu atractiu. La realitat és que qualsevol empresa connectada a internet ho és, independentment de la seva mida o sector. Aquests són alguns dels [errors comuns en ciberseguretat](/ca/blog/errors-comuns-ciberseguretat-pimes/) que porten a aquesta falsa sensació.
+Moltes organitzacions creuen que no són un objectiu atractiu. La realitat és que qualsevol empresa connectada a internet ho és, independentment de la seva mida o sector. Aquests són alguns dels [errors comuns en ciberseguretat](/ca/blog/errors-comuns-ciberseguretat-pimes/) que porten a aquesta falsa sensació.
 
 Les pimes són especialment vulnerables perquè:
 
@@ -117,10 +117,10 @@ Les empreses que reaccionen tard:
 
 La bretxa entre organitzacions que inverteixen en ciberseguretat i les que no ho fan és cada vegada més una **bretxa de supervivència empresarial**.
 
-### 5 Passos Immediatts Per Començar
+### 5 Passos Immediats Per Començar
 
-1. **Evalúa el teu risc actual** — Identifica on estan les teves dades crítiques i com estan protegides
-2. **Revisa el teu compliment normatiu** — ¿Estàs alineat amb RGPD, NIS2 o altres regulacions aplicables al teu sector?
+1. **Avalua el teu risc actual** — Identifica on estan les teves dades crítiques i com estan protegides
+2. **Revisa el teu compliment normatiu** — Estàs alineat amb RGPD, NIS2 o altres regulacions aplicables al teu sector?
 3. **Capacita el teu equip** — La majoria dels atacs exploten fallades humanes, no tecnològiques. Implementa [conscienciació i formació](/ca/blog/) contínua
 4. **Inverteix en eines de detecció** — GuardianRadar identifica amenaces en temps real
 5. **Crea un pla de resposta** — Saber què fer quan ocorri un incident redueix el dany significativament
@@ -129,11 +129,11 @@ La bretxa entre organitzacions que inverteixen en ciberseguretat i les que no ho
 
 Si la teva empresa està en el **51% que sí inverteix en ciberseguretat**, ja estàs un pas endavant.
 
-Si estàs en el **49% que no ho fa**, la pregunta no és si sofrirà un atac. La pregunta és: **¿quant de dany permetràs que causat?**
+Si estàs en el **49% que no ho fa**, la pregunta no és si sofrirà un atac. La pregunta és: **quant de dany permetràs que es causi?**
 
 En GuardianHubX ajudem a organitzacions a:
 
-✅ Evaluar el seu nivell real de risc
+✅ Avaluar el seu nivell real de risc
 
 ✅ Dissenyar estratègies adaptades al negoci
 
