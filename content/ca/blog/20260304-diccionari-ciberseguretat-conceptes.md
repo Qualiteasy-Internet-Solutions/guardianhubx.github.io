@@ -36,7 +36,7 @@ A continuació, es desenvolupen els conceptes essencials que tota empresa hauria
 
 **Autenticació**
 
-Procés mitjançant el qual un sistema verifica la identitat d'un usuari abans de permetre-li l'accés. En entorns empresarials actuals, ha de reforzar-se mitjançant autenticació multifactor per reduir riscos d'accés indegut.
+Procés mitjançant el qual un sistema verifica la identitat d'un usuari abans de permetre-li l'accés. En entorns empresarials actuals, ha de reforçar-se mitjançant autenticació multifactor per reduir riscos d'accés indegut.
 
 **Autorització**
 
@@ -150,7 +150,7 @@ Empremta criptogràfica que permet verificar la integritat de dades sense revela
 
 **Hardening**
 
-Procés de reforzar configuracions per reduir vulnerabilitats, eliminant serveis innecessaris i aplicant restriccions.
+Procés de reforçar configuracions per reduir vulnerabilitats, eliminant serveis innecessaris i aplicant restriccions.
 
 ## I - Enginyeria Social, Incidents i IDS/IPS
 
@@ -286,7 +286,7 @@ Substitució de dades sensibles per identificadors segurs, permetent processamen
 
 **Threat Intelligence**
 
-Anàlisi d'amenaces actives i tendències delictives per anticipar atacs i reforzar defenses.
+Anàlisi d'amenaces actives i tendències delictives per anticipar atacs i reforçar defenses.
 
 **Trazabilitat**
 
@@ -306,7 +306,7 @@ Xarxa privada virtual que xifra comunicacions remotes, protegint dades en tràns
 
 **Vulnerabilitat**
 
-Fallo en un sistema que pot ser explotat per un atacant per obtenir accés no autoritzat o causar dany.
+Defecte en un sistema que pot ser explotat per un atacant per obtenir accés no autoritzat o causar dany.
 
 **Vishing**
 
@@ -358,7 +358,7 @@ El domini del llenguatge de la ciberseguretat permet transformar la protecció d
 
 Cada organització té un nivell de maduresa distint en matèria de seguretat. Analitzar el punt de partida, identificar vulnerabilitats i establir un pla estructurat és el primer pas per construir resilència digital.
 
-Si la teva empresa necessita reforzar la seva estratègia de protecció, implantar un model de control més robust o avaluar el seu nivell real d'exposició al risc, l'equip de GuardianHubX pot ajudar-te a dissenyar una solució adaptada al teu entorn i els teus objectius.
+Si la teva empresa necessita reforçar la seva estratègia de protecció, implantar un model de control més robust o avaluar el seu nivell real d'exposició al risc, l'equip de GuardianHubX pot ajudar-te a dissenyar una solució adaptada al teu entorn i els teus objectius.
 
 ## Pròxims Passos: De la Teoria a l'Acció
 
@@ -381,7 +381,7 @@ En GuardianHubX transformem aquest coneixement en estratègia operativa. Ajudem 
 - Detectar amenaces en temps real amb GuardianRadar
 - Capacitar a equips en terminologia i millors pràctiques
 
-**El diccionari que acabes de llegir és el mapa. Ara necessites la brújula.**
+**El diccionari que acabes de llegir és el mapa. Ara necessites la brúixola.**
 
 ---
 
