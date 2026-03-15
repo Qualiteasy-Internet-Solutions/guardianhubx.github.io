@@ -25,13 +25,13 @@ cover:
 translationKey: "infostealers-silent-threat-2026"
 ---
 
-Els últims anys, els infostealers s'han convertit en una de les amenaces més silencioses i rendibles de l'ecosistema criminal digital. Malgrat que ja vam abordur aquest tema en el nostre [anterior anàlisi sobre infostealers](/blog/ca/infostealers-amenaca-robatori-dades/), el panorama del 2026 ha evolucionat de manera significativa amb noves variants, tècniques d'evasió més sofisticades i un canvi en l'enfocament dels atacants cap a empreses mitjanes.
+Els últims anys, els infostealers s'han convertit en una de les amenaces més silencioses i rendibles de l'ecosistema criminal digital. Malgrat que ja vam abordar aquest tema en el nostre [anterior anàlisi sobre infostealers](/blog/ca/infostealers-amenaca-robatori-dades/), el panorama del 2026 ha evolucionat de manera significativa amb noves variants, tècniques d'evasió més sofisticades i un canvi en l'enfocament dels atacants cap a empreses mitjanes.
 
 A diferència del ransomware, que fa soroll i bloqueja sistemes, els infostealers actuen de forma discreta, robant informació crítica sense que l'organització ho detecti a temps. Entendre què són, com funcionen i quin impacte poden tenir és clau per a qualsevol empresa que gestioni credencials, dades financeres o informació estratègica. Com a empresa de [ciberseguretat](/ca/que-es-la-ciberseguritat/), sabem que els infostealers són un vector d'atac cada vegada més sofisticat que requereix una defensa activa.
 
 ## Què és un infostealer
 
-Un infostealer és un tipus de malware dissenyat específicament per robar informació sensible de dispositius infectats. El seu objectiu principal no és destruir ni xifrar dades, sinó extreure'ls i enviar-los a servidors controlats pels atacants.
+Un infostealer és un tipus de malware dissenyat específicament per robar informació sensible de dispositius infectats. El seu objectiu principal no és destruir ni xifrar dades, sinó extreure-les i enviar-les a servidors controlats pels atacants.
 
 La informació robada pot incloure:
 
@@ -53,7 +53,7 @@ Els infostealers se solen distribuir a través de:
 **Phishing dirigit**
 [Correus electrònics amb arxius adjunts o enllaços maliciosos](/ca/phishing-que-es-i-com-evitar/) que simulen ser comunicacions legítimes. El phishing és un dels vectors més efectius per distribuir aquest tipus de malware.
 
-**Programari pirata o estupefit**
+**Programari pirata o crackejat**
 Programes baixats des de llocs no oficials que inclouen codi maliciós ocult.
 
 **Malvertising**
@@ -72,7 +72,7 @@ El funcionament típic d'un infostealer segueix diverses fases:
 Analitza el sistema operatiu, aplicacions instal·lades i configuracions del dispositiu.
 
 **Extracció de credencials**
-Accedeix a bases de dades de navegadors com Chrome, Edge o Firefox per obtenir contraseyes emmagatzemades.
+Accedeix a bases de dades de navegadors com Chrome, Edge o Firefox per obtenir contrasenyes emmagatzemades.
 
 **Captura de cookies i tokens**
 Permet segrestar sessions actives sense necessitat de contrasenya.
