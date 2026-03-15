@@ -1,6 +1,6 @@
 ---
 title: "49% de Empresas No Invierte en Ciberseguridad: El Riesgo Ignorado"
-description: "El 49% de organizaciones no invierte en ciberseguridad incluso tras sufrir ataques. Descubre por qué es un error estratégico y cómo proteger tu empresa."
+description: "El 49% de organizaciones no invierten en ciberseguridad incluso tras sufrir ataques. Descubre por qué es un error estratégico y cómo proteger tu empresa."
 author: "GuardianHubX"
 date: 2026-03-15T09:00:00+00:00
 draft: false

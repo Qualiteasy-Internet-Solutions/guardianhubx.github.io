@@ -60,7 +60,7 @@ En entornos distribuidos, sin proximidad física, estos ataques son particularme
 
 ### 2. Ransomware Dirigido
 
-El acceso remoto mal protegido facilita la infiltración en la red corporativa. Una vez dentro, el atacante puede cifrar servidores, bases de datos o sistemas críticos. Los equipos remotos sin segmentación de red son especialmente vulnerables a [ataques de ransomware que paraliza las operaciones](/blog/guia-60-minutos-ataque-ransomware/).
+El acceso remoto mal protegido facilita la infiltración en la red corporativa. Una vez dentro, el atacante puede cifrar servidores, bases de datos o sistemas críticos. Los equipos remotos sin segmentación de red son especialmente vulnerables a [ataques de ransomware que paralizan las operaciones](/blog/guia-60-minutos-ataque-ransomware/).
 
 ### 3. Robo o Pérdida de Dispositivos
 

@@ -157,7 +157,7 @@ Si haces clic en un enlace de phishing pueden ocurrir varias cosas inmediatas:
 
 ### 🔴 Acciones críticas (primeros 30 minutos)
 
-- **Cambia contraseñas** — Si introdujiste credenciales, cambialas inmediatamente en esa cuenta
+- **Cambia contraseñas** — Si introdujiste credenciales, cámbialas inmediatamente en esa cuenta
 - **Activa MFA** — Habilita autenticación multifactor en cuentas críticas si no estaba activa
 - **Notifica a IT** — En empresa, comunica al departamento de IT ahora mismo
 
