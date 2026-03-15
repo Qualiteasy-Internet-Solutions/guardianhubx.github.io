@@ -3,8 +3,8 @@ title: "He rebut un correu sospitós: és phishing i què haig de fer?"
 author: "GuardianHubX"
 date: 2026-03-22T09:00:00+00:00
 draft: false
-slug: "correu-sospitot-identificar-phishing-que-fer"
-url: "/blog/ca/correu-sospitot-identificar-phishing-que-fer/"
+slug: "correu-sospitos-identificar-phishing-que-fer"
+url: "/blog/ca/correu-sospitos-identificar-phishing-que-fer/"
 layout: "blog"
 categories:
   - ciberseguretat
@@ -27,15 +27,15 @@ cover:
 translationKey: "suspicious-email-phishing-what-to-do"
 ---
 
-Rebre un correu electrònic inesperat ja no és quelcom excepcional. Tanmateix, quan aquest missatge sol·licita informació sensible, inclou enllaços estranys o genera sensació d'urgència, és legítim preguntar-se: ¿estic davant d'un intent de phishing?
+Rebre un correu electrònic inesperat ja no és quelcom excepcional. Tanmateix, quan aquest missatge sol·licita informació sensible, inclou enllaços estranys o genera sensació d'urgència, és legítim preguntar-se: estic davant d'un intent de phishing?
 
 El [phishing](/ca/phishing-que-es-i-com-evitar/) és una de les tècniques d'atac més utilitzades en el món. El seu èxit no depèn tant de la tecnologia com de la manipulació psicològica. Per això, qualsevol empleat, directiu o usuari pot convertir-se en objectiu. El 2026, el phishing continua sent el vector d'atac número u, responsable del 91% dels incidents de ciberseguretat exitosos.
 
 ## Què és el phishing
 
-El phishing és un tipus d'atac basat en la suplantació d'identitat. L'atacant es fa passar per una entitat legítima —banc, proveïdor, empresa tecnològica o fins i tot un companyera de feina— per enganyar el destinatari i aconseguir:
+El phishing és un tipus d'atac basat en la suplantació d'identitat. L'atacant es fa passar per una entitat legítima —banc, proveïdor, empresa tecnològica o fins i tot un company de feina— per enganyar el destinatari i aconseguir:
 
-- Contraseñes i credencials
+- Contrasenyes i credencials
 - Dades bancàries
 - Informació confidencial o estratègica
 - Accés a sistemes corporatius
@@ -43,7 +43,7 @@ El phishing és un tipus d'atac basat en la suplantació d'identitat. L'atacant 
 
 L'objectiu pot ser el robatori directe d'informació o obrir la porta a atacs posteriors més greus, com ransomware o compromís d'identitat.
 
-## Senyals clares de que pot ser phishing
+## Senyals clares que pot ser phishing
 
 Malgrat que els atacs són cada vegada més sofisticats, existeixen senyals d'alerta habituals que poden salvar-te:
 
@@ -72,7 +72,7 @@ Malgrat que són cada vegada menys freqüents, segueixen essent un indicador. El
 
 ### 5. Sol·licitud de dades confidencials
 
-**Regla d'or:** Ninguna entitat legítima demana contraseñes, codis de verificació o dades bancàries per correu electrònic. Si reps aquesta sol·licitud, és pràcticament segur que és phishing.
+**Regla d'or:** Cap entitat legítima demana contrasenyes, codis de verificació o dades bancàries per correu electrònic. Si reps aquesta sol·licitud, és pràcticament segur que és phishing.
 
 ### 6. Fitxers adjunts sospitosos
 
@@ -99,7 +99,7 @@ Documents PDF, Word o Excel que no esperaves, especialment si contenen instrucci
 <tr>
 <td><strong>Whaling</strong></td>
 <td>Phishing contra executius i directius</td>
-<td><span class="risk-badge alto">MÓT ALT</span></td>
+<td><span class="risk-badge alto">MOLT ALT</span></td>
 </tr>
 <tr>
 <td><strong>BEC/Frau del CEO</strong></td>
@@ -123,13 +123,13 @@ Documents PDF, Word o Excel que no esperaves, especialment si contenen instrucci
 </tr>
 </table>
 
-## Què ocorre si fas clic en un enllaç maliciós
+## Què passa si fas clic en un enllaç maliciós
 
 Si fas clic en un enllaç de phishing poden ocórrer vàries coses immediates:
 
 - **Redirecció a pàgina falsa** — Una còpia idèntica del lloc legítim que captura les teves credencials
 - **Descàrrega automàtica de malware** — Sense que facis res més, el navegador descàrrega un fitxer maliciós
-- **Instal·lació d'infostealer** — Malware que extreu totes les contraseñes guardades en el navegador
+- **Instal·lació d'infostealer** — Malware que extreu totes les contrasenyes guardades en el navegador
 - **Segrest de sessió** — Si el teu navegador té cookies actives, l'atacant les captura
 - **Compromís de dispositiu** — Si descarregues un executable, l'atacant obté accés complet
 
@@ -161,7 +161,7 @@ Si fas clic en un enllaç de phishing poden ocórrer vàries coses immediates:
 - **Activa MFA** — Habilita autenticació multifactor en comptes crítics si no estava activa
 - **Notifica a IT** — A empresa, comunica al departament d'IT ara mateix
 
-### 🟡 Accions secundàries (pròximes 24 hores)
+### 🟡 Accions secundàries (següents 24 hores)
 
 - **Executa antimalware** — Usa un antivirus/antimalware actualitzat per anàlisi complet (revisa infostealers)
 - **Revisa accessos** — A Gmail/Outlook busca "Activitat recent" o "Inicis de sessió recents"
@@ -184,9 +184,9 @@ Si fas clic en un enllaç de phishing poden ocórrer vàries coses immediates:
 Malgrat tots els avançaments en seguretat, el phishing funciona perquè no explota vulnerabilitats tècniques, sinó humanes. Es basa en principis fundamentals de psicologia:
 
 - **Confiança** — El missatge sembla venir de quelcom de confiança
-- **Miedo** — "El teu compte serà bloquejat", "Les teves dades estan en risc"
+- **Por** — "El teu compte serà bloquejat", "Les teves dades estan en risc"
 - **Urgència** — "Actúa ara", "Només 5 minuts disponibles"
-- **Autoritat** — Suplantació de figures de poder (jefe, CEO, regulador)
+- **Autoritat** — Suplantació de figures de poder (cap, CEO, regulador)
 - **Curiositat** — "Mira això", "Tens que veure aquest vídeo"
 
 En entorns corporatius, n'hi ha prou amb que un sol empleat caigui en l'engany per comprometer tota l'organització.
@@ -199,7 +199,7 @@ Una **defensa multicapa** requereix aquests 7 pilars:
 
 <div class="defense-card critical">
 <strong><i class="fas fa-graduation-cap"></i> Formació contínua</strong>
-<p><a href="/ca/formacion-phishing-software/">Campanyes de conscienciació</a> sobre tipus d'atac i senyals d'alerta</p>
+<p><a href="/ca/formacio-phishing-software/">Campanyes de conscienciació</a> sobre tipus d'atac i senyals d'alerta</p>
 <span class="priority-badge">CRÍTICA</span>
 </div>
 
@@ -228,7 +228,7 @@ Una **defensa multicapa** requereix aquests 7 pilars:
 </div>
 
 <div class="defense-card high">
-<strong><i class="fas fa-bell"></i> Reporte intern clar</strong>
+<strong><i class="fas fa-bell"></i> Informe intern clar</strong>
 <p>Empleats saben a qui reportar sense por a represàlies</p>
 <span class="priority-badge">ALTA</span>
 </div>
@@ -247,7 +247,7 @@ Una **defensa multicapa** requereix aquests 7 pilars:
 
 Aquí està el veritable risc: el phishing gairebé mai és l'atac final. És la porta d'entrada.
 
-Molts incidents de ransomware, robatori de dades i compromisos corporatius comencen amb un simple correu de phishing. Una credencial compromesa permet accés lateral dins de la xarxa corporativa. Des d'aquí, l'atacant explora, escalona privilegis i acaba cifrando sistemes crítics o exfiltrant bases de dades completes.
+Molts incidents de ransomware, robatori de dades i compromisos corporatius comencen amb un simple correu de phishing. Una credencial compromesa permet accés lateral dins de la xarxa corporativa. Des d'aquí, l'atacant explora, escalona privilegis i acaba xifrant sistemes crítics o exfiltrant bases de dades completes.
 
 El 2025 i 2026, la combinació de phishing + infostealers + ransomware s'ha convertit en la cadena d'atac estàndard. Per això subestimar un correu sospitós pot tenir conseqüències estratègiques.
 
@@ -261,7 +261,7 @@ El phishing és una amenença constant i adaptable. Els atacants aprenen de les 
 
 [GuardianRadar](/ca/guardianradar/), la nostra solució d'intel·ligència de menaces, monitoritza intents de phishing dirigits a la teva empresa, alertant-te de suplantacions de domini, emails maliciosos i campanyes d'enginyeria social abans que afectin els teus empleats.
 
-Combinat amb [formació periòdica en seguretat](/ca/formacio-phishing-software/), creus una defensa multicapa contra els atacs que dominen el 2026.
+Combinat amb [formació periòdica en seguretat](/ca/formacio-phishing-software/), crea una defensa multicapa contra els atacs que dominen el 2026.
 
 Si vols avaluar el nivell d'exposició de la teva organització front als atacs de phishing o reforçar els teus mecanismes de protecció, l'equip de GuardianHubX pot ajudar-te a implementar una estratègia adaptada als teus riscos reals.
 
