@@ -4,7 +4,6 @@ description: "Referencia interactiva de 100+ términos de ciberseguridad. Phishi
 ogImage: "/img/diccionario-digital-seguridad-informatica.webp"
 ogImageAlt: "Diccionario digital de ciberseguridad y conceptos de seguridad informática"
 translationKey: "cybersecurity-dictionary-reference"
-date: 2026-03-20T00:00:00+00:00
 layout: "landing-ciberseguridad"
 translations:
 - lang: ca

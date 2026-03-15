@@ -4,7 +4,6 @@ description: "Interactive reference of 100+ cybersecurity terms. Phishing, ranso
 ogImage: "/img/diccionario-digital-seguridad-informatica.webp"
 ogImageAlt: "Digital cybersecurity glossary and information security concepts"
 translationKey: "cybersecurity-dictionary-reference"
-date: 2026-03-20T00:00:00+00:00
 layout: "landing-ciberseguridad"
 translations:
 - lang: es

@@ -4,7 +4,6 @@ description: "Referència interactiva de 100+ termes de ciberseguretat. Phishing
 ogImage: "/img/diccionario-digital-seguridad-informatica.webp"
 ogImageAlt: "Diccionari digital de ciberseguretat i conceptes de seguretat informàtica"
 translationKey: "cybersecurity-dictionary-reference"
-date: 2026-03-20T00:00:00+00:00
 layout: "landing-ciberseguridad"
 translations:
   - lang: es
