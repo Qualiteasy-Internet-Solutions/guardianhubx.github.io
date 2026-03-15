@@ -431,6 +431,8 @@ body.scrolled .home-navbar {
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
+    font-family: inherit;
+    padding: 1rem 2.5rem;
 }
 
 .landing-btn-primary {
@@ -470,6 +472,20 @@ body.scrolled .home-navbar {
 
 .landing-btn-primary:hover .landing-arrow-soft-green {
     transform: translateX(5px);
+}
+
+.landing-btn-secondary {
+    background: var(--landing-secondary-color) !important;
+    color: #000 !important;
+    padding: 1rem 2.5rem !important;
+    box-shadow: var(--landing-shadow-soft);
+}
+
+.landing-btn-secondary:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: var(--landing-shadow-hover) !important;
+    color: #000 !important;
+    text-decoration: none !important;
 }
 
 /* Sections */
@@ -1788,6 +1804,33 @@ body.scrolled #page-title {
 
 .badge-2020s {
   background: #0275d8 !important;
+}
+
+/* Glossary Styles */
+.glossary-letter {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1232ff;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e4e4e4;
+}
+
+.glossary-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.glossary-list li {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.glossary-list strong {
+  color: #1232ff;
+  font-weight: 600;
 }
 
 @media (max-width: 576px) {

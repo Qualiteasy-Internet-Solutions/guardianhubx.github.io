@@ -52,6 +52,13 @@
         {{ i18n "objectius" }}
         </a>
     </li>
+    <li>
+        <a class="dropdown-item" href="{{ cond (eq .Lang "es") ("/es/diccionario-ciberseguridad/" | relLangURL)
+                (cond (eq .Lang "ca") ("/ca/diccionari-ciberseguretat/" | relLangURL)
+                                ("/en/cybersecurity-glossary/" | relLangURL)) }}">
+        {{ cond (eq .Lang "es") "Diccionario de Ciberseguridad" (cond (eq .Lang "ca") "Diccionari de Ciberseguretat" "Cybersecurity Glossary") }}
+        </a>
+    </li>
     </ul>
 </li>
 <li class="nav-item dropdown">
