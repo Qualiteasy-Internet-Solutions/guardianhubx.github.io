@@ -1027,7 +1027,35 @@ Este dato subraya la importancia de contar con un enfoque de &lt;a href="https:/
  &lt;i class="fas fa-graduation-cap">&lt;/i>
  &lt;/div>
  &lt;h5 class="thanks-card-title">Formación&lt;/h5>
- &lt;p class="thanks-card-text">Entrena a tu equipo para prevenir ataques de phishing.&lt;/p></description></item><item><title>Edgewatch | Monitorización Continua de Amenazas Cibernéticas</title><link>https://guardianhubx.com/es/edgewatch/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/es/edgewatch/</guid><description>&lt;section class="about mb-5 container text-center">
+ &lt;p class="thanks-card-text">Entrena a tu equipo para prevenir ataques de phishing.&lt;/p></description></item><item><title>Diccionario de Ciberseguridad: Referencia Rápida 2026</title><link>https://guardianhubx.com/es/diccionario-ciberseguridad/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/es/diccionario-ciberseguridad/</guid><description>&lt;script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "Article",
+"headline": "Diccionario de Ciberseguridad: Referencia Rápida 2026",
+"description": "Referencia interactiva de 100+ términos de ciberseguridad con definiciones esenciales para empresas.",
+"image": "/img/diccionario-digital-seguridad-informatica.webp",
+"author": {
+ "@type": "Organization",
+ "name": "GuardianHubX"
+},
+"datePublished": "2026-03-20T00:00:00+00:00",
+"dateModified": "2026-03-20T00:00:00+00:00",
+"publisher": {
+ "@type": "Organization",
+ "name": "GuardianHubX",
+ "logo": {
+ "@type": "ImageObject",
+ "url": "/img/guardianhubx-logo.webp"
+ }
+}
+}
+&lt;/script>
+&lt;section class="landing-hero-section">
+&lt;div class="container">
+&lt;div class="row align-items-center">
+&lt;div class="col-lg-6 landing-fade-in">
+&lt;h1 class="landing-hero-title">Diccionario de Ciberseguridad: El Lenguaje de la Protección Digital&lt;/h1>
+&lt;p class="landing-hero-subtitle">100+ términos clave que toda empresa debe dominar. Desde phishing hasta Zero Trust, aquí encontrarás definiciones claras, ejemplos prácticos y el contexto que necesitas para protegerte.&lt;/p></description></item><item><title>Edgewatch | Monitorización Continua de Amenazas Cibernéticas</title><link>https://guardianhubx.com/es/edgewatch/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/es/edgewatch/</guid><description>&lt;section class="about mb-5 container text-center">
  &lt;h2>Protección Cibernética Proactiva con Edgewatch&lt;/h2>
  &lt;img src="https://guardianhubx.com/img/edgewatch-logo.jpg" alt="Logo de Edgewatch - Solución avanzada de ciberseguridad" class="img-fluid mb-2" style="max-height: 100px;">
  &lt;p>
