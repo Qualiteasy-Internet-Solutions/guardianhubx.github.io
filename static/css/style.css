@@ -1838,3 +1838,190 @@ body.scrolled #page-title {
     max-height: 80vh;
   }
 }
+
+/* --- BLOG COMPONENTS (Blog posts styling) --- */
+
+/* Blog Tables */
+.blog-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+
+.blog-table thead tr {
+  background: #f8f9fa;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.blog-table th {
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.blog-table th:last-child {
+  text-align: center;
+  width: 120px;
+}
+
+.blog-table tbody tr {
+  border-bottom: 1px solid #dee2e6;
+}
+
+.blog-table td {
+  padding: 12px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.blog-table td:last-child {
+  text-align: center;
+}
+
+/* Risk Badges */
+.risk-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.risk-badge.bajo {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.risk-badge.medio {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.risk-badge.alto {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.risk-badge.critico {
+  background: #721c24;
+  color: #fff;
+}
+
+/* Defense Grid */
+.defense-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  margin: 20px 0;
+}
+
+.defense-card {
+  padding: 16px;
+  border-radius: 4px;
+  border-left: 4px solid;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.defense-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.defense-card.critical {
+  border-left-color: #dc3545;
+  background: #fff5f5;
+}
+
+.defense-card.critical strong {
+  color: #dc3545;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.defense-card.critical .priority-badge {
+  background: #dc3545;
+}
+
+.defense-card.high {
+  border-left-color: #ff9800;
+  background: #fff8f0;
+}
+
+.defense-card.high strong {
+  color: #ff9800;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.defense-card.high .priority-badge {
+  background: #ff9800;
+}
+
+.defense-card p {
+  margin: 8px 0 0 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.priority-badge {
+  display: inline-block;
+  margin-top: 8px;
+  color: white;
+  padding: 3px 8px;
+  border-radius: 3px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+/* Icon Styles */
+.icon-action {
+  margin-right: 8px;
+  min-width: 16px;
+}
+
+.icon-action.error {
+  color: #dc3545;
+}
+
+.icon-action.success {
+  color: #28a745;
+}
+
+.icon-action.info {
+  color: #007bff;
+}
+
+.icon-action.warning {
+  color: #ff6b6b;
+}
+
+.icon-action.neutral {
+  color: #666;
+}
+
+/* Checkboxes Container */
+.checkboxes-list {
+  line-height: 2;
+}
+
+/* Responsive Blog */
+@media (max-width: 768px) {
+  .blog-table {
+    font-size: 13px;
+  }
+
+  .blog-table th,
+  .blog-table td {
+    padding: 10px 8px;
+  }
+
+  .defense-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .defense-card {
+    padding: 14px;
+  }
+}
