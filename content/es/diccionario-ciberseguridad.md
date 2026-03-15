@@ -8,6 +8,8 @@ layout: "landing-ciberseguridad"
 translations:
 - lang: ca
   path: "/ca/diccionari-ciberseguretat/"
+- lang: en
+  path: "/en/cybersecurity-glossary/"
 faq_items:
 - question: "¿Por qué necesito entender la terminología de ciberseguridad?"
   answer: "Dominar estos términos te permite tomar decisiones informadas sobre seguridad, entender reportes de auditoría, evaluar soluciones y comunicar riesgos a tu equipo. No puedes proteger lo que no entiendes."
