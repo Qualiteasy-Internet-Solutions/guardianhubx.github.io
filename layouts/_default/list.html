@@ -58,7 +58,7 @@
             <div class="blog-card-meta text-muted mb-3 small">
               <span class="blog-date">
                 <i class="fas fa-calendar"></i>
-                {{ partial "localized-date.html" .PublishDate }}
+                {{ partial "localized-date.html" (dict "date" .PublishDate "lang" .Site.Language.Lang) }}
               </span>
               {{ if .ReadingTime }}
               <span class="blog-reading-time ms-3">

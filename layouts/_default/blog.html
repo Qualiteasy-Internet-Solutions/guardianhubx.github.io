@@ -28,7 +28,7 @@
         <div class="blog-meta text-muted mb-4">
           <span class="blog-date">
             <i class="fas fa-calendar"></i>
-            {{ partial "localized-date.html" .PublishDate }}
+            {{ partial "localized-date.html" (dict "date" .PublishDate "lang" .Site.Language.Lang) }}
           </span>
           {{ if .Params.author }}
           <span class="blog-author ms-3">
