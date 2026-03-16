@@ -29,14 +29,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
     languageSwitcher.addEventListener("change", function () {
       const selectedLang = this.value;
+      const currentPath = window.location.pathname;
+
+      // Check if we're on a blog page and trying to switch to English (no blog in English)
+      if (currentPath.includes("/blog/") && selectedLang === "en") {
+        alert("Blog content is not available in English. Only available in Spanish and Catalan.");
+        // Reset the selector to the current language
+        const currentLang = window.location.pathname.split("/")[1];
+        languageSwitcher.value = currentLang;
+        return;
+      }
 
       // Si hi ha traducció definida, redirigeix-hi
       if (window.translations && window.translations[selectedLang]) {
         window.location.href = window.translations[selectedLang];
       } else {
         // Sinó, canvia el prefix d'idioma
-        const currentPath = window.location.pathname.split("/").slice(2).join("/");
-        window.location.href = "/" + selectedLang + "/" + currentPath;
+        const pathSegments = window.location.pathname.split("/").slice(2).join("/");
+        window.location.href = "/" + selectedLang + "/" + pathSegments;
       }
     });
   }
