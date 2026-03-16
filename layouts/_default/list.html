@@ -58,7 +58,7 @@
             <div class="blog-card-meta text-muted mb-3 small">
               <span class="blog-date">
                 <i class="fas fa-calendar"></i>
-                {{ .PublishDate.Format "2 de January de 2006" }}
+                {{ partial "localized-date.html" .PublishDate }}
               </span>
               {{ if .ReadingTime }}
               <span class="blog-reading-time ms-3">

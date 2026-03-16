@@ -1,0 +1,16 @@
+{{- $lang := .Site.Language.Lang -}}
+{{- $day := .Day -}}
+{{- $year := .Year -}}
+{{- $month := .Month -}}
+
+{{- if eq $lang "ca" -}}
+  {{- $monthNames := slice "gener" "febrer" "març" "abril" "maig" "juny" "juliol" "agost" "setembre" "octubre" "novembre" "desembre" -}}
+  {{- $monthName := index $monthNames (sub $month 1) -}}
+  {{- printf "%d de %s de %d" $day $monthName $year -}}
+{{- else if eq $lang "es" -}}
+  {{- $monthNames := slice "enero" "febrero" "marzo" "abril" "mayo" "junio" "julio" "agosto" "septiembre" "octubre" "noviembre" "diciembre" -}}
+  {{- $monthName := index $monthNames (sub $month 1) -}}
+  {{- printf "%d de %s de %d" $day $monthName $year -}}
+{{- else -}}
+  {{- .Format "2 January 2006" -}}
+{{- end -}}
