@@ -30,12 +30,12 @@ document.addEventListener("DOMContentLoaded", function () {
     languageSwitcher.addEventListener("change", function () {
       const selectedLang = this.value;
       const currentPath = window.location.pathname;
+      const currentLang = window.currentLang;
 
       // Check if we're on a blog page and trying to switch to English (no blog in English)
       if (currentPath.includes("/blog/") && selectedLang === "en") {
         alert("Blog content is not available in English. Only available in Spanish and Catalan.");
         // Reset the selector to the current language
-        const currentLang = window.location.pathname.split("/")[1];
         languageSwitcher.value = currentLang;
         return;
       }
@@ -45,8 +45,24 @@ document.addEventListener("DOMContentLoaded", function () {
         window.location.href = window.translations[selectedLang];
       } else {
         // Sinó, canvia el prefix d'idioma
-        const pathSegments = window.location.pathname.split("/").slice(2).join("/");
-        window.location.href = "/" + selectedLang + "/" + pathSegments;
+        // Handle Spanish (default language without prefix) and other languages (with prefix)
+        let pathSegments;
+
+        if (currentLang === "es") {
+          // Spanish: /blog/article/ → remove leading slash and reconstruct with new lang prefix
+          pathSegments = currentPath.substring(1); // Remove leading /
+        } else {
+          // Other languages: /ca/blog/article/ or /en/blog/article/ → remove language prefix
+          pathSegments = currentPath.split("/").slice(2).join("/");
+        }
+
+        if (selectedLang === "es") {
+          // Going to Spanish (no prefix)
+          window.location.href = "/" + pathSegments;
+        } else {
+          // Going to another language (with prefix)
+          window.location.href = "/" + selectedLang + "/" + pathSegments;
+        }
       }
     });
   }
