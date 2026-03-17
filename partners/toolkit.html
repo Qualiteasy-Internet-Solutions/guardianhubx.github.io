@@ -110,7 +110,7 @@
 <div class="hero">
   <img src="/img/logo_GHX_01-01.webp" alt="GuardianHubX">
   <h1>Partner Toolkit</h1>
-  <p>Genera els teus links i banners de referral per GuardianRadar</p>
+  <p>Genera tus links y banners de referral para GuardianRadar</p>
 </div>
 
 <div class="container" style="max-width:720px; padding: 0 16px;">
@@ -139,7 +139,7 @@
 
     <!-- BANNERS -->
     <div class="section-title mt-4"><i class="fas fa-image"></i> Banners (970×250)</div>
-    <p style="font-size:0.85rem; color:#718096; margin-top:-10px; margin-bottom:20px;">Copia el codi HTML i enganxa'l a la teva web on vulguis mostrar el banner.</p>
+    <p style="font-size:0.85rem; color:#718096; margin-top:-10px; margin-bottom:20px;">Copia el código HTML y pégalo en tu web donde quieras mostrar el banner.</p>
 
     <!-- Banner ES 1 -->
     <div class="banner-card">
@@ -175,7 +175,7 @@
     <div class="banner-card">
       <div class="banner-meta">
         <span class="banner-label">Banner 1</span>
-        <span class="banner-lang">Català</span>
+        <span class="banner-lang">Catalán</span>
       </div>
       <div class="banner-preview">
         <img src="/img/banner-ca-1.webp" alt="GuardianRadar Banner CA 1">
@@ -190,7 +190,7 @@
     <div class="banner-card">
       <div class="banner-meta">
         <span class="banner-label">Banner 2</span>
-        <span class="banner-lang">Català</span>
+        <span class="banner-lang">Catalán</span>
       </div>
       <div class="banner-preview">
         <img src="/img/banner-ca-2.webp" alt="GuardianRadar Banner CA 2">
@@ -203,7 +203,7 @@
 
     <!-- BANNERS HTML/CSS 300x250 -->
     <div class="section-title mt-4"><i class="fas fa-code"></i> Banners HTML/CSS (300×250)</div>
-    <p style="font-size:0.85rem; color:#718096; margin-top:-10px; margin-bottom:20px;">Format rectangle, el més habitual per a webs i blogs. Copia el codi i enganxa'l directament al HTML de la teva web.</p>
+    <p style="font-size:0.85rem; color:#718096; margin-top:-10px; margin-bottom:20px;">Formato rectángulo, el más habitual en webs y blogs. Copia el código y pégalo directamente en el HTML de tu web.</p>
 
     <div class="html-banner-wrap">
 
@@ -257,24 +257,24 @@
 
   <!-- FORMULARI ALTA PARTNER -->
   <div class="partner-form-section" id="become-partner">
-    <h2><i class="fas fa-handshake me-2"></i>Vols ser partner?</h2>
-    <p>Si encara no tens codi de partner, envia'ns una sol·licitud i ens posarem en contacte amb tu per explicar-te les condicions del programa.</p>
+    <h2><i class="fas fa-handshake me-2"></i>¿Quieres ser partner?</h2>
+    <p>Si todavía no tienes código de partner, envíanos una solicitud y nos pondremos en contacto contigo para explicarte las condiciones del programa.</p>
 
     <div id="pf-form">
       <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
-        <input type="text" id="pf-nom" class="pf-input" placeholder="Nom i cognoms *">
+        <input type="text" id="pf-nom" class="pf-input" placeholder="Nombre y apellidos *">
         <input type="text" id="pf-empresa" class="pf-input" placeholder="Empresa">
       </div>
       <input type="email" id="pf-email" class="pf-input" placeholder="Email de contacte *">
       <input type="tel" id="pf-tel" class="pf-input" placeholder="Telèfon">
-      <textarea id="pf-msg" class="pf-input pf-textarea" placeholder="Explica'ns breument el teu perfil i com planteges promocionar GuardianRadar (opcional)"></textarea>
-      <button class="btn-send" onclick="sendPartnerForm()"><i class="fas fa-paper-plane me-2"></i>Enviar sol·licitud</button>
+      <textarea id="pf-msg" class="pf-input pf-textarea" placeholder="Cuéntanos brevemente tu perfil y cómo planeas promocionar GuardianRadar (opcional)"></textarea>
+      <button class="btn-send" onclick="sendPartnerForm()"><i class="fas fa-paper-plane me-2"></i>Enviar solicitud</button>
     </div>
 
     <div class="pf-success" id="pf-success">
       <i class="fas fa-check-circle"></i>
-      <h3>Sol·licitud enviada!</h3>
-      <p style="color:#94a3b8; margin:0;">Ens posarem en contacte amb tu en breu.</p>
+      <h3>¡Solicitud enviada!</h3>
+      <p style="color:#94a3b8; margin:0;">Nos pondremos en contacto contigo en breve.</p>
     </div>
   </div>
 
@@ -290,7 +290,7 @@ const BASE = 'https://guardianhubx.com';
 function generate() {
   const raw = document.getElementById('partnerCode').value.trim();
   const code = raw.toUpperCase().replace(/[^A-Z0-9_-]/g, '');
-  if (!code) { alert('Introdueix el teu codi de partner.'); return; }
+  if (!code) { alert('Introduce tu código de partner.'); return; }
 
   const urlEs = `${BASE}/es/guardianradar/?ref=${code}`;
   const urlCa = `${BASE}/ca/guardianradar/?ref=${code}`;
@@ -377,11 +377,11 @@ const PARTNER_SCRIPT_URL = 'POSA_AQUI_LA_URL_DEL_APPS_SCRIPT';
 function sendPartnerForm() {
   const nom = document.getElementById('pf-nom').value.trim();
   const email = document.getElementById('pf-email').value.trim();
-  if (!nom || !email) { alert('Els camps nom i email són obligatoris.'); return; }
+  if (!nom || !email) { alert('El nombre y el email son obligatorios.'); return; }
 
   const btn = document.querySelector('.btn-send');
   btn.disabled = true;
-  btn.innerHTML = '<i class="fas fa-circle-notch fa-spin me-2"></i>Enviant...';
+  btn.innerHTML = '<i class="fas fa-circle-notch fa-spin me-2"></i>Enviando...';
 
   const fd = new FormData();
   fd.append('nom', nom);
