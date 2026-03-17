@@ -7,9 +7,6 @@
   {{ partial "article-schema.html" . }}
 </head>
 <body class="{{ if .IsHome }}with-home-header{{ else }}with-fixed-header{{ end }}">
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-584VRJ97" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-
   {{ if .IsHome }}
     {{ partial "header-home.html" . }}
   {{ else }}

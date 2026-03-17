@@ -155,14 +155,15 @@ document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('radar-form');
     const container = document.getElementById('radar-form-container');
     const progressFill = document.getElementById('progress-fill');
-    const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyQ6Rjiq5J4mCaPZ9Hl6Jh5rWU96g847zmWnTd7UinZYGZCZKUqBkZ5jDLys0XGKigY/exec'; 
+    const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyouzVDi5pt9qo1s4_Ig_u0j5jul9mZk46-HtRfzeWQFQ_IzUnZ1MCFEk2-HMsz9Mwb/exec';
 
     let step = 0;
-    let data = { 
-        pack: '', empresa: '', contacte_nom: '', adreca: '', cp: '', poblacio: '', 
+    let data = {
+        pack: '', empresa: '', contacte_nom: '', adreca: '', cp: '', poblacio: '',
         provincia: '', pais: '{{ i18n "radar_default_country" | safeJS }}',
-        nif: '', telefon: '', email_reg: '', admin_nom: '', admin_dni: '', 
-        contacte_whatsapp: '', dominis: '', emails_radar: '', pagament: ''
+        nif: '', telefon: '', email_reg: '', admin_nom: '', admin_dni: '',
+        contacte_whatsapp: '', dominis: '', emails_radar: '', pagament: '',
+        referral: (typeof window.getGhxReferral === 'function') ? window.getGhxReferral() : ''
     };
 
     function render() {

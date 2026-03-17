@@ -92,8 +92,8 @@ Landing pages use centralized Hugo shortcodes for contact components (DRY princi
 **Applied to:** All landing pages with `layout: landing-ciberseguridad` (phishing training, cybersecurity guide, cyber test, etc.)
 
 ### Third-Party Integrations
-- Google Tag Manager: `GTM-584VRJ97` (in head.html + noscript in baseof)
-- Cookiebot: consent management (GDPR)
+- Google Tag Manager: `GTM-584VRJ97` — loaded conditionally after analytics consent via cookieconsent-config.js
+- vanilla-cookieconsent v3: consent management (GDPR) — self-hosted at `static/js/cookieconsent.umd.js`, config at `static/js/cookieconsent-config.js`
 - Supabase: used in Space Invaders leaderboard (spaceinvaders-form.html)
 - Brevo (Sendinblue): newsletter forms
 - **Google Apps Script:** Cybersecurity Assessment Form (Gemini AI + PDF generation)
