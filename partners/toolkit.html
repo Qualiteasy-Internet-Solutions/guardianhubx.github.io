@@ -372,7 +372,7 @@ function copyCode(id, btn) {
 }
 
 // Formulari partner
-const PARTNER_SCRIPT_URL = 'POSA_AQUI_LA_URL_DEL_APPS_SCRIPT';
+const PARTNER_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzPPxawkK4p8IRoJddxjtzIcKY1P-eUeVZFgyNcV4tJSQ6ARecBTDcfHSZFlZOtX8eD/exec';
 
 function sendPartnerForm() {
   const nom = document.getElementById('pf-nom').value.trim();
@@ -384,6 +384,7 @@ function sendPartnerForm() {
   btn.innerHTML = '<i class="fas fa-circle-notch fa-spin me-2"></i>Enviando...';
 
   const fd = new FormData();
+  fd.append('tipus', 'partner');
   fd.append('nom', nom);
   fd.append('empresa', document.getElementById('pf-empresa').value.trim());
   fd.append('email', email);
