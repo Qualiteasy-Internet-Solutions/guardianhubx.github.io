@@ -33,7 +33,10 @@ jobs:
 
       - name: Generate PDF from Markdown
         run: |
-          pandoc condiciones-radar.md -f markdown -t html -o /tmp/condiciones.html
+          pandoc condiciones-radar.md -f markdown -t html \
+            --metadata charset=utf-8 \
+            -H <(echo '<meta charset="utf-8">') \
+            -o /tmp/condiciones.html
           weasyprint /tmp/condiciones.html static/docs/condiciones-guardianradar.pdf
 
       - name: Commit and push PDF
