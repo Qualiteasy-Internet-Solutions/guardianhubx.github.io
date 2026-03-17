@@ -45,6 +45,50 @@
   .btn-copy-code.copied { background: #48bb78; border-color: #48bb78; color: white; }
 
   .footer-note { text-align: center; color: #a0aec0; font-size: 0.82rem; padding: 24px; }
+
+  /* HTML/CSS banners 300x250 */
+  .html-banner-wrap { display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 20px; }
+  .html-banner-item { flex: 1; min-width: 300px; background: white; border-radius: 12px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+  .html-banner-preview { display: flex; justify-content: center; margin-bottom: 14px; }
+
+  /* Banner design A: fosc amb il·lustració */
+  .gr-banner-a {
+    width: 300px; height: 250px; background: linear-gradient(135deg, #0a1628 0%, #1a3a6b 100%);
+    display: flex; flex-direction: column; justify-content: space-between;
+    padding: 18px; box-sizing: border-box; text-decoration: none; color: white;
+    font-family: Arial, sans-serif; overflow: hidden; position: relative;
+  }
+  .gr-banner-a .ba-img {
+    position: absolute; right: -10px; bottom: -10px; width: 140px; height: 140px;
+    object-fit: cover; opacity: 0.35; border-radius: 50%;
+  }
+  .gr-banner-a .ba-logo { height: 28px; width: auto; margin-bottom: 10px; }
+  .gr-banner-a .ba-title { font-size: 15px; font-weight: 700; line-height: 1.3; margin-bottom: 6px; }
+  .gr-banner-a .ba-sub { font-size: 11px; color: #94a3b8; line-height: 1.4; }
+  .gr-banner-a .ba-cta {
+    background: #007BFF; color: white; font-size: 12px; font-weight: 700;
+    padding: 8px 16px; border-radius: 6px; display: inline-block; margin-top: 12px;
+    text-align: center; position: relative; z-index: 1;
+  }
+
+  /* Banner design B: clar amb imatge de fons */
+  .gr-banner-b {
+    width: 300px; height: 250px;
+    background: url('/img/guardianradar-informe.webp') center/cover no-repeat;
+    display: flex; flex-direction: column; justify-content: flex-end;
+    padding: 0; box-sizing: border-box; text-decoration: none; color: white;
+    font-family: Arial, sans-serif; overflow: hidden; position: relative;
+  }
+  .gr-banner-b .bb-overlay {
+    background: linear-gradient(to top, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.1) 100%);
+    padding: 16px 18px 18px; position: relative; z-index: 1;
+  }
+  .gr-banner-b .bb-logo { height: 22px; width: auto; margin-bottom: 8px; display: block; }
+  .gr-banner-b .bb-title { font-size: 14px; font-weight: 700; line-height: 1.3; margin-bottom: 8px; }
+  .gr-banner-b .bb-cta {
+    background: #007BFF; color: white; font-size: 11px; font-weight: 700;
+    padding: 7px 14px; border-radius: 5px; display: inline-block;
+  }
 </style>
 </head>
 <body>
@@ -143,6 +187,58 @@
       </div>
     </div>
 
+    <!-- BANNERS HTML/CSS 300x250 -->
+    <div class="section-title mt-4"><i class="fas fa-code"></i> Banners HTML/CSS (300×250)</div>
+    <p style="font-size:0.85rem; color:#718096; margin-top:-10px; margin-bottom:20px;">Format rectangle, el més habitual per a webs i blogs. Copia el codi i enganxa'l directament al HTML de la teva web.</p>
+
+    <div class="html-banner-wrap">
+
+      <!-- Banner A -->
+      <div class="html-banner-item">
+        <div class="banner-meta">
+          <span class="banner-label">Banner Rectangle A</span>
+          <span class="banner-lang">ES + CA</span>
+        </div>
+        <div class="html-banner-preview">
+          <a class="gr-banner-a" id="preview-banner-a" href="#" target="_blank" rel="noopener sponsored">
+            <img src="/img/logo_GHX_01-01.webp" alt="GuardianHubX" class="ba-logo">
+            <div>
+              <div class="ba-title">Protege tu empresa de amenazas digitales</div>
+              <div class="ba-sub">Monitorización de dominios, correos y credenciales en la Dark Web.</div>
+              <div class="ba-cta">Descubre GuardianRadar →</div>
+            </div>
+            <img src="/img/cybersecurity-illustration.webp" alt="" class="ba-img">
+          </a>
+        </div>
+        <div class="code-block">
+          <button class="btn-copy-code" onclick="copyCode('code-html-a', this)">Copiar</button>
+          <pre id="code-html-a"></pre>
+        </div>
+      </div>
+
+      <!-- Banner B -->
+      <div class="html-banner-item">
+        <div class="banner-meta">
+          <span class="banner-label">Banner Rectangle B</span>
+          <span class="banner-lang">ES + CA</span>
+        </div>
+        <div class="html-banner-preview">
+          <a class="gr-banner-b" id="preview-banner-b" href="#" target="_blank" rel="noopener sponsored">
+            <div class="bb-overlay">
+              <img src="/img/guardianradar-logo.webp" alt="GuardianRadar" class="bb-logo">
+              <div class="bb-title">Vigilancia digital para autónomos y pymes</div>
+              <div class="bb-cta">Saber más →</div>
+            </div>
+          </a>
+        </div>
+        <div class="code-block">
+          <button class="btn-copy-code" onclick="copyCode('code-html-b', this)">Copiar</button>
+          <pre id="code-html-b"></pre>
+        </div>
+      </div>
+
+    </div><!-- /html-banner-wrap -->
+
   </div><!-- /results -->
 
   <div class="footer-note">
@@ -181,6 +277,34 @@ function generate() {
        style="max-width:100%; height:auto; display:block;">
 </a>`;
   });
+
+  // Actualitzar previews i links dels banners HTML/CSS
+  document.getElementById('preview-banner-a').href = urlEs;
+  document.getElementById('preview-banner-b').href = urlEs;
+
+  // Generar codi HTML banner A
+  document.getElementById('code-html-a').textContent =
+`<a href="${urlEs}" target="_blank" rel="noopener sponsored"
+   style="width:300px;height:250px;background:linear-gradient(135deg,#0a1628 0%,#1a3a6b 100%);display:flex;flex-direction:column;justify-content:space-between;padding:18px;box-sizing:border-box;text-decoration:none;color:white;font-family:Arial,sans-serif;overflow:hidden;position:relative;">
+  <img src="${BASE}/img/logo_GHX_01-01.webp" alt="GuardianHubX" style="height:28px;width:auto;margin-bottom:10px;">
+  <div>
+    <div style="font-size:15px;font-weight:700;line-height:1.3;margin-bottom:6px;">Protege tu empresa de amenazas digitales</div>
+    <div style="font-size:11px;color:#94a3b8;line-height:1.4;">Monitorización de dominios, correos y credenciales en la Dark Web.</div>
+    <div style="background:#007BFF;color:white;font-size:12px;font-weight:700;padding:8px 16px;border-radius:6px;display:inline-block;margin-top:12px;">Descubre GuardianRadar →</div>
+  </div>
+  <img src="${BASE}/img/cybersecurity-illustration.webp" alt="" style="position:absolute;right:-10px;bottom:-10px;width:140px;height:140px;object-fit:cover;opacity:0.35;border-radius:50%;">
+</a>`;
+
+  // Generar codi HTML banner B
+  document.getElementById('code-html-b').textContent =
+`<a href="${urlEs}" target="_blank" rel="noopener sponsored"
+   style="width:300px;height:250px;background:url(${BASE}/img/guardianradar-informe.webp) center/cover no-repeat;display:flex;flex-direction:column;justify-content:flex-end;box-sizing:border-box;text-decoration:none;color:white;font-family:Arial,sans-serif;overflow:hidden;position:relative;">
+  <div style="background:linear-gradient(to top,rgba(0,0,0,0.88) 0%,rgba(0,0,0,0.1) 100%);padding:16px 18px 18px;">
+    <img src="${BASE}/img/guardianradar-logo.webp" alt="GuardianRadar" style="height:22px;width:auto;margin-bottom:8px;display:block;">
+    <div style="font-size:14px;font-weight:700;line-height:1.3;margin-bottom:8px;">Vigilancia digital para autónomos y pymes</div>
+    <div style="background:#007BFF;color:white;font-size:11px;font-weight:700;padding:7px 14px;border-radius:5px;display:inline-block;">Saber más →</div>
+  </div>
+</a>`;
 
   document.getElementById('results').style.display = 'block';
   document.getElementById('results').scrollIntoView({ behavior: 'smooth', block: 'start' });
