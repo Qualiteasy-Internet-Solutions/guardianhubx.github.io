@@ -547,6 +547,12 @@
   translation: "No payment now:"
 - id: "radar_payment_notice_body"
   translation: "You will shortly receive an email with instructions to complete your payment, either by card (TPV) or bank transfer. No charge is made at this stage."
+- id: "radar_terms_title"
+  translation: "Terms and Conditions"
+- id: "radar_terms_scroll_hint"
+  translation: "Scroll to the bottom to accept"
+- id: "radar_terms_accept_label"
+  translation: "I have read and accept the Terms and Conditions of the Guardian Radar service"
 
 - id: "radar_pack_autonom_ex"
   translation: "Ideal for professionals and individual projects."

@@ -555,6 +555,12 @@
   translation: "Sense pagament ara:"
 - id: "radar_payment_notice_body"
   translation: "En breu rebràs per correu les instruccions per completar el pagament, ja sigui mitjançant TPV (targeta) o transferència bancària. No es realitza cap cobrament en aquest moment."
+- id: "radar_terms_title"
+  translation: "Termes i Condicions"
+- id: "radar_terms_scroll_hint"
+  translation: "Desplaça't fins al final per poder acceptar"
+- id: "radar_terms_accept_label"
+  translation: "He llegit i accepto els Termes i Condicions del servei Guardian Radar"
 
 - id: "radar_pack_autonom_ex"
   translation: "Ideal per a professionals i projectes individuals."
