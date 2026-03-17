@@ -551,6 +551,10 @@
   translation: "Targeta de Crèdit"
 - id: "radar_payment_transfer"
   translation: "Transferència Bancària"
+- id: "radar_payment_notice_title"
+  translation: "Sense pagament ara:"
+- id: "radar_payment_notice_body"
+  translation: "En breu rebràs per correu les instruccions per completar el pagament, ja sigui mitjançant TPV (targeta) o transferència bancària. No es realitza cap cobrament en aquest moment."
 
 - id: "radar_pack_autonom_ex"
   translation: "Ideal per a professionals i projectes individuals."

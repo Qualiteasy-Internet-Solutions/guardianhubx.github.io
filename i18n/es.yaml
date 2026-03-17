@@ -550,6 +550,10 @@
   translation: "Tarjeta de Crédito"
 - id: "radar_payment_transfer"
   translation: "Transferencia Bancaria"
+- id: "radar_payment_notice_title"
+  translation: "Sin pago ahora:"
+- id: "radar_payment_notice_body"
+  translation: "En breve recibirás por correo las instrucciones para completar el pago, ya sea mediante TPV (tarjeta) o transferencia bancaria. No se realiza ningún cobro en este momento."
 
 - id: "radar_pack_autonom_ex"
   translation: "Ideal para profesionales y proyectos individuales."

@@ -73,6 +73,16 @@
         .form-grid.cols-cp-city { grid-template-columns: 1fr 2fr; } 
     }
 
+    .payment-notice {
+        background-color: #fff8e1;
+        border-left: 5px solid #f59e0b;
+        padding: 16px 20px;
+        border-radius: 8px;
+        font-size: 0.85rem;
+        color: #4a5568;
+        margin-top: 25px;
+    }
+
     @media (max-width: 480px) {
         .form-slide { padding: 25px 15px; }
         .form-input { padding: 12px; }
@@ -242,10 +252,13 @@ document.addEventListener('DOMContentLoaded', function() {
                         <p style="color:var(--text-light);">{{ i18n "radar_payment_subtitle" | safeJS }}</p>
                     </div>
                     <div class="pack-selection">
-                        <div class="pack-card pay-option" data-pay="targeta"><i class="fas fa-credit-card"></i><span>{{ i18n "radar_payment_card" | safeJS }}</span></div>
                         <div class="pack-card pay-option" data-pay="transferencia"><i class="fas fa-university"></i><span>{{ i18n "radar_payment_transfer" | safeJS }}</span></div>
+                        <div class="pack-card pay-option" data-pay="targeta"><i class="fas fa-credit-card"></i><span>{{ i18n "radar_payment_card" | safeJS }}</span></div>
                     </div>
-                    <button type="button" id="final-btn" class="btn-main" style="display:none; margin-top:30px;">{{ i18n "radar_btn_activate_radar" | safeJS }}</button>
+                    <div class="payment-notice">
+                        💳 <strong>{{ i18n "radar_payment_notice_title" | safeJS }}</strong> {{ i18n "radar_payment_notice_body" | safeJS }}
+                    </div>
+                    <button type="button" id="final-btn" class="btn-main" style="display:none; margin-top:20px;">{{ i18n "radar_btn_activate_radar" | safeJS }}</button>
                 </div>`;
                 break;
 

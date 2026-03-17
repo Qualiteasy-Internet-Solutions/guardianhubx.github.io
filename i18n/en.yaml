@@ -543,6 +543,10 @@
   translation: "Credit Card"
 - id: "radar_payment_transfer"
   translation: "Bank Transfer"
+- id: "radar_payment_notice_title"
+  translation: "No payment now:"
+- id: "radar_payment_notice_body"
+  translation: "You will shortly receive an email with instructions to complete your payment, either by card (TPV) or bank transfer. No charge is made at this stage."
 
 - id: "radar_pack_autonom_ex"
   translation: "Ideal for professionals and individual projects."
