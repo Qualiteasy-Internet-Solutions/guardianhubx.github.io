@@ -46,6 +46,20 @@
 
   .footer-note { text-align: center; color: #a0aec0; font-size: 0.82rem; padding: 24px; }
 
+  /* Partner form */
+  .partner-form-section { background: linear-gradient(135deg, #0a1628 0%, #1a3a6b 100%); border-radius: 16px; padding: 36px 32px; margin-bottom: 32px; color: white; }
+  .partner-form-section h2 { font-size: 1.3rem; font-weight: 700; margin-bottom: 8px; }
+  .partner-form-section p { color: #94a3b8; font-size: 0.9rem; margin-bottom: 24px; }
+  .pf-input { width: 100%; padding: 13px 16px; border: 1.5px solid rgba(255,255,255,0.15); border-radius: 10px; font-size: 0.95rem; background: rgba(255,255,255,0.07); color: white; margin-bottom: 12px; box-sizing: border-box; }
+  .pf-input::placeholder { color: #718096; }
+  .pf-input:focus { outline: none; border-color: #007BFF; background: rgba(255,255,255,0.1); }
+  .pf-textarea { resize: vertical; min-height: 90px; }
+  .btn-send { background: #007BFF; color: white; border: none; border-radius: 10px; padding: 14px 28px; font-weight: 700; font-size: 1rem; width: 100%; cursor: pointer; transition: 0.2s; margin-top: 4px; }
+  .btn-send:hover { background: #006ae0; }
+  .pf-success { display: none; text-align: center; padding: 24px 0; }
+  .pf-success i { font-size: 48px; color: #48bb78; margin-bottom: 12px; }
+  .pf-success h3 { font-size: 1.1rem; font-weight: 700; }
+
   /* HTML/CSS banners 300x250 */
   .html-banner-wrap { display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 20px; }
   .html-banner-item { flex: 1; min-width: 300px; background: white; border-radius: 12px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
@@ -241,6 +255,29 @@
 
   </div><!-- /results -->
 
+  <!-- FORMULARI ALTA PARTNER -->
+  <div class="partner-form-section" id="become-partner">
+    <h2><i class="fas fa-handshake me-2"></i>Vols ser partner?</h2>
+    <p>Si encara no tens codi de partner, envia'ns una sol·licitud i ens posarem en contacte amb tu per explicar-te les condicions del programa.</p>
+
+    <div id="pf-form">
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+        <input type="text" id="pf-nom" class="pf-input" placeholder="Nom i cognoms *">
+        <input type="text" id="pf-empresa" class="pf-input" placeholder="Empresa">
+      </div>
+      <input type="email" id="pf-email" class="pf-input" placeholder="Email de contacte *">
+      <input type="tel" id="pf-tel" class="pf-input" placeholder="Telèfon">
+      <textarea id="pf-msg" class="pf-input pf-textarea" placeholder="Explica'ns breument el teu perfil i com planteges promocionar GuardianRadar (opcional)"></textarea>
+      <button class="btn-send" onclick="sendPartnerForm()"><i class="fas fa-paper-plane me-2"></i>Enviar sol·licitud</button>
+    </div>
+
+    <div class="pf-success" id="pf-success">
+      <i class="fas fa-check-circle"></i>
+      <h3>Sol·licitud enviada!</h3>
+      <p style="color:#94a3b8; margin:0;">Ens posarem en contacte amb tu en breu.</p>
+    </div>
+  </div>
+
   <div class="footer-note">
     GuardianHubX Partner Program · <a href="mailto:inogues@qualiteasy.com" style="color:#007BFF;">inogues@qualiteasy.com</a>
   </div>
@@ -332,6 +369,36 @@ function copyCode(id, btn) {
       btn.textContent = 'Copiar';
     }, 2000);
   });
+}
+
+// Formulari partner
+const PARTNER_SCRIPT_URL = 'POSA_AQUI_LA_URL_DEL_APPS_SCRIPT';
+
+function sendPartnerForm() {
+  const nom = document.getElementById('pf-nom').value.trim();
+  const email = document.getElementById('pf-email').value.trim();
+  if (!nom || !email) { alert('Els camps nom i email són obligatoris.'); return; }
+
+  const btn = document.querySelector('.btn-send');
+  btn.disabled = true;
+  btn.innerHTML = '<i class="fas fa-circle-notch fa-spin me-2"></i>Enviant...';
+
+  const fd = new FormData();
+  fd.append('nom', nom);
+  fd.append('empresa', document.getElementById('pf-empresa').value.trim());
+  fd.append('email', email);
+  fd.append('tel', document.getElementById('pf-tel').value.trim());
+  fd.append('msg', document.getElementById('pf-msg').value.trim());
+
+  fetch(PARTNER_SCRIPT_URL, { method: 'POST', body: fd })
+    .then(() => {
+      document.getElementById('pf-form').style.display = 'none';
+      document.getElementById('pf-success').style.display = 'block';
+    })
+    .catch(() => {
+      document.getElementById('pf-form').style.display = 'none';
+      document.getElementById('pf-success').style.display = 'block';
+    });
 }
 
 // Generar automàticament si hi ha ?code= a la URL
