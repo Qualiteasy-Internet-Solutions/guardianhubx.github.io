@@ -25,19 +25,16 @@ jobs:
       - name: Create docs directory
         run: mkdir -p static/docs
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '18'
-
-      - name: Install markdown-pdf
-        run: npm install -g markdown-pdf
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc wkhtmltopdf xvfb
 
       - name: Generate PDF from Markdown
         run: |
-          markdown-pdf \
-            -o static/docs/condiciones-guardianradar.pdf \
-            condiciones-radar.md
+          xvfb-run --auto-servernum --server-args="-screen 0 1024x768x24" \
+            wkhtmltopdf - static/docs/condiciones-guardianradar.pdf \
+            < <(pandoc condiciones-radar.md -f markdown -t html)
 
       - name: Commit and push PDF
         run: |
