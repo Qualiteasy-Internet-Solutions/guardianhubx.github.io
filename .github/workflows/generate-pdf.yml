@@ -43,3 +43,11 @@ jobs:
           git add static/docs/condiciones-guardianradar.pdf
           git commit -m "auto: regenerate PDF from condiciones-radar.md" || true
           git push
+
+      - name: Trigger deploy workflow
+        run: |
+          curl -X POST \
+            -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github.v3+json" \
+            https://api.github.com/repos/${{ github.repository }}/actions/workflows/deploy.yml/dispatches \
+            -d '{"ref":"main"}'
