@@ -25,17 +25,19 @@ jobs:
       - name: Create docs directory
         run: mkdir -p static/docs
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install markdown-pdf
+        run: npm install -g markdown-pdf
+
       - name: Generate PDF from Markdown
         run: |
-          pandoc condiciones-radar.md \
-            -f markdown \
-            -t pdf \
-            --pdf-engine=wkhtmltopdf \
+          markdown-pdf \
             -o static/docs/condiciones-guardianradar.pdf \
-            --metadata title="Términos y Condiciones - Guardian Radar" \
-            --variable mainfont=Arial \
-            --variable fontsize=11pt \
-            --variable margins=2cm
+            condiciones-radar.md
 
       - name: Commit and push PDF
         run: |
