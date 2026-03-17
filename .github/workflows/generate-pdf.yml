@@ -1,0 +1,46 @@
+name: Generate PDF from Markdown
+
+on:
+  push:
+    paths:
+      - 'condiciones-radar.md'
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  generate-pdf:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up pandoc
+        uses: r-lib/actions/setup-pandoc@v2
+
+      - name: Create docs directory
+        run: mkdir -p static/docs
+
+      - name: Generate PDF from Markdown
+        run: |
+          pandoc condiciones-radar.md \
+            -f markdown \
+            -t pdf \
+            --pdf-engine=wkhtmltopdf \
+            -o static/docs/condiciones-guardianradar.pdf \
+            --metadata title="Términos y Condiciones - Guardian Radar" \
+            --variable mainfont=Arial \
+            --variable fontsize=11pt \
+            --variable margins=2cm
+
+      - name: Commit and push PDF
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add static/docs/condiciones-guardianradar.pdf
+          git commit -m "auto: regenerate PDF from condiciones-radar.md" || true
+          git push
