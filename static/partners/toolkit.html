@@ -7,12 +7,13 @@
 <title>Partner Toolkit – GuardianHubX</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<script src="https://www.google.com/recaptcha/api.js?render=6LfRmeoqAAAAAH-Dizpt81ZOBrU5YT-utPXeBUNn" async defer></script>
 <style>
   body { background: #f8fafc; font-family: 'Segoe UI', sans-serif; }
-  .hero { background: linear-gradient(135deg, #0a1628 0%, #1a3a6b 100%); color: white; padding: 40px 20px 30px; text-align: center; }
+  .hero { background: #f1f5f9; color: #1a202c; padding: 40px 20px 30px; text-align: center; border-bottom: 1px solid #e2e8f0; }
   .hero img { height: 48px; margin-bottom: 16px; }
   .hero h1 { font-size: 1.6rem; font-weight: 700; margin-bottom: 6px; }
-  .hero p { color: #94a3b8; font-size: 0.95rem; margin: 0; }
+  .hero p { color: #718096; font-size: 0.95rem; margin: 0; }
 
   .input-card { background: white; border-radius: 16px; padding: 32px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); max-width: 560px; margin: -24px auto 32px; position: relative; }
   .input-card label { font-weight: 700; font-size: 0.9rem; color: #1a202c; margin-bottom: 8px; display: block; }
@@ -76,7 +77,7 @@
     position: absolute; right: -10px; bottom: -10px; width: 140px; height: 140px;
     object-fit: cover; opacity: 0.35; border-radius: 50%;
   }
-  .gr-banner-a .ba-logo { height: 28px; width: auto; margin-bottom: 10px; }
+  .gr-banner-a .ba-logo { height: 75px; width: auto; max-width: 220px; object-fit: contain; margin-bottom: 10px; filter: brightness(0) invert(1); }
   .gr-banner-a .ba-title { font-size: 15px; font-weight: 700; line-height: 1.3; margin-bottom: 6px; }
   .gr-banner-a .ba-sub { font-size: 11px; color: #94a3b8; line-height: 1.4; }
   .gr-banner-a .ba-cta {
@@ -210,7 +211,7 @@
       <!-- Banner A -->
       <div class="html-banner-item">
         <div class="banner-meta">
-          <span class="banner-label">Banner Rectangle A</span>
+          <span class="banner-label">Banner Rectángulo A</span>
           <span class="banner-lang">ES + CA</span>
         </div>
         <div class="html-banner-preview">
@@ -233,7 +234,7 @@
       <!-- Banner B -->
       <div class="html-banner-item">
         <div class="banner-meta">
-          <span class="banner-label">Banner Rectangle B</span>
+          <span class="banner-label">Banner Rectángulo B</span>
           <span class="banner-lang">ES + CA</span>
         </div>
         <div class="html-banner-preview">
@@ -279,7 +280,7 @@
   </div>
 
   <div class="footer-note">
-    GuardianHubX Partner Program · <a href="mailto:inogues@qualiteasy.com" style="color:#007BFF;">inogues@qualiteasy.com</a>
+    GuardianHubX Partner Program · <a href="mailto:info@guardianhubx.com" style="color:#007BFF;">info@guardianhubx.com</a>
   </div>
 
 </div>
@@ -319,29 +320,15 @@ function generate() {
   document.getElementById('preview-banner-a').href = urlEs;
   document.getElementById('preview-banner-b').href = urlEs;
 
-  // Generar codi HTML banner A
+  // Generar snippet JS banner A
   document.getElementById('code-html-a').textContent =
-`<a href="${urlEs}" target="_blank" rel="noopener sponsored"
-   style="width:300px;height:250px;background:linear-gradient(135deg,#0a1628 0%,#1a3a6b 100%);display:flex;flex-direction:column;justify-content:space-between;padding:18px;box-sizing:border-box;text-decoration:none;color:white;font-family:Arial,sans-serif;overflow:hidden;position:relative;">
-  <img src="${BASE}/img/logo_GHX_01-01.webp" alt="GuardianHubX" style="height:28px;width:auto;margin-bottom:10px;">
-  <div>
-    <div style="font-size:15px;font-weight:700;line-height:1.3;margin-bottom:6px;">Protege tu empresa de amenazas digitales</div>
-    <div style="font-size:11px;color:#94a3b8;line-height:1.4;">Monitorización de dominios, correos y credenciales en la Dark Web.</div>
-    <div style="background:#007BFF;color:white;font-size:12px;font-weight:700;padding:8px 16px;border-radius:6px;display:inline-block;margin-top:12px;">Descubre GuardianRadar →</div>
-  </div>
-  <img src="${BASE}/img/cybersecurity-illustration.webp" alt="" style="position:absolute;right:-10px;bottom:-10px;width:140px;height:140px;object-fit:cover;opacity:0.35;border-radius:50%;">
-</a>`;
+`<div id="ghx-banner-a"></div>
+<script src="${BASE}/partners/banner.js?ref=${code}&type=a"><\/script>`;
 
-  // Generar codi HTML banner B
+  // Generar snippet JS banner B
   document.getElementById('code-html-b').textContent =
-`<a href="${urlEs}" target="_blank" rel="noopener sponsored"
-   style="width:300px;height:250px;background:url(${BASE}/img/guardianradar-informe.webp) center/cover no-repeat;display:flex;flex-direction:column;justify-content:flex-end;box-sizing:border-box;text-decoration:none;color:white;font-family:Arial,sans-serif;overflow:hidden;position:relative;">
-  <div style="background:linear-gradient(to top,rgba(0,0,0,0.88) 0%,rgba(0,0,0,0.1) 100%);padding:16px 18px 18px;">
-    <img src="${BASE}/img/guardianradar-logo.webp" alt="GuardianRadar" style="height:22px;width:auto;margin-bottom:8px;display:block;">
-    <div style="font-size:14px;font-weight:700;line-height:1.3;margin-bottom:8px;">Vigilancia digital para autónomos y pymes</div>
-    <div style="background:#007BFF;color:white;font-size:11px;font-weight:700;padding:7px 14px;border-radius:5px;display:inline-block;">Saber más →</div>
-  </div>
-</a>`;
+`<div id="ghx-banner-b"></div>
+<script src="${BASE}/partners/banner.js?ref=${code}&type=b"><\/script>`;
 
   document.getElementById('results').style.display = 'block';
   document.getElementById('results').scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -383,23 +370,29 @@ function sendPartnerForm() {
   btn.disabled = true;
   btn.innerHTML = '<i class="fas fa-circle-notch fa-spin me-2"></i>Enviando...';
 
-  const fd = new FormData();
-  fd.append('tipus', 'partner');
-  fd.append('nom', nom);
-  fd.append('empresa', document.getElementById('pf-empresa').value.trim());
-  fd.append('email', email);
-  fd.append('tel', document.getElementById('pf-tel').value.trim());
-  fd.append('msg', document.getElementById('pf-msg').value.trim());
+  grecaptcha.ready(function() {
+    grecaptcha.execute('6LfRmeoqAAAAAH-Dizpt81ZOBrU5YT-utPXeBUNn', { action: 'partner_form' })
+      .then(function(token) {
+        const fd = new FormData();
+        fd.append('tipus', 'partner');
+        fd.append('nom', nom);
+        fd.append('empresa', document.getElementById('pf-empresa').value.trim());
+        fd.append('email', email);
+        fd.append('tel', document.getElementById('pf-tel').value.trim());
+        fd.append('msg', document.getElementById('pf-msg').value.trim());
+        fd.append('recaptcha_token', token);
 
-  fetch(PARTNER_SCRIPT_URL, { method: 'POST', body: fd })
-    .then(() => {
-      document.getElementById('pf-form').style.display = 'none';
-      document.getElementById('pf-success').style.display = 'block';
-    })
-    .catch(() => {
-      document.getElementById('pf-form').style.display = 'none';
-      document.getElementById('pf-success').style.display = 'block';
-    });
+        fetch(PARTNER_SCRIPT_URL, { method: 'POST', body: fd })
+          .then(() => {
+            document.getElementById('pf-form').style.display = 'none';
+            document.getElementById('pf-success').style.display = 'block';
+          })
+          .catch(() => {
+            document.getElementById('pf-form').style.display = 'none';
+            document.getElementById('pf-success').style.display = 'block';
+          });
+      });
+  });
 }
 
 // Generar automàticament si hi ha ?code= a la URL

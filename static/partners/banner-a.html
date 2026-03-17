@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex,nofollow">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 300px; height: 250px; overflow: hidden; }
+  a {
+    display: flex; flex-direction: column; justify-content: space-between;
+    width: 300px; height: 250px;
+    background: linear-gradient(135deg, #0a1628 0%, #1a3a6b 100%);
+    padding: 18px; text-decoration: none; color: white;
+    font-family: Arial, sans-serif; overflow: hidden; position: relative;
+  }
+  .logo { height: 28px; width: auto; margin-bottom: 10px; }
+  .title { font-size: 15px; font-weight: 700; line-height: 1.3; margin-bottom: 6px; }
+  .sub { font-size: 11px; color: #94a3b8; line-height: 1.4; }
+  .cta {
+    background: #007BFF; color: white; font-size: 12px; font-weight: 700;
+    padding: 8px 16px; border-radius: 6px; display: inline-block;
+    margin-top: 12px; position: relative; z-index: 1;
+  }
+  .bg-img {
+    position: absolute; right: -10px; bottom: -10px;
+    width: 140px; height: 140px; object-fit: cover;
+    opacity: 0.35; border-radius: 50%;
+  }
+</style>
+</head>
+<body>
+<a id="banner-link" href="#" target="_blank" rel="noopener sponsored">
+  <img src="/img/logo_GHX_01-01.webp" alt="GuardianHubX" class="logo">
+  <div>
+    <div class="title">Protege tu empresa de amenazas digitales</div>
+    <div class="sub">Monitorización de dominios, correos y credenciales en la Dark Web.</div>
+    <div class="cta">Descubre GuardianRadar →</div>
+  </div>
+  <img src="/img/cybersecurity-illustration.webp" alt="" class="bg-img">
+</a>
+<script>
+  var ref = new URLSearchParams(window.location.search).get('ref') || '';
+  document.getElementById('banner-link').href =
+    'https://guardianhubx.com/es/guardianradar/' + (ref ? '?ref=' + ref : '');
+</script>
+</body>
+</html>
