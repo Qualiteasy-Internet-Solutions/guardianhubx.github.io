@@ -551,6 +551,8 @@
   translation: "Targeta de Crèdit"
 - id: "radar_payment_transfer"
   translation: "Transferència Bancària"
+- id: "radar_payment_partner"
+  translation: "Partner"
 - id: "radar_payment_notice_title"
   translation: "Sense pagament ara:"
 - id: "radar_payment_notice_body"

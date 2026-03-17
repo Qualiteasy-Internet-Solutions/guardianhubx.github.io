@@ -543,6 +543,8 @@
   translation: "Credit Card"
 - id: "radar_payment_transfer"
   translation: "Bank Transfer"
+- id: "radar_payment_partner"
+  translation: "Partner"
 - id: "radar_payment_notice_title"
   translation: "No payment now:"
 - id: "radar_payment_notice_body"
