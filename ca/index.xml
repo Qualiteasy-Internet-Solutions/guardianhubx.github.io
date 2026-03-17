@@ -220,41 +220,67 @@
  margin-top: 25px;
  }
  
+ .terms-scroll {
+ height: 280px;
+ overflow-y: scroll;
+ border: 1.5px solid var(--border);
+ border-radius: 10px;
+ padding: 20px;
+ background: var(--bg-soft);
+ font-size: 0.82rem;
+ color: var(--text-dark);
+ line-height: 1.6;
+ margin-bottom: 20px;
+ }
+ .terms-scroll h3 { font-size: 1rem; margin-bottom: 4px; }
+ .terms-scroll h4 { font-size: 0.85rem; margin: 16px 0 4px; color: var(--primary); }
+ .terms-scroll p { margin: 0 0 8px; }
+ 
+ .terms-check-row {
+ display: flex;
+ align-items: center;
+ gap: 12px;
+ padding: 14px 16px;
+ border: 1.5px solid var(--border);
+ border-radius: 10px;
+ background: #fff;
+ opacity: 0.4;
+ transition: opacity 0.3s;
+ cursor: not-allowed;
+ }
+ .terms-check-row.enabled {
+ opacity: 1;
+ cursor: pointer;
+ border-color: var(--primary);
+ }
+ .terms-check-row input[type="checkbox"] {
+ width: 18px;
+ height: 18px;
+ cursor: pointer;
+ flex-shrink: 0;
+ }
+ .terms-check-row label {
+ font-size: 0.88rem;
+ color: var(--text-dark);
+ cursor: pointer;
+ margin: 0;
+ }
+ .scroll-hint {
+ text-align: center;
+ font-size: 0.78rem;
+ color: var(--text-light);
+ margin-bottom: 12px;
+ }
+ 
  @media (max-width: 480px) {
  .form-slide { padding: 25px 15px; }
  .form-input { padding: 12px; }
  }
  &lt;/style>
  
- &lt;div id="radar-form-container">
- &lt;div style="background: #edf2f7;">&lt;div id="progress-fill">&lt;/div>&lt;/div>
- &lt;form id="radar-form" novalidate>&lt;/form>
- &lt;/div>
- 
- &lt;script>
- document.addEventListener('DOMContentLoaded', function() {
- const form = document.getElementById('radar-form');
- const container = document.getElementById('radar-form-container');
- const progressFill = document.getElementById('progress-fill');
- const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyQ6Rjiq5J4mCaPZ9Hl6Jh5rWU96g847zmWnTd7UinZYGZCZKUqBkZ5jDLys0XGKigY/exec'; 
- 
- let step = 0;
- let data = { 
- pack: '', empresa: '', contacte_nom: '', adreca: '', cp: '', poblacio: '', 
- provincia: '', pais: 'Espanya',
- nif: '', telefon: '', email_reg: '', admin_nom: '', admin_dni: '', 
- contacte_whatsapp: '', dominis: '', emails_radar: '', pagament: ''
- };
- 
- function render() {
- let html = "";
- switch(step) {
- case 0:
- html = `
- &lt;div class="form-slide active">
- &lt;div style="text-align:center; margin-bottom:30px;"> 
- &lt;h2 style="margin-top:10px; font-size:1.5rem;">Quin pla vols activar?&lt;/h2>
- &lt;p style="color:var(--text-light);">Selecciona el pack que has contractat per personalitzar la configuració.&lt;/p></description></item><item><title>¿Quant costen realment els ciberatacs? L'impacte econòmic de les amenaces digitals</title><link>https://guardianhubx.com/blog/ca/cost-economic-ciberatacs-impacte-empreses/</link><pubDate>Mon, 09 Feb 2026 09:00:00 +0000</pubDate><guid>https://guardianhubx.com/blog/ca/cost-economic-ciberatacs-impacte-empreses/</guid><description>&lt;p>En un món cada cop més digitalitzat, els ciberatacs han deixat de ser incidents puntuals per convertir-se en un dels &lt;strong>principals riscos econòmics i estratègics&lt;/strong> tant per a governs com per a empreses de totes les mides.&lt;/p>
+ &lt;div id="radar-terms-content" style="display:none">
+ &lt;h3>Termes i Condicions – Guardian Radar&lt;/h3>
+ &lt;p>&lt;em>Versió 1.0 – 17/03/2026&lt;/em>&lt;/p></description></item><item><title>¿Quant costen realment els ciberatacs? L'impacte econòmic de les amenaces digitals</title><link>https://guardianhubx.com/blog/ca/cost-economic-ciberatacs-impacte-empreses/</link><pubDate>Mon, 09 Feb 2026 09:00:00 +0000</pubDate><guid>https://guardianhubx.com/blog/ca/cost-economic-ciberatacs-impacte-empreses/</guid><description>&lt;p>En un món cada cop més digitalitzat, els ciberatacs han deixat de ser incidents puntuals per convertir-se en un dels &lt;strong>principals riscos econòmics i estratègics&lt;/strong> tant per a governs com per a empreses de totes les mides.&lt;/p>
 &lt;p>El que fa tot just una dècada era una preocupació tècnica aïllada, avui té impactes financers que alcancen xifres multimilionàries a nivell global. Si vols entendre com ha canviat aquest panorama, pots revisar la nostra anàlisi sobre el &lt;a href="https://guardianhubx.com/blog/ca/ciberseguretat-2026-fi-checklists/">canvi de paradigma en la ciberseguretat per al 2026&lt;/a>.&lt;/p></description></item><item><title>Seguretat al núvol per a pimes: riscos, mites i solucions pràctiques</title><link>https://guardianhubx.com/blog/ca/seguretat-nuvol-pimes-riscos-solucions/</link><pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/blog/ca/seguretat-nuvol-pimes-riscos-solucions/</guid><description>&lt;p>L&amp;rsquo;adopció de serveis al núvol ha crescut de forma imparable entre les pimes. La seva flexibilitat, cost reduït i facilitat d&amp;rsquo;ús la converteixen en una aliada estratègica per competir en un entorn cada vegada més digital.&lt;/p>
 &lt;p>No obstant això, aquest creixement també ha posat de manifest riscos, confusions i falses creences que poden deixar una empresa exposada sense que ho sàpiga.&lt;/p>
 &lt;p>En aquest article analitzem els riscos reals, desmuntem els mites més comuns i oferim solucions pràctiques perquè qualsevol pime pugui fer servir el núvol de forma segura i eficient.&lt;/p></description></item><item><title>Per què en aquestes rebaixes t'hauries de protegir més que mai si compres online</title><link>https://guardianhubx.com/blog/ca/rebaixes-online-proteccio-ciberseguretat/</link><pubDate>Mon, 12 Jan 2026 08:00:00 +0000</pubDate><guid>https://guardianhubx.com/blog/ca/rebaixes-online-proteccio-ciberseguretat/</guid><description>&lt;p>Les rebaixes ja no passen només en botigues físiques. Avui, el centre comercial més gran del món és el teu mòbil. I precisament per això, també s&amp;rsquo;ha convertit en el principal objectiu dels ciberdelinqüents.&lt;/p>

@@ -222,41 +222,67 @@
  margin-top: 25px;
  }
  
+ .terms-scroll {
+ height: 280px;
+ overflow-y: scroll;
+ border: 1.5px solid var(--border);
+ border-radius: 10px;
+ padding: 20px;
+ background: var(--bg-soft);
+ font-size: 0.82rem;
+ color: var(--text-dark);
+ line-height: 1.6;
+ margin-bottom: 20px;
+ }
+ .terms-scroll h3 { font-size: 1rem; margin-bottom: 4px; }
+ .terms-scroll h4 { font-size: 0.85rem; margin: 16px 0 4px; color: var(--primary); }
+ .terms-scroll p { margin: 0 0 8px; }
+ 
+ .terms-check-row {
+ display: flex;
+ align-items: center;
+ gap: 12px;
+ padding: 14px 16px;
+ border: 1.5px solid var(--border);
+ border-radius: 10px;
+ background: #fff;
+ opacity: 0.4;
+ transition: opacity 0.3s;
+ cursor: not-allowed;
+ }
+ .terms-check-row.enabled {
+ opacity: 1;
+ cursor: pointer;
+ border-color: var(--primary);
+ }
+ .terms-check-row input[type="checkbox"] {
+ width: 18px;
+ height: 18px;
+ cursor: pointer;
+ flex-shrink: 0;
+ }
+ .terms-check-row label {
+ font-size: 0.88rem;
+ color: var(--text-dark);
+ cursor: pointer;
+ margin: 0;
+ }
+ .scroll-hint {
+ text-align: center;
+ font-size: 0.78rem;
+ color: var(--text-light);
+ margin-bottom: 12px;
+ }
+ 
  @media (max-width: 480px) {
  .form-slide { padding: 25px 15px; }
  .form-input { padding: 12px; }
  }
  &lt;/style>
  
- &lt;div id="radar-form-container">
- &lt;div style="background: #edf2f7;">&lt;div id="progress-fill">&lt;/div>&lt;/div>
- &lt;form id="radar-form" novalidate>&lt;/form>
- &lt;/div>
- 
- &lt;script>
- document.addEventListener('DOMContentLoaded', function() {
- const form = document.getElementById('radar-form');
- const container = document.getElementById('radar-form-container');
- const progressFill = document.getElementById('progress-fill');
- const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyQ6Rjiq5J4mCaPZ9Hl6Jh5rWU96g847zmWnTd7UinZYGZCZKUqBkZ5jDLys0XGKigY/exec'; 
- 
- let step = 0;
- let data = { 
- pack: '', empresa: '', contacte_nom: '', adreca: '', cp: '', poblacio: '', 
- provincia: '', pais: 'España',
- nif: '', telefon: '', email_reg: '', admin_nom: '', admin_dni: '', 
- contacte_whatsapp: '', dominis: '', emails_radar: '', pagament: ''
- };
- 
- function render() {
- let html = "";
- switch(step) {
- case 0:
- html = `
- &lt;div class="form-slide active">
- &lt;div style="text-align:center; margin-bottom:30px;"> 
- &lt;h2 style="margin-top:10px; font-size:1.5rem;">¿Qué plan quieres activar?&lt;/h2>
- &lt;p style="color:var(--text-light);">Selecciona el pack que has contratado para personalizar la configuración.&lt;/p></description></item><item><title>¿Cuánto cuestan realmente los ciberataques? El impacto económico de las amenazas digitales</title><link>https://guardianhubx.com/blog/coste-economico-ciberataques-impacto-empresas/</link><pubDate>Mon, 09 Feb 2026 09:00:00 +0000</pubDate><guid>https://guardianhubx.com/blog/coste-economico-ciberataques-impacto-empresas/</guid><description>&lt;p>En un mundo cada vez más digitalizado, los ciberataques han dejado de ser incidentes puntuales para convertirse en uno de los &lt;strong>principales riesgos económicos y estratégicos&lt;/strong> tanto para gobiernos como para empresas de todos los tamaños.&lt;/p>
+ &lt;div id="radar-terms-content" style="display:none">
+ &lt;h3>Términos y Condiciones – Guardian Radar&lt;/h3>
+ &lt;p>&lt;em>Versión 1.0 – 17/03/2026&lt;/em>&lt;/p></description></item><item><title>¿Cuánto cuestan realmente los ciberataques? El impacto económico de las amenazas digitales</title><link>https://guardianhubx.com/blog/coste-economico-ciberataques-impacto-empresas/</link><pubDate>Mon, 09 Feb 2026 09:00:00 +0000</pubDate><guid>https://guardianhubx.com/blog/coste-economico-ciberataques-impacto-empresas/</guid><description>&lt;p>En un mundo cada vez más digitalizado, los ciberataques han dejado de ser incidentes puntuales para convertirse en uno de los &lt;strong>principales riesgos económicos y estratégicos&lt;/strong> tanto para gobiernos como para empresas de todos los tamaños.&lt;/p>
 &lt;p>Lo que hace apenas una década era una preocupación técnica aislada, hoy tiene impactos financieros que alcanzan cifras multimillonarias a nivel global. Si quieres entender cómo ha cambiado este panorama, puedes revisar nuestro análisis sobre el &lt;a href="https://guardianhubx.com/blog/ciberseguridad-2026-fin-checklists/">cambio de paradigma en la ciberseguridad para 2026&lt;/a>.&lt;/p></description></item><item><title>Seguridad en la nube para pymes: riesgos, mitos y soluciones prácticas</title><link>https://guardianhubx.com/blog/seguridad-nube-pymes-riesgos-soluciones/</link><pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/blog/seguridad-nube-pymes-riesgos-soluciones/</guid><description>&lt;p>La adopción de servicios en la nube ha crecido de forma imparable entre las pymes. Su flexibilidad, coste reducido y facilidad de uso la convierten en una aliada estratégica para competir en un entorno cada vez más digital.&lt;/p>
 &lt;p>Sin embargo, este crecimiento también ha puesto de manifiesto riesgos, confusiones y falsas creencias que pueden dejar a una empresa expuesta sin que lo sepa.&lt;/p>
 &lt;p>En este artículo analizamos los riesgos reales, desmontamos los mitos más comunes y ofrecemos soluciones prácticas para que cualquier pyme pueda usar la nube de forma segura y eficiente.&lt;/p></description></item><item><title>Por qué estas rebajas deberías protegerte más que nunca si compras online</title><link>https://guardianhubx.com/blog/rebajas-online-proteccion-ciberseguridad/</link><pubDate>Mon, 12 Jan 2026 08:00:00 +0000</pubDate><guid>https://guardianhubx.com/blog/rebajas-online-proteccion-ciberseguridad/</guid><description>&lt;p>Las rebajas ya no ocurren solo en tiendas físicas. Hoy, el mayor centro comercial del mundo es tu móvil. Y precisamente por eso, también se ha convertido en el principal objetivo de los ciberdelincuentes.&lt;/p>
