@@ -44,7 +44,7 @@ jobs:
         run: |
           npm install -g terser clean-css-cli
           echo "Minifying CSS..."
-          find public -type f -name "*.css" -exec cleancss -o {} {} \;
+          find public -type f -name "*.css" ! -name "arcade.css" -exec cleancss -o {} {} \;
           echo "Minifying JS..."
           find public -type f -name "*.js" -exec terser {} -c -m -o {} \;
 
