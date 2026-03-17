@@ -96,12 +96,34 @@ Landing pages use centralized Hugo shortcodes for contact components (DRY princi
 - vanilla-cookieconsent v3: consent management (GDPR) — self-hosted at `static/js/cookieconsent.umd.js`, config at `static/js/cookieconsent-config.js`
 - Supabase: used in Space Invaders leaderboard (spaceinvaders-form.html)
 - Brevo (Sendinblue): newsletter forms
+- **Google Apps Script (GuardianRadar + Partners):** single script handles two form types
+  - Form: `layouts/shortcodes/formulari-guardianradar.html`
+  - Routing: `doPost` detects `tipus=partner` → `doPostPartner` or `doPostRadar`
+  - Sheets: `Comandes` (radar signups) + `Partners` (partner requests)
+  - Note: Update `SCRIPT_URL` in form JS when redeploying Apps Script
 - **Google Apps Script:** Cybersecurity Assessment Form (Gemini AI + PDF generation)
   - Form: `layouts/shortcodes/formulari-ciberseguretat.html`
   - API: Google Sheets + Gemini 2.0 Flash
   - Features: 3-attempt retry logic for all API calls, multilingual reports (ES/CA/EN)
   - Deploys: PDF reports + email with disclaimer
   - Note: Update `SCRIPT_URL` in form JavaScript when redeploying Apps Script
+
+### Referral System
+- Cookie: `ghx_ref` (30 days, classified as Necessary — no consent required)
+- Script: `static/js/referral.js` — captures `?ref=PARTNER_CODE` from URL, stores in cookie
+- Form: `formulari-guardianradar.html` reads cookie and sends `referral` field to Apps Script
+- Partner toolkit: `static/partners/toolkit.html` (noindex) — generates referral links + banners
+  - Access: `https://guardianhubx.com/partners/toolkit.html`
+  - Pre-filled: `?code=PARTNER_CODE` auto-generates everything
+  - Banners 970×250: `banner-es-1/2.webp`, `banner-ca-1/2.webp` (image links)
+  - Banners 300×250: JS snippet via `static/partners/banner.js?ref=CODE&type=a|b`
+  - Partner signup form → Apps Script `doPostPartner` → Google Sheet `Partners`
+
+### PDF Generation
+- `condiciones-radar.md` → auto-generated PDF via GitHub Actions (`.github/workflows/generate-pdf.yml`)
+- PDF published to: `static/docs/condiciones-guardianradar.pdf` → `https://guardianhubx.com/docs/condiciones-guardianradar.pdf`
+- Trigger: push to main when `condiciones-radar.md` changes, or manual dispatch
+- Tool: pandoc + weasyprint (Ubuntu, no wkhtmltopdf)
 
 ### Blog Integration
 
