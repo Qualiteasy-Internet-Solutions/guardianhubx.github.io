@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Partner Toolkit – GuardianHubX</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<style>
+  body { background: #f8fafc; font-family: 'Segoe UI', sans-serif; }
+  .hero { background: linear-gradient(135deg, #0a1628 0%, #1a3a6b 100%); color: white; padding: 40px 20px 30px; text-align: center; }
+  .hero img { height: 48px; margin-bottom: 16px; }
+  .hero h1 { font-size: 1.6rem; font-weight: 700; margin-bottom: 6px; }
+  .hero p { color: #94a3b8; font-size: 0.95rem; margin: 0; }
+
+  .input-card { background: white; border-radius: 16px; padding: 32px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); max-width: 560px; margin: -24px auto 32px; position: relative; }
+  .input-card label { font-weight: 700; font-size: 0.9rem; color: #1a202c; margin-bottom: 8px; display: block; }
+  .code-input { border: 2px solid #e2e8f0; border-radius: 10px; padding: 14px 16px; font-size: 1.1rem; font-weight: 600; letter-spacing: 1px; width: 100%; text-transform: uppercase; }
+  .code-input:focus { outline: none; border-color: #007BFF; box-shadow: 0 0 0 3px rgba(0,123,255,0.1); }
+  .btn-generate { background: #007BFF; color: white; border: none; border-radius: 10px; padding: 14px 28px; font-weight: 700; font-size: 1rem; width: 100%; margin-top: 12px; cursor: pointer; transition: 0.2s; }
+  .btn-generate:hover { background: #006ae0; }
+
+  #results { display: none; }
+  .section-title { font-size: 1.1rem; font-weight: 700; color: #1a202c; margin-bottom: 16px; display: flex; align-items: center; gap: 10px; }
+  .section-title i { color: #007BFF; }
+
+  .link-row { background: white; border-radius: 10px; padding: 14px 16px; margin-bottom: 10px; display: flex; align-items: center; gap: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+  .link-badge { background: #edf2f7; border-radius: 6px; padding: 4px 10px; font-size: 0.78rem; font-weight: 700; color: #4a5568; min-width: 32px; text-align: center; }
+  .link-url { flex: 1; font-size: 0.85rem; color: #2d3748; word-break: break-all; font-family: monospace; }
+  .btn-copy { background: #f0f7ff; border: 1.5px solid #007BFF; color: #007BFF; border-radius: 8px; padding: 6px 14px; font-size: 0.82rem; font-weight: 600; cursor: pointer; white-space: nowrap; transition: 0.2s; }
+  .btn-copy:hover { background: #007BFF; color: white; }
+  .btn-copy.copied { background: #48bb78; border-color: #48bb78; color: white; }
+
+  .banner-card { background: white; border-radius: 12px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+  .banner-meta { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
+  .banner-label { font-weight: 700; font-size: 0.88rem; color: #1a202c; }
+  .banner-lang { background: #edf2f7; border-radius: 6px; padding: 3px 10px; font-size: 0.75rem; font-weight: 700; color: #718096; }
+  .banner-preview { border-radius: 8px; overflow: hidden; margin-bottom: 14px; border: 1px solid #e2e8f0; }
+  .banner-preview img { width: 100%; height: auto; display: block; }
+  .code-block { background: #1a202c; border-radius: 8px; padding: 14px 16px; position: relative; }
+  .code-block pre { color: #a0aec0; font-size: 0.75rem; margin: 0; overflow-x: auto; white-space: pre-wrap; word-break: break-all; }
+  .btn-copy-code { position: absolute; top: 10px; right: 10px; background: #2d3748; border: 1px solid #4a5568; color: #a0aec0; border-radius: 6px; padding: 4px 10px; font-size: 0.75rem; cursor: pointer; transition: 0.2s; }
+  .btn-copy-code:hover { background: #007BFF; border-color: #007BFF; color: white; }
+  .btn-copy-code.copied { background: #48bb78; border-color: #48bb78; color: white; }
+
+  .footer-note { text-align: center; color: #a0aec0; font-size: 0.82rem; padding: 24px; }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <img src="/img/logo_GHX_01-01.webp" alt="GuardianHubX">
+  <h1>Partner Toolkit</h1>
+  <p>Genera els teus links i banners de referral per GuardianRadar</p>
+</div>
+
+<div class="container" style="max-width:720px; padding: 0 16px;">
+
+  <div class="input-card">
+    <label for="partnerCode"><i class="fas fa-key" style="color:#007BFF; margin-right:8px;"></i>Codi de partner</label>
+    <input type="text" id="partnerCode" class="code-input" placeholder="Ex: NOMPARTNER" maxlength="30">
+    <button class="btn-generate" onclick="generate()"><i class="fas fa-magic me-2"></i>Generar links i banners</button>
+  </div>
+
+  <div id="results">
+
+    <!-- LINKS -->
+    <div class="section-title"><i class="fas fa-link"></i> Links de referral</div>
+
+    <div class="link-row">
+      <span class="link-badge">ES</span>
+      <span class="link-url" id="link-es"></span>
+      <button class="btn-copy" onclick="copyText('link-es', this)"><i class="fas fa-copy me-1"></i>Copiar</button>
+    </div>
+    <div class="link-row">
+      <span class="link-badge">CA</span>
+      <span class="link-url" id="link-ca"></span>
+      <button class="btn-copy" onclick="copyText('link-ca', this)"><i class="fas fa-copy me-1"></i>Copiar</button>
+    </div>
+
+    <!-- BANNERS -->
+    <div class="section-title mt-4"><i class="fas fa-image"></i> Banners (970×250)</div>
+    <p style="font-size:0.85rem; color:#718096; margin-top:-10px; margin-bottom:20px;">Copia el codi HTML i enganxa'l a la teva web on vulguis mostrar el banner.</p>
+
+    <!-- Banner ES 1 -->
+    <div class="banner-card">
+      <div class="banner-meta">
+        <span class="banner-label">Banner 1</span>
+        <span class="banner-lang">Castellà</span>
+      </div>
+      <div class="banner-preview">
+        <img src="/img/banner-es-1.webp" alt="GuardianRadar Banner ES 1">
+      </div>
+      <div class="code-block">
+        <button class="btn-copy-code" onclick="copyCode('code-es-1', this)">Copiar</button>
+        <pre id="code-es-1"></pre>
+      </div>
+    </div>
+
+    <!-- Banner ES 2 -->
+    <div class="banner-card">
+      <div class="banner-meta">
+        <span class="banner-label">Banner 2</span>
+        <span class="banner-lang">Castellà</span>
+      </div>
+      <div class="banner-preview">
+        <img src="/img/banner-es-2.webp" alt="GuardianRadar Banner ES 2">
+      </div>
+      <div class="code-block">
+        <button class="btn-copy-code" onclick="copyCode('code-es-2', this)">Copiar</button>
+        <pre id="code-es-2"></pre>
+      </div>
+    </div>
+
+    <!-- Banner CA 1 -->
+    <div class="banner-card">
+      <div class="banner-meta">
+        <span class="banner-label">Banner 1</span>
+        <span class="banner-lang">Català</span>
+      </div>
+      <div class="banner-preview">
+        <img src="/img/banner-ca-1.webp" alt="GuardianRadar Banner CA 1">
+      </div>
+      <div class="code-block">
+        <button class="btn-copy-code" onclick="copyCode('code-ca-1', this)">Copiar</button>
+        <pre id="code-ca-1"></pre>
+      </div>
+    </div>
+
+    <!-- Banner CA 2 -->
+    <div class="banner-card">
+      <div class="banner-meta">
+        <span class="banner-label">Banner 2</span>
+        <span class="banner-lang">Català</span>
+      </div>
+      <div class="banner-preview">
+        <img src="/img/banner-ca-2.webp" alt="GuardianRadar Banner CA 2">
+      </div>
+      <div class="code-block">
+        <button class="btn-copy-code" onclick="copyCode('code-ca-2', this)">Copiar</button>
+        <pre id="code-ca-2"></pre>
+      </div>
+    </div>
+
+  </div><!-- /results -->
+
+  <div class="footer-note">
+    GuardianHubX Partner Program · <a href="mailto:inogues@qualiteasy.com" style="color:#007BFF;">inogues@qualiteasy.com</a>
+  </div>
+
+</div>
+
+<script>
+const BASE = 'https://guardianhubx.com';
+
+function generate() {
+  const raw = document.getElementById('partnerCode').value.trim();
+  const code = raw.toUpperCase().replace(/[^A-Z0-9_-]/g, '');
+  if (!code) { alert('Introdueix el teu codi de partner.'); return; }
+
+  const urlEs = `${BASE}/es/guardianradar/?ref=${code}`;
+  const urlCa = `${BASE}/ca/guardianradar/?ref=${code}`;
+
+  document.getElementById('link-es').textContent = urlEs;
+  document.getElementById('link-ca').textContent = urlCa;
+
+  const banners = [
+    { id: 'code-es-1', img: 'banner-es-1.webp', url: urlEs, alt: 'GuardianRadar – Protecció digital per a empreses' },
+    { id: 'code-es-2', img: 'banner-es-2.webp', url: urlEs, alt: 'GuardianRadar – Protecció digital per a empreses' },
+    { id: 'code-ca-1', img: 'banner-ca-1.webp', url: urlCa, alt: 'GuardianRadar – Protecció digital per a empreses' },
+    { id: 'code-ca-2', img: 'banner-ca-2.webp', url: urlCa, alt: 'GuardianRadar – Protecció digital per a empreses' },
+  ];
+
+  banners.forEach(b => {
+    document.getElementById(b.id).textContent =
+`<a href="${b.url}" target="_blank" rel="noopener sponsored">
+  <img src="${BASE}/img/${b.img}"
+       alt="${b.alt}"
+       width="970" height="250"
+       style="max-width:100%; height:auto; display:block;">
+</a>`;
+  });
+
+  document.getElementById('results').style.display = 'block';
+  document.getElementById('results').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function copyText(id, btn) {
+  const text = document.getElementById(id).textContent;
+  navigator.clipboard.writeText(text).then(() => {
+    btn.classList.add('copied');
+    btn.innerHTML = '<i class="fas fa-check me-1"></i>Copiat!';
+    setTimeout(() => {
+      btn.classList.remove('copied');
+      btn.innerHTML = '<i class="fas fa-copy me-1"></i>Copiar';
+    }, 2000);
+  });
+}
+
+function copyCode(id, btn) {
+  const text = document.getElementById(id).textContent;
+  navigator.clipboard.writeText(text).then(() => {
+    btn.classList.add('copied');
+    btn.textContent = '✓ Copiat!';
+    setTimeout(() => {
+      btn.classList.remove('copied');
+      btn.textContent = 'Copiar';
+    }, 2000);
+  });
+}
+
+// Generar automàticament si hi ha ?code= a la URL
+const params = new URLSearchParams(window.location.search);
+if (params.get('code')) {
+  document.getElementById('partnerCode').value = params.get('code');
+  generate();
+}
+</script>
+</body>
+</html>
