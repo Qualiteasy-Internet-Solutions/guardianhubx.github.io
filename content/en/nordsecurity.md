@@ -8,11 +8,6 @@ resources:
     file: "docs/nordpass-guardianhubx-en.pdf"
   - name: "NordLayer Technical Sheet"
     file: "docs/nordlayer-guardianhubx-en.pdf"
-external_links:
-  - name: "Get NordVPN"
-    url: "https://go.nordvpn.net/aff_c?offer_id=15&aff_id=143712&url_id=902"
-  - name: "Get NordPass"
-    url: "https://go.nordpass.io/aff_c?offer_id=488&aff_id=143712&url_id=9356"
 ---
 
 
@@ -53,8 +48,11 @@ external_links:
     <a href="/docs/nordlayer-guardianhubx-en.pdf" class="btn btn-primary pdf-download" target="_blank">
       <i class="fas fa-file-pdf"></i> Download NordLayer Technical Sheet
     </a>
-    <a href=" https://nordsecurity.com/ " class="btn btn-success" target="_blank">
-      <i class="fas fa-globe"></i> Official Website
+    <a href="https://go.nordvpn.net/aff_c?offer_id=15&aff_id=143712&url_id=902" class="btn btn-success" target="_blank" rel="noopener sponsored">
+      <i class="fas fa-shield-alt"></i> Get NordVPN
+    </a>
+    <a href="https://go.nordpass.io/aff_c?offer_id=488&aff_id=143712&url_id=9356" class="btn btn-success" target="_blank" rel="noopener sponsored">
+      <i class="fas fa-key"></i> Get NordPass
     </a>
   </div>
 </section>
