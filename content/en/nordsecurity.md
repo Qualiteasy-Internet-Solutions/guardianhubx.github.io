@@ -8,6 +8,11 @@ resources:
     file: "docs/nordpass-guardianhubx-en.pdf"
   - name: "NordLayer Technical Sheet"
     file: "docs/nordlayer-guardianhubx-en.pdf"
+external_links:
+  - name: "Get NordVPN"
+    url: "https://go.nordvpn.net/aff_c?offer_id=15&aff_id=143712&url_id=902"
+  - name: "Get NordPass"
+    url: "https://go.nordpass.io/aff_c?offer_id=488&aff_id=143712&url_id=9356"
 ---
 
 
