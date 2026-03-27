@@ -156,6 +156,7 @@ spanish_mappings:
   quishing: "quishing"
   "Hacienda": "estafas-hacienda"
   "AEAT": "estafas-hacienda"
+  estafas-hacienda: "estafas-hacienda"
   "WiFi Pública": "wifi-publica"
   "Coworking": "coworking"
   "Sector Sanitario": "sector-sanitario"
