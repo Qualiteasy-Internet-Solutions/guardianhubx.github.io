@@ -100,6 +100,12 @@ Landing pages use centralized Hugo shortcodes for contact components (DRY princi
   - Form: `layouts/shortcodes/formulari-guardianradar.html`
   - Routing: `doPost` detects `tipus=partner` → `doPostPartner` or `doPostRadar`
   - Sheets: `Comandes` (radar signups) + `Partners` (partner requests)
+  - **Discount System (3-month free trial):**
+    - Code: `TR3MONTHS2026` (obfuscated via base64 in form JS)
+    - Validation: real-time as user types, green badge on valid code, red error on invalid
+    - When valid: automatically sets payment method to `free_trial_3_months` (column R in Sheets)
+    - No Apps Script changes needed — column already captures `pagament` field
+    - Multilingue support: i18n keys `radar_discount_label/placeholder/valid/invalid`
   - Note: Update `SCRIPT_URL` in form JS when redeploying Apps Script
 - **Google Apps Script:** Cybersecurity Assessment Form (Gemini AI + PDF generation)
   - Form: `layouts/shortcodes/formulari-ciberseguretat.html`
