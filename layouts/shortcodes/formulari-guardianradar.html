@@ -162,9 +162,12 @@ document.addEventListener('DOMContentLoaded', function() {
         pack: '', empresa: '', contacte_nom: '', adreca: '', cp: '', poblacio: '',
         provincia: '', pais: '{{ i18n "radar_default_country" | safeJS }}',
         nif: '', telefon: '', email_reg: '', admin_nom: '', admin_dni: '',
-        contacte_whatsapp: '', dominis: '', emails_radar: '', pagament: '',
+        contacte_whatsapp: '', dominis: '', emails_radar: '', pagament: '', discount_code: '',
         referral: (typeof window.getGhxReferral === 'function') ? window.getGhxReferral() : ''
     };
+
+    const _v = atob('VFIzTU9OVEhTMjAyNg==');
+    const validateDiscountCode = (input) => input.toUpperCase().trim() === _v;
 
     function render() {
         let html = "";
@@ -304,7 +307,7 @@ document.addEventListener('DOMContentLoaded', function() {
             case 4:
                 html = `
                 <div class="form-slide active">
-                    <div style="text-align:center; margin-bottom:30px;">            
+                    <div style="text-align:center; margin-bottom:30px;">
                         <h2 style="margin-top:10px; font-size:1.5rem;">{{ i18n "radar_payment_title" | safeJS }}</h2>
                         <p style="color:var(--text-light);">{{ i18n "radar_payment_subtitle" | safeJS }}</p>
                     </div>
@@ -315,6 +318,14 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
                     <div class="payment-notice">
                         💳 <strong>{{ i18n "radar_payment_notice_title" | safeJS }}</strong> {{ i18n "radar_payment_notice_body" | safeJS }}
+                    </div>
+                    <div class="field-group" style="margin-top: 25px;">
+                        <div class="field-label">{{ i18n "radar_discount_label" | safeJS }}</div>
+                        <div style="display: flex; gap: 10px; align-items: flex-start;">
+                            <input type="text" id="val-discount-code" class="form-input" placeholder="{{ i18n "radar_discount_placeholder" | safeJS }}" value="${data.discount_code}" style="flex: 1;">
+                            <div id="discount-badge" style="display: none; padding: 12px 16px; background: #10b981; color: white; border-radius: 10px; font-size: 0.85rem; font-weight: 600; white-space: nowrap; margin-top: 2px; height: fit-content;">{{ i18n "radar_discount_valid" | safeJS }}</div>
+                            <div id="discount-error" style="display: none; padding: 12px 16px; background: #ef4444; color: white; border-radius: 10px; font-size: 0.85rem; font-weight: 600; white-space: nowrap; margin-top: 2px; height: fit-content;">{{ i18n "radar_discount_invalid" | safeJS }}</div>
+                        </div>
                     </div>
                     <button type="button" id="final-btn" onclick="window.goNext(5)" class="btn-main" style="display:none; margin-top:20px;">{{ i18n "radar_btn_continue" | safeJS }} <i class="fas fa-arrow-right"></i></button>
                 </div>`;
@@ -360,14 +371,50 @@ document.addEventListener('DOMContentLoaded', function() {
             c.onclick = () => { data.pack = c.dataset.pack; step = 1; render(); };
         });
 
+        const showFinalBtn = () => {
+            const finalBtn = document.getElementById('final-btn');
+            if (finalBtn) {
+                const hasPayment = data.pagament !== '';
+                const hasDiscount = data.discount_code !== '';
+                finalBtn.style.display = (hasPayment || hasDiscount) ? 'flex' : 'none';
+            }
+        };
+
         document.querySelectorAll('.pay-option').forEach(c => {
-            c.onclick = () => { 
+            c.onclick = () => {
                 document.querySelectorAll('.pay-option').forEach(x => x.classList.remove('selected'));
                 c.classList.add('selected');
-                data.pagament = c.dataset.pay; 
-                document.getElementById('final-btn').style.display = 'flex';
+                data.pagament = c.dataset.pay;
+                showFinalBtn();
             };
         });
+
+        if (document.getElementById('val-discount-code')) {
+            const discountInput = document.getElementById('val-discount-code');
+            const discountBadge = document.getElementById('discount-badge');
+            const discountError = document.getElementById('discount-error');
+
+            discountInput.addEventListener('input', () => {
+                const code = discountInput.value.toUpperCase().trim();
+                if (code === _v) {
+                    data.discount_code = code;
+                    data.pagament = 'free_trial_3_months';
+                    discountBadge.style.display = 'inline-flex';
+                    discountError.style.display = 'none';
+                } else if (code.length > 0) {
+                    data.discount_code = '';
+                    data.pagament = '';
+                    discountBadge.style.display = 'none';
+                    discountError.style.display = 'inline-flex';
+                } else {
+                    data.discount_code = '';
+                    data.pagament = '';
+                    discountBadge.style.display = 'none';
+                    discountError.style.display = 'none';
+                }
+                showFinalBtn();
+            });
+        }
 
         if (document.getElementById('add-mail')) {
             document.getElementById('add-mail').onclick = () => {
