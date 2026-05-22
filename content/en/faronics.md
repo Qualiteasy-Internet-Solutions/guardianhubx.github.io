@@ -27,13 +27,13 @@ external_links:
     <div class="col-md-8 ps-md-5">
       <h4 class="mb-4">Key tools from Faronics:</h4>
       <ul class="list-unstyled">
-        <li class="mb-2">• <a href="https://faronicscloud.com/en/pages/freeze?dl=BRUYN">Deep Freeze</a>: Protection against unwanted changes</li>
-        <li class="mb-2">• <a href=" https://faronicscloud.com/en/pages/software-updater?dl=BRUYN">Deploy</a>: Remote software management</li>
-        <li class="mb-2">• MDM: Mobile device management</li>
-        <li class="mb-2">• Power Save: Energy efficiency</li>
-        <li class="mb-2">• Win Select: Access control</li>
-        <li class="mb-2">• Anti Virus</li>
-        <li class="mb-2">• Insight: Classroom monitoring</li>
+        <li class="mb-2">• <a href="https://faronicscloud.com/pages/deep-freeze-system-restore?dl=BRUYN">Deep Freeze</a>: Protection against unwanted changes</li>
+        <li class="mb-2">• <a href="https://faronicscloud.com/pages/software-updater-patch-management?dl=BRUYN">Deploy</a>: Remote software management</li>
+        <li class="mb-2">• <a href="https://faronicscloud.com/pages/mobile-device-management-mdm?dl=BRUYN">MDM</a>: Mobile device management</li>
+        <li class="mb-2">• <a href="https://faronicscloud.com/pages/power-save-energy-management?dl=BRUYN">Power Save</a>: Energy efficiency</li>
+        <li class="mb-2">• <a href="https://faronicscloud.com/pages/winselect-application-security?dl=BRUYN">Win Select</a>: Access control</li>
+        <li class="mb-2">• <a href="https://faronicscloud.com/pages/anti-virus-cyber-security?dl=BRUYN">Anti Virus</a></li>
+        <li class="mb-2">• <a href="https://faronicscloud.com/pages/insight?dl=BRUYN">Insight</a>: Classroom monitoring</li>
       </ul>
 
   <p class="mt-4">

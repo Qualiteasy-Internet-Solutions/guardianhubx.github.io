@@ -27,13 +27,13 @@ external_links:
     <div class="col-md-8 ps-md-5">
       <h4 class="mb-4">Principals eines de Faronics:</h4>
       <ul class="list-unstyled">
-        <li class="mb-2">• <a href="https://faronicscloud.com/ca/pages/congelar?dl=BRUYN">Deep Freeze</a>: Protecció contra canvis no desitjats</li>
-        <li class="mb-2">• <a href="https://faronicscloud.com/ca/pages/actualitzador-de-software?dl=BRUYN">Deploy</a>: Gestió remota de programari</li>
-        <li class="mb-2">• MDM: Gestió mòbil</li>
-        <li class="mb-2">• Power Save: Estalvi energètic</li>
-        <li class="mb-2">• Win Select: Control d’accés</li>
-        <li class="mb-2">• Anti Virus</li>
-        <li class="mb-2">• Insight: Control d'aules</li>
+        <li class="mb-2">• <a href="https://faronicscloud.com/es/pages/restaurar-sistema-congelacion-profunda?dl=BRUYN">Deep Freeze</a>: Protecció contra canvis no desitjats</li>
+        <li class="mb-2">• <a href="https://faronicscloud.com/es/pages/gestor-de-actualizaciones-de-software-parches?dl=BRUYN">Deploy</a>: Gestió remota de programari</li>
+        <li class="mb-2">• <a href="https://faronicscloud.com/es/pages/gestion-dispositivos-moviles-mdm?dl=BRUYN">MDM</a>: Gestió mòbil</li>
+        <li class="mb-2">• <a href="https://faronicscloud.com/es/pages/gestion-ahorro-energia?dl=BRUYN">Power Save</a>: Estalvi energètic</li>
+        <li class="mb-2">• <a href="https://faronicscloud.com/es/pages/seleccion-seguridad-aplicacion?dl=BRUYN">Win Select</a>: Control d’accés</li>
+        <li class="mb-2">• <a href="https://faronicscloud.com/es/pages/antivirus-ciberseguridad?dl=BRUYN">Anti Virus</a></li>
+        <li class="mb-2">• <a href="https://faronicscloud.com/es/pages/perspicacia?dl=BRUYN">Insight</a>: Control d'aules</li>
       </ul>
 
   <p class="mt-4">
