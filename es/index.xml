@@ -1071,7 +1071,50 @@ Este dato subraya la importancia de contar con un enfoque de &lt;a href="https:/
  &lt;i class="fas fa-graduation-cap">&lt;/i>
  &lt;/div>
  &lt;h5 class="thanks-card-title">Formación&lt;/h5>
- &lt;p class="thanks-card-text">Entrena a tu equipo para prevenir ataques de phishing.&lt;/p></description></item><item><title>Diccionario de Ciberseguridad: Referencia Rápida 2026</title><link>https://guardianhubx.com/es/diccionario-ciberseguridad/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/es/diccionario-ciberseguridad/</guid><description>&lt;script type="application/ld+json">
+ &lt;p class="thanks-card-text">Entrena a tu equipo para prevenir ataques de phishing.&lt;/p></description></item><item><title>Copias de Seguridad para Empresas | Backup en la Nube con Veeam</title><link>https://guardianhubx.com/es/copias-de-seguridad-empresa/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/es/copias-de-seguridad-empresa/</guid><description>&lt;!-- Hero Section -->
+&lt;section class="landing-hero-section">
+&lt;div class="container">
+&lt;div class="row align-items-center">
+&lt;div class="col-lg-5 landing-fade-in">
+&lt;h1 class="landing-hero-title">COPIAS DE SEGURIDAD PARA EMPRESAS EN LA NUBE&lt;/h1>
+&lt;p class="landing-hero-subtitle">Backup profesional para Microsoft 365, Google Workspace, infraestructura virtual y recuperación ante desastres. Protege tu negocio con tecnología Veeam Gold Partner y datos en España.&lt;/p>
+&lt;p class="landing-hero-disclaimer">* El 81% de las empresas con Microsoft 365 han sufrido pérdida de datos por borrados accidentales, ataques de ransomware o errores humanos.&lt;/p>
+&lt;a href="#contact" class="landing-btn landing-btn-primary" rel="nofollow">
+SOLICITAR INFORMACIÓN &lt;i class="fas fa-arrow-right landing-arrow-soft-green">&lt;/i>
+&lt;/a>
+&lt;/div>
+&lt;div class="col-lg-7 text-center landing-slide-in-right">
+&lt;div class="landing-hero-img-wrapper">
+&lt;img src="https://guardianhubx.com/img/hero-backup.png" alt="Backup empresarial en la nube con Veeam y Brontobyte Cloud" class="landing-hero-img-custom backup-hero-img" width="700" height="560" loading="lazy">
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/section>
+&lt;!-- Stats Highlight -->
+&lt;section class="landing-stats-highlight">
+&lt;div class="container">
+&lt;div class="row text-center">
+&lt;div class="col-md-4 mb-4 landing-fade-in">
+&lt;div class="landing-stat-number">81%&lt;/div>
+&lt;div class="landing-stat-text">de empresas con Microsoft 365 han sufrido pérdida de datos&lt;/div>
+&lt;/div>
+&lt;div class="col-md-4 mb-4 landing-fade-in">
+&lt;div class="landing-stat-number">93%&lt;/div>
+&lt;div class="landing-stat-text">de empresas sin backup que sufren un desastre cierran en un año&lt;/div>
+&lt;/div>
+&lt;div class="col-md-4 mb-4 landing-fade-in">
+&lt;div class="landing-stat-number">24h&lt;/div>
+&lt;div class="landing-stat-text">de inactividad pueden costar más que años de licencias de backup&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/section>
+&lt;!-- Tech Partners Bar -->
+&lt;section class="landing-section bg-light">
+&lt;div class="container">
+&lt;h2 class="landing-section-title text-center">Tecnología certificada y partners de confianza&lt;/h2>
+&lt;p class="text-center landing-text-muted mx-auto mb-5 backup-narrow">Trabajamos con los líderes del sector y disponemos de las certificaciones de seguridad más exigentes para proteger los datos críticos de tu empresa.&lt;/p></description></item><item><title>Diccionario de Ciberseguridad: Referencia Rápida 2026</title><link>https://guardianhubx.com/es/diccionario-ciberseguridad/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/es/diccionario-ciberseguridad/</guid><description>&lt;script type="application/ld+json">
 {
 "@context": "https://schema.org",
 "@type": "Article",
