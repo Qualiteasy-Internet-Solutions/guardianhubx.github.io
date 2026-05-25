@@ -53,6 +53,7 @@ external_links:
       <i class="fas fa-globe"></i> Sitio web
     </a>
   </div>
+  <p class="mt-4 text-muted"><small>¿Necesitas backup para Microsoft 365, Google Workspace o máquinas virtuales? Descubre nuestras <a href="/es/copias-de-seguridad-empresa/">soluciones de backup empresarial con Veeam</a>.</small></p>
 </section>
 
 <section class="solutions mb-5 container text-center">

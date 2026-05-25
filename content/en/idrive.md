@@ -66,6 +66,7 @@ external_links:
       <i class="fas fa-globe"></i> Official Website
     </a>
   </div>
+  <p class="mt-4 text-muted"><small>Need backup for Microsoft 365, Google Workspace or virtual machines? Discover our <a href="/en/business-cloud-backup/">enterprise backup solutions with Veeam</a>.</small></p>
 </section>
 
 <!-- Video Section -->

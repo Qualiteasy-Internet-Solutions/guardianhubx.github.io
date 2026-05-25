@@ -1,0 +1,23 @@
+{{- /* Comparison row for backup-empresa pillar page.
+   Params:
+     aspect        — row header text
+     m365-status   — success | warning | danger | neutral
+     m365-text     — body text for M365 cell
+     veeam-status  — success | warning | danger | info (default: success)
+     veeam-text    — body text for Veeam cell
+*/ -}}
+{{- $aspect := .Get "aspect" -}}
+{{- $m365Status := .Get "m365-status" -}}
+{{- $m365Text := .Get "m365-text" -}}
+{{- $veeamStatus := default "success" (.Get "veeam-status") -}}
+{{- $veeamText := .Get "veeam-text" -}}
+{{- $statusMap := dict
+  "success" (dict "bg" "bg-success" "icon" "fa-check")
+  "warning" (dict "bg" "bg-warning text-dark" "icon" "fa-exclamation")
+  "danger"  (dict "bg" "bg-danger" "icon" "fa-times")
+  "neutral" (dict "bg" "bg-secondary" "icon" "fa-euro-sign")
+  "info"    (dict "bg" "bg-info" "icon" "fa-coins")
+-}}
+{{- $m365 := index $statusMap $m365Status -}}
+{{- $veeam := index $statusMap $veeamStatus -}}
+<tr><th scope="row">{{ $aspect }}</th><td class="text-center align-middle"><div class="mb-2"><span class="badge rounded-pill {{ $m365.bg }} px-3 py-2 fs-6"><i class="fas {{ $m365.icon }}"></i></span></div>{{ $m365Text | safeHTML }}</td><td class="text-center align-middle"><div class="mb-2"><span class="badge rounded-pill {{ $veeam.bg }} px-3 py-2 fs-6"><i class="fas {{ $veeam.icon }}"></i></span></div>{{ $veeamText | safeHTML }}</td></tr>

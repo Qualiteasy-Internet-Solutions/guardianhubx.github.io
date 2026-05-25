@@ -2025,3 +2025,46 @@ body.scrolled #page-title {
     padding: 14px;
   }
 }
+
+/* ============================================
+   BACKUP EMPRESA PILLAR PAGE
+   ============================================ */
+
+.backup-hero-img {
+  filter: none;
+  image-rendering: -webkit-optimize-contrast;
+  border-radius: 12px;
+}
+
+.backup-narrow {
+  max-width: 750px;
+}
+
+.backup-narrow-wide {
+  max-width: 850px;
+}
+
+.backup-logo-md { max-height: 90px; }
+.backup-logo-lg { max-height: 110px; }
+.backup-logo-card-cert { height: 110px; }
+
+.backup-solution-logo { max-height: 180px; }
+.backup-solution-badge { max-height: 200px; }
+
+.backup-resp-card--provider {
+  border-top: 4px solid #0078d4;
+}
+.backup-resp-card--customer {
+  border-top: 4px solid #0c8a3e;
+}
+.backup-resp-icon--provider { color: #0078d4; }
+.backup-resp-icon--customer { color: #0c8a3e; }
+
+.backup-comparison-table th:first-child { width: 30%; }
+.backup-comparison-table th:nth-child(2),
+.backup-comparison-table th:nth-child(3) { width: 35%; }
+
+.backup-details-summary {
+  cursor: pointer;
+  display: inline-block;
+}

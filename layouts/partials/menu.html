@@ -77,6 +77,14 @@
         <li><a class="dropdown-item" href="{{ "lightcore" | relLangURL }}">LightCore</a></li>
         <li><a class="dropdown-item" href="{{ "educraft" | relLangURL }}">EduCraft</a></li>
         <li><a class="dropdown-item" href="{{ "soloshield" | relLangURL }}">SoloShield</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li>
+            <a class="dropdown-item" href="{{ cond (eq .Lang "es") ("/es/copias-de-seguridad-empresa/" | relLangURL)
+                    (cond (eq .Lang "ca") ("/ca/copies-de-seguretat-empresa/" | relLangURL)
+                                    ("/en/business-cloud-backup/" | relLangURL)) }}">
+            {{ cond (eq .Lang "es") "Copias de Seguridad" (cond (eq .Lang "ca") "Còpies de Seguretat" "Cloud Backup") }}
+            </a>
+        </li>
     </ul>
 </li>
 <li class="nav-item">

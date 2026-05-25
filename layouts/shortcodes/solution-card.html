@@ -1,0 +1,39 @@
+{{- /* Solution card for backup-empresa pillar page.
+   Params:
+     image       — image src
+     image-alt   — image alt text
+     image-class — backup-solution-logo (default) or backup-solution-badge
+     title       — H3 title
+     cta         — CTA button label
+     reverse     — true to put image on the right (default: false)
+     margin      — bottom spacing class (default: mb-5)
+   Inner content: rendered as Markdown (description + bullet list).
+*/ -}}
+{{- $image := .Get "image" -}}
+{{- $imageAlt := .Get "image-alt" -}}
+{{- $imageClass := default "backup-solution-logo" (.Get "image-class") -}}
+{{- $title := .Get "title" -}}
+{{- $cta := .Get "cta" -}}
+{{- $reverse := eq (.Get "reverse") "true" -}}
+{{- $margin := default "mb-5" (.Get "margin") -}}
+<div class="row align-items-center {{ $margin }}">
+{{- if $reverse }}
+<div class="col-lg-7 landing-slide-in-left order-lg-1 order-2">
+<h3>{{ $title }}</h3>
+<div class="landing-text-muted">{{ .Inner | markdownify }}</div>
+<a href="#contact" class="landing-btn landing-btn-primary" rel="nofollow">{{ $cta }} <i class="fas fa-arrow-right landing-arrow-soft-green"></i></a>
+</div>
+<div class="col-lg-5 text-center landing-slide-in-right order-lg-2 order-1">
+<img src="{{ $image }}" alt="{{ $imageAlt }}" class="img-fluid {{ $imageClass }}" loading="lazy">
+</div>
+{{- else }}
+<div class="col-lg-5 text-center landing-slide-in-left">
+<img src="{{ $image }}" alt="{{ $imageAlt }}" class="img-fluid {{ $imageClass }}" loading="lazy">
+</div>
+<div class="col-lg-7 landing-slide-in-right">
+<h3>{{ $title }}</h3>
+<div class="landing-text-muted">{{ .Inner | markdownify }}</div>
+<a href="#contact" class="landing-btn landing-btn-primary" rel="nofollow">{{ $cta }} <i class="fas fa-arrow-right landing-arrow-soft-green"></i></a>
+</div>
+{{- end }}
+</div>
