@@ -34,6 +34,31 @@ jobs:
           hugo-version: '0.146.7'
           extended: true
 
+      # 2.5) Generate /stats/config.js so the dashboard auto-connects.
+      #      Token is intentionally embedded (read-only); /stats/ is meant to be
+      #      shareable with partners without exchanging secrets.
+      - name: Generate stats dashboard auto-config
+        env:
+          GOATCOUNTER_TOKEN: ${{ secrets.GOATCOUNTER_TOKEN }}
+        run: |
+          if [ -z "$GOATCOUNTER_TOKEN" ]; then
+            echo "::warning::GOATCOUNTER_TOKEN not set, dashboard will require manual connect"
+            exit 0
+          fi
+          ME=$(curl -sf -H "Authorization: Bearer $GOATCOUNTER_TOKEN" "https://inogues.goatcounter.com/api/v0/me")
+          if [ -z "$ME" ]; then
+            echo "::warning::Could not fetch /me from GoatCounter; skipping auto-config"
+            exit 0
+          fi
+          cat > static/stats/config.js <<EOF
+          window.GC_AUTOCONFIG = {
+            baseURL: "https://inogues.goatcounter.com",
+            apiKey: "$GOATCOUNTER_TOKEN",
+            me: $ME
+          };
+          EOF
+          echo "Generated static/stats/config.js ($(wc -c < static/stats/config.js) bytes)"
+
       # 3) Build Hugo site (includes main site + integrated blog)
       - name: Build Hugo site
         run: |
