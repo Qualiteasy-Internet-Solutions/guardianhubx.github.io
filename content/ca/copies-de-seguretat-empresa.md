@@ -337,6 +337,45 @@ El backup protegeix les teves dades. El **Disaster Recovery as a Service** prote
 </div>
 </section>
 
+<!-- Descarregues -->
+<section class="landing-section bg-light">
+<div class="container">
+<h2 class="landing-section-title text-center">Descarrega els nostres recursos</h2>
+<p class="text-center landing-text-muted mx-auto mb-5 backup-narrow">Accés a guies tècniques i documentació detallada sobre solucions de backup empresarial.</p>
+
+<div class="row g-4">
+<div class="col-md-6 landing-fade-in">
+<div class="card h-100 border-0 shadow-sm">
+<div class="card-body p-4 text-center">
+<div class="mb-3">
+<i class="fas fa-file-pdf fa-3x text-danger"></i>
+</div>
+<h4 class="card-title mb-2">Guia de Copias de Seguridad Empresarials</h4>
+<p class="landing-text-muted mb-4">Documentació completa sobre solucions de backup per a empreses, millors pràctiques i casos d'ús reals.</p>
+<a href="/docs/guia-copias-seguridad-empresa-guardianhubx.pdf" class="landing-btn landing-btn-primary landing-btn-sm" download>
+<i class="fas fa-download me-2"></i>DESCARREGAR
+</a>
+</div>
+</div>
+</div>
+<div class="col-md-6 landing-fade-in">
+<div class="card h-100 border-0 shadow-sm">
+<div class="card-body p-4 text-center">
+<div class="mb-3">
+<i class="fas fa-file-pdf fa-3x text-danger"></i>
+</div>
+<h4 class="card-title mb-2">Backup de Microsoft 365 amb Veeam</h4>
+<p class="landing-text-muted mb-4">Guia tècnica sobre les solucions de backup per a Microsoft 365 i infrastructure virtual amb tecnologia Veeam.</p>
+<a href="/docs/veeam-backup-microsoft365-guardianhubx.pdf" class="landing-btn landing-btn-primary landing-btn-sm" download>
+<i class="fas fa-download me-2"></i>DESCARREGAR
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
 <!-- Contact CTA -->
 {{< contact-cta >}}
 
