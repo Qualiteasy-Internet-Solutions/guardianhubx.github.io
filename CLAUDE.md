@@ -199,6 +199,44 @@ keywords:
 
 **Publishing Schedule:** 2-3 posts/month (Mar-Sep 2026: 20 planned posts)
 
+### Internal Linking Strategy for Blog Articles
+
+**Goal:** Every blog article should contextually link to 2-3 pillar pages or solution pages to strengthen SEO and guide users through the site.
+
+**Pillar Pages to Link To:**
+- `/es/que-es-la-ciberseguridad/` — General cybersecurity education & fundamentals
+- `/es/tipos-ataques-ciberneticos/` — Threat taxonomy; link when discussing specific attack types
+- `/es/diccionario-ciberseguridad/` — Glossary; link for technical term definitions
+- `/es/objetivos-ciberseguridad/` — Security goals & frameworks
+- `/es/formacion-phishing-software/` — Security awareness training; link when discussing employee education
+
+**Solution Pages:**
+- `/es/guardianaradar/` — Always include in CTA (already in conclusion)
+- `/es/ironwall/` — Authentication & access control
+- `/es/nordsecurity/` — NordPass for password management
+- `/es/smartlayer/` — Network/infrastructure security
+
+**Application Pattern:**
+1. **Introduction/Hook:** Link to foundational pillar (e.g., general cybersecurity context)
+2. **Body sections:** Link to attack types, glossary, or solutions when naturally relevant
+3. **Conclusion:** Always include GuardianRadar + GuardianHub CTA (already standard)
+
+**Language-Specific URLs:**
+- Spanish: `/es/page-slug/`
+- Catalan: `/ca/page-slug/`
+- English: Links point to `/en/` pillar pages (no blog in EN)
+
+**Example:** Brute force attack article includes:
+- `/es/tipos-ataques-ciberneticos/` — context on attack types
+- `/es/nordsecurity/` — password management solution
+- `/es/formacion-phishing-software/` — security training for prevention
+- `/es/guardianaradar/` — monitoring solution in CTA
+
+**Do NOT link:**
+- To blog articles from blog articles (only to pillar/solution pages)
+- Repeatedly to the same page in one article
+- If the link feels forced (only contextual connections)
+
 ## Content Quality Standards
 
 ### Catalan Language
