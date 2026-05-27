@@ -199,6 +199,22 @@ keywords:
 
 **Publishing Schedule:** 2-3 posts/month (Mar-Sep 2026: 20 planned posts)
 
+## Content Quality Standards
+
+### Catalan Language
+Castellanismes freqüents i errors verbals a revisar en tot contingut en català. Procés de revisió obligatori.
+
+### Badge Risk Levels
+**Cybersecurity attack pages** (tipus-atacs-ciberneticos, types-of-cyberattacks, etc.) use standardized badge colors for risk levels:
+
+| Level | Color | Bootstrap Class |
+|-------|-------|-----------------|
+| **CRÍTICO / CRITICAL / CRÍTIC** | 🔴 Red | `bg-danger` |
+| **ALTO / HIGH / ALT** | 🟠 Orange | `bg-warning text-dark` |
+| **MEDIO-ALTO / MEDIUM-HIGH / MIG-ALT** | 🔵 Blue | `bg-info` |
+
+**Apply to:** Threat cards + impact table (all languages: ES, CA, EN). No inline styles — use badge classes in both badges and tables.
+
 # My Project Rules
 - ALWAYS use Haiku model for simple tasks.
 - ASK for permission before running broad audits or reading more than 5 files.

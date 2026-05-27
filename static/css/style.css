@@ -997,6 +997,97 @@ body.scrolled #page-title {
 
 .bg-1 { background: linear-gradient(135deg, #96b2ce 0%, #6d8bb7 100%); }
 .bg-2 { background: linear-gradient(135deg, #a4f6e1 0%, #7fded5 100%); }
+
+/* --- Icon Color Classes --- */
+.icon-phishing { color: #FF6B6B !important; margin-right: 8px !important; }
+.icon-ransomware { color: #FFA500 !important; margin-right: 8px !important; }
+.icon-malware { color: #9B59B6 !important; margin-right: 8px !important; }
+.icon-bec { color: #E74C3C !important; margin-right: 8px !important; }
+.icon-credential { color: #3498DB !important; margin-right: 8px !important; }
+.icon-ddos { color: #27AE60 !important; margin-right: 8px !important; }
+.icon-social { color: #8E44AD !important; margin-right: 8px !important; }
+.icon-branch { color: #FFC107 !important; }
+
+.icon-small-label { font-size: 0.95rem !important; }
+.badge-nowrap { white-space: nowrap !important; }
+
+/* --- Table Styles --- */
+.table-threat {
+  border: 1px solid #ddd !important;
+  border-collapse: collapse !important;
+}
+
+.table-threat thead {
+  background-color: #f8f9fa !important;
+}
+
+.table-threat th,
+.table-threat td {
+  padding: 12px !important;
+  border: 1px solid #ddd !important;
+  vertical-align: middle !important;
+}
+
+.table-threat thead th {
+  font-weight: 600 !important;
+  text-align: left !important;
+}
+
+/* --- Checklist Box --- */
+.checklist-box {
+  background: #f8f9fa !important;
+  padding: 24px !important;
+  border-radius: 8px !important;
+  border-left: 4px solid #28a745 !important;
+}
+
+.checklist-item {
+  padding: 10px 0 !important;
+  border-bottom: 1px solid #e0e0e0 !important;
+  list-style: none !important;
+}
+
+.checklist-item:last-child {
+  border-bottom: none !important;
+}
+
+.checklist-icon {
+  margin-right: 10px !important;
+  color: #28a745 !important;
+}
+
+.checklist-note {
+  margin-top: 20px !important;
+  margin-bottom: 0 !important;
+  font-style: italic !important;
+  color: #666 !important;
+}
+
+/* --- Benefit Icon Gradients --- */
+.benefit-icon-gradient-1 {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  color: white !important;
+}
+
+.benefit-icon-gradient-2 {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%) !important;
+  color: white !important;
+}
+
+.benefit-icon-gradient-3 {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%) !important;
+  color: white !important;
+}
+
+/* --- Card Styles --- */
+.card-simple {
+  border: 1px solid #ddd !important;
+  height: 100% !important;
+}
+
+.card-top-border {
+  border-top: 3px solid !important;
+}
 .bg-3 { background: linear-gradient(135deg, #548ce9 0%, #3b6ec9 100%); }
 .bg-4 { background: linear-gradient(135deg, #1a2634 0%, #2e3b50 100%); }
 

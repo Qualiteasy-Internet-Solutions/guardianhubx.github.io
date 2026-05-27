@@ -46,6 +46,13 @@
         </a>
     </li>
     <li>
+        <a class="dropdown-item" href="{{ cond (eq .Lang "es") ("/es/tipos-ataques-ciberneticos/" | relLangURL)
+                (cond (eq .Lang "ca") ("/ca/tipus-atacs-cibernetics/" | relLangURL)
+                                ("/en/types-of-cyberattacks/" | relLangURL)) }}">
+        {{ cond (eq .Lang "es") "Tipos de Ataques Cibernéticos" (cond (eq .Lang "ca") "Tipus d'Atacs Cibernètics" "Types of Cyberattacks") }}
+        </a>
+    </li>
+    <li>
         <a class="dropdown-item" href="{{ cond (eq .Lang "es") ("/es/objetivos-ciberseguridad/" | relLangURL)
                 (cond (eq .Lang "ca") ("/ca/objectius-ciberseguretat/" | relLangURL)
                                 ("/en/cybersecurity-goals/" | relLangURL)) }}">
