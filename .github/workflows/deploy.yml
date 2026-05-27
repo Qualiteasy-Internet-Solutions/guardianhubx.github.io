@@ -45,10 +45,11 @@ jobs:
             echo "::warning::GOATCOUNTER_TOKEN not set, dashboard will require manual connect"
             exit 0
           fi
-          ME=$(curl -sf "https://inogues.goatcounter.com/api/v0/me?token=$GOATCOUNTER_TOKEN")
-          if [ -z "$ME" ]; then
+          echo "Testing GoatCounter API..."
+          curl -i "https://inogues.goatcounter.com/api/v0/me?token=$GOATCOUNTER_TOKEN" 2>&1 | head -30
+          ME=$(curl -s "https://inogues.goatcounter.com/api/v0/me?token=$GOATCOUNTER_TOKEN")
+          if [ -z "$ME" ] || echo "$ME" | grep -q "error\|unauthorized\|invalid"; then
             echo "::warning::Could not fetch /me from GoatCounter; skipping auto-config"
-            curl -i "https://inogues.goatcounter.com/api/v0/me?token=$GOATCOUNTER_TOKEN" 2>&1 | head -20
             exit 0
           fi
           cat > static/stats/config.js <<EOF
