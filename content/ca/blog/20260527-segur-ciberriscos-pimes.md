@@ -43,7 +43,7 @@ A més, no és un producte reservat a grans corporacions. Cada vegada més soluc
 
 ## Què és una assegurança de ciberriscos
 
-Una assegurança de ciberriscos és una pòlissa dissenyada per cobrir part de l'impacte econòmic i operatiu d'un incident de ciberseguretat. No substitueix la prevenció ni arregla per si sola una mala postura de seguretat, però sí pot ajudar a assumir costos que, per a una pime, poden ser molt difícils d'absorbir en solitari.
+Una assegurança de ciberriscos és una pòlissa dissenyada per cobrir part de l'impacte econòmic i operatiu d'un incident de ciberseguretat. No substitueix la prevenció ni arregla per si sola una mala postura de seguretat, però sí pot ajudar a assumir costos que, per a una pime, poden ser molt difícils d'absorbir en solitari. La [ciberseguretat preventiva](/ca/que-es-la-ciberseguretat/) segueix sent la teva primera línia de defensa.
 
 Aquest tipus de pòlisses solen plantejar-se com a cobertura enfront d'incidents com robatori de dades, malware, extorsió, pèrdua de negoci, assistència tècnica i responsabilitat enfront de tercers.
 
@@ -67,7 +67,7 @@ Moltes pòlisses cobreixen danys derivats del robatori de dades o d'una bretxa q
 
 ### 4. Ciberextorsió i ransomware
 
-Algunes pòlisses contemplen despeses vinculats a extorsió digital o ransomware, encara que aquí convé llegir molt bé límits, sublímits i condicions. Aquest és un dels punts on més diferències sol haver entre unes pòlisses i altres.
+Algunes pòlisses contemplen despeses vinculats a extorsió digital o ransomware, encara que aquí convé llegir molt bé límits, sublímits i condicions. Aquests són alguns dels [ciberataques més costosos](/ca/tipus-atacs-cibernetica/) i un dels punts on més diferències sol haver entre unes pòlisses i altres.
 
 ### 5. Frau i transferències indegudes
 

@@ -58,7 +58,7 @@ INCIBE recomana evitar l'accés a informació confidencial com contrasenyes o da
 
 ## Què és un atac man-in-the-middle explicat fàcil
 
-Un atac man-in-the-middle ocorre quan un tercer es col·loca entre el teu dispositiu i el servei al qual et connectes per intentar veure, interceptar o fins i tot modificar la informació que circula. El NCSC ho inclou entre els atacs presents en xarxes locals no fiables.
+Un atac man-in-the-middle ocorre quan un tercer es col·loca entre el teu dispositiu i el servei al qual et connectes per intentar veure, interceptar o fins i tot modificar la informació que circula. El NCSC ho inclou entre els atacs presents en xarxes locals no fiables. És un dels [tipus de ciberataques](/ca/tipus-atacs-cibernetica/) més comuns en teletreball.
 
 Portat a un exemple simple:
 

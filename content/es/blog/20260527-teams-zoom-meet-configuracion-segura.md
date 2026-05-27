@@ -35,7 +35,7 @@ translationKey: "teams-zoom-meet-secure-configuration"
 
 Una videollamada sin protección es como dejar la puerta de tu oficina abierta. Cualquiera puede entrar, escuchar, grabar y hasta suplantarse como empleado.
 
-La buena noticia es que Teams, Zoom y Google Meet ya incluyen los controles que necesitas. El problema es que muy pocas empresas los activan.
+La buena noticia es que Teams, Zoom y Google Meet ya incluyen los controles que necesitas. El problema es que muy pocas empresas los activan. Esta es una parte crítica de tu [seguridad informática](/es/que-es-la-ciberseguridad/) en el teletrabajo.
 
 ---
 
@@ -172,7 +172,7 @@ Una demo de ventas no necesita el mismo nivel de protección que una reunión de
 
 **Segundo: Grabar sin avisar.**
 
-Es la violación más común. Antes de grabar, pregunta explícitamente a todos los participantes. Si alguien dice que no, detén la grabación.
+Es la violación más común. Antes de grabar, pregunta explícitamente a todos los participantes. Si alguien dice que no, detén la grabación. Una buena [formación en seguridad](/es/formacion-phishing-software/) para tu equipo ayuda a evitar estos errores.
 
 ---
 

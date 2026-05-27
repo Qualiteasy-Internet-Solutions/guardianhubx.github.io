@@ -43,7 +43,7 @@ Además, no es un producto reservado a grandes corporaciones. Cada vez más solu
 
 ## Qué es un seguro de ciberriesgos
 
-Un seguro de ciberriesgos es una póliza diseñada para cubrir parte del impacto económico y operativo de un incidente de ciberseguridad. No sustituye a la prevención ni arregla por sí sola una mala postura de seguridad, pero sí puede ayudar a asumir costes que, para una pyme, pueden ser muy difíciles de absorber en solitario.
+Un seguro de ciberriesgos es una póliza diseñada para cubrir parte del impacto económico y operativo de un incidente de ciberseguridad. No sustituye a la prevención ni arregla por sí sola una mala postura de seguridad, pero sí puede ayudar a asumir costes que, para una pyme, pueden ser muy difíciles de absorber en solitario. La [ciberseguridad preventiva](/es/que-es-la-ciberseguridad/) sigue siendo tu primera línea de defensa.
 
 Este tipo de pólizas suelen plantearse como cobertura frente a incidentes como robo de datos, malware, extorsión, pérdida de negocio, asistencia técnica y responsabilidad frente a terceros.
 
@@ -67,7 +67,7 @@ Es una de las coberturas más importantes para gerencia. Si un ataque bloquea si
 
 ### 4. Ciberextorsión y ransomware
 
-Algunas pólizas contemplan gastos vinculados a extorsión digital o ransomware, aunque aquí conviene leer muy bien límites, sublímites y condiciones. Este es uno de los puntos donde más diferencias suele haber entre unas pólizas y otras.
+Algunas pólizas contemplan gastos vinculados a extorsión digital o ransomware, aunque aquí conviene leer muy bien límites, sublímites y condiciones. Estos son algunos de los [ciberataques más costosos](/es/tipos-ataques-ciberneticos/) y uno de los puntos donde más diferencias suele haber entre unas pólizas y otras.
 
 ### 5. Fraude y transferencias indebidas
 

@@ -34,7 +34,7 @@ translationKey: "teams-zoom-meet-secure-configuration"
 
 Una videoconferència sense protecció és com deixar la porta de la teva oficina oberta. Qualsevol pot entrar, escoltar, gravar i fins i tot suplantar-se com a empleat.
 
-La bona notícia és que Teams, Zoom i Google Meet ja inclouen els controls que necessites. El problema és que molt poques empreses els activen.
+La bona notícia és que Teams, Zoom i Google Meet ja inclouen els controls que necessites. El problema és que molt poques empreses els activen. Aquesta és una part crítica de la teva [seguretat informàtica](/ca/que-es-la-ciberseguretat/) en el teletreball.
 
 ---
 
@@ -171,7 +171,7 @@ Una demostració de vendes no necessita el mateix nivell de protecció que una r
 
 **Segon: Gravar sense avisar.**
 
-És la violació més comuna. Abans de gravar, pregunta explícitament a tots els participants. Si algú diu que no, detén la gravació.
+És la violació més comuna. Abans de gravar, pregunta explícitament a tots els participants. Si algú diu que no, detén la gravació. Una bona [formació en seguretat](/ca/formacio-phishing-software/) per al teu equip ajuda a evitar aquests errors.
 
 ---
 
