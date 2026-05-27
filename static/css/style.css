@@ -2000,6 +2000,40 @@ body.scrolled #page-title {
   color: #fff;
 }
 
+/* Platform Sections (Blog) */
+.blog-section {
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 4px solid;
+}
+
+.blog-section-teams {
+  background: #f0f7ff;
+  border-left-color: #0078d4;
+}
+
+.blog-section-teams i {
+  color: #0078d4;
+}
+
+.blog-section-zoom {
+  background: #f0f8ff;
+  border-left-color: #0b5cff;
+}
+
+.blog-section-zoom i {
+  color: #0b5cff;
+}
+
+.blog-section-meet {
+  background: #f0f9f6;
+  border-left-color: #34A853;
+}
+
+.blog-section-meet i {
+  color: #34A853;
+}
+
 /* Defense Grid */
 .defense-grid {
   display: grid;
