@@ -45,16 +45,11 @@ jobs:
             echo "::warning::GOATCOUNTER_TOKEN not set, dashboard will require manual connect"
             exit 0
           fi
-          ME=$(curl -sf -H "Content-Type: application/json" -H "Authorization: Bearer $GOATCOUNTER_TOKEN" "https://inogues.goatcounter.com/api/v0/me")
-          if [ -z "$ME" ]; then
-            echo "::warning::Could not fetch /me from GoatCounter; skipping auto-config"
-            exit 0
-          fi
           cat > static/stats/config.js <<EOF
           window.GC_AUTOCONFIG = {
             baseURL: "https://inogues.goatcounter.com",
             apiKey: "$GOATCOUNTER_TOKEN",
-            me: $ME
+            me: {}
           };
           EOF
           echo "Generated static/stats/config.js ($(wc -c < static/stats/config.js) bytes)"
