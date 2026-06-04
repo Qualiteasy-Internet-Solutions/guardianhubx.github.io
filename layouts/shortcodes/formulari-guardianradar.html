@@ -155,7 +155,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('radar-form');
     const container = document.getElementById('radar-form-container');
     const progressFill = document.getElementById('progress-fill');
-    const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzPPxawkK4p8IRoJddxjtzIcKY1P-eUeVZFgyNcV4tJSQ6ARecBTDcfHSZFlZOtX8eD/exec';
+    const SCRIPT_URL = 'https://kfhmalbauk.execute-api.eu-west-1.amazonaws.com/default/lambda_Guardian_RadarSignup';
 
     let step = 0;
     let data = {
@@ -456,9 +456,11 @@ document.addEventListener('DOMContentLoaded', function() {
                         <p>{{ i18n "radar_saving_subtitle" | safeJS }}</p>
                     </div>`;
 
-                const formData = new FormData();
-                for (const key in data) { formData.append(key, data[key]); }
-                const fetchPromise = fetch(SCRIPT_URL, { method: 'POST', body: formData });
+                const fetchPromise = fetch(SCRIPT_URL, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                });
 
                 setTimeout(() => {
                     fetchPromise.then(() => { step = 6; render(); }).catch(() => { step = 6; render(); });
