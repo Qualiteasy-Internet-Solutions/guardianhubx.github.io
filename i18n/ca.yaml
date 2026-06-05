@@ -537,6 +537,10 @@
   translation: "Tot a punt!"
 - id: "radar_success_msg_simple"
   translation: "Gràcies per la confiança en GuardianHubX. Ben aviat rebràs una comanda i les instruccions per realitzar el pagament mitjançant el sistema que hagis triat. Una vegada realitzat el pagament procedirem a l'activació dels serveis."
+- id: "radar_error_title"
+  translation: "Hi ha hagut un problema"
+- id: "radar_error_msg"
+  translation: "No hem pogut processar la teva sol·licitud. Si us plau, torna-ho a intentar o contacta'ns a hola@guardianhubx.com."
 # Errors
 - id: "radar_error_required"
   translation: "Són dades obligatòries."

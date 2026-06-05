@@ -163,6 +163,7 @@ document.addEventListener('DOMContentLoaded', function() {
         provincia: '', pais: '{{ i18n "radar_default_country" | safeJS }}',
         nif: '', telefon: '', email_reg: '', admin_nom: '', admin_dni: '',
         contacte_whatsapp: '', dominis: '', emails_radar: '', pagament: '', discount_code: '',
+        lang: '{{ .Page.Lang }}',
         referral: (typeof window.getGhxReferral === 'function') ? window.getGhxReferral() : ''
     };
 
@@ -456,15 +457,32 @@ document.addEventListener('DOMContentLoaded', function() {
                         <p>{{ i18n "radar_saving_subtitle" | safeJS }}</p>
                     </div>`;
 
-                const fetchPromise = fetch(SCRIPT_URL, {
+                fetch(SCRIPT_URL, {
                     method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'x-api-key': 'PUukMRCvsB41qGjZ0duc125ASyoo3VGBawdPhce2Hide'
+                    },
                     body: JSON.stringify(data)
+                }).then(res => {
+                    if (res.ok) {
+                        step = 6; render();
+                    } else {
+                        form.innerHTML = `
+                            <div class="form-slide active" style="text-align:center; padding: 50px 20px;">
+                                <i class="fas fa-exclamation-circle" style="font-size:60px; color:#e53e3e; margin-bottom:20px;"></i>
+                                <h2>{{ i18n "radar_error_title" | safeJS }}</h2>
+                                <p>{{ i18n "radar_error_msg" | safeJS }}</p>
+                            </div>`;
+                    }
+                }).catch(() => {
+                    form.innerHTML = `
+                        <div class="form-slide active" style="text-align:center; padding: 50px 20px;">
+                            <i class="fas fa-exclamation-circle" style="font-size:60px; color:#e53e3e; margin-bottom:20px;"></i>
+                            <h2>{{ i18n "radar_error_title" | safeJS }}</h2>
+                            <p>{{ i18n "radar_error_msg" | safeJS }}</p>
+                        </div>`;
                 });
-
-                setTimeout(() => {
-                    fetchPromise.then(() => { step = 6; render(); }).catch(() => { step = 6; render(); });
-                }, 2000);
             };
         }
     }

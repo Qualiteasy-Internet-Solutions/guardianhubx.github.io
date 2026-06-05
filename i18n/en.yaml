@@ -528,7 +528,11 @@
 - id: "radar_success_title"
   translation: "All set!"
 - id: "radar_success_msg_simple"
-  translation: "Thank you for your trust in GuardianHubX. Shortly you will receive an order and instructions to make the payment using the system you have chosen. Once the payment is made, we will proceed with the activation of the services."  
+  translation: "Thank you for your trust in GuardianHubX. Shortly you will receive an order and instructions to make the payment using the system you have chosen. Once the payment is made, we will proceed with the activation of the services."
+- id: "radar_error_title"
+  translation: "Something went wrong"
+- id: "radar_error_msg"
+  translation: "We couldn't process your request. Please try again or contact us at hola@guardianhubx.com."
 
 - id: "radar_error_required"
   translation: "These fields are required."
