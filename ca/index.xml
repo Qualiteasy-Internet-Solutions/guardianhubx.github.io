@@ -768,26 +768,19 @@ SOL·LICITAR INFORMACIÓ &lt;i class="fas fa-arrow-right landing-arrow-soft-gree
  &lt;div class="col-lg-8 landing-slide-in-left">
  &lt;h2 class="landing-section-title text-start">Comença el teu entrenament.&lt;br>Derrota el phishing.&lt;/h2>
  &lt;p class="mb-3 landing-text-muted">El cibercrim no s'atura, i els atacs de phishing són cada vegada més avançats. Però tu pots anar un pas endavant.&lt;/p></description></item><item><title>Faronics | Solucions de Ciberseguretat i Gestió de Sistemes</title><link>https://guardianhubx.com/ca/faronics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/ca/faronics/</guid><description>&lt;section class="about mb-5 container">
- &lt;div class="text-center">
- &lt;img src="https://guardianhubx.com/img/faronics-logo.png" alt="Logo de Faronics" class="img-fluid mb-2" style="max-height: 100px;">
- &lt;h2>Dels creadors de Deep Freeze, Faronics Cloud:&lt;/h2>
- &lt;p>Solucions senzilles per a la seguretat d’endpoints i la gestió de dispositius.&lt;/p>
+ &lt;div class="text-center mb-5">
+ &lt;img src="https://guardianhubx.com/img/faronics-logo.png" alt="Logo de Faronics" class="img-fluid mb-3" style="max-height: 100px;">
+ &lt;h2 class="h3">Protecció d'endpoints i gestió de dispositius per a empreses&lt;/h2>
+ &lt;p class="lead text-muted">Més de 30.000 clients · 10 milions de llicències · 150 països · Valoració 4,7/5&lt;/p>
  &lt;/div>
- &lt;div class="row mt-4 justify-content-center">
- &lt;div class="col-md-8 ps-md-5">
- &lt;h4 class="mb-4">Principals eines de Faronics:&lt;/h4>
- &lt;ul class="list-unstyled">
- &lt;li class="mb-2">• &lt;a href="https://faronicscloud.com/es/pages/restaurar-sistema-congelacion-profunda?dl=BRUYN">Deep Freeze&lt;/a>: Protecció contra canvis no desitjats&lt;/li>
- &lt;li class="mb-2">• &lt;a href="https://faronicscloud.com/es/pages/gestor-de-actualizaciones-de-software-parches?dl=BRUYN">Deploy&lt;/a>: Gestió remota de programari&lt;/li>
- &lt;li class="mb-2">• &lt;a href="https://faronicscloud.com/es/pages/gestion-dispositivos-moviles-mdm?dl=BRUYN">MDM&lt;/a>: Gestió mòbil&lt;/li>
- &lt;li class="mb-2">• &lt;a href="https://faronicscloud.com/es/pages/gestion-ahorro-energia?dl=BRUYN">Power Save&lt;/a>: Estalvi energètic&lt;/li>
- &lt;li class="mb-2">• &lt;a href="https://faronicscloud.com/es/pages/seleccion-seguridad-aplicacion?dl=BRUYN">Win Select&lt;/a>: Control d’accés&lt;/li>
- &lt;li class="mb-2">• &lt;a href="https://faronicscloud.com/es/pages/antivirus-ciberseguridad?dl=BRUYN">Anti Virus&lt;/a>&lt;/li>
- &lt;li class="mb-2">• &lt;a href="https://faronicscloud.com/es/pages/perspicacia?dl=BRUYN">Insight&lt;/a>: Control d'aules&lt;/li>
- &lt;/ul>
- &lt;p class="mt-4">
- Els productes de Faronics, ara en versió Cloud, ajuden les organitzacions a &lt;strong>prevenir, detectar i recuperar-se d’incidents&lt;/strong>, &lt;a href="https://guardianhubx.com/ca/objectius-ciberseguretat/">els tres pilars fonamentals de la ciberseguretat&lt;/a>.
- &lt;/p></description></item><item><title>Gràcies! | Missatge de Confirmació</title><link>https://guardianhubx.com/ca/thanks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/ca/thanks/</guid><description>&lt;!-- Success Section -->
+ &lt;div class="row g-4 justify-content-center mb-4">
+ &lt;div class="col-md-4">
+ &lt;div class="card h-100 border-0 shadow-sm p-3">
+ &lt;div class="text-center mb-3">
+ &lt;i class="fas fa-snowflake fa-2x text-primary">&lt;/i>
+ &lt;/div>
+ &lt;h3 class="h5 text-center">Deep Freeze&lt;/h3>
+ &lt;p class="text-muted small text-center">Congela l'estat del sistema. Qualsevol canvi — incloent ransomware, malware i amenaces zero-day — desapareix en reiniciar. Redueix fins al 60% els tiquets de suport.&lt;/p></description></item><item><title>Gràcies! | Missatge de Confirmació</title><link>https://guardianhubx.com/ca/thanks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/ca/thanks/</guid><description>&lt;!-- Success Section -->
 &lt;section class="thanks-hero py-5">
 &lt;div class="container text-center">
 &lt;div class="thanks-success-icon mb-4">

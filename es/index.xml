@@ -1329,26 +1329,19 @@ SOLICITAR INFORMACIÓN &lt;i class="fas fa-arrow-right landing-arrow-soft-green"
  &lt;div class="col-lg-8 landing-slide-in-left">
  &lt;h2 class="landing-section-title text-start">Empieza tu entrenamiento.&lt;br>Derrota al phishing.&lt;/h2>
  &lt;p class="mb-3 landing-text-muted">El cibercrimen no se detiene, y los ataques de phishing son cada vez más sofisticados. Con GuardianHubX, puedes ir siempre un paso por delante.&lt;/p></description></item><item><title>Faronics | Soluciones de Ciberseguridad y Gestión de Sistemas</title><link>https://guardianhubx.com/es/faronics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/es/faronics/</guid><description>&lt;section class="about mb-5 container">
- &lt;div class="text-center">
- &lt;img src="https://guardianhubx.com/img/faronics-logo.png" alt="Logo de Faronics" class="img-fluid mb-2" style="max-height: 100px;">
- &lt;h2>De los creadores de Deep Freeze, Faronics Cloud:&lt;/h2>
- &lt;p>Soluciones simples para la seguridad de endpoints y la gestión de dispositivos.&lt;/p>
+ &lt;div class="text-center mb-5">
+ &lt;img src="https://guardianhubx.com/img/faronics-logo.png" alt="Logo de Faronics" class="img-fluid mb-3" style="max-height: 100px;">
+ &lt;h2 class="h3">Protección de endpoints y gestión de dispositivos para empresas&lt;/h2>
+ &lt;p class="lead text-muted">Más de 30.000 clientes · 10 millones de licencias · 150 países · Valoración 4,7/5&lt;/p>
  &lt;/div>
- &lt;div class="row mt-4 justify-content-center">
- &lt;div class="col-md-8 ps-md-5">
- &lt;h4 class="mb-4">Principales herramientas de Faronics:&lt;/h4>
- &lt;ul class="list-unstyled">
- &lt;li class="mb-2">• &lt;a href="https://faronicscloud.com/es/pages/restaurar-sistema-congelacion-profunda?dl=BRUYN">Deep Freeze&lt;/a>: Protección contra cambios no deseados&lt;/li>
- &lt;li class="mb-2">• &lt;a href="https://faronicscloud.com/es/pages/gestor-de-actualizaciones-de-software-parches?dl=BRUYN">Deploy&lt;/a>: Gestión remota de software&lt;/li>
- &lt;li class="mb-2">• &lt;a href="https://faronicscloud.com/es/pages/gestion-dispositivos-moviles-mdm?dl=BRUYN">MDM&lt;/a>: Gestión móvil&lt;/li>
- &lt;li class="mb-2">• &lt;a href="https://faronicscloud.com/es/pages/gestion-ahorro-energia?dl=BRUYN">Power Save&lt;/a>: Ahorro energético&lt;/li>
- &lt;li class="mb-2">• &lt;a href="https://faronicscloud.com/es/pages/seleccion-seguridad-aplicacion?dl=BRUYN">Win Select&lt;/a>: Control de acceso&lt;/li>
- &lt;li class="mb-2">• &lt;a href="https://faronicscloud.com/es/pages/antivirus-ciberseguridad?dl=BRUYN">Anti Virus&lt;/a>&lt;/li>
- &lt;li class="mb-2">• &lt;a href="https://faronicscloud.com/es/pages/perspicacia?dl=BRUYN">Insight&lt;/a>: Control de aulas&lt;/li>
- &lt;/ul>
- &lt;p class="mt-4">
- Los productos de Faronics, ahora Cloud, ayudan a las organizaciones a &lt;strong>prevenir, detectar y recuperarse de incidentes&lt;/strong>, &lt;a href="https://guardianhubx.com/es/objetivos-ciberseguridad/">los tres pilares fundamentales de la ciberseguridad&lt;/a>.
- &lt;/p></description></item><item><title>GuardianHubX - Ecosistema de ciberseguridad con los mejores partners</title><link>https://guardianhubx.com/es/partners/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/es/partners/</guid><description>&lt;main class="container my-5">
+ &lt;div class="row g-4 justify-content-center mb-4">
+ &lt;div class="col-md-4">
+ &lt;div class="card h-100 border-0 shadow-sm p-3">
+ &lt;div class="text-center mb-3">
+ &lt;i class="fas fa-snowflake fa-2x text-primary">&lt;/i>
+ &lt;/div>
+ &lt;h3 class="h5 text-center">Deep Freeze&lt;/h3>
+ &lt;p class="text-muted small text-center">Congela el estado del sistema. Cualquier cambio — incluyendo ransomware, malware y amenazas zero-day — desaparece al reiniciar. Reduce hasta un 60% los tickets de soporte.&lt;/p></description></item><item><title>GuardianHubX - Ecosistema de ciberseguridad con los mejores partners</title><link>https://guardianhubx.com/es/partners/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/es/partners/</guid><description>&lt;main class="container my-5">
 
  &lt;!-- About Section -->
  &lt;section class="about mb-5">

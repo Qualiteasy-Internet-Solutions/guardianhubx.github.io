@@ -876,38 +876,28 @@ REQUEST INFORMATION &lt;i class="fas fa-arrow-right landing-arrow-soft-green">&l
 &lt;li>Scan of exposed entry points: websites, routers, servers&lt;/li>
 &lt;/ul>
 &lt;p>EduCraft helps schools meet their digital responsibilities, prevent class disruptions, and promote best security practices across the entire educational community.&lt;/p></description></item><item><title>Faronics | Cybersecurity &amp; System Management Solutions</title><link>https://guardianhubx.com/en/faronics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/en/faronics/</guid><description>&lt;section class="about mb-5 container">
- &lt;div class="text-center">
- &lt;img src="https://guardianhubx.com/img/faronics-logo.png" alt="Faronics Logo" class="img-fluid mb-2" style="max-height: 100px;">
- &lt;h2>From the makers of Deep Freeze comes Faronics Cloud:&lt;/h2>
- &lt;p>Simplified endpoint security and device management for modern IT teams.&lt;/p>
+ &lt;div class="text-center mb-5">
+ &lt;img src="https://guardianhubx.com/img/faronics-logo.png" alt="Faronics Logo" class="img-fluid mb-3" style="max-height: 100px;">
+ &lt;h2 class="h3">Endpoint protection and device management for businesses&lt;/h2>
+ &lt;p class="lead text-muted">30,000+ customers · 10 million licences · 150 countries · Rated 4.7/5&lt;/p>
  &lt;/div>
- &lt;div class="row mt-4 justify-content-center">
- &lt;div class="col-md-8 ps-md-5">
- &lt;h4 class="mb-4">Key tools from Faronics:&lt;/h4>
- &lt;ul class="list-unstyled">
- &lt;li class="mb-2">• &lt;a href="https://faronicscloud.com/pages/deep-freeze-system-restore?dl=BRUYN">Deep Freeze&lt;/a>: Protection against unwanted changes&lt;/li>
- &lt;li class="mb-2">• &lt;a href="https://faronicscloud.com/pages/software-updater-patch-management?dl=BRUYN">Deploy&lt;/a>: Remote software management&lt;/li>
- &lt;li class="mb-2">• &lt;a href="https://faronicscloud.com/pages/mobile-device-management-mdm?dl=BRUYN">MDM&lt;/a>: Mobile device management&lt;/li>
- &lt;li class="mb-2">• &lt;a href="https://faronicscloud.com/pages/power-save-energy-management?dl=BRUYN">Power Save&lt;/a>: Energy efficiency&lt;/li>
- &lt;li class="mb-2">• &lt;a href="https://faronicscloud.com/pages/winselect-application-security?dl=BRUYN">Win Select&lt;/a>: Access control&lt;/li>
- &lt;li class="mb-2">• &lt;a href="https://faronicscloud.com/pages/anti-virus-cyber-security?dl=BRUYN">Anti Virus&lt;/a>&lt;/li>
- &lt;li class="mb-2">• &lt;a href="https://faronicscloud.com/pages/insight?dl=BRUYN">Insight&lt;/a>: Classroom monitoring&lt;/li>
- &lt;/ul>
- &lt;p class="mt-4">
- Faronics products, now cloud-based, help organizations &lt;strong>prevent, detect and recover from cyber incidents&lt;/strong>, the &lt;a href="https://guardianhubx.com/en/cybersecurity-goals/">three pillars of cybersecurity&lt;/a>.
- &lt;/p>
+ &lt;div class="row g-4 justify-content-center mb-4">
+ &lt;div class="col-md-4">
+ &lt;div class="card h-100 border-0 shadow-sm p-3">
+ &lt;div class="text-center mb-3">
+ &lt;i class="fas fa-snowflake fa-2x text-primary">&lt;/i>
+ &lt;/div>
+ &lt;h3 class="h5 text-center">Deep Freeze&lt;/h3>
+ &lt;p class="text-muted small text-center">Freezes the system state. Any change — including ransomware, malware and zero-day threats — disappears on reboot. Reduces IT support tickets by up to 60%.&lt;/p>
  &lt;/div>
  &lt;/div>
-&lt;/section>
-&lt;div class="d-flex justify-content-center gap-4 flex-wrap my-4">
- &lt;img src="https://guardianhubx.com/img/faronics-screens.png" 
- class="img-fluid zoomable-image" 
- alt="Deep Freeze Interface" 
- onclick="openFullscreen(this)">
-&lt;/div>
-&lt;section class="downloads mb-5 container text-center">
- &lt;h3>Download more information&lt;/h3>
- &lt;p>Access detailed documentation about Faronics and its cybersecurity benefits.&lt;/p></description></item><item><title>GuardianHubX – Cybersecurity ecosystem with the best partners</title><link>https://guardianhubx.com/en/partners/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/en/partners/</guid><description>&lt;main class="container my-5">
+ &lt;div class="col-md-4">
+ &lt;div class="card h-100 border-0 shadow-sm p-3">
+ &lt;div class="text-center mb-3">
+ &lt;i class="fas fa-cloud-upload-alt fa-2x text-primary">&lt;/i>
+ &lt;/div>
+ &lt;h3 class="h5 text-center">Software Updater / Deploy&lt;/h3>
+ &lt;p class="text-muted small text-center">Centralised patch and update management for Windows and third-party applications. No site visits, no manual intervention on each device.&lt;/p></description></item><item><title>GuardianHubX – Cybersecurity ecosystem with the best partners</title><link>https://guardianhubx.com/en/partners/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/en/partners/</guid><description>&lt;main class="container my-5">
 
  &lt;!-- About Section -->
  &lt;section class="about mb-5">
