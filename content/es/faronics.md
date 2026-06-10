@@ -1,7 +1,9 @@
 ---
 title: "Faronics | Soluciones de Ciberseguridad y Gestión de Sistemas"
 layout: "product"
-description: "Faronics | Soluciones de ciberseguridad y gestión de sistemas para proteger y administrar entornos informáticos."
+description: "Faronics Deep Freeze y Faronics Cloud: protección de endpoints, gestión remota de dispositivos y control de aulas para empresas y centros educativos."
+ogTitle: "Faronics para Empresas | Partner Oficial GuardianHubX"
+ogDescription: "Soluciones Faronics para empresas: Deep Freeze (protección de endpoints), Deploy (gestión de parches), MDM y control de aulas. Partner oficial con soporte en español."
 video: "https://www.youtube.com/embed/7OKaXe-Ym9Q?rel=0&cc_load_policy=0"
 resources:
   - name: "Brochure Deep Freeze Cloud"
@@ -15,64 +17,114 @@ external_links:
     url: "https://faronicscloud.com?dl=BRUYN"
 ---
 
-
 <section class="about mb-5 container">
-  <div class="text-center">
-    <img src="/img/faronics-logo.png" alt="Logo de Faronics" class="img-fluid mb-2" style="max-height: 100px;">
-    <h2>De los creadores de Deep Freeze, Faronics Cloud:</h2>
-    <p>Soluciones simples para la seguridad de endpoints y la gestión de dispositivos.</p>
+  <div class="text-center mb-5">
+    <img src="/img/faronics-logo.png" alt="Logo de Faronics" class="img-fluid mb-3" style="max-height: 100px;">
+    <h2 class="h3">Protección de endpoints y gestión de dispositivos para empresas</h2>
+    <p class="lead text-muted">Más de 30.000 clientes · 10 millones de licencias · 150 países · Valoración 4,7/5</p>
   </div>
 
-  <div class="row mt-4 justify-content-center">
-    <div class="col-md-8 ps-md-5">
-      <h4 class="mb-4">Principales herramientas de Faronics:</h4>
-      <ul class="list-unstyled">
-        <li class="mb-2">• <a href="https://faronicscloud.com/es/pages/restaurar-sistema-congelacion-profunda?dl=BRUYN">Deep Freeze</a>: Protección contra cambios no deseados</li>
-        <li class="mb-2">• <a href="https://faronicscloud.com/es/pages/gestor-de-actualizaciones-de-software-parches?dl=BRUYN">Deploy</a>: Gestión remota de software</li>
-        <li class="mb-2">• <a href="https://faronicscloud.com/es/pages/gestion-dispositivos-moviles-mdm?dl=BRUYN">MDM</a>: Gestión móvil</li>
-        <li class="mb-2">• <a href="https://faronicscloud.com/es/pages/gestion-ahorro-energia?dl=BRUYN">Power Save</a>: Ahorro energético</li>
-        <li class="mb-2">• <a href="https://faronicscloud.com/es/pages/seleccion-seguridad-aplicacion?dl=BRUYN">Win Select</a>: Control de acceso</li>
-        <li class="mb-2">• <a href="https://faronicscloud.com/es/pages/antivirus-ciberseguridad?dl=BRUYN">Anti Virus</a></li>
-        <li class="mb-2">• <a href="https://faronicscloud.com/es/pages/perspicacia?dl=BRUYN">Insight</a>: Control de aulas</li>
-      </ul>
-
-  <p class="mt-4">
-    Los productos de Faronics, ahora Cloud, ayudan a las organizaciones a <strong>prevenir, detectar y recuperarse de incidentes</strong>, <a href="/es/objetivos-ciberseguridad/">los tres pilares fundamentales de la ciberseguridad</a>.
-  </p>
-</div>
+  <div class="row g-4 justify-content-center mb-4">
+    <div class="col-md-4">
+      <div class="card h-100 border-0 shadow-sm p-3">
+        <div class="text-center mb-3">
+          <i class="fas fa-snowflake fa-2x text-primary"></i>
+        </div>
+        <h3 class="h5 text-center">Deep Freeze</h3>
+        <p class="text-muted small text-center">Congela el estado del sistema. Cualquier cambio — incluyendo ransomware, malware y amenazas zero-day — desaparece al reiniciar. Reduce hasta un 60% los tickets de soporte.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100 border-0 shadow-sm p-3">
+        <div class="text-center mb-3">
+          <i class="fas fa-cloud-upload-alt fa-2x text-primary"></i>
+        </div>
+        <h3 class="h5 text-center">Software Updater / Deploy</h3>
+        <p class="text-muted small text-center">Gestión centralizada de parches y actualizaciones de Windows y aplicaciones de terceros. Sin desplazamientos, sin intervención manual en cada equipo.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100 border-0 shadow-sm p-3">
+        <div class="text-center mb-3">
+          <i class="fas fa-shield-alt fa-2x text-primary"></i>
+        </div>
+        <h3 class="h5 text-center">Anti-Executable</h3>
+        <p class="text-muted small text-center">Bloquea la ejecución de cualquier aplicación no aprobada. Si no está en la lista blanca, no se ejecuta — punto. Una de las defensas más efectivas contra ransomware.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100 border-0 shadow-sm p-3">
+        <div class="text-center mb-3">
+          <i class="fas fa-mobile-alt fa-2x text-primary"></i>
+        </div>
+        <h3 class="h5 text-center">MDM</h3>
+        <p class="text-muted small text-center">Gestión de dispositivos móviles Apple, Android y Chromebook desde un único panel en la nube. Control total sobre dispositivos corporativos y BYOD.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100 border-0 shadow-sm p-3">
+        <div class="text-center mb-3">
+          <i class="fas fa-desktop fa-2x text-primary"></i>
+        </div>
+        <h3 class="h5 text-center">WINSelect + Remote Connect</h3>
+        <p class="text-muted small text-center">Restringe el acceso a aplicaciones, webs y configuraciones del sistema. Acceso remoto por navegador a cualquier equipo gestionado sin software adicional.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100 border-0 shadow-sm p-3">
+        <div class="text-center mb-3">
+          <i class="fas fa-bolt fa-2x text-primary"></i>
+        </div>
+        <h3 class="h5 text-center">Power Save + Usage Stats</h3>
+        <p class="text-muted small text-center">Gestión inteligente del consumo energético y analíticas detalladas de uso de software y dispositivos. Ahorra costes y toma decisiones con datos reales.</p>
+      </div>
+    </div>
   </div>
 </section>
 
-<div class="d-flex justify-content-center gap-4 flex-wrap my-4">
-  <img src="img/faronics-screens.png" 
-       class="img-fluid zoomable-image"        
-       alt="Interfaz de Deep Freeze" 
-       onclick="openFullscreen(this)">
-</div>
+<section class="mb-5 container">
+  <div class="ratio ratio-16x9 mb-4">
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/7OKaXe-Ym9Q?rel=0&cc_load_policy=0" allowfullscreen title="Faronics Cloud — gestión de endpoints en menos de 1 minuto"></iframe>
+  </div>
+  <p class="text-center text-muted small">Faronics Cloud en menos de 1 minuto</p>
+</section>
+
+<section class="mb-5 container">
+  <div class="row align-items-center g-4">
+    <div class="col-lg-6">
+      <h2 class="h4 mb-3">¿Para quién es Faronics?</h2>
+      <ul class="list-unstyled">
+        <li class="mb-3"><i class="fas fa-check text-success me-2"></i><strong>Entornos multiusuario</strong> — escuelas, universidades, bibliotecas, centros de formación y fundaciones donde los equipos son compartidos por múltiples usuarios y deben estar siempre limpios y operativos</li>
+        <li class="mb-3"><i class="fas fa-check text-success me-2"></i><strong>Empresas con muchos endpoints</strong> — gestión centralizada de parches y actualizaciones sin desplazarse a cada puesto</li>
+        <li class="mb-3"><i class="fas fa-check text-success me-2"></i><strong>Entornos con alta rotación</strong> — hoteles, clínicas, puntos de atención al público donde cada usuario deja rastro</li>
+        <li class="mb-3"><i class="fas fa-check text-success me-2"></i><strong>Equipos de IT reducidos</strong> — gestiona decenas o cientos de dispositivos desde un panel único, reduciendo hasta un 60% la carga de soporte</li>
+        <li class="mb-3"><i class="fas fa-check text-success me-2"></i><strong>Entornos con riesgo de ransomware</strong> — Deep Freeze elimina cualquier amenaza en el próximo reinicio, sin necesidad de desinfección manual</li>
+      </ul>
+    </div>
+    <div class="col-lg-6 text-center">
+      <img src="/img/faronics-screens.png" class="img-fluid zoomable-image rounded shadow-sm" alt="Panel de Faronics Cloud — gestión centralizada de endpoints" onclick="openFullscreen(this)">
+    </div>
+  </div>
+</section>
 
 <section class="downloads mb-5 container text-center">
-  <h3>Descarga más información</h3>
-  <p>Accede a documentación detallada sobre Faronics y sus beneficios en ciberseguridad.</p>
+  <h2 class="h4 mb-2">¿Tienes dudas sobre si Faronics encaja en tu empresa?</h2>
+  <p class="text-muted mb-4">Como partner oficial, te ayudamos a elegir los módulos adecuados. También puedes descargar la documentación o acceder directamente a la tienda.</p>
   <div class="d-flex justify-content-center gap-3 flex-wrap">
-    <a href="/docs/deepfreeze-guardianhubx-es.pdf" class="btn btn-primary pdf-download" target="_blank">
-      <i class="fas fa-file-pdf"></i> Descargar Brochure de Deep Freeze Cloud
+    <a href="/es/#contact" class="btn btn-primary btn-lg">
+      <i class="fas fa-comments me-2"></i>Consulta gratuita
     </a>
-    <a href="/docs/deploy-guardianhubx-es.pdf" class="btn btn-primary pdf-download" target="_blank">
-      <i class="fas fa-file-pdf"></i> Descargar Ficha Técnica de Deploy
+    <a href="/docs/deepfreeze-guardianhubx-es.pdf" class="btn btn-outline-primary btn-lg pdf-download" target="_blank">
+      <i class="fas fa-file-pdf me-1"></i> Brochure Deep Freeze
     </a>
-    <a href="https://esfaronics.com" class="btn btn-success" target="_blank">
-      <i class="fas fa-globe"></i> Tienda (español)
+    <a href="/docs/deploy-guardianhubx-es.pdf" class="btn btn-outline-primary btn-lg pdf-download" target="_blank">
+      <i class="fas fa-file-pdf me-1"></i> Ficha Técnica Deploy
     </a>
-    <a href="https://faronicscloud.com?dl=BRUYN" class="btn btn-success" target="_blank">
-      <i class="fas fa-globe"></i> Sitio oficial
+    <a href="https://esfaronics.com" class="btn btn-outline-secondary btn-lg" target="_blank" rel="noopener">
+      <i class="fas fa-shopping-cart me-1"></i> Tienda
     </a>
-  </div>
-</section>
-
-<section class="solutions mb-5 container text-center">
-  <h3>Funcionalidades de Faronics Cloud</h3>
-  <p>Vea las funcionalidades de Faronics en menos de 1 minuto:</p>
-  <div class="ratio ratio-16x9">
-    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/7OKaXe-Ym9Q?rel=0" allowfullscreen title="Vídeo explicativo de Faronics"></iframe>
+    <a href="https://faronicscloud.com?dl=BRUYN" class="btn btn-outline-secondary btn-lg" target="_blank" rel="noopener">
+      <i class="fas fa-globe me-1"></i> Sitio oficial
+    </a>
   </div>
 </section>
