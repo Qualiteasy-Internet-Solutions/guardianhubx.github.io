@@ -767,11 +767,40 @@ SOL·LICITAR INFORMACIÓ &lt;i class="fas fa-arrow-right landing-arrow-soft-gree
  &lt;div class="row align-items-center">
  &lt;div class="col-lg-8 landing-slide-in-left">
  &lt;h2 class="landing-section-title text-start">Comença el teu entrenament.&lt;br>Derrota el phishing.&lt;/h2>
- &lt;p class="mb-3 landing-text-muted">El cibercrim no s'atura, i els atacs de phishing són cada vegada més avançats. Però tu pots anar un pas endavant.&lt;/p></description></item><item><title>Faronics | Solucions de Ciberseguretat i Gestió de Sistemes</title><link>https://guardianhubx.com/ca/faronics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/ca/faronics/</guid><description>&lt;section class="about mb-5 container">
+ &lt;p class="mb-3 landing-text-muted">El cibercrim no s'atura, i els atacs de phishing són cada vegada més avançats. Però tu pots anar un pas endavant.&lt;/p></description></item><item><title>Faronics | Solucions de Ciberseguretat i Gestió de Sistemes</title><link>https://guardianhubx.com/ca/faronics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/ca/faronics/</guid><description>&lt;section class="about mb-3 container">
  &lt;div class="text-center mb-5">
  &lt;img src="https://guardianhubx.com/img/faronics-logo.png" alt="Logo de Faronics" class="img-fluid mb-3" style="max-height: 100px;">
  &lt;h2 class="h3">Protecció d'endpoints i gestió de dispositius per a empreses&lt;/h2>
- &lt;p class="lead text-muted">Més de 30.000 clients · 10 milions de llicències · 150 països · Valoració 4,7/5&lt;/p>
+ &lt;div class="row justify-content-center g-3 mt-2">
+ &lt;div class="col-6 col-md-3 text-center">
+ &lt;div class="card border-0 p-3 bg-light stat-card">
+ &lt;i class="fas fa-users stat-card-icon">&lt;/i>
+ &lt;div class="fs-4 fw-bold text-primary">30.000+&lt;/div>
+ &lt;div class="small text-muted">clients arreu del món&lt;/div>
+ &lt;/div>
+ &lt;/div>
+ &lt;div class="col-6 col-md-3 text-center">
+ &lt;div class="card border-0 p-3 bg-light stat-card">
+ &lt;i class="fas fa-key stat-card-icon">&lt;/i>
+ &lt;div class="fs-4 fw-bold text-primary">10M&lt;/div>
+ &lt;div class="small text-muted">llicències actives&lt;/div>
+ &lt;/div>
+ &lt;/div>
+ &lt;div class="col-6 col-md-3 text-center">
+ &lt;div class="card border-0 p-3 bg-light stat-card">
+ &lt;i class="fas fa-globe stat-card-icon">&lt;/i>
+ &lt;div class="fs-4 fw-bold text-primary">150&lt;/div>
+ &lt;div class="small text-muted">països&lt;/div>
+ &lt;/div>
+ &lt;/div>
+ &lt;div class="col-6 col-md-3 text-center">
+ &lt;div class="card border-0 p-3 bg-light stat-card">
+ &lt;i class="fas fa-star stat-card-icon">&lt;/i>
+ &lt;div class="fs-4 fw-bold text-primary">4,7/5&lt;/div>
+ &lt;div class="small text-muted">valoració mitjana&lt;/div>
+ &lt;/div>
+ &lt;/div>
+ &lt;/div>
  &lt;/div>
  &lt;div class="row g-4 justify-content-center mb-4">
  &lt;div class="col-md-4">

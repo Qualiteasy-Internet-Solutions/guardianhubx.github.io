@@ -1328,11 +1328,40 @@ SOLICITAR INFORMACIÓN &lt;i class="fas fa-arrow-right landing-arrow-soft-green"
  &lt;div class="row align-items-center">
  &lt;div class="col-lg-8 landing-slide-in-left">
  &lt;h2 class="landing-section-title text-start">Empieza tu entrenamiento.&lt;br>Derrota al phishing.&lt;/h2>
- &lt;p class="mb-3 landing-text-muted">El cibercrimen no se detiene, y los ataques de phishing son cada vez más sofisticados. Con GuardianHubX, puedes ir siempre un paso por delante.&lt;/p></description></item><item><title>Faronics | Soluciones de Ciberseguridad y Gestión de Sistemas</title><link>https://guardianhubx.com/es/faronics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/es/faronics/</guid><description>&lt;section class="about mb-5 container">
+ &lt;p class="mb-3 landing-text-muted">El cibercrimen no se detiene, y los ataques de phishing son cada vez más sofisticados. Con GuardianHubX, puedes ir siempre un paso por delante.&lt;/p></description></item><item><title>Faronics | Soluciones de Ciberseguridad y Gestión de Sistemas</title><link>https://guardianhubx.com/es/faronics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/es/faronics/</guid><description>&lt;section class="about mb-3 container">
  &lt;div class="text-center mb-5">
  &lt;img src="https://guardianhubx.com/img/faronics-logo.png" alt="Logo de Faronics" class="img-fluid mb-3" style="max-height: 100px;">
  &lt;h2 class="h3">Protección de endpoints y gestión de dispositivos para empresas&lt;/h2>
- &lt;p class="lead text-muted">Más de 30.000 clientes · 10 millones de licencias · 150 países · Valoración 4,7/5&lt;/p>
+ &lt;div class="row justify-content-center g-3 mt-2">
+ &lt;div class="col-6 col-md-3 text-center">
+ &lt;div class="card border-0 p-3 bg-light stat-card">
+ &lt;i class="fas fa-users stat-card-icon">&lt;/i>
+ &lt;div class="fs-4 fw-bold text-primary">30.000+&lt;/div>
+ &lt;div class="small text-muted">clientes en todo el mundo&lt;/div>
+ &lt;/div>
+ &lt;/div>
+ &lt;div class="col-6 col-md-3 text-center">
+ &lt;div class="card border-0 p-3 bg-light stat-card">
+ &lt;i class="fas fa-key stat-card-icon">&lt;/i>
+ &lt;div class="fs-4 fw-bold text-primary">10M&lt;/div>
+ &lt;div class="small text-muted">licencias activas&lt;/div>
+ &lt;/div>
+ &lt;/div>
+ &lt;div class="col-6 col-md-3 text-center">
+ &lt;div class="card border-0 p-3 bg-light stat-card">
+ &lt;i class="fas fa-globe stat-card-icon">&lt;/i>
+ &lt;div class="fs-4 fw-bold text-primary">150&lt;/div>
+ &lt;div class="small text-muted">países&lt;/div>
+ &lt;/div>
+ &lt;/div>
+ &lt;div class="col-6 col-md-3 text-center">
+ &lt;div class="card border-0 p-3 bg-light stat-card">
+ &lt;i class="fas fa-star stat-card-icon">&lt;/i>
+ &lt;div class="fs-4 fw-bold text-primary">4,7/5&lt;/div>
+ &lt;div class="small text-muted">valoración media&lt;/div>
+ &lt;/div>
+ &lt;/div>
+ &lt;/div>
  &lt;/div>
  &lt;div class="row g-4 justify-content-center mb-4">
  &lt;div class="col-md-4">
