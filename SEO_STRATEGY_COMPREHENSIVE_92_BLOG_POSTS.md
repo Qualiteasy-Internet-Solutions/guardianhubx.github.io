@@ -1,8 +1,57 @@
 # 🎯 COMPREHENSIVE SEO STRATEGY - GuardianHubX Blog
 
-**Last Updated:** 2026-05-27  
-**Total Blog Posts:** 92 (ES + CA bilingual)  
+**Last Updated:** 2026-06-10  
+**Total Blog Posts:** 92+ (ES + CA bilingual)  
 **Blog URLs:** `/blog/` (ES), `/blog/ca/` (CA)
+
+---
+
+## ⚠️ REALITAT DEL TRÀFIC (Juny 2026)
+
+Les estimacions de cerca mensual d'aquest document eren **molt optimistes** i no s'estan aconseguint. Les dades reals d'una setmana (GoatCounter) mostren un volum molt inferior al previst. Cal revisar tota l'estratègia amb expectatives realistes.
+
+### Tràfic real setmanal (juny 2026)
+
+| Pàgina | Visites/setmana |
+|--------|----------------|
+| `/es/` (home) | 27 |
+| `/es/faronics` | 11 |
+| `/es/test-ciberseguridad` | 9 |
+| `/blog/problemas-falta-mantenimiento-informatico` | 7 |
+| `/es/guardianradar` | 5 |
+| `/blog/captchas-falsos-malware...` | 2 |
+| `/es/malware-vs-virus-diferencia` | 2 |
+| `/blog/estafas-renta-2026...` | 2 |
+| `/es/ransomware-que-es-y-como-protegerse` | 1 (nova) |
+| Resta de pàgines | 1-2 cadascuna |
+
+**Conclusió:** El tràfic total setmanal és d'aproximadament **100-120 visites** (≈400-500/mes). Les estimacions anteriors de "2.400-3.200 cerques/mes per pàgina" eren volums de cerca del mercat, no tràfic real esperable per a un domini nou/petit.
+
+### Per què hi ha tanta diferència?
+
+1. **Domain Authority baix** — domini relativament nou, Google no posiciona encara a les primeres posicions
+2. **Competència alta** — termes com "ransomware", "phishing" els dominen webs molt establertes
+3. **Volum de cerca ≠ tràfic rebut** — fins i tot posicionant, la CTR a posicions 5-10 és del 2-5%
+4. **Contingut en català** — volum de cerca molt inferior al castellà però menys competència
+5. **Sense backlinks externs** — factor clau de DA que estem sense treballar
+
+### Objectius realistes (revisats)
+
+| Termini | Visites/mes | Condicions |
+|---------|------------|------------|
+| Ara (juny 2026) | ~500 | Situació actual |
+| 6 mesos (des. 2026) | 1.500-2.500 | Publicació constant + backlinks |
+| 12 mesos (juny 2027) | 4.000-8.000 | Si el DA millora i es guanyen posicions |
+
+---
+
+## ✅ JUNY 2026 - COMPLETED WORK
+
+### Pàgines pillar noves (juny 2026)
+- ✅ **Ransomware: Qué es y cómo protegerse** — `/es/ransomware-que-es-y-como-protegerse/` + CA + EN
+  - 5 capes de protecció amb links a Faronics, backup, SmartLayer, GuardianRadar, formació
+  - JSON-LD Article + HowTo, WebP, FAQ schema, hreflang
+  - Ja apareix al menú "Aprèn" (ES/CA/EN)
 
 ---
 
@@ -52,27 +101,42 @@ Four new blog articles with **internal linking strategy** applied to ES & CA ver
 ### High-Priority Blog Posts (Search Volume)
 **These topics are searched but NOT well-covered in blog:**
 
-| Topic | Monthly Searches | Current Status |
-|-------|------------------|-----------------|
-| "Tipos de ataques cibernéticos" (Comprehensive) | 2,800 | Scattered across posts |
-| "Cómo protegerse del ransomware" (Consolidated guide) | 2,400 | Multiple posts, no single guide |
-| "Antivirus vs Firewall diferencia" | 1,400 | ❌ Not covered |
-| "VPN vs Proxy" | 1,100 | ❌ Not covered |
-| "Software antivirus para pymes" (Buying guide) | 1,800 | ❌ Not covered |
-| "Mejores gestores de contraseñas" | 980 | Mentioned, not focused |
-| "Cumplimiento RGPD" (Dedicated guide) | 2,100 | Mentioned, scattered |
-| "ISO 27001 para SMEs" | 1,200 | ❌ Not covered |
-| "Supply chain security" (SSPM) | Emerging | ❌ Not covered |
+**Nota:** Les cerques mensuals indicades són volum de mercat total, NO tràfic esperable. Amb DA baix, espera capturar el 2-5% d'aquestes cerques com a màxim fins que el domini maduri.
 
-**Total estimated search volume: ~15,880/month from gaps**
+| Topic | Cerques mercat/mes | Estat | Prioritat |
+|-------|-------------------|-------|-----------|
+| "Tipos de ataques cibernéticos" | 2,800 | ✅ Cobert | — |
+| "Cómo protegerse del ransomware" | 2,400 | ✅ Cobert (juny 2026) | — |
+| "Phishing qué es" | 3,100 | ✅ Cobert | — |
+| "Qué es ciberseguridad" | 3,200 | ✅ Cobert | — |
+| "Malware vs Virus" | 2,600 | ✅ Cobert | — |
+| "Antivirus vs Firewall diferencia" | 1,400 | ❌ No cobert | Alta |
+| "Software antivirus para pymes" | 1,800 | ❌ No cobert | Alta |
+| "Cumplimiento RGPD pymes" | 2,100 | ❌ No cobert | Alta |
+| "Mejores gestores de contraseñas" | 980 | Mencionat | Mitjana |
+| "VPN para empresas" | 1,100 | ❌ No cobert | Mitjana |
+| "ISO 27001 para pymes" | 1,200 | ❌ No cobert | Baixa |
 
-### ✅ Covered Foundation Pages (March 2026)
-- "Qué es ciberseguridad" (3,200/mo) — `/es/que-es-la-ciberseguridad/`
-- "Phishing: Qué es y cómo evitar" (3,100/mo) — `/es/phishing-que-es-y-como-evitar/`
-- "Malware vs Virus" (2,600/mo) — `/es/malware-vs-virus-diferencia/`
-- Cybersecurity Glossary — `/es/diccionario-ciberseguridad/`
+### ✅ Pàgines pillar cobertes
 
-**Total foundation coverage: ~9,000/month searches**
+| Pàgina | URL |
+|--------|-----|
+| Qué es ciberseguridad | `/es/que-es-la-ciberseguridad/` |
+| Phishing: qué es y cómo evitar | `/es/phishing-que-es-y-como-evitar/` |
+| Malware vs Virus | `/es/malware-vs-virus-diferencia/` |
+| Tipos de ataques cibernéticos | `/es/tipos-ataques-ciberneticos/` |
+| Ransomware: qué es y cómo protegerse | `/es/ransomware-que-es-y-como-protegerse/` |
+| Diccionario ciberseguridad | `/es/diccionario-ciberseguridad/` |
+
+### Estratègia per créixer (realista)
+
+El contingut sol no és suficient amb DA baix. Cal paral·lelament:
+
+1. **Backlinks** — aconseguir mencions en webs sectorials (associacions, premsa tech, col·legis professionals)
+2. **Google Business Profile** — optimitzar fitxa local per a cerques de proximitat
+3. **Long-tail keywords** — atacar termes molt específics on la competència és menor (ex: "ciberseguridad para clínicas dentales", "ransomware centros educativos cataluña")
+4. **Contingut que genera backlinks** — estudis, infografies, dades originals que altres citen
+5. **Freqüència** — publicar 2-3 posts/mes de manera consistent (el DA millora amb el temps i l'activitat)
 
 ---
 
@@ -157,23 +221,26 @@ Coverage: Ransomware in schools, RDM/RMM/UEM solutions, software licensing, Chat
 ## ✨ KEY METRICS & NEXT STEPS
 
 **Blog Health:**
-- 92 posts across 3 years (strong foundation)
-- Bilingual coverage (ES + CA)
-- High-quality internal linking (new)
-- Consistent CSS styling (implemented)
+- 92+ posts (ES + CA), base sòlida
+- Pàgines pillar cobertes: 6 temes principals
+- Internal linking implementat
+- Tràfic real actual: ~500 visites/mes
 
-**SEO Opportunity:**
-- 15,880/month searches from identified gaps
-- Foundation pages (9,000/mo) are live
-- 6 comparison/buying guide topics needed
-- Supply chain security emerging opportunity
+**Situació realista (juny 2026):**
+- Tràfic molt per sota de les estimacions inicials
+- Les estimacions de cerca eren volum de mercat, no tràfic esperable
+- Prioritat: créixer DA + long-tail + backlinks, no només contingut
 
-**Recommended Next Posts:**
-1. "Tipos de ataques cibernéticos" (comprehensive, 2,800/mo)
-2. "Cómo protegerse del ransomware" (consolidated, 2,400/mo)
-3. "Antivirus vs Firewall" (comparison, 1,400/mo)
-4. "ISO 27001 para SMEs" (compliance, 1,200/mo)
-5. "Supply chain security / SSPM" (emerging trend)
+**Pròximes pàgines pillar recomanades:**
+1. "Antivirus vs Firewall para empresas" — gap cobert per la competència, però factible
+2. "Cumplimiento RGPD para pymes" — alta demanda, directament relacionat amb els serveis
+3. "Software antivirus para pymes" — buying guide que pot generar leads directes
+
+**Pròxims posts blog recomanats (long-tail):**
+1. "Ciberseguridad para clínicas y consultorios médicos"
+2. "Ciberseguridad para despachos de abogados"
+3. "Ciberseguridad para gestorías y asesorías"
+— Termes molt específics, menor competència, clients potencials reals
 
 ---
 
