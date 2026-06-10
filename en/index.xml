@@ -1,4 +1,83 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>GuardianHubX - Cybersecurity for Businesses and Freelancers on GuardianHubX - Cybersecurity</title><link>https://guardianhubx.com/en/</link><description>Recent content in GuardianHubX - Cybersecurity for Businesses and Freelancers on GuardianHubX - Cybersecurity</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 27 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://guardianhubx.com/en/index.xml" rel="self" type="application/rss+xml"/><item><title>Types of Cyberattacks: Complete Guide for Businesses and SMEs</title><link>https://guardianhubx.com/en/types-of-cyberattacks/</link><pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/en/types-of-cyberattacks/</guid><description>&lt;script type="application/ld+json">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>GuardianHubX - Cybersecurity for Businesses and Freelancers on GuardianHubX - Cybersecurity</title><link>https://guardianhubx.com/en/</link><description>Recent content in GuardianHubX - Cybersecurity for Businesses and Freelancers on GuardianHubX - Cybersecurity</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 10 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://guardianhubx.com/en/index.xml" rel="self" type="application/rss+xml"/><item><title>Ransomware: What is it and how to protect your business. Complete guide</title><link>https://guardianhubx.com/en/ransomware-what-is-and-how-to-protect/</link><pubDate>Wed, 10 Jun 2026 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/en/ransomware-what-is-and-how-to-protect/</guid><description>&lt;script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "mainEntityOfPage": {
+ "@type": "WebPage",
+ "@id": "https://guardianhubx.com/en/ransomware-what-is-and-how-to-protect/"
+ },
+ "headline": "Ransomware: What is it and how to protect your business. Complete guide",
+ "description": "What ransomware is, how it reaches your business and how to protect against it: the 5 defence layers, what to do if you are attacked and detection tools.",
+ "image": {
+ "@type": "ImageObject",
+ "url": "https://guardianhubx.com/img/ransomware-attack-hero.webp",
+ "width": 500,
+ "height": 400
+ },
+ "author": {
+ "@type": "Organization",
+ "name": "GuardianHubX",
+ "url": "https://guardianhubx.com"
+ },
+ "datePublished": "2026-06-10T00:00:00+00:00",
+ "dateModified": "2026-06-10T00:00:00+00:00",
+ "publisher": {
+ "@type": "Organization",
+ "name": "GuardianHubX",
+ "logo": {
+ "@type": "ImageObject",
+ "url": "https://guardianhubx.com/img/guardianhubx-logo.webp"
+ }
+ },
+ "inLanguage": "en",
+ "about": {
+ "@type": "Thing",
+ "name": "Ransomware"
+ }
+}
+&lt;/script>
+&lt;script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "HowTo",
+ "name": "How to respond to a ransomware attack in 5 steps",
+ "description": "Incident response guide for ransomware: from isolation to restoration.",
+ "step": [
+ {
+ "@type": "HowToStep",
+ "name": "Isolate the affected systems",
+ "text": "Disconnect the compromised systems from the network (cable and Wi-Fi) to stop the spread. Avoid continuing to work on them without guidance from the response team."
+ },
+ {
+ "@type": "HowToStep",
+ "name": "Do not pay impulsively",
+ "text": "Paying does not guarantee recovery. Many attackers disappear after receiving the money, or demand new amounts. Evaluate with experts before making any decision."
+ },
+ {
+ "@type": "HowToStep",
+ "name": "Activate the incident response plan",
+ "text": "Involve management, IT, internal or external cybersecurity, legal counsel and the DPO if applicable. Coordination is key to minimising the impact."
+ },
+ {
+ "@type": "HowToStep",
+ "name": "Analyse the scope",
+ "text": "Determine which systems are affected, what data was compromised or exfiltrated, and what the likely entry point was."
+ },
+ {
+ "@type": "HowToStep",
+ "name": "Restore from clean backups",
+ "text": "Recover operations using verified, malware-free backups. Prioritise critical services and review security before reopening the environment."
+ }
+ ]
+}
+&lt;/script>
+&lt;!-- Hero Section -->
+&lt;section class="landing-hero-section">
+&lt;div class="container">
+ &lt;div class="row align-items-center">
+ &lt;div class="col-lg-6 landing-fade-in">
+ &lt;h1 class="landing-hero-title">Ransomware: What is it and how to protect your business&lt;/h1>
+ &lt;p class="landing-hero-subtitle">A single attack can encrypt your servers, halt operations for weeks and generate devastating recovery costs. Learn how to prevent it.&lt;/p></description></item><item><title>Types of Cyberattacks: Complete Guide for Businesses and SMEs</title><link>https://guardianhubx.com/en/types-of-cyberattacks/</link><pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/en/types-of-cyberattacks/</guid><description>&lt;script type="application/ld+json">
 {
 "@context": "https://schema.org",
 "@type": "Article",

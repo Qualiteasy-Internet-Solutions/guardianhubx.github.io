@@ -1,4 +1,83 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>GuardianHubX - Ciberseguridad para Empresas y Autónomos on GuardianHubX - Seguridad Cibernética</title><link>https://guardianhubx.com/es/</link><description>Recent content in GuardianHubX - Ciberseguridad para Empresas y Autónomos on GuardianHubX - Seguridad Cibernética</description><generator>Hugo</generator><language>es</language><lastBuildDate>Wed, 27 May 2026 12:00:00 +0000</lastBuildDate><atom:link href="https://guardianhubx.com/es/index.xml" rel="self" type="application/rss+xml"/><item><title>Ataques de fuerza bruta: por qué tu contraseña ya no es suficiente</title><link>https://guardianhubx.com/blog/ataques-fuerza-bruta-contrase%C3%B1a/</link><pubDate>Wed, 27 May 2026 12:00:00 +0000</pubDate><guid>https://guardianhubx.com/blog/ataques-fuerza-bruta-contrase%C3%B1a/</guid><description>&lt;p>Pensar que una contraseña por sí sola protege una cuenta ya no es realista. Hoy no solo existe el ataque clásico de fuerza bruta, donde un sistema prueba combinaciones hasta acertar. También están los ataques de diccionario, el password spraying y el credential stuffing, donde los atacantes reutilizan credenciales robadas de otras filtraciones para entrar en cuentas legítimas.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>GuardianHubX - Ciberseguridad para Empresas y Autónomos on GuardianHubX - Seguridad Cibernética</title><link>https://guardianhubx.com/es/</link><description>Recent content in GuardianHubX - Ciberseguridad para Empresas y Autónomos on GuardianHubX - Seguridad Cibernética</description><generator>Hugo</generator><language>es</language><lastBuildDate>Wed, 10 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://guardianhubx.com/es/index.xml" rel="self" type="application/rss+xml"/><item><title>Ransomware: Qué es y cómo protegerse. Guía completa para empresas</title><link>https://guardianhubx.com/es/ransomware-que-es-y-como-protegerse/</link><pubDate>Wed, 10 Jun 2026 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/es/ransomware-que-es-y-como-protegerse/</guid><description>&lt;script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "mainEntityOfPage": {
+ "@type": "WebPage",
+ "@id": "https://guardianhubx.com/es/ransomware-que-es-y-como-protegerse/"
+ },
+ "headline": "Ransomware: Qué es y cómo protegerse. Guía completa para empresas",
+ "description": "Qué es el ransomware, cómo llega a tu empresa y cómo protegerse: las 5 capas de defensa, qué hacer si sufres un ataque y herramientas de detección.",
+ "image": {
+ "@type": "ImageObject",
+ "url": "https://guardianhubx.com/img/ransomware-attack-hero.webp",
+ "width": 500,
+ "height": 400
+ },
+ "author": {
+ "@type": "Organization",
+ "name": "GuardianHubX",
+ "url": "https://guardianhubx.com"
+ },
+ "datePublished": "2026-06-10T00:00:00+00:00",
+ "dateModified": "2026-06-10T00:00:00+00:00",
+ "publisher": {
+ "@type": "Organization",
+ "name": "GuardianHubX",
+ "logo": {
+ "@type": "ImageObject",
+ "url": "https://guardianhubx.com/img/guardianhubx-logo.webp"
+ }
+ },
+ "inLanguage": "es",
+ "about": {
+ "@type": "Thing",
+ "name": "Ransomware"
+ }
+}
+&lt;/script>
+&lt;script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "HowTo",
+ "name": "Cómo responder a un ataque de ransomware en 5 pasos",
+ "description": "Guía de respuesta ante un incidente de ransomware: desde el aislamiento hasta la restauración.",
+ "step": [
+ {
+ "@type": "HowToStep",
+ "name": "Aislar los equipos afectados",
+ "text": "Desconecta los sistemas comprometidos de la red (cable y Wi-Fi) para frenar la propagación. Evita seguir trabajando sobre ellos sin indicación del equipo de respuesta."
+ },
+ {
+ "@type": "HowToStep",
+ "name": "No pagar de forma impulsiva",
+ "text": "Pagar no garantiza la recuperación. Muchos atacantes desaparecen tras recibir el dinero, o piden nuevas cantidades. Evalúa con expertos antes de tomar ninguna decisión."
+ },
+ {
+ "@type": "HowToStep",
+ "name": "Activar el plan de respuesta a incidentes",
+ "text": "Involucra a dirección, IT, ciberseguridad interna o externa, asesoría legal y DPO si aplica. La coordinación es clave para minimizar el impacto."
+ },
+ {
+ "@type": "HowToStep",
+ "name": "Analizar el alcance",
+ "text": "Determina qué sistemas están afectados, qué datos fueron comprometidos o exfiltrados, y cuál fue el punto de entrada probable."
+ },
+ {
+ "@type": "HowToStep",
+ "name": "Restaurar desde backups limpios",
+ "text": "Recupera la actividad usando copias verificadas y libres de malware. Prioriza los servicios críticos y revisa la seguridad antes de reabrir el entorno."
+ }
+ ]
+}
+&lt;/script>
+&lt;!-- Hero Section -->
+&lt;section class="landing-hero-section">
+&lt;div class="container">
+ &lt;div class="row align-items-center">
+ &lt;div class="col-lg-6 landing-fade-in">
+ &lt;h1 class="landing-hero-title">Ransomware: Qué es y cómo proteger tu empresa&lt;/h1>
+ &lt;p class="landing-hero-subtitle">Un único ataque puede cifrar tus servidores, bloquear tu actividad durante semanas y generar costes de recuperación devastadores. Aprende a prevenirlo.&lt;/p></description></item><item><title>Ataques de fuerza bruta: por qué tu contraseña ya no es suficiente</title><link>https://guardianhubx.com/blog/ataques-fuerza-bruta-contrase%C3%B1a/</link><pubDate>Wed, 27 May 2026 12:00:00 +0000</pubDate><guid>https://guardianhubx.com/blog/ataques-fuerza-bruta-contrase%C3%B1a/</guid><description>&lt;p>Pensar que una contraseña por sí sola protege una cuenta ya no es realista. Hoy no solo existe el ataque clásico de fuerza bruta, donde un sistema prueba combinaciones hasta acertar. También están los ataques de diccionario, el password spraying y el credential stuffing, donde los atacantes reutilizan credenciales robadas de otras filtraciones para entrar en cuentas legítimas.&lt;/p>
 &lt;p>La amenaza no está solo en Internet. Si uno de tus empleados reutiliza la misma contraseña en múltiples servicios y esa clave se filtra en un servicio externo (un SaaS, una plataforma de trabajo, una red social), un atacante puede probar esa combinación automáticamente en tu correo corporativo o en tus sistemas.&lt;/p></description></item><item><title>Configuración segura de Teams, Zoom y Google Meet para tu empresa</title><link>https://guardianhubx.com/blog/teams-zoom-meet-configuracion-segura/</link><pubDate>Wed, 27 May 2026 11:00:00 +0000</pubDate><guid>https://guardianhubx.com/blog/teams-zoom-meet-configuracion-segura/</guid><description>&lt;p>Una videollamada sin protección es como dejar la puerta de tu oficina abierta. Cualquiera puede entrar, escuchar, grabar y hasta suplantarse como empleado.&lt;/p>
 &lt;p>La buena noticia es que Teams, Zoom y Google Meet ya incluyen los controles que necesitas. El problema es que muy pocas empresas los activan. Esta es una parte crítica de tu &lt;a href="https://guardianhubx.com/es/que-es-la-ciberseguridad/">seguridad informática&lt;/a> en el teletrabajo.&lt;/p>
 &lt;hr>

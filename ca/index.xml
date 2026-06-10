@@ -1,4 +1,83 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>GuardianHubX - Ciberseguretat per a Empreses i Autònoms on GuardianHubX - Ciberseguretat</title><link>https://guardianhubx.com/ca/</link><description>Recent content in GuardianHubX - Ciberseguretat per a Empreses i Autònoms on GuardianHubX - Ciberseguretat</description><generator>Hugo</generator><language>ca</language><lastBuildDate>Wed, 27 May 2026 12:00:00 +0000</lastBuildDate><atom:link href="https://guardianhubx.com/ca/index.xml" rel="self" type="application/rss+xml"/><item><title>Atacs de força bruta: per què la teva contrasenya ja no és suficient</title><link>https://guardianhubx.com/blog/ca/atacs-forca-bruta-contrasenya/</link><pubDate>Wed, 27 May 2026 12:00:00 +0000</pubDate><guid>https://guardianhubx.com/blog/ca/atacs-forca-bruta-contrasenya/</guid><description>&lt;p>Pensar que una contrasenya per si sola protegeix un compte ja no és realista. Avui no només existeix l&amp;rsquo;atac clàssic de força bruta, on un sistema prova combinacions fins a acertar. També estan els atacs de diccionari, el password spraying i el credential stuffing, on els atacants reutilitzen credencials robades d&amp;rsquo;altres filtracions per entrar en comptes legítimes.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>GuardianHubX - Ciberseguretat per a Empreses i Autònoms on GuardianHubX - Ciberseguretat</title><link>https://guardianhubx.com/ca/</link><description>Recent content in GuardianHubX - Ciberseguretat per a Empreses i Autònoms on GuardianHubX - Ciberseguretat</description><generator>Hugo</generator><language>ca</language><lastBuildDate>Wed, 10 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://guardianhubx.com/ca/index.xml" rel="self" type="application/rss+xml"/><item><title>Ransomware: Què és i com protegir-se. Guia completa per a empreses</title><link>https://guardianhubx.com/ca/ransomware-que-es-i-com-protegir-se/</link><pubDate>Wed, 10 Jun 2026 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/ca/ransomware-que-es-i-com-protegir-se/</guid><description>&lt;script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "mainEntityOfPage": {
+ "@type": "WebPage",
+ "@id": "https://guardianhubx.com/ca/ransomware-que-es-i-com-protegir-se/"
+ },
+ "headline": "Ransomware: Què és i com protegir-se. Guia completa per a empreses",
+ "description": "Què és el ransomware, com arriba a la teva empresa i com protegir-se: les 5 capes de defensa, què fer si patiu un atac i eines de detecció.",
+ "image": {
+ "@type": "ImageObject",
+ "url": "https://guardianhubx.com/img/ransomware-attack-hero.webp",
+ "width": 500,
+ "height": 400
+ },
+ "author": {
+ "@type": "Organization",
+ "name": "GuardianHubX",
+ "url": "https://guardianhubx.com"
+ },
+ "datePublished": "2026-06-10T00:00:00+00:00",
+ "dateModified": "2026-06-10T00:00:00+00:00",
+ "publisher": {
+ "@type": "Organization",
+ "name": "GuardianHubX",
+ "logo": {
+ "@type": "ImageObject",
+ "url": "https://guardianhubx.com/img/guardianhubx-logo.webp"
+ }
+ },
+ "inLanguage": "ca",
+ "about": {
+ "@type": "Thing",
+ "name": "Ransomware"
+ }
+}
+&lt;/script>
+&lt;script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "HowTo",
+ "name": "Com respondre a un atac de ransomware en 5 passos",
+ "description": "Guia de resposta davant d'un incident de ransomware: des de l'aïllament fins a la restauració.",
+ "step": [
+ {
+ "@type": "HowToStep",
+ "name": "Aïllar els equips afectats",
+ "text": "Desconnecta els sistemes compromesos de la xarxa (cable i Wi-Fi) per frenar la propagació. Evita continuar treballant sobre ells sense indicació de l'equip de resposta."
+ },
+ {
+ "@type": "HowToStep",
+ "name": "No pagar de manera impulsiva",
+ "text": "Pagar no garanteix la recuperació. Molts atacants desapareixen després de rebre els diners, o en demanen de nous. Avalua amb experts abans de prendre cap decisió."
+ },
+ {
+ "@type": "HowToStep",
+ "name": "Activar el pla de resposta a incidents",
+ "text": "Involucra la direcció, l'equip d'IT, la ciberseguretat interna o externa, l'assessoria legal i el DPO si escau. La coordinació és clau per minimitzar l'impacte."
+ },
+ {
+ "@type": "HowToStep",
+ "name": "Analitzar l'abast",
+ "text": "Determina quins sistemes estan afectats, quines dades han estat compromeses o exfiltrades, i quin va ser el punt d'entrada probable."
+ },
+ {
+ "@type": "HowToStep",
+ "name": "Restaurar des de còpies de seguretat netes",
+ "text": "Recupera l'activitat fent servir còpies verificades i lliures de programari maliciós. Prioritza els serveis crítics i revisa la seguretat abans de reobrir l'entorn."
+ }
+ ]
+}
+&lt;/script>
+&lt;!-- Hero Section -->
+&lt;section class="landing-hero-section">
+&lt;div class="container">
+ &lt;div class="row align-items-center">
+ &lt;div class="col-lg-6 landing-fade-in">
+ &lt;h1 class="landing-hero-title">Ransomware: Què és i com protegir la teva empresa&lt;/h1>
+ &lt;p class="landing-hero-subtitle">Un únic atac pot xifrar els teus servidors, bloquejar l'activitat durant setmanes i generar costos de recuperació devastadors. Aprèn a prevenir-lo.&lt;/p></description></item><item><title>Atacs de força bruta: per què la teva contrasenya ja no és suficient</title><link>https://guardianhubx.com/blog/ca/atacs-forca-bruta-contrasenya/</link><pubDate>Wed, 27 May 2026 12:00:00 +0000</pubDate><guid>https://guardianhubx.com/blog/ca/atacs-forca-bruta-contrasenya/</guid><description>&lt;p>Pensar que una contrasenya per si sola protegeix un compte ja no és realista. Avui no només existeix l&amp;rsquo;atac clàssic de força bruta, on un sistema prova combinacions fins a acertar. També estan els atacs de diccionari, el password spraying i el credential stuffing, on els atacants reutilitzen credencials robades d&amp;rsquo;altres filtracions per entrar en comptes legítimes.&lt;/p>
 &lt;p>La amenaça no està només a Internet. Si un dels teus empleats reutilitza la mateixa contrasenya en múltiples serveis i aquesta clau es filtra en un servei extern (un SaaS, una plataforma de treball, una xarxa social), un atacant pot provar aquesta combinació automàticament en el teu correu corporatiu o en els teus sistemes.&lt;/p></description></item><item><title>Configuració segura de Microsoft Teams, Zoom i Google Meet per a la teva empresa</title><link>https://guardianhubx.com/blog/ca/teams-zoom-meet-configuracio-segura/</link><pubDate>Wed, 27 May 2026 11:00:00 +0000</pubDate><guid>https://guardianhubx.com/blog/ca/teams-zoom-meet-configuracio-segura/</guid><description>&lt;p>Una videoconferència sense protecció és com deixar la porta de la teva oficina oberta. Qualsevol pot entrar, escoltar, gravar i fins i tot suplantar-se com a empleat.&lt;/p>
 &lt;p>La bona notícia és que Teams, Zoom i Google Meet ja inclouen els controls que necessites. El problema és que molt poques empreses els activen. Aquesta és una part crítica de la teva &lt;a href="https://guardianhubx.com/ca/que-es-la-ciberseguretat/">seguretat informàtica&lt;/a> en el teletreball.&lt;/p>
 &lt;hr>
