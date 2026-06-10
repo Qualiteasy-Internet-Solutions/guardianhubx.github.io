@@ -562,6 +562,20 @@ body.scrolled .home-navbar {
     max-height: 400px !important;
 }
 
+.stat-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.stat-card-icon {
+    position: absolute;
+    font-size: 4rem;
+    opacity: 0.08;
+    bottom: -0.5rem;
+    right: 0.5rem;
+    color: var(--bs-primary);
+}
+
 /* Benefit cards */
 .landing-benefit-card {
     background: white !important;

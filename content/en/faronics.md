@@ -17,11 +17,40 @@ external_links:
     url: "https://faronicscloud.com?dl=BRUYN"
 ---
 
-<section class="about mb-5 container">
+<section class="about mb-3 container">
   <div class="text-center mb-5">
     <img src="/img/faronics-logo.png" alt="Faronics Logo" class="img-fluid mb-3" style="max-height: 100px;">
     <h2 class="h3">Endpoint protection and device management for businesses</h2>
-    <p class="lead text-muted">30,000+ customers · 10 million licences · 150 countries · Rated 4.7/5</p>
+    <div class="row justify-content-center g-3 mt-2">
+      <div class="col-6 col-md-3 text-center">
+        <div class="card border-0 p-3 bg-light stat-card">
+          <i class="fas fa-users stat-card-icon"></i>
+          <div class="fs-4 fw-bold text-primary">30,000+</div>
+          <div class="small text-muted">customers worldwide</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 text-center">
+        <div class="card border-0 p-3 bg-light stat-card">
+          <i class="fas fa-key stat-card-icon"></i>
+          <div class="fs-4 fw-bold text-primary">10M</div>
+          <div class="small text-muted">active licences</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 text-center">
+        <div class="card border-0 p-3 bg-light stat-card">
+          <i class="fas fa-globe stat-card-icon"></i>
+          <div class="fs-4 fw-bold text-primary">150</div>
+          <div class="small text-muted">countries</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 text-center">
+        <div class="card border-0 p-3 bg-light stat-card">
+          <i class="fas fa-star stat-card-icon"></i>
+          <div class="fs-4 fw-bold text-primary">4.7/5</div>
+          <div class="small text-muted">average rating</div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <div class="row g-4 justify-content-center mb-4">
