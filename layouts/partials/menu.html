@@ -39,6 +39,13 @@
         </a>
     </li>
     <li>
+        <a class="dropdown-item" href="{{ cond (eq .Lang "es") ("/es/ransomware-que-es-y-como-protegerse/" | relLangURL)
+                (cond (eq .Lang "ca") ("/ca/ransomware-que-es-i-com-protegir-se/" | relLangURL)
+                                ("/en/ransomware-what-is-and-how-to-protect/" | relLangURL)) }}">
+        {{ cond (eq .Lang "es") "Qué es el Ransomware" (cond (eq .Lang "ca") "Què és el Ransomware" "What is Ransomware") }}
+        </a>
+    </li>
+    <li>
         <a class="dropdown-item" href="{{ cond (eq .Lang "es") ("/es/malware-vs-virus-diferencia/" | relLangURL)
                 (cond (eq .Lang "ca") ("/ca/malware-vs-virus-diferencia/" | relLangURL)
                                 ("/en/malware-vs-virus-difference/" | relLangURL)) }}">
