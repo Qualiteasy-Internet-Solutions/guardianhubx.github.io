@@ -4,7 +4,7 @@ layout: "product"
 description: "Faronics Deep Freeze i Faronics Cloud: protecció d'endpoints, gestió remota de dispositius i control d'aules per a empreses i centres educatius."
 ogTitle: "Faronics per a Empreses | Partner Oficial GuardianHubX"
 ogDescription: "Solucions Faronics per a empreses: Deep Freeze (protecció d'endpoints), Deploy (gestió de pegats), MDM i control d'aules. Partner oficial amb suport en català i castellà."
-video: "https://www.youtube.com/embed/7OKaXe-Ym9Q?rel=0&cc_load_policy=0"
+video: "https://www.youtube.com/embed/ecg56wgFIVQ?rel=0"
 resources:
   - name: "Brochure Deep Freeze Cloud"
     file: "docs/deepfreeze-guardianhubx-es.pdf"
@@ -113,7 +113,7 @@ external_links:
 
 <section class="mb-5 container">
   <div class="ratio ratio-16x9 mb-4">
-    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/7OKaXe-Ym9Q?rel=0&cc_load_policy=0" allowfullscreen title="Faronics Cloud — gestió d'endpoints en menys d'1 minut"></iframe>
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ecg56wgFIVQ?rel=0" allowfullscreen title="Faronics Cloud — gestió d'endpoints en menys d'1 minut"></iframe>
   </div>
   <p class="text-center text-muted small">Faronics Cloud en menys d'1 minut</p>
 </section>
