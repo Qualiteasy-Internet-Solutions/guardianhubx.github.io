@@ -148,6 +148,7 @@ window.addEventListener('load', function () {
 
 function loadGTM() {
     if (window._gtmLoaded) return;
+    if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') return;
     window._gtmLoaded = true;
     (function(w,d,s,l,i){
         w[l]=w[l]||[];
