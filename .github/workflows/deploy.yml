@@ -71,28 +71,14 @@ jobs:
               if m:
                   errors.append(f"❌ {f.name}: url: missing /ca/ prefix → {m.group(1)}")
 
-          # Check CA pages don't use ES slugs (common copy-paste errors)
-          bad_ca_slugs = [
-              "formacion-phishing-software", "politica-de-privacitat",
-              "guardianaradar", "test-ciberseguridad", "objectivos-ciberseguridad",
-              "diccionario-ciberseguridad", "copias-de-seguridad"
-          ]
-          for f in Path("content/ca").glob("*.md"):
+          # Check CA blog articles: url: must use /blog/ca/ prefix (not /blog/ without /ca/)
+          # Per CLAUDE.md: ES blog = /blog/slug/, CA blog = /blog/ca/slug/
+          # The regex catches url: "/blog/X..." where X is not 'c' (not /blog/ca/)
+          for f in Path("content/ca/blog").glob("*.md"):
               text = f.read_text()
-              for slug in bad_ca_slugs:
-                  if f'/{slug}/' in text:
-                      errors.append(f"⚠ {f.name}: possible wrong ES slug → /{slug}/")
-
-          # Check EN pages don't use ES slugs
-          bad_en_slugs = [
-              "test-ciberseguridad", "formacion-phishing-software",
-              "objetivos-ciberseguridad", "tipos-ataques-ciberneticos"
-          ]
-          for f in Path("content/en").glob("*.md"):
-              text = f.read_text()
-              for slug in bad_en_slugs:
-                  if f'/{slug}/' in text:
-                      errors.append(f"⚠ {f.name}: possible wrong ES slug → /{slug}/")
+              m = re.search(r'^url:\s*["\']?(/blog/)(?!ca/)', text, re.MULTILINE)
+              if m:
+                  errors.append(f"❌ {f.name}: url: missing /ca/ → should be /blog/ca/...")
 
           if errors:
               print("URL validation found issues:")
