@@ -3,6 +3,7 @@ title: "Discover Your Cybersecurity Risk Level"
 description: "Free Cybersecurity Test. Discover your security risk level with GuardianHubX and get personalized recommendations."
 date: 2025-08-04
 draft: false
+sitemap_exclude: true
 ---
 
 <section class="section">

@@ -2,6 +2,7 @@
 title: "¡Gracias! | Mensaje de Confirmación"
 description: "Gracias por contactar con GuardianHubX. Hemos recibido tu mensaje y nos pondremos en contacto contigo muy pronto."
 layout: "landing-thanks"
+sitemap_exclude: true
 ---
 
 <!-- Success Section -->

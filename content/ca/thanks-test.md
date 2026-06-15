@@ -2,6 +2,7 @@
 title: "Test Completat! | Resultats de la teva Avaluació"
 description: "Gràcies per realitzar el test de ciberseguretat amb GuardianHubX. El teu informe personalitzat està en camí."
 layout: "landing-thanks"
+sitemap_exclude: true
 ---
 
 <!-- Success Section -->

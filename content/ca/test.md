@@ -3,6 +3,7 @@ title: "Descobreix el teu Nivell de Risc en Ciberseguretat"
 description: "Test gratuït de ciberseguretat de GuardianHubX. Rep un informe amb IA, la teva puntuació de risc i recomanacions personalitzades."
 date: 2025-08-04
 draft: false
+sitemap_exclude: true
 ---
 
 <section class="section">

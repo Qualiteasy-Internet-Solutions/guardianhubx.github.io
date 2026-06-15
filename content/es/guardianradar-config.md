@@ -3,6 +3,7 @@ title: "GuardianRadar Setup | Configuración de tu Vigilancia Digital"
 description: "Configuración de GuardianRadar. Necesitamos unos datos extra para empezar a monitorizar tu identidad digital de forma segura."
 date: 2026-02-11
 draft: false
+sitemap_exclude: true
 ---
 
 <section class="section">

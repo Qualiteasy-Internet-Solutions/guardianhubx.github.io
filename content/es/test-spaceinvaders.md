@@ -4,6 +4,7 @@ description: "Space Invaders Ciberseguridad. Introduce tu nombre y email para gu
 date: 2025-10-02
 draft: false
 layout: "spaceinvaders-form"
+sitemap_exclude: true
 ---
 
 <section class="section">

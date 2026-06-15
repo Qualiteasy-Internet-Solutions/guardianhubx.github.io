@@ -8,6 +8,9 @@
   {{- if or (eq .Kind "taxonomy") (eq .Kind "term") }}
     {{- $skip = true }}
   {{- end }}
+  {{- if .Params.sitemap_exclude }}
+    {{- $skip = true }}
+  {{- end }}
   {{- if not $skip }}
   <url>
     <loc>{{ .Permalink }}</loc>
