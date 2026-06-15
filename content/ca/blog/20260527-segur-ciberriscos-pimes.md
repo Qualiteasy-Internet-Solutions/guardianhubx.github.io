@@ -4,7 +4,7 @@ author: "GuardianHubX"
 date: 2026-05-27T10:00:00+00:00
 draft: false
 slug: "segur-ciberriscos-pimes-cobertura-preu"
-url: "/blog/segur-ciberriscos-pimes-cobertura-preu/"
+url: "/blog/ca/segur-ciberriscos-pimes-cobertura-preu/"
 layout: "blog"
 categories:
   - ciberseguretat

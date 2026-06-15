@@ -4,7 +4,7 @@ author: "GuardianHubX"
 date: 2026-05-27T09:00:00+00:00
 draft: false
 slug: "wifi-public-coworking-protegir-empresa"
-url: "/blog/wifi-public-coworking-protegir-empresa/"
+url: "/blog/ca/wifi-public-coworking-protegir-empresa/"
 layout: "blog"
 categories:
   - ciberseguretat
