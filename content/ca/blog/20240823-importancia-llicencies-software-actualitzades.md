@@ -29,9 +29,9 @@ translationKey: software-license-importance-2024
 En un món empresarial cada cop més digitalitzat, el programari és l'engranatge invisible que manté en marxa la maquinària corporativa. No obstant això, moltes empreses subestimen la importància de mantenir les llicències de les seves aplicacions actualitzades, la qual cosa no només pot afectar la seva operativitat i seguretat, sinó que també pot comportar serioses conseqüències legals.
 
 **Lecturas relacionadas:**
-- [La Solució de Gestió Integral per a CIOs i CTOs](/blog/plataforma-gestio-per-a-cios-ctos/)
-- [Quines són les principals diferències entre RDM i RMM?](/blog/diferencies-rdm-rmm/)
-- [Optimitzant la Gestió de Dispositius amb Programari UEM](/blog/gestio-unificada-endpoints-uem/)
+- [La Solució de Gestió Integral per a CIOs i CTOs](/blog/ca/plataforma-gestio-per-a-cios-ctos/)
+- [Quines són les principals diferències entre RDM i RMM?](/blog/ca/diferencies-rdm-rmm/)
+- [Optimitzant la Gestió de Dispositius amb Programari UEM](/blog/ca/gestio-unificada-endpoints-uem/)
 
 ## Per Què És Crucial Mantenir les Llicències Actualitzades?
 

@@ -34,7 +34,7 @@ translationKey: "teams-zoom-meet-secure-configuration"
 
 Una videoconferència sense protecció és com deixar la porta de la teva oficina oberta. Qualsevol pot entrar, escoltar, gravar i fins i tot suplantar-se com a empleat.
 
-La bona notícia és que Teams, Zoom i Google Meet ja inclouen els controls que necessites. El problema és que molt poques empreses els activen. Aquesta és una part crítica de la teva [seguretat informàtica](/ca/que-es-la-ciberseguretat/) en el teletreball.
+La bona notícia és que Teams, Zoom i Google Meet ja inclouen els controls que necessites. El problema és que molt poques empreses els activen. Aquesta és una part crítica de la teva [seguretat informàtica](/ca/que-es-la-ciberseguritat/) en el teletreball.
 
 ---
 
@@ -181,4 +181,4 @@ Configurar bé tarda una hora. Una bretxa de dades costa desenes de milers d'eur
 
 Els controls estan allà. La majoria d'empreses simplement no els usen.
 
-Si vols una auditoria de seguretat en les teves reunions i col·laboració remota, a [GuardianHub](/ca/) podem ajudar-te. Descobreix com [GuardianRadar](/ca/guardianaradar/) detecta configuracions insegures en temps real.
+Si vols una auditoria de seguretat en les teves reunions i col·laboració remota, a [GuardianHub](/ca/) podem ajudar-te. Descobreix com [GuardianRadar](/ca/guardianradar/) detecta configuracions insegures en temps real.

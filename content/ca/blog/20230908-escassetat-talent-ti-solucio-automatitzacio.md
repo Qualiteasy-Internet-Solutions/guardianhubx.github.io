@@ -30,7 +30,7 @@ La tecnologia s'ha convertit en la columna vertebral de les empreses i organisme
 
 ## El Desafiament de Trobar Perfils Tècnics de Suport
 
-![](/blog/uploads/gestion-incidencias-ti.jpg)
+![](/img/faronics-screens.webp)
 
 La demanda de perfils tècnics de suport, com administradors de xarxes i especialistes en sistemes, està en constant augment, però l'oferta de professionals capacitats no ha seguit el mateix ritme. Això crea un desequilibri en el mercat laboral on les empreses competeixen feroçment per un nombre limitat de candidats.
 
@@ -43,7 +43,7 @@ La demanda de perfils tècnics de suport, com administradors de xarxes i especia
 
 ## La Solució: Eines de Gestió Automàtica
 
-![](/blog/uploads/profesionales-ti-demanda.jpg)
+![](/img/cybersecurity-defense-threats.webp)
 
 Davant d'aquest panorama, els responsables de TI busquen solucions innovadores per mantenir el control dels seus equips i xarxes. Una de les més efectives és l'ús d'una plataforma de gestió unificada, com la que impulsa els paquets de GuardianHubX.
 
@@ -51,7 +51,7 @@ Davant d'aquest panorama, els responsables de TI busquen solucions innovadores p
 
 La nostra plataforma al núvol està dissenyada específicament per simplificar l'administració d'equips Windows i Mac en una xarxa empresarial. Ofereix funcionalitats clau, com:
 
-![](/blog/uploads/soporte-ti-automatizado.jpg)
+![](/img/faronics-screens.webp)
 
 -   **Gestió Centralitzada**: Control total des d'un únic punt d'accés.
 -   **Actualitzacions Automatitzades**: Garanteix que tots els equips estiguin sempre actualitzats i segurs, una característica clau del nostre paquet **[LightCore](https://guardianhubx.com/ca/lightcore/)**.

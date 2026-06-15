@@ -5,7 +5,7 @@ author: "GuardianHubX"
 date: 2026-03-15T09:00:00+00:00
 draft: false
 slug: "49-porcent-empreses-no-inverteix-ciberseguretat"
-url: "/ca/blog/49-porcent-empreses-no-inverteix-ciberseguretat/"
+url: "/blog/ca/49-porcent-empreses-no-inverteix-ciberseguretat/"
 layout: "blog"
 categories:
   - ciberseguretat
@@ -35,7 +35,7 @@ Aquesta no és només una estadística més. És una senyal clara que moltes emp
 
 ## La Bretxa Perillosa: Risc Real vs. Inversió en Seguretat
 
-Els ciberatacs són democràtics. No discriminen entre grans corporacions i petites empreses. De fet, les [dades de ciberatacs a empreses](/ca/blog/dades-ciberatacs-empreses/) confirmen que l'amenaça és generalitzada. Tot i així:
+Els ciberatacs són democràtics. No discriminen entre grans corporacions i petites empreses. De fet, les [dades de ciberatacs a empreses](/blog/ca/les-dades-de-ciberatacs-a-empreses/) confirmen que l'amenaça és generalitzada. Tot i així:
 
 - **Menys del 50%** de les organitzacions reforça la seva seguretat després de sofrir un incident
 - El pressupost destinat a ciberseguretat segueix sent reduït comparant amb altres àrees de TI
@@ -47,7 +47,7 @@ El veritable problema és que el cost d'un ciberatac no acaba quan es restaura e
 
 Segons estudis recents:
 
-- Un incident de [ransomware](/ca/blog/guia-60-minuts-atac-ransomware/) costa a les pimes espanyoles entre **€50k i €500k** en recuperació
+- Un incident de [ransomware](/blog/ca/guia-60-minuts-atac-ransomware/) costa a les pimes espanyoles entre **€50k i €500k** en recuperació
 - El **67%** de les empreses afectades perd clients després de sofrir un atac
 - **82%** de les bretxes de dades es deuen a factors que s'haurien pogut prevenir
 
@@ -55,7 +55,7 @@ Segons estudis recents:
 
 ### 1. Falsa Sensació de Seguretat
 
-Moltes organitzacions creuen que no són un objectiu atractiu. La realitat és que qualsevol empresa connectada a internet ho és, independentment de la seva mida o sector. Aquests són alguns dels [errors comuns en ciberseguretat](/ca/blog/errors-comuns-ciberseguretat-pimes/) que porten a aquesta falsa sensació.
+Moltes organitzacions creuen que no són un objectiu atractiu. La realitat és que qualsevol empresa connectada a internet ho és, independentment de la seva mida o sector. Aquests són alguns dels [errors comuns en ciberseguretat](/blog/ca/errors-comuns-ciberseguretat-pimes/) que porten a aquesta falsa sensació.
 
 Les pimes són especialment vulnerables perquè:
 
@@ -87,7 +87,7 @@ Una estratègia de seguretat adequada permet:
 
 ✅ **Garantir continuïtat del negoci** — Evitar parades que paralitzen les operacions
 
-✅ **Complir normativa vigent** — RGPD, [NIS2](/ca/blog/nova-llei-ciberseguretat-que-les-empreses-han-de-saber-2025/), ISO 27001 i regulacions sectorials
+✅ **Complir normativa vigent** — RGPD, [NIS2](/blog/ca/nova-llei-de-ciberseguretat-el-que-les-empreses-han-de-saber-el-2025/), ISO 27001 i regulacions sectorials
 
 ✅ **Generar confiança** — En clients, socis i inversors
 
@@ -121,7 +121,7 @@ La bretxa entre organitzacions que inverteixen en ciberseguretat i les que no ho
 
 1. **Avalua el teu risc actual** — Identifica on estan les teves dades crítiques i com estan protegides
 2. **Revisa el teu compliment normatiu** — Estàs alineat amb RGPD, NIS2 o altres regulacions aplicables al teu sector?
-3. **Capacita el teu equip** — La majoria dels atacs exploten fallades humanes, no tecnològiques. Implementa [conscienciació i formació](/ca/blog/) contínua
+3. **Capacita el teu equip** — La majoria dels atacs exploten fallades humanes, no tecnològiques. Implementa [conscienciació i formació](/blog/ca/) contínua
 4. **Inverteix en eines de detecció** — GuardianRadar identifica amenaces en temps real
 5. **Crea un pla de resposta** — Saber què fer quan ocorri un incident redueix el dany significativament
 

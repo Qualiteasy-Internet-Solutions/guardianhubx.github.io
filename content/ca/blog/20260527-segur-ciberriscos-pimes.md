@@ -43,7 +43,7 @@ A més, no és un producte reservat a grans corporacions. Cada vegada més soluc
 
 ## Què és una assegurança de ciberriscos
 
-Una assegurança de ciberriscos és una pòlissa dissenyada per cobrir part de l'impacte econòmic i operatiu d'un incident de ciberseguretat. No substitueix la prevenció ni arregla per si sola una mala postura de seguretat, però sí pot ajudar a assumir costos que, per a una pime, poden ser molt difícils d'absorbir en solitari. La [ciberseguretat preventiva](/ca/que-es-la-ciberseguretat/) segueix sent la teva primera línia de defensa.
+Una assegurança de ciberriscos és una pòlissa dissenyada per cobrir part de l'impacte econòmic i operatiu d'un incident de ciberseguretat. No substitueix la prevenció ni arregla per si sola una mala postura de seguretat, però sí pot ajudar a assumir costos que, per a una pime, poden ser molt difícils d'absorbir en solitari. La [ciberseguretat preventiva](/ca/que-es-la-ciberseguritat/) segueix sent la teva primera línia de defensa.
 
 Aquest tipus de pòlisses solen plantejar-se com a cobertura enfront d'incidents com robatori de dades, malware, extorsió, pèrdua de negoci, assistència tècnica i responsabilitat enfront de tercers.
 
@@ -67,7 +67,7 @@ Moltes pòlisses cobreixen danys derivats del robatori de dades o d'una bretxa q
 
 ### 4. Ciberextorsió i ransomware
 
-Algunes pòlisses contemplen despeses vinculats a extorsió digital o ransomware, encara que aquí convé llegir molt bé límits, sublímits i condicions. Aquests són alguns dels [ciberataques més costosos](/ca/tipus-atacs-cibernetica/) i un dels punts on més diferències sol haver entre unes pòlisses i altres.
+Algunes pòlisses contemplen despeses vinculats a extorsió digital o ransomware, encara que aquí convé llegir molt bé límits, sublímits i condicions. Aquests són alguns dels [ciberataques més costosos](/ca/tipus-atacs-cibernetics/) i un dels punts on més diferències sol haver entre unes pòlisses i altres.
 
 ### 5. Frau i transferències indegudes
 
@@ -175,7 +175,7 @@ Cada vegada és més habitual que les asseguradores revisen mesures tècniques c
 
 També sol influir el nivell general de protecció que l'empresa pugui demostrar en els seus sistemes.
 
-Per això té sentit enllaçar aquí amb [GuardianRadar](/ca/guardianaradar/): cada vegada és més freqüent que es demanin evidències de postura de seguretat, visibilitat del risc i capacitat de detecció primerenca abans d'acceptar o renovar cobertura.
+Per això té sentit enllaçar aquí amb [GuardianRadar](/ca/guardianradar/): cada vegada és més freqüent que es demanin evidències de postura de seguretat, visibilitat del risc i capacitat de detecció primerenca abans d'acceptar o renovar cobertura.
 
 ---
 
@@ -227,4 +227,4 @@ Una ciberassegurança pot ser una bona decisió per a una pime, però només si 
 
 La pregunta no és només quant costa, sinó si la teva empresa compleix avui les condicions reals perquè aquesta assegurança respongui quan faci falta. I aquí la visibilitat del risc marca la diferència.
 
-Si vols reforçar la postura de seguretat de la teva empresa i arribar millor preparat a una contractació o renovació de ciberassegurança, a [GuardianHub](/ca/) podem ajudar-te. Descobreix com [GuardianRadar](/ca/guardianaradar/) et proporciona la visibilitat de riscos que demanden les asseguradores.
+Si vols reforçar la postura de seguretat de la teva empresa i arribar millor preparat a una contractació o renovació de ciberassegurança, a [GuardianHub](/ca/) podem ajudar-te. Descobreix com [GuardianRadar](/ca/guardianradar/) et proporciona la visibilitat de riscos que demanden les asseguradores.

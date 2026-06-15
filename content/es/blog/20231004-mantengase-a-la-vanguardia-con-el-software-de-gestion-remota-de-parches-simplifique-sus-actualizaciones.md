@@ -28,19 +28,19 @@ translationKey: "remote-patch-management-2023"
 
 Las actualizaciones de software son esenciales para mantener los sistemas seguros. Proporcionan correcciones de errores, mejoras de rendimiento y, lo que es más importante, parches de seguridad. Sin actualizaciones periódicas, el software se vuelve vulnerable. La gestión de parches es el proceso de aplicar estas actualizaciones, y una gestión adecuada garantiza la protección de los sistemas.
 
-![](/blog/uploads/panel-gestion-parches-remota.webp)
+![](/img/faronics-screens.webp)
 
 ## Retos de la gestión manual de parches
 
 Gestionar manualmente los parches puede ser una tarea desalentadora, especialmente para empresas con un gran número de dispositivos. Requiere que el personal de TI descargue, pruebe e implemente manualmente los parches. Este proceso, que lleva mucho tiempo y es propenso a errores, a menudo carece de control y visibilidad centralizados, lo que dificulta el seguimiento del estado de las actualizaciones.
 
-![](/blog/uploads/actualizacion-software-remota.webp)
+![](/img/faronics-screens.webp)
 
 ## Ventajas del software de gestión remota de parches
 
 El software de gestión remota de parches ofrece una solución a estos retos. Automatiza todo el proceso, desde la identificación de los parches hasta su implantación. Esta automatización ahorra tiempo y esfuerzo, una ventaja clave de soluciones gestionadas como nuestro paquete **[LightCore](https://guardianhubx.com/es/lightcore/)**. Además, proporciona control y visibilidad centralizados, con información en tiempo real del estado de las actualizaciones en toda la red, lo que permite realizar el seguimiento del cumplimiento y garantizar que todos los sistemas están actualizados.
 
-![](/blog/uploads/herramienta-parches-automaticos.webp)
+![](/img/faronics-screens.webp)
 
 ## Características clave que se deben buscar
 
@@ -54,7 +54,7 @@ Para ilustrar las ventajas del software de gestión remota de parches, veamos al
 -   **Ayuntamiento de Birmingham:** Ya no actualiza ningún software manualmente. Cuando un equipo entra en su periodo de mantenimiento semanal con la **plataforma en la nube de GuardianHubX**, actualiza el software especificado de forma automática, ahorrando horas de trabajo.
 -   **Biblioteca Lewis and Clark (Montana, EE.UU.):** Utiliza la gestión en la nube para automatizar las actualizaciones, reduciendo la carga de trabajo del personal de TI y garantizando que los equipos siempre funcionen correctamente sin importar la distancia.
 
-![](/blog/uploads/automatizacion-actualizaciones-empresa.webp)
+![](/img/faronics-screens.webp)
 
 ## Conclusión
 

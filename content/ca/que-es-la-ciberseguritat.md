@@ -101,7 +101,7 @@ faq_items:
         <p class="mb-3 landing-text-muted">En termes senzills, la <strong>ciberseguretat</strong> és la pràctica de defensar ordinadors, servidors, dispositius mòbils, sistemes electrònics, xarxes i dades d'atacs maliciosos. També es coneix com a seguretat de la tecnologia de la informació o seguretat de la informació electrònica.</p>
         <p class="mb-3 landing-text-muted">Però en el món real, la ciberseguretat és <strong>supervivència digital</strong>. A mesura que les nostres vides i negocis es traslladen al núvol, els atacants també evolucionen. Avui en dia, un atac cibernètic no és una qüestió de "si passarà", sinó de "quan passarà".</p>
         <p class="mb-4 landing-text-muted">Si acabes de començar el teu camí vers la seguretat digital, la nostra <a href="/blog/ca/guia-ciberseguretat-autonom-des-de-zero/">guia de primers passos en ciberseguretat</a> et proporciona passos pràctics i aplicables des del primer dia.</p>
-        <a href="/ca/test-ciberseguridad/" class="landing-btn landing-btn-primary">
+        <a href="/ca/test-ciberseguretat/" class="landing-btn landing-btn-primary">
           AVALUA LA TEVA SEGURETAT <i class="fas fa-arrow-right landing-arrow-soft-green"></i>
         </a>
       </div>
@@ -172,7 +172,7 @@ faq_items:
       </div>
       <div class="d-flex gap-3 flex-wrap">
         <a href="/blog/ca/ciberestafes-ceo-autonoms-pimes/" class="small text-decoration-none"><i class="fas fa-book" style="margin-right: 4px;"></i>Com evitar-la</a>
-        <a href="/ca/formacion-phishing-software/" class="small text-decoration-none"><i class="fas fa-graduation-cap" style="margin-right: 4px;"></i>Entrena el teu equip</a>
+        <a href="/ca/formacio-phishing-software/" class="small text-decoration-none"><i class="fas fa-graduation-cap" style="margin-right: 4px;"></i>Entrena el teu equip</a>
       </div>
     </div>
   </div>
@@ -266,7 +266,7 @@ faq_items:
         <p class="mb-3 landing-text-muted">La tecnologia més avançada del món (tallafocs, intel·ligència artificial, xifratge militar) no serveix res si un usuari fa clic en l'enllaç equivocat.</p>
         <p class="mb-3 landing-text-muted"><strong>La ciberseguretat moderna requereix consciència i cultura.</strong> No és només un problema del departament d'IT; és una responsabilitat compartida.</p>
         <p class="mb-4 landing-text-muted">Per això, a GuardianHubX no només oferim eines de detecció i prevenció. També capacitem els teus equips per a reconèixer amenaces, actuar amb rapidesa i crear una cultura de seguretat que protegeixi la teva organització des de dins.</p>
-        <a href="/ca/formacion-phishing-software/" class="landing-btn landing-btn-primary">
+        <a href="/ca/formacio-phishing-software/" class="landing-btn landing-btn-primary">
           IMPLEMENTA CONSCIÈNCIA <i class="fas fa-arrow-right landing-arrow-soft-green"></i>
         </a>
       </div>

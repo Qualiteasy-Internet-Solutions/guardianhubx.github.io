@@ -29,9 +29,9 @@ translationKey: cybersecurity-terms-guide-2024
 En el món digital, cada dia sentim a parlar més de ciberatacs i ciberseguretat. Amb la creixent quantitat d'informació, és important estar familiaritzat amb els termes clau. El [Marc de Ciberseguretat del NIST](https://www.nist.gov/cyberframework){: target="_blank" rel="noopener"} proporciona estàndards reconeguts mundialmente per a aquests termes. En aquesta guia de GuardianHubX, explorarem alguns dels conceptes més importants per entendre les amenaces i com protegir-nos-en.
 
 **Lecturas relacionadas:**
-- [La creixent amenaça dels ciberatacs a Espanya: claus per a una ciberresiliència efectiva](/blog/ciberatacs-espanya-ciberresiliencia/)
-- [Com la IA Està Revolucionant les Tècniques d'Evasió en Ciberseguretat](/blog/com-la-ia-esta-revolucionant-les-tecniques-d-evasio-en-ciberseguretat/)
-- [La Solució de Gestió Integral per a CIOs i CTOs](/blog/plataforma-gestio-per-a-cios-ctos/)
+- [La creixent amenaça dels ciberatacs a Espanya: claus per a una ciberresiliència efectiva](/blog/ca/ciberatacs-espanya-ciberresiliencia/)
+- [Com la IA Està Revolucionant les Tècniques d'Evasió en Ciberseguretat](/blog/ca/com-la-ia-esta-revolucionant-les-tecniques-d-evasio-en-ciberseguretat/)
+- [La Solució de Gestió Integral per a CIOs i CTOs](/blog/ca/plataforma-gestio-per-a-cios-ctos/)
 
 ## 1. Ciberatac
 

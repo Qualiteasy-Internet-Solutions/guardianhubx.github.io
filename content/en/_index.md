@@ -35,7 +35,7 @@ faq_items:
           </p>
         </div>
         <div class="mt-4">
-          <a href="/en/test-ciberseguridad/" class="btn btn-primary btn-lg rounded-pill px-4 shadow-sm">
+          <a href="/en/cybersecurity-test/" class="btn btn-primary btn-lg rounded-pill px-4 shadow-sm">
             Evaluate my security for free <i class="fas fa-arrow-right ms-2"></i>
           </a>
           <span class="d-block d-md-inline mt-2 mt-md-0 ms-md-3 text-muted small">

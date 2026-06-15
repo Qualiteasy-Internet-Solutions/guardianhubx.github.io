@@ -109,6 +109,84 @@
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
 
+    // Redirect table for known moved URLs (301-equivalent via JS)
+    var redirects = {
+      // Old date-prefix ES blog slugs
+      "/blog/20250808-ciberseguridad-pymes-riesgos-soluciones/": "/blog/ciberseguridad-pymes-riesgos-soluciones/",
+      "/blog/20250910-guia-60-minutos-ataque-ransomware/": "/blog/guia-60-minutos-ataque-ransomware/",
+      "/blog/20250824-vector-ataque-proteccion-empresa/": "/blog/vector-ataque-proteccion-empresa/",
+      "/blog/20251021-mdm-seguridad-movil-corporativa-protege-smartphone-negocio/": "/blog/mdm-seguridad-movil-corporativa-protege-smartphone-negocio/",
+      "/blog/20250908-errores-comunes-ciberseguridad-pymes/": "/blog/errores-comunes-ciberseguridad-pymes/",
+      "/blog/20251020-seguridad-dispositivos-iot-pymes-riesgos-y-como-mitigarlos/": "/blog/seguridad-dispositivos-iot-pymes-riesgos-y-como-mitigarlos/",
+      "/blog/2025-01-27-ia-tecnicas-evasion-ciberseguridad/": "/blog/ia-tecnicas-evasion-ciberseguridad/",
+      "/blog/2025-02-11-directiva-nis2-nueva-ley-ciberseguridad/": "/blog/directiva-nis2-nueva-ley-ciberseguridad/",
+      "/blog/2023-09-21-10-problemas-generados-por-la-falta-de-mantenimiento-informatico/": "/blog/problemas-falta-mantenimiento-informatico/",
+      "/blog/esta-su-empresa-protegida-de-los-ciberataques-estas-navidades/": "/blog/ciberseguridad-navidad-empresas/",
+      // Old date-prefix CA blog slugs
+      "/blog/ca/20250908-errors-comuns-ciberseguretat-pimes/": "/blog/ca/errors-comuns-ciberseguretat-pimes/",
+      "/blog/ca/20250910-guia-60-minuts-atac-ransomware/": "/blog/ca/guia-60-minuts-atac-ransomware/",
+      "/blog/ca/20250611-infostealers-que-son-com-operen-i-com-protegir-dades/": "/blog/ca/infostealers-que-son-com-operen-i-com-protegir-dades/",
+      "/blog/ca/20251021-mdm-seguridad-movil-corporativa-protege-smartphone-negocio/": "/blog/ca/mdm-seguretat-movil-corporativa/",
+      "/blog/ca/2025-01-27-ia-tecniques-evasio-ciberseguretat/": "/blog/ca/com-la-ia-esta-revolucionant-les-tecniques-d-evasio-en-ciberseguretat/",
+      "/blog/ca/2025-02-11-directiva-nis2-nova-llei-ciberseguretat/": "/blog/ca/nova-llei-de-ciberseguretat-el-que-les-empreses-han-de-saber-el-2025/",
+      // Wrong /ca/blog/ structure
+      "/ca/blog/nova-llei-ciberseguretat-que-les-empreses-han-de-saber-2025/": "/blog/ca/nova-llei-de-ciberseguretat-el-que-les-empreses-han-de-saber-el-2025/",
+      "/ca/blog/guia-60-minuts-atac-ransomware/": "/blog/ca/guia-60-minuts-atac-ransomware/",
+      "/ca/blog/errors-comuns-ciberseguretat-pimes/": "/blog/ca/errors-comuns-ciberseguretat-pimes/",
+      "/ca/blog/dades-ciberatacs-empreses/": "/blog/ca/les-dades-de-ciberatacs-a-empreses/",
+      "/ca/blog/": "/blog/ca/",
+      // Wrong CA page slugs
+      "/ca/politica-de-privacitat/": "/ca/politica-privacitat/",
+      "/ca/test-ciberseguridad/": "/ca/test-ciberseguretat/",
+      "/ca/formacion-phishing-software/": "/ca/formacio-phishing-software/",
+      // Wrong EN page slugs
+      "/en/test-ciberseguridad/": "/en/cybersecurity-test/",
+      "/en/test-cybersecurity/": "/en/cybersecurity-test/",
+      "/en/formacion-phishing-software/": "/en/cybersecurity-phishing-training/",
+      "/en/phishing-training-software/": "/en/cybersecurity-phishing-training/",
+      "/en/cybersecurity-objectives/": "/en/cybersecurity-goals/",
+      "/en/cybersecurity-assessment/": "/en/cybersecurity-test/",
+      // Wrong ES
+      "/es/guardianaradar/": "/es/guardianradar/",
+      // Old HTML files
+      "/politica-cookies-es.html": "/es/politica-cookies/",
+      "/formacion-phishing-software.html": "/es/formacion-phishing-software/",
+      "/head.html": "/es/",
+      // CA blog slugs without /ca/ prefix (no trailing slash variants)
+      "/blog/guia-rapida-termes-ciberseguretat/": "/blog/ca/guia-rapida-termes-ciberseguretat/",
+      "/blog/ciberseguretat-nadal-empreses/": "/blog/ca/ciberseguretat-nadal-empreses/",
+      "/blog/com-protegir-xarxa-atacs-ransomware/": "/blog/ca/com-protegir-xarxa-atacs-ransomware/",
+      "/blog/com-la-ia-esta-revolucionant-les-tecniques-d-evasio-en-ciberseguretat/": "/blog/ca/com-la-ia-esta-revolucionant-les-tecniques-d-evasio-en-ciberseguretat/",
+      "/blog/com-millorar-la-seguretat-de-ti/": "/blog/ca/com-millorar-la-seguretat-de-ti/",
+      "/blog/ciberatacs-espanya-ciberresiliencia/": "/blog/ca/ciberatacs-espanya-ciberresiliencia/",
+      "/blog/les-dades-de-ciberatacs-a-empreses/": "/blog/ca/les-dades-de-ciberatacs-a-empreses/",
+      "/blog/vector-atac-proteccio-empresa/": "/blog/ca/vector-atac-proteccio-empresa/",
+      "/blog/errors-comuns-ciberseguretat-pimes/": "/blog/ca/errors-comuns-ciberseguretat-pimes/",
+      "/blog/com-evitar-robatori-compte-ato/": "/blog/ca/com-evitar-robatori-compte-ato/",
+      "/blog/ciberseguretat-pimes-riscs-solucions/": "/blog/ca/ciberseguretat-pimes-riscs-solucions/",
+      "/blog/infostealers-amenaca-robatori-dades/": "/blog/ca/infostealers-que-son-com-operen-i-com-protegir-dades/",
+      "/blog/diferencies-rdm-rmm/": "/blog/ca/diferencies-rdm-rmm/",
+      "/blog/gestio-unificada-endpoints-uem/": "/blog/ca/gestio-unificada-endpoints-uem/",
+      "/blog/guia-60-minuts-atac-ransomware/": "/blog/ca/guia-60-minuts-atac-ransomware/",
+      "/blog/gestio-remota-actualitzacions/": "/blog/ca/gestio-remota-actualitzacions/",
+      "/blog/problemes-manca-manteniment-informatic/": "/blog/ca/problemes-manca-manteniment-informatic/",
+      "/blog/gestio-ti-universitats/": "/blog/ca/gestio-ti-universitats/",
+      "/blog/importancia-llicencies-software-actualitzades/": "/blog/ca/importancia-llicencies-software-actualitzades/",
+      "/blog/com-chatgpt-ajuda-manteniment-ti/": "/blog/ca/com-chatgpt-ajuda-manteniment-ti/",
+      "/blog/escassetat-talent-ti-solucio-automatitzacio/": "/blog/ca/escassetat-talent-ti-solucio-automatitzacio/",
+      "/blog/plataforma-gestio-per-a-cios-ctos/": "/blog/ca/plataforma-gestio-per-a-cios-ctos/",
+      "/blog/ciberseguretat-pimes-riscs-solucions/": "/blog/ca/ciberseguretat-pimes-riscs-solucions/",
+    };
+
+    var currentPath = window.location.pathname;
+    // Normalize trailing slash
+    var normalizedPath = currentPath.endsWith("/") ? currentPath : currentPath + "/";
+    if (redirects[normalizedPath]) {
+      window.location.replace(redirects[normalizedPath]);
+    } else if (redirects[currentPath]) {
+      window.location.replace(redirects[currentPath]);
+    }
+
     var texts = {
       es: {
         msg: "Página no encontrada",

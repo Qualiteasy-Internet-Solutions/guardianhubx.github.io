@@ -1,0 +1,40 @@
+{{ define "main" }}
+<nav aria-label="breadcrumb" class="pt-5 pb-3 mb-2">
+  <div class="container">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="{{ "/" | relLangURL }}">GuardianHubX</a></li>
+      <li class="breadcrumb-item"><a href="{{ "/blog/" | relLangURL }}">Blog</a></li>
+      <li class="breadcrumb-item active" aria-current="page">{{ .Title }}</li>
+    </ol>
+  </div>
+</nav>
+
+<div class="container mt-3">
+  <div class="row justify-content-md-center">
+    <div class="col-lg-8">
+      <div class="mb-5">
+        <h1 class="h2 mb-0">{{ .Title }}</h1>
+      </div>
+
+      {{ if .Pages }}
+      <div class="row g-3">
+        {{ range .Pages }}
+        <div class="col-md-6 col-lg-4">
+          <a href="{{ .RelPermalink }}" class="text-decoration-none">
+            <div class="card border-0 shadow-sm p-3 h-100 taxonomy-tag-card">
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="fw-semibold">{{ .Title }}</span>
+                <span class="badge bg-light text-muted small ms-2">{{ len .Pages }}</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        {{ end }}
+      </div>
+      {{ else }}
+      <div class="alert alert-info">{{ i18n "no_posts_found" | default "No posts found." }}</div>
+      {{ end }}
+    </div>
+  </div>
+</div>
+{{ end }}

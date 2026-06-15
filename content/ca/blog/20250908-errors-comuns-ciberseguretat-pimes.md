@@ -32,9 +32,9 @@ La majoria de les **pimes** pensa que els **ciberatacs** només afecten grans co
 Els ciberdelinqüents saben que, moltes vegades, aquestes organitzacions compten amb menys recursos i mesures de protecció, cosa que les converteix en un objectiu fàcil.
 
 **Lecturas relacionadas:**
-- [Guia ràpida: què fer en els primers 60 minuts després d’un atac de ransomware](/blog/guia-60-minuts-atac-ransomware/)
-- [Ciberseguretat a pimes: riscos i solucions sense infraestructura interna](/blog/ciberseguretat-pimes-riscs-solucions/)
-- [Què és un vector d'atac i com protegir la teva empresa](/blog/vector-atac-proteccio-empresa/)
+- [Guia ràpida: què fer en els primers 60 minuts després d’un atac de ransomware](/blog/ca/guia-60-minuts-atac-ransomware/)
+- [Ciberseguretat a pimes: riscos i solucions sense infraestructura interna](/blog/ca/ciberseguretat-pimes-riscs-solucions/)
+- [Què és un vector d'atac i com protegir la teva empresa](/blog/ca/vector-atac-proteccio-empresa/)
 
 A continuació, repassem els **5 errors més comuns en ciberseguretat que cometen les pimes** i com evitar-los amb accions senzilles.
 

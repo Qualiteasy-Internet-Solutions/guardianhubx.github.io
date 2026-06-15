@@ -33,9 +33,9 @@ translationKey: ato-2025
 La teva empresa està preparada per aturar un atac de robatori de comptes?
 
 **Lecturas relacionadas:**
-- [Infostealers: què són, com operen i com protegir les teves dades](/blog/infostealers-amenaca-robatori-dades/)
-- [Ciberseguretat a pimes: riscos i solucions sense infraestructura interna](/blog/ciberseguretat-pimes-riscs-solucions/)
-- [Què és un vector d'atac i com protegir la teva empresa](/blog/vector-atac-proteccio-empresa/)
+- [Infostealers: què són, com operen i com protegir les teves dades](/blog/ca/infostealers-amenaca-robatori-dades/)
+- [Ciberseguretat a pimes: riscos i solucions sense infraestructura interna](/blog/ca/ciberseguretat-pimes-riscs-solucions/)
+- [Què és un vector d'atac i com protegir la teva empresa](/blog/ca/vector-atac-proteccio-empresa/)
 
 Els **atacs ATO** (Account Takeover) s’han convertit en una de les amenaces més perilloses per a empreses de qualsevol mida. En només dos anys, la seva incidència ha crescut de manera alarmant:
 

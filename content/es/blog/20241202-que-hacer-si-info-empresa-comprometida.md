@@ -71,7 +71,7 @@ Una vez contenida la situación, es momento de prevenir futuras incidencias.
 
 -   Actualiza sistemas y aplica parches de seguridad.
 -   Realiza auditorías para detectar otras vulnerabilidades.
--   Capacita a tu equipo sobre ciberseguridad, una característica clave de nuestros paquetes de seguridad como **[SmartLayer](https://guardianhubx.com/es/objetivos-ciberseguretat/)**.
+-   Capacita a tu equipo sobre ciberseguridad, una característica clave de nuestros paquetes de seguridad como **[SmartLayer](https://guardianhubx.com/es/objetivos-ciberseguridad/)**.
 
 ## 6. Monitorea y Evalúa Continuamente
 

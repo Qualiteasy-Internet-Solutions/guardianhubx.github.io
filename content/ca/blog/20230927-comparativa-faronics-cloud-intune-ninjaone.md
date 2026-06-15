@@ -31,9 +31,9 @@ translationKey: it-management-comparison-2023
 En el complex món de la gestió tecnològica, les organitzacions busquen solucions efectives que els permetin administrar els seus sistemes de manera eficient i segura. Tres de les principals opcions al mercat són **Faronics Cloud** (inclòs a les solucions de GuardianHubX), **Intune** de Microsoft i **NinjaOne**. En aquesta comparació, explorarem les característiques clau de cadascuna per ajudar-te a prendre una decisió informada.
 
 **Lecturas relacionadas:**
-- [Protegir les xarxes universitàries: reduir els riscos de ciberatac i simplificar la gestió de TI](/blog/gestio-ti-universitats/)
-- [La Solució de Gestió Integral per a CIOs i CTOs](/blog/plataforma-gestio-per-a-cios-ctos/)
-- [Quines són les principals diferències entre RDM i RMM?](/blog/diferencies-rdm-rmm/)
+- [Protegir les xarxes universitàries: reduir els riscos de ciberatac i simplificar la gestió de TI](/blog/ca/gestio-ti-universitats/)
+- [La Solució de Gestió Integral per a CIOs i CTOs](/blog/ca/plataforma-gestio-per-a-cios-ctos/)
+- [Quines són les principals diferències entre RDM i RMM?](/blog/ca/diferencies-rdm-rmm/)
 
 ## Faronics Cloud
 

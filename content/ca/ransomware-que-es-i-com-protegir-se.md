@@ -153,7 +153,7 @@ faq_items:
       <p class="mb-3 landing-text-muted">El ransomware és un tipus de programari maliciós dissenyat per bloquejar sistemes o xifrar fitxers i exigir un pagament per recuperar-los.</p>
       <p class="mb-3 landing-text-muted">Els atacants solen sol·licitar el rescat en criptomonedes per dificultar-ne el rastreig i, cada vegada més, combinen el xifratge amb el robatori i la filtració de dades.</p>
       <p class="mb-4 landing-text-muted">En els atacs moderns són habituals la <strong>doble extorsió</strong> (xifren i amenacen de filtrar), la <strong>triple extorsió</strong> (afegeixen pressió sobre clients i socis) i el <strong>Ransomware-as-a-Service (RaaS)</strong>, que permet a grups sense coneixements tècnics llançar atacs devastadors.</p>
-      <a href="/ca/tipus-atacs-cibernetica/" class="landing-btn landing-btn-primary">
+      <a href="/ca/tipus-atacs-cibernetics/" class="landing-btn landing-btn-primary">
         Tots els Tipus de Ciberatacs <i class="fas fa-arrow-right landing-arrow-soft-green"></i>
       </a>
     </div>

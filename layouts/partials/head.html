@@ -42,9 +42,10 @@
 <link rel="manifest" href="/icons/site.webmanifest" />
 
 <!-- RSS -->
-<link rel="alternate" type="application/rss+xml" title="GuardianHubX Blog RSS" href="/blog/index.xml" />
 {{ if eq .Layout "blog" }}
 <link rel="alternate" type="application/rss+xml" title="GuardianHubX Blog RSS" href="{{ .Section | relLangURL }}index.xml" />
+{{ else }}
+<link rel="alternate" type="application/rss+xml" title="GuardianHubX Blog RSS" href="{{ "blog/" | relLangURL }}index.xml" />
 {{ end }}
 
 <!-- Blog Article Meta Tags -->

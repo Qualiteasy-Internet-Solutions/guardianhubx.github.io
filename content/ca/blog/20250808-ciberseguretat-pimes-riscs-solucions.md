@@ -32,9 +32,9 @@ cover:
 La **ciberseguretat a pimes** s’ha convertit en una necessitat crítica, especialment en un entorn on les amenaces digitals creixen en volum i sofisticació. Tot i això, moltes petites i mitjanes empreses, així com autònoms, no disposen d’infraestructura interna ni de recursos per contractar una consultoria especialitzada.
 
 **Lecturas relacionadas:**
-- [Què és un vector d'atac i com protegir la teva empresa](/blog/vector-atac-proteccio-empresa/)
-- [5 errors comuns de ciberseguretat que cometen les pimes (i com evitar-los)](/blog/errors-comuns-ciberseguretat-pimes/)
-- [Guia ràpida: què fer en els primers 60 minuts després d’un atac de ransomware](/blog/guia-60-minuts-atac-ransomware/)
+- [Què és un vector d'atac i com protegir la teva empresa](/blog/ca/vector-atac-proteccio-empresa/)
+- [5 errors comuns de ciberseguretat que cometen les pimes (i com evitar-los)](/blog/ca/errors-comuns-ciberseguretat-pimes/)
+- [Guia ràpida: què fer en els primers 60 minuts després d’un atac de ransomware](/blog/ca/guia-60-minuts-atac-ransomware/)
 
 En aquest article t’expliquem els principals riscos que afronten les pimes i quines solucions pràctiques i assequibles poden implementar per protegir els seus actius digitals sense necessitat d’un departament IT intern.
 

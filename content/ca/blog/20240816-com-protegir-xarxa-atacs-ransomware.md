@@ -28,9 +28,9 @@ translationKey: ransomware-network-protection-2024
 El ransomware està empitjorant. Per a qualsevol alt directiu, és un dels riscos més grans que existeixen. Segons l'[INCIBE](https://www.incibe.es/empresas){: target="_blank" rel="noopener"}, aquest tipus de programari maliciós us impedeix accedir a les vostres dades o sistemes fins que pagueu un rescat. Pot paralitzar empreses, escoles i hospitals. Com que els ciberdelinqüents es tornen més intel·ligents i els atacs són cada cop més freqüents, és crucial implementar mesures de seguretat sòlides.
 
 **Lecturas relacionadas:**
-- [La Solució de Gestió Integral per a CIOs i CTOs](/blog/plataforma-gestio-per-a-cios-ctos/)
-- [Protegeix la teva empresa dels ciberatacs aquest Nadal](/blog/ciberseguretat-nadal-empreses/)
-- [Les dades que demostren el risc real de ciberatacs a empreses](/blog/les-dades-de-ciberatacs-a-empreses/)
+- [La Solució de Gestió Integral per a CIOs i CTOs](/blog/ca/plataforma-gestio-per-a-cios-ctos/)
+- [Protegeix la teva empresa dels ciberatacs aquest Nadal](/blog/ca/ciberseguretat-nadal-empreses/)
+- [Les dades que demostren el risc real de ciberatacs a empreses](/blog/ca/les-dades-de-ciberatacs-a-empreses/)
 
 ## El Perill Creixent del Ransomware
 
@@ -62,6 +62,6 @@ La característica destacada de Faronics Cloud Deep Freeze és la seva capacitat
 A mesura que els atacs de ransomware es tornen més sofisticats, les organitzacions necessiten un enfocament exhaustiu. Faronics Cloud Deep Freeze ofereix una solució completa per protegir els seus sistemes. A GuardianHubX, integrem aquesta potent eina dins dels nostres paquets de seguretat gestionada com **[LightCore](https://guardianhubx.com/ca/objectius-ciberseguretat/)** i **[SmartLayer](https://guardianhubx.com/ca/objectius-ciberseguretat/)** per oferir una protecció completa i sense preocupacions.
 
 > **Descobreix el poder de Faronics Cloud Deep Freeze en acció.**
-> **[Registra't al nostre pròxim seminari web i protegeix la teva xarxa avui mateix.](https://faronicscloud.com/es/pages/eventos/?dl=BRUYN)**
+> **[Registra't al nostre pròxim seminari web i protegeix la teva xarxa avui mateix.](https://faronicscloud.com?dl=BRUYN)**
 
 > 🛡️ **Protege tu Red contra Ransomware Hoy** — Obtén orientación experta + estrategia de protección.

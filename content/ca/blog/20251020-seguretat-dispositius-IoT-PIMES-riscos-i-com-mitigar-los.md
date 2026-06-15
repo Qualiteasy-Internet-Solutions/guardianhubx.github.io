@@ -30,9 +30,9 @@ cover:
 La **transformació digital** ha portat una enorme quantitat de dispositius connectats a internet: càmeres de videovigilància, sensors de moviment, impressores intel·ligents, altaveus amb assistent de veu, panys electrònics… Tots ells formen part de l'**Internet of Things (IoT)** i s'han convertit en eines habituals també a les **petites empreses**.
 
 **Lecturas relacionadas:**
-- [5 errors comuns de ciberseguretat que cometen les pimes (i com evitar-los)](/blog/errors-comuns-ciberseguretat-pimes/)
-- [Ciberseguretat a pimes: riscos i solucions sense infraestructura interna](/blog/ciberseguretat-pimes-riscs-solucions/)
-- [Què és un vector d'atac i com protegir la teva empresa](/blog/vector-atac-proteccio-empresa/)
+- [5 errors comuns de ciberseguretat que cometen les pimes (i com evitar-los)](/blog/ca/errors-comuns-ciberseguretat-pimes/)
+- [Ciberseguretat a pimes: riscos i solucions sense infraestructura interna](/blog/ca/ciberseguretat-pimes-riscs-solucions/)
+- [Què és un vector d'atac i com protegir la teva empresa](/blog/ca/vector-atac-proteccio-empresa/)
 
 Aquests equips fan la vida més fàcil: permeten controlar accessos, optimitzar consums, millorar l'eficiència i fins i tot donar un millor servei als clients. Però, al mateix temps, **obren noves portes a possibles ciberatacs**. I moltes vegades no som conscients del risc fins que ja és massa tard.
 

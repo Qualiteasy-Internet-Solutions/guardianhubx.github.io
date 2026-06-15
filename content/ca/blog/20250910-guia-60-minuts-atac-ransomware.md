@@ -29,9 +29,9 @@ cover:
 El **ransomware** s’ha convertit en una de les amenaces més perilloses per a empreses de totes les mides. Aquest tipus de **malware** xifra els arxius i bloqueja l’accés als sistemes fins que es paga un rescat.  
 
 **Lecturas relacionadas:**
-- [5 errors comuns de ciberseguretat que cometen les pimes (i com evitar-los)](/blog/errors-comuns-ciberseguretat-pimes/)
-- [Ciberseguretat a pimes: riscos i solucions sense infraestructura interna](/blog/ciberseguretat-pimes-riscs-solucions/)
-- [Infostealers: què són, com operen i com protegir les teves dades](/blog/infostealers-amenaca-robatori-dades/)
+- [5 errors comuns de ciberseguretat que cometen les pimes (i com evitar-los)](/blog/ca/errors-comuns-ciberseguretat-pimes/)
+- [Ciberseguretat a pimes: riscos i solucions sense infraestructura interna](/blog/ca/ciberseguretat-pimes-riscs-solucions/)
+- [Infostealers: què són, com operen i com protegir les teves dades](/blog/ca/infostealers-amenaca-robatori-dades/)
 
 Lluny de ser un problema exclusiu de les grans corporacions, cada vegada més **pimes** se’n veuen afectades, ja que sovint compten amb menys recursos i mesures de protecció.  
 

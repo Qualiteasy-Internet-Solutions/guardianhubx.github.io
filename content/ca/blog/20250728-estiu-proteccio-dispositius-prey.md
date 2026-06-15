@@ -34,9 +34,9 @@ translationKey: prey-project-summer-2025
 L'estiu és sinònim de vacances, desconnexió i mobilitat. Però per a les empreses, també implica un augment dels riscos en seguretat digital.
 
 **Lecturas relacionadas:**
-- [Infostealers: què són, com operen i com protegir les teves dades](/blog/infostealers-amenaca-robatori-dades/)
-- [Com evitar el robatori de comptes (ATO) a la teva empresa](/blog/com-evitar-robatori-compte-ato/)
-- [Ciberseguretat a pimes: riscos i solucions sense infraestructura interna](/blog/ciberseguretat-pimes-riscs-solucions/)
+- [Infostealers: què són, com operen i com protegir les teves dades](/blog/ca/infostealers-amenaca-robatori-dades/)
+- [Com evitar el robatori de comptes (ATO) a la teva empresa](/blog/ca/com-evitar-robatori-compte-ato/)
+- [Ciberseguretat a pimes: riscos i solucions sense infraestructura interna](/blog/ca/ciberseguretat-pimes-riscs-solucions/)
 
 Entre viatges, jornades híbrides i teletreball, els dispositius corporatius estan més exposats a pèrdues, robatoris o accessos no autoritzats.
 

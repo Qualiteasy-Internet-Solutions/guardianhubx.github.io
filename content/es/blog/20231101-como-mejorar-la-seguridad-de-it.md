@@ -39,7 +39,7 @@ Los ciberataques adoptan diversas formas. Veamos algunos tipos comunes:
 
 Los [ataques de phishing](https://guardianhubx.com/blog/guia-rapida-terminos-ciberseguridad/) consisten en engañar a las personas para que revelen información confidencial, como contraseñas o datos de tarjetas de crédito, haciéndose pasar por una entidad de confianza a través de correos electrónicos o sitios web fraudulentos.
 
-![Ataques de phishing](/blog/uploads/como-mejorar-la-seguridad-ti-2.jpg)
+![Ataques de phishing](/img/phishing-credentials-security.webp)
 
 ### Infecciones por malware
 
@@ -49,7 +49,7 @@ Malware (software malicioso) hace referencia a cualquier software diseñado para
 
 Los ataques de denegación de servicio distribuido (DDoS) tienen como objetivo saturar un sitio web o una red con una avalancha de tráfico para imposibilitar el acceso de usuarios legítimos.
 
-![Ataques DDoS](/blog/uploads/como-mejorar-la-seguridad-ti-3.jpg)
+![Ataques DDoS](/img/malware-protection-analysis.webp)
 
 ### Amenazas internas
 
@@ -73,7 +73,7 @@ Un antivirus de confianza es fundamental. Para una protección superior, las **[
 ### Recuperación con un simple reinicio
 La tecnología **[Reiniciar para Restaurar](https://guardianhubx.com/es/faronics/)**, impulsada por Deep Freeze, permite revertir los sistemas a un estado seguro, eliminando cualquier infección o cambio no deseado con solo reiniciar.
 
-![Recuperación fácil](/blog/uploads/como-mejorar-la-seguridad-ti-4.jpg)
+![Recuperación fácil](/img/seguridad-prevencion-deteccion-recuperacion.webp)
 
 ---
 

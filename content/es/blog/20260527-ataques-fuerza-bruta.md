@@ -10,7 +10,7 @@ categories:
   - ciberseguridad
 tags:
   - fuerza-bruta
-  - contraseña
+  - contraseñas
   - credential-stuffing
   - autenticación-multifactor
   - mfa

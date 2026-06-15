@@ -58,7 +58,7 @@ INCIBE recomana evitar l'accés a informació confidencial com contrasenyes o da
 
 ## Què és un atac man-in-the-middle explicat fàcil
 
-Un atac man-in-the-middle ocorre quan un tercer es col·loca entre el teu dispositiu i el servei al qual et connectes per intentar veure, interceptar o fins i tot modificar la informació que circula. El NCSC ho inclou entre els atacs presents en xarxes locals no fiables. És un dels [tipus de ciberataques](/ca/tipus-atacs-cibernetica/) més comuns en teletreball.
+Un atac man-in-the-middle ocorre quan un tercer es col·loca entre el teu dispositiu i el servei al qual et connectes per intentar veure, interceptar o fins i tot modificar la informació que circula. El NCSC ho inclou entre els atacs presents en xarxes locals no fiables. És un dels [tipus de ciberataques](/ca/tipus-atacs-cibernetics/) més comuns en teletreball.
 
 Portat a un exemple simple:
 
@@ -198,4 +198,4 @@ Treballar fora de l'oficina no ha de ser insegur, però sí que exigeix més cri
 
 La millor estratègia no és deixar de moure't, sinó treballar amb una capa extra de seguretat cada vegada que surts de la teva xarxa.
 
-Si vols reforçar la protecció de la teva empresa quan treballs en remot o des d'entorns compartits, a [GuardianHub](/ca/) podem ajudar-te. Descobreix com [GuardianRadar](/ca/guardianaradar/) monitoritza els riscos en temps real i protegeix el teu negoci on sigui que traballs.
+Si vols reforçar la protecció de la teva empresa quan treballs en remot o des d'entorns compartits, a [GuardianHub](/ca/) podem ajudar-te. Descobreix com [GuardianRadar](/ca/guardianradar/) monitoritza els riscos en temps real i protegeix el teu negoci on sigui que traballs.

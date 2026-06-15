@@ -32,9 +32,9 @@ translationKey: cyberattack-data-companies-2024
 Cada vegada llegim més notícies sobre ciberatacs a empreses i organismes públics. Estan a l'ordre del dia. No obstant això, gran part dels atacs a empreses privades no surten a la llum. Tot i així, gràcies a estudis i informes recents d'organismes com l'[INCIBE](https://www.incibe.es/empresas){: target=\"_blank\" rel=\"noopener\"}, hi ha dades reals que ajuden a comprendre la magnitud del problema i la urgència de comptar amb un partner com GuardianHubX per evitar formar part d'aquestes estadístiques.
 
 **Lecturas relacionadas:**
-- [La Solució de Gestió Integral per a CIOs i CTOs](/blog/plataforma-gestio-per-a-cios-ctos/)
-- [Protegeix la teva empresa dels ciberatacs aquest Nadal](/blog/ciberseguretat-nadal-empreses/)
-- [Com puc protegir la meva xarxa d'atacs de ransomware?](/blog/com-protegir-xarxa-atacs-ransomware/)
+- [La Solució de Gestió Integral per a CIOs i CTOs](/blog/ca/plataforma-gestio-per-a-cios-ctos/)
+- [Protegeix la teva empresa dels ciberatacs aquest Nadal](/blog/ca/ciberseguretat-nadal-empreses/)
+- [Com puc protegir la meva xarxa d'atacs de ransomware?](/blog/ca/com-protegir-xarxa-atacs-ransomware/)
 
 ## El 50% de les PIMES espanyoles pateixen atacs cada any
 

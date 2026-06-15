@@ -171,7 +171,7 @@ faq_items:
         <strong>91%</strong> of successful attacks start here
       </div>
       <div class="d-flex gap-3 flex-wrap">
-        <a href="/en/phishing-training-software/" class="small text-decoration-none"><i class="fas fa-graduation-cap" style="margin-right: 4px;"></i>Train Your Team</a>
+        <a href="/en/cybersecurity-phishing-training/" class="small text-decoration-none"><i class="fas fa-graduation-cap" style="margin-right: 4px;"></i>Train Your Team</a>
       </div>
     </div>
   </div>
@@ -260,7 +260,7 @@ faq_items:
         <p class="mb-3 landing-text-muted">The world's most advanced technology (firewalls, artificial intelligence, military-grade encryption) is useless if a user clicks the wrong link.</p>
         <p class="mb-3 landing-text-muted"><strong>Modern cybersecurity requires awareness and culture.</strong> It's not just an IT department problem; it's a shared responsibility.</p>
         <p class="mb-4 landing-text-muted">That's why at GuardianHubX we don't just offer detection and prevention tools. We also empower your teams to recognize threats, act quickly, and build a security culture that protects your organization from within.</p>
-        <a href="/en/phishing-training-software/" class="landing-btn landing-btn-primary">
+        <a href="/en/cybersecurity-phishing-training/" class="landing-btn landing-btn-primary">
           IMPLEMENT AWARENESS <i class="fas fa-arrow-right landing-arrow-soft-green"></i>
         </a>
       </div>

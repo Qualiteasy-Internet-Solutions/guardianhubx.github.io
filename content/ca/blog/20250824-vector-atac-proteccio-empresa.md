@@ -32,9 +32,9 @@ cover:
 En el món de la **ciberseguretat**, un dels conceptes clau que tota empresa ha de conèixer és el *vector d'atac*. Entendre què és, com funciona i per què és una amenaça pot marcar la diferència entre prevenir un ciberatac o patir una greu bretxa de seguretat.
 
 **Lecturas relacionadas:**
-- [Ciberseguretat a pimes: riscos i solucions sense infraestructura interna](/blog/ciberseguretat-pimes-riscs-solucions/)
-- [Infostealers: què són, com operen i com protegir les teves dades](/blog/infostealers-amenaca-robatori-dades/)
-- [5 errors comuns de ciberseguretat que cometen les pimes (i com evitar-los)](/blog/errors-comuns-ciberseguretat-pimes/)
+- [Ciberseguretat a pimes: riscos i solucions sense infraestructura interna](/blog/ca/ciberseguretat-pimes-riscs-solucions/)
+- [Infostealers: què són, com operen i com protegir les teves dades](/blog/ca/infostealers-amenaca-robatori-dades/)
+- [5 errors comuns de ciberseguretat que cometen les pimes (i com evitar-los)](/blog/ca/errors-comuns-ciberseguretat-pimes/)
 
 ## Què és un vector d'atac?
 

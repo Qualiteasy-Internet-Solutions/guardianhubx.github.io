@@ -10,7 +10,7 @@ resources:
     file: "docs/passwork-guardianhubx-ca.pdf"
 external_links:
   - name: "Lloc web"
-    url: "https://passwork.pro/ca/?utm_source=partner&utm_medium=qualiteasy"
+    url: "https://passwork.pro/es/?utm_source=partner&utm_medium=qualiteasy"
 ---
 
 
@@ -37,7 +37,7 @@ external_links:
     <a href="/docs/passwork-guardianhubx-es.pdf" class="btn btn-primary pdf-download" target="_blank">
       <i class="fas fa-file-pdf"></i> Descarrega el Brochure
     </a>
-    <a href="https://passwork.pro/ca/?utm_source=partner&utm_medium=qualiteasy" class="btn btn-success" target="_blank">
+    <a href="https://passwork.pro/es/?utm_source=partner&utm_medium=qualiteasy" class="btn btn-success" target="_blank">
       <i class="fas fa-globe"></i> Lloc web
     </a>
   </div>

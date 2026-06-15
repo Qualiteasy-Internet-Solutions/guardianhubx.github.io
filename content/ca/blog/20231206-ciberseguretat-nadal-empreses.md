@@ -31,13 +31,13 @@ translationKey: christmas-cybersecurity-2023
 Amb les festes de Nadal a tocar, és hora de començar a pensar en alguna cosa més que els regals i els torrons. Cal assegurar-se que la teva empresa estigui protegida de la creixent amenaça de ciberatacs durant aquest període festiu. En aquesta entrada, veurem les ciberamenaces més comunes i et donarem consells pràctics per mantenir la teva seguretat i gaudir d'unes vacances tranquil·les.
 
 **Lecturas relacionadas:**
-- [La Solució de Gestió Integral per a CIOs i CTOs](/blog/plataforma-gestio-per-a-cios-ctos/)
-- [Les dades que demostren el risc real de ciberatacs a empreses](/blog/les-dades-de-ciberatacs-a-empreses/)
-- [Com puc protegir la meva xarxa d'atacs de ransomware?](/blog/com-protegir-xarxa-atacs-ransomware/)
+- [La Solució de Gestió Integral per a CIOs i CTOs](/blog/ca/plataforma-gestio-per-a-cios-ctos/)
+- [Les dades que demostren el risc real de ciberatacs a empreses](/blog/ca/les-dades-de-ciberatacs-a-empreses/)
+- [Com puc protegir la meva xarxa d'atacs de ransomware?](/blog/ca/com-protegir-xarxa-atacs-ransomware/)
 
 ### Ciberamenaces Habituals durant el Nadal
 
-Les festes de Nadal porten un augment de les compres per Internet i l'activitat a les xarxes socials. Malauradament, això també significa un augment de ciberamenaces com el [**phishing**](https://guardianhubx.com/ca/blog/guia-rapida-termes-ciberseguretat/) i el [**ransomware**](https://guardianhubx.com/ca/blog/com-protegir-la-meva-xarxa-datacs-de-ransomware/). Els furoners saben que les empreses poden ser més vulnerables quan el personal està distret o de vacances. És crucial mantenir-se alerta i formar els empleats sobre aquests riscos.
+Les festes de Nadal porten un augment de les compres per Internet i l'activitat a les xarxes socials. Malauradament, això també significa un augment de ciberamenaces com el [**phishing**](https://guardianhubx.com/blog/ca/guia-rapida-termes-ciberseguretat/) i el [**ransomware**](https://guardianhubx.com/blog/ca/com-protegir-xarxa-atacs-ransomware/). Els furoners saben que les empreses poden ser més vulnerables quan el personal està distret o de vacances. És crucial mantenir-se alerta i formar els empleats sobre aquests riscos.
 
 ### 1. Protecció Activa contra el Ransomware
 

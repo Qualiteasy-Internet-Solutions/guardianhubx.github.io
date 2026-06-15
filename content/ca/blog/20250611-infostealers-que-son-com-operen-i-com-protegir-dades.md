@@ -32,9 +32,9 @@ translationKey: infostealers-2025
 En l'actual ecosistema digital, els infostealers s'han consolidat com una de les amenaces més silencioses i preocupants en [ciberseguretat](https://guardianhubx.com/ca/objectius-ciberseguretat/). Aquests programes maliciosos estan dissenyats per robar informació sensible sense generar senyals visibles al sistema, la qual cosa els permet actuar de manera perllongada sense ser detectats.
 
 **Lecturas relacionadas:**
-- [Què és un vector d'atac i com protegir la teva empresa](/blog/vector-atac-proteccio-empresa/)
-- [Com evitar el robatori de comptes (ATO) a la teva empresa](/blog/com-evitar-robatori-compte-ato/)
-- [Ciberseguretat a pimes: riscos i solucions sense infraestructura interna](/blog/ciberseguretat-pimes-riscs-solucions/)
+- [Què és un vector d'atac i com protegir la teva empresa](/blog/ca/vector-atac-proteccio-empresa/)
+- [Com evitar el robatori de comptes (ATO) a la teva empresa](/blog/ca/com-evitar-robatori-compte-ato/)
+- [Ciberseguretat a pimes: riscos i solucions sense infraestructura interna](/blog/ca/ciberseguretat-pimes-riscs-solucions/)
 
 La seva creixent sofisticació, baix cost i facilitat de distribució els han convertit en eines habituals per a actors maliciosos, tant individuals com organitzats. El resultat: un nombre creixent d'empreses i usuaris amb les seves dades exposades sense saber-ho.
 

@@ -90,7 +90,7 @@ faq_items:
     <div class="col-lg-6 landing-fade-in">
       <h1 class="landing-hero-title">Phishing: What is it and how to avoid. The number one threat</h1>
       <p class="landing-hero-subtitle">Initiates 91% of successful attacks. Learn to identify fake emails, train your team, and create defenses that work.</p>
-      <a href="/en/phishing-training-software/" class="landing-btn landing-btn-primary">
+      <a href="/en/cybersecurity-phishing-training/" class="landing-btn landing-btn-primary">
         Train Your Team Today <i class="fas fa-arrow-right landing-arrow-soft-green"></i>
       </a>
     </div>
@@ -302,7 +302,7 @@ faq_items:
         <li class="mb-2">Generate "educational moments" when someone fails</li>
       </ul>
       <p class="mb-4 landing-text-muted">Organizations that implement simulations reduce their phishing click rate from 50% to less than 10% in 6 months.</p>
-      <a href="/en/phishing-training-software/" class="landing-btn landing-btn-primary">
+      <a href="/en/cybersecurity-phishing-training/" class="landing-btn landing-btn-primary">
         Implement Simulations Today <i class="fas fa-arrow-right landing-arrow-soft-green"></i>
       </a>
     </div>

@@ -41,7 +41,7 @@ Gestionar miles de dispositivos repartidos en diferentes campus puede resultar e
 
 La seguridad es primordial en los entornos educativos. La función «reiniciar para restaurar» de **[Faronics Deep Freeze](https://guardianhubx.com/es/faronics/)** garantiza que todos los cambios realizados en un sistema sean temporales y que los equipos vuelvan a su estado original al reiniciarse. Esta herramienta única protege los sistemas del malware, las instalaciones de software no autorizadas y los cambios accidentales, proporcionando un entorno seguro y estable para cada usuario.
 
-![](/blog/uploads/malware_universidad.jpg)
+![](/img/cybersecurity-threat-detection.webp)
 
 ### Soluciones rentables
 

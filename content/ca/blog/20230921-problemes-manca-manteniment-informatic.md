@@ -29,9 +29,9 @@ translationKey: it-maintenance-problems-2023
 En un món cada cop més dependent de la tecnologia, el manteniment informàtic s'ha convertit en una prioritat fonamental per a les empreses. Ignorar-lo pot tenir un impacte devastador en l'eficiència i la seguretat. A GuardianHubX, veiem diàriament les conseqüències d'una mala gestió. Per això, destaquem els 10 principals problemes derivats de la manca d'un manteniment informàtic proactiu.
 
 **Lecturas relacionadas:**
-- [Gestió Remota d'Actualitzacions: Simplifica el teu Manteniment i Reforça la teva Seguretat](/blog/gestio-remota-actualitzacions/)
-- [Com millorar la seguretat de TI](/blog/com-millorar-la-seguretat-de-ti/)
-- [L'Escassetat de Talent en TI: Com l'Automatització és la Solució](/blog/escassetat-talent-ti-solucio-automatitzacio/)
+- [Gestió Remota d'Actualitzacions: Simplifica el teu Manteniment i Reforça la teva Seguretat](/blog/ca/gestio-remota-actualitzacions/)
+- [Com millorar la seguretat de TI](/blog/ca/com-millorar-la-seguretat-de-ti/)
+- [L'Escassetat de Talent en TI: Com l'Automatització és la Solució](/blog/ca/escassetat-talent-ti-solucio-automatitzacio/)
 
 ### 1. Rendiment deficient
 
@@ -47,7 +47,7 @@ La manca de còpies de seguretat regulars i de manteniment del maquinari augment
 
 ### 4. Vulnerabilitats de seguretat
 
-La manca d'actualitzacions de seguretat deixa sistemes i xarxes exposats a amenaces, la qual cosa podria resultar en hacking, robatori de dades o [ransomware](https://guardianhubx.com/ca/blog/com-protegir-la-meva-xarxa-datacs-de-ransomware/).
+La manca d'actualitzacions de seguretat deixa sistemes i xarxes exposats a amenaces, la qual cosa podria resultar en hacking, robatori de dades o [ransomware](https://guardianhubx.com/blog/ca/com-protegir-xarxa-atacs-ransomware/).
 
 ### 5. Costos de reparació elevats
 

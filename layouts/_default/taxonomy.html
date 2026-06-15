@@ -1,72 +1,75 @@
 {{ define "main" }}
-<div class="container my-5">
-  <div class="row justify-content-md-center">
-    <div class="col-lg-10">
-      <!-- Taxonomy List Header -->
-      <header class="blog-list-header mb-5">
-        <h1 class="display-5 mb-3">{{ .Title }}</h1>
-        {{ if .Description }}
-        <p class="lead text-muted">{{ .Description }}</p>
-        {{ end }}
-      </header>
+<nav aria-label="breadcrumb" class="pt-5 pb-3 mb-2">
+  <div class="container">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="{{ "/" | relLangURL }}">GuardianHubX</a></li>
+      <li class="breadcrumb-item"><a href="{{ "/blog/" | relLangURL }}">Blog</a></li>
+      <li class="breadcrumb-item active" aria-current="page">{{ .Title }}</li>
+    </ol>
+  </div>
+</nav>
 
-      <!-- Taxonomy Terms -->
-      {{ if .Pages }}
-      <div class="taxonomy-grid">
-        <div class="row g-4">
-          {{ range .Pages }}
-          <div class="col-md-6 col-lg-4">
-            <div class="taxonomy-card border rounded p-4">
-              <h3 class="h5">
-                <a href="{{ .RelPermalink }}" class="text-decoration-none">
-                  {{ .Title }}
-                </a>
-              </h3>
-              <p class="text-muted small mb-0">
-                {{ len .Pages }}
-                {{ if eq (len .Pages) 1 }}
-                  {{ i18n "item" | default "item" }}
-                {{ else }}
-                  {{ i18n "items" | default "items" }}
-                {{ end }}
-              </p>
-            </div>
+<div class="container mt-3">
+  <div class="row justify-content-md-center">
+    <div class="col-lg-8">
+      <div class="mb-5">
+        <p class="text-muted small mb-1 text-uppercase fw-semibold">{{ i18n "tag" | default "Tag" }}</p>
+        <h1 class="h2 mb-0">{{ .Title }}</h1>
+      </div>
+
+      {{ $paginator := .Paginate .Pages }}
+
+      {{ if $paginator.Pages }}
+      <div class="blog-list">
+        {{ range $paginator.Pages }}
+        <article class="d-flex gap-3 mb-4 pb-4 border-bottom align-items-start">
+          {{ if .Params.cover }}{{ if .Params.cover.image }}
+          <a href="{{ .RelPermalink }}" class="flex-shrink-0">
+            <img src="{{ .Params.cover.image }}" alt="{{ .Params.cover.alt | default .Title }}" class="rounded" loading="lazy" style="width:80px;height:60px;object-fit:cover;">
+          </a>
+          {{ end }}{{ end }}
+          <div>
+            <h2 class="h6 mb-1">
+              <a href="{{ .RelPermalink }}" class="text-decoration-none">{{ .Title }}</a>
+            </h2>
+            <p class="text-muted small mb-0">
+              <i class="fas fa-calendar me-1"></i>
+              {{ partial "localized-date.html" (dict "date" .PublishDate "lang" .Site.Language.Lang) }}
+              {{ if .ReadingTime }}
+              <span class="ms-2"><i class="fas fa-clock me-1"></i>{{ .ReadingTime }} min</span>
+              {{ end }}
+            </p>
           </div>
+        </article>
+        {{ end }}
+      </div>
+
+      {{ if gt $paginator.TotalPages 1 }}
+      <nav class="pagination mt-5 d-flex justify-content-center" aria-label="Tag pagination">
+        <ul class="list-unstyled d-flex gap-2 flex-wrap">
+          {{ if $paginator.HasPrev }}
+          <li><a href="{{ $paginator.Prev.URL }}" class="btn btn-sm btn-outline-secondary">← {{ i18n "prev_page" | default "Previous" }}</a></li>
           {{ end }}
-        </div>
-      </div>
+          {{ range $paginator.Pagers }}
+          <li>
+            {{ if eq . $.Paginator }}
+            <span class="btn btn-sm btn-primary disabled">{{ .PageNumber }}</span>
+            {{ else }}
+            <a href="{{ .URL }}" class="btn btn-sm btn-outline-secondary">{{ .PageNumber }}</a>
+            {{ end }}
+          </li>
+          {{ end }}
+          {{ if $paginator.HasNext }}
+          <li><a href="{{ $paginator.Next.URL }}" class="btn btn-sm btn-outline-secondary">{{ i18n "next_page" | default "Next" }} →</a></li>
+          {{ end }}
+        </ul>
+      </nav>
+      {{ end }}
+
       {{ else }}
-      <div class="alert alert-info" role="alert">
-        <p>{{ i18n "no_items_found" | default "No items found." }}</p>
-      </div>
+      <div class="alert alert-info">{{ i18n "no_posts_found" | default "No posts found." }}</div>
       {{ end }}
     </div>
   </div>
 </div>
-
-<style>
-.taxonomy-card {
-  transition: all 0.3s ease;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.taxonomy-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 173, 239, 0.15);
-}
-
-.taxonomy-card a {
-  color: #3C4B57;
-}
-
-.taxonomy-card a:hover {
-  color: #00ADEF;
-}
-
-.taxonomy-grid {
-  margin-bottom: 3rem;
-}
-</style>
 {{ end }}

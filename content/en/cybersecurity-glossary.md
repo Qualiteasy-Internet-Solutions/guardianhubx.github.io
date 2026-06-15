@@ -54,7 +54,7 @@ faq_items:
 <div class="col-lg-6 landing-fade-in">
 <h1 class="landing-hero-title">Cybersecurity Glossary: The Language of Digital Protection</h1>
 <p class="landing-hero-subtitle">100+ key terms every enterprise must master. From phishing to Zero Trust, find clear definitions, practical examples, and the context you need to protect yourself.</p>
-<a href="/guardianradar/" class="landing-btn landing-btn-primary">
+<a href="/en/guardianradar/" class="landing-btn landing-btn-primary">
 Discover how to apply these concepts <i class="fas fa-arrow-right landing-arrow-soft-green"></i>
 </a>
 </div>

@@ -5,7 +5,7 @@ author: "GuardianHubX"
 date: 2026-03-17T09:00:00+00:00
 draft: false
 slug: "teletreball-segur-2026-protegir-empresa"
-url: "/ca/blog/teletreball-segur-2026-protegir-empresa/"
+url: "/blog/ca/teletreball-segur-2026-protegir-empresa/"
 layout: "blog"
 categories:
   - ciberseguretat
@@ -38,7 +38,7 @@ Tanmateix, aquesta evolució també ha transformat el mapa de riscos. Cada emple
 
 ## Com Ha Canviat la Superfície d'Atac
 
-En un entorn presencial tradicional, els sistemes estaven centralitzats dins d'una xarxa corporativa. Avui, el perímetre s'ha diluït. Les organitzacions s'enfronten a nous vectors que [l'enginyeria social i els atacs dirigits exploten constantment](/ca/blog/errors-comuns-ciberseguretat-pimes/).
+En un entorn presencial tradicional, els sistemes estaven centralitzats dins d'una xarxa corporativa. Avui, el perímetre s'ha diluït. Les organitzacions s'enfronten a nous vectors que [l'enginyeria social i els atacs dirigits exploten constantment](/blog/ca/errors-comuns-ciberseguretat-pimes/).
 
 Les organitzacions s'enfronten a:
 
@@ -60,7 +60,7 @@ En entorns distribuïts, sense proximitat física, aquests atacs són particular
 
 ### 2. Ransomware Dirigit
 
-L'accés remot mal protegit facilita la infiltració en la xarxa corporativa. Un cop dins, l'atacant pot xifrar servidors, bases de dades o sistemes crítics. Els equips remots sense segmentació de xarxa són especialment vulnerables a [atacs de ransomware que paralitza les operacions](/ca/blog/guia-60-minuts-atac-ransomware/).
+L'accés remot mal protegit facilita la infiltració en la xarxa corporativa. Un cop dins, l'atacant pot xifrar servidors, bases de dades o sistemes crítics. Els equips remots sense segmentació de xarxa són especialment vulnerables a [atacs de ransomware que paralitza les operacions](/blog/ca/guia-60-minuts-atac-ransomware/).
 
 ### 3. Robatori o Pèrdua de Dispositius
 
@@ -138,7 +138,7 @@ No basta amb tenir backup. És necessari comprovar que realment funciona.
 
 ## Compliment Normatiu i Protecció de Dades
 
-Les empreses que operen en entorns remots han de garantir el compliment de la [normativa de protecció de dades i estàndards sectorials](/ca/blog/nova-llei-ciberseguretat-que-les-empreses-han-de-saber-2025/).
+Les empreses que operen en entorns remots han de garantir el compliment de la [normativa de protecció de dades i estàndards sectorials](/blog/ca/nova-llei-de-ciberseguretat-el-que-les-empreses-han-de-saber-el-2025/).
 
 L'accés remot a informació sensible ha d'estar:
 

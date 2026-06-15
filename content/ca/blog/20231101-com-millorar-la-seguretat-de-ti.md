@@ -37,9 +37,9 @@ Els ciberatacs adopten diverses formes. Vegem alguns tipus comuns:
 
 ### Atacs de phishing
 
-Els [atacs de phishing](https://guardianhubx.com/ca/blog/guia-rapida-termes-ciberseguretat/) consisteixen a enganyar les persones perquè revelin informació confidencial, com contrasenyes o dades de targetes de crèdit, fent-se passar per una entitat de confiança a través de correus electrònics o llocs web fraudulents.
+Els [atacs de phishing](https://guardianhubx.com/blog/ca/guia-rapida-termes-ciberseguretat/) consisteixen a enganyar les persones perquè revelin informació confidencial, com contrasenyes o dades de targetes de crèdit, fent-se passar per una entitat de confiança a través de correus electrònics o llocs web fraudulents.
 
-![Atacs de phishing](/blog/uploads/como-mejorar-la-seguridad-ti-2.jpg)
+![Atacs de phishing](/img/phishing-credentials-security.webp)
 
 ### Infeccions per malware
 
@@ -49,7 +49,7 @@ Malware (programari maliciós) fa referència a qualsevol programari dissenyat p
 
 Els atacs de denegació de servei distribuït (DDoS) tenen com a objectiu saturar un lloc web o una xarxa amb una allau de trànsit per impossibilitar l'accés d'usuaris legítims.
 
-![Atacs DDoS](/blog/uploads/como-mejorar-la-seguridad-ti-3.jpg)
+![Atacs DDoS](/img/malware-protection-analysis.webp)
 
 ### Amenaces internes
 
@@ -73,7 +73,7 @@ Un antivirus de confiança és fonamental. Per a una protecció superior, les **
 ### Recuperació amb un simple reinici
 La tecnologia **[Reiniciar per Restaurar](https://guardianhubx.com/ca/faronics/)**, impulsada per Deep Freeze, permet revertir els sistemes a un estat segur, eliminant qualsevol infecció o canvi no desitjat amb només reiniciar.
 
-![Recuperació fàcil](/blog/uploads/como-mejorar-la-seguridad-ti-4.jpg)
+![Recuperació fàcil](/img/seguridad-prevencion-deteccion-recuperacion.webp)
 
 ---
 

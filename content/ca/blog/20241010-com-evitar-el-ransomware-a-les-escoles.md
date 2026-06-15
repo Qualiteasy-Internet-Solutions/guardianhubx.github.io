@@ -35,13 +35,13 @@ Una de les coses més senzilles, però més eficaces, és mantenir els sistemes 
 
 ## 2. Educar el personal i els estudiants sobre el phishing
 
-El phishing és una de les formes més habituals de propagació del ransomware. La millor defensa és l'educació proactiva. Amb el nostre programa **[EduCraft](https://guardianhubx.com/ca/formacion-phishing-software/)**, ensenyem al personal i als estudiants a identificar correus electrònics de phishing mitjançant simulacions i formació contínua, convertint-los en la primera línia de defensa del centre.
+El phishing és una de les formes més habituals de propagació del ransomware. La millor defensa és l'educació proactiva. Amb el nostre programa **[EduCraft](https://guardianhubx.com/ca/formacio-phishing-software/)**, ensenyem al personal i als estudiants a identificar correus electrònics de phishing mitjançant simulacions i formació contínua, convertint-los en la primera línia de defensa del centre.
 
 ## 3. Realitzar còpies de seguretat periòdiques
 
 Les còpies de seguretat són un salvavides. Si el ransomware aconsegueix infiltrar-se i comptes amb un sistema de còpies de seguretat sòlid, no estaràs a mercè dels atacants. Fer còpies periòdiques, automatitzades i emmagatzemades de forma segura és essencial. Una solució integral ha de garantir que, en cas d'atac, puguis restaurar-ho tot sense pagar un rescat.
 
-![](/blog/uploads/Education-Ransomware.jpg)
+![](/img/ransomware-attack-hero.webp)
 
 ## 4. Limitar l'accés
 

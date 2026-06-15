@@ -75,7 +75,7 @@ En un atac de **credential stuffing**, l'atacant prova automàticament combinaci
 
 ## Tipus d'atacs relacionats que hauríes de conèixer
 
-Aquests són només alguns dels atacs d'accés que enfrontes. Per a un panorama complet de menaces, consulta la nostra guia sobre [tipus de ciberataques](/ca/tipus-atacs-cibernetica/).
+Aquests són només alguns dels atacs d'accés que enfrontes. Per a un panorama complet de menaces, consulta la nostra guia sobre [tipus de ciberataques](/ca/tipus-atacs-cibernetics/).
 
 <table class="blog-table">
 <thead>
@@ -177,4 +177,4 @@ No és una despesa de seguretat. És una inversió en continuïtat del negoci. U
 
 Els atacs de força bruta i credential stuffing no són un problema teòric ni exclusiu de grans companyies. Són una amenaça diària i automatitzada. La bona pràctica actual no és posar una contrasenya difícil i oblidar-se, sinó reforçar l'accés amb doble factor, control d'intents i vigilància contínua.
 
-Si vols reforçar la protecció d'accessos de la teva empresa i reduir el risc de robatori de credencials, a [GuardianHub](/ca/) podem ajudar-te. Descobreix com [GuardianRadar](/ca/guardianaradar/) detecta accessos anòmals i configuracions insegures en temps real.
+Si vols reforçar la protecció d'accessos de la teva empresa i reduir el risc de robatori de credencials, a [GuardianHub](/ca/) podem ajudar-te. Descobreix com [GuardianRadar](/ca/guardianradar/) detecta accessos anòmals i configuracions insegures en temps real.

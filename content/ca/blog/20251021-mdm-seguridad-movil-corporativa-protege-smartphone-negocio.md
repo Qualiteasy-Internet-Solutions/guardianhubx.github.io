@@ -31,9 +31,9 @@ cover:
 Avui dia, l'**smartphone** és l'oficina de butxaca de molts autònoms i petites empreses. Correus, banca en línia, gestió de clients, emmagatzematge al núvol, apps de missatgeria… gran part de l'activitat professional passa pel telèfon.
 
 **Lecturas relacionadas:**
-- [5 errors comuns de ciberseguretat que cometen les pimes (i com evitar-los)](/blog/errors-comuns-ciberseguretat-pimes/)
-- [La creixent amenaça dels ciberatacs a Espanya: claus per a una ciberresiliència efectiva](/blog/ciberatacs-espanya-ciberresiliencia/)
-- [Ciberseguretat a pimes: riscos i solucions sense infraestructura interna](/blog/ciberseguretat-pimes-riscs-solucions/)
+- [5 errors comuns de ciberseguretat que cometen les pimes (i com evitar-los)](/blog/ca/errors-comuns-ciberseguretat-pimes/)
+- [La creixent amenaça dels ciberatacs a Espanya: claus per a una ciberresiliència efectiva](/blog/ca/ciberatacs-espanya-ciberresiliencia/)
+- [Ciberseguretat a pimes: riscos i solucions sense infraestructura interna](/blog/ca/ciberseguretat-pimes-riscs-solucions/)
 
 Però aquesta comoditat també implica un risc considerable: els mòbils s'han convertit en un dels objectius favorits dels **ciberdelinqüents**. Sense una estratègia clara, cada dispositiu mòbil és una potencial porta d'entrada a la informació crítica del teu negoci.
 
@@ -61,7 +61,7 @@ Amb unes mesures senzilles però efectives, pots elevar dràsticament la seguret
 3.  **Fes servir contrasenyes robustes i biometria:** Configura un PIN o patró segur i combina'l amb empremta digital o reconeixement facial. No deixis mai el mòbil sense bloqueig.
 4.  **Activa el xifratge del dispositiu i les còpies de seguretat:** Assegura't que el teu telèfon xifra automàticament totes les dades. **A més,** realitza [còpies de seguretat](https://guardianhubx.com/blog/ca/guia-60-minuts-atac-ransomware/) periòdiques. En cas d'un atac de ransomware o pèrdua, aquestes còpies seran vitals, com expliquem a la nostra guia de resposta a incidents.
 5.  **Desconfia d'enllaços sospitosos:** No premis enllaços rebuts per SMS, WhatsApp, correu electrònic o xarxes socials si no estàs absolutament segur del remitent o si el missatge et sembla estrany.
-6.  **Connecta't amb protecció a xarxes públiques:** Si necessites fer servir una WiFi pública, fes-ho sempre a través d'una [VPN (Xarxa Privada Virtual)](https://guardianhubx.com/blog/ca/20250808-ciberseguretat-pimes-riscs-solucions/) per xifrar la teva connexió i protegir les teves comunicacions de possibles intercepcions.
+6.  **Connecta't amb protecció a xarxes públiques:** Si necessites fer servir una WiFi pública, fes-ho sempre a través d'una [VPN (Xarxa Privada Virtual)](https://guardianhubx.com/blog/ca/ciberseguretat-pimes-riscs-solucions/) per xifrar la teva connexió i protegir les teves comunicacions de possibles intercepcions.
 7.  **Tingues un pla d'acció en cas de pèrdua o robatori:** Activa les opcions de localització remota i esborrat a distància que ofereixen els sistemes operatius ("Find My iPhone" o "Troba el meu dispositiu" a Android).
 
 ---

@@ -55,7 +55,7 @@ faq_items:
 <div class="col-lg-6 landing-fade-in">
 <h1 class="landing-hero-title">Types of Cyberattacks: The Guide You Need to Protect Yourself</h1>
 <p class="landing-hero-subtitle">Cyberattacks no longer affect only large corporations. Freelancers, SMEs, educational centers and businesses of any size are constant targets. Knowing the threats is the first step to defend yourself.</p>
-<a href="/en/cybersecurity-assessment/" class="landing-btn landing-btn-primary">
+<a href="/en/cybersecurity-test/" class="landing-btn landing-btn-primary">
 Assess your cybersecurity <i class="fas fa-arrow-right landing-arrow-soft-green"></i>
 </a>
 </div>
@@ -131,7 +131,7 @@ Entry vector for <strong>91%</strong> of successful attacks
 </div>
 <div class="d-flex gap-3 flex-wrap">
 <a href="/en/phishing-what-is-and-how-to-avoid/" class="small text-decoration-none"><i class="fas fa-book" style="margin-right: 4px;"></i>Complete Guide</a>
-<a href="/en/phishing-training-software/" class="small text-decoration-none"><i class="fas fa-graduation-cap" style="margin-right: 4px;"></i>Training</a>
+<a href="/en/cybersecurity-phishing-training/" class="small text-decoration-none"><i class="fas fa-graduation-cap" style="margin-right: 4px;"></i>Training</a>
 </div>
 </div>
 </div>
@@ -529,7 +529,7 @@ Discover GuardianRadar: Threat Detection and Continuous Monitoring <i class="fas
 </div>
 
 <div class="mt-4 text-center">
-<a href="/en/cybersecurity-assessment/" class="landing-btn landing-btn-primary">
+<a href="/en/cybersecurity-test/" class="landing-btn landing-btn-primary">
 Assess your cybersecurity with our free test <i class="fas fa-arrow-right landing-arrow-soft-green"></i>
 </a>
 </div>
@@ -554,7 +554,7 @@ Assess your cybersecurity with our free test <i class="fas fa-arrow-right landin
 <li><strong>Priority 2:</strong> Basic training in phishing and social engineering (use free online training)</li>
 <li><strong>Priority 3:</strong> Back up critical data and test restoration</li>
 <li><strong>Priority 4:</strong> Update systems and change default passwords</li>
-<li><strong>Next:</strong> <a href="/en/cybersecurity-assessment/">Free cybersecurity test</a> to identify real vulnerabilities</li>
+<li><strong>Next:</strong> <a href="/en/cybersecurity-test/">Free cybersecurity test</a> to identify real vulnerabilities</li>
 </ul>
 </div>
 </div>
@@ -568,7 +568,7 @@ Assess your cybersecurity with our free test <i class="fas fa-arrow-right landin
 <li><strong>Priority 1:</strong> The 4 from limited budget</li>
 <li><strong>Priority 2:</strong> <a href="/en/guardianradar/">GuardianRadar</a>: Continuous threat monitoring and exposed credentials</li>
 <li><strong>Priority 3:</strong> EDR/XDR on critical endpoints for advanced detection</li>
-<li><strong>Priority 4:</strong> <a href="/en/phishing-training-software/">Professional cybersecurity training</a> with periodic drills</li>
+<li><strong>Priority 4:</strong> <a href="/en/cybersecurity-phishing-training/">Professional cybersecurity training</a> with periodic drills</li>
 <li><strong>Priority 5:</strong> Documented incident response plan (IR plan)</li>
 </ul>
 </div>
@@ -609,7 +609,7 @@ Assess your cybersecurity with our free test <i class="fas fa-arrow-right landin
 <div class="card-body">
 <h6 class="card-title" style="color: #28a745;">💾 Backups</h6>
 <p class="card-text small">How to perform effective backups and why they are your lifeline against ransomware.</p>
-<a href="/en/backup-best-practices/" class="btn btn-sm btn-outline-primary">Read article →</a>
+<a href="/en/business-cloud-backup/" class="btn btn-sm btn-outline-primary">Read article →</a>
 </div>
 </div>
 </div>
@@ -639,7 +639,7 @@ Assess your cybersecurity with our free test <i class="fas fa-arrow-right landin
 <div class="card-body">
 <h6 class="card-title" style="color: #F39C12;">⚡ Cybersecurity Goals</h6>
 <p class="card-text small">Set clear and measurable goals for your enterprise security strategy.</p>
-<a href="/en/cybersecurity-objectives/" class="btn btn-sm btn-outline-primary">Read guide →</a>
+<a href="/en/cybersecurity-goals/" class="btn btn-sm btn-outline-primary">Read guide →</a>
 </div>
 </div>
 </div>

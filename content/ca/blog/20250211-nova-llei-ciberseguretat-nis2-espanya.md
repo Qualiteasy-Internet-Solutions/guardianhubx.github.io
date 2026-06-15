@@ -30,9 +30,9 @@ translationKey: nis2-law-spain-2025
 La Unió Europea ha reforçat el seu marc normatiu en [ciberseguretat](https://guardianhubx.com/ca/objectius-ciberseguretat/) amb la introducció de la **Directiva NIS2**, que amplia i actualitza les mesures de seguretat per a les xarxes i sistemes d'informació. Aquesta directiva, que va entrar en vigor el gener de 2023, havia de ser transposada pels Estats membres a les seves legislacions nacionals abans del 17 d'octubre de 2024. A Espanya, tot i que el termini s'ha superat, el Govern va aprovar el 14 de gener de 2025 l'avantprojecte de llei per incorporar les disposicions de NIS2 al marc legal espanyol.
 
 **Lecturas relacionadas:**
-- [La Importància de Tenir les Llicències de Programari Actualitzades](/blog/importancia-llicencies-software-actualitzades/)
-- [L'Escassetat de Talent en TI: Com l'Automatització és la Solució](/blog/escassetat-talent-ti-solucio-automatitzacio/)
-- [La Solució de Gestió Integral per a CIOs i CTOs](/blog/plataforma-gestio-per-a-cios-ctos/)
+- [La Importància de Tenir les Llicències de Programari Actualitzades](/blog/ca/importancia-llicencies-software-actualitzades/)
+- [L'Escassetat de Talent en TI: Com l'Automatització és la Solució](/blog/ca/escassetat-talent-ti-solucio-automatitzacio/)
+- [La Solució de Gestió Integral per a CIOs i CTOs](/blog/ca/plataforma-gestio-per-a-cios-ctos/)
 
 ## A quines empreses afecta?
 

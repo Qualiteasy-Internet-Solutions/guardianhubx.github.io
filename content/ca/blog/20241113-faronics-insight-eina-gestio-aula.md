@@ -29,9 +29,9 @@ translationKey: faronics-insight-classroom-2024
 Recordes el teu millor professor de l'escola? I el pitjor? Potser el teu favorit tenia una habilitat especial per gestionar l'aula i captar la teva atenció, mentre que l'altre simplement... no. Ara, com a docent, segur que busques ser aquella figura que inspira els seus estudiants, i amb una mica d'ajuda de la tecnologia, és més fàcil que mai!
 
 **Lecturas relacionadas:**
-- [Protegir les xarxes universitàries: reduir els riscos de ciberatac i simplificar la gestió de TI](/blog/gestio-ti-universitats/)
-- [L'Escassetat de Talent en TI: Com l'Automatització és la Solució](/blog/escassetat-talent-ti-solucio-automatitzacio/)
-- [La Solució de Gestió Integral per a CIOs i CTOs](/blog/plataforma-gestio-per-a-cios-ctos/)
+- [Protegir les xarxes universitàries: reduir els riscos de ciberatac i simplificar la gestió de TI](/blog/ca/gestio-ti-universitats/)
+- [L'Escassetat de Talent en TI: Com l'Automatització és la Solució](/blog/ca/escassetat-talent-ti-solucio-automatitzacio/)
+- [La Solució de Gestió Integral per a CIOs i CTOs](/blog/ca/plataforma-gestio-per-a-cios-ctos/)
 
 **Faronics Insight** està dissenyat per ajudar-te a ser el millor professor possible. Amb eines que t'ofereixen un control total i una visibilitat completa de l'aula, podràs captar i mantenir l'atenció dels estudiants, donar-los feedback a l'instant i promoure la col·laboració.
 
@@ -59,7 +59,7 @@ L'aprenentatge modern es basa en el treball en equip. Amb Insight, pots crear gr
 
 Faronics Insight és una eina increïblement potent per si sola. Però el seu veritable potencial es desbloqueja quan forma part d'una estratègia de seguretat i gestió educativa integral.
 
-A GuardianHubX, hem integrat eines com Insight en el nostre paquet **[EduCraft](https://guardianhubx.com/ca/formacion-phishing-software/)**, una solució completa dissenyada específicament per a centres educatius que cobreix des de la gestió de l'aula fins a la seguretat dels dispositius i la formació en ciberseguretat per al personal.
+A GuardianHubX, hem integrat eines com Insight en el nostre paquet **[EduCraft](https://guardianhubx.com/ca/formacio-phishing-software/)**, una solució completa dissenyada específicament per a centres educatius que cobreix des de la gestió de l'aula fins a la seguretat dels dispositius i la formació en ciberseguretat per al personal.
 
 > **Vols transformar la teva aula amb Faronics Insight?**
 > **[Fes clic aquí per a més informació sobre el producte.](https://www.esfaronics.com/tienda/producto/INSPLSN.INED./1/faronics-insight-educacion)**

@@ -5,7 +5,7 @@ author: "GuardianHubX"
 date: 2026-03-04T09:00:00+00:00
 draft: false
 slug: "diccionari-ciberseguretat-conceptes-clau"
-url: "/ca/blog/diccionari-ciberseguretat-conceptes-clau/"
+url: "/blog/ca/diccionari-ciberseguretat-conceptes-clau/"
 layout: "blog"
 categories:
   - ciberseguretat
@@ -28,7 +28,7 @@ translationKey: "cybersecurity-dictionary-concepts"
 
 # Diccionari Estratègic de Ciberseguretat: Conceptes Clau que Tota Empresa Ha de Dominar
 
-La ciberseguretat és avui un pilar estructural en qualsevol organització. No es tracta únicament de tecnologia, sinó de [gestió del risc](/ca/blog/dades-ciberatacs-empreses/), protecció d'actius i continuïtat del negoci. Comprendre la seva terminologia permet a directius i responsables tècnics prendre decisions informades, prioritzar inversions i anticipar-se a amenaces.
+La ciberseguretat és avui un pilar estructural en qualsevol organització. No es tracta únicament de tecnologia, sinó de [gestió del risc](/blog/ca/les-dades-de-ciberatacs-a-empreses/), protecció d'actius i continuïtat del negoci. Comprendre la seva terminologia permet a directius i responsables tècnics prendre decisions informades, prioritzar inversions i anticipar-se a amenaces.
 
 A continuació, es desenvolupen els conceptes essencials que tota empresa hauria de conèixer.
 
@@ -44,7 +44,7 @@ Defineix quines accions pot realitzar un usuari un cop autenticat. És clau apli
 
 **Advanced Persistent Threat (APT)**
 
-Amenaça avançada i prolongada en el temps, dirigida contra organitzacions específiques. El seu objectiu sol ser l'espionatge o el robatori d'informació estratègica. Els [atacs APT requereixen resposta immediata i coordinada](/ca/blog/guia-60-minuts-atac-ransomware/).
+Amenaça avançada i prolongada en el temps, dirigida contra organitzacions específiques. El seu objectiu sol ser l'espionatge o el robatori d'informació estratègica. Els [atacs APT requereixen resposta immediata i coordinada](/blog/ca/guia-60-minuts-atac-ransomware/).
 
 **Auditoria de Seguretat**
 
@@ -98,7 +98,7 @@ Filtració d'informació sensible deguda a falles de seguretat o atacs malicioso
 
 **Deepfake**
 
-Manipulació digital de imatge o veu mitjançant intel·ligència artificial amb fins fraudulents. Cada vegada més utilitzat en [atacs d'enginyeria social](/ca/blog/captchas-falsos-malware-ingenieria-social/).
+Manipulació digital de imatge o veu mitjançant intel·ligència artificial amb fins fraudulents. Cada vegada més utilitzat en [atacs d'enginyeria social](/blog/ca/captchas-falsos-malware-enginyeria-social/).
 
 **DNS Spoofing**
 

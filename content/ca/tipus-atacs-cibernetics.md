@@ -97,7 +97,7 @@ Avalua la teva ciberseguretat <i class="fas fa-arrow-right landing-arrow-soft-gr
 <p class="mb-3 landing-text-muted">Un atac cibernètic és qualsevol intent maliciós d'accedir, robar, alterar o destruir sistemes informàtics, xarxes, dispositius o dades digitals. Els ciberdelinqüents utilitzen diferents tècniques depenent del seu objectiu: robar credencials, segrestar informació, paralitzar operacions, espiar comunicacions, obtenir beneficis econòmics o filtrar dades confidencials.</p>
 <p class="mb-3 landing-text-muted">En l'actualitat, els atacs automatitzats mitjançant <strong>intel·ligència artificial</strong> i eines de <strong>malware com a servei (MaaS)</strong> han multiplicat exponencialment l'exposició d'empreses de qualsevol mida.</p>
 <p class="mb-4 landing-text-muted">Els atacants poden explotar vulnerabilitats tècniques (fallades de seguretat, software sense actualitzar) però també debilitats humanes (confiança, urgència, desconeixement) mitjançant <strong>enginyeria social</strong> cada vegada més sofisticada.</p>
-<a href="/ca/que-es-la-ciberseguretat/" class="landing-btn landing-btn-primary">
+<a href="/ca/que-es-la-ciberseguritat/" class="landing-btn landing-btn-primary">
 Aprèn més sobre ciberseguretat <i class="fas fa-arrow-right landing-arrow-soft-green"></i>
 </a>
 </div>
@@ -130,8 +130,8 @@ Aprèn més sobre ciberseguretat <i class="fas fa-arrow-right landing-arrow-soft
 Vector d'entrada del <strong>91%</strong> dels atacs exitosos
 </div>
 <div class="d-flex gap-3 flex-wrap">
-<a href="/ca/phishing-que-es-y-como-evitar/" class="small text-decoration-none"><i class="fas fa-book" style="margin-right: 4px;"></i>Guia completa</a>
-<a href="/ca/formacion-phishing-software/" class="small text-decoration-none"><i class="fas fa-graduation-cap" style="margin-right: 4px;"></i>Formació</a>
+<a href="/ca/phishing-que-es-i-com-evitar/" class="small text-decoration-none"><i class="fas fa-book" style="margin-right: 4px;"></i>Guia completa</a>
+<a href="/ca/formacio-phishing-software/" class="small text-decoration-none"><i class="fas fa-graduation-cap" style="margin-right: 4px;"></i>Formació</a>
 </div>
 </div>
 </div>
@@ -213,7 +213,7 @@ Milions d'euros perduts a Europa el 2025; impacte econòmic immediat
 Milions de contrasenyes filtrades cada any; la reutilització és el risc principal
 </div>
 <div class="d-flex gap-3 flex-wrap">
-<a href="/ca/diccionario-ciberseguridad/" class="small text-decoration-none"><i class="fas fa-book" style="margin-right: 4px;"></i>Definicions</a>
+<a href="/ca/diccionari-ciberseguretat/" class="small text-decoration-none"><i class="fas fa-book" style="margin-right: 4px;"></i>Definicions</a>
 </div>
 </div>
 </div>
@@ -568,7 +568,7 @@ Avalua la teva ciberseguretat amb el nostre test gratuit <i class="fas fa-arrow-
 <li><strong>Prioritat 1:</strong> Les 4 del pressupost baix</li>
 <li><strong>Prioritat 2:</strong> <a href="/ca/guardianradar/">GuardianRadar</a>: Monitorització contínua d'amenaces i credencials exposades</li>
 <li><strong>Prioritat 3:</strong> EDR/XDR en endpoints crítics per a detecció avançada</li>
-<li><strong>Prioritat 4:</strong> <a href="/ca/formacion-phishing-software/">Formació professional en ciberseguretat</a> amb simulacres periòdics</li>
+<li><strong>Prioritat 4:</strong> <a href="/ca/formacio-phishing-software/">Formació professional en ciberseguretat</a> amb simulacres periòdics</li>
 <li><strong>Prioritat 5:</strong> Pla documentat de resposta a incidents (IR plan)</li>
 </ul>
 </div>
@@ -589,7 +589,7 @@ Avalua la teva ciberseguretat amb el nostre test gratuit <i class="fas fa-arrow-
 <div class="card-body">
 <h6 class="card-title" style="color: #FF6B6B;">🎣 Phishing</h6>
 <p class="card-text small">Guia completa sobre què és phishing, com identificar-lo i estratègies efectives per protegir-te.</p>
-<a href="/ca/phishing-que-es-y-como-evitar/" class="btn btn-sm btn-outline-primary">Llegir article →</a>
+<a href="/ca/phishing-que-es-i-com-evitar/" class="btn btn-sm btn-outline-primary">Llegir article →</a>
 </div>
 </div>
 </div>
@@ -609,7 +609,7 @@ Avalua la teva ciberseguretat amb el nostre test gratuit <i class="fas fa-arrow-
 <div class="card-body">
 <h6 class="card-title" style="color: #28a745;">💾 Còpies de Seguretat</h6>
 <p class="card-text small">Com realitzar còpies de seguretat efectives i per què són la teva salvació davant ransomware.</p>
-<a href="/ca/copias-de-seguridad-empresa/" class="btn btn-sm btn-outline-primary">Llegir article →</a>
+<a href="/ca/copies-de-seguretat-empresa/" class="btn btn-sm btn-outline-primary">Llegir article →</a>
 </div>
 </div>
 </div>
@@ -619,7 +619,7 @@ Avalua la teva ciberseguretat amb el nostre test gratuit <i class="fas fa-arrow-
 <div class="card-body">
 <h6 class="card-title" style="color: #3498DB;">📖 Diccionari Ciberseguretat</h6>
 <p class="card-text small">Definicions clares i pràctiques de termes cibernètics: MFA, EDR, endpoint, phishing i més.</p>
-<a href="/ca/diccionario-ciberseguridad/" class="btn btn-sm btn-outline-primary">Llegir diccionari →</a>
+<a href="/ca/diccionari-ciberseguretat/" class="btn btn-sm btn-outline-primary">Llegir diccionari →</a>
 </div>
 </div>
 </div>
@@ -629,7 +629,7 @@ Avalua la teva ciberseguretat amb el nostre test gratuit <i class="fas fa-arrow-
 <div class="card-body">
 <h6 class="card-title" style="color: #E74C3C;">🎯 Què és Ciberseguretat?</h6>
 <p class="card-text small">Concepte fonamental: més allà d'antivirus. La Tríada CIA i amenaces actuals.</p>
-<a href="/ca/que-es-la-ciberseguretat/" class="btn btn-sm btn-outline-primary">Llegir guia →</a>
+<a href="/ca/que-es-la-ciberseguritat/" class="btn btn-sm btn-outline-primary">Llegir guia →</a>
 </div>
 </div>
 </div>
@@ -639,7 +639,7 @@ Avalua la teva ciberseguretat amb el nostre test gratuit <i class="fas fa-arrow-
 <div class="card-body">
 <h6 class="card-title" style="color: #F39C12;">⚡ Objectius Ciberseguretat</h6>
 <p class="card-text small">Estableix objectius clars i mesurables per a la teva estratègia de seguretat empresarial.</p>
-<a href="/ca/objectivos-ciberseguridad/" class="btn btn-sm btn-outline-primary">Llegir guia →</a>
+<a href="/ca/objectius-ciberseguretat/" class="btn btn-sm btn-outline-primary">Llegir guia →</a>
 </div>
 </div>
 </div>

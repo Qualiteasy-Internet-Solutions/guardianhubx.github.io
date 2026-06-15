@@ -29,9 +29,9 @@ translationKey: rdm-vs-rmm-differences-2023
 En el món de la gestió de TI, sovint sorgeixen acrònims que poden semblar confusos. Dos dels més comuns són RDM i RMM. Encara que tots dos es relacionen amb l'administració remota, les seves funcions i objectius són molt diferents. En aquest article, n'aclarim les diferències clau.
 
 **Lecturas relacionadas:**
-- [La Solució de Gestió Integral per a CIOs i CTOs](/blog/plataforma-gestio-per-a-cios-ctos/)
-- [Optimitzant la Gestió de Dispositius amb Programari UEM](/blog/gestio-unificada-endpoints-uem/)
-- [Gestió Remota d'Actualitzacions: Simplifica el teu Manteniment i Reforça la teva Seguretat](/blog/gestio-remota-actualitzacions/)
+- [La Solució de Gestió Integral per a CIOs i CTOs](/blog/ca/plataforma-gestio-per-a-cios-ctos/)
+- [Optimitzant la Gestió de Dispositius amb Programari UEM](/blog/ca/gestio-unificada-endpoints-uem/)
+- [Gestió Remota d'Actualitzacions: Simplifica el teu Manteniment i Reforça la teva Seguretat](/blog/ca/gestio-remota-actualitzacions/)
 
 ## Remote Desktop Management (RDM)
 

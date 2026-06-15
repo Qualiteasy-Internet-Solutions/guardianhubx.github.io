@@ -29,9 +29,9 @@ translationKey: ai-evasion-techniques-2025
 En la guerra sense fi entre atacants i defensors en l'àmbit de la ciberseguretat, la intel·ligència artificial (IA) s'ha convertit en una arma de doble tall. Mentre les organitzacions la utilitzen per reforçar les seves defenses, els ciberatacants han començat a emprar-la per crear tècniques d'evasió més sofisticades que burlen fins i tot les [mesures de seguretat més avançades](https://guardianhubx.com/ca/objectius-ciberseguretat/).
 
 **Lecturas relacionadas:**
-- [Guia ràpida per entendre els termes clau en atacs de ciberseguretat](/blog/guia-rapida-termes-ciberseguretat/)
-- [La creixent amenaça dels ciberatacs a Espanya: claus per a una ciberresiliència efectiva](/blog/ciberatacs-espanya-ciberresiliencia/)
-- [La Solució de Gestió Integral per a CIOs i CTOs](/blog/plataforma-gestio-per-a-cios-ctos/)
+- [Guia ràpida per entendre els termes clau en atacs de ciberseguretat](/blog/ca/guia-rapida-termes-ciberseguretat/)
+- [La creixent amenaça dels ciberatacs a Espanya: claus per a una ciberresiliència efectiva](/blog/ca/ciberatacs-espanya-ciberresiliencia/)
+- [La Solució de Gestió Integral per a CIOs i CTOs](/blog/ca/plataforma-gestio-per-a-cios-ctos/)
 
 A continuació, explorarem com la IA està redefinint el panorama de les amenaces cibernètiques i quins desafiaments planteja per a les tecnologies de detecció actuals.
 

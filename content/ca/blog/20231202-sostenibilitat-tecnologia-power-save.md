@@ -63,9 +63,9 @@ A diferència de simples configuracions d'estalvi d'energia:
 - **Integració**: Funciona perfectament amb Faronics Cloud Deep Freeze
 - **Cumpliment ESG**: Documenta el teu compromís amb sostenibilitat
 **Lecturas relacionadas:**
-- [L'Escassetat de Talent en TI: Com l'Automatització és la Solució](/blog/escassetat-talent-ti-solucio-automatitzacio/)
-- [Gestió Remota d'Actualitzacions: Simplifica el teu Manteniment i Reforça la teva Seguretat](/blog/gestio-remota-actualitzacions/)
-- [Com ChatGPT et pot ajudar en el manteniment i actualitzacions dels teus equips](/blog/com-chatgpt-ajuda-manteniment-ti/)
+- [L'Escassetat de Talent en TI: Com l'Automatització és la Solució](/blog/ca/escassetat-talent-ti-solucio-automatitzacio/)
+- [Gestió Remota d'Actualitzacions: Simplifica el teu Manteniment i Reforça la teva Seguretat](/blog/ca/gestio-remota-actualitzacions/)
+- [Com ChatGPT et pot ajudar en el manteniment i actualitzacions dels teus equips](/blog/ca/com-chatgpt-ajuda-manteniment-ti/)
 
 ## Reduint la Petjada de Carboni des de la Gestió de TI
 

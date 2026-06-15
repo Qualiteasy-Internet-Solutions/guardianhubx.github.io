@@ -30,9 +30,9 @@ translationKey: data-breach-response-2024
 Una violació de dades no només posa en risc el teu negoci, sinó també la confiança dels teus clients i empleats. Però tranquil/a, actuar amb rapidesa i de manera organitzada pot marcar la diferència. Aquí et deixo una guia pas a pas per afrontar aquest tipus d'incidents:
 
 **Lecturas relacionadas:**
-- [Com millorar la seguretat de TI](/blog/com-millorar-la-seguretat-de-ti/)
-- [L'Escassetat de Talent en TI: Com l'Automatització és la Solució](/blog/escassetat-talent-ti-solucio-automatitzacio/)
-- [La Solució de Gestió Integral per a CIOs i CTOs](/blog/plataforma-gestio-per-a-cios-ctos/)
+- [Com millorar la seguretat de TI](/blog/ca/com-millorar-la-seguretat-de-ti/)
+- [L'Escassetat de Talent en TI: Com l'Automatització és la Solució](/blog/ca/escassetat-talent-ti-solucio-automatitzacio/)
+- [La Solució de Gestió Integral per a CIOs i CTOs](/blog/ca/plataforma-gestio-per-a-cios-ctos/)
 
 ## 1. Confirma la violació
 
