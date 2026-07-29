@@ -11,7 +11,8 @@ window.addEventListener('load', function () {
             consentModal: {
                 layout: 'bar',
                 position: 'bottom',
-                equalWeightButtons: false
+                equalWeightButtons: true,
+                flipButtons: true
             },
             preferencesModal: {
                 layout: 'box'
@@ -62,7 +63,7 @@ window.addEventListener('load', function () {
                         title: 'Usamos cookies',
                         description: 'Utilizamos cookies esenciales para el funcionamiento del sitio y, con tu consentimiento, cookies analíticas para mejorar nuestra web.',
                         acceptAllBtn: 'Aceptar todo',
-                        acceptNecessaryBtn: 'Solo esenciales',
+                        acceptNecessaryBtn: 'Rechazar todo',
                         showPreferencesBtn: 'Personalizar'
                     },
                     preferencesModal: {
@@ -90,7 +91,7 @@ window.addEventListener('load', function () {
                         title: 'Usem galetes',
                         description: 'Utilitzem galetes essencials per al funcionament del lloc i, amb el teu consentiment, galetes analítiques per millorar la nostra web.',
                         acceptAllBtn: 'Acceptar-ho tot',
-                        acceptNecessaryBtn: 'Només essencials',
+                        acceptNecessaryBtn: 'Rebutjar-ho tot',
                         showPreferencesBtn: 'Personalitzar'
                     },
                     preferencesModal: {
@@ -118,7 +119,7 @@ window.addEventListener('load', function () {
                         title: 'We use cookies',
                         description: 'We use essential cookies for site functionality and, with your consent, analytics cookies to improve our website.',
                         acceptAllBtn: 'Accept all',
-                        acceptNecessaryBtn: 'Essential only',
+                        acceptNecessaryBtn: 'Reject all',
                         showPreferencesBtn: 'Customize'
                     },
                     preferencesModal: {

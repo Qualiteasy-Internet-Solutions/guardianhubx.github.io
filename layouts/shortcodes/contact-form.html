@@ -55,6 +55,18 @@
     <input type="hidden" name="_autoresponse" value="{{ i18n "form_thanks" }}">
     <input type="hidden" name="_template" value="table">
   </form>
+
+  <div class="rgpd-notice small text-muted mt-4">
+    <p class="fw-bold mb-1">{{ i18n "form_rgpd_notice_title" }}</p>
+    <ul class="mb-2">
+      <li>{{ i18n "form_rgpd_responsable" }}</li>
+      <li>{{ i18n "form_rgpd_finalidad" }}</li>
+      <li>{{ i18n "form_rgpd_legitimacion" }}</li>
+      <li>{{ i18n "form_rgpd_destinatarios" }}</li>
+      <li>{{ i18n "form_rgpd_derechos" }}</li>
+    </ul>
+    <p class="mb-0">{{ i18n "form_rgpd_info_adicional" }} <a href="{{ i18n "form_privacy_consent_link" }}">{{ i18n "form_privacy_consent_2" }}</a>.</p>
+  </div>
   </div>
 </section>
 <script src="/js/form-submission-handler.js" defer></script>

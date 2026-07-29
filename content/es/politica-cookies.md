@@ -10,46 +10,74 @@ translations:
     path: /ca/politica-cookies/
 ---
 
-Si quieres saber más sobre el uso de cookies que realiza este sitio web **GuardianHubX**, estás en el lugar indicado. A continuación, vamos a explicarte qué son exactamente las cookies; qué tipo de cookies utilizamos y para qué; y cómo puedes ejercer tu derecho para configurar tu navegador y desestimar el uso de cualquiera de ellas.
+Esta Política de Cookies tiene como objetivo informarle sobre el uso de cookies y tecnologías similares cuando visita **guardianhubx.com**, sitio operado por Qualiteasy Internet Solutions, S.L. Al utilizar nuestro sitio y aceptar el banner de cookies, usted confirma haber sido informado de acuerdo con esta política.
 
-Eso sí, debes saber que si decides no utilizar algunas cookies, este sitio web puede no funcionar perfectamente, afectando a tu experiencia de usuario.
+### 1. ¿Qué son las cookies?
 
-### ¿Qué es una cookie?
+Las cookies son pequeños archivos de texto que se almacenan en su dispositivo cuando visita un sitio web. Se utilizan para mejorar la experiencia del usuario y para recopilar información sobre el comportamiento de navegación.
 
-Una *cookie* es un fichero que se descarga en tu ordenador al acceder a determinadas páginas web o blogs. Las cookies permiten a esa página almacenar y recuperar información sobre tus hábitos de navegación o de tu equipo. Según cómo utilices tu equipo, pueden utilizarse para reconocerte.
+### 2. Tipos de cookies utilizadas
 
-Las cookies no contienen información personal específica, y la mayoría se eliminan al cerrar el navegador (cookies de sesión).
+**Cookies necesarias o funcionales:** esenciales para el correcto funcionamiento de la web (p. ej., recordar la elección de cookies o el código de referido de un partner). Se instalan sin necesidad de consentimiento expreso.
 
-Las cookies se asocian al navegador, no a la persona. Por eso, no almacenan datos sensibles como tarjetas bancarias, fotos o datos personales.
+**Cookies de estadísticas (analíticas):** utilizadas mediante Google Analytics para recopilar información agregada sobre el uso del sitio y optimizar la navegación. Requieren su consentimiento previo.
 
-### Aceptación de las cookies y normativa vigente
+**Cookies de marketing/seguimiento:** actualmente no se utilizan cookies de publicidad o seguimiento entre sitios en guardianhubx.com. Si en el futuro se incorporasen, se solicitará el consentimiento previo del usuario y se actualizará esta política.
 
-Al acceder a este sitio web, te informamos del uso de cookies conforme a la normativa de protección de datos. Puedes aceptarlas o configurar tu navegador para desactivarlas.
+**Cookies de redes sociales:** el sitio puede incluir enlaces o contenido embebido de plataformas como YouTube, LinkedIn, Instagram o TikTok, que pueden instalar sus propias cookies. Le recomendamos revisar las políticas de privacidad de dichas redes.
 
-Este sitio web cumple con:
+### 3. Cookies utilizadas
 
-- LSSI-CE (Ley de la Sociedad de la Información)
-- RGPD (Reglamento (UE) 2016/679)
+| TIPO DE COOKIE | NOMBRE | TITULARIDAD | FINALIDAD | DURACIÓN |
+|---|---|---|---|---|
+| Necesaria | `ghx_consent` | Propia | Recordar la elección de cookies realizada en el banner. | 365 días |
+| Necesaria | `ghx_ref` | Propia | Registrar el código de referido de un partner. | 30 días |
+| Necesaria | `_GRECAPTCHA` | Google (tercero) | Protección antispam de los formularios (reCAPTCHA). | Sesión / según Google |
+| Analítica | `_ga` | Google (tercero) | Distinguir usuarios únicos con fines estadísticos (Google Analytics). | 2 años |
+| Analítica | `_ga_*` | Google (tercero) | Mantener el estado de la sesión de Google Analytics 4. | 2 años |
+| Analítica | `_gid` | Google (tercero) | Distinguir usuarios con fines estadísticos. | 24 horas |
 
-Esta política puede modificarse según cambios normativos o en nuestras actividades.
+### 4. Nuestros terceros o partners
 
-### Tipos de cookies que utilizamos
+Respecto a las cookies de terceros, nuestro único partner actual es Google LLC, a través de Google Analytics y reCAPTCHA. Puede consultar su política de privacidad en [policies.google.com/privacy](https://policies.google.com/privacy).
 
-En **https://guardianhubx.com** usamos cookies propias y de terceros para ofrecer una mejor experiencia:
+### 5. Configuración de cookies
 
-- **Cookies técnicas**: Navegación, acceso, seguridad.
-- **Cookies de personalización**: Idioma, navegador, configuración regional.
-- **Cookies de análisis**: Estadísticas de uso y mejora de servicios.
-- **Cookies publicitarias**: Gestión de anuncios según comportamiento.
-- **Cookies de terceros**: Como Google Analytics.
+Al acceder por primera vez a nuestro sitio web, se le muestra un banner de cookies con tres opciones, con igual nivel de visibilidad para aceptar y para rechazar, conforme a los criterios de la Agencia Española de Protección de Datos (AEPD):
 
-### Gestión y rechazo de cookies
+- **«Rechazar todo»:** se instalan únicamente las cookies técnicas/funcionales imprescindibles.
+- **«Aceptar todo»:** se instalan también las cookies de estadísticas.
+- **«Personalizar»:** permite activar o desactivar cada categoría de forma individual.
 
-Puedes configurar tu navegador para rechazar cookies. También puedes eliminarlas de tu equipo. Consulta la configuración de tu navegador:
+También puede configurar o eliminar las cookies en cualquier momento desde los ajustes de su navegador:
 
 - [Google Chrome](https://support.google.com/chrome/answer/95647?hl=es-419)
 - [Internet Explorer](https://support.microsoft.com/es-es/help/17442/windows-internet-explorer-delete-manage-cookies#ie=ie-10)
 - [Mozilla Firefox](https://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-sitios-web-rastrear-preferencias)
 - [Apple Safari](https://support.apple.com/es-es/HT201265)
 
-**¿Dudas?** Escríbenos a [info@qualiteasy.com](mailto:info@qualiteasy.com)
+Tenga en cuenta que el sitio puede no funcionar correctamente si desactiva todas las cookies; si las elimina, volverán a instalarse tras dar de nuevo su consentimiento.
+
+### 6. Plazo de conservación
+
+Las cookies propias se utilizan exclusivamente durante el tiempo necesario para cumplir su finalidad, sin superar los plazos indicados en la tabla del punto 3. Respecto a las cookies de terceros, los plazos de conservación se rigen por la política de privacidad del tercero correspondiente.
+
+### 7. Derechos de los usuarios
+
+Tiene derecho a conocer la finalidad de la recopilación de sus datos, a acceder, rectificar, suprimir u oponerse a su tratamiento, así como a la portabilidad de sus datos y a retirar su consentimiento en cualquier momento. Para ejercer estos derechos, puede ponerse en contacto con nosotros en los datos indicados en el punto 8. Asimismo, tiene derecho a presentar una reclamación ante la Agencia Española de Protección de Datos ([www.aepd.es](https://www.aepd.es)).
+
+### 8. Datos de contacto
+
+**Titular:** Qualiteasy Internet Solutions, S.L.
+
+**Dirección:** C/ Pit Roig, 26, 3º, Puerta B, 08800 Vilanova i la Geltrú (Barcelona)
+
+**Sitio web:** guardianhubx.com
+
+**Correo electrónico:** [qualiteasy@qualiteasy.com](mailto:qualiteasy@qualiteasy.com)
+
+### 9. Actualización de la Política de Cookies
+
+Nos reservamos el derecho a modificar o actualizar esta Política de Cookies en cualquier momento. Cualquier cambio se publicará en esta misma página. La introducción de nuevas cookies o el uso de las cookies ya informadas para finalidades distintas requerirá su aceptación previa.
+
+Puede consultar también nuestra [Política de Privacidad](/es/politica-privacidad/) y nuestro [Aviso Legal](/es/aviso-legal/).

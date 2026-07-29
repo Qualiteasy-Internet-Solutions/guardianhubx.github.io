@@ -1,3 +1,82 @@
 User-agent: *
 Allow: /
+
+# Bots de entrenamiento de IA / scraping masivo: excluidos solo de las páginas legales
+User-agent: GPTBot
+Disallow: /es/aviso-legal/
+Disallow: /ca/avis-legal/
+Disallow: /en/legal-notice/
+Disallow: /es/politica-privacidad/
+Disallow: /ca/politica-privacitat/
+Disallow: /en/privacy-policy/
+Disallow: /es/politica-cookies/
+Disallow: /ca/politica-cookies/
+Disallow: /en/cookies-policy/
+
+User-agent: ChatGPT-User
+Disallow: /es/aviso-legal/
+Disallow: /ca/avis-legal/
+Disallow: /en/legal-notice/
+Disallow: /es/politica-privacidad/
+Disallow: /ca/politica-privacitat/
+Disallow: /en/privacy-policy/
+Disallow: /es/politica-cookies/
+Disallow: /ca/politica-cookies/
+Disallow: /en/cookies-policy/
+
+User-agent: Google-Extended
+Disallow: /es/aviso-legal/
+Disallow: /ca/avis-legal/
+Disallow: /en/legal-notice/
+Disallow: /es/politica-privacidad/
+Disallow: /ca/politica-privacitat/
+Disallow: /en/privacy-policy/
+Disallow: /es/politica-cookies/
+Disallow: /ca/politica-cookies/
+Disallow: /en/cookies-policy/
+
+User-agent: CCBot
+Disallow: /es/aviso-legal/
+Disallow: /ca/avis-legal/
+Disallow: /en/legal-notice/
+Disallow: /es/politica-privacidad/
+Disallow: /ca/politica-privacitat/
+Disallow: /en/privacy-policy/
+Disallow: /es/politica-cookies/
+Disallow: /ca/politica-cookies/
+Disallow: /en/cookies-policy/
+
+User-agent: ClaudeBot
+Disallow: /es/aviso-legal/
+Disallow: /ca/avis-legal/
+Disallow: /en/legal-notice/
+Disallow: /es/politica-privacidad/
+Disallow: /ca/politica-privacitat/
+Disallow: /en/privacy-policy/
+Disallow: /es/politica-cookies/
+Disallow: /ca/politica-cookies/
+Disallow: /en/cookies-policy/
+
+User-agent: anthropic-ai
+Disallow: /es/aviso-legal/
+Disallow: /ca/avis-legal/
+Disallow: /en/legal-notice/
+Disallow: /es/politica-privacidad/
+Disallow: /ca/politica-privacitat/
+Disallow: /en/privacy-policy/
+Disallow: /es/politica-cookies/
+Disallow: /ca/politica-cookies/
+Disallow: /en/cookies-policy/
+
+User-agent: Bytespider
+Disallow: /es/aviso-legal/
+Disallow: /ca/avis-legal/
+Disallow: /en/legal-notice/
+Disallow: /es/politica-privacidad/
+Disallow: /ca/politica-privacitat/
+Disallow: /en/privacy-policy/
+Disallow: /es/politica-cookies/
+Disallow: /ca/politica-cookies/
+Disallow: /en/cookies-policy/
+
 Sitemap: https://guardianhubx.com/sitemap.xml
