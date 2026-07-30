@@ -134,7 +134,8 @@
           <small class="text-white-50">
             <a href="{{ cond (eq .Lang "es") ("/es/aviso-legal/" | relURL) (cond (eq .Lang "ca") ("/ca/avis-legal/" | relURL) ("/en/legal-notice/" | relURL)) }}" class="text-decoration-none text-white-50 me-3">{{ i18n "aviso_legal" }}</a>
             <a href="{{ cond (eq .Lang "es") ("/es/politica-privacidad/" | relURL) (cond (eq .Lang "ca") ("/ca/politica-privacitat/" | relURL) ("/en/privacy-policy/" | relURL)) }}" class="text-decoration-none text-white-50 me-3">{{ i18n "politica_privacidad" }}</a>
-            <a href="{{ cond (eq .Lang "es") ("/es/politica-cookies/" | relURL) (cond (eq .Lang "ca") ("/ca/politica-cookies/" | relURL) ("/en/cookies-policy/" | relURL)) }}" class="text-decoration-none text-white-50">{{ i18n "politica_cookies" }}</a>
+            <a href="{{ cond (eq .Lang "es") ("/es/politica-cookies/" | relURL) (cond (eq .Lang "ca") ("/ca/politica-cookies/" | relURL) ("/en/cookies-policy/" | relURL)) }}" class="text-decoration-none text-white-50 me-3">{{ i18n "politica_cookies" }}</a>
+            <a href="{{ cond (eq .Lang "es") ("/es/politica-seguridad-informacion/" | relURL) (cond (eq .Lang "ca") ("/ca/politica-seguretat-informacio/" | relURL) ("/en/security-policy/" | relURL)) }}" class="text-decoration-none text-white-50">{{ i18n "politica_seguridad" }}</a>
           </small>
         </div>
       </div>

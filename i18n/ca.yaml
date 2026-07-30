@@ -4,6 +4,8 @@
   translation: "Política de privacitat"
 - id: "politica_cookies"
   translation: "Política de cookies"
+- id: "politica_seguridad"
+  translation: "Política de seguretat"
 - id: "aviso_legal"
   translation: "Avís Legal"
 - id: "contact_title"
