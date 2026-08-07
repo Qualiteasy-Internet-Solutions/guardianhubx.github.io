@@ -1,7 +1,6 @@
 ---
 title: "GuardianHubX - Ciberseguretat per a Empreses i Autònoms"
 description: "Plataforma de ciberseguretat accessible: vigilància digital, gestió de contrasenyes i protecció de dades. Sense instal·lacions complexes."
-markup: "html"
 faq_items:
   - question: "GuardianHubX és una consultora de seguretat?"
     answer: "No, som una plataforma de productes. A diferència d'una consultora que ven hores i processos llargs, nosaltres oferim eines tecnològiques a punt per usar (plug & play) que solucionen problemes específics de seguretat a l'instant."

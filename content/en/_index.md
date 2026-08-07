@@ -1,7 +1,6 @@
 ---
 title: "GuardianHubX - Cybersecurity for Businesses and Freelancers"
 description: "Accessible cybersecurity platform: digital surveillance, password management, and data protection. No complex installations."
-markup: "html"
 faq_items:
   - question: "Is GuardianHubX a security consultancy?"
     answer: "No, we are a product platform. Unlike a consultancy that sells billable hours and long processes, we offer plug & play technological tools that solve specific security problems instantly."

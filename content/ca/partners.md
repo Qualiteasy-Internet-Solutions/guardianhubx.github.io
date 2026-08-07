@@ -1,7 +1,6 @@
 ---
 title: "GuardianHubX - Ecosistema de ciberseguretat amb els millors partners"
 description: "Partners de ciberseguretat de GuardianHubX: solucions fiables i complementàries de contrasenyes, backups, antivirus, MDM i més."
-markup: "html"
 ---
 
 <main class="container my-5">

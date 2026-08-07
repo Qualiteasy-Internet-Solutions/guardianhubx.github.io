@@ -1,7 +1,6 @@
 ---
 title: "GuardianHubX – Cybersecurity ecosystem with the best partners"
 description: "We work with leading cybersecurity providers to offer powerful, reliable, and complementary solutions: passwords, backups, phishing, antivirus, MDM, and more."
-markup: "html"
 ---
 
 <main class="container my-5">
