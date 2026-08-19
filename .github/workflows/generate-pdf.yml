@@ -28,16 +28,19 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y pandoc python3-pip
+          sudo apt-get install -y pandoc python3-pip libimage-exiftool-perl
           pip install weasyprint
 
       - name: Generate PDF from Markdown
         run: |
           pandoc condiciones-radar.md -f markdown -t html \
-            --metadata charset=utf-8 \
+            --metadata title="" \
+            --metadata author="" \
+            --metadata date="" \
             -H <(echo '<meta charset="utf-8">') \
             -o /tmp/condiciones.html
           weasyprint /tmp/condiciones.html static/docs/condiciones-guardianradar.pdf
+          exiftool -overwrite_original -all= static/docs/condiciones-guardianradar.pdf
 
       - name: Commit and push PDF
         run: |
