@@ -28,7 +28,7 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y pandoc python3-pip libimage-exiftool-perl
+          sudo apt-get install -y pandoc python3-pip libimage-exiftool-perl qpdf
           pip install weasyprint
 
       - name: Generate PDF from Markdown
@@ -40,7 +40,20 @@ jobs:
             -H <(echo '<meta charset="utf-8">') \
             -o /tmp/condiciones.html
           weasyprint /tmp/condiciones.html static/docs/condiciones-guardianradar.pdf
+          # exiftool marca las propiedades como eliminadas mediante una actualización
+          # incremental, pero los bytes originales permanecen en el fichero y son
+          # recuperables. qpdf reescribe el PDF completo y los descarta de verdad,
+          # conservando los marcadores de navegación. Requisito del control mp.info.5.
           exiftool -overwrite_original -all= static/docs/condiciones-guardianradar.pdf
+          qpdf --linearize --replace-input static/docs/condiciones-guardianradar.pdf
+
+      - name: Verificar que el PDF no conserva metadatos
+        run: |
+          if strings static/docs/condiciones-guardianradar.pdf | grep -qiE "WeasyPrint|pandoc|/Author|/Creator"; then
+            echo "ERROR: el PDF generado todavía contiene metadatos"
+            exit 1
+          fi
+          echo "PDF sin metadatos: correcto"
 
       - name: Commit and push PDF
         run: |
