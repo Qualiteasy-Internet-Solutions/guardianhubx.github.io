@@ -86,7 +86,7 @@
       loading="{{ $loading }}"
       decoding="{{ $decoding }}"
       fetchpriority="{{ $fetchpriority }}"
-      {{ if $onclick }}onclick="{{ $onclick }}"{{ end }}
+      {{ if $onclick }}onclick="{{ $onclick | safeJS }}"{{ end }}
       {{ if $style }}style="{{ $style }}"{{ end }}
       class="{{ $class }}">
   </picture>
@@ -100,7 +100,7 @@
     loading="{{ $loading }}"
     decoding="{{ $decoding }}"
     fetchpriority="{{ $fetchpriority }}"
-    {{ if $onclick }}onclick="{{ $onclick }}"{{ end }}
+    {{ if $onclick }}onclick="{{ $onclick | safeJS }}"{{ end }}
     {{ if $style }}style="{{ $style }}"{{ end }}
     class="{{ $class }}">
 {{ end }}
