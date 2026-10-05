@@ -1,8 +1,8 @@
 <footer class="site-footer bg-light border-top border-2 border-dark pt-5 pb-5">
   <div class="container">
-    <div class="row gy-4 gx-5 align-items-start">
+    <div class="row gy-4 gx-3 gx-md-5 align-items-start">
 
-      <div class="col-6 {{ if or (eq .Lang "es") (eq .Lang "ca") }}col-md-2{{ else }}col-md-3{{ end }} d-flex flex-column align-items-center align-items-md-start">
+      <div class="col-12 {{ if or (eq .Lang "es") (eq .Lang "ca") }}col-lg-2{{ else }}col-lg-3{{ end }} d-flex flex-column align-items-center align-items-lg-start">
         <a href="/{{ .Lang }}/" class="mb-3">
           {{ partial "picture.html" (dict
             "src" "/img/logo_GHX_01-01.png"
@@ -12,7 +12,7 @@
             "lazy" true
           )}}
         </a>
-        <p class="small text-secondary text-center text-md-start mb-3">
+        <p class="small text-secondary text-center text-lg-start mb-3">
           {{ i18n "miembro_desc" }}
         </p>
         <a href="https://www.ascicat.cat/" target="_blank" rel="noopener" class="d-inline-block">
@@ -27,14 +27,14 @@
         </a>
       </div>
 
-      <div class="col-6 {{ if or (eq .Lang "es") (eq .Lang "ca") }}col-md-2{{ else }}col-md-3{{ end }}">
+      <div class="col-12 {{ if or (eq .Lang "es") (eq .Lang "ca") }}col-md-4 col-lg-3{{ else }}col-md-4 col-lg-3{{ end }}">
         <h6 class="text-uppercase mb-3 small">{{ i18n "menu" }}</h6>
         <nav class="footer-menu-nav small" aria-label="{{ cond (eq .Lang "es") "Enlaces del pie de página" (cond (eq .Lang "en") "Footer links" "Enllaços del peu de pàgina") }}">
           {{ partial "menu.html" . }}
         </nav>
       </div>
 
-      <div class="col-6 {{ if or (eq .Lang "es") (eq .Lang "ca") }}col-md-2{{ else }}col-md-3{{ end }}">
+      <div class="col-12 {{ if or (eq .Lang "es") (eq .Lang "ca") }}col-md-4 col-lg-2{{ else }}col-md-4 col-lg-3{{ end }}">
         <h6 class="mb-3 small">
           <a class="text-decoration-none text-dark" href="{{ cond (eq .Lang "es") "/es/partners/" (cond (eq .Lang "ca") "/ca/partners/" "/en/partners/") }}">
             {{ i18n "partners" }}
@@ -55,7 +55,7 @@
       </div>
 
       {{ if or (eq .Lang "es") (eq .Lang "ca") }}
-      <div class="col-6 col-md-4">
+      <div class="col-12 col-md-4 col-lg-4">
         <h6 class="mb-3 small">
           <i class="fas fa-blog me-2"></i>{{ cond (eq .Lang "es") "Artículos" (cond (eq .Lang "ca") "Articles" "Articles") }}
         </h6>

@@ -67,40 +67,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-const homeBanner = document.querySelector('.home-banner');
-  let bannerHasBeenHidden = false;
-
   window.addEventListener('scroll', function() {
-    if (window.scrollY > 10) {
-      document.body.classList.add('scrolled');
-      if (homeBanner && !bannerHasBeenHidden) {
-        homeBanner.classList.add('hide-permanently');
-        bannerHasBeenHidden = true;
-      }
-    } else {
-      document.body.classList.remove('scrolled');
-    }
+    document.body.classList.toggle('scrolled', window.scrollY > 10);
   });
-
-  const rotatorContainer = document.getElementById('banner-rotator');
-  
-  if (rotatorContainer) {
-    const items = rotatorContainer.querySelectorAll('.rotator-item');
-    let currentItem = 0;
-
-    if (items.length > 1) {
-      setInterval(() => {
-        if (items[currentItem]) {
-          items[currentItem].classList.remove('active');
-        }
-        
-        currentItem = (currentItem + 1) % items.length;
-        
-        if (items[currentItem]) {
-          items[currentItem].classList.add('active');
-        }
-      }, 7000); // Canvia de banner cada 7 segons
-    }
-  }
 
 });
