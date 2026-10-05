@@ -102,6 +102,14 @@
     </ul>
 </li>
 <li class="nav-item">
+    <a class="nav-link"
+        href="{{ cond (eq .Lang "es") ("/es/quienes-somos/" | relLangURL)
+                (cond (eq .Lang "ca") ("/ca/qui-som/" | relLangURL)
+                                ("/en/about-us/" | relLangURL)) }}">
+    {{ i18n "about_us" }}
+    </a>
+</li>
+<li class="nav-item">
     <a class="nav-link" href="/{{ .Lang }}/newsletter/">Newsletter</a>
 </li>
 <li class="nav-item">

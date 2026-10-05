@@ -824,3 +824,6 @@
   translation: "✓ Codi vàlid! Prova de 3 mesos activada"
 - id: "radar_discount_invalid"
   translation: "✗ Codi no vàlid"
+
+- id: about_us
+  translation: "Qui som"

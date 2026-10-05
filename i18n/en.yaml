@@ -815,3 +815,6 @@
   translation: "✓ Valid code! 3-month trial activated"
 - id: "radar_discount_invalid"
   translation: "✗ Invalid code"
+
+- id: about_us
+  translation: "About us"

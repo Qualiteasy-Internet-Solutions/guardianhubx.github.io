@@ -822,3 +822,6 @@
   translation: "✓ ¡Código válido! Prueba de 3 meses activada"
 - id: "radar_discount_invalid"
   translation: "✗ Código no válido"
+
+- id: about_us
+  translation: "Quiénes somos"
