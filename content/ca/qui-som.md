@@ -1,6 +1,7 @@
 ---
 title: "Qui som | Més de 26 anys en seguretat i automatització informàtica"
 description: "Més de 26 anys de trajectòria a QualitEasy: seguretat i automatització informàtica, 23 anys com a representants de Faronics (Deep Freeze), certificació ENS i presència en el sector educatiu."
+translationKey: "about-us"
 url: "/ca/qui-som/"
 translations:
   - lang: es
@@ -97,24 +98,28 @@ translations:
 </section>
 
 <section class="about-sec about-sec--light">
-  <div class="container text-center">
-    <div class="mb-5 about-reveal">
+  <div class="container">
+    <div class="text-center mb-5 about-reveal">
       <span class="about-eyebrow">Clients</span>
       <h2 class="about-title">Qui confia en nosaltres</h2>
       <p class="text-muted mb-0">Clients de tots els sectors, a Espanya i arreu del món.</p>
     </div>
-    <div class="row g-4">
-      <div class="col-6 col-md-3 about-reveal"><div class="about-card about-client"><div class="about-icon"><i class="fas fa-university"></i></div><p class="fw-semibold mb-0">Universitats</p><small class="text-muted">La gran majoria de les espanyoles</small></div></div>
-      <div class="col-6 col-md-3 about-reveal"><div class="about-card about-client"><div class="about-icon"><i class="fas fa-landmark"></i></div><p class="fw-semibold mb-0">Ajuntaments</p><small class="text-muted">Administració local</small></div></div>
-      <div class="col-6 col-md-3 about-reveal"><div class="about-card about-client"><div class="about-icon"><i class="fas fa-school"></i></div><p class="fw-semibold mb-0">Grups d'escoles</p><small class="text-muted">Centres educatius</small></div></div>
-      <div class="col-6 col-md-3 about-reveal"><div class="about-card about-client"><div class="about-icon"><i class="fas fa-globe-europe"></i></div><p class="fw-semibold mb-0">Clients internacionals</p><small class="text-muted">De renom, via Faronics</small></div></div>
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-6 about-reveal"><div class="about-card about-client-card"><div class="about-icon"><i class="fas fa-university"></i></div><h3 class="h5">Universitats</h3><div class="about-tags"><span class="about-tag">Universitat de Barcelona</span><span class="about-tag">UPC</span><span class="about-tag">UPCM</span><span class="about-tag">Universitat de Las Palmas de Gran Canària (ULPGC)</span><span class="about-tag">Universitat de Múrcia</span><span class="about-tag">Universitat Europea</span><span class="about-tag">Universitat Pompeu Fabra</span><span class="about-tag">Universitat d’Alacant</span><span class="about-tag">Universitat Politècnica de València</span><span class="about-tag">UOC</span><span class="about-tag">Universitat Complutense</span></div></div></div>
+      <div class="col-md-6 about-reveal"><div class="about-card about-client-card"><div class="about-icon"><i class="fas fa-city"></i></div><h3 class="h5">Administració pública</h3><div class="about-tags"><span class="about-tag">Ajuntament de Madrid</span><span class="about-tag">Ajuntament de Barcelona · Barcelona Activa</span><span class="about-tag">Ajuntament de Calvià</span><span class="about-tag">Ajuntament d’Alcobendas</span><span class="about-tag">Ajuntament de Girona</span><span class="about-tag">Ajuntament de Gavà</span><span class="about-tag">Ajuntament de Múrcia</span><span class="about-tag">Ajuntament d’Alcoi</span><span class="about-tag">Ajuntament de Càceres</span><span class="about-tag">Agència de l’Habitatge de Catalunya</span><span class="about-tag">Banc de Sang i Teixits</span></div></div></div>
+      <div class="col-md-4 about-reveal"><div class="about-card about-client-card"><div class="about-icon"><i class="fas fa-school"></i></div><h3 class="h5">Centres educatius</h3><div class="about-tags"><span class="about-tag">Departament d’Educació · Generalitat de Catalunya</span><span class="about-tag">Escoles Pies de Catalunya</span><span class="about-tag">Real Colegio Escuelas Pías de San Fernando</span><span class="about-tag">Centre d’Estudis Adams Barcelona</span><span class="about-tag">Planeta de Agostini Formación</span><span class="about-tag">Planeta Innovación</span><span class="about-tag">Centre d’Estudis Jaume Balmes</span></div></div></div>
+      <div class="col-md-4 about-reveal"><div class="about-card about-client-card"><div class="about-icon"><i class="fas fa-building"></i></div><h3 class="h5">Empreses</h3><div class="about-tags"><span class="about-tag">Smith &amp; Nephew</span><span class="about-tag">Schenker Logistics</span><span class="about-tag">Taylor Hobson</span><span class="about-tag">Compañía Industrial de Tabacos Montepaz</span><span class="about-tag">Cobanc</span><span class="about-tag">Lafarge Unacem</span><span class="about-tag">Sistemes Renals</span></div></div></div>
+      <div class="col-md-4 about-reveal"><div class="about-card about-client-card"><div class="about-icon"><i class="fas fa-hand-holding-heart"></i></div><h3 class="h5">ONG i fundacions</h3><div class="about-tags"><span class="about-tag">Creu Roja Espanyola</span><span class="about-tag">Institut de Recerca contra la Leucèmia Josep Carreras</span></div></div></div>
     </div>
-    <p class="mt-5 mb-3 fw-semibold">I les principals consultores i organitzacions:</p>
-    <div class="about-chips about-logos mt-0">
-      <span class="about-chip">Telefònica</span>
+    <div class="text-center mt-5 about-reveal">
+      <p class="fw-semibold mb-3">Treballem colze a colze amb els principals integradors i distribuïdors de programari a Espanya</p>
+      <div class="about-chips about-logos mt-0">
+      <span class="about-chip">Telefónica Soluciones</span>
       <span class="about-chip">Seidor</span>
       <span class="about-chip">Danisoft</span>
-      <span class="about-chip">Cruz Roja</span>
+      <span class="about-chip">Software Científico</span>
+      </div>
+      <p class="text-muted mt-4 mb-0">I, a través de Faronics, clients internacionals de renom.</p>
     </div>
   </div>
 </section>

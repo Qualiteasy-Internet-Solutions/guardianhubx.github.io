@@ -1,7 +1,13 @@
 ---
 title: "Quiénes somos | Más de 26 años en seguridad y automatización informática"
 description: "Más de 26 años de trayectoria en QualitEasy: seguridad y automatización informática, 23 años como representantes de Faronics (Deep Freeze) certificación ENS y presencia en el sector educativo."
+translationKey: "about-us"
 url: "/es/quienes-somos/"
+translations:
+  - lang: ca
+    path: "/ca/qui-som/"
+  - lang: en
+    path: "/en/about-us/"
 ---
 
 <section class="about-hero">
@@ -92,24 +98,28 @@ url: "/es/quienes-somos/"
 </section>
 
 <section class="about-sec about-sec--light">
-  <div class="container text-center">
-    <div class="mb-5 about-reveal">
+  <div class="container">
+    <div class="text-center mb-5 about-reveal">
       <span class="about-eyebrow">Clientes</span>
       <h2 class="about-title">Quién confía en nosotros</h2>
       <p class="text-muted mb-0">Clientes de todos los sectores, en España y en todo el mundo.</p>
     </div>
-    <div class="row g-4">
-      <div class="col-6 col-md-3 about-reveal"><div class="about-card about-client"><div class="about-icon"><i class="fas fa-university"></i></div><p class="fw-semibold mb-0">Universidades</p><small class="text-muted">La gran mayoría de las españolas</small></div></div>
-      <div class="col-6 col-md-3 about-reveal"><div class="about-card about-client"><div class="about-icon"><i class="fas fa-landmark"></i></div><p class="fw-semibold mb-0">Ayuntamientos</p><small class="text-muted">Administración local</small></div></div>
-      <div class="col-6 col-md-3 about-reveal"><div class="about-card about-client"><div class="about-icon"><i class="fas fa-school"></i></div><p class="fw-semibold mb-0">Grupos de escuelas</p><small class="text-muted">Centros educativos</small></div></div>
-      <div class="col-6 col-md-3 about-reveal"><div class="about-card about-client"><div class="about-icon"><i class="fas fa-globe-europe"></i></div><p class="fw-semibold mb-0">Clientes internacionales</p><small class="text-muted">De renombre, vía Faronics</small></div></div>
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-6 about-reveal"><div class="about-card about-client-card"><div class="about-icon"><i class="fas fa-university"></i></div><h3 class="h5">Universidades</h3><div class="about-tags"><span class="about-tag">Universidad de Barcelona</span><span class="about-tag">UPC</span><span class="about-tag">UPCM</span><span class="about-tag">Universidad de Las Palmas de Gran Canaria (ULPGC)</span><span class="about-tag">Universidad de Murcia</span><span class="about-tag">Universidad Europea</span><span class="about-tag">Universitat Pompeu Fabra</span><span class="about-tag">Universidad de Alicante</span><span class="about-tag">Universidad Politécnica de Valencia</span><span class="about-tag">UOC</span><span class="about-tag">Universidad Complutense</span></div></div></div>
+      <div class="col-md-6 about-reveal"><div class="about-card about-client-card"><div class="about-icon"><i class="fas fa-city"></i></div><h3 class="h5">Administración pública</h3><div class="about-tags"><span class="about-tag">Ayuntamiento de Madrid</span><span class="about-tag">Ayuntamiento de Barcelona · Barcelona Activa</span><span class="about-tag">Ayuntamiento de Calvià</span><span class="about-tag">Ayuntamiento de Alcobendas</span><span class="about-tag">Ayuntamiento de Girona</span><span class="about-tag">Ayuntamiento de Gavà</span><span class="about-tag">Ayuntamiento de Murcia</span><span class="about-tag">Ayuntamiento de Alcoi</span><span class="about-tag">Ayuntamiento de Cáceres</span><span class="about-tag">Agència de l’Habitatge de Catalunya</span><span class="about-tag">Banc de Sang i Teixits</span></div></div></div>
+      <div class="col-md-4 about-reveal"><div class="about-card about-client-card"><div class="about-icon"><i class="fas fa-school"></i></div><h3 class="h5">Centros educativos</h3><div class="about-tags"><span class="about-tag">Departament d’Educació · Generalitat de Catalunya</span><span class="about-tag">Escoles Pies de Catalunya</span><span class="about-tag">Real Colegio Escuelas Pías de San Fernando</span><span class="about-tag">Centro de Estudios Adams Barcelona</span><span class="about-tag">Planeta de Agostini Formación</span><span class="about-tag">Planeta Innovación</span><span class="about-tag">Centro de Estudios Jaime Balmes</span></div></div></div>
+      <div class="col-md-4 about-reveal"><div class="about-card about-client-card"><div class="about-icon"><i class="fas fa-building"></i></div><h3 class="h5">Empresas</h3><div class="about-tags"><span class="about-tag">Smith &amp; Nephew</span><span class="about-tag">Schenker Logistics</span><span class="about-tag">Taylor Hobson</span><span class="about-tag">Compañía Industrial de Tabacos Montepaz</span><span class="about-tag">Cobanc</span><span class="about-tag">Lafarge Unacem</span><span class="about-tag">Sistemes Renals</span></div></div></div>
+      <div class="col-md-4 about-reveal"><div class="about-card about-client-card"><div class="about-icon"><i class="fas fa-hand-holding-heart"></i></div><h3 class="h5">ONG y fundaciones</h3><div class="about-tags"><span class="about-tag">Cruz Roja Española</span><span class="about-tag">Institut de Recerca contra la Leucèmia Josep Carreras</span></div></div></div>
     </div>
-    <p class="mt-5 mb-3 fw-semibold">Y las principales consultoras y organizaciones:</p>
-    <div class="about-chips about-logos mt-0">
-      <span class="about-chip">Telefónica</span>
+    <div class="text-center mt-5 about-reveal">
+      <p class="fw-semibold mb-3">Trabajamos mano a mano con los principales integradores y distribuidores de software en España</p>
+      <div class="about-chips about-logos mt-0">
+      <span class="about-chip">Telefónica Soluciones</span>
       <span class="about-chip">Seidor</span>
       <span class="about-chip">Danisoft</span>
-      <span class="about-chip">Cruz Roja</span>
+      <span class="about-chip">Software Científico</span>
+      </div>
+      <p class="text-muted mt-4 mb-0">Y, a través de Faronics, clientes internacionales de renombre.</p>
     </div>
   </div>
 </section>

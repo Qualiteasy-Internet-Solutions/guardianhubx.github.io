@@ -2289,3 +2289,6 @@ body.scrolled #page-title {
 .about-logo { max-height: 60px; }
 .about-partner-logo { max-height: 140px; }
 .about-feature-row { position: relative; z-index: 1; }
+.about-client-card { text-align: left; }
+.about-tags { display: flex; flex-wrap: wrap; gap: .4rem; margin-top: .75rem; }
+.about-tag { background: #f1f5ff; color: #2a3350; border-radius: 50px; padding: .3rem .8rem; font-size: .85rem; line-height: 1.3; }

@@ -1,6 +1,7 @@
 ---
 title: "About Us | 26+ Years in IT Security and Automation"
 description: "26+ years at QualitEasy: IT security and automation, 23 years as Faronics (Deep Freeze) representatives, ENS certification and a strong presence in the education sector."
+translationKey: "about-us"
 url: "/en/about-us/"
 translations:
   - lang: es
@@ -97,24 +98,28 @@ translations:
 </section>
 
 <section class="about-sec about-sec--light">
-  <div class="container text-center">
-    <div class="mb-5 about-reveal">
+  <div class="container">
+    <div class="text-center mb-5 about-reveal">
       <span class="about-eyebrow">Clients</span>
       <h2 class="about-title">Who trusts us</h2>
       <p class="text-muted mb-0">Clients across all sectors, in Spain and worldwide.</p>
     </div>
-    <div class="row g-4">
-      <div class="col-6 col-md-3 about-reveal"><div class="about-card about-client"><div class="about-icon"><i class="fas fa-university"></i></div><p class="fw-semibold mb-0">Universities</p><small class="text-muted">Most Spanish universities</small></div></div>
-      <div class="col-6 col-md-3 about-reveal"><div class="about-card about-client"><div class="about-icon"><i class="fas fa-landmark"></i></div><p class="fw-semibold mb-0">City councils</p><small class="text-muted">Local government</small></div></div>
-      <div class="col-6 col-md-3 about-reveal"><div class="about-card about-client"><div class="about-icon"><i class="fas fa-school"></i></div><p class="fw-semibold mb-0">School groups</p><small class="text-muted">Educational centres</small></div></div>
-      <div class="col-6 col-md-3 about-reveal"><div class="about-card about-client"><div class="about-icon"><i class="fas fa-globe-europe"></i></div><p class="fw-semibold mb-0">International clients</p><small class="text-muted">Well-known names, via Faronics</small></div></div>
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-6 about-reveal"><div class="about-card about-client-card"><div class="about-icon"><i class="fas fa-university"></i></div><h3 class="h5">Universities</h3><div class="about-tags"><span class="about-tag">University of Barcelona</span><span class="about-tag">UPC</span><span class="about-tag">UPCM</span><span class="about-tag">University of Las Palmas de Gran Canaria (ULPGC)</span><span class="about-tag">University of Murcia</span><span class="about-tag">European University</span><span class="about-tag">Pompeu Fabra University</span><span class="about-tag">University of Alicante</span><span class="about-tag">Polytechnic University of Valencia</span><span class="about-tag">UOC</span><span class="about-tag">Complutense University</span></div></div></div>
+      <div class="col-md-6 about-reveal"><div class="about-card about-client-card"><div class="about-icon"><i class="fas fa-city"></i></div><h3 class="h5">Public administration</h3><div class="about-tags"><span class="about-tag">Madrid City Council</span><span class="about-tag">Barcelona City Council · Barcelona Activa</span><span class="about-tag">Calvià Town Council</span><span class="about-tag">Alcobendas Town Council</span><span class="about-tag">Girona City Council</span><span class="about-tag">Gavà Town Council</span><span class="about-tag">Murcia City Council</span><span class="about-tag">Alcoi Town Council</span><span class="about-tag">Cáceres City Council</span><span class="about-tag">Catalan Housing Agency</span><span class="about-tag">Banc de Sang i Teixits</span></div></div></div>
+      <div class="col-md-4 about-reveal"><div class="about-card about-client-card"><div class="about-icon"><i class="fas fa-school"></i></div><h3 class="h5">Education centres</h3><div class="about-tags"><span class="about-tag">Department of Education · Generalitat de Catalunya</span><span class="about-tag">Escoles Pies de Catalunya</span><span class="about-tag">Real Colegio Escuelas Pías de San Fernando</span><span class="about-tag">Adams Barcelona Study Centre</span><span class="about-tag">Planeta de Agostini Formación</span><span class="about-tag">Planeta Innovación</span><span class="about-tag">Jaime Balmes Study Centre</span></div></div></div>
+      <div class="col-md-4 about-reveal"><div class="about-card about-client-card"><div class="about-icon"><i class="fas fa-building"></i></div><h3 class="h5">Companies</h3><div class="about-tags"><span class="about-tag">Smith &amp; Nephew</span><span class="about-tag">Schenker Logistics</span><span class="about-tag">Taylor Hobson</span><span class="about-tag">Compañía Industrial de Tabacos Montepaz</span><span class="about-tag">Cobanc</span><span class="about-tag">Lafarge Unacem</span><span class="about-tag">Sistemes Renals</span></div></div></div>
+      <div class="col-md-4 about-reveal"><div class="about-card about-client-card"><div class="about-icon"><i class="fas fa-hand-holding-heart"></i></div><h3 class="h5">NGOs and foundations</h3><div class="about-tags"><span class="about-tag">Spanish Red Cross</span><span class="about-tag">Josep Carreras Leukaemia Research Institute</span></div></div></div>
     </div>
-    <p class="mt-5 mb-3 fw-semibold">And leading consultancies and organisations:</p>
-    <div class="about-chips about-logos mt-0">
-      <span class="about-chip">Telefónica</span>
+    <div class="text-center mt-5 about-reveal">
+      <p class="fw-semibold mb-3">We work hand in hand with Spain's leading software integrators and distributors</p>
+      <div class="about-chips about-logos mt-0">
+      <span class="about-chip">Telefónica Soluciones</span>
       <span class="about-chip">Seidor</span>
       <span class="about-chip">Danisoft</span>
-      <span class="about-chip">Cruz Roja</span>
+      <span class="about-chip">Software Científico</span>
+      </div>
+      <p class="text-muted mt-4 mb-0">And, through Faronics, well-known international clients.</p>
     </div>
   </div>
 </section>
