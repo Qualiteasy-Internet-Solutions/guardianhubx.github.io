@@ -635,7 +635,30 @@
  form.innerHTML = `
  &lt;div class="form-slide active text-center" style="text-align:center;">
  &lt;h2 class="title">✅ All set!&lt;/h2>
- &lt;p class="lead">We have analyzed your security profile.&lt;/p></description></item><item><title>Business Cloud Backup | Microsoft 365 &amp; Veeam Solutions</title><link>https://guardianhubx.com/en/business-cloud-backup/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/en/business-cloud-backup/</guid><description>&lt;!-- Hero Section -->
+ &lt;p class="lead">We have analyzed your security profile.&lt;/p></description></item><item><title>About Us | 26+ Years in IT Security and Automation</title><link>https://guardianhubx.com/en/about-us/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/en/about-us/</guid><description>&lt;section class="about-hero">
+ &lt;div class="container text-center">
+ &lt;span class="about-badge mb-3">&lt;i class="fas fa-award">&lt;/i> QualitEasy · GuardianHubX&lt;/span>
+ &lt;h1>Over &lt;span>26 years&lt;/span> protecting and automating IT systems&lt;/h1>
+ &lt;p class="lead text-muted mx-auto mt-3 about-lead">We are not a newcomer: we have spent decades working with businesses, schools and public bodies.&lt;/p>
+ &lt;div class="about-chips">
+ &lt;span class="about-chip">&lt;i class="fas fa-snowflake">&lt;/i>Faronics representatives&lt;/span>
+ &lt;span class="about-chip">&lt;i class="fas fa-certificate">&lt;/i>ENS certified&lt;/span>
+ &lt;span class="about-chip">&lt;i class="fas fa-clipboard-check">&lt;/i>ISO 9001 · 14001 · 45001&lt;/span>
+ &lt;span class="about-chip">&lt;i class="fas fa-university">&lt;/i>Universities and public sector&lt;/span>
+ &lt;/div>
+ &lt;img src="https://guardianhubx.com/img/qualiteasy-logo.webp" alt="QualitEasy logo" class="img-fluid mt-5 about-logo">
+ &lt;/div>
+&lt;/section>
+&lt;section class="about-stats">
+ &lt;div class="container">
+ &lt;div class="row g-0">
+ &lt;div class="col-md-4 about-stat about-reveal">
+ &lt;div class="about-big">&lt;span data-count="26">26&lt;/span>+&lt;/div>
+ &lt;p>years of experience in IT security and automation&lt;/p>
+ &lt;/div>
+ &lt;div class="col-md-4 about-stat about-reveal">
+ &lt;div class="about-big">&lt;span data-count="23">23&lt;/span>&lt;/div>
+ &lt;p>years as representatives of &lt;strong>Faronics&lt;/strong> (makers of Deep Freeze)&lt;/p></description></item><item><title>Business Cloud Backup | Microsoft 365 &amp; Veeam Solutions</title><link>https://guardianhubx.com/en/business-cloud-backup/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://guardianhubx.com/en/business-cloud-backup/</guid><description>&lt;!-- Hero Section -->
 &lt;section class="landing-hero-section">
 &lt;div class="container">
 &lt;div class="row align-items-center">
