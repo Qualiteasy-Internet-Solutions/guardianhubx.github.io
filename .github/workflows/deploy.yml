@@ -125,7 +125,7 @@ jobs:
 
           INDEXNOW_KEY = "69caace2e14746e7b6040ff8c5b15c48"
           INDEXNOW_HOST = "guardianhubx.com"
-          INDEXNOW_KEY_LOCATION = "https://guardianhubx.com/IndexNow.xml"
+          INDEXNOW_KEY_LOCATION = "https://guardianhubx.com/69caace2e14746e7b6040ff8c5b15c48.txt"
           INDEXNOW_API = "https://api.indexnow.org/indexnow"
 
           # 1) Get changed content files from git
