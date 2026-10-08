@@ -1,5 +1,6 @@
 ---
 title: "Las ciberestafas más comunes que afectan a autónomos y pymes: cómo evitarlas cuando el CEO es el objetivo"
+seoTitle: "Ciberestafas al CEO: cómo proteger a autónomos y pymes"
 author: "GuardianHubX"
 date: 2025-12-21T00:00:00+00:00
 draft: false

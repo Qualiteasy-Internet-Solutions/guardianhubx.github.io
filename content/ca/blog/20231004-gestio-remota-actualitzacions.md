@@ -20,6 +20,7 @@ tags:
 - gestió de dispositius
 - tecnologia-informació
 title: 'Gestió Remota d''Actualitzacions: Simplifica el teu Manteniment i Reforça la teva Seguretat'
+seoTitle: "Gestió remota d'actualitzacions: simplifica el manteniment"
 description: "Descobreix la importància de la gestió remota d'actualitzacions i com et pot ajudar a automatitzar correccions, millorar la seguretat i estalviar temps."
 translationKey: "remote-patch-management-2023"
 ---

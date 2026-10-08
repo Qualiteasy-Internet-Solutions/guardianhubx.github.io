@@ -1,5 +1,6 @@
 ---
 title: "Cómo proteger a los empleados que trabajan desde hoteles, aeropuertos o apartamentos"
+seoTitle: "Cómo proteger a empleados en hoteles y aeropuertos"
 author: "GuardianHubX"
 date: 2026-07-27T08:00:00+00:00
 draft: false

@@ -1,5 +1,6 @@
 ---
 title: "¿Quant costen realment els ciberatacs? L'impacte econòmic de les amenaces digitals"
+seoTitle: "Quant costen realment els ciberatacs a una empresa?"
 author: "GuardianHubX"
 date: 2026-02-09T09:00:00+00:00
 draft: false

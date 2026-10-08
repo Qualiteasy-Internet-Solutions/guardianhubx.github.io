@@ -1,5 +1,6 @@
 ---
 title: "Tendències emergents en ciberamenaces per al 2026 i com preparar-se des d'avui"
+seoTitle: "Tendències en ciberamenaces 2026 i com preparar-se"
 author: "GuardianHubX"
 date: 2025-12-10T00:00:00+00:00
 draft: false

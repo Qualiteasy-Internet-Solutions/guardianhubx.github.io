@@ -1,5 +1,6 @@
 ---
 title: "El ataque que no necesita hackear nada: cómo el phishing explota la confianza en tu empresa"
+seoTitle: "Phishing BEC: el ataque que explota la confianza"
 author: "GuardianHubX"
 date: 2026-06-15T08:00:00+00:00
 draft: false

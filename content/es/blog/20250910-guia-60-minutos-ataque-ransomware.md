@@ -1,5 +1,6 @@
 ---
 title: 'Guía rápida: qué hacer en los primeros 60 minutos tras un ataque de ransomware'
+seoTitle: "Qué hacer en los primeros 60 minutos tras un ransomware"
 author: GuardianHubX
 date: 2025-09-10 00:00:00+00:00
 draft: false

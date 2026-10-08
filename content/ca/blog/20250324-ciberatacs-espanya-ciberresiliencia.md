@@ -23,6 +23,7 @@ tags:
 - tecnologia-informació
 title: 'La creixent amenaça dels ciberatacs a Espanya: claus per a una ciberresiliència
   efectiva'
+seoTitle: "Ciberatacs a Espanya: claus per a la ciberresiliència"
 translationKey: cyberattacks-spain-resilience-2025
 ---
 

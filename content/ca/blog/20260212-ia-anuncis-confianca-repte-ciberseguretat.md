@@ -1,5 +1,6 @@
 ---
 title: "El que està per arribar amb la IA: Anuncis, confiança i un nou repte en ciberseguretat"
+seoTitle: "IA i anuncis: el nou repte de confiança en ciberseguretat"
 author: "GuardianHubX"
 date: 2026-02-12T09:00:00+00:00
 draft: false

@@ -1,5 +1,6 @@
 ---
 title: "Les estafes amb reserves d'hotels que afecten empreses: com protegir els teus empleats"
+seoTitle: "Estafes amb reserves d'hotels: com protegir els empleats"
 author: "GuardianHubX"
 date: 2026-08-10T08:00:00+00:00
 draft: false

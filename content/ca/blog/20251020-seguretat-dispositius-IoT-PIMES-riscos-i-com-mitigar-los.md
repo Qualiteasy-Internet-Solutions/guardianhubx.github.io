@@ -1,5 +1,6 @@
 ---
 title: 'Seguretat per a dispositius IoT en empreses petites: riscos i com mitigar-los'
+seoTitle: "Seguretat IoT a les pimes: riscos i com mitigar-los"
 author: GuardianHubX
 date: 2025-10-20 00:00:00+00:00
 draft: false

@@ -1,5 +1,6 @@
 ---
 title: "Ransomware: la pregunta ya no es \"si nos atacan\" sino \"cuánto tardamos en recuperarnos\""
+seoTitle: "Ransomware: ¿cuánto tardaremos en recuperarnos?"
 author: "GuardianHubX"
 date: 2026-07-06T08:00:00+00:00
 draft: false

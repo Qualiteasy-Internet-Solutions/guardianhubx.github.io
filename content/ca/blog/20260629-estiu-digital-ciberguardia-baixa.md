@@ -1,5 +1,6 @@
 ---
 title: "Estiu digital: per què la ciberguàrdia baixa quan pugen les temperatures"
+seoTitle: "Estiu digital: per què baixa la guàrdia en ciberseguretat"
 author: "GuardianHubX"
 date: 2026-06-29T08:00:00+00:00
 draft: false

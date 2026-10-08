@@ -24,6 +24,7 @@ tags:
 - universitats
 title: 'Protegir les xarxes universitàries: reduir els riscos de ciberatac i simplificar
   la gestió de TI'
+seoTitle: "Xarxes universitàries: menys riscos i gestió de TI senzilla"
 translationKey: "it-management-universities-2024"
 ---
 

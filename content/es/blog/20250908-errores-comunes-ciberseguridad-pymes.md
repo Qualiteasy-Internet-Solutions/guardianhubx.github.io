@@ -1,5 +1,6 @@
 ---
 title: 5 errores comunes de ciberseguridad que cometen las pymes (y cómo evitarlos)
+seoTitle: "5 errores de ciberseguridad comunes en pymes"
 author: GuardianHubX
 date: 2025-09-08 00:00:00+00:00
 draft: false

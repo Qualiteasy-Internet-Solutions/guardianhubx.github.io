@@ -1,5 +1,6 @@
 ---
 title: "Ciberamenazas del Black Friday 2025 y lo que las empresas deben anticipar para 2026"
+seoTitle: "Ciberamenazas del Black Friday 2025 y qué esperar en 2026"
 author: "GuardianHubX"
 date: 2025-11-21T00:00:00+00:00
 draft: false

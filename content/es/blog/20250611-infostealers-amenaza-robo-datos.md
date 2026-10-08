@@ -27,7 +27,6 @@ translationKey: infostealers-2025
 ---
 
 
-# Infostealers: La Amenaza Silenciosa que Pone en Riesgo tus Datos
 
 En el actual ecosistema digital, los infostealers se han consolidado como una de las amenazas más silenciosas y preocupantes en ciberseguridad. Estos programas maliciosos están diseñados para robar información sensible sin generar señales visibles en el sistema, lo que les permite actuar de forma prolongada sin ser detectados.
 

@@ -1,5 +1,6 @@
 ---
 title: "Han hackejat una empresa amb les teves dades? Aquests són els teus drets (i gairebé ningú te'ls explica)"
+seoTitle: "Han hackejat una empresa amb les teves dades? Els teus drets"
 author: "GuardianHubX"
 date: 2026-02-20T09:00:00+00:00
 draft: false

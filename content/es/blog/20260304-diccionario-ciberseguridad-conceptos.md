@@ -26,7 +26,6 @@ keywords:
 translationKey: "cybersecurity-dictionary-concepts"
 ---
 
-# Diccionario Estratégico de Ciberseguridad: Conceptos Clave que Toda Empresa Debe Dominar
 
 La ciberseguridad es hoy un pilar estructural en cualquier organización. No se trata únicamente de tecnología, sino de [gestión del riesgo](/blog/los-datos-de-ciberataques-en-empresas/), protección de activos y continuidad del negocio. Comprender su terminología permite a directivos y responsables técnicos tomar decisiones informadas, priorizar inversiones y anticiparse a amenazas.
 

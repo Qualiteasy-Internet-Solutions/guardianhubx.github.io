@@ -41,7 +41,7 @@ El phishing es una de las formas más habituales de propagación del ransomware.
 
 Las copias de seguridad son un salvavidas. Si el ransomware consigue infiltrarse y cuentas con un sistema de copias de seguridad sólido, no estarás a merced de los atacantes. Realizar copias periódicas, automatizadas y almacenadas de forma segura es esencial. Una solución integral debe garantizar que, en caso de ataque, puedas restaurarlo todo sin pagar un rescate.
 
-![](/img/ransomware-attack-hero.webp)
+![Ataque de ransomware en un centro educativo](/img/ransomware-attack-hero.webp)
 
 ## 4. Limitar el acceso
 

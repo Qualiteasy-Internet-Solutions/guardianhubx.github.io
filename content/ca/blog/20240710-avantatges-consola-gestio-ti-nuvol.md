@@ -24,6 +24,7 @@ tags:
 - tecnologia-informació
 title: Avantatges d'utilitzar una consola al núvol per a la gestió centralitzada de
   TI
+seoTitle: "Avantatges d'una consola al núvol per gestionar la TI"
 translationKey: cloud-it-console-advantages-2024
 ---
 

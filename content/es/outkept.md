@@ -44,7 +44,7 @@ images:
     <a href="/docs/outkept-guardianhubx-es.pdf" class="btn btn-primary pdf-download" target="_blank">
       <i class="fas fa-file-pdf"></i> Descargar Brochure
     </a>
-    <a href="es/formacion-phishing-software" class="btn btn-secondary">
+    <a href="/es/formacion-phishing-software/" class="btn btn-secondary">
       <i class="fas fa-shield-alt"></i> Accede a nuestra web especial sobre phishing
     </a>
   </div>

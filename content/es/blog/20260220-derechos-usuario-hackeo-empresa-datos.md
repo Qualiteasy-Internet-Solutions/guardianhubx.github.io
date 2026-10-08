@@ -1,5 +1,6 @@
 ---
 title: "¿Han hackeado a una empresa con tus datos? Estos son tus derechos (y casi nadie te los explica)"
+seoTitle: "¿Han hackeado una empresa con tus datos? Tus derechos"
 author: "GuardianHubX"
 date: 2026-02-20T09:00:00+00:00
 draft: false

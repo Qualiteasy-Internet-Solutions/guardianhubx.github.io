@@ -22,6 +22,7 @@ tags:
 - ransomware
 - tecnología-información
 title: Guía rápida para entender los términos clave en ataques de ciberseguridad
+seoTitle: "Guía rápida de términos clave en ciberataques"
 translationKey: cybersecurity-terms-guide-2024
 ---
 

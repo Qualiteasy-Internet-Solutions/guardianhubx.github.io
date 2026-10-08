@@ -1,5 +1,6 @@
 ---
 title: "Cómo detectar un correo fraudulento en menos de 30 segundos: la guía definitiva"
+seoTitle: "Cómo detectar un correo fraudulento en 30 segundos"
 author: "GuardianHubX"
 date: 2026-07-20T08:00:00+00:00
 draft: false

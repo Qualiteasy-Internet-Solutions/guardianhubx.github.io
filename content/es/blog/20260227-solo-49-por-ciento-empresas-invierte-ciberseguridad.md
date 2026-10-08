@@ -1,5 +1,6 @@
 ---
 title: "Solo el 49 % de las empresas invierte en ciberseguridad: el riesgo silencioso que amenaza al negocio"
+seoTitle: "Solo el 49 % de las empresas invierte en ciberseguridad"
 author: "GuardianHubX"
 date: 2026-02-27T09:00:00+00:00
 draft: false

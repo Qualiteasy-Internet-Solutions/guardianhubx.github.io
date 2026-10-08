@@ -23,6 +23,7 @@ tags:
 - tecnología-información
 title: 'La creciente amenaza de los ciberataques en España: claves para una ciberresiliencia
   efectiva'
+seoTitle: "Ciberataques en España: claves para la ciberresiliencia"
 translationKey: cyberattacks-spain-resilience-2025
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: 5 errors comuns de ciberseguretat que cometen les pimes (i com evitar-los)
+seoTitle: "5 errors comuns de ciberseguretat a les pimes"
 author: GuardianHubX
 date: 2025-09-08 00:00:00+00:00
 draft: false

@@ -1,6 +1,7 @@
 ---
 title: Aquest estiu, protegeix la teva empresa fins i tot fora de l'oficina amb Prey
   Project
+seoTitle: "Protegeix els dispositius de l'empresa a l'estiu amb Prey"
 author: GuardianHubX
 date: 2025-07-28 00:00:00+00:00
 draft: false
@@ -29,7 +30,6 @@ translationKey: prey-project-summer-2025
 ---
 
 
-# Aquest estiu, protegeix la teva empresa fins i tot fora de l'oficina amb Prey Project
 
 L'estiu és sinònim de vacances, desconnexió i mobilitat. Però per a les empreses, també implica un augment dels riscos en seguretat digital.
 

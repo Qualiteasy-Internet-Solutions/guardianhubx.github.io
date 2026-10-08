@@ -1,5 +1,6 @@
 ---
 title: "L'atac que no necessita hackejar res: com el phishing explota la confiança a la teva empresa"
+seoTitle: "Phishing BEC: l'atac que explota la confiança"
 author: "GuardianHubX"
 date: 2026-06-15T08:00:00+00:00
 draft: false

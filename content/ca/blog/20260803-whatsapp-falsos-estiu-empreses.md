@@ -1,5 +1,6 @@
 ---
 title: "Compte amb els WhatsApp falsos a l'estiu: com evitar les estafes que afecten empreses"
+seoTitle: "WhatsApp falsos a l'estiu: com evitar estafes a l'empresa"
 author: "GuardianHubX"
 date: 2026-08-03T08:00:00+00:00
 draft: false

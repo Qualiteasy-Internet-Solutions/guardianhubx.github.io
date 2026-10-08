@@ -1,5 +1,6 @@
 ---
 title: "Les ciberestafes més comunes que afecten autònoms i pimes: com evitar-les quan el CEO és l'objectiu"
+seoTitle: "Ciberestafes al CEO: com protegir autònoms i pimes"
 author: "GuardianHubX"
 date: 2025-12-21T00:00:00+00:00
 draft: false

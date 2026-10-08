@@ -1,5 +1,6 @@
 ---
 title: "¿Cuánto cuestan realmente los ciberataques? El impacto económico de las amenazas digitales"
+seoTitle: "¿Cuánto cuestan realmente los ciberataques a una empresa?"
 author: "GuardianHubX"
 date: 2026-02-09T09:00:00+00:00
 draft: false

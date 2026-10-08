@@ -1,5 +1,6 @@
 ---
 title: "Por qué estas rebajas deberías protegerte más que nunca si compras online"
+seoTitle: "Rebajas online: cómo protegerte si compras por internet"
 author: "GuardianHubX"
 date: 2026-01-12T08:00:00+00:00
 draft: false

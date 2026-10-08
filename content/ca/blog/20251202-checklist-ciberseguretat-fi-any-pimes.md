@@ -1,5 +1,6 @@
 ---
 title: "Com verificar la ciberseguretat de la teva empresa abans d'acabar l'any: guia pràctica per a pimes"
+seoTitle: "Llista de control de ciberseguretat per a pimes"
 author: "GuardianHubX"
 date: 2025-12-02T00:00:00+00:00
 draft: false

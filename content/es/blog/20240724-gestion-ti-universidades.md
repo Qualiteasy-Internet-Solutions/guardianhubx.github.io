@@ -24,6 +24,7 @@ tags:
 - universidades
 title: 'Proteger las redes universitarias: reducir los riesgos de ciberataque y simplificar
   la gestión de TI'
+seoTitle: "Redes universitarias: menos riesgos y gestión de TI simple"
 translationKey: "it-management-universities-2024"
 ---
 

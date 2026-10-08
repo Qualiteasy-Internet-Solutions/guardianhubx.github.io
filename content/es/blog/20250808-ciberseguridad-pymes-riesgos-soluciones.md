@@ -1,5 +1,6 @@
 ---
 title: 'Ciberseguridad en pymes: riesgos y soluciones sin infraestructura interna'
+seoTitle: "Ciberseguridad en pymes sin infraestructura interna"
 author: GuardianHubX
 date: 2025-08-08 00:00:00+00:00
 draft: false

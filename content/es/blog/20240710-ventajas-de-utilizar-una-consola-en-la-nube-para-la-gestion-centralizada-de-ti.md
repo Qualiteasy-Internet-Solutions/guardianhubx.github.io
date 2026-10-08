@@ -24,6 +24,7 @@ tags:
 - tecnología-información
 title: Ventajas de utilizar una consola en la nube para la gestión centralizada de
   IT
+seoTitle: "Ventajas de una consola en la nube para gestionar TI"
 translationKey: cloud-it-console-advantages-2024
 ---
 

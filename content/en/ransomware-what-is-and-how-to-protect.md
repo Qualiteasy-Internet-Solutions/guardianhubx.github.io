@@ -1,5 +1,6 @@
 ---
 title: "Ransomware: What is it and how to protect your business. Complete guide"
+seoTitle: "Ransomware: what it is and how to protect your business"
 description: "What ransomware is, how it reaches your business and how to protect against it: the 5 defence layers, what to do if you are attacked and detection tools."
 ogTitle: "Ransomware: What is it and how to protect your business in 2026"
 ogDescription: "Complete ransomware guide for SMEs: entry vectors, 5 protection layers (training, endpoints, backups, network, monitoring) and incident response plan."

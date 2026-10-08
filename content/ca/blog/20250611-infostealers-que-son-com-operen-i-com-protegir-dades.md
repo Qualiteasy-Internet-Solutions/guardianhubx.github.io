@@ -27,7 +27,6 @@ translationKey: infostealers-2025
 ---
 
 
-# Infostealers: L'Amenaça Silenciosa que Posa en Risc les Teves Dades
 
 En l'actual ecosistema digital, els infostealers s'han consolidat com una de les amenaces més silencioses i preocupants en [ciberseguretat](https://guardianhubx.com/ca/objectius-ciberseguretat/). Aquests programes maliciosos estan dissenyats per robar informació sensible sense generar senyals visibles al sistema, la qual cosa els permet actuar de manera perllongada sense ser detectats.
 

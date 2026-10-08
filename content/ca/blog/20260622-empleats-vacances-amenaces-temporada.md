@@ -1,5 +1,6 @@
 ---
 title: "Empleats de vacances, amenaces de temporada: prepara el teu equip abans de l'estiu"
+seoTitle: "Empleats de vacances: prepara l'equip abans de l'estiu"
 author: "GuardianHubX"
 date: 2026-06-22T08:00:00+00:00
 draft: false

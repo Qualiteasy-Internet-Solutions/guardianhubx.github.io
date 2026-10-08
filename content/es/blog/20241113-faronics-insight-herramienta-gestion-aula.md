@@ -22,6 +22,7 @@ tags:
 - tecnología educativa
 - tecnología-información
 title: 'Faronics Insight: La Herramienta Definitiva para la Gestión del Aula Digital'
+seoTitle: "Faronics Insight: gestión del aula digital"
 translationKey: faronics-insight-classroom-2024
 ---
 

@@ -16,6 +16,7 @@
 <div class="container mt-3">
   <div class="row justify-content-md-center">
     <div class="col-lg-8">
+      <h1 class="mb-4">{{ index (split .Title " | ") 0 }}</h1>
       <!-- Section Content (if any) -->
       {{ if .Content }}
       <div class="section-content mb-5">

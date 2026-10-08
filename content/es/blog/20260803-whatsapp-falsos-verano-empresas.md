@@ -1,5 +1,6 @@
 ---
 title: "Cuidado con los WhatsApp falsos durante el verano: cómo evitar las estafas que afectan a empresas"
+seoTitle: "WhatsApp falsos en verano: cómo evitar estafas a empresas"
 author: "GuardianHubX"
 date: 2026-08-03T08:00:00+00:00
 draft: false

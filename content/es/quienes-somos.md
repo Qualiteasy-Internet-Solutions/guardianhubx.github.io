@@ -1,5 +1,6 @@
 ---
 title: "Quiénes somos | Más de 26 años en seguridad y automatización informática"
+seoTitle: "Quiénes somos | 26 años en seguridad informática"
 description: "Más de 26 años de trayectoria en QualitEasy: seguridad y automatización informática, 23 años como representantes de Faronics (Deep Freeze) certificación ENS y presencia en el sector educativo."
 translationKey: "about-us"
 url: "/es/quienes-somos/"

@@ -1,5 +1,6 @@
 ---
 title: 'Seguridad para dispositivos IoT en empresas pequeñas: riesgos y cómo mitigarlos'
+seoTitle: "Seguridad IoT en pymes: riesgos y cómo mitigarlos"
 author: GuardianHubX
 date: 2025-10-20 00:00:00+00:00
 draft: false

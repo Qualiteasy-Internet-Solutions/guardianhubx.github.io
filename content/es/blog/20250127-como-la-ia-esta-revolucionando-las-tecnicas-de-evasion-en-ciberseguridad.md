@@ -22,6 +22,7 @@ tags:
 - ransomware
 - tecnología-información
 title: Cómo la IA Está Revolucionando las Técnicas de Evasión en Ciberseguridad
+seoTitle: "Cómo la IA revoluciona la evasión en ciberseguridad"
 translationKey: ai-evasion-techniques-2025
 ---
 

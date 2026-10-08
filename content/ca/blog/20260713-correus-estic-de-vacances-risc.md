@@ -1,5 +1,6 @@
 ---
 title: "Correus d'\"Estic de vacances\": l'error que aprofiten els ciberdelinqüents"
+seoTitle: "Correus «Estic de vacances»: un risc per a l'empresa"
 author: "GuardianHubX"
 date: 2026-07-13T08:00:00+00:00
 draft: false

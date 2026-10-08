@@ -1,5 +1,6 @@
 ---
 title: 'Ciberseguretat a pimes: riscos i solucions sense infraestructura interna'
+seoTitle: "Ciberseguretat a pimes sense infraestructura interna"
 author: GuardianHubX
 date: 2025-08-08 00:00:00+00:00
 draft: false

@@ -16,6 +16,7 @@ tags:
 - tecnologia-informació
 title: 'Directiva NIS2 i la Nova Llei de Ciberseguretat: El que la teva Empresa ha
   de Saber el 2025'
+seoTitle: "Directiva NIS2: el que la teva empresa ha de saber"
 description: La Directiva NIS2 transforma el panorama de la ciberseguretat a Espanya.
   Descobreix a quines empreses afecta, les seves obligacions i com complir la normativa.
 cover:

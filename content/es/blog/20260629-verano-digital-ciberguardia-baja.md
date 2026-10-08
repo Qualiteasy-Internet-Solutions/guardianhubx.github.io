@@ -1,5 +1,6 @@
 ---
 title: "Verano digital: por qué la ciberguardia baja cuando suben las temperaturas"
+seoTitle: "Verano digital: por qué baja la guardia en ciberseguridad"
 author: "GuardianHubX"
 date: 2026-06-29T08:00:00+00:00
 draft: false

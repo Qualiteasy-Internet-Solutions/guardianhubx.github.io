@@ -1,5 +1,6 @@
 ---
 title: "Ransomware: la pregunta ja no és \"ens atacaran\" sinó \"quant trigarem a recuperar-nos\""
+seoTitle: "Ransomware: quant trigarem a recuperar-nos?"
 author: "GuardianHubX"
 date: 2026-07-06T08:00:00+00:00
 draft: false

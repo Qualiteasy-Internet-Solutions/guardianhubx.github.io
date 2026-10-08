@@ -1,5 +1,6 @@
 ---
 title: "Las estafas con reservas de hoteles que afectan a empresas: cómo proteger a tus empleados"
+seoTitle: "Estafas con reservas de hotel: cómo proteger a tu equipo"
 author: "GuardianHubX"
 date: 2026-08-10T08:00:00+00:00
 draft: false

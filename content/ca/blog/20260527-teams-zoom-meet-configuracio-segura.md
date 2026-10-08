@@ -1,5 +1,6 @@
 ---
 title: "Configuració segura de Microsoft Teams, Zoom i Google Meet per a la teva empresa"
+seoTitle: "Configuració segura de Teams, Zoom i Google Meet"
 author: "GuardianHubX"
 date: 2026-05-27T11:00:00+00:00
 draft: false

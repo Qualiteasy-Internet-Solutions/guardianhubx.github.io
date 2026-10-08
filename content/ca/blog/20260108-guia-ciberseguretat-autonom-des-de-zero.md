@@ -1,5 +1,6 @@
 ---
 title: "Guia de primers passos en ciberseguretat per a un autònom que comença des de zero"
+seoTitle: "Ciberseguretat per a autònoms: guia des de zero"
 author: "GuardianHubX"
 date: 2026-01-08T00:00:00+00:00
 draft: false

@@ -1,5 +1,6 @@
 ---
 title: "Cómo checkear la ciberseguridad de tu empresa antes de finalizar el año: guía práctica para pymes"
+seoTitle: "Checklist de ciberseguridad de fin de año para pymes"
 author: "GuardianHubX"
 date: 2025-12-02T00:00:00+00:00
 draft: false

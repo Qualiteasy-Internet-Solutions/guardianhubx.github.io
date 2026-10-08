@@ -194,7 +194,7 @@ faq_items:
     <div class="form-check bg-light p-3 ps-5 rounded border">
         <input class="form-check-input" type="checkbox" id="privacy-policy" name="privacy-policy" required>
         <label class="form-check-label fw-bold ms-2" for="privacy-policy">
-        He leído y acepto la <a href="/es/politica-de-privacidad" target="_blank" rel="noopener">Política de Privacidad</a>.
+        He leído y acepto la <a href="/es/politica-privacidad/" target="_blank" rel="noopener">Política de Privacidad</a>.
         </label>
     </div>
     </div>    

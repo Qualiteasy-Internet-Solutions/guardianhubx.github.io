@@ -28,7 +28,6 @@ translationKey: ato-2025
 ---
 
 
-# Com evitar el robatori de comptes (ATO) a la teva empresa
 
 La teva empresa està preparada per aturar un atac de robatori de comptes?
 

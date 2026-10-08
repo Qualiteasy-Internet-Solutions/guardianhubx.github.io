@@ -1,5 +1,6 @@
 ---
 title: 'Guia ràpida: què fer en els primers 60 minuts després d’un atac de ransomware'
+seoTitle: "Què fer en els primers 60 minuts després d'un ransomware"
 author: GuardianHubX
 date: 2025-09-10 00:00:00+00:00
 draft: false

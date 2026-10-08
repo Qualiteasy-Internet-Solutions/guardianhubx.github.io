@@ -1,5 +1,6 @@
 ---
 title: "Contrasenya Filtrada: 5 Passos per Protegir-te i Recuperar la Seguretat"
+seoTitle: "Contrasenya filtrada: 5 passos per protegir-te"
 author: "GuardianHubX"
 date: 2026-04-06T09:00:00+00:00
 draft: false

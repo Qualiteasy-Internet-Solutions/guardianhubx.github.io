@@ -1,5 +1,6 @@
 ---
 title: "Guía de primeros pasos en ciberseguridad para un autónomo que empieza desde cero"
+seoTitle: "Ciberseguridad para autónomos: guía desde cero"
 author: "GuardianHubX"
 date: 2026-01-08T00:00:00+00:00
 draft: false

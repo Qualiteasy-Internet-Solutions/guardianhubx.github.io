@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:locale" content="{{ .Lang }}" />
-<title>{{ .Title }}</title>
+<title>{{ .Params.seoTitle | default .Title }}</title>
 
 {{ $description := "" }}
 

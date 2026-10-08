@@ -27,7 +27,6 @@ keywords:
 translationKey: "49-percent-companies-no-invest-cybersecurity"
 ---
 
-# 49% de les Empreses No Inverteix en Ciberseguretat: El Risc Ignorat
 
 La digitalització avança sense pausa. L'ús del núvol, el teletreball i la dependència de dades s'han convertit en la base de l'activitat empresarial moderna. Tanmateix, una xifra recent resulta preocupant: **només el 49% de les organitzacions inverteix en ciberseguretat**, fins i tot després d'haver sofrit incidents o filtracions de dades.
 

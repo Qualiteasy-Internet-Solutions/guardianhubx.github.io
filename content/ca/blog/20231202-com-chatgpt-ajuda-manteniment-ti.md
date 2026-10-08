@@ -21,6 +21,7 @@ tags:
 - manteniment
 - tecnologia-informació
 title: Com ChatGPT et pot ajudar en el manteniment i actualitzacions dels teus equips
+seoTitle: "Com ChatGPT t'ajuda en el manteniment dels equips"
 description: Descobreix com un assistent d'IA com ChatGPT pot ajudar un administrador
   de sistemes en tasques de manteniment, actualitzacions i gestió d'equips.
 translationKey: chatgpt-it-maintenance-2023

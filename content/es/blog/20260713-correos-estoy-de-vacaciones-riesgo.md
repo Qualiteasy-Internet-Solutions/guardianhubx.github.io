@@ -1,5 +1,6 @@
 ---
 title: "Correos de \"Estoy de Vacaciones\": el error que aprovechan los ciberdelincuentes"
+seoTitle: "Correos «Estoy de vacaciones»: un riesgo para tu empresa"
 author: "GuardianHubX"
 date: 2026-07-13T08:00:00+00:00
 draft: false

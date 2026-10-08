@@ -1,5 +1,6 @@
 ---
 title: "Només el 49 % de les empreses inverteix en ciberseguretat: el risc silenciós que amenaça el negoci"
+seoTitle: "Només el 49 % de les empreses inverteix en ciberseguretat"
 author: "GuardianHubX"
 date: 2026-02-27T09:00:00+00:00
 draft: false

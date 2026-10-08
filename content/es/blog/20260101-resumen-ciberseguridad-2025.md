@@ -1,5 +1,6 @@
 ---
 title: "Lo mejor de 2025 en Ciberseguridad: Guía esencial para empezar el año blindado"
+seoTitle: "Lo mejor de 2025 en ciberseguridad: guía esencial"
 author: "GuardianHubX"
 date: 2026-01-01T09:00:00+00:00
 draft: false

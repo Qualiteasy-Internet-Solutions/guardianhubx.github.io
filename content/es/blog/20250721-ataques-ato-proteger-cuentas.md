@@ -28,7 +28,6 @@ translationKey: ato-2025
 ---
 
 
-# Cómo proteger tu empresa frente a la toma de control de cuentas (ATO)
 
 ¿Tu empresa está preparada para frenar un ataque de ATO?
 

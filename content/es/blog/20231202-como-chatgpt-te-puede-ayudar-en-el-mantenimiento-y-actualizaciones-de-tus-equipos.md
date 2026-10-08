@@ -20,6 +20,7 @@ tags:
 - mantenimiento
 - tecnología-información
 title: Cómo ChatGPT te puede ayudar en el mantenimiento y actualizaciones de tus equipos
+seoTitle: "Cómo ChatGPT te ayuda en el mantenimiento de tus equipos"
 description: Descubre cómo un asistente de IA como ChatGPT puede ayudar a un administrador
   de sistemas en tareas de mantenimiento, actualizaciones y gestión de equipos.
 translationKey: chatgpt-it-maintenance-2023

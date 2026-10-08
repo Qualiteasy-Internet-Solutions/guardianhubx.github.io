@@ -1,5 +1,6 @@
 ---
 title: "Ciberseguretat 2026: Per què el teu checklist de final d'any ja no serveix (i què fer al respecte)"
+seoTitle: "Ciberseguretat 2026: per què la llista anual ja no serveix"
 author: "GuardianHubX"
 date: 2025-12-29T00:00:00+00:00
 draft: false

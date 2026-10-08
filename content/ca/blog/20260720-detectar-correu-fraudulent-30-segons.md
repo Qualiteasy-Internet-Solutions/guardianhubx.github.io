@@ -1,5 +1,6 @@
 ---
 title: "Com detectar un correu fraudulent en menys de 30 segons: la guia definitiva"
+seoTitle: "Com detectar un correu fraudulent en menys de 30 segons"
 author: "GuardianHubX"
 date: 2026-07-20T08:00:00+00:00
 draft: false

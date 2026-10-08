@@ -26,7 +26,6 @@ keywords:
 translationKey: "cybersecurity-dictionary-concepts"
 ---
 
-# Diccionari Estratègic de Ciberseguretat: Conceptes Clau que Tota Empresa Ha de Dominar
 
 La ciberseguretat és avui un pilar estructural en qualsevol organització. No es tracta únicament de tecnologia, sinó de [gestió del risc](/blog/ca/les-dades-de-ciberatacs-a-empreses/), protecció d'actius i continuïtat del negoci. Comprendre la seva terminologia permet a directius i responsables tècnics prendre decisions informades, prioritzar inversions i anticipar-se a amenaces.
 

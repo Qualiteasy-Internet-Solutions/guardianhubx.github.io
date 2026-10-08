@@ -1,5 +1,6 @@
 ---
 title: "Lo que está por llegar con la IA: Anuncios, confianza y un nuevo reto en ciberseguridad"
+seoTitle: "IA y anuncios: el nuevo reto de confianza en ciberseguridad"
 author: "GuardianHubX"
 date: 2026-02-12T09:00:00+00:00
 draft: false

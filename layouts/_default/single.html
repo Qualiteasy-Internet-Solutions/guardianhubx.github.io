@@ -1,5 +1,6 @@
 {{ define "main" }}
 <article class="container my-5">  
+  {{ if not (findRE "<h1" .Content 1) }}<h1 class="mb-4">{{ index (split .Title " | ") 0 }}</h1>{{ end }}
   {{ .Content }}
 </article>
 {{ end }}

@@ -1,5 +1,6 @@
 ---
 title: "Per què en aquestes rebaixes t'hauries de protegir més que mai si compres online"
+seoTitle: "Rebaixes en línia: com protegir-te si compres per internet"
 author: "GuardianHubX"
 date: 2026-01-12T08:00:00+00:00
 draft: false
