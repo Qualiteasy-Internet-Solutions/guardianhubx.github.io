@@ -818,3 +818,10 @@
 
 - id: about_us
   translation: "About us"
+
+- id: ens_cert_alt
+  translation: "ENS (Spanish National Security Framework) Certification, MEDIUM category"
+- id: ens_cert_number
+  translation: "ENS certificate no."
+- id: ens_cert_download
+  translation: "Download signed PDF"

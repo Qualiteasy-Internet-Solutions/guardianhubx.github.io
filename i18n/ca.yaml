@@ -827,3 +827,10 @@
 
 - id: about_us
   translation: "Qui som"
+
+- id: ens_cert_alt
+  translation: "Certificació de Conformitat amb l'ENS, categoria MITJANA"
+- id: ens_cert_number
+  translation: "Certificat ENS núm."
+- id: ens_cert_download
+  translation: "Descarregar PDF signat"

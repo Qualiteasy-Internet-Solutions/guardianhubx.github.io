@@ -825,3 +825,10 @@
 
 - id: about_us
   translation: "Quiénes somos"
+
+- id: ens_cert_alt
+  translation: "Certificación de Conformidad con el ENS, categoría MEDIA"
+- id: ens_cert_number
+  translation: "Certificado ENS nº"
+- id: ens_cert_download
+  translation: "Descargar PDF firmado"
