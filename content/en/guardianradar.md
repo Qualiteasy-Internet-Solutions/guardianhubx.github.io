@@ -9,6 +9,7 @@ slug: "guardianradar"
 layout: "radar"
 logo: "/img/guardianradar-logo.webp"
 tagline: "No installations. No technical jargon. No complications."
+hero_cta: "Activate my Radar Now"
 intro:
   - title: "We warn you before it becomes a problem"
     description: "If something happens to your email or web, you need to know. We designed this **cybersecurity service for freelancers and SMBs** who want protection without complications. Simple and effective digital surveillance."
