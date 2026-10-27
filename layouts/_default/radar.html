@@ -14,7 +14,7 @@
         <h1 class="landing-hero-title {{ .Slug }}">{{ .Params.hero_title | default .Title }}</h1>
         <h2 class="landing-hero-subtitle">{{ .Params.tagline }}</h2>
         {{ with .Params.hero_cta }}
-        <a href="{{ "guardianradar-config/" | relLangURL }}" class="btn-action btn-primary-action mt-4">🚀 {{ . }}</a>
+        <a href="{{ "guardianradar-config/" | relLangURL }}" class="btn-action btn-primary-action mt-4 d-block mx-auto mx-lg-0">🚀 {{ . }}</a>
         {{ end }}
       </div>
       <div class="col-lg-6 text-center landing-slide-in-right">
