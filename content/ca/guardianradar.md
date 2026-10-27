@@ -9,6 +9,9 @@ layout: "radar"
 logo: "/img/guardianradar-logo.webp"
 tagline: "Sense instal·lacions. Sense tecnicismes. Sense complicacions."
 hero_cta: "Activar el meu Radar Ara"
+promo:
+  title: "3 mesos gratis!"
+  text: "Prova-ho ara sense compromís: el descompte s’aplica automàticament en activar-lo."
 intro:
   - title: "T'avisem abans que sigui un problema"
     description: "Si li passa alguna cosa al teu email o web, ho has de saber. Hem dissenyat aquest servei de **ciberseguretat per a autònoms i Pimes** que no volen complicacions, però sí protegir-se. Vigilància digital simple i efectiva."    

@@ -13,6 +13,21 @@
       <div class="col-lg-6 landing-fade-in">              
         <h1 class="landing-hero-title {{ .Slug }}">{{ .Params.hero_title | default .Title }}</h1>
         <h2 class="landing-hero-subtitle">{{ .Params.tagline }}</h2>
+        {{ with .Params.promo }}
+        <div id="radar-promo" class="alert alert-success mt-4 mb-0" hidden>
+          <strong>🎁 {{ .title }}</strong><br>{{ .text }}
+        </div>
+        <script>
+          (function () {
+            var promo = new URLSearchParams(location.search).get('promo');
+            try {
+              if (promo) sessionStorage.setItem('ghx_promo', promo);
+              promo = sessionStorage.getItem('ghx_promo');
+            } catch (e) {}
+            if (promo === '3m') document.getElementById('radar-promo').hidden = false;
+          })();
+        </script>
+        {{ end }}
         {{ with .Params.hero_cta }}
         <a href="{{ "guardianradar-config/" | relLangURL }}" class="btn-action btn-primary-action mt-4 d-block mx-auto mx-lg-0">🚀 {{ . }}</a>
         {{ end }}

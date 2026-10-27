@@ -170,6 +170,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const _v = atob('VFIzTU9OVEhTMjAyNg==');
     const validateDiscountCode = (input) => input.toUpperCase().trim() === _v;
 
+    // Campanya ?promo=3m (desada per la pàgina de GuardianRadar) → aplica el codi de 3 mesos
+    let _promo = '';
+    try { _promo = sessionStorage.getItem('ghx_promo') || ''; } catch (e) {}
+    if (_promo === '3m') {
+        data.discount_code = _v;
+        data.pagament = 'free_trial_3_months';
+    }
+
     function render() {
         let html = "";
         switch(step) {
@@ -324,11 +332,11 @@ document.addEventListener('DOMContentLoaded', function() {
                         <div class="field-label">{{ i18n "radar_discount_label" | safeJS }}</div>
                         <div style="display: flex; gap: 10px; align-items: flex-start;">
                             <input type="text" id="val-discount-code" class="form-input" placeholder="{{ i18n "radar_discount_placeholder" | safeJS }}" value="${data.discount_code}" style="flex: 1;">
-                            <div id="discount-badge" style="display: none; padding: 12px 16px; background: #10b981; color: white; border-radius: 10px; font-size: 0.85rem; font-weight: 600; white-space: nowrap; margin-top: 2px; height: fit-content;">{{ i18n "radar_discount_valid" | safeJS }}</div>
+                            <div id="discount-badge" style="display: ${data.discount_code ? 'inline-flex' : 'none'}; padding: 12px 16px; background: #10b981; color: white; border-radius: 10px; font-size: 0.85rem; font-weight: 600; white-space: nowrap; margin-top: 2px; height: fit-content;">{{ i18n "radar_discount_valid" | safeJS }}</div>
                             <div id="discount-error" style="display: none; padding: 12px 16px; background: #ef4444; color: white; border-radius: 10px; font-size: 0.85rem; font-weight: 600; white-space: nowrap; margin-top: 2px; height: fit-content;">{{ i18n "radar_discount_invalid" | safeJS }}</div>
                         </div>
                     </div>
-                    <button type="button" id="final-btn" onclick="window.goNext(5)" class="btn-main" style="display:none; margin-top:20px;">{{ i18n "radar_btn_continue" | safeJS }} <i class="fas fa-arrow-right"></i></button>
+                    <button type="button" id="final-btn" onclick="window.goNext(5)" class="btn-main" style="display:${data.pagament || data.discount_code ? 'flex' : 'none'}; margin-top:20px;">{{ i18n "radar_btn_continue" | safeJS }} <i class="fas fa-arrow-right"></i></button>
                 </div>`;
                 break;
 
