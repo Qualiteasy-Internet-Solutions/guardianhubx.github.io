@@ -1,4 +1,5 @@
 ---
+seoTitle: "Por qué mantener las licencias de software actualizadas"
 author: GuardianHubX
 categories:
 - ciberseguridad

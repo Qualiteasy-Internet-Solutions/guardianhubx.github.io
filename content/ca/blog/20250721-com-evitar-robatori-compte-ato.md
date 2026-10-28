@@ -15,9 +15,7 @@ tags:
 - cultura-digital
 - gestió-d-identitats
 - protecció-de-dades
-description: Els atacs de robatori de comptes (ATO) són una de les amenaces més greus
-  avui dia. Descobreix com prevenir-los amb eines tecnològiques, formació i vigilància
-  proactiva.
+description: "El robatori de comptes (ATO) és una de les amenaces més greus d'avui. Com prevenir-lo amb eines tecnològiques, formació i vigilància proactiva."
 cover:
   image: uploads/ataques-ato-proteger-cuentas-guardianhubx.webp
   width: 1537

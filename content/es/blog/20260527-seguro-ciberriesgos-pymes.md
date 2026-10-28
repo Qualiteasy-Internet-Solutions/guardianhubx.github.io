@@ -23,7 +23,7 @@ cover:
   height: 301
   alt: "Seguro de ciberriesgos para empresas: coberturas y coste"
   caption: "Fuente: GuardianHubX"
-relatedProduct: "guardianaradar"
+relatedProduct: "guardianradar"
 featured: false
 keywords:
   - "seguro ciberriesgos pymes"
@@ -175,7 +175,7 @@ Cada vez es más habitual que las aseguradoras revisen medidas técnicas concret
 
 También suele influir el nivel general de protección que la empresa pueda demostrar en sus sistemas.
 
-Por eso tiene sentido enlazar aquí con [GuardianRadar](/es/guardianaradar/): cada vez es más frecuente que se pidan evidencias de postura de seguridad, visibilidad del riesgo y capacidad de detección temprana antes de aceptar o renovar cobertura.
+Por eso tiene sentido enlazar aquí con [GuardianRadar](/es/guardianradar/): cada vez es más frecuente que se pidan evidencias de postura de seguridad, visibilidad del riesgo y capacidad de detección temprana antes de aceptar o renovar cobertura.
 
 ---
 
@@ -227,4 +227,4 @@ Un ciberseguro puede ser una buena decisión para una pyme, pero solo si se enti
 
 La pregunta no es solo cuánto cuesta, sino si tu empresa cumple hoy las condiciones reales para que ese seguro responda cuando haga falta. Y ahí la visibilidad del riesgo marca la diferencia.
 
-Si quieres reforzar la postura de seguridad de tu empresa y llegar mejor preparado a una contratación o renovación de ciberseguro, en [GuardianHub](/es/) podemos ayudarte. Descubre cómo [GuardianRadar](/es/guardianaradar/) te proporciona la visibilidad de riesgos que demandan las aseguradoras.
+Si quieres reforzar la postura de seguridad de tu empresa y llegar mejor preparado a una contratación o renovación de ciberseguro, en [GuardianHub](/es/) podemos ayudarte. Descubre cómo [GuardianRadar](/es/guardianradar/) te proporciona la visibilidad de riesgos que demandan las aseguradoras.

@@ -16,7 +16,7 @@ tags:
 - intel·ligència-artificial
 - phishing
 - promocions-ofertes
-description: "El 2026, les rebaixes online són el principal objectiu dels ciberdelinqüents. Descobreix com la IA ha sofisticat les estafes i com protegir la teva identitat digital."
+description: "El 2026 les rebaixes en línia són el gran objectiu dels ciberdelinqüents. Com la IA ha sofisticat les estafes i com protegir la teva identitat."
 cover:
   image: "uploads/rebajas-online-seguridad-digital.webp"
   width: 1115

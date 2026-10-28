@@ -1,4 +1,5 @@
 ---
+seoTitle: "Programari de formació antiphishing per a empleats"
 title: "Evita el phishing amb el software que forma els teus empleats"
 description: "Formació en Phishing. Avalua gratis l'estat de la ciberseguretat de la teva empresa amb simulacions realistes i formació."
 ogImage: "/img/phishing-software.svg"

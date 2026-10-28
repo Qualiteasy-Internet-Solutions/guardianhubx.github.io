@@ -1,4 +1,5 @@
 ---
+seoTitle: "Per què cal tenir les llicències de programari al dia"
 author: GuardianHubX
 categories:
 - ciberseguretat

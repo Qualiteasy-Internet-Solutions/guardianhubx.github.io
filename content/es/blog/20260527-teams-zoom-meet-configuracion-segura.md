@@ -1,4 +1,5 @@
 ---
+seoTitle: "Teams, Zoom y Meet: configuración segura para empresas"
 title: "Configuración segura de Teams, Zoom y Google Meet para tu empresa"
 author: "GuardianHubX"
 date: 2026-05-27T11:00:00+00:00
@@ -23,7 +24,7 @@ cover:
   height: 301
   alt: "Configuración segura de Teams, Zoom y Google Meet"
   caption: "Fuente: GuardianHubX"
-relatedProduct: "guardianaradar"
+relatedProduct: "guardianradar"
 featured: false
 keywords:
   - "Teams configuración segura"
@@ -182,4 +183,4 @@ Configurar bien toma una hora. Una brecha de datos cuesta decenas de miles de eu
 
 Los controles están ahí. La mayoría de empresas simplemente no los usan.
 
-Si quieres una auditoría de seguridad en tus reuniones y colaboración remota, en [GuardianHub](/es/) podemos ayudarte. Descubre cómo [GuardianRadar](/es/guardianaradar/) detecta configuraciones inseguras en tiempo real.
+Si quieres una auditoría de seguridad en tus reuniones y colaboración remota, en [GuardianHub](/es/) podemos ayudarte. Descubre cómo [GuardianRadar](/es/guardianradar/) detecta configuraciones inseguras en tiempo real.

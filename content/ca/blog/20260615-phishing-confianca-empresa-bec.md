@@ -32,7 +32,7 @@ El phishing modern no és un correu matusser amb faltes d'ortografia. És un mis
 
 ## Com funciona: un exemple que passa cada dia
 
-El domini és gairebé idèntic al real. El nom és el del director general. El to és l'habitual. La pressió del temps impedeix pensar. Aquest atac —anomenat Business Email Compromise o BEC— és responsable de milers de milions en pèrdues globals cada any. I no requereix cap malware. Si mai has dubtat d'un missatge així, aquí expliquem [com saber si un correu sospitós és realment phishing](/blog/ca/correu-sospitos-identificar-phishing/) i què cal fer.
+El domini és gairebé idèntic al real. El nom és el del director general. El to és l'habitual. La pressió del temps impedeix pensar. Aquest atac —anomenat Business Email Compromise o BEC— és responsable de milers de milions en pèrdues globals cada any. I no requereix cap malware. Si mai has dubtat d'un missatge així, aquí expliquem [com saber si un correu sospitós és realment phishing](/blog/ca/correu-sospitos-identificar-phishing-que-fer/) i què cal fer.
 
 La suplantació no sempre arriba per escrit: cada cop és més freqüent que els atacants [clonin la veu del director general mitjançant intel·ligència artificial](/blog/ca/deepfakes-veu-frau-ceo-ia/) per donar credibilitat a una trucada d'última hora.
 

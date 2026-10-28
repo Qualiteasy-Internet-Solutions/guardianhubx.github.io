@@ -40,6 +40,7 @@
                 src="{{ .Params.cover.image }}"
                 alt="{{ .Params.cover.alt | default .Title }}"
                 class="img-fluid rounded"
+                {{ with .Params.cover.image }}{{ $f := path.Join "static" . }}{{ if fileExists $f }}{{ with imageConfig $f }}width="{{ .Width }}" height="{{ .Height }}"{{ end }}{{ end }}{{ end }}
                 loading="lazy">
             </a>
           </div>

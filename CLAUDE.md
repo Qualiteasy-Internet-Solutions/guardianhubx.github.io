@@ -174,7 +174,7 @@ category: "threat-analysis"  # threat-analysis | how-to-guide | news | complianc
 tags:
   - tag-from-standardized-list
   - max-8-tags-minimum-3
-relatedProduct: "guardianaradar"  # optional
+relatedProduct: "guardianradar"  # optional
 featured: false
 keywords:
   - "primary keyword"
@@ -211,7 +211,7 @@ keywords:
 - `/es/formacion-phishing-software/` — Security awareness training; link when discussing employee education
 
 **Solution Pages:**
-- `/es/guardianaradar/` — Always include in CTA (already in conclusion)
+- `/es/guardianradar/` — Always include in CTA (already in conclusion)
 - `/es/ironwall/` — Authentication & access control
 - `/es/nordsecurity/` — NordPass for password management
 - `/es/smartlayer/` — Network/infrastructure security
@@ -230,7 +230,7 @@ keywords:
 - `/es/tipos-ataques-ciberneticos/` — context on attack types
 - `/es/nordsecurity/` — password management solution
 - `/es/formacion-phishing-software/` — security training for prevention
-- `/es/guardianaradar/` — monitoring solution in CTA
+- `/es/guardianradar/` — monitoring solution in CTA
 
 **Do NOT link:**
 - To blog articles from blog articles (only to pillar/solution pages)

@@ -1,4 +1,5 @@
 ---
+seoTitle: "Seguretat al núvol per a pimes: riscos, mites i solucions"
 title: "Seguretat al núvol per a pimes: riscos, mites i solucions pràctiques"
 author: "GuardianHubX"
 date: 2026-01-15T00:00:00+00:00

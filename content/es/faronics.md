@@ -1,4 +1,5 @@
 ---
+seoTitle: "Faronics | Ciberseguridad y gestión de sistemas"
 title: "Faronics | Soluciones de Ciberseguridad y Gestión de Sistemas"
 layout: "product"
 description: "Faronics Deep Freeze y Faronics Cloud: protección de endpoints, gestión remota de dispositivos y control de aulas para empresas y centros educativos."

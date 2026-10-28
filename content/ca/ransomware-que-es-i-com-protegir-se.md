@@ -1,4 +1,5 @@
 ---
+seoTitle: "Ransomware: què és i com protegir la teva empresa"
 title: "Ransomware: Què és i com protegir-se. Guia completa per a empreses"
 description: "Què és el ransomware, com arriba a la teva empresa i com protegir-se: les 5 capes de defensa, què fer si patiu un atac i eines de detecció."
 ogTitle: "Ransomware: Què és i com protegir la teva empresa el 2026"

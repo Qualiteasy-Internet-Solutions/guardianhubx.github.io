@@ -49,7 +49,7 @@ L'objectiu és sempre el mateix: aconseguir que la víctima faci clic en un enll
 
 ## Com identificar una reserva fraudulenta
 
-Abans de respondre a qualsevol missatge revisa sempre aquests aspectes: comprova el remitent (no n'hi ha prou de llegir el nom, revisa el domini complet), analitza l'enllaç (coincideix realment amb la web oficial?) i desconfia de la urgència. Frases com "darrer avís", "pagament immediat" o "acció requerida avui" són eines preferides dels atacants. Mai introdueixis dades bancàries des d'un enllaç rebut per correu: si hi ha un problema amb la reserva, entra manualment a la plataforma oficial o truca directament a l'hotel. Aquesta mateixa lògica s'aplica a qualsevol [correu sospitós que demani verificar dades o confirmar una acció urgent](/blog/ca/correu-sospitos-identificar-phishing/).
+Abans de respondre a qualsevol missatge revisa sempre aquests aspectes: comprova el remitent (no n'hi ha prou de llegir el nom, revisa el domini complet), analitza l'enllaç (coincideix realment amb la web oficial?) i desconfia de la urgència. Frases com "darrer avís", "pagament immediat" o "acció requerida avui" són eines preferides dels atacants. Mai introdueixis dades bancàries des d'un enllaç rebut per correu: si hi ha un problema amb la reserva, entra manualment a la plataforma oficial o truca directament a l'hotel. Aquesta mateixa lògica s'aplica a qualsevol [correu sospitós que demani verificar dades o confirmar una acció urgent](/blog/ca/correu-sospitos-identificar-phishing-que-fer/).
 
 ## El risc del teletreball durant el viatge
 

@@ -185,7 +185,7 @@
 }
 
 .blog-content a {
-  color: #00ADEF;
+  color: #0079a8;
   text-decoration: none;
   border-bottom: 1px solid #00ADEF;
 }
@@ -226,7 +226,7 @@
 }
 
 .badge.bg-secondary {
-  background-color: #00ADEF !important;
+  background-color: #0079a8 !important;
   color: #ffffff;
 }
 
@@ -257,7 +257,7 @@
 
 .pagination .btn.btn-outline-secondary {
   border-color: #00ADEF;
-  color: #00ADEF;
+  color: #0079a8;
 }
 
 .pagination .btn.btn-outline-secondary:hover {

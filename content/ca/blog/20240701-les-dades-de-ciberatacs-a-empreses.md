@@ -1,4 +1,5 @@
 ---
+seoTitle: "Dades que demostren el risc real de ciberatacs a empreses"
 author: GuardianHubX
 categories:
 - ciberseguretat

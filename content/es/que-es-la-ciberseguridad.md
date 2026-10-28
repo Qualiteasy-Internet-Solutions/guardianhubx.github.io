@@ -1,4 +1,5 @@
 ---
+seoTitle: "¿Qué es la ciberseguridad? Guía básica para empresas"
 title: "¿Qué es la Ciberseguridad? Tu escudo en la era hiperconectada"
 description: "Guía completa sobre ciberseguridad: desde definiciones básicas hasta la Tríada CIA y las amenazas actuales. Protege tu información con GuardianHubX."
 ogImage: "/img/cybersecurity-illustration.webp"

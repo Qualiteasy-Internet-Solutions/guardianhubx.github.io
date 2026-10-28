@@ -1,6 +1,6 @@
 ---
 title: "Phishing: Què és i com evitar. La amenaça número una de 2026"
-description: "Guia completa sobre phishing: tipus d'atacs (smishing, vishing, frau del CEO), com identificar-los i estratègies per protegir-te. Formació i simulacres efectius."
+description: "Guia completa sobre phishing: tipus (smishing, vishing, frau del CEO), com identificar-los i com protegir-te amb formació i simulacres."
 ogImage: "/img/phishing-fishing-attack.svg"
 ogImageAlt: "Il·lustració d'atac de phishing i protecció contra correus falsos"
 translationKey: "phishing-what-is-how-to-avoid"

@@ -1,6 +1,6 @@
 ---
 title: "About Us | 26+ Years in IT Security and Automation"
-description: "26+ years at QualitEasy: IT security and automation, 23 years as Faronics (Deep Freeze) representatives, ENS certification and a strong presence in the education sector."
+description: "26+ years in IT security and automation: 23 years as Faronics (Deep Freeze) representatives, ENS certification and a strong education focus."
 translationKey: "about-us"
 url: "/en/about-us/"
 translations:

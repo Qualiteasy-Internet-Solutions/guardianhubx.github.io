@@ -14,7 +14,7 @@ tags:
 - normativa
 - protecció-de-dades
 - resposta-a-incidents
-description: "S'han filtrat les teves dades després d'un ciberatac? Descobreix els teus drets legals, com reclamar davant la negligència empresarial i com protegir la teva identitat."
+description: "S'han filtrat les teves dades després d'un ciberatac? Coneix els teus drets, com reclamar per negligència de l'empresa i com protegir la teva identitat."
 cover:
   image: "uploads/derechos-usuario-tras-hackeo.webp"
   width: 801

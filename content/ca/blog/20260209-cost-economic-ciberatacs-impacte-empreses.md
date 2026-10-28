@@ -11,7 +11,7 @@ categories:
 - ciberseguretat
 tags:
 - gestió-de-riscos
-- guardianaradar
+- guardianradar
 - impacte-econòmic
 - pimes
 - ransomware

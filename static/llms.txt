@@ -1,0 +1,28 @@
+# GuardianHubX
+
+> Plataforma de ciberseguridad para autónomos y pymes en España (Qualiteasy Internet Solutions, S.L., más de 26 años en seguridad informática, certificada ENS). Vigilancia digital, gestión de contraseñas, copias de seguridad y formación anti-phishing, sin instalaciones complejas. Sitio en español (/es/), catalán (/ca/) e inglés (/en/).
+
+## Soluciones propias
+
+- [GuardianRadar](https://guardianhubx.com/es/guardianradar/): vigilancia digital y alertas de filtraciones para autónomos y pequeñas empresas. Desde 9,99 €.
+- [SoloShield](https://guardianhubx.com/es/soloshield/): antivirus, VPN, gestor de contraseñas y backup para autónomos.
+- [LightCore](https://guardianhubx.com/es/lightcore/): pack esencial para equipos pequeños (antivirus, contraseñas, formación anti-phishing).
+- [SmartLayer](https://guardianhubx.com/es/smartlayer/): gestión centralizada de dispositivos, backup y acceso remoto para empresas en crecimiento.
+- [IronWall](https://guardianhubx.com/es/ironwall/): solución integral y modular de ciberseguridad empresarial.
+- [EduCraft](https://guardianhubx.com/es/educraft/): ciberseguridad para centros educativos.
+
+## Guías
+
+- [¿Qué es la ciberseguridad?](https://guardianhubx.com/es/que-es-la-ciberseguridad/)
+- [Tipos de ataques cibernéticos](https://guardianhubx.com/es/tipos-ataques-ciberneticos/)
+- [Phishing: qué es y cómo evitarlo](https://guardianhubx.com/es/phishing-que-es-y-como-evitar/)
+- [Ransomware: qué es y cómo protegerse](https://guardianhubx.com/es/ransomware-que-es-y-como-protegerse/)
+- [Diccionario de ciberseguridad](https://guardianhubx.com/es/diccionario-ciberseguridad/)
+- [Test de ciberseguridad gratuito](https://guardianhubx.com/es/test-ciberseguridad/)
+- [Blog](https://guardianhubx.com/blog/)
+
+## Empresa
+
+- [Quiénes somos](https://guardianhubx.com/es/quienes-somos/)
+- [Partners](https://guardianhubx.com/es/partners/)
+- [Política de seguridad de la información (ENS)](https://guardianhubx.com/es/politica-seguridad-informacion/)

@@ -24,7 +24,7 @@ cover:
   height: 301
   alt: "Seguretat en WiFi públic i coworking per a empreses"
   caption: "Font: GuardianHubX"
-relatedProduct: "guardianaradar"
+relatedProduct: "guardianradar"
 featured: false
 keywords:
   - "WiFi públic segur"

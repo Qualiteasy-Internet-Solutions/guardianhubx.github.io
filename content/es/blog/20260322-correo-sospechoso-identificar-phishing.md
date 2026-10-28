@@ -1,4 +1,5 @@
 ---
+seoTitle: "¿Email sospechoso? Cómo saber si es phishing y qué hacer"
 title: "He recibido un email sospechoso: ¿es phishing y qué debo hacer?"
 author: "GuardianHubX"
 date: 2026-03-22T09:00:00+00:00

@@ -15,9 +15,7 @@ tags:
 - ransomware
 - tecnología-información
 title: La Solución de Gestión Integral para CIOs y CTOs
-description: Descubre cómo una plataforma de gestión centralizada como la de GuardianHubX
-  responde a los desafíos de eficiencia, seguridad y optimización de recursos de los
-  CIOs y CTOs.
+description: "Cómo una plataforma de gestión centralizada responde a los retos de eficiencia, seguridad y optimización de recursos de CIOs y CTOs."
 cover:
   image: uploads/panel-gestion-parches-remota.webp
   alt: Plataforma de gestión centralizada para CIOs y CTOs

@@ -16,7 +16,7 @@ tags:
 - inteligencia-artificial
 - phishing
 - promociones-ofertas
-description: "En 2026, las rebajas online son el principal objetivo de los ciberdelincuentes. Descubre cómo la IA ha sofisticado las estafas y cómo proteger tu identidad digital."
+description: "En 2026 las rebajas online son el gran objetivo de los ciberdelincuentes. Cómo la IA ha sofisticado las estafas y cómo proteger tu identidad."
 cover:
   image: "uploads/rebajas-online-seguridad-digital.webp"
   width: 1115

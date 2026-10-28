@@ -1,4 +1,5 @@
 ---
+seoTitle: "Fuerza bruta: por qué tu contraseña ya no es suficiente"
 title: "Ataques de fuerza bruta: por qué tu contraseña ya no es suficiente"
 author: "GuardianHubX"
 date: 2026-05-27T12:00:00+00:00
@@ -24,7 +25,7 @@ cover:
   height: 301
   alt: "Ataque de fuerza bruta: hackers probando contraseñas"
   caption: "Fuente: GuardianHubX"
-relatedProduct: "guardianaradar"
+relatedProduct: "guardianradar"
 featured: false
 keywords:
   - "ataque fuerza bruta"
@@ -177,4 +178,4 @@ No es un gasto de seguridad. Es una inversión en continuidad del negocio. Un ac
 
 Los ataques de fuerza bruta y credential stuffing no son un problema teórico ni exclusivo de grandes compañías. Son una amenaza diaria y automatizada. La buena práctica actual no es poner una contraseña difícil y olvidarse, sino reforzar el acceso con doble factor, control de intentos y vigilancia continua.
 
-Si quieres reforzar la protección de accesos de tu empresa y reducir el riesgo de robo de credenciales, en [GuardianHub](/es/) podemos ayudarte. Descubre cómo [GuardianRadar](/es/guardianaradar/) detecta accesos anómalos y configuraciones inseguras en tiempo real.
+Si quieres reforzar la protección de accesos de tu empresa y reducir el riesgo de robo de credenciales, en [GuardianHub](/es/) podemos ayudarte. Descubre cómo [GuardianRadar](/es/guardianradar/) detecta accesos anómalos y configuraciones inseguras en tiempo real.

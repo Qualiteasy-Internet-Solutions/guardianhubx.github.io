@@ -1,4 +1,5 @@
 ---
+seoTitle: "Tipus d'atacs cibernètics: guia per a empreses i pimes"
 title: "Tipus d'atacs cibernètics: Guia completa per a empreses i pimes"
 description: "Guia definitiva sobre tipus d'atacs cibernètics: phishing, ransomware, malware, DDoS, enginyeria social i més. Aprèn a identificar-los i protegeix-te ara."
 ogImage: "/img/tipos-ataques-ciberneticos-hero.webp"

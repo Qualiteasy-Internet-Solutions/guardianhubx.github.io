@@ -1,4 +1,5 @@
 ---
+seoTitle: "Informació de l'empresa compromesa? Què has de fer"
 author: GuardianHubX
 categories:
 - ciberseguretat

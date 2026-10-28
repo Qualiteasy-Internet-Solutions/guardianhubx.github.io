@@ -24,7 +24,7 @@ cover:
   height: 301
   alt: "Seguridad en WiFi público y coworking para empresas"
   caption: "Fuente: GuardianHubX"
-relatedProduct: "guardianaradar"
+relatedProduct: "guardianradar"
 featured: false
 keywords:
   - "WiFi pública segura"
@@ -198,4 +198,4 @@ Trabajar fuera de la oficina no tiene por qué ser inseguro, pero sí exige más
 
 La mejor estrategia no es dejar de moverte, sino trabajar con una capa extra de seguridad cada vez que sales de tu red.
 
-Si quieres reforzar la protección de tu empresa cuando trabajas en remoto o desde entornos compartidos, en [GuardianHub](/es/) podemos ayudarte. Descubre cómo [GuardianRadar](/es/guardianaradar/) monitorea los riesgos en tiempo real y protege tu negocio donde quiera que trabajes.
+Si quieres reforzar la protección de tu empresa cuando trabajas en remoto o desde entornos compartidos, en [GuardianHub](/es/) podemos ayudarte. Descubre cómo [GuardianRadar](/es/guardianradar/) monitorea los riesgos en tiempo real y protege tu negocio donde quiera que trabajes.

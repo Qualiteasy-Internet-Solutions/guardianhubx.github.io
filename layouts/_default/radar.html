@@ -125,7 +125,14 @@
   {{ if .Params.testimonials }}
   <section class="testimonials-section py-5 bg-white">
     <div class="container">
-      <h2 class="text-center mb-5" style="color: #0d2c56;">{{ i18n "testimonials_title" }}</h2>
+      <h2 class="text-center mb-2" style="color: #0d2c56;">{{ i18n "testimonials_title" }}</h2>
+      {{ with site.Data.reviews }}
+      {{ $sum := 0 }}{{ range . }}{{ $sum = add $sum .rating }}{{ end }}
+      <p class="text-center mb-5"><span class="text-warning"><i class="fas fa-star"></i></span>
+        <strong>{{ lang.FormatNumber 1 (div (float $sum) (len .)) }}/5</strong> · {{ i18n "reviews_count" (len .) }}
+        {{ with site.Params.reviewFormURL }} · <a href="{{ . }}" target="_blank" rel="noopener">{{ i18n "reviews_leave" }}</a>{{ end }}
+        {{ with site.Params.googleReviewURL }} · <a href="{{ . }}" target="_blank" rel="noopener"><i class="fab fa-google me-1"></i>{{ i18n "reviews_google" }}</a>{{ end }}</p>
+      {{ end }}
       <div class="row">
         {{ range .Params.testimonials }}
         <div class="col-md-6 col-lg-3 mb-4">
@@ -150,7 +157,7 @@
                 </div>
                 {{ end }}
                 <div>
-                  <h5 class="testimonial-name mb-1">{{ .name }}</h5>
+                  <p class="h5 testimonial-name mb-1">{{ .name }}</p>
                   <small class="text-muted testimonial-role">{{ .role }}</small>
                 </div>
             </div>
@@ -158,6 +165,22 @@
         </div>
         {{ end }}
       </div>
+      {{/* Reviews from data/reviews.yaml not featured above: must be visible to back the schema */}}
+      {{ $featured := slice }}{{ range .Params.testimonials }}{{ $featured = $featured | append .name }}{{ end }}
+      {{ $more := where site.Data.reviews "name" "not in" $featured }}
+      {{ with $more }}
+      <div class="row mt-2">
+        {{ range . }}
+        <div class="col-md-6 col-lg-4 mb-3">
+          <div class="border rounded p-3 h-100 small">
+            <div class="text-warning mb-2">{{ range seq .rating }}<i class="fas fa-star"></i>{{ end }}</div>
+            <p class="fst-italic text-muted mb-2">"{{ .quote }}"</p>
+            <strong>{{ .name }}</strong>{{ with .role }} · <span class="text-muted">{{ . }}</span>{{ end }}
+          </div>
+        </div>
+        {{ end }}
+      </div>
+      {{ end }}
     </div>
   </section>
   {{ end }}
@@ -282,28 +305,34 @@
   </script>
   {{ end }}
 
-  <script type="application/ld+json">
-    {
-    "@context": "https://schema.org/",
-    "@type": "SoftwareApplication",
-    "name": "GuardianRadar",
-    "applicationCategory": "SecurityApplication",
-    "operatingSystem": "Web, Cloud",
-    "offers": {
-        "@type": "Offer",
-        "price": "9.99",
-        "priceCurrency": "EUR",
-        "availability": "https://schema.org/InStock"
-    },
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "ratingCount": "50",
-        "bestRating": "5",
-        "worstRating": "1"
-    },
-    "description": "{{ .Params.description }}"
-    }
-</script>
+  {{/* Ratings come only from data/reviews.yaml, all shown on the page (Google review-snippet policy) */}}
+  {{ $app := dict
+    "@context" "https://schema.org/"
+    "@type" "SoftwareApplication"
+    "name" "GuardianRadar"
+    "applicationCategory" "SecurityApplication"
+    "operatingSystem" "Web, Cloud"
+    "description" .Params.description
+    "offers" (dict "@type" "Offer" "price" "9.99" "priceCurrency" "EUR" "availability" "https://schema.org/InStock")
+  }}
+  {{ with site.Data.reviews }}
+    {{ $reviews := slice }}{{ $sum := 0 }}
+    {{ range . }}
+      {{ $sum = add $sum .rating }}
+      {{ $r := dict
+        "@type" "Review"
+        "author" (dict "@type" "Person" "name" .name)
+        "reviewBody" .quote
+        "reviewRating" (dict "@type" "Rating" "ratingValue" .rating "bestRating" 5 "worstRating" 1)
+      }}
+      {{ with .date }}{{ $r = merge $r (dict "datePublished" .) }}{{ end }}
+      {{ $reviews = $reviews | append $r }}
+    {{ end }}
+    {{ $app = merge $app (dict
+      "review" $reviews
+      "aggregateRating" (dict "@type" "AggregateRating" "ratingValue" (div (math.Round (mul 10 (div (float $sum) (len .)))) 10) "reviewCount" (len .) "bestRating" 5 "worstRating" 1)
+    ) }}
+  {{ end }}
+  <script type="application/ld+json">{{ $app | jsonify | safeJS }}</script>
 </body>
 </html>

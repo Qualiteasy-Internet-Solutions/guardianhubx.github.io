@@ -1,4 +1,5 @@
 ---
+seoTitle: "10 problemas por falta de mantenimiento informático"
 author: GuardianHubX
 categories:
 - ciberseguridad
@@ -14,9 +15,7 @@ tags:
 - parches
 - tecnología-información
 title: 10 problemas generados por la falta de mantenimiento informático
-description: Descubre los 10 principales problemas y consecuencias derivados de una
-  falta de mantenimiento informático en tu empresa, desde la pérdida de datos hasta
-  los costes ocultos.
+description: "Los 10 principales problemas de no mantener los equipos informáticos de tu empresa: de la pérdida de datos a los costes ocultos."
 cover:
   image: uploads/actualizacion-software-remota.webp
   alt: Problemas por falta de mantenimiento informático

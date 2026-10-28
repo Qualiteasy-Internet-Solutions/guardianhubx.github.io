@@ -1,4 +1,5 @@
 ---
+seoTitle: "¿Qué es un vector de ataque y cómo proteger tu empresa?"
 title: ¿Qué es un vector de ataque y cómo proteger tu empresa de ellos?
 author: GuardianHubX
 date: 2025-08-24 00:00:00+00:00

@@ -1,4 +1,5 @@
 ---
+seoTitle: "Ransomware: qué es y cómo proteger tu empresa"
 title: "Ransomware: Qué es y cómo protegerse. Guía completa para empresas"
 description: "Qué es el ransomware, cómo llega a tu empresa y cómo protegerse: las 5 capas de defensa, qué hacer si sufres un ataque y herramientas de detección."
 ogTitle: "Ransomware: Qué es y cómo proteger tu empresa en 2026"

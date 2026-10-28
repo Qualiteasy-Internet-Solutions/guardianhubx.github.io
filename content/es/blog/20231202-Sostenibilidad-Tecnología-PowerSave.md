@@ -1,4 +1,5 @@
 ---
+seoTitle: "Ahorro energético en IT: la tecnología Power Save"
 title: 'Sostenibilidad y Ahorro Energético en IT: La Tecnología Power Save'
 author: GuardianHubX
 date: '2023-12-02T00:00:00+00:00'

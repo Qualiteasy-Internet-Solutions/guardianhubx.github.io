@@ -1,4 +1,5 @@
 ---
+seoTitle: "Toma de control de cuentas (ATO): cómo proteger tu empresa"
 title: Cómo proteger tu empresa frente a la toma de control de cuentas (ATO)
 author: GuardianHubX
 date: 2025-07-21 00:00:00+00:00
@@ -15,9 +16,7 @@ tags:
 - gestión-de-identidades
 - protección-de-datos
 - seguridad-de-cuentas
-description: La toma de control de cuentas (ATO) es una de las amenazas más críticas
-  para cualquier empresa. Descubre cómo prevenir este tipo de ataques con soluciones
-  tecnológicas, formación y vigilancia proactiva.
+description: "La toma de control de cuentas (ATO) es una amenaza crítica para las empresas. Cómo prevenirla con tecnología, formación y vigilancia proactiva."
 cover:
   image: uploads/ataques-ato-proteger-cuentas-guardianhubx.webp
   width: 1537

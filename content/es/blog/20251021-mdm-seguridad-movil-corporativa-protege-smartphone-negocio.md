@@ -1,4 +1,5 @@
 ---
+seoTitle: "Seguridad móvil corporativa: protege los smartphones (MDM)"
 title: 'Seguridad móvil corporativa: protege el smartphone de tu negocio'
 author: GuardianHubX
 date: 2025-10-21 00:00:00+00:00

@@ -1,0 +1,24 @@
+# Valoraciones reales de clientes de GuardianRadar (solo con consentimiento para publicar).
+# Alimenta la nota media visible y el schema de layouts/_default/radar.html.
+# Añadir una entrada por respuesta aprobada del formulario. No inventar ni redondear notas.
+# Campos: name, role, rating (1-5), date (AAAA-MM-DD, opcional), quote (texto original del cliente)
+
+- name: "Marc Tomás"
+  role: "Asesor Energético"
+  rating: 5
+  quote: "GuardianRadar me avisó de una filtración de credenciales que ni sabía que existía. Cambié los accesos a tiempo y evité un problema serio con datos de mis clientes. Cualquier autónomo debería tenerlo."
+
+- name: "Anna Muñoz"
+  role: "Gestoría - Prois Empresarial"
+  rating: 5
+  quote: "La confidencialidad de nuestros clientes es sagrada. Implementamos GuardianRadar para blindar nuestra seguridad interna y, al ver la tranquilidad que ofrece, hemos decidido recomendarlo activamente. Es prevención necesaria."
+
+- name: "Albert Bertrán"
+  role: "Abogado"
+  rating: 5
+  quote: "Pensaba que con el antivirus era suficiente, pero el riesgo real está fuera. Gracias a GuardianRadar sé si los datos de mi despacho están expuestos antes de que alguien los use. Es tranquilidad total."
+
+- name: "Frank Santos"
+  role: "Director Sanblach - Reformas"
+  rating: 5
+  quote: "Recibimos una alerta de la Dark Web. En 10 minutos, siguiendo sus indicaciones por WhatsApp, lo solucionamos. No quiero imaginar qué habría pasado si no nos llegamos a enterar."

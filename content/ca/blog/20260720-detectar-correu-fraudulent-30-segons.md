@@ -65,7 +65,7 @@ Abans d'obrir un arxiu o fer clic en un enllaç, dedica mig minut a revisar aque
 
 ## L'error més habitual a les empreses
 
-Molts empleats pensen "això mai no em passarà a mi". Tot i això, els atacs actuals ja no són massius. Són personalitzats. Els ciberdelinqüents investiguen LinkedIn, xarxes socials, la pàgina web corporativa, l'organigrama, proveïdors i clients. Gràcies a aquesta informació creen correus extremadament creïbles. Si tens dubtes sobre un missatge concret, aquesta guia detalla [com saber si un correu sospitós és phishing i què cal fer pas a pas](/blog/ca/correu-sospitos-identificar-phishing/).
+Molts empleats pensen "això mai no em passarà a mi". Tot i això, els atacs actuals ja no són massius. Són personalitzats. Els ciberdelinqüents investiguen LinkedIn, xarxes socials, la pàgina web corporativa, l'organigrama, proveïdors i clients. Gràcies a aquesta informació creen correus extremadament creïbles. Si tens dubtes sobre un missatge concret, aquesta guia detalla [com saber si un correu sospitós és phishing i què cal fer pas a pas](/blog/ca/correu-sospitos-identificar-phishing-que-fer/).
 
 ## Què has de fer si reps un correu sospitós
 

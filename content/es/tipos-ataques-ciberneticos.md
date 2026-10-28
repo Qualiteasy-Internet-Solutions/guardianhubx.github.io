@@ -1,4 +1,5 @@
 ---
+seoTitle: "Tipos de ataques cibernéticos: guía para empresas y pymes"
 title: "Tipos de ataques cibernéticos: Guía completa para empresas y pymes"
 description: "Guía definitiva sobre tipos de ataques cibernéticos: phishing, ransomware, malware, DDoS, ingeniería social y más. Aprende a identificarlos y protégete ahora."
 ogImage: "/img/tipos-ataques-ciberneticos-hero.webp"

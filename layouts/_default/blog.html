@@ -46,7 +46,8 @@
             src="{{ .Params.cover.image }}"
             alt="{{ .Params.cover.alt }}"
             class="img-fluid rounded"
-            loading="lazy">
+            {{ with .Params.cover.image }}{{ $f := path.Join "static" . }}{{ if fileExists $f }}{{ with imageConfig $f }}width="{{ .Width }}" height="{{ .Height }}"{{ end }}{{ end }}{{ end }}
+            fetchpriority="high">
           {{ if .Params.cover.caption }}
           <figcaption class="text-muted small mt-2">{{ .Params.cover.caption }}</figcaption>
           {{ end }}

@@ -16,9 +16,7 @@ tags:
 - protección-de-datos
 - seguridad-física
 - trabajo-remoto
-description: Este verano, tus dispositivos corporativos están más expuestos que nunca.
-  Descubre cómo proteger tu empresa ante pérdidas, robos y accesos indebidos con Prey
-  Project, la solución ideal para equipos móviles.
+description: "En verano los dispositivos corporativos están más expuestos. Protege tu empresa de pérdidas, robos y accesos indebidos con Prey Project."
 cover:
   image: uploads/verano-prey-project-guardianhubx.webp
   width: 1537

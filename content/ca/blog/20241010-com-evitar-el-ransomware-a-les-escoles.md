@@ -41,7 +41,7 @@ El phishing és una de les formes més habituals de propagació del ransomware. 
 
 Les còpies de seguretat són un salvavides. Si el ransomware aconsegueix infiltrar-se i comptes amb un sistema de còpies de seguretat sòlid, no estaràs a mercè dels atacants. Fer còpies periòdiques, automatitzades i emmagatzemades de forma segura és essencial. Una solució integral ha de garantir que, en cas d'atac, puguis restaurar-ho tot sense pagar un rescat.
 
-![](/img/ransomware-attack-hero.webp)
+![Atac de ransomware en un centre educatiu](/img/ransomware-attack-hero.webp)
 
 ## 4. Limitar l'accés
 

@@ -1,4 +1,5 @@
 ---
+seoTitle: "Què és la ciberseguretat? Guia bàsica per a empreses"
 title: "Què és la Ciberseguretat? El teu escut a l'era hiperconnectada"
 description: "Guia completa sobre ciberseguretat: des de definicions bàsiques fins a la Tríada CIA i les amenaces actuals. Protegeix la teva informació amb GuardianHubX."
 ogImage: "/img/cybersecurity-illustration.webp"

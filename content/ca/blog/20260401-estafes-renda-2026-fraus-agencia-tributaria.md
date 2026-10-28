@@ -1,4 +1,5 @@
 ---
+seoTitle: "Estafes de la Renda 2026: detecta els fraus d'Hisenda"
 title: "Estafes de la Renda 2026: detecta els fraus de l'Agència Tributària"
 author: "GuardianHubX"
 date: 2026-04-01T09:00:00+00:00

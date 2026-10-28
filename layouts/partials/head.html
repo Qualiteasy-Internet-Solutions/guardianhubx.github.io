@@ -20,7 +20,7 @@
 
 <meta name="description" content="{{ $description }}">
 <meta name="author" content="{{ site.Params.author }}">
-<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="robots" content="{{ if or (in (slice "taxonomy" "term") .Kind) .Params.sitemap_exclude }}noindex,follow{{ else }}index,follow,max-image-preview:large{{ end }}">
 
 <!-- hreflang para cambio dinámico de idioma -->
 {{- $langMap := dict "es" "es-ES" "ca" "ca-ES" "en" "en-US" -}}
@@ -75,7 +75,7 @@
 <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
 <!-- Cookie Consent -->
 <link rel="stylesheet" href="/css/cookieconsent.css">
-<script src="/js/cookieconsent.umd.js"></script>
+<script src="/js/cookieconsent.umd.js" defer></script>
 <script src="/js/cookieconsent-config.js" defer></script>
 
 <!-- Open Graph -->
@@ -136,7 +136,7 @@
 {{ end }}
 
 <!-- JS adicionales -->
-<script src="/js/referral.js"></script>
+<script src="/js/referral.js" defer></script>
 <script src="/js/script.js" defer></script>
 
 <!-- GoatCounter (analytics sin cookies, no requiere consentimiento RGPD) -->

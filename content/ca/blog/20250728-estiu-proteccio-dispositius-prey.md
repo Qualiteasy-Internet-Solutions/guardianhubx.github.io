@@ -17,9 +17,7 @@ tags:
 - protecció-de-dades
 - seguretat-física
 - teletreball
-description: Aquest estiu, els teus dispositius corporatius estan més exposats que
-  mai. Descobreix com protegir la teva empresa davant de pèrdues, robatoris i accessos
-  indeguts amb Prey Project, la solució ideal per a equips mòbils.
+description: "A l'estiu els dispositius corporatius estan més exposats. Protegeix la teva empresa de pèrdues, robatoris i accessos indeguts amb Prey Project."
 cover:
   image: uploads/verano-prey-project-guardianhubx.webp
   width: 1537

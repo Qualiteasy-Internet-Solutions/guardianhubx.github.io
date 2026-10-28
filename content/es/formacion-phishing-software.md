@@ -1,4 +1,5 @@
 ---
+seoTitle: "Software de formación anti-phishing para empleados"
 title: "Evita el phishing con el software que entrena a tus empleados"
 description: "Entrena a tu equipo contra ataques de phishing con simulaciones realistas y personalizadas. Software de concienciación de GuardianHubX."
 ogImage: "/img/phishing-software.svg"

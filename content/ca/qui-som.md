@@ -1,6 +1,7 @@
 ---
+seoTitle: "Qui som | 26 anys en seguretat informàtica"
 title: "Qui som | Més de 26 anys en seguretat i automatització informàtica"
-description: "Més de 26 anys de trajectòria a QualitEasy: seguretat i automatització informàtica, 23 anys com a representants de Faronics (Deep Freeze), certificació ENS i presència en el sector educatiu."
+description: "26 anys en seguretat i automatització informàtica: 23 com a representants de Faronics (Deep Freeze), certificació ENS i sector educatiu."
 translationKey: "about-us"
 url: "/ca/qui-som/"
 translations:

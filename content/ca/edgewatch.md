@@ -1,4 +1,5 @@
 ---
+seoTitle: "Edgewatch | Monitoratge continu d'amenaces cibernètiques"
 title: "Edgewatch | Monitorització Continua de Amenaces Cibernètiques"
 layout: "product"
 description: "Supervisió contínua d’amenaçes i vulnerabilitats en la teva infraestructura digital amb Edgewatch. Detecció precoç i defensa proactiva."

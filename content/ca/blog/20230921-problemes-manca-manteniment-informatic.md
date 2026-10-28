@@ -14,9 +14,7 @@ tags:
 - manteniment informàtic
 - tecnologia-informació
 title: 10 problemes generats per la manca de manteniment informàtic
-description: Descobreix els 10 principals problemes i conseqüències derivats d'una
-  manca de manteniment informàtic a la teva empresa, des de la pèrdua de dades fins
-  als costos ocults.
+description: "Els 10 principals problemes de no mantenir els equips informàtics de la teva empresa: de la pèrdua de dades als costos ocults."
 cover:
   image: uploads/actualizacion-software-remota.webp
   alt: Problemes per manca de manteniment informàtic

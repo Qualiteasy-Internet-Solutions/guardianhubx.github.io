@@ -1,4 +1,5 @@
 ---
+seoTitle: "Estalvi energètic en TI: la tecnologia Power Save"
 title: 'Sostenibilitat i Estalvi Energètic en TI: La Tecnologia Power Save'
 author: GuardianHubX
 date: '2023-12-02T00:00:00+00:00'

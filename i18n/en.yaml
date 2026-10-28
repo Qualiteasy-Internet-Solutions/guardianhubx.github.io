@@ -825,3 +825,14 @@
   translation: "ENS certificate no."
 - id: ens_cert_download
   translation: "Download signed PDF"
+
+- id: "reviews_count"
+  translation:
+    one: "Based on {{ .Count }} customer review"
+    other: "Based on {{ .Count }} customer reviews"
+- id: "reviews_leave"
+  translation: "Leave your review"
+- id: "language"
+  translation: "Language"
+- id: "reviews_google"
+  translation: "Review us on Google"

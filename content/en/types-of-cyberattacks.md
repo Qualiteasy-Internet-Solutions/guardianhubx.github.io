@@ -1,4 +1,5 @@
 ---
+seoTitle: "Types of cyberattacks: a guide for businesses and SMEs"
 title: "Types of Cyberattacks: Complete Guide for Businesses and SMEs"
 description: "Definitive guide on types of cyberattacks: phishing, ransomware, malware, DDoS, social engineering and more. Learn to identify them and protect yourself now."
 ogImage: "/img/tipos-ataques-ciberneticos-hero.webp"
@@ -151,7 +152,7 @@ Entry vector for <strong>91%</strong> of successful attacks
 Present in <strong>44%</strong> of all attacks; the <strong>RaaS</strong> model democratizes these attacks
 </div>
 <div class="d-flex gap-3 flex-wrap">
-<a href="/en/60-minute-ransomware-response-guide/" class="small text-decoration-none"><i class="fas fa-hourglass-end" style="margin-right: 4px;"></i>60-Minute Response</a>
+<a href="/en/ransomware-what-is-and-how-to-protect/" class="small text-decoration-none"><i class="fas fa-hourglass-end" style="margin-right: 4px;"></i>60-Minute Response</a>
 <a href="/en/ironwall/" class="small text-decoration-none"><i class="fas fa-shield-alt" style="margin-right: 4px;"></i>IronWall</a>
 </div>
 </div>

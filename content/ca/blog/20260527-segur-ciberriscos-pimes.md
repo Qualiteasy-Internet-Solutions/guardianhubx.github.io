@@ -23,7 +23,7 @@ cover:
   height: 301
   alt: "Segur de ciberriscos per a empreses: cobertures i cost"
   caption: "Font: GuardianHubX"
-relatedProduct: "guardianaradar"
+relatedProduct: "guardianradar"
 featured: false
 keywords:
   - "segur ciberriscos pimes"

@@ -11,11 +11,11 @@ categories:
 - ciberseguridad
 tags:
 - gestión-de-riesgos
-- guardianaradar
+- guardianradar
 - impacto-económico
 - pymes
 - ransomware
-description: "Descubre el coste real de los ciberataques en 2026. Del impacto de 10,5 billones de dólares globales al nuevo servicio GuardianRadar para la protección de PYMES."
+description: "El coste real de los ciberataques en 2026: de los 10,5 billones de dólares de impacto global a cómo GuardianRadar protege a las pymes."
 cover:
   image: "uploads/coste-economico-ciberataques.webp"
   width: 2753

@@ -23,7 +23,7 @@ cover:
   height: 301
   alt: "Configuració segura de Teams, Zoom i Google Meet"
   caption: "Font: GuardianHubX"
-relatedProduct: "guardianaradar"
+relatedProduct: "guardianradar"
 featured: false
 keywords:
   - "Teams configuració segura"

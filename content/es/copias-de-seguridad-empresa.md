@@ -1,6 +1,7 @@
 ---
+seoTitle: "Copias de seguridad para empresas | Backup Veeam en la nube"
 title: "Copias de Seguridad para Empresas | Backup en la Nube con Veeam"
-description: "Soluciones profesionales de copias de seguridad empresariales en la nube: backup Microsoft 365, Google Workspace, VMs y recuperación ante desastres con Veeam Gold Partner."
+description: "Copias de seguridad empresariales en la nube: Microsoft 365, Google Workspace, VMs y recuperación ante desastres con Veeam Gold Partner."
 ogTitle: "Backup empresarial en la nube con Veeam | GuardianHubX"
 ogDescription: "Backup profesional para Microsoft 365, Google Workspace, infraestructura virtual y DRaaS. Partner Gold de Veeam con cifrado AES 256 y datos en España."
 ogImage: "/img/og-backup-empresa.png"

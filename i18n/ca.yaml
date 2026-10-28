@@ -834,3 +834,14 @@
   translation: "Certificat ENS núm."
 - id: ens_cert_download
   translation: "Descarregar PDF signat"
+
+- id: "reviews_count"
+  translation:
+    one: "Basat en {{ .Count }} valoració de clients"
+    other: "Basat en {{ .Count }} valoracions de clients"
+- id: "reviews_leave"
+  translation: "Deixa la teva valoració"
+- id: "language"
+  translation: "Idioma"
+- id: "reviews_google"
+  translation: "Valora'ns a Google"

@@ -1,4 +1,5 @@
 ---
+seoTitle: "¿Información de tu empresa comprometida? Qué hacer"
 author: GuardianHubX
 categories:
 - ciberseguridad

@@ -1,6 +1,7 @@
 ---
+seoTitle: "Phishing: what it is and how to avoid it (2026 guide)"
 title: "Phishing: What is it and how to avoid. The number one threat of 2026"
-description: "Complete guide to phishing: attack types (smishing, vishing, CEO fraud), how to identify them and strategies to protect yourself. Effective training and simulations."
+description: "Complete guide to phishing: attack types (smishing, vishing, CEO fraud), how to spot them and how to protect yourself with training and simulations."
 ogImage: "/img/phishing-fishing-attack.svg"
 ogImageAlt: "Illustration of phishing attack and protection against fake emails"
 translationKey: "phishing-what-is-how-to-avoid"

@@ -1,4 +1,5 @@
 ---
+seoTitle: "Força bruta: per què la teva contrasenya ja no és suficient"
 title: "Atacs de força bruta: per què la teva contrasenya ja no és suficient"
 author: "GuardianHubX"
 date: 2026-05-27T12:00:00+00:00
@@ -24,7 +25,7 @@ cover:
   height: 301
   alt: "Atac de força bruta: hackers provant contrasenyes"
   caption: "Font: GuardianHubX"
-relatedProduct: "guardianaradar"
+relatedProduct: "guardianradar"
 featured: false
 keywords:
   - "atac força bruta"

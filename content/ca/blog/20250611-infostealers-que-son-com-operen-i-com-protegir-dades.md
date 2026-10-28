@@ -1,4 +1,5 @@
 ---
+seoTitle: "Infostealers: què són, com actuen i com protegir les dades"
 title: 'Infostealers: què són, com operen i com protegir les teves dades'
 author: GuardianHubX
 date: 2025-06-11 00:00:00+00:00
@@ -15,8 +16,7 @@ tags:
 - malware-i-phishing
 - protecció-de-dades
 - seguretat-informàtica
-description: Descobreix com els infostealers roben les teves dades sense ser detectats
-  i quines mesures pots prendre per protegir la teva empresa d'aquestes amenaces silencioses.
+description: "Com els infostealers roben les teves dades sense ser detectats i quines mesures pots prendre per protegir la teva empresa d'aquestes amenaces."
 cover:
   image: uploads/infostealer-blog.webp
   width: 1151

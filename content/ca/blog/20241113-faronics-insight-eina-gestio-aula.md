@@ -1,4 +1,5 @@
 ---
+seoTitle: "Faronics Insight: l'eina per gestionar l'aula digital"
 author: GuardianHubX
 categories:
 - educació

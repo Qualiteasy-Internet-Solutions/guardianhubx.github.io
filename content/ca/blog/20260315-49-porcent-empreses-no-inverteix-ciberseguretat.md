@@ -1,6 +1,7 @@
 ---
+seoTitle: "El 49% de les empreses no inverteix en ciberseguretat"
 title: "49% de les Empreses No Inverteix en Ciberseguretat: El Risc Ignorat"
-description: "El 49% de les organitzacions no inverteix en ciberseguretat fins i tot després de sofrir atacs. Descobreix per què és un error estratègic i com protegir la teva empresa."
+description: "El 49% de les organitzacions no inverteix en ciberseguretat ni tan sols després de patir atacs. Per què és un error i com protegir la teva empresa."
 author: "GuardianHubX"
 date: 2026-03-15T09:00:00+00:00
 draft: false

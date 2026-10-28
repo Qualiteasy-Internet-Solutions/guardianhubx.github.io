@@ -1,4 +1,5 @@
 ---
+seoTitle: "Infostealers: l'amenaça silenciosa que roba credencials"
 title: "Infostealers: L'amenaça silenciosa que roba credencials el 2026"
 author: "GuardianHubX"
 date: 2026-03-20T09:00:00+00:00

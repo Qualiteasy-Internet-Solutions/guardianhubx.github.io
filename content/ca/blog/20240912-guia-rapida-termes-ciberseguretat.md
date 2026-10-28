@@ -1,4 +1,5 @@
 ---
+seoTitle: "Guia ràpida dels termes clau en atacs de ciberseguretat"
 author: GuardianHubX
 categories:
 - ciberseguretat

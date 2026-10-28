@@ -43,6 +43,8 @@ defaultContentLanguageInSubdir = true
   filename = "sitemap.xml"
 
 [params]
+  reviewFormURL = ""
+  googleReviewURL = "https://g.page/r/CR4_IEK5V5xFECE/review"  # Google Form de valoraciones GuardianRadar; vacío = no se muestra el enlace
   description = "Soluciones avanzadas de ciberseguridad para empresas y autónomos"
   author = "GuardianHubX"
 

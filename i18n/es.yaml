@@ -832,3 +832,14 @@
   translation: "Certificado ENS nº"
 - id: ens_cert_download
   translation: "Descargar PDF firmado"
+
+- id: "reviews_count"
+  translation:
+    one: "Basado en {{ .Count }} valoración de clientes"
+    other: "Basado en {{ .Count }} valoraciones de clientes"
+- id: "reviews_leave"
+  translation: "Deja tu valoración"
+- id: "language"
+  translation: "Idioma"
+- id: "reviews_google"
+  translation: "Valóranos en Google"

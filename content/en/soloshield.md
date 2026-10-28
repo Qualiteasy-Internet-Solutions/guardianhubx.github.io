@@ -1,4 +1,5 @@
 ---
+seoTitle: "SoloShield | Digital security for freelancers"
 title: "SoloShield | Digital Security for Freelancers & Professionals"
 description: "SoloShield | Digital security for freelancers and independent professionals. Antivirus, VPN, password manager and automatic backup."
 ogImage: "/img/solo-pack.png"

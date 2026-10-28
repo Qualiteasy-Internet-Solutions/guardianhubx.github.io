@@ -1,4 +1,5 @@
 ---
+seoTitle: "Contraseña filtrada: cómo detectarla y actuar en 5 pasos"
 title: "Contraseña Filtrada: Detectala en 5 Pasos y Recupera tu Seguridad"
 author: "GuardianHubX"
 date: 2026-04-06T09:00:00+00:00

@@ -8,7 +8,7 @@
             "src" "/img/logo_GHX_01-01.png"
             "alt" "GuardianHubX"
             "width" "120"
-            "height" "68"
+            "height" "77"
             "lazy" true
           )}}
         </a>
@@ -56,7 +56,7 @@
       </div>
 
       <div class="col-12 {{ if or (eq .Lang "es") (eq .Lang "ca") }}col-md-4 col-lg-3{{ else }}col-md-4 col-lg-3{{ end }}">
-        <h6 class="text-uppercase mb-3 small">{{ i18n "menu" }}</h6>
+        <p class="h6 text-uppercase mb-3 small">{{ i18n "menu" }}</p>
         <nav class="footer-menu-nav small" aria-label="{{ cond (eq .Lang "es") "Enlaces del pie de página" (cond (eq .Lang "en") "Footer links" "Enllaços del peu de pàgina") }}">
           {{ partial "menu.html" . }}
         </nav>
@@ -146,6 +146,9 @@
             <i class="fab fa-instagram me-2"></i>
             <a href="https://www.instagram.com/guardianhubx" target="_blank" class="text-decoration-none text-white-50">Instagram</a>
           </p>
+          {{ with site.Params.googleReviewURL }}
+          <p class="small mb-0"><i class="fab fa-google me-2 text-warning"></i><a href="{{ . }}" target="_blank" rel="noopener" class="text-decoration-none text-white-50">{{ i18n "reviews_google" }}</a></p>
+          {{ end }}
         </div>
       </div>
       <hr class="my-4">
@@ -196,7 +199,8 @@
         "https://www.linkedin.com/company/qualiteasyeu",
         "https://www.tiktok.com/@GuardianHubX",
         "https://www.youtube.com/@GuardianHubX",
-        "https://www.instagram.com/guardianhubx"
+        "https://www.instagram.com/guardianhubx",
+        "https://maps.google.com/?cid=5015980538173865758"
       ]
     }
   }
