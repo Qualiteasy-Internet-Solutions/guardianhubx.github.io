@@ -1,14 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Cargar reCAPTCHA y form handler si hay formulario
   if (document.getElementById("contactForm")) {
-    // reCAPTCHA
-    if (!document.querySelector('script[src*="recaptcha/api.js"]')) {
+    // reCAPTCHA (~380 KB): carregar només quan l'usuari interactua amb el formulari (LCP mòbil)
+    document.getElementById("contactForm").addEventListener("focusin", function () {
+      if (document.querySelector('script[src*="recaptcha/api.js"]')) return;
       const recaptcha = document.createElement("script");
       recaptcha.src = "https://www.google.com/recaptcha/api.js?render=6LfRmeoqAAAAAH-Dizpt81ZOBrU5YT-utPXeBUNn";
       recaptcha.async = true;
-      recaptcha.defer = true;
       document.body.appendChild(recaptcha);
-    }
+    }, { once: true });
 
     // form-submission-handler.js
     if (!document.querySelector('script[src*="form-submission-handler.js"]')) {

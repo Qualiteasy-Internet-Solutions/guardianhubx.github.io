@@ -65,7 +65,15 @@
 
     //Verificación de reCAPTCHA v3
     if (typeof grecaptcha === "undefined") {
-      alert("Error: Google reCAPTCHA no está disponible. Recarga la página.");
+      // reCAPTCHA es carrega en el primer focus del formulari: esperar fins a 5 s
+      var waited = event._recaptchaWait || 0;
+      if (waited >= 50) {
+        alert("Error: Google reCAPTCHA no está disponible. Recarga la página.");
+        return false;
+      }
+      setTimeout(function () {
+        handleFormSubmit({ preventDefault: function () {}, target: form, _recaptchaWait: waited + 1 });
+      }, 100);
       return false;
     }
 
