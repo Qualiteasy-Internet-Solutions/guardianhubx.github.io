@@ -96,12 +96,16 @@
           }
           return false;
       }
-      // Insertar el token en un campo oculto del formulario
-      var recaptchaInput = document.createElement("input");
-      recaptchaInput.setAttribute("type", "hidden");
-      recaptchaInput.setAttribute("name", "g-recaptcha-response");
-      recaptchaInput.setAttribute("value", token);
-      form.appendChild(recaptchaInput);
+      // Posar el token al camp ocult existent. Si se'n crea un segon amb el mateix nom,
+      // getFormData el llegeix com a llista i envia el token buit (l'Apps Script el rebutja).
+      var recaptchaInput = form.querySelector("input[name='g-recaptcha-response']");
+      if (!recaptchaInput) {
+        recaptchaInput = document.createElement("input");
+        recaptchaInput.type = "hidden";
+        recaptchaInput.name = "g-recaptcha-response";
+        form.appendChild(recaptchaInput);
+      }
+      recaptchaInput.value = token;
 
       var formData = getFormData(form);
       if (formData.honeypot) {
@@ -120,7 +124,10 @@
       xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
       xhr.onreadystatechange = function() {
           if (xhr.readyState === 4) {
-            if (xhr.status === 200) {
+            // L'Apps Script respon 200 també quan falla: cal mirar "result" al JSON
+            var ok = false;
+            try { ok = JSON.parse(xhr.responseText).result === "success"; } catch (e) {}
+            if (xhr.status === 200 && ok) {
               form.reset();
               var nextUrl = form.querySelector("input[name='_next']").value;
               if (nextUrl) window.location.href = nextUrl;
