@@ -178,7 +178,7 @@ faq_items:
       </div>
     </div>
 
-  <form class="gform row g-4" id="contactForm" action="https://script.google.com/macros/s/AKfycbyJO3Rs4loBRevIsltI1Fcg48BH_WAtGm6Rezhea-0g_FutfYbM0MwOQfEkDI0XXGF5/exec"  method="POST" novalidate>
+  <form class="gform row g-4" id="contactForm" action="https://script.google.com/macros/s/AKfycbyxi2cv5k3vu4jnBtlU32KLhiRtWRawjNQZyBWjcEfXk_Vjf7g4BHDDvi7tLJz3aAjL/exec"  method="POST" novalidate>
     <div class="col-12 col-md-6">
     <label for="name" class="form-label">Nombre:</label>
     <input type="text" id="name" name="name" class="form-control" required aria-required="true">
@@ -203,6 +203,7 @@ faq_items:
     <button type="submit" class="landing-btn landing-btn-primary px-5">Enviar Consulta</button>
     </div>
     <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
+    <input type="text" name="honeypot" class="d-none" tabindex="-1" autocomplete="off" aria-hidden="true">
     <input type="hidden" name="_next" value="/es/gracias-phishing">
     <input type="hidden" name="_subject" value="Solicitud de información - Phishing">
     <input type="hidden" name="_autoresponse" value="Gracias por tu consulta. Nos pondremos en contacto contigo lo antes posible.">

@@ -185,7 +185,7 @@ faq_items:
       </div>
     </div>
     <!-- Formulario -->
-    <form class="gform row g-4" id="contactForm" action="https://script.google.com/macros/s/AKfycbyJO3Rs4loBRevIsltI1Fcg48BH_WAtGm6Rezhea-0g_FutfYbM0MwOQfEkDI0XXGF5/exec"  method="POST" novalidate>
+    <form class="gform row g-4" id="contactForm" action="https://script.google.com/macros/s/AKfycbyxi2cv5k3vu4jnBtlU32KLhiRtWRawjNQZyBWjcEfXk_Vjf7g4BHDDvi7tLJz3aAjL/exec"  method="POST" novalidate>
       <!-- Nombre -->
       <div class="col-12 col-md-6">
         <label for="name" class="form-label">Name:</label>
@@ -216,6 +216,7 @@ faq_items:
       </div>
       <!-- Camps ocults -->
       <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
+    <input type="text" name="honeypot" class="d-none" tabindex="-1" autocomplete="off" aria-hidden="true">
       <input type="hidden" name="_next" value="/en/thanks-phishing">
       <input type="hidden" name="_subject" value="Phishing Training Inquiry">
       <input type="hidden" name="_autoresponse" value="Thank you for your request. We will get back to you shortly.">

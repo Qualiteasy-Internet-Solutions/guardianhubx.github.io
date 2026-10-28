@@ -185,7 +185,7 @@ faq_items:
         </a>
       </div>
     </div>
-    <form class="gform row g-4" id="contactForm" action="https://script.google.com/macros/s/AKfycbyJO3Rs4loBRevIsltI1Fcg48BH_WAtGm6Rezhea-0g_FutfYbM0MwOQfEkDI0XXGF5/exec"  method="POST" novalidate>
+    <form class="gform row g-4" id="contactForm" action="https://script.google.com/macros/s/AKfycbyxi2cv5k3vu4jnBtlU32KLhiRtWRawjNQZyBWjcEfXk_Vjf7g4BHDDvi7tLJz3aAjL/exec"  method="POST" novalidate>
       <!-- Nombre -->
       <div class="col-12 col-md-6">
         <label for="name" class="form-label">Nom:</label>
@@ -216,6 +216,7 @@ faq_items:
       </div>
       <!-- Camps ocults -->
       <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
+    <input type="text" name="honeypot" class="d-none" tabindex="-1" autocomplete="off" aria-hidden="true">
       <input type="hidden" name="_next" value="/ca/gracies-phishing/">
       <input type="hidden" name="_subject" value="Consulta Landing Phishing - Formació empleats">
       <input type="hidden" name="_autoresponse" value="Gràcies, hem rebut el vostre missatge. Ens posarem en contacte breument.">

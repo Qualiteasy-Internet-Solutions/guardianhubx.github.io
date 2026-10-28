@@ -25,7 +25,7 @@
       </div>
     </div>
 
-  <form class="gform row g-4" id="contactForm" action="https://script.google.com/macros/s/AKfycbz0ExKNTPv3_S_KtZ-WmjmoIhSxebKCpOWaAgLefBtYDz973-iIEbsdp_zFkMU36cw6/exec"  method="POST" novalidate>
+  <form class="gform row g-4" id="contactForm" action="https://script.google.com/macros/s/AKfycbyxi2cv5k3vu4jnBtlU32KLhiRtWRawjNQZyBWjcEfXk_Vjf7g4BHDDvi7tLJz3aAjL/exec"  method="POST" novalidate>
     <div class="col-12 col-md-6">
     <label for="name" class="form-label">{{ i18n "form_name" }}</label>
     <input type="text" id="name" name="name" class="form-control" required aria-required="true">
@@ -50,6 +50,7 @@
     <button type="submit" class="landing-btn landing-btn-primary px-5">{{ i18n "form_submit" }}</button>
     </div>
     <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
+    <input type="text" name="honeypot" class="d-none" tabindex="-1" autocomplete="off" aria-hidden="true">
     <input type="hidden" name="_next" value="/{{ .Page.Lang }}/thanks/">
     <input type="hidden" name="_subject" value="GuardianHubX submission!">
     <input type="hidden" name="_autoresponse" value="{{ i18n "form_thanks" }}">
